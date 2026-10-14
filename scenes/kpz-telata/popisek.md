@@ -1,4 +1,4 @@
-# Popisek k reelu (návrh, v2)
+# Popisek k reelu (návrh, v2 – verze pro Instagram pod 3:00)
 
 Tele se v mléčných chovech často odebírá matce hned po porodu. Příručky uvádějí „nejpozději do 12 hodin“. Ať tak, nebo tak – oddělit mládě od matky je kruté. 🐄
 
@@ -25,4 +25,3 @@ Systém si problémy vytvoří a pak je řeší tím, že matce vezme mládě. A
 • Dojivost v ČR 2024: VÚŽV – Stručné výsledky 2024 (data ČSÚ); 1990: Deník.cz 2023 (ČMSM)
 • Příjem mléka telete (~8–15 l/den): Virginia Tech Dairy (2016)
 • Mléčné farmy s kontaktem matky a telete: Eriksson et al. (2022), Animal 16(9)
-• Zvíře není věc: § 494 zákona č. 89/2012 Sb.

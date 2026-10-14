@@ -59,6 +59,11 @@ zadání větší než jeden záběr:
    `VOX.vo('id').t0`, `VOX.wordT('id', 'slovo')` (odhad času slova), titulky
    `VOX.captions(t, { y: 1470 })`. `VOX.setup({ duration: VO.duration })`.
 4. Render se zvukem: `render.mjs scena.html --audio assets/vo.wav`.
+   **Pozor:** Piper není deterministický – `vo.wav` a `vo-timing.js` patří k sobě a vznikají
+   vždy spolu. Nikdy nepřegenerovávej hlas, když běží render, který ho používá. Víc verzí
+   jedné scény (např. plná a zkrácená) drž v oddělených složkách (`tts.py --out-dir assets-plna`).
+5. Limity platforem: Instagram Reels obvykle **max. 3:00** (některé účty víc) – při delším
+   scénáři počítej s variantou pod 3:00 nebo sérií.
    Model hlasu se stahuje z huggingface.co do `.cache/piper/` (gitignored).
 
 ### 2c. Ilustrace

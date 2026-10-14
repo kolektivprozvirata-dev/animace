@@ -60,7 +60,7 @@
       <div class="abs" id="h-bcalf" style="left:270px; top:236px; width:250px"></div>
     </div>
     <div class="abs tag big" id="h-btag" style="left:90px; top:1215px; font-size:36px; white-space:nowrap">Samo v boxu · často až 8 týdnů</div>
-    <div class="abs tag yellow big" id="h-stag" style="left:560px; top:630px; font-size:40px; white-space:nowrap">Společenské zvíře</div>
+    <div class="abs tag yellow big" id="h-stag" style="left:450px; top:630px; font-size:40px; white-space:nowrap">Společenské zvíře</div>
   </div></div>
 
   <!-- 2 · VEGANSKÝ POHLED -->
@@ -292,11 +292,7 @@
   <div id="s11" class="layer">
     <div class="dark-bg"></div>
     <div class="world" id="w11">
-      <div class="abs h1" id="x-l1" style="left:80px; top:560px; width:920px; color:#f3eee4; font-size:128px">Zvíře <span class="hl" id="x-hl" style="color:var(--ink)">není</span> stroj ani zboží.</div>
-      <div class="abs" id="x-l2" style="left:80px; top:1010px; width:920px; color:#f3eee4">
-        <div class="eyebrow" style="color:#bdb6aa">Občanský zákoník · § 494</div>
-        <div class="h2" style="margin-top:12px">„Živé zvíře … <span class="hl" id="x-hl2" style="color:var(--ink)">není věcí.</span>“</div>
-      </div>
+      <div class="abs h1" id="x-l1" style="left:80px; top:700px; width:920px; color:#f3eee4; font-size:128px">Zvíře <span class="hl" id="x-hl" style="color:var(--ink)">není</span> stroj ani zboží.</div>
     </div>
   </div>
 
@@ -525,9 +521,9 @@
       // b) kravín
       panelIO('#g-barn', t, t2 - 0.2, t3 - 0.2);
       animHerd('gh', NG, t, t2 + 0.1);
-      popIn('#g-tag', t, W('hyg2', 'spousta'), { r: -2, o: 1 - prog(t, W('hyg2', 'přínos') - 0.2, 0.2) });
-      slideIn('#g-study', t, W('hyg2', 'přínos'), 0, 120, 0, 0.4, 1 - prog(t, t3 - 0.2, 0.3));
-      highlight('#g-hl', prog(t, W('hyg2', 'neprokázal') - 0.3, 0.6, ease.inOutSine));
+      popIn('#g-tag', t, W('hyg2', 'spousta'), { r: -2, o: 1 - prog(t, W('hyg2', 'výkaly') + 0.4, 0.2) });
+      slideIn('#g-study', t, W('hyg2', 'výkaly') + 0.5, 0, 120, 0, 0.4, 1 - prog(t, t3 - 0.2, 0.3));
+      highlight('#g-hl', prog(t, W('hyg2', 'výkaly') + 1.2, 0.6, ease.inOutSine));
       // c) pastva tzv. masných krav
       panelIO('#g-past', t, t3 - 0.2, t4 - 0.15);
       ['#g-pc1', '#g-pk1', '#g-pc2', '#g-pk2'].forEach((s, i) => cutout(s, t, 'gp' + i));
@@ -547,7 +543,7 @@
       animHerd('zh', NZ, t, t0 + 0.35);
       popIn('#zh-calf', t, W('cru1', 'zalehnout') - 0.2);
       draw('#zh-ring', prog(t, W('cru1', 'zalehnout'), 0.5));
-      popIn('#z-tag', t, W('cru2', 'hodně'), { r: 2, o: 1 - pout });
+      popIn('#z-tag', t, W('cru2', 'přeplněných'), { r: 2, o: 1 - pout });
       panelIO('#z-past', t, tP - 0.25, t3 - 0.15);
       ['#z-pc1', '#z-pc2', '#z-pc3', '#z-pk'].forEach((s, i) => cutout(s, t, 'zp' + i));
       popIn('#z-tag2', t, W('cru2', 'pastvě'), { r: -2, o: 1 - prog(t, t3 - 0.15, 0.2) });
@@ -578,7 +574,7 @@
       popIn('#p-true', t, W('bon1', 'pravda'), { r: -3, o: 1 - outC });
       popIn('#p-ass', t, tS + 0.15, { r: 2, o: 1 - outC });
       slideIn('#p-ben', t, tB + 0.1, 0, 120);
-      fadeUp('#p-k1', t, W('bon2b', 'přirozenější') - 0.1, 20);
+      fadeUp('#p-k1', t, W('bon2b', 'přirozeněji') - 0.1, 20);
       fadeUp('#p-k2', t, W('bon2b', 'rychleji') - 0.1, 20);
       highlight('#p-hl', prog(t, W('bon2b', 'rychleji') + 0.1, 0.5));
     }
@@ -606,25 +602,25 @@
       // graf dojivosti
       const outC = prog(t, t4 - 0.2, 0.3);
       slideIn('#m-chart', t, t3 - 0.1, 0, 100, 0, 0.4, 1 - outC);
-      set('#m-b1', { sy: prog(t, W('mil3', 'Před'), 0.5, ease.outBack), origin: '0 380px' });
-      set('#m-b2', { sy: prog(t, W('mil3', '9 500') - 0.2, 0.7, ease.outBack), origin: '0 380px' });
+      set('#m-b1', { sy: prog(t, t3 + 0.3, 0.5, ease.outBack), origin: '0 380px' });
+      set('#m-b2', { sy: prog(t, W('mil3', 'přes') - 0.2, 0.7, ease.outBack), origin: '0 380px' });
       $('#m-b1').style.transformBox = $('#m-b2').style.transformBox = 'view-box';
-      set('#m-v1', { o: prog(t, W('mil3', 'Před') + 0.3, 0.2) });
-      count('#m-v2', 0, 9574, prog(t, W('mil3', '9 500') - 0.2, 0.9, ease.outCubic), (n) => Math.round(n).toLocaleString('cs-CZ'));
-      set('#m-v2', { o: prog(t, W('mil3', '9 500') - 0.2, 0.1) });
+      set('#m-v1', { o: prog(t, t3 + 0.6, 0.2) });
+      count('#m-v2', 0, 9574, prog(t, W('mil3', 'přes') - 0.2, 0.9, ease.outCubic), (n) => Math.round(n).toLocaleString('cs-CZ'));
+      set('#m-v2', { o: prog(t, W('mil3', 'přes') - 0.2, 0.1) });
       slideIn('#m-day', t, W('mil3', 'ročně') - 0.1, 0, 80, 0, 0.4, 1 - outC);
       highlight('#m-hl', prog(t, W('mil3', 'ročně') + 0.4, 0.5));
       // pointa
       fadeUp('#m-not', t, t4, 50);
       popIn('#m-mach', t, W('mil4', 'krutou') - 0.1, { r: -4 });
-      cutout('#m-milk', t, 'mm', 0, 0, -6, pop(t, W('mil4', 'prodej') - 0.4) || 0.001, pop(t, W('mil4', 'prodej') - 0.4) > 0 ? 1 : 0);
-      cutout('#m-milk2', t, 'mm2', 0, 0, 5, pop(t, W('mil4', 'prodej') - 0.25) || 0.001, pop(t, W('mil4', 'prodej') - 0.25) > 0 ? 1 : 0);
-      cutout('#m-tag', t, 'mt', 0, 0, 12, pop(t, W('mil4', 'prodej')) || 0.001, pop(t, W('mil4', 'prodej')) > 0 ? 1 : 0);
+      cutout('#m-milk', t, 'mm', 0, 0, -6, pop(t, W('mil4', 'na mléko') - 0.4) || 0.001, pop(t, W('mil4', 'na mléko') - 0.4) > 0 ? 1 : 0);
+      cutout('#m-milk2', t, 'mm2', 0, 0, 5, pop(t, W('mil4', 'na mléko') - 0.25) || 0.001, pop(t, W('mil4', 'na mléko') - 0.25) > 0 ? 1 : 0);
+      cutout('#m-tag', t, 'mt', 0, 0, 12, pop(t, W('mil4', 'na mléko')) || 0.001, pop(t, W('mil4', 'na mléko')) > 0 ? 1 : 0);
     }
     // ---------- 9 · BIZARNÍ KRUH ----------
     if (frame('s9', t, 1.0, 1.05, '50% 42%')) {
       const t0 = T('loop');
-      const tn = [W('loop', 'velkokapacitní'), W('loop', 'spousta'), W('loop', 'vyšlechtí'), W('loop', 'A pak'), W('loop', 'vezme')];
+      const tn = [W('loop', 'velkokapacitní'), W('loop', 'plné'), W('loop', 'vyšlechtěné'), W('loop', 'A pak'), W('loop', 'vezme')];
       fadeUp('#l-eye', t, t0);
       ['#l-n0', '#l-n1', '#l-n2', '#l-n3', '#l-n4'].forEach((s, i) => node(s, pop(t, tn[i] - 0.1), boil(t, s, 1, .4)));
       for (let i = 0; i < 5; i++) {
@@ -661,8 +657,7 @@
       const p = prog(t, T('alt3') - 0.05, 0.4, ease.outBack);
       set('#x-l1', { s: 0.85 + 0.15 * p, o: prog(t, T('alt3') - 0.05, 0.12), origin: '0% 50%' });
       hlDark('#x-hl', prog(t, W('alt3', 'není'), 0.4, ease.inOutSine));
-      fadeUp('#x-l2', t, T('alt4') + 0.1, 40);
-      hlDark('#x-hl2', prog(t, W('alt4', 'není věc'), 0.4, ease.inOutSine));
+
     }
     // ---------- 12 · NABÍDKA A POPTÁVKA ----------
     if (frame('s12', t, 1.0, 1.04, '50% 40%')) {
@@ -696,7 +691,7 @@
     $('#src').textContent = src;
     set('#src', { o: src ? 0.85 : 0 });
     // titulek se skryje tam, kde stejnou větu nese velký nadpis
-    VOX.captions(t, { y: 1470, hide: [[T('veg2') + 1.2, E('veg2') + 0.3], [T('alt4'), E('alt4') + 0.6]] });
+    VOX.captions(t, { y: 1470, hide: [[T('veg2') + 1.2, E('veg2') + 0.3]] });
   });
 </script>
 </body>

@@ -119,9 +119,15 @@ async function main() {
     const total = Math.round((to - from) * fps);
     const out = path.resolve(args.out || path.join(outDir, `${name}.mp4`));
     const ff = ['-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'png', '-i', '-'];
-    if (args.audio) ff.push('-ss', String(from), '-i', path.resolve(args.audio), '-c:a', 'aac', '-b:a', '192k', '-shortest');
+    if (args.audio) {
+      // kopie zvuku, aby ho souběžné přegenerování (tts.py) nepřepsalo uprostřed renderu
+      const audioCopy = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'vox-audio-')), path.basename(args.audio));
+      fs.copyFileSync(path.resolve(args.audio), audioCopy);
+      ff.push('-ss', String(from), '-i', audioCopy, '-c:a', 'aac', '-b:a', '192k', '-t', String(to - from));
+    }
     ff.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', String(args.crf || 18), '-preset', 'medium', '-movflags', '+faststart', out);
     const f = ffmpeg(ff);
+    f.stdin.on('error', (e) => { if (e.code !== 'EPIPE') throw e; });
 
     let lastStep = null, lastBuf = null;
     const t0 = Date.now();

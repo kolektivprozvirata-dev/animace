@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.3.0**
+**Verze skillu: 0.3.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -20,6 +20,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. _(2026-10-14, kpz-telata v2)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
+- **[formát]** Pro Instagram držet reel **pod 3:00** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 
 ## ✅ Osvědčené (nechat tak)
@@ -28,7 +29,6 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 
 ## Otevřené otázky na uživatele
 
-- Délka v2 ~3:36 – Instagram Reels má (podle dostupných informací) limit 3 min; publikovat jinde, nebo připravit zkrácenou verzi?
 - Hudební podkres: žádný (výchozí), nebo jemný rytmický?
 
 ## Log
@@ -38,3 +38,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-14 | 0.1.0 | — | — | Založení skillu z rešerše (viz references/sources.md), runtime, renderer, demo. |
 | 2026-10-14 | 0.2.0 | kpz-telata | Chce český hlas a titulky; reel 9:16; logo KPZ; úhel „bizár systému“; „krutý“ používat; zalehnutí = důsledek těsna (postoj KPZ); „často hned po porodu“; nastudovat veganskou etiku. | `scripts/tts.py` (Piper → vo.wav + vo-timing.js + vo.srt), `VOX.captions/vo/wordT`, `runtime/vox-icons.js` (kráva, tele, ikony), svislý kontaktní arch, `brand/kpz/` (loga, etika, slovník). |
 | 2026-10-14 | 0.3.0 | kpz-telata v2 | „tzv. masné krávy / tzv. dojnice“; masné krávy jen u hygieny a zalehnutí; místo EFSA veganský pohled; „často hned“; „několik argumentů, nejčastější…“; hygiena = celý kravín, hustota; pojmenovat problémy; chovy s kontaktem nejsou ideál (býčci, tzv. dojnice na jatka, zvíře není stroj ani zboží); 4. argument přebytek mléka; víc informací, delší OK; citlivost krav; tempo hlasu OK. | Pravidla KPZ do `brand/kpz/README.md`; obecná pravidla sem; `hlDark` vzor pro tmavé scény; scénář a scéna v2. |
+| 2026-10-14 | 0.3.1 | kpz-telata v2 | Instagram – zvolena varianta pod 3:00. | Zkrácený scénář (177 s), plná verze zálohována (`vo-plna.json`, `reel-plna.html`, `assets-plna/`). Renderer kopíruje zvuk do temp a snese předčasný konec ffmpeg (dřív přepsání `vo.wav` během renderu rozbilo plnou verzi). SKILL.md: Piper není deterministický, limity platforem. |
