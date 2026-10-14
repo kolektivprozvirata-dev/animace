@@ -79,7 +79,25 @@ používat jen s vysvětlením.
 | rostlinné alternativy | „náhražky“ |
 | **tzv. masné krávy**, **tzv. dojnice** (vždy s „tzv.“) | „masné krávy“, „dojnice“ bez odstupu **[KPZ]** |
 
+## Podklady KPZ
+- `clanky/mlecne-kravy-materstvi-ve-sluzbach-vyroby.md` – článek KPZ s 30 zdroji
+  (inseminace, odebrání telete, boxy, odrohování, býčci a vývoz telat, haly, nemoci,
+  brakace, jatka, azyly). Čerpat odtud fakta i formulace.
+
 ## Specifické postoje KPZ (z feedbacku)
+- **Začátek videa [KPZ]:** začínat hookem (nejsilnější fakt – odebrání telete), ne popisem
+  toho, jaké krávy jsou.
+- **Industriální slovník [KPZ]:** „velkokapacitní haly“, ne „stáje“ – výrazy, které ukazují
+  monstróznost systému a budov.
+- **Hygiena – formulace [KPZ]:** nejen „výkaly“ – podlaha, kde výkaly byly a průběžně jsou,
+  moč, a na tak malé ploše je přirozené, že tam z výkalů jsou bakterie.
+- **Lehká ironie [KPZ]:** např. „Odnese to – jak jinak – tele a jeho máma.“; po pointě
+  „Aby je odloučení nebolelo, odloučí je dřív.“ přidat „Není to bizarní?“
+- **Pouto [KPZ]:** formulovat opatrně – „Podle některých zdrojů je to údajně pravda.“
+- **Chovy s kontaktem matky a telete [KPZ, zpřísněno]:** ne „není to ideál“, ale přísněji:
+  „Pokud konzumujete mateřské mléko nebo sýry, ani zde nehledejte útěchu.“ + fakta o zabíjení
+  (býčci, tzv. dojnice po poklesu dojivosti). Je to také krvavý a krutý byznys, jen se v něm
+  zvířata mají možná o trochu lépe.
 - **„Tzv.“ u produkčních kategorií [KPZ]:** „tzv. masné krávy“, „tzv. dojnice“ – tyto
   názvy vymysleli lidé. Kráva je tvor s vlastním životem, nenarodila se jako „masná“.
   V hlasu vyslovovat „takzvané“.
