@@ -247,6 +247,22 @@ designu, ne přes něj:
 - **Úhel:** bizarní kruh + nabídka a poptávka.
 - **Rozsah:** v1 = jeden reel se všemi třemi argumenty, ~107 s.
 
+## 10. Zadání v2 (2026-10-14) – nové údaje a zdroje
+
+| tvrzení ve v2 | opora |
+|---|---|
+| Tzv. dojnice v ČR: přes 9 500 l mléka ročně (2024: 9 573,5 l) | VÚŽV – Stručné výsledky 2024 (data ČSÚ): https://vuzv.cz/wp-content/uploads/2025/07/Sturcne-vysledky-2024.pdf |
+| „Před třiceti lety kolem 3 800 l“ | Deník.cz 2023, citace předsedy ČMSM J. Kopáčka („před 33 lety 3 800 l“): https://www.denik.cz/veda/cina-superkravy-mleko-20230202.html – mediální zdroj, ne statistika |
+| Tele bez omezení vypije ~8–15 l denně; tzv. dojnice ~30 l denně | Virginia Tech Dairy newsletter 2016; FAIE (ad libitum); 30 l = 9 573 l / ~305 dní laktace (náš přepočet) |
+| Matka a tele se poznají po hlase (oboustranně) | Padilla de la Torre et al. 2016, Animal Behaviour 114:147–154 |
+| Matka tele po porodu olizuje; vazba vzniká během minut až hodin | přehledové práce o mateřském chování skotu (např. Acta Agraria Debreceniensis; JDS Communications 2023) |
+| Krávy po odloučení bučí, hledají, vystrkují hlavu z kotce | Stěhulová, Lidfors, Špinka 2008 (abstrakt: vocalised, sniffed, heads outside the pen) |
+| Delší společný čas telatům prospívá (přirozenější chování, rychlejší růst) | Meagher et al. 2019 – systematický přehled. **K dotazu „GPT říká, že studie prokazují opak“:** ano, přehled ukazuje dlouhodobé přínosy delšího kontaktu; zároveň potvrzuje silnější akutní stres při pozdějším oddělení. Obojí ve videu je. |
+| Tele je společenské zvíře; individuální odchov nenaplňuje jeho sociální potřeby | ZSČR – Management sociálního odchovu telat |
+| Býčci z mléčných chovů jdou na jatka; tzv. dojnice jsou vyřazovány mj. kvůli užitkovosti | obecně známá praxe chovu; brakace: VÚŽV – Culling reasons in Czech dairy cattle (https://vuzv.cz/?p=27537) |
+| Krávy se na farmách s kontaktem dojí a telata přitom sají | Eriksson et al. 2022 – komerční mléčné farmy, 34 % sání u vlastní matky |
+| „Živé zvíře … není věcí“ | § 494 zákona č. 89/2012 Sb. (občanský zákoník) |
+
 ## Co zbývá ověřit před výrobou
 1. Plné texty: Beaver 2019, Meagher 2019, EFSA 2023 (formulace 24 h), naschov.cz / ZSČR (12 h, 97 %), vyhláška 208/2004 (aktuální znění).
 2. Zda existuje český mléčný chov s kontaktem matky a telete (dotaz na PRO-BIO, KEZ, VÚŽV).

@@ -77,8 +77,35 @@ používat jen s vysvětlením.
 | mléčný průmysl, systém, chov | „humánní“, „etické mléko“, „šťastné krávy“ |
 | krutá praxe, krutý systém | útoky na osoby |
 | rostlinné alternativy | „náhražky“ |
+| **tzv. masné krávy**, **tzv. dojnice** (vždy s „tzv.“) | „masné krávy“, „dojnice“ bez odstupu **[KPZ]** |
 
 ## Specifické postoje KPZ (z feedbacku)
+- **„Tzv.“ u produkčních kategorií [KPZ]:** „tzv. masné krávy“, „tzv. dojnice“ – tyto
+  názvy vymysleli lidé. Kráva je tvor s vlastním životem, nenarodila se jako „masná“.
+  V hlasu vyslovovat „takzvané“.
+- **Veganský pohled, ne instituce [KPZ]:** nestavět sdělení na doporučeních úřadů
+  (např. EFSA „aspoň 24 h“). Postoj KPZ: oddělit mládě od matky je kruté – ať hned,
+  nebo později.
+- **Česká praxe [KPZ]:** vždy zmínit obojí – příručky uvádějí „nejpozději do 12 hodin“,
+  v praxi je to často hned.
+- **Argumenty chovatelů [KPZ]:** neříkat „chovatelé mají tři argumenty“, ale „mají
+  několik argumentů, mezi nejčastější patří…“.
+- **Srovnání s tzv. masnými kravami [KPZ]:** použít jen u hygieny a zalehnutí
+  (pastva = prostor, telata zůstávají s matkami měsíce). Ne jako obecný vzor.
+- **Hygiena [KPZ]:** nejde jen o porodnu – v kravínech často stojí spousta krav na
+  malé ploše i se svými výkaly. Kořen problému = velké množství zvířat na malém prostoru.
+- **Pojmenovat problémy konkrétně [KPZ]:** ne „systém si vytvoří problémy“, ale
+  „postaví velkokapacitní kravíny, kde je spousta krav na malém prostoru, a vyšlechtí
+  krávy na maximální výkon“.
+- **Chovy s kontaktem matky a telete [KPZ]:** vždy dodat, že nejde o ideál – i tam
+  jdou býčci na jatka (nedávají mléko) a tzv. dojnice skončí na jatkách, když jim klesne
+  dojivost. „Zvíře není stroj ani zboží.“ Nedoporučovat domácí/bio chovy.
+- **Argument „přebytek mléka“ [KPZ]:** kráva dává tolik mléka kvůli šlechtění;
+  farmy s kontaktem ukazují, že dojit a nechat tele sát jde → výmluva velkochovů,
+  problém systému („co nejefektivnější krutá mašina“).
+- **Citlivost zvířat [KPZ]:** do textu vkládat doložené momenty o tom, co krávy a telata
+  prožívají (olizování, poznávání po hlase, bučení a hledání po odloučení, tele je
+  společenské), aby komentář nebyl jen „strojové odříkávání“ argumentů.
 - **Zalehnutí/úraz telete [KPZ]:** pokud k němu dochází, je to proto, že je
   hodně zvířat na malém prostoru. Na pastvě s dostatkem místa se to prakticky
   neděje. (Postoj organizace; tvrdá data o četnosti jsme v rešerši nenašli –
@@ -92,4 +119,5 @@ používat jen s vysvětlením.
 - Steiner – rozdíly Singer / Regan / Francione: https://www.abolitionistapproach.com/wp-content/uploads/2016/12/Steiner-on-Singer-Regan-Francione.pdf
 - Speciesism (Ryder): https://en.wikipedia.org/wiki/Speciesism
 - Marino & Allen 2017, The Psychology of Cows: https://www.animalbehaviorandcognition.org/article.php?id=1110
+- Padilla de la Torre et al. 2016, Animal Behaviour 114:147 – vzájemné poznávání matky a telete po hlase: https://eprints.nottingham.ac.uk/34713
 - § 494 OZ – epravo.cz: https://www.epravo.cz/top/clanky/prestava-byt-zvire-veci-aneb-kratky-exkurz-do-pravni-upravy-zvirat-v-novem-obcanskem-zakoniku-82444.html

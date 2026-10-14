@@ -6,35 +6,56 @@
  "tail": 2.0,
  "segments": [
   {
-   "id": "hook",
-   "say": "Tele se v mléčných chovech často odebírá matce hned po porodu. Nejpozději do dvanácti hodin.",
-   "text": "Tele se v mléčných chovech často odebírá matce *hned po porodu.* Nejpozději do *12 hodin.*",
-   "pause": 0.35
+   "id": "hook1",
+   "say": "Chovatelské příručky uvádějí, že se tele odebírá matce nejpozději do dvanácti hodin po porodu.",
+   "text": "Chovatelské příručky uvádějí, že se tele odebírá matce *nejpozději do 12 hodin* po porodu.",
+   "pause": 0.2
   },
   {
-   "id": "efsa",
-   "say": "Přitom evropský úřad efsa doporučuje nechat ho s ní aspoň den.",
-   "text": "Přitom evropský úřad EFSA doporučuje nechat ho s ní *aspoň den.*",
-   "pause": 0.4
+   "id": "hook2",
+   "text": "V praxi je to ale často *hned.*",
+   "pause": 0.3
+  },
+  {
+   "id": "hook3",
+   "say": "Pak obvykle tráví týdny samo v boxu. Často až do osmi týdnů. Přestože je to společenské zvíře.",
+   "text": "Pak obvykle tráví týdny *samo v boxu.* Často až do 8 týdnů. Přestože je to *společenské zvíře.*",
+   "pause": 0.45
+  },
+  {
+   "id": "veg1",
+   "text": "Krávy jsou cítící bytosti. Matka tele hned po porodu olizuje a oba se navzájem *poznají po hlase.* Mezi nimi bývá *silné pouto.*",
+   "pause": 0.25
+  },
+  {
+   "id": "veg2",
+   "text": "Ať hned, nebo později: oddělit mládě od matky je *kruté.*",
+   "pause": 0.45
   },
   {
    "id": "why",
-   "text": "Proč ten spěch? Chovatelé mají *tři argumenty.*",
+   "text": "Proč se to tedy dělá? Chovatelé mají několik argumentů. Mezi *nejčastější* patří tyto čtyři.",
    "pause": 0.4
   },
   {
    "id": "hyg1",
-   "text": "Za prvé: *hygiena.* V porodně hrozí nákazy.",
+   "text": "Za prvé: *hygiena.* Tele prý musí pryč, aby se nenakazilo.",
    "pause": 0.2
   },
   {
    "id": "hyg2",
-   "text": "Jenže rizikem je i *špinavá porodna* sama. A přínos časného oddělení pro zdraví telat výzkum spolehlivě neprokázal.",
+   "text": "Jenže v kravínech často stojí *spousta krav na malé ploše,* i se svými výkaly. A přínos časného oddělení pro zdraví telat výzkum spolehlivě neprokázal.",
    "pause": 0.25
   },
   {
    "id": "hyg3",
-   "text": "Problém je v prostředí. Odnese to *tele.*",
+   "say": "Na pastvě, kde žijí takzvané masné krávy, je prostoru dost. A telata tam s matkami zůstávají měsíce.",
+   "text": "Na pastvě, kde žijí tzv. masné krávy, je prostoru dost. A telata tam s matkami zůstávají *měsíce.*",
+   "pause": 0.25
+  },
+  {
+   "id": "hyg4",
+   "text": "Problém je v prostředí. Odnese to ale *tele.*",
    "pause": 0.45
   },
   {
@@ -44,7 +65,8 @@
   },
   {
    "id": "cru2",
-   "text": "Hrozí to ale hlavně v *těsných stájích.* Na pastvě se to prakticky neděje.",
+   "say": "To hrozí hlavně tam, kde je hodně zvířat na malém prostoru. U takzvaných masných krav na pastvě se to prakticky neděje.",
+   "text": "To hrozí hlavně tam, kde je *hodně zvířat na malém prostoru.* U tzv. masných krav na pastvě se to prakticky neděje.",
    "pause": 0.25
   },
   {
@@ -54,12 +76,17 @@
   },
   {
    "id": "bon1",
-   "text": "Za třetí: čím později je oddělí, tím víc to bude *bolet.* To je pravda.",
+   "text": "Za třetí: čím později je oddělí, tím víc to bude *bolet.* To je pravda. Krávy po odloučení bučí, hledají tele a vystrkují hlavu z kotce.",
    "pause": 0.2
   },
   {
    "id": "bon2",
    "text": "Jenže to počítá s tím, že je *stejně rozdělí.*",
+   "pause": 0.25
+  },
+  {
+   "id": "bon2b",
+   "text": "A studie ukazují, že delší společný čas telatům prospívá: mají přirozenější chování a *rychleji rostou.*",
    "pause": 0.4
   },
   {
@@ -75,24 +102,58 @@
    "cap": false
   },
   {
-   "id": "milk",
-   "text": "Proč je vůbec rozdělovat? Kráva dává mléko, protože porodila. To mléko je pro tele. Tady je ale *na prodej.*",
-   "pause": 0.4
+   "id": "mil1",
+   "text": "Za čtvrté: kráva prý dává tolik mléka, že by ho tele stejně *nevypilo.*",
+   "pause": 0.25
+  },
+  {
+   "id": "mil2",
+   "text": "Kráva ale dává mléko, protože porodila. To mléko je *pro tele.* A tolik ho dává proto, že ji lidé desítky let šlechtili na co nejvyšší výkon.",
+   "pause": 0.25
+  },
+  {
+   "id": "mil3",
+   "say": "Takzvaná dojnice dnes v Česku dá v průměru přes devět a půl tisíce litrů mléka ročně. Před třiceti lety to bylo kolem tří tisíc osmi set.",
+   "text": "Tzv. dojnice dnes v Česku dá v průměru přes *9 500 litrů* mléka ročně. Před třiceti lety to bylo kolem 3 800.",
+   "pause": 0.25
+  },
+  {
+   "id": "mil4",
+   "say": "Problém tedy není tele. Je to systém, který z krávy udělal co nejefektivnější krutou mašinu na mléko na prodej.",
+   "text": "Problém tedy není tele. Je to systém, který z krávy udělal co nejefektivnější *krutou mašinu* na mléko na prodej.",
+   "pause": 0.45
   },
   {
    "id": "loop",
-   "text": "Systém si tak problémy vytvoří a pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
+   "text": "Systém si tak problémy vytvoří: postaví *velkokapacitní kravíny,* kde je spousta krav na malém prostoru, a vyšlechtí krávy na maximální výkon. A pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
    "pause": 0.45
   },
   {
    "id": "alt1",
-   "text": "Že to jde jinak, ukazují masné chovy, kde telata sají u matek *měsíce.* I přes sto mléčných farem v Evropě, kde tele s matkou zůstává.",
+   "text": "Přitom v Evropě existuje přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. Krávy se tam dojí a telata přitom sají.",
    "pause": 0.25
   },
   {
+   "id": "alt1b",
+   "text": "Okamžité oddělení tedy *nutné není.* A přebytek mléka je výmluva, ne důvod.",
+   "pause": 0.3
+  },
+  {
    "id": "alt2",
-   "text": "Ani tam to není idyla, i tam je nakonec rozdělí. Okamžité oddělení ale *nutné není.*",
-   "pause": 0.45
+   "say": "Nechceme ale tvrdit, že je to ideál. I tam jdou býčci na jatka, protože nedávají mléko. A takzvané dojnice tam skončí taky, když jim klesne dojivost.",
+   "text": "Nechceme ale tvrdit, že je to ideál. I tam jdou *býčci na jatka,* protože nedávají mléko. A tzv. dojnice tam skončí taky, když jim klesne dojivost.",
+   "pause": 0.4
+  },
+  {
+   "id": "alt3",
+   "text": "Zvíře není stroj ani zboží.",
+   "pause": 0.3,
+   "cap": false
+  },
+  {
+   "id": "alt4",
+   "text": "Ostatně i český občanský zákoník říká, že zvíře *není věc.*",
+   "pause": 0.6
   },
   {
    "id": "dem1",

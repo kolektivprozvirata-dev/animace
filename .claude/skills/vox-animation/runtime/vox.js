@@ -107,6 +107,14 @@
     if (el) el.style.setProperty('--hl', clamp(p).toFixed(4));
   }
 
+  /** Zvýrazňovač na tmavém pozadí: text je světlý, při podbarvení ztmavne (jinak by byl neviditelný). */
+  function highlightDark(el, p, light = '#f3eee4', dark = '#141414') {
+    if (typeof el === 'string') el = $(el);
+    if (!el) return;
+    highlight(el, p);
+    el.style.color = p > 0.35 ? dark : light;
+  }
+
   /** Kreslení SVG cesty (path/line/polyline/circle). p = 0..1 */
   function draw(el, p) {
     if (typeof el === 'string') el = $(el);
@@ -334,6 +342,6 @@
 
   window.VOX = {
     cfg, setup, scene, ease, clamp, lerp, prog, inOut, rng, hash, step,
-    $, $$, set, pop, boil, highlight, draw, typeOn, count, camera, cutBlur, push, shot, vo, wordT, captions,
+    $, $$, set, pop, boil, highlight, highlightDark, draw, typeOn, count, camera, cutBlur, push, shot, vo, wordT, captions,
   };
 })();
