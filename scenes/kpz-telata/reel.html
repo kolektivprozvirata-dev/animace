@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – telata (reel 9:16)</title>
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
+<script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
+<script src="assets/vo-timing.js"></script>
+<style>
+  .tag.red { background: var(--accent-red); color: #fbf8f2; }
+  .tag.green { background: var(--kpz-green); color: var(--ink); }
+  .tag.big { font-size: 44px; padding: 14px 26px 12px; }
+  .card { position: absolute; background: #fbf8f2; box-shadow: var(--shadow-paper); padding: 34px 40px; }
+  .num { display: inline-flex; align-items: center; justify-content: center; width: 104px; height: 104px;
+         border-radius: 50%; background: var(--ink); color: #fbf8f2; font-weight: 900; font-size: 64px; margin-right: 34px; }
+  .row { display: flex; align-items: center; }
+  .h1 { font-weight: 900; font-size: 96px; line-height: .98; letter-spacing: -.03em; }
+  .h2 { font-weight: 900; font-size: 74px; line-height: 1.02; letter-spacing: -.02em; }
+  .h3 { font-weight: 800; font-size: 50px; line-height: 1.1; letter-spacing: -.01em; }
+  .mono { font-family: var(--font-mono); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .strike { position: absolute; left: -8px; right: -8px; top: 52%; height: 12px; background: var(--accent-red);
+            transform-origin: 0 50%; border-radius: 6px; }
+  .strike-wrap { position: relative; display: inline-block; }
+  #wm { left: 56px; top: 96px; width: 132px; }
+  #wm img { width: 100%; display: block; }
+  #src { left: 64px; top: 1326px; width: 900px; font-size: 22px; color: var(--ink-soft); }
+  .dark-bg { position: absolute; inset: 0; background: var(--dark); }
+  .ring-node { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- 1 · HOOK -->
+  <div id="s1" class="layer"><div class="world" id="w1">
+    <div class="abs eyebrow" id="h-eye" style="left:80px; top:300px">Mléčné chovy · Česko</div>
+    <div class="abs" id="h-num" style="left:80px; top:350px">
+      <div class="big-number" style="font-size:230px">≤ 12 h</div>
+      <div class="label" style="margin-top:14px; font-size:30px">po porodu</div>
+    </div>
+    <div class="abs" id="h-cow" style="left:10px; top:760px; width:660px"></div>
+    <div class="abs" id="h-calf" style="left:680px; top:860px; width:370px"></div>
+    <svg class="abs" id="h-cutsvg" width="1080" height="1920" style="left:0; top:0">
+      <path id="h-cut" d="M672,700 L660,1240" fill="none" stroke="var(--accent-red)" stroke-width="8" stroke-dasharray="1 0"/>
+    </svg>
+    <div class="abs" id="h-sc" style="left:612px; top:640px; width:120px"></div>
+  </div></div>
+
+  <!-- 2 · EFSA -->
+  <div id="s2" class="layer"><div class="world" id="w2">
+    <div class="doc" id="e-doc" style="left:70px; top:300px; width:940px; font-size:42px; padding:52px 58px">
+      <div class="doc-source">EFSA Journal · 2023 · Welfare of calves</div>
+      <div class="doc-title" style="font-size:54px">Scientific Opinion</div>
+      <p><span class="dim">„…the calf should be kept with the dam for a</span>
+        <span class="hl" id="e-hl">minimum of ~24 h</span>
+        <span class="dim">(before the bond is formed)…“</span></p>
+    </div>
+    <svg class="abs" id="e-tl" width="1080" height="420" style="left:0; top:900px">
+      <line x1="90" y1="200" x2="990" y2="200" class="axis"/>
+      <rect id="e-bar" x="90" y="150" width="360" height="100" fill="var(--accent-red)"/>
+      <line id="e-24" x1="810" y1="110" x2="810" y2="290" stroke="var(--kpz-green)" stroke-width="12"/>
+      <text x="90" y="320" font-size="30" fill="#4a4744">0 h</text>
+      <text x="420" y="320" font-size="30" fill="#4a4744">12 h</text>
+      <text x="780" y="320" font-size="30" fill="#4a4744">24 h</text>
+    </svg>
+    <div class="abs tag red" id="e-lab1" style="left:90px; top:960px">Praxe: hned – 12 h</div>
+    <div class="abs tag green" id="e-lab2" style="left:600px; top:960px">EFSA: aspoň 24 h</div>
+  </div></div>
+
+  <!-- 3 · TŘI ARGUMENTY -->
+  <div id="s3" class="layer"><div class="world" id="w3">
+    <div class="abs eyebrow" id="a-eye" style="left:80px; top:300px">Proč ten spěch?</div>
+    <div class="abs h1" id="a-head" style="left:80px; top:350px">Tři argumenty</div>
+    <div class="card row" id="a-c1" style="left:90px; top:560px; width:860px"><span class="num">1</span><span class="h2">Hygiena</span></div>
+    <div class="card row" id="a-c2" style="left:90px; top:780px; width:860px"><span class="num">2</span><span class="h2">Zalehnutí</span></div>
+    <div class="card row" id="a-c3" style="left:90px; top:1000px; width:860px"><span class="num">3</span><span class="h2">Pouto</span></div>
+  </div></div>
+
+  <!-- 4 · HYGIENA -->
+  <div id="s4" class="layer"><div class="world" id="w4">
+    <div class="abs row" id="g-head" style="left:80px; top:290px"><span class="num" style="width:84px;height:84px;font-size:52px">1</span><span class="h2">Hygiena</span></div>
+    <div class="abs" id="g-floor" style="left:90px; top:430px; width:900px; height:640px">
+      <svg width="900" height="640">
+        <rect x="0" y="0" width="900" height="640" rx="18" fill="#e9d9a8" stroke="var(--ink)" stroke-width="6"/>
+        <g stroke="#c8ad6a" stroke-width="5" stroke-linecap="round" id="g-straw"></g>
+        <g fill="#7a5a3a" opacity=".85">
+          <path d="M120,470 C160,440 230,460 220,500 C200,540 130,530 120,470 Z"/>
+          <path d="M690,120 C730,96 800,120 790,160 C770,196 700,180 690,120 Z"/>
+          <path d="M700,500 C740,480 780,500 770,530 C750,556 710,548 700,500 Z"/>
+          <path d="M150,110 C180,96 220,110 214,136 C200,156 160,150 150,110 Z"/>
+        </g>
+      </svg>
+      <div class="abs tag" style="left:24px; top:24px">Porodna</div>
+    </div>
+    <div class="abs" id="g-calf" style="left:340px; top:600px; width:380px"></div>
+    <div id="g-germs"></div>
+    <div class="abs tag yellow big" id="g-tag" style="left:150px; top:985px">Špinavá porodna = riziko</div>
+    <div class="card" id="g-study" style="left:90px; top:1085px; width:900px; padding:26px 34px">
+      <div class="mono" style="font-size:22px; color:#777">Přehled studií · Beaver et al. 2019</div>
+      <div class="h3" style="margin-top:8px">Přínos časného oddělení pro zdraví telat: <span class="hl" id="g-hl">neprokázán</span></div>
+    </div>
+    <!-- schéma -->
+    <div class="abs" id="g-sch" style="left:90px; top:430px; width:900px">
+      <div class="eyebrow" style="color:var(--ink-soft)">Problém</div>
+      <div class="h2" id="g-p" style="margin:10px 0 34px">Špinavé prostředí</div>
+      <svg width="80" height="110" id="g-arr"><path d="M40,6 L40,90 M14,66 L40,96 L66,66" fill="none" stroke="var(--ink)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="eyebrow" style="color:var(--ink-soft); margin-top:20px">Řešení</div>
+      <div class="h2" style="margin:10px 0 26px"><span class="strike-wrap" id="g-s-wrap">Vyčistit porodnu<span class="strike" id="g-strike"></span></span></div>
+      <div class="tag red big" id="g-res" style="font-size:64px">Odebrat tele</div>
+    </div>
+  </div></div>
+
+  <!-- 5 · ZALEHNUTÍ -->
+  <div id="s5" class="layer"><div class="world" id="w5">
+    <div class="abs row" id="z-head" style="left:80px; top:290px"><span class="num" style="width:84px;height:84px;font-size:52px">2</span><span class="h2">Zalehnutí</span></div>
+    <div class="abs" id="z-pen" style="left:90px; top:430px; width:900px; height:760px">
+      <svg width="900" height="760" style="position:absolute;left:0;top:0">
+        <rect x="0" y="0" width="900" height="760" fill="#d9cfbd" stroke="var(--ink)" stroke-width="10"/>
+        <g stroke="var(--ink)" stroke-width="6"><line x1="0" y1="190" x2="20" y2="190"/><line x1="0" y1="380" x2="20" y2="380"/><line x1="0" y1="570" x2="20" y2="570"/></g>
+      </svg>
+      <div id="z-herd"></div>
+      <div class="abs tag red big" id="z-tag" style="left:560px; top:-36px">Těsno</div>
+    </div>
+    <div class="abs" id="z-past" style="left:0; top:430px; width:1080px; height:760px">
+      <svg width="1080" height="760" style="position:absolute;left:0;top:0">
+        <path d="M0,240 C200,170 380,230 560,190 C760,150 900,200 1080,170 L1080,760 L0,760 Z" fill="var(--pasture)" stroke="var(--ink)" stroke-width="6"/>
+        <path d="M0,420 C260,360 520,430 1080,360 L1080,760 L0,760 Z" fill="#7aa04a" opacity=".55"/>
+      </svg>
+      <div class="abs" id="z-pc1" style="left:70px; top:120px; width:300px"></div>
+      <div class="abs" id="z-pc2" style="left:640px; top:90px; width:280px"></div>
+      <div class="abs" id="z-pc3" style="left:380px; top:380px; width:340px"></div>
+      <div class="abs" id="z-pcalf" style="left:760px; top:470px; width:190px"></div>
+      <div class="abs tag green big" id="z-tag2" style="left:90px; top:-36px">Pastva: prostor</div>
+    </div>
+    <div class="abs" id="z-sch" style="left:90px; top:430px; width:900px">
+      <div class="eyebrow" style="color:var(--ink-soft)">Problém</div>
+      <div class="h2" style="margin:10px 0 34px">Málo prostoru</div>
+      <svg width="80" height="110"><path d="M40,6 L40,90 M14,66 L40,96 L66,66" fill="none" stroke="var(--ink)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="eyebrow" style="color:var(--ink-soft); margin-top:20px">Řešení</div>
+      <div class="h2" style="margin:10px 0 26px"><span class="strike-wrap">Víc prostoru<span class="strike" id="z-strike"></span></span></div>
+      <div class="tag red big" id="z-res" style="font-size:64px">Odebrat tele</div>
+    </div>
+  </div></div>
+
+  <!-- 6 · POUTO -->
+  <div id="s6" class="layer"><div class="world" id="w6">
+    <div class="abs row" id="p-head" style="left:80px; top:290px"><span class="num" style="width:84px;height:84px;font-size:52px">3</span><span class="h2">Pouto</span></div>
+    <div class="abs" id="p-cow" style="left:30px; top:470px; width:540px"></div>
+    <div class="abs" id="p-calf" style="left:600px; top:560px; width:330px"></div>
+    <svg class="abs" width="1080" height="1920" style="left:0;top:0">
+      <path id="p-bondL" d="M478,612 C540,500 620,520 652,642" fill="none" stroke="var(--vox-yellow)" stroke-width="14" stroke-linecap="round"/>
+      <path id="p-bondL2" d="M478,612 C540,500 620,520 652,642" fill="none" stroke="var(--ink)" stroke-width="4" stroke-dasharray="2 14" stroke-linecap="round"/>
+    </svg>
+    <div class="abs" id="p-sc" style="left:510px; top:430px; width:120px"></div>
+    <div class="card" id="p-chart" style="left:90px; top:900px; width:900px; padding:28px 36px 22px">
+      <div class="mono" style="font-size:22px; color:#777">Reakce na odloučení · schéma</div>
+      <svg width="828" height="230" style="margin-top:10px">
+        <line x1="0" y1="200" x2="828" y2="200" class="axis"/>
+        <rect id="p-b1" x="70" y="140" width="190" height="60" fill="var(--muted)"/>
+        <rect id="p-b2" x="520" y="20" width="190" height="180" fill="var(--accent-red)"/>
+        <text x="165" y="128" text-anchor="middle" font-size="28" fill="#4a4744">1. DEN</text>
+        <text x="615" y="10" text-anchor="middle" font-size="28" fill="#4a4744" dy="-0">POZDĚJI</text>
+      </svg>
+    </div>
+    <div class="abs tag big" id="p-true" style="left:560px; top:792px; white-space:nowrap">✓ To je pravda</div>
+    <div class="abs tag red big" id="p-ass" style="left:90px; top:1200px; font-size:36px; white-space:nowrap">Předpoklad: stejně je rozdělí</div>
+  </div></div>
+
+  <!-- 7 · POINTA (tmavá) -->
+  <div id="s7" class="layer">
+    <div class="dark-bg"></div>
+    <div class="world" id="w7">
+      <div class="abs h1" id="k-l1" style="left:80px; top:600px; width:920px; color:#f3eee4; font-size:104px">Takže aby je odloučení nebolelo,</div>
+      <div class="abs h1" id="k-l2" style="left:80px; top:960px; width:920px; color:#f3eee4; font-size:128px">odloučí je <span class="hl" id="k-hl" style="color:var(--ink)">dřív.</span></div>
+    </div>
+  </div>
+
+  <!-- 8 · MLÉKO -->
+  <div id="s8" class="layer"><div class="world" id="w8">
+    <div class="abs eyebrow" id="m-eye" style="left:80px; top:300px">Proč je vůbec rozdělovat?</div>
+    <div class="abs h2" id="m-head" style="left:80px; top:350px; width:900px">Mléko je <span class="hl" id="m-hl1">po porodu</span></div>
+    <div class="abs" id="m-cow" style="left:40px; top:620px; width:600px"></div>
+    <div class="abs" id="m-calf" style="left:690px; top:830px; width:310px"></div>
+    <div class="abs" id="m-milk" style="left:790px; top:430px; width:150px"></div>
+    <div class="abs" id="m-tag" style="left:880px; top:420px; width:140px"></div>
+    <svg class="abs" width="1080" height="1920" style="left:0;top:0">
+      <path id="m-a1" d="M250,900 C330,1060 600,1060 735,965" fill="none" stroke="var(--kpz-green)" stroke-width="12" stroke-linecap="round"/>
+      <path id="m-a2" d="M520,1000 C620,900 700,800 800,700" fill="none" stroke="var(--accent-red)" stroke-width="12" stroke-linecap="round"/>
+      <g id="m-x" stroke="var(--accent-red)" stroke-width="16" stroke-linecap="round"><line x1="455" y1="985" x2="535" y2="1065"/><line x1="535" y1="985" x2="455" y2="1065"/></g>
+    </svg>
+    <div class="abs tag green" id="m-l1" style="left:330px; top:1090px">Pro tele</div>
+    <div class="abs tag red big" id="m-l2" style="left:470px; top:560px">Na prodej</div>
+  </div></div>
+
+  <!-- 9 · BIZARNÍ KRUH -->
+  <div id="s9" class="layer"><div class="world" id="w9">
+    <div class="abs eyebrow" id="l-eye" style="left:80px; top:300px">Bizarní kruh</div>
+    <div class="abs" id="l-ring" style="left:0; top:0; width:1080px; height:1920px">
+      <svg width="1080" height="1920" style="position:absolute;left:0;top:0" id="l-svg"></svg>
+      <div class="ring-node tag" id="l-n0" style="left:540px; top:470px">Mléko na prodej</div>
+      <div class="ring-node tag" id="l-n1" style="left:870px; top:820px; text-align:center">Těsné<br>stáje</div>
+      <div class="ring-node tag" id="l-n2" style="left:540px; top:1170px">Špinavé porodny</div>
+      <div class="ring-node tag red" id="l-n3" style="left:210px; top:820px; text-align:center">„Nutné“<br>oddělení</div>
+    </div>
+    <div class="ring-node" id="l-center" style="left:540px; top:800px; text-align:center">
+      <div class="tag red big" id="l-cruel" style="font-size:48px; white-space:nowrap">Krutá praxe</div>
+      <div class="h3" id="l-eq" style="margin-top:18px">= „nutnost“</div>
+    </div>
+  </div></div>
+
+  <!-- 10 · JDE TO JINAK -->
+  <div id="s10" class="layer"><div class="world" id="w10">
+    <div class="abs eyebrow" id="j-eye" style="left:80px; top:300px">Jde to jinak</div>
+    <div class="card" id="j-c1" style="left:70px; top:370px; width:940px; height:440px; overflow:hidden; padding:0">
+      <svg width="940" height="440" style="position:absolute;left:0;top:0"><path d="M0,250 C240,200 520,260 940,210 L940,440 L0,440 Z" fill="var(--pasture)"/></svg>
+      <div class="abs" style="left:36px; top:30px"><div class="mono" style="font-size:24px">Masné chovy</div><div class="h3" style="margin-top:6px">Telata sají u matek <span class="hl" id="j-hl1">měsíce</span></div></div>
+      <div class="abs" id="j-cow" style="left:420px; top:150px; width:400px"></div>
+      <div class="abs" id="j-calf" style="left:660px; top:250px; width:200px"></div>
+    </div>
+    <div class="card" id="j-c2" style="left:70px; top:860px; width:940px; padding:30px 36px">
+      <div class="mono" style="font-size:24px">Mléčné farmy · 6 zemí Evropy</div>
+      <div class="row" style="margin-top:6px"><div class="big-number" id="j-104" style="font-size:180px; color:var(--kpz-green); -webkit-text-stroke: 3px var(--ink)">104</div>
+        <div class="h3" style="margin-left:34px">farem: tele s matkou<br><span class="hl" id="j-hl2">7 až 305 dní</span></div></div>
+    </div>
+    <div class="abs tag big" id="j-idyl" style="left:200px; top:640px; transform-origin:center">Ani tam to není idyla</div>
+    <div class="card" id="j-not" style="left:110px; top:820px; width:860px; padding:40px 44px">
+      <div class="h1" style="font-size:88px">Okamžité oddělení <span class="hl" id="j-hl3">nutné není.</span></div>
+    </div>
+  </div></div>
+
+  <!-- 11 · NABÍDKA A POPTÁVKA -->
+  <div id="s11" class="layer"><div class="world" id="w11">
+    <div class="abs eyebrow" id="d-eye" style="left:80px; top:300px">Nabídka a poptávka</div>
+    <div class="abs" id="d-ring" style="left:0; top:0; width:1080px; height:1920px">
+      <svg width="1080" height="1920" style="position:absolute;left:0;top:0" id="d-svg"></svg>
+      <div class="ring-node" id="d-cart" style="left:323px; top:865px; width:190px"></div>
+      <div class="ring-node" id="d-barn" style="left:540px; top:480px; width:190px"></div>
+      <div class="ring-node" id="d-milk" style="left:757px; top:865px; width:96px"></div>
+      <div class="ring-node tag" id="d-l1" style="left:300px; top:1000px">Poptávka</div>
+      <div class="ring-node tag" id="d-l2" style="left:790px; top:470px">Nabídka</div>
+      <div class="ring-node tag yellow big" id="d-buy" style="left:540px; top:1000px">Kupujeme</div>
+    </div>
+    <svg class="abs" width="1080" height="1920" style="left:0;top:0"><path id="d-exit" d="M660,1010 C720,1060 740,1110 730,1170" fill="none" stroke="var(--kpz-green)" stroke-width="16" stroke-linecap="round"/></svg>
+    <div class="card row" id="d-alt" style="left:110px; top:1160px; width:860px; padding:24px 34px">
+      <div id="d-plant" style="width:110px"></div>
+      <div class="h2" style="margin-left:30px; font-size:62px"><span class="hl" id="d-hl" style="--hl-color: var(--kpz-green)">Rostlinné alternativy</span></div>
+    </div>
+  </div></div>
+
+  <!-- 12 · OUTRO -->
+  <div id="s12" class="layer"><div class="world" id="w12">
+    <div class="abs" id="o-logo" style="left:200px; top:560px; width:680px"><img src="../../brand/kpz/logo-kpz-svetle.png" style="width:100%"></div>
+    <div class="abs h2" id="o-name" style="left:0; width:1080px; top:1080px; text-align:center">Kolektiv pro zvířata</div>
+    <div class="abs eyebrow" id="o-src" style="left:0; width:1080px; top:1200px; text-align:center">Zdroje v popisku</div>
+  </div></div>
+
+  <!-- trvalé prvky -->
+  <div class="abs" id="wm"><img src="../../brand/kpz/logo-kpz-svetle.png"></div>
+  <div class="abs mono" id="src"></div>
+</div>
+
+<script>
+  const VO = window.VO;
+  VOX.setup({ width: 1080, height: 1920, duration: VO.duration, vignette: 0.14 });
+  const { set, prog, pop, boil, highlight, draw, count, cutBlur, push, shot, ease, inOut, lerp, clamp, $ } = VOX;
+  const T = (id) => VOX.vo(id).t0, E = (id) => VOX.vo(id).t1;
+  /** čas začátku titulkového kousku obsahujícího slovo */
+  const W = (id, word) => VOX.wordT(id, word);
+  const LEAD = 0.15;
+  const C = {
+    s1: [0, T('efsa') - LEAD], s2: [T('efsa') - LEAD, T('why') - LEAD], s3: [T('why') - LEAD, T('hyg1') - LEAD],
+    s4: [T('hyg1') - LEAD, T('cru1') - LEAD], s5: [T('cru1') - LEAD, T('bon1') - LEAD], s6: [T('bon1') - LEAD, T('bon3') - LEAD],
+    s7: [T('bon3') - LEAD, T('milk') - LEAD], s8: [T('milk') - LEAD, T('loop') - LEAD], s9: [T('loop') - LEAD, T('alt1') - LEAD],
+    s10: [T('alt1') - LEAD, T('dem1') - LEAD], s11: [T('dem1') - LEAD, T('out') - LEAD], s12: [T('out') - LEAD, VO.duration + 1],
+  };
+  const SRC = {
+    s1: 'Zdroj: naschov.cz · ZSČR (odchov telat)', s2: 'Zdroj: EFSA Journal 2023, doi 10.2903/j.efsa.2023.7896',
+    s4: 'Zdroj: Nunney et al. 2023 · Beaver et al. 2019', s6: 'Zdroj: Stěhulová, Lidfors, Špinka 2008',
+    s8: 'Zdroj: Meagher et al. 2019', s10: 'Zdroj: Eriksson et al. 2022 (Animal) · poradenské zdroje k masnému chovu',
+  };
+
+  /** zobrazí záběr, kamera pomalu najíždí, blur přes oba střihy */
+  function frame(n, t, s0 = 1, s1 = 1.05, origin = '50% 45%') {
+    const [a, b] = C[n];
+    if (!shot('#' + n, t, a, b)) return false;
+    set('#w' + n.slice(1), { s: push(t, a, b, s0, s1), origin, blur: cutBlur(t, a, 26) + cutBlur(t, b, 26) });
+    return true;
+  }
+  const popIn = (sel, t, t0, extra = {}) => { const s = pop(t, t0); set(sel, { s, o: s > 0 ? 1 : 0, ...extra }); return s; };
+  const fadeUp = (sel, t, t0, dy = 40, dur = 0.35) => { const p = prog(t, t0, dur); set(sel, { y: (1 - p) * dy, o: p }); return p; };
+  const slideIn = (sel, t, t0, dx = 0, dy = 60, r = 0, dur = 0.4) => {
+    const p = prog(t, t0, dur, ease.outBack); set(sel, { x: (1 - p) * dx, y: (1 - p) * dy, r, o: prog(t, t0, 0.12) }); return p;
+  };
+  const cutout = (sel, t, seed, x = 0, y = 0, r = 0, s = 1, o = 1) => {
+    const b = boil(t, seed, 1.2, 0.25); set(sel, { x: x + b.x, y: y + b.y, r: r + b.r, s, o });
+  };
+
+  // ---------- ilustrace ----------
+  $('#h-cow').innerHTML = VOXI.cow({ facing: 'right' });
+  $('#h-calf').innerHTML = VOXI.cow({ calf: true });
+  $('#h-sc').innerHTML = VOXI.icon('scissors');
+  $('#p-cow').innerHTML = VOXI.cow({ facing: 'right' });
+  $('#p-calf').innerHTML = VOXI.cow({ calf: true });
+  $('#p-sc').innerHTML = VOXI.icon('scissors');
+  $('#g-calf').innerHTML = VOXI.cow({ calf: true });
+  $('#m-cow').innerHTML = VOXI.cow({ facing: 'right' });
+  $('#m-calf').innerHTML = VOXI.cow({ calf: true });
+  $('#m-milk').innerHTML = VOXI.icon('milk');
+  $('#m-tag').innerHTML = VOXI.icon('tag', 'Kč');
+  $('#j-cow').innerHTML = VOXI.cow({ spots: false, facing: 'right' });
+  $('#j-calf').innerHTML = VOXI.cow({ calf: true, spots: false });
+  ['z-pc1', 'z-pc2', 'z-pc3'].forEach((id, i) => $('#' + id).innerHTML = VOXI.cow({ facing: i === 1 ? 'left' : 'right' }));
+  $('#z-pcalf').innerHTML = VOXI.cow({ calf: true });
+  $('#d-cart').innerHTML = VOXI.icon('cart');
+  $('#d-barn').innerHTML = VOXI.icon('barn');
+  $('#d-milk').innerHTML = VOXI.icon('milk');
+  $('#d-plant').innerHTML = VOXI.icon('plant');
+
+  // sláma v porodně
+  (() => {
+    const R = VOX.rng(7); let s = '';
+    for (let i = 0; i < 70; i++) {
+      const x = R() * 880 + 10, y = R() * 620 + 10, a = R() * Math.PI, l = 18 + R() * 26;
+      s += `<line x1="${x}" y1="${y}" x2="${x + Math.cos(a) * l}" y2="${y + Math.sin(a) * l}"/>`;
+    }
+    $('#g-straw').innerHTML = s;
+  })();
+  // bakterie
+  const GERMS = [[150, 520], [800, 500], [210, 820], [860, 760], [520, 470], [640, 900], [120, 980 - 160], [430, 960]];
+  $('#g-germs').innerHTML = GERMS.map((g, i) => `<div class="abs germ" id="germ${i}" style="left:${g[0] - 45}px; top:${g[1] - 45}px; width:${70 + (i % 3) * 16}px">${VOXI.icon('germ')}</div>`).join('');
+  // přeplněná stáj (pohled shora)
+  (() => {
+    let h = '', i = 0;
+    const R = VOX.rng(3);
+    for (let r = 0; r < 4; r++) for (let c = 0; c < 7; c++) {
+      if (r === 2 && c === 3) continue;
+      const x = 18 + c * 124 + (R() * 20 - 10), y = 14 + r * 186 + (R() * 20 - 10), rot = R() * 40 - 20;
+      h += `<div class="abs cowtop" id="ct${i++}" style="left:${x}px; top:${y}px; width:100px; transform:rotate(${rot}deg)">${VOXI.cowTop()}</div>`;
+    }
+    h += `<div class="abs" id="ct-calf" style="left:${18 + 3 * 124 + 10}px; top:${14 + 2 * 186 + 30}px; width:80px">${VOXI.cowTop({ calf: true })}</div>`;
+    h += `<svg class="abs" width="200" height="200" style="left:${18 + 3 * 124 - 40}px; top:${14 + 2 * 186 - 20}px"><circle id="ct-ring" cx="100" cy="100" r="86" fill="none" stroke="var(--vox-yellow)" stroke-width="12"/></svg>`;
+    $('#z-herd').innerHTML = h;
+  })();
+  // kruhy (oblouky se šipkami)
+  function ringSVG(svgSel, cx, cy, r, n, gapDeg, color, prefix) {
+    let s = '';
+    for (let i = 0; i < n; i++) {
+      const a0 = (-90 + i * 360 / n + gapDeg) * Math.PI / 180, a1 = (-90 + (i + 1) * 360 / n - gapDeg) * Math.PI / 180;
+      const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0), x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+      const tx = -Math.sin(a1), ty = Math.cos(a1);         // tečna ve směru pohybu
+      const nx = Math.cos(a1), ny = Math.sin(a1);
+      const hx = x1 + tx * 4, hy = y1 + ty * 4;
+      const head = `M${hx - tx * 34 + nx * 20},${hy - ty * 34 + ny * 20} L${hx},${hy} L${hx - tx * 34 - nx * 20},${hy - ty * 34 - ny * 20}`;
+      s += `<path id="${prefix}a${i}" d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${color}" stroke-width="12" stroke-linecap="round"/>
+            <path id="${prefix}h${i}" d="${head}" fill="none" stroke="${color}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }
+    $(svgSel).innerHTML = s;
+  }
+  ringSVG('#l-svg', 540, 820, 330, 4, 24, 'var(--ink)', 'l');
+  ringSVG('#d-svg', 540, 740, 250, 3, 28, 'var(--ink)', 'd');
+
+  VOX.scene((t) => {
+    // ---------- 1 · HOOK ----------
+    if (frame('s1', t, 1.0, 1.06, '50% 55%')) {
+      const t0 = T('hook'), tCut = W('hook', 'hned') - 0.1, tNum = W('hook', 'Nejpozději');
+      fadeUp('#h-eye', t, t0 + 0.1);
+      cutout('#h-cow', t, 'hc', (1 - prog(t, t0, 0.5, ease.outBack)) * -500, 0, 0);
+      const calfOut = prog(t, tCut + 0.75, 0.6, ease.inCubic);
+      cutout('#h-calf', t, 'hk', (1 - prog(t, t0 + 0.2, 0.5, ease.outBack)) * 500 + calfOut * 520, calfOut * -30, calfOut * 12);
+      draw('#h-cut', prog(t, tCut, 0.6, ease.inOutCubic));
+      set('#h-cutsvg', { o: 1 - prog(t, tCut + 1.6, 0.3) });
+      const sc = prog(t, tCut, 0.7, ease.inOutCubic);
+      set('#h-sc', { x: -sc * 12, y: sc * 520, r: 90 + Math.sin(t * 30) * 8, o: (sc > 0 && sc < 1) ? 1 : 0 });
+      popIn('#h-num', t, tNum, { origin: '0% 50%' });
+    }
+    // ---------- 2 · EFSA ----------
+    if (frame('s2', t, 1.04, 1.0, '50% 30%')) {
+      const t0 = T('efsa');
+      const d = pop(t, C.s2[0], 0.45, 1.3);
+      cutout('#e-doc', t, 'ed', 0, (1 - d) * 60, -1.5, 0.92 + 0.08 * d, prog(t, C.s2[0], 0.15));
+      highlight('#e-hl', prog(t, W('efsa', 'aspoň') - 0.2, 0.6, ease.inOutSine));
+      set('#e-tl', { o: prog(t, t0 + 0.6, 0.3) });
+      set('#e-bar', { sx: prog(t, t0 + 0.8, 0.5, ease.outExpo), origin: '90px 0' });
+      $('#e-bar').style.transformBox = 'view-box';
+      popIn('#e-lab1', t, t0 + 1.1);
+      set('#e-24', { sy: pop(t, W('efsa', 'aspoň'), 0.4), origin: '810px 200px' });
+      $('#e-24').style.transformBox = 'view-box';
+      popIn('#e-lab2', t, W('efsa', 'aspoň') + 0.15);
+    }
+    // ---------- 3 · TŘI ARGUMENTY ----------
+    if (frame('s3', t)) {
+      const t0 = T('why');
+      fadeUp('#a-eye', t, t0);
+      fadeUp('#a-head', t, W('why', 'Chovatelé'), 50);
+      const tc = W('why', 'tři');
+      ['#a-c1', '#a-c2', '#a-c3'].forEach((s, i) => { const p = slideIn(s, t, tc + i * 0.28, -700, 0, i % 2 ? 1 : -1); });
+    }
+    // ---------- 4 · HYGIENA ----------
+    if (frame('s4', t, 1.0, 1.04)) {
+      const t0 = T('hyg1'), t2 = T('hyg2'), t3 = T('hyg3');
+      const schema = prog(t, t3 - 0.1, 0.35);
+      fadeUp('#g-head', t, t0);
+      const fl = prog(t, t0 + 0.3, 0.45, ease.outBack);
+      set('#g-floor', { y: (1 - fl) * 80, o: prog(t, t0 + 0.3, 0.15) * (1 - schema), s: 1 - 0.1 * schema });
+      cutout('#g-calf', t, 'gc', 0, (1 - pop(t, t0 + 0.5)) * 40, 0, pop(t, t0 + 0.5) || 0.001, 1 - schema);
+      GERMS.forEach((g, i) => {
+        const p = pop(t, W('hyg1', 'porodně') + i * 0.12, 0.3);
+        const b = boil(t, 'g' + i, 3, 8);
+        set('#germ' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 - schema : 0 });
+      });
+      popIn('#g-tag', t, W('hyg2', 'špinavá'), { r: -2, o: pop(t, W('hyg2', 'špinavá')) > 0 ? 1 - schema : 0 });
+      const st = slideIn('#g-study', t, W('hyg2', 'přínos'), 0, 120);
+      if (schema > 0) set('#g-study', { o: 1 - schema });
+      highlight('#g-hl', prog(t, W('hyg2', 'neprokázal') - 0.3, 0.6, ease.inOutSine));
+      // schéma: problém → řešení
+      set('#g-sch', { o: schema, y: (1 - schema) * 40 });
+      set('#g-strike', { sx: prog(t, t3 + 0.9, 0.35, ease.outCubic) });
+      popIn('#g-res', t, W('hyg3', 'Odnese') + 0.2, { r: -3 });
+    }
+    // ---------- 5 · ZALEHNUTÍ ----------
+    if (frame('s5', t, 1.0, 1.04)) {
+      const t0 = T('cru1'), tP = W('cru2', 'pastvě'), t3 = T('cru3');
+      const schema = prog(t, t3 - 0.1, 0.35);
+      fadeUp('#z-head', t, t0);
+      const pen = prog(t, t0 + 0.2, 0.4, ease.outBack);
+      const toPast = prog(t, tP - 0.25, 0.45, ease.inOutCubic);
+      set('#z-pen', { y: (1 - pen) * 80, x: -toPast * 1100, o: prog(t, t0 + 0.2, 0.15) });
+      for (let i = 0; i < 27; i++) {
+        const p = pop(t, t0 + 0.35 + (i % 9) * 0.05, 0.3);
+        const b = boil(t, 'ct' + i, 2.2, 1.5);
+        const el = $('#ct' + i); if (!el) continue;
+        el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${(el.dataset.r ??= (VOX.rng(i + 9)() * 40 - 20)) * 1 + b.r}deg) scale(${p})`;
+      }
+      popIn('#ct-calf', t, W('cru1', 'zalehnout') - 0.2);
+      draw('#ct-ring', prog(t, W('cru1', 'zalehnout'), 0.5));
+      popIn('#z-tag', t, W('cru2', 'těsných'), { r: 3 });
+      set('#z-past', { x: (1 - toPast) * 1100, o: (toPast > 0 ? 1 : 0) * (1 - schema) });
+      ['#z-pc1', '#z-pc2', '#z-pc3', '#z-pcalf'].forEach((s, i) => cutout(s, t, 'zp' + i));
+      popIn('#z-tag2', t, tP + 0.3, { r: -2 });
+      set('#z-sch', { o: schema, y: (1 - schema) * 40 });
+      set('#z-strike', { sx: prog(t, t3 + 0.85, 0.35, ease.outCubic) });
+      popIn('#z-res', t, W('cru3', 'Odnese') + 0.2, { r: -3 });
+    }
+    // ---------- 6 · POUTO ----------
+    if (frame('s6', t, 1.0, 1.05)) {
+      const t0 = T('bon1'), t2 = T('bon2');
+      fadeUp('#p-head', t, t0);
+      const cut = prog(t, W('bon2', 'stejně'), 0.45, ease.inOutCubic);
+      const away = prog(t, W('bon2', 'stejně') + 0.5, 0.5, ease.inCubic);
+      cutout('#p-cow', t, 'pc', (1 - prog(t, t0, 0.45, ease.outBack)) * -500);
+      cutout('#p-calf', t, 'pk', (1 - prog(t, t0 + 0.15, 0.45, ease.outBack)) * 500 + away * 120, 0, away * 6);
+      const bond = prog(t, t0 + 0.6, 0.6, ease.inOutCubic);
+      draw('#p-bondL', bond * (1 - cut * 0.5));
+      set('#p-bondL', { o: 1 - away });
+      set('#p-bondL2', { o: bond > 0.98 ? 1 - away : 0 });
+      set('#p-sc', { y: lerp(-120, 110, cut), r: 90, o: cut > 0 && away < 1 ? 1 : 0 });
+      slideIn('#p-chart', t, W('bon1', 'bolet') - 0.3, 0, 120);
+      set('#p-b1', { sy: prog(t, W('bon1', 'bolet'), 0.4, ease.outBack), origin: '0 200px' });
+      set('#p-b2', { sy: prog(t, W('bon1', 'bolet') + 0.25, 0.5, ease.outBack), origin: '0 200px' });
+      $('#p-b1').style.transformBox = $('#p-b2').style.transformBox = 'view-box';
+      popIn('#p-true', t, W('bon1', 'pravda'), { r: -3 });
+      popIn('#p-ass', t, W('bon2', 'stejně') + 0.15, { r: 2 });
+    }
+    // ---------- 7 · POINTA ----------
+    if (frame('s7', t, 1.0, 1.04, '30% 50%')) {
+      fadeUp('#k-l1', t, T('bon3'), 50, 0.4);
+      const p = prog(t, T('bon4'), 0.4, ease.outBack);
+      set('#k-l2', { s: 0.85 + 0.15 * p, o: prog(t, T('bon4'), 0.1), origin: '0% 50%' });
+      highlight('#k-hl', prog(t, T('bon4') + 0.55, 0.45, ease.inOutSine));
+    }
+    // ---------- 8 · MLÉKO ----------
+    if (frame('s8', t, 1.0, 1.05)) {
+      const t0 = T('milk'), tPor = W('milk', 'protože'), tTele = W('milk', 'pro tele'), tSale = W('milk', 'Tady');
+      fadeUp('#m-eye', t, t0);
+      fadeUp('#m-head', t, tPor, 40);
+      highlight('#m-hl1', prog(t, tPor + 0.5, 0.5, ease.inOutSine));
+      cutout('#m-cow', t, 'mc', (1 - prog(t, t0 + 0.1, 0.45, ease.outBack)) * -600);
+      cutout('#m-calf', t, 'mk', (1 - prog(t, t0 + 0.3, 0.45, ease.outBack)) * 500);
+      draw('#m-a1', prog(t, tTele, 0.6, ease.inOutCubic));
+      popIn('#m-l1', t, tTele + 0.4);
+      const sx = pop(t, tSale, 0.3); set('#m-x', { s: sx, o: sx > 0 ? 1 : 0 }); $('#m-x').style.transformBox = 'fill-box'; $('#m-x').style.transformOrigin = 'center';
+      draw('#m-a2', prog(t, tSale + 0.2, 0.6, ease.inOutCubic));
+      cutout('#m-milk', t, 'mm', 0, 0, -4, pop(t, tSale + 0.6) || 0.001);
+      cutout('#m-tag', t, 'mt', 0, 0, 12, pop(t, tSale + 0.8) || 0.001);
+      popIn('#m-l2', t, W('milk', 'prodej'), { r: -3 });
+    }
+    // ---------- 9 · BIZARNÍ KRUH ----------
+    if (frame('s9', t, 1.0, 1.06, '50% 42%')) {
+      const t0 = T('loop'), tCruel = W('loop', 'Krutou'), tNut = W('loop', 'nutnost');
+      fadeUp('#l-eye', t, t0);
+      const rot = (t - t0) * 2.2;
+      set('#l-ring', { r: 0 });
+      ['#l-n0', '#l-n1', '#l-n2', '#l-n3'].forEach((s, i) => {
+        const p = pop(t, t0 + 0.2 + i * 0.55); const b = boil(t, s, 1, .4);
+        $(s).style.opacity = p > 0 ? 1 : 0;
+        $(s).style.transform = `translate(-50%, -50%) translate(${b.x}px, ${b.y}px) scale(${p})`;
+      });
+      for (let i = 0; i < 4; i++) {
+        const p = prog(t, t0 + 0.45 + i * 0.55, 0.5, ease.inOutCubic);
+        draw('#la' + i, p); set('#lh' + i, { o: p > 0.97 ? 1 : 0 });
+      }
+      // druhé kolo: šipky "pulzují" dokola
+      const lap = prog(t, t0 + 3.0, 2.5, ease.linear);
+      for (let i = 0; i < 4; i++) $('#la' + i).style.strokeWidth = 12 + 6 * Math.max(0, 1 - Math.abs(lap * 4 - i - 0.5));
+      const cp = pop(t, tCruel, 0.4, 2.2);
+      $('#l-center').style.transform = `translate(-50%, -50%) rotate(-4deg) scale(${cp})`;
+      $('#l-center').style.opacity = cp > 0 ? 1 : 0;
+      set('#l-eq', { o: prog(t, tNut - 0.1, 0.25) });
+    }
+    // ---------- 10 · JDE TO JINAK ----------
+    if (frame('s10', t, 1.0, 1.04)) {
+      const t0 = T('alt1'), tFarm = W('alt1', 'přes sto'), t2 = T('alt2'), tNot = W('alt2', 'Okamžité');
+      fadeUp('#j-eye', t, t0);
+      const dim = prog(t, t2 + 0.1, 0.4);
+      slideIn('#j-c1', t, t0 + 0.2, 0, 100); if (dim) set('#j-c1', { o: 1 - 0.75 * dim, s: 1 - 0.04 * dim });
+      cutout('#j-cow', t, 'jc'); cutout('#j-calf', t, 'jk');
+      highlight('#j-hl1', prog(t, W('alt1', 'měsíce') - 0.1, 0.5));
+      slideIn('#j-c2', t, tFarm - 0.1, 0, 100); if (dim) set('#j-c2', { o: 1 - 0.75 * dim, s: 1 - 0.04 * dim });
+      count('#j-104', 0, 104, prog(t, tFarm, 0.9, ease.outCubic));
+      highlight('#j-hl2', prog(t, tFarm + 1.0, 0.6));
+      const ip = pop(t, t2 + 0.1, 0.4);
+      set('#j-idyl', { s: ip, o: ip > 0 ? 1 - prog(t, tNot - 0.2, 0.2) : 0, r: -4 });
+      slideIn('#j-not', t, tNot - 0.1, 0, 80);
+      highlight('#j-hl3', prog(t, W('alt2', 'nutné') - 0.1, 0.5));
+    }
+    // ---------- 11 · NABÍDKA A POPTÁVKA ----------
+    if (frame('s11', t, 1.0, 1.04, '50% 40%')) {
+      const t0 = T('dem1'), tBuy = W('dem1', 'kupujeme'), t2 = T('dem2'), tAlt = W('dem2', 'Rostlinných');
+      fadeUp('#d-eye', t, t0);
+      const out = prog(t, t2 + 0.2, 0.5, ease.inOutCubic);
+      ['#d-cart', '#d-barn', '#d-milk', '#d-l1', '#d-l2'].forEach((s, i) => {
+        const p = pop(t, t0 + 0.2 + i * 0.2); const b = boil(t, s, 1, .3);
+        $(s).style.transform = `translate(-50%, -50%) translate(${b.x}px, ${b.y}px) rotate(${b.r}deg) scale(${p})`;
+        $(s).style.opacity = (p > 0 ? 1 : 0) * (1 - 0.6 * out);
+      });
+      for (let i = 0; i < 3; i++) {
+        const p = prog(t, t0 + 0.5 + i * 0.4, 0.45, ease.inOutCubic);
+        draw('#da' + i, p); set('#dh' + i, { o: p > 0.97 ? 1 - 0.6 * out : 0 }); set('#da' + i, { o: 1 - 0.6 * out });
+      }
+      const bp = pop(t, tBuy, 0.35);
+      $('#d-buy').style.transform = `translate(-50%, -50%) rotate(-3deg) scale(${bp})`;
+      $('#d-buy').style.opacity = (bp > 0 ? 1 : 0) * (1 - out);
+      draw('#d-exit', out);
+      slideIn('#d-alt', t, tAlt - 0.25, 0, 90);
+      highlight('#d-hl', prog(t, tAlt + 0.2, 0.7, ease.inOutSine));
+    }
+    // ---------- 12 · OUTRO ----------
+    if (frame('s12', t, 1.0, 1.03)) {
+      const t0 = C.s12[0];
+      const lp = pop(t, t0 + 0.1, 0.5, 1.4);
+      set('#o-logo', { s: lp, o: lp > 0 ? 1 : 0 });
+      fadeUp('#o-name', t, t0 + 0.5);
+      fadeUp('#o-src', t, T('out') + 1.6);
+    }
+
+    // ---------- trvalé prvky ----------
+    const inDark = t >= C.s7[0] && t < C.s7[1], inOutro = t >= C.s12[0];
+    set('#wm', { o: inDark || inOutro ? 0 : prog(t, 0.3, 0.3) * 0.95 });
+    let src = '';
+    for (const k in SRC) if (t >= C[k][0] + 0.4 && t < C[k][1]) src = SRC[k];
+    $('#src').textContent = src;
+    set('#src', { o: src ? 0.85 : 0 });
+    VOX.captions(t, { y: 1470 });
+    const cap = $('#vox-captions'); if (cap) cap.style.filter = inDark ? 'invert(0)' : '';
+  });
+</script>
+</body>
+</html>

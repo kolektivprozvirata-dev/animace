@@ -239,6 +239,14 @@ designu, ne přes něj:
 - pevná zóna (např. spodní třetina nad UI sítě); grafika se navrhuje kolem ní,
 - tam, kde slovo už je v animaci (velké číslo, headline), titulek se schová – žádné zdvojení.
 
+## 9. Rozhodnutí KPZ (2026-10-14) a jak jsou promítnutá do v1
+- **Česká praxe:** „často hned po porodu, nejpozději do 12 hodin“ (KPZ z praxe; zdroje: chovatelské materiály 12 h, programy proti paratuberkulóze doporučují „ihned“).
+- **Zalehnutí:** postoj KPZ – riziko je důsledkem těsna; na pastvě se to prakticky neděje. Ve videu: „Hrozí to ale hlavně v těsných stájích. Na pastvě se to prakticky neděje.“ (Pozn.: tvrdá data o četnosti jsme nenašli – formulace „prakticky“.)
+- **Wenker 2022** (víc nemocí v jedné stáji) – ve videu nezmiňovat.
+- **„Krutý“** – použito: „Krutou praxi vydává za nutnost.“
+- **Úhel:** bizarní kruh + nabídka a poptávka.
+- **Rozsah:** v1 = jeden reel se všemi třemi argumenty, ~107 s.
+
 ## Co zbývá ověřit před výrobou
 1. Plné texty: Beaver 2019, Meagher 2019, EFSA 2023 (formulace 24 h), naschov.cz / ZSČR (12 h, 97 %), vyhláška 208/2004 (aktuální znění).
 2. Zda existuje český mléčný chov s kontaktem matky a telete (dotaz na PRO-BIO, KEZ, VÚŽV).

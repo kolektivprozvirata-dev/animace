@@ -10,6 +10,7 @@ podle zpětné vazby uživatele (viz „Smyčka zpětné vazby“). Před prací
 přečti:
 
 1. `FEEDBACK.md` → sekci **Pravidla z feedbacku** (mají přednost před vším ostatním).
+   U videí pro Kolektiv pro zvířata navíc `brand/kpz/README.md` (hodnoty, tón, slovník, loga).
 2. `references/style-guide.md` – vizuální jazyk (barvy, typo, textury, pohyb).
 3. `references/techniques.md` – jak jednotlivé efekty postavit v našem runtime.
 
@@ -46,6 +47,28 @@ zadání větší než jeden záběr:
 - Barvy/písma ber z tokenů ve `runtime/vox.css`; když je potřeba nový token,
   přidej ho tam (a pokud jde o feedback, zapiš ho i do FEEDBACK.md).
 - Fotky do koláže připrav přes `scripts/halftone.py` (halftone / duotón).
+
+### 2b. Voiceover a titulky (český hlas)
+1. Napiš `scenes/<projekt>/vo.json` – segmenty `{id, text, say?, pause?, cap?}`
+   (`say` = výslovnost, čísla slovy; `*slovo*` = zvýraznění v titulku).
+2. `python3 .claude/skills/vox-animation/scripts/tts.py scenes/<projekt>/vo.json`
+   → `assets/vo.wav`, `assets/vo-timing.js`, `assets/vo.srt`. Vypíše časy segmentů –
+   zkontroluj celkovou délku proti zadání a případně zkracuj text / `length_scale`.
+   (Piper ~11 znaků/s při `length_scale` 0.85.)
+3. Ve scéně načti `assets/vo-timing.js` a časuj podle hlasu:
+   `VOX.vo('id').t0`, `VOX.wordT('id', 'slovo')` (odhad času slova), titulky
+   `VOX.captions(t, { y: 1470 })`. `VOX.setup({ duration: VO.duration })`.
+4. Render se zvukem: `render.mjs scena.html --audio assets/vo.wav`.
+   Model hlasu se stahuje z huggingface.co do `.cache/piper/` (gitignored).
+
+### 2c. Ilustrace
+`runtime/vox-icons.js`: `VOXI.cow()`, `VOXI.cow({calf:true, facing:'right', spots:false})`,
+`VOXI.cowTop()`, `VOXI.icon('germ'|'scissors'|'milk'|'cart'|'plant'|'tag'|'barn')`.
+Papírový výřez s trhaným okrajem je zabudovaný. Nové ilustrace přidávej sem, ať jsou znovupoužitelné.
+
+### 2d. Svislý formát (reels)
+`VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].
+Vzor: `scenes/kpz-telata/reel.html`.
 
 ### 3. Kontrola vlastníma očima (povinné před odevzdáním)
 ```bash
@@ -113,10 +136,12 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
 │   ├── techniques.md         ← recepty: jak udělat efekt X
 │   └── sources.md            ← rešerše a zdroje
 ├── runtime/
-│   ├── vox.js                ← deterministický animační runtime (VOX.*)
+│   ├── vox.js                ← deterministický animační runtime (VOX.*, titulky)
+│   ├── vox-icons.js          ← papírové ilustrace (kráva, tele, ikony)
 │   └── vox.css               ← tokeny, typografie, koláž, dokument, grafy
 ├── scripts/
 │   ├── render.mjs            ← HTML → MP4 / PNG / kontaktní arch
+│   ├── tts.py                ← český voiceover (Piper) + časování + titulky
 │   └── halftone.py           ← fotka → halftone / duotón PNG
 └── examples/demo.html        ← ukázka: titulek, dokument, graf
 ```

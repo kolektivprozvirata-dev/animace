@@ -1,0 +1,113 @@
+{
+ "voice": "cs_CZ-jirka-medium",
+ "length_scale": 0.83,
+ "gap": 0.22,
+ "lead_in": 0.4,
+ "tail": 2.0,
+ "segments": [
+  {
+   "id": "hook",
+   "say": "Tele se v mléčných chovech často odebírá matce hned po porodu. Nejpozději do dvanácti hodin.",
+   "text": "Tele se v mléčných chovech často odebírá matce *hned po porodu.* Nejpozději do *12 hodin.*",
+   "pause": 0.35
+  },
+  {
+   "id": "efsa",
+   "say": "Přitom evropský úřad efsa doporučuje nechat ho s ní aspoň den.",
+   "text": "Přitom evropský úřad EFSA doporučuje nechat ho s ní *aspoň den.*",
+   "pause": 0.4
+  },
+  {
+   "id": "why",
+   "text": "Proč ten spěch? Chovatelé mají *tři argumenty.*",
+   "pause": 0.4
+  },
+  {
+   "id": "hyg1",
+   "text": "Za prvé: *hygiena.* V porodně hrozí nákazy.",
+   "pause": 0.2
+  },
+  {
+   "id": "hyg2",
+   "text": "Jenže rizikem je i *špinavá porodna* sama. A přínos časného oddělení pro zdraví telat výzkum spolehlivě neprokázal.",
+   "pause": 0.25
+  },
+  {
+   "id": "hyg3",
+   "text": "Problém je v prostředí. Odnese to *tele.*",
+   "pause": 0.45
+  },
+  {
+   "id": "cru1",
+   "text": "Za druhé: kráva může tele *zalehnout.*",
+   "pause": 0.2
+  },
+  {
+   "id": "cru2",
+   "text": "Hrozí to ale hlavně v *těsných stájích.* Na pastvě se to prakticky neděje.",
+   "pause": 0.25
+  },
+  {
+   "id": "cru3",
+   "text": "Problém je v prostoru. Odnese to zase *tele.*",
+   "pause": 0.45
+  },
+  {
+   "id": "bon1",
+   "text": "Za třetí: čím později je oddělí, tím víc to bude *bolet.* To je pravda.",
+   "pause": 0.2
+  },
+  {
+   "id": "bon2",
+   "text": "Jenže to počítá s tím, že je *stejně rozdělí.*",
+   "pause": 0.4
+  },
+  {
+   "id": "bon3",
+   "text": "Takže aby je odloučení nebolelo,",
+   "pause": 0.45,
+   "cap": false
+  },
+  {
+   "id": "bon4",
+   "text": "odloučí je dřív.",
+   "pause": 0.7,
+   "cap": false
+  },
+  {
+   "id": "milk",
+   "text": "Proč je vůbec rozdělovat? Kráva dává mléko, protože porodila. To mléko je pro tele. Tady je ale *na prodej.*",
+   "pause": 0.4
+  },
+  {
+   "id": "loop",
+   "text": "Systém si tak problémy vytvoří a pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
+   "pause": 0.45
+  },
+  {
+   "id": "alt1",
+   "text": "Že to jde jinak, ukazují masné chovy, kde telata sají u matek *měsíce.* I přes sto mléčných farem v Evropě, kde tele s matkou zůstává.",
+   "pause": 0.25
+  },
+  {
+   "id": "alt2",
+   "text": "Ani tam to není idyla, i tam je nakonec rozdělí. Okamžité oddělení ale *nutné není.*",
+   "pause": 0.45
+  },
+  {
+   "id": "dem1",
+   "text": "Celý ten kruh se točí, protože jeho mléko *kupujeme.*",
+   "pause": 0.3
+  },
+  {
+   "id": "dem2",
+   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je dnes spousta.",
+   "pause": 0.5
+  },
+  {
+   "id": "out",
+   "text": "Kolektiv pro zvířata. Zdroje v popisku.",
+   "cap": false
+  }
+ ]
+}

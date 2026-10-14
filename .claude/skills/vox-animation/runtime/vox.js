@@ -269,8 +269,71 @@
     else go();
   }
 
+  // ---------- voiceover & titulky ----------
+  /** Segment voiceoveru podle id (z vo-timing.js generovaného scripts/tts.py). */
+  function vo(id) {
+    const segs = (window.VO && window.VO.segments) || [];
+    const s = segs.find((x) => x.id === id);
+    if (!s) throw new Error('VO segment nenalezen: ' + id);
+    return s;
+  }
+
+  /**
+   * Odhad času, kdy v segmentu zazní dané slovo (interpolace podle znaků
+   * uvnitř titulkového kousku). Přesnost ~0.1–0.2 s – na nástupy grafiky stačí.
+   */
+  function wordT(id, word) {
+    const s = vo(id);
+    const w = word.toLowerCase();
+    for (const c of s.chunks) {
+      const plain = c.text.replace(/\*/g, '');
+      const i = plain.toLowerCase().indexOf(w);
+      if (i >= 0) return c.t0 + (c.t1 - c.t0) * (i / Math.max(1, plain.length));
+    }
+    console.warn('slovo nenalezeno v segmentu', id, word);
+    return s.t0;
+  }
+
+  /**
+   * Vypálené titulky. Vytvoří #vox-captions (pokud chybí) a ukáže aktuální
+   * kousek textu. *slovo* = zvýraznění. Segmenty s cap:false se přeskočí.
+   * opts: {y (střed v px), hold (s po konci segmentu), hide: [[t0,t1],...]}
+   */
+  function captions(t, opts = {}) {
+    const segs = (window.VO && window.VO.segments) || [];
+    let box = document.getElementById('vox-captions');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'vox-captions';
+      ($('#stage') || document.body).append(box);
+    }
+    if (opts.y !== undefined) box.style.top = opts.y + 'px';
+    const hold = opts.hold ?? 0.25;
+    let cur = null, start = 0;
+    for (const s of segs) {
+      if (s.cap === false) continue;
+      for (let i = 0; i < s.chunks.length; i++) {
+        const c = s.chunks[i];
+        const end = i < s.chunks.length - 1 ? s.chunks[i + 1].t0 : s.t1 + hold;
+        if (t >= c.t0 && t < end) { cur = c; start = c.t0; }
+      }
+    }
+    if (cur && (opts.hide || []).some(([a, b]) => t >= a && t < b)) cur = null;
+    if (!cur) { box.style.visibility = 'hidden'; box.__txt = null; return; }
+    if (box.__txt !== cur.text) {
+      const html = cur.text.split(' ').map((w) =>
+        /^\*.*\*[.,!?…:;]*$/.test(w) || /^\*[^*]+\*?$/.test(w)
+          ? `<span class="cap-hl">${w.replace(/\*/g, '')}</span>` : w).join(' ');
+      box.innerHTML = `<span class="cap">${html}</span>`;
+      box.__txt = cur.text;
+    }
+    box.style.visibility = 'visible';
+    const p = prog(t, start, 0.17, ease.outBack);
+    box.style.transform = `translate(-50%, -50%) scale(${0.9 + 0.1 * p})`;
+  }
+
   window.VOX = {
     cfg, setup, scene, ease, clamp, lerp, prog, inOut, rng, hash, step,
-    $, $$, set, pop, boil, highlight, draw, typeOn, count, camera, cutBlur, push, shot,
+    $, $$, set, pop, boil, highlight, draw, typeOn, count, camera, cutBlur, push, shot, vo, wordT, captions,
   };
 })();

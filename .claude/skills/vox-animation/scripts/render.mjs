@@ -94,7 +94,7 @@ async function main() {
     if (args.contact !== undefined) {
       const n = parseInt(args.contact === true ? '12' : args.contact, 10);
       const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'vox-contact-'));
-      const cols = Math.ceil(Math.sqrt(n));
+      const cols = cfg.width >= cfg.height ? Math.ceil(Math.sqrt(n)) : Math.min(n, Math.ceil(Math.sqrt(n * 2.5)));
       for (let i = 0; i < n; i++) {
         const t = (cfg.duration * (i + 0.5)) / n;
         fs.writeFileSync(path.join(tmp, `f${String(i).padStart(3, '0')}.png`), await shoot(t));
@@ -103,7 +103,7 @@ async function main() {
       const out = path.resolve(args.out || path.join(outDir, `${name}_contact.png`));
       const f = ffmpeg([
         '-framerate', '1', '-i', path.join(tmp, 'f%03d.png'),
-        '-vf', `scale=640:-1,tile=${cols}x${rows}:padding=8:color=black`,
+        '-vf', `scale=${cfg.width >= cfg.height ? 640 : 300}:-1,tile=${cols}x${rows}:padding=8:color=black`,
         '-frames:v', '1', out,
       ]);
       f.stdin.end();

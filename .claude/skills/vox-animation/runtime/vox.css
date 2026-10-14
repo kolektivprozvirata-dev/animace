@@ -17,6 +17,9 @@
   --accent-teal: #2a9d8f;
 
   /* tmavá varianta */
+  --kpz-green: #00c800;
+  --pasture: #8fb35b;
+
   --dark: #1b1a19;
   --dark-ink: #f3eee4;
 
@@ -166,3 +169,30 @@ svg .line { fill: none; stroke: var(--ink); stroke-width: 7; stroke-linecap: rou
 svg .line.accent { stroke: var(--accent-red); }
 svg .route { fill: none; stroke: var(--accent-red); stroke-width: 6; stroke-dasharray: 2 14; stroke-linecap: round; }
 svg text { font-family: var(--font-mono); }
+
+/* ---------- vypálené titulky (VOX.captions) ---------- */
+#vox-captions {
+  position: absolute;
+  left: 50%;
+  top: 1440px;
+  width: 900px;
+  text-align: center;
+  z-index: 850;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+#vox-captions .cap {
+  display: inline;
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  background: #fbf8f2;
+  padding: 4px 20px 8px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 0 3px 0 rgba(0,0,0,.18), 0 10px 24px rgba(0,0,0,.18);
+}
+#vox-captions .cap-hl { background: var(--vox-yellow); padding: 0 6px; margin: 0 -6px; }
