@@ -267,3 +267,7 @@ designu, ne přes něj:
 1. Plné texty: Beaver 2019, Meagher 2019, EFSA 2023 (formulace 24 h), naschov.cz / ZSČR (12 h, 97 %), vyhláška 208/2004 (aktuální znění).
 2. Zda existuje český mléčný chov s kontaktem matky a telete (dotaz na PRO-BIO, KEZ, VÚŽV).
 3. Logo KPZ (Google Drive a web byly z prostředí nedostupné).
+
+## Nápady pro další verzi (od KPZ)
+- Hláška k hygieně: „Zvířata jsme zavřeli do hal, kde díky systému, který jsme vytvořili, mají zemědělci další argument, proč oddělit telata od matek. Samozřejmě, ani pastvina není bez infekčních rizik, ale v normálních podmínkách přítomnost matky sama o sobě není hygienický problém, který by se musel řešit odloučením.“
+  - Poznámka k přesnosti: výjimkou je infikovaná matka (např. paratuberkulóza – přenos mlezivem, mlékem, trusem). Formulace „v normálních podmínkách“ to kryje; při použití mít po ruce zdroj (Beaver et al. 2019 – kontakt s matkou nebyl v přehledu významným rizikovým faktorem; Nunney et al. 2023 – špinavé prostředí jako samostatné riziko).
