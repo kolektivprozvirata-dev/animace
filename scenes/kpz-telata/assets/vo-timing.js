@@ -1,828 +1,842 @@
 // vygenerováno scripts/tts.py – neupravovat ručně
 window.VO = {
- "duration": 177.414,
+ "duration": 178.054,
  "segments": [
   {
-   "id": "hook1",
-   "t0": 0.4,
-   "t1": 6.809,
-   "text": "Podle chovatelských příruček se tele odebírá matce *nejpozději do 12 hodin* po porodu.",
+   "id": "hook0",
+   "t0": 0.3,
+   "t1": 3.353,
+   "text": "Krabice mléka z obchodu začíná *porodem.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 0.4,
-     "t1": 1.8,
-     "text": "Podle chovatelských"
+     "t0": 0.3,
+     "t1": 1.896,
+     "text": "Krabice mléka z obchodu"
     },
     {
-     "t0": 1.8,
-     "t1": 3.568,
-     "text": "příruček se tele odebírá"
+     "t0": 1.896,
+     "t1": 3.353,
+     "text": "začíná *porodem.*"
+    }
+   ]
+  },
+  {
+   "id": "hook1",
+   "t0": 3.703,
+   "t1": 9.299,
+   "text": "Příručky uvádějí, že se tele odebírá matce *nejpozději do 12 hodin.*",
+   "cap": true,
+   "chunks": [
+    {
+     "t0": 3.703,
+     "t1": 5.237,
+     "text": "Příručky uvádějí,"
     },
     {
-     "t0": 3.568,
-     "t1": 5.188,
-     "text": "matce *nejpozději* *do* *12*"
+     "t0": 5.237,
+     "t1": 7.076,
+     "text": "že se tele odebírá matce"
     },
     {
-     "t0": 5.188,
-     "t1": 6.809,
-     "text": "*hodin* po porodu."
+     "t0": 7.076,
+     "t1": 9.299,
+     "text": "*nejpozději* *do* *12* *hodin.*"
     }
    ]
   },
   {
    "id": "hook2",
-   "t0": 6.989,
-   "t1": 9.218,
+   "t0": 9.479,
+   "t1": 11.697,
    "text": "V praxi je to ale často *hned.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 6.989,
-     "t1": 8.103,
+     "t0": 9.479,
+     "t1": 10.588,
      "text": "V praxi je to ale"
     },
     {
-     "t0": 8.103,
-     "t1": 9.218,
+     "t0": 10.588,
+     "t1": 11.697,
      "text": "často *hned.*"
     }
    ]
   },
   {
    "id": "hook3",
-   "t0": 9.468,
-   "t1": 14.774,
+   "t0": 11.947,
+   "t1": 17.079,
    "text": "Pak často tráví týdny *samo v boxu,* přestože je to *společenské zvíře.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 9.468,
-     "t1": 11.307,
+     "t0": 11.947,
+     "t1": 13.726,
      "text": "Pak často tráví týdny *samo*"
     },
     {
-     "t0": 11.307,
-     "t1": 13.076,
+     "t0": 13.726,
+     "t1": 15.436,
      "text": "*v* *boxu,* přestože je to"
     },
     {
-     "t0": 13.076,
-     "t1": 14.774,
+     "t0": 15.436,
+     "t1": 17.079,
      "text": "*společenské* *zvíře.*"
     }
    ]
   },
   {
-   "id": "veg1",
-   "t0": 15.124,
-   "t1": 23.947,
-   "text": "Krávy jsou cítící bytosti. Matka tele hned po porodu olizuje a oba se *poznají po hlase.* Mezi nimi bývá *silné pouto.*",
-   "cap": true,
-   "chunks": [
-    {
-     "t0": 15.124,
-     "t1": 17.312,
-     "text": "Krávy jsou cítící bytosti."
-    },
-    {
-     "t0": 17.312,
-     "t1": 19.022,
-     "text": "Matka tele hned po porodu"
-    },
-    {
-     "t0": 19.022,
-     "t1": 20.664,
-     "text": "olizuje a oba se *poznají*"
-    },
-    {
-     "t0": 20.664,
-     "t1": 22.716,
-     "text": "*po* *hlase.* Mezi nimi bývá"
-    },
-    {
-     "t0": 22.716,
-     "t1": 23.947,
-     "text": "*silné* *pouto.*"
-    }
-   ]
-  },
-  {
    "id": "veg2",
-   "t0": 24.147,
-   "t1": 28.443,
+   "t0": 17.429,
+   "t1": 21.724,
    "text": "Ať hned, nebo později: oddělit mládě od matky je *kruté.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 24.147,
-     "t1": 25.998,
+     "t0": 17.429,
+     "t1": 19.279,
      "text": "Ať hned, nebo později:"
     },
     {
-     "t0": 25.998,
-     "t1": 27.65,
+     "t0": 19.279,
+     "t1": 20.931,
      "text": "oddělit mládě od matky je"
     },
     {
-     "t0": 27.65,
-     "t1": 28.443,
+     "t0": 20.931,
+     "t1": 21.724,
      "text": "*kruté.*"
     }
    ]
   },
   {
    "id": "why",
-   "t0": 28.793,
-   "t1": 34.133,
-   "text": "Chovatelé pro to mají několik argumentů. Mezi *nejčastější* patří tyto čtyři.",
+   "t0": 22.074,
+   "t1": 27.067,
+   "text": "Chovatelé mají několik argumentů. Mezi *nejčastější* patří tyto čtyři.",
    "cap": true,
    "chunks": [
     {
-     "t0": 28.793,
-     "t1": 30.128,
-     "text": "Chovatelé pro to mají"
+     "t0": 22.074,
+     "t1": 23.501,
+     "text": "Chovatelé mají několik"
     },
     {
-     "t0": 30.128,
-     "t1": 31.654,
-     "text": "několik argumentů."
+     "t0": 23.501,
+     "t1": 24.538,
+     "text": "argumentů."
     },
     {
-     "t0": 31.654,
-     "t1": 33.053,
+     "t0": 24.538,
+     "t1": 25.964,
      "text": "Mezi *nejčastější* patří"
     },
     {
-     "t0": 33.053,
-     "t1": 34.133,
+     "t0": 25.964,
+     "t1": 27.067,
      "text": "tyto čtyři."
     }
    ]
   },
   {
    "id": "hyg1",
-   "t0": 34.433,
-   "t1": 38.996,
+   "t0": 27.367,
+   "t1": 31.906,
    "text": "Za prvé: *hygiena.* Tele prý musí pryč, aby se nenakazilo.",
    "cap": true,
    "chunks": [
     {
-     "t0": 34.433,
-     "t1": 36.081,
+     "t0": 27.367,
+     "t1": 29.006,
      "text": "Za prvé: *hygiena.*"
     },
     {
-     "t0": 36.081,
-     "t1": 37.475,
+     "t0": 29.006,
+     "t1": 30.393,
      "text": "Tele prý musí pryč,"
     },
     {
-     "t0": 37.475,
-     "t1": 38.996,
+     "t0": 30.393,
+     "t1": 31.906,
      "text": "aby se nenakazilo."
     }
    ]
   },
   {
    "id": "hyg2",
-   "t0": 39.196,
-   "t1": 44.583,
-   "text": "Jenže v kravínech často stojí *spousta krav na malé ploše,* i se svými výkaly.",
+   "t0": 32.106,
+   "t1": 42.114,
+   "text": "Jenže ve *velkokapacitních halách* žije spousta krav na malé ploše. Výkaly přibývají průběžně, k tomu moč. *Bakteriím* se tam prostě daří.",
    "cap": true,
    "chunks": [
     {
-     "t0": 39.196,
-     "t1": 40.689,
-     "text": "Jenže v kravínech často"
+     "t0": 32.106,
+     "t1": 33.785,
+     "text": "Jenže ve *velkokapacitních*"
     },
     {
-     "t0": 40.689,
-     "t1": 42.376,
-     "text": "stojí *spousta* *krav* *na* *malé*"
+     "t0": 33.785,
+     "t1": 35.397,
+     "text": "*halách* žije spousta krav"
     },
     {
-     "t0": 42.376,
-     "t1": 44.583,
-     "text": "*ploše,* i se svými výkaly."
+     "t0": 35.397,
+     "t1": 36.741,
+     "text": "na malé ploše."
+    },
+    {
+     "t0": 36.741,
+     "t1": 38.688,
+     "text": "Výkaly přibývají průběžně,"
+    },
+    {
+     "t0": 38.688,
+     "t1": 39.83,
+     "text": "k tomu moč."
+    },
+    {
+     "t0": 39.83,
+     "t1": 41.375,
+     "text": "*Bakteriím* se tam prostě"
+    },
+    {
+     "t0": 41.375,
+     "t1": 42.114,
+     "text": "daří."
     }
    ]
   },
   {
    "id": "hyg3",
-   "t0": 44.783,
-   "t1": 51.471,
-   "text": "Na pastvě u tzv. masných krav je prostoru dost a telata tam s matkami zůstávají *měsíce.*",
+   "t0": 42.314,
+   "t1": 48.897,
+   "text": "U tzv. masných krav na pastvě je prostoru dost a telata zůstávají s matkami *měsíce.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 44.783,
-     "t1": 46.316,
-     "text": "Na pastvě u tzv."
+     "t0": 42.314,
+     "t1": 44.317,
+     "text": "U tzv. masných krav na"
     },
     {
-     "t0": 46.316,
-     "t1": 47.988,
-     "text": "masných krav je prostoru"
+     "t0": 44.317,
+     "t1": 46.106,
+     "text": "pastvě je prostoru dost a"
     },
     {
-     "t0": 47.988,
-     "t1": 49.311,
-     "text": "dost a telata tam s"
+     "t0": 46.106,
+     "t1": 47.967,
+     "text": "telata zůstávají s matkami"
     },
     {
-     "t0": 49.311,
-     "t1": 51.471,
-     "text": "matkami zůstávají *měsíce.*"
+     "t0": 47.967,
+     "t1": 48.897,
+     "text": "*měsíce.*"
     }
    ]
   },
   {
    "id": "hyg4",
-   "t0": 51.721,
-   "t1": 54.786,
-   "text": "Problém je v prostředí. Odnese to ale *tele.*",
+   "t0": 49.097,
+   "t1": 53.683,
+   "text": "Problém je v prostředí. Odnese to, jak jinak, *tele a jeho máma.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 51.721,
-     "t1": 53.367,
+     "t0": 49.097,
+     "t1": 50.802,
      "text": "Problém je v prostředí."
     },
     {
-     "t0": 53.367,
-     "t1": 54.786,
-     "text": "Odnese to ale *tele.*"
+     "t0": 50.802,
+     "t1": 51.566,
+     "text": "Odnese to,"
+    },
+    {
+     "t0": 51.566,
+     "t1": 52.33,
+     "text": "jak jinak,"
+    },
+    {
+     "t0": 52.33,
+     "t1": 53.683,
+     "text": "*tele* *a* *jeho* *máma.*"
     }
    ]
   },
   {
    "id": "cru1",
-   "t0": 55.136,
-   "t1": 58.061,
+   "t0": 54.033,
+   "t1": 56.947,
    "text": "Za druhé: kráva může tele *zalehnout.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 55.136,
-     "t1": 56.997,
+     "t0": 54.033,
+     "t1": 55.887,
      "text": "Za druhé: kráva může tele"
     },
     {
-     "t0": 56.997,
-     "t1": 58.061,
+     "t0": 55.887,
+     "t1": 56.947,
      "text": "*zalehnout.*"
     }
    ]
   },
   {
    "id": "cru2",
-   "t0": 58.261,
-   "t1": 64.902,
-   "text": "To hrozí hlavně v *přeplněných stájích.* U tzv. masných krav na pastvě se to prakticky neděje.",
+   "t0": 57.147,
+   "t1": 64.925,
+   "text": "To hrozí hlavně v *přeplněných velkokapacitních halách.* U tzv. masných krav na pastvě se to prakticky neděje.",
    "cap": true,
    "chunks": [
     {
-     "t0": 58.261,
-     "t1": 59.326,
+     "t0": 57.147,
+     "t1": 58.24,
      "text": "To hrozí hlavně v"
     },
     {
-     "t0": 59.326,
-     "t1": 60.955,
-     "text": "*přeplněných* *stájích.*"
+     "t0": 58.24,
+     "t1": 58.947,
+     "text": "*přeplněných*"
     },
     {
-     "t0": 60.955,
-     "t1": 62.709,
+     "t0": 58.947,
+     "t1": 60.875,
+     "text": "*velkokapacitních* *halách.*"
+    },
+    {
+     "t0": 60.875,
+     "t1": 62.675,
      "text": "U tzv. masných krav na"
     },
     {
-     "t0": 62.709,
-     "t1": 64.088,
+     "t0": 62.675,
+     "t1": 64.09,
      "text": "pastvě se to prakticky"
     },
     {
-     "t0": 64.088,
-     "t1": 64.902,
+     "t0": 64.09,
+     "t1": 64.925,
      "text": "neděje."
     }
    ]
   },
   {
    "id": "cru3",
-   "t0": 65.152,
-   "t1": 68.078,
-   "text": "Problém je v prostoru. Odnese to zase *tele.*",
+   "t0": 65.125,
+   "t1": 68.968,
+   "text": "Problém je v prostoru. Odnese to zase *tele a jeho máma.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 65.152,
-     "t1": 66.669,
+     "t0": 65.125,
+     "t1": 66.781,
      "text": "Problém je v prostoru."
     },
     {
-     "t0": 66.669,
-     "t1": 68.078,
-     "text": "Odnese to zase *tele.*"
+     "t0": 66.781,
+     "t1": 68.022,
+     "text": "Odnese to zase *tele* *a*"
+    },
+    {
+     "t0": 68.022,
+     "t1": 68.968,
+     "text": "*jeho* *máma.*"
     }
    ]
   },
   {
    "id": "bon1",
-   "t0": 68.428,
-   "t1": 76.102,
-   "text": "Za třetí: čím později je oddělí, tím víc to bude *bolet.* To je pravda. Krávy pak bučí a tele hledají.",
+   "t0": 69.318,
+   "t1": 80.476,
+   "text": "Za třetí: *pouto.* Matka tele po porodu olizuje a oba se poznají po hlase. Pozdější oddělení prý *bolí víc.* Podle některých zdrojů je to údajně pravda.",
    "cap": true,
    "chunks": [
     {
-     "t0": 68.428,
-     "t1": 70.155,
-     "text": "Za třetí: čím později je"
+     "t0": 69.318,
+     "t1": 70.969,
+     "text": "Za třetí: *pouto.*"
     },
     {
-     "t0": 70.155,
-     "t1": 71.817,
-     "text": "oddělí, tím víc to bude"
+     "t0": 70.969,
+     "t1": 72.289,
+     "text": "Matka tele po porodu"
     },
     {
-     "t0": 71.817,
-     "t1": 73.864,
-     "text": "*bolet.* To je pravda."
+     "t0": 72.289,
+     "t1": 73.874,
+     "text": "olizuje a oba se poznají"
     },
     {
-     "t0": 73.864,
-     "t1": 75.207,
-     "text": "Krávy pak bučí a tele"
+     "t0": 73.874,
+     "t1": 75.458,
+     "text": "po hlase. Pozdější"
     },
     {
-     "t0": 75.207,
-     "t1": 76.102,
-     "text": "hledají."
+     "t0": 75.458,
+     "t1": 77.307,
+     "text": "oddělení prý *bolí* *víc.*"
+    },
+    {
+     "t0": 77.307,
+     "t1": 78.957,
+     "text": "Podle některých zdrojů je"
+    },
+    {
+     "t0": 78.957,
+     "t1": 80.476,
+     "text": "to údajně pravda."
     }
    ]
   },
   {
    "id": "bon2",
-   "t0": 76.302,
-   "t1": 79.715,
+   "t0": 80.676,
+   "t1": 84.1,
    "text": "Jenže to počítá s tím, že je *stejně rozdělí.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 76.302,
-     "t1": 77.943,
+     "t0": 80.676,
+     "t1": 82.322,
      "text": "Jenže to počítá s tím,"
     },
     {
-     "t0": 77.943,
-     "t1": 79.715,
+     "t0": 82.322,
+     "t1": 84.1,
      "text": "že je *stejně* *rozdělí.*"
     }
    ]
   },
   {
-   "id": "bon2b",
-   "t0": 79.965,
-   "t1": 87.164,
-   "text": "A studie ukazují, že delší společný čas telatům prospívá: *rychleji rostou* a chovají se přirozeněji.",
-   "cap": true,
-   "chunks": [
-    {
-     "t0": 79.965,
-     "t1": 81.311,
-     "text": "A studie ukazují,"
-    },
-    {
-     "t0": 81.311,
-     "t1": 82.724,
-     "text": "že delší společný čas"
-    },
-    {
-     "t0": 82.724,
-     "t1": 84.069,
-     "text": "telatům prospívá:"
-    },
-    {
-     "t0": 84.069,
-     "t1": 85.751,
-     "text": "*rychleji* *rostou* a chovají"
-    },
-    {
-     "t0": 85.751,
-     "t1": 87.164,
-     "text": "se přirozeněji."
-    }
-   ]
-  },
-  {
    "id": "bon3",
-   "t0": 87.464,
-   "t1": 89.902,
+   "t0": 84.8,
+   "t1": 87.273,
    "text": "Takže aby je odloučení nebolelo,",
    "cap": false,
    "chunks": [
     {
-     "t0": 87.464,
-     "t1": 89.041,
+     "t0": 84.8,
+     "t1": 86.401,
      "text": "Takže aby je odloučení"
     },
     {
-     "t0": 89.041,
-     "t1": 89.902,
+     "t0": 86.401,
+     "t1": 87.273,
      "text": "nebolelo,"
     }
    ]
   },
   {
    "id": "bon4",
-   "t0": 90.302,
-   "t1": 91.672,
+   "t0": 87.673,
+   "t1": 89.078,
    "text": "odloučí je dřív.",
    "cap": false,
    "chunks": [
     {
-     "t0": 90.302,
-     "t1": 91.672,
+     "t0": 87.673,
+     "t1": 89.078,
      "text": "odloučí je dřív."
     }
    ]
   },
   {
+   "id": "bon5",
+   "t0": 89.578,
+   "t1": 90.902,
+   "text": "Není to bizarní?",
+   "cap": false,
+   "chunks": [
+    {
+     "t0": 89.578,
+     "t1": 90.902,
+     "text": "Není to bizarní?"
+    }
+   ]
+  },
+  {
    "id": "mil1",
-   "t0": 92.222,
-   "t1": 97.551,
-   "text": "Za čtvrté: kráva prý dává tolik mléka, že by ho tele stejně *nevypilo.*",
+   "t0": 91.502,
+   "t1": 96.204,
+   "text": "Za čtvrté: kráva prý dává tolik mléka, že by ho tele *nevypilo.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 92.222,
-     "t1": 93.11,
+     "t0": 91.502,
+     "t1": 92.363,
      "text": "Za čtvrté:"
     },
     {
-     "t0": 93.11,
-     "t1": 94.476,
+     "t0": 92.363,
+     "t1": 93.687,
      "text": "kráva prý dává tolik"
     },
     {
-     "t0": 94.476,
-     "t1": 96.048,
+     "t0": 93.687,
+     "t1": 95.21,
      "text": "mléka, že by ho tele"
     },
     {
-     "t0": 96.048,
-     "t1": 97.551,
-     "text": "stejně *nevypilo.*"
+     "t0": 95.21,
+     "t1": 96.204,
+     "text": "*nevypilo.*"
     }
    ]
   },
   {
    "id": "mil2",
-   "t0": 97.801,
-   "t1": 107.054,
-   "text": "Kráva ale dává mléko, protože porodila. *Pro tele.* A tolik ho dává proto, že ji lidé desítky let šlechtili na co nejvyšší výkon.",
+   "t0": 96.404,
+   "t1": 103.497,
+   "text": "Kráva ale dává mléko *pro tele.* A tolik ho dává proto, že ji lidé desítky let šlechtili na výkon.",
    "cap": true,
    "chunks": [
     {
-     "t0": 97.801,
-     "t1": 99.332,
-     "text": "Kráva ale dává mléko,"
+     "t0": 96.404,
+     "t1": 97.98,
+     "text": "Kráva ale dává mléko *pro*"
     },
     {
-     "t0": 99.332,
-     "t1": 100.8,
-     "text": "protože porodila."
+     "t0": 97.98,
+     "t1": 99.754,
+     "text": "*tele.* A tolik ho dává"
     },
     {
-     "t0": 100.8,
-     "t1": 102.459,
-     "text": "*Pro* *tele.* A tolik ho"
+     "t0": 99.754,
+     "t1": 101.593,
+     "text": "proto, že ji lidé desítky"
     },
     {
-     "t0": 102.459,
-     "t1": 103.353,
-     "text": "dává proto,"
-    },
-    {
-     "t0": 103.353,
-     "t1": 104.756,
-     "text": "že ji lidé desítky let"
-    },
-    {
-     "t0": 104.756,
-     "t1": 106.288,
-     "text": "šlechtili na co nejvyšší"
-    },
-    {
-     "t0": 106.288,
-     "t1": 107.054,
-     "text": "výkon."
+     "t0": 101.593,
+     "t1": 103.497,
+     "text": "let šlechtili na výkon."
     }
    ]
   },
   {
    "id": "mil3",
-   "t0": 107.254,
-   "t1": 113.732,
+   "t0": 103.697,
+   "t1": 110.234,
    "text": "Tzv. dojnice dnes v Česku dá v průměru přes *9 500 litrů* mléka ročně.",
    "cap": true,
    "chunks": [
     {
-     "t0": 107.254,
-     "t1": 109.829,
+     "t0": 103.697,
+     "t1": 106.295,
      "text": "Tzv. dojnice dnes v Česku"
     },
     {
-     "t0": 109.829,
-     "t1": 111.407,
+     "t0": 106.295,
+     "t1": 107.887,
      "text": "dá v průměru přes *9*"
     },
     {
-     "t0": 111.407,
-     "t1": 113.732,
+     "t0": 107.887,
+     "t1": 110.234,
      "text": "*500* *litrů* mléka ročně."
     }
    ]
   },
   {
    "id": "mil4",
-   "t0": 113.982,
-   "t1": 121.598,
-   "text": "Problém tedy není tele. Je to systém, který z krávy udělal co nejefektivnější *krutou mašinu* na mléko.",
+   "t0": 110.484,
+   "t1": 117.171,
+   "text": "Problém tedy není tele, ale systém, který z krávy udělal *krutou mašinu* na mléko.",
    "cap": true,
    "chunks": [
     {
-     "t0": 113.982,
-     "t1": 115.954,
-     "text": "Problém tedy není tele."
+     "t0": 110.484,
+     "t1": 112.437,
+     "text": "Problém tedy není tele,"
     },
     {
-     "t0": 115.954,
-     "t1": 117.042,
-     "text": "Je to systém,"
+     "t0": 112.437,
+     "t1": 113.489,
+     "text": "ale systém,"
     },
     {
-     "t0": 117.042,
-     "t1": 118.606,
-     "text": "který z krávy udělal co"
+     "t0": 113.489,
+     "t1": 114.992,
+     "text": "který z krávy udělal"
     },
     {
-     "t0": 118.606,
-     "t1": 120.102,
-     "text": "nejefektivnější *krutou*"
-    },
-    {
-     "t0": 120.102,
-     "t1": 121.598,
-     "text": "*mašinu* na mléko."
+     "t0": 114.992,
+     "t1": 117.171,
+     "text": "*krutou* *mašinu* na mléko."
     }
    ]
   },
   {
    "id": "loop",
-   "t0": 121.948,
-   "t1": 135.253,
-   "text": "Systém si tak problémy vytvoří: *velkokapacitní kravíny* plné krav a krávy vyšlechtěné na maximální výkon. A pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
+   "t0": 117.521,
+   "t1": 130.292,
+   "text": "Systém si tak problémy vytvoří: *velkokapacitní haly* plné krav a krávy vyšlechtěné na maximální výkon. Pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
    "cap": true,
    "chunks": [
     {
-     "t0": 121.948,
-     "t1": 123.457,
+     "t0": 117.521,
+     "t1": 119.008,
      "text": "Systém si tak problémy"
     },
     {
-     "t0": 123.457,
-     "t1": 125.24,
+     "t0": 119.008,
+     "t1": 120.765,
      "text": "vytvoří: *velkokapacitní*"
     },
     {
-     "t0": 125.24,
-     "t1": 126.955,
-     "text": "*kravíny* plné krav a krávy"
+     "t0": 120.765,
+     "t1": 122.251,
+     "text": "*haly* plné krav a krávy"
     },
     {
-     "t0": 126.955,
-     "t1": 128.601,
+     "t0": 122.251,
+     "t1": 123.873,
      "text": "vyšlechtěné na maximální"
     },
     {
-     "t0": 128.601,
-     "t1": 130.384,
-     "text": "výkon. A pak je řeší"
+     "t0": 123.873,
+     "t1": 126.035,
+     "text": "výkon. Pak je řeší tím,"
     },
     {
-     "t0": 130.384,
-     "t1": 132.784,
-     "text": "tím, že matce vezme mládě."
+     "t0": 126.035,
+     "t1": 127.86,
+     "text": "že matce vezme mládě."
     },
     {
-     "t0": 132.784,
-     "t1": 134.293,
+     "t0": 127.86,
+     "t1": 129.346,
      "text": "*Krutou* *praxi* vydává za"
     },
     {
-     "t0": 134.293,
-     "t1": 135.253,
+     "t0": 129.346,
+     "t1": 130.292,
      "text": "nutnost."
     }
    ]
   },
   {
    "id": "alt1",
-   "t0": 135.603,
-   "t1": 144.241,
-   "text": "Přitom v Evropě je přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. A krávy se tam přitom dojí.",
+   "t0": 130.642,
+   "t1": 138.781,
+   "text": "Přitom v Evropě je přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. A krávy se tam dojí.",
    "cap": true,
    "chunks": [
     {
-     "t0": 135.603,
-     "t1": 137.206,
+     "t0": 130.642,
+     "t1": 132.229,
      "text": "Přitom v Evropě je přes"
     },
     {
-     "t0": 137.206,
-     "t1": 138.738,
+     "t0": 132.229,
+     "t1": 133.746,
      "text": "sto mléčných farem,"
     },
     {
-     "t0": 138.738,
-     "t1": 140.48,
+     "t0": 133.746,
+     "t1": 135.47,
      "text": "kde tele zůstává s matkou"
     },
     {
-     "t0": 140.48,
-     "t1": 142.012,
+     "t0": 135.47,
+     "t1": 136.988,
      "text": "týdny až měsíce."
     },
     {
-     "t0": 142.012,
-     "t1": 143.475,
-     "text": "A krávy se tam přitom"
-    },
-    {
-     "t0": 143.475,
-     "t1": 144.241,
-     "text": "dojí."
+     "t0": 136.988,
+     "t1": 138.781,
+     "text": "A krávy se tam dojí."
     }
    ]
   },
   {
    "id": "alt1b",
-   "t0": 144.441,
-   "t1": 150.269,
+   "t0": 138.981,
+   "t1": 144.716,
    "text": "Okamžité oddělení tedy *nutné není.* A přebytek mléka je výmluva, ne důvod.",
    "cap": true,
    "chunks": [
     {
-     "t0": 144.441,
-     "t1": 145.95,
+     "t0": 138.981,
+     "t1": 140.465,
      "text": "Okamžité oddělení tedy"
     },
     {
-     "t0": 145.95,
-     "t1": 147.115,
+     "t0": 140.465,
+     "t1": 141.612,
      "text": "*nutné* *není.*"
     },
     {
-     "t0": 147.115,
-     "t1": 148.418,
+     "t0": 141.612,
+     "t1": 142.894,
      "text": "A přebytek mléka je"
     },
     {
-     "t0": 148.418,
-     "t1": 150.269,
+     "t0": 142.894,
+     "t1": 144.716,
      "text": "výmluva, ne důvod."
     }
    ]
   },
   {
    "id": "alt2",
-   "t0": 150.519,
-   "t1": 160.864,
-   "text": "Rozhodně to ale není ideál. I tam jdou *býčci na jatka,* protože nedávají mléko. A tzv. dojnice skončí taky, když jim klesne dojivost.",
+   "t0": 145.016,
+   "t1": 156.382,
+   "text": "Pokud ale konzumujete mateřské mléko nebo sýry, ani tady *nehledejte útěchu.* I odtud jdou *býčci na jatka* a tzv. dojnice taky, když jim klesne dojivost.",
    "cap": true,
    "chunks": [
     {
-     "t0": 150.519,
-     "t1": 151.837,
-     "text": "Rozhodně to ale není"
+     "t0": 145.016,
+     "t1": 146.437,
+     "text": "Pokud ale konzumujete"
     },
     {
-     "t0": 151.837,
-     "t1": 153.748,
-     "text": "ideál. I tam jdou *býčci*"
+     "t0": 146.437,
+     "t1": 148.331,
+     "text": "mateřské mléko nebo sýry,"
     },
     {
-     "t0": 153.748,
-     "t1": 155.659,
-     "text": "*na* *jatka,* protože nedávají"
+     "t0": 148.331,
+     "t1": 149.617,
+     "text": "ani tady *nehledejte*"
     },
     {
-     "t0": 155.659,
-     "t1": 157.306,
-     "text": "mléko. A tzv."
+     "t0": 149.617,
+     "t1": 151.782,
+     "text": "*útěchu.* I odtud jdou *býčci*"
     },
     {
-     "t0": 157.306,
-     "t1": 158.821,
-     "text": "dojnice skončí taky,"
+     "t0": 151.782,
+     "t1": 153.202,
+     "text": "*na* *jatka* a tzv."
     },
     {
-     "t0": 158.821,
-     "t1": 160.864,
+     "t0": 153.202,
+     "t1": 154.285,
+     "text": "dojnice taky,"
+    },
+    {
+     "t0": 154.285,
+     "t1": 156.382,
      "text": "když jim klesne dojivost."
     }
    ]
   },
   {
+   "id": "alt2b",
+   "t0": 156.582,
+   "t1": 162.445,
+   "text": "Je to taky *krvavý a krutý byznys,* jen se v něm zvířata mají možná o trochu lépe.",
+   "cap": true,
+   "chunks": [
+    {
+     "t0": 156.582,
+     "t1": 157.878,
+     "text": "Je to taky *krvavý* *a*"
+    },
+    {
+     "t0": 157.878,
+     "t1": 158.968,
+     "text": "*krutý* *byznys,*"
+    },
+    {
+     "t0": 158.968,
+     "t1": 160.332,
+     "text": "jen se v něm zvířata"
+    },
+    {
+     "t0": 160.332,
+     "t1": 162.445,
+     "text": "mají možná o trochu lépe."
+    }
+   ]
+  },
+  {
    "id": "alt3",
-   "t0": 161.164,
-   "t1": 163.428,
+   "t0": 162.745,
+   "t1": 164.94,
    "text": "Zvíře není stroj ani zboží.",
    "cap": false,
    "chunks": [
     {
-     "t0": 161.164,
-     "t1": 162.579,
+     "t0": 162.745,
+     "t1": 164.117,
      "text": "Zvíře není stroj ani"
     },
     {
-     "t0": 162.579,
-     "t1": 163.428,
+     "t0": 164.117,
+     "t1": 164.94,
      "text": "zboží."
     }
    ]
   },
   {
    "id": "dem1",
-   "t0": 163.928,
-   "t1": 167.62,
+   "t0": 165.44,
+   "t1": 169.213,
    "text": "Celý ten kruh se točí, protože jeho mléko *kupujeme.*",
    "cap": true,
    "chunks": [
     {
-     "t0": 163.928,
-     "t1": 165.519,
+     "t0": 165.44,
+     "t1": 167.066,
      "text": "Celý ten kruh se točí,"
     },
     {
-     "t0": 165.519,
-     "t1": 166.665,
+     "t0": 167.066,
+     "t1": 168.237,
      "text": "protože jeho mléko"
     },
     {
-     "t0": 166.665,
-     "t1": 167.62,
+     "t0": 168.237,
+     "t1": 169.213,
      "text": "*kupujeme.*"
     }
    ]
   },
   {
    "id": "dem2",
-   "t0": 167.87,
-   "t1": 172.734,
-   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je dnes spousta.",
+   "t0": 169.463,
+   "t1": 173.898,
+   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je spousta.",
    "cap": true,
    "chunks": [
     {
-     "t0": 167.87,
-     "t1": 169.086,
+     "t0": 169.463,
+     "t1": 170.633,
      "text": "Vystoupit z něj ale"
     },
     {
-     "t0": 169.086,
-     "t1": 170.686,
+     "t0": 170.633,
+     "t1": 172.173,
      "text": "můžeme. *Rostlinných*"
     },
     {
-     "t0": 170.686,
-     "t1": 171.838,
-     "text": "*alternativ* je dnes"
-    },
-    {
-     "t0": 171.838,
-     "t1": 172.734,
-     "text": "spousta."
+     "t0": 172.173,
+     "t1": 173.898,
+     "text": "*alternativ* je spousta."
     }
    ]
   },
   {
    "id": "out",
-   "t0": 173.134,
-   "t1": 176.014,
+   "t0": 174.298,
+   "t1": 177.154,
    "text": "Kolektiv pro zvířata. Zdroje v popisku.",
    "cap": false,
    "chunks": [
     {
-     "t0": 173.134,
-     "t1": 174.689,
+     "t0": 174.298,
+     "t1": 175.84,
      "text": "Kolektiv pro zvířata."
     },
     {
-     "t0": 174.689,
-     "t1": 176.014,
+     "t0": 175.84,
+     "t1": 177.154,
      "text": "Zdroje v popisku."
     }
    ]

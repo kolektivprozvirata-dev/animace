@@ -2,13 +2,18 @@
  "voice": "cs_CZ-jirka-medium",
  "length_scale": 0.81,
  "gap": 0.18,
- "lead_in": 0.4,
- "tail": 1.4,
+ "lead_in": 0.3,
+ "tail": 0.9,
  "segments": [
   {
+   "id": "hook0",
+   "text": "Krabice mléka z obchodu začíná *porodem.*",
+   "pause": 0.35
+  },
+  {
    "id": "hook1",
-   "say": "Podle chovatelských příruček se tele odebírá matce nejpozději do dvanácti hodin po porodu.",
-   "text": "Podle chovatelských příruček se tele odebírá matce *nejpozději do 12 hodin* po porodu.",
+   "say": "Příručky uvádějí, že se tele odebírá matce nejpozději do dvanácti hodin.",
+   "text": "Příručky uvádějí, že se tele odebírá matce *nejpozději do 12 hodin.*",
    "pause": 0.18
   },
   {
@@ -22,18 +27,13 @@
    "pause": 0.35
   },
   {
-   "id": "veg1",
-   "text": "Krávy jsou cítící bytosti. Matka tele hned po porodu olizuje a oba se *poznají po hlase.* Mezi nimi bývá *silné pouto.*",
-   "pause": 0.2
-  },
-  {
    "id": "veg2",
    "text": "Ať hned, nebo později: oddělit mládě od matky je *kruté.*",
    "pause": 0.35
   },
   {
    "id": "why",
-   "text": "Chovatelé pro to mají několik argumentů. Mezi *nejčastější* patří tyto čtyři.",
+   "text": "Chovatelé mají několik argumentů. Mezi *nejčastější* patří tyto čtyři.",
    "pause": 0.3
   },
   {
@@ -43,18 +43,18 @@
   },
   {
    "id": "hyg2",
-   "text": "Jenže v kravínech často stojí *spousta krav na malé ploše,* i se svými výkaly.",
+   "text": "Jenže ve *velkokapacitních halách* žije spousta krav na malé ploše. Výkaly přibývají průběžně, k tomu moč. *Bakteriím* se tam prostě daří.",
    "pause": 0.2
   },
   {
    "id": "hyg3",
-   "say": "Na pastvě u takzvaných masných krav je prostoru dost a telata tam s matkami zůstávají měsíce.",
-   "text": "Na pastvě u tzv. masných krav je prostoru dost a telata tam s matkami zůstávají *měsíce.*",
-   "pause": 0.25
+   "say": "U takzvaných masných krav na pastvě je prostoru dost a telata zůstávají s matkami měsíce.",
+   "text": "U tzv. masných krav na pastvě je prostoru dost a telata zůstávají s matkami *měsíce.*",
+   "pause": 0.2
   },
   {
    "id": "hyg4",
-   "text": "Problém je v prostředí. Odnese to ale *tele.*",
+   "text": "Problém je v prostředí. Odnese to, jak jinak, *tele a jeho máma.*",
    "pause": 0.35
   },
   {
@@ -64,29 +64,24 @@
   },
   {
    "id": "cru2",
-   "say": "To hrozí hlavně v přeplněných stájích. U takzvaných masných krav na pastvě se to prakticky neděje.",
-   "text": "To hrozí hlavně v *přeplněných stájích.* U tzv. masných krav na pastvě se to prakticky neděje.",
-   "pause": 0.25
+   "say": "To hrozí hlavně v přeplněných velkokapacitních halách. U takzvaných masných krav na pastvě se to prakticky neděje.",
+   "text": "To hrozí hlavně v *přeplněných velkokapacitních halách.* U tzv. masných krav na pastvě se to prakticky neděje.",
+   "pause": 0.2
   },
   {
    "id": "cru3",
-   "text": "Problém je v prostoru. Odnese to zase *tele.*",
+   "text": "Problém je v prostoru. Odnese to zase *tele a jeho máma.*",
    "pause": 0.35
   },
   {
    "id": "bon1",
-   "text": "Za třetí: čím později je oddělí, tím víc to bude *bolet.* To je pravda. Krávy pak bučí a tele hledají.",
+   "text": "Za třetí: *pouto.* Matka tele po porodu olizuje a oba se poznají po hlase. Pozdější oddělení prý *bolí víc.* Podle některých zdrojů je to údajně pravda.",
    "pause": 0.2
   },
   {
    "id": "bon2",
    "text": "Jenže to počítá s tím, že je *stejně rozdělí.*",
-   "pause": 0.25
-  },
-  {
-   "id": "bon2b",
-   "text": "A studie ukazují, že delší společný čas telatům prospívá: *rychleji rostou* a chovají se přirozeněji.",
-   "pause": 0.3
+   "pause": 0.7
   },
   {
    "id": "bon3",
@@ -97,17 +92,23 @@
   {
    "id": "bon4",
    "text": "odloučí je dřív.",
-   "pause": 0.55,
+   "pause": 0.5,
+   "cap": false
+  },
+  {
+   "id": "bon5",
+   "text": "Není to bizarní?",
+   "pause": 0.6,
    "cap": false
   },
   {
    "id": "mil1",
-   "text": "Za čtvrté: kráva prý dává tolik mléka, že by ho tele stejně *nevypilo.*",
-   "pause": 0.25
+   "text": "Za čtvrté: kráva prý dává tolik mléka, že by ho tele *nevypilo.*",
+   "pause": 0.2
   },
   {
    "id": "mil2",
-   "text": "Kráva ale dává mléko, protože porodila. *Pro tele.* A tolik ho dává proto, že ji lidé desítky let šlechtili na co nejvyšší výkon.",
+   "text": "Kráva ale dává mléko *pro tele.* A tolik ho dává proto, že ji lidé desítky let šlechtili na výkon.",
    "pause": 0.2
   },
   {
@@ -118,28 +119,33 @@
   },
   {
    "id": "mil4",
-   "text": "Problém tedy není tele. Je to systém, který z krávy udělal co nejefektivnější *krutou mašinu* na mléko.",
+   "text": "Problém tedy není tele, ale systém, který z krávy udělal *krutou mašinu* na mléko.",
    "pause": 0.35
   },
   {
    "id": "loop",
-   "text": "Systém si tak problémy vytvoří: *velkokapacitní kravíny* plné krav a krávy vyšlechtěné na maximální výkon. A pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
+   "text": "Systém si tak problémy vytvoří: *velkokapacitní haly* plné krav a krávy vyšlechtěné na maximální výkon. Pak je řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
    "pause": 0.35
   },
   {
    "id": "alt1",
-   "text": "Přitom v Evropě je přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. A krávy se tam přitom dojí.",
+   "text": "Přitom v Evropě je přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. A krávy se tam dojí.",
    "pause": 0.2
   },
   {
    "id": "alt1b",
    "text": "Okamžité oddělení tedy *nutné není.* A přebytek mléka je výmluva, ne důvod.",
-   "pause": 0.25
+   "pause": 0.3
   },
   {
    "id": "alt2",
-   "say": "Rozhodně to ale není ideál. I tam jdou býčci na jatka, protože nedávají mléko. A takzvané dojnice skončí taky, když jim klesne dojivost.",
-   "text": "Rozhodně to ale není ideál. I tam jdou *býčci na jatka,* protože nedávají mléko. A tzv. dojnice skončí taky, když jim klesne dojivost.",
+   "text": "Pokud ale konzumujete mateřské mléko nebo sýry, ani tady *nehledejte útěchu.* I odtud jdou *býčci na jatka* a tzv. dojnice taky, když jim klesne dojivost.",
+   "say": "Pokud ale konzumujete mateřské mléko nebo sýry, ani tady nehledejte útěchu. I odtud jdou býčci na jatka a takzvané dojnice taky, když jim klesne dojivost.",
+   "pause": 0.2
+  },
+  {
+   "id": "alt2b",
+   "text": "Je to taky *krvavý a krutý byznys,* jen se v něm zvířata mají možná o trochu lépe.",
    "pause": 0.3
   },
   {
@@ -155,7 +161,7 @@
   },
   {
    "id": "dem2",
-   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je dnes spousta.",
+   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je spousta.",
    "pause": 0.4
   },
   {
