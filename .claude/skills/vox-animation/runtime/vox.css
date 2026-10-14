@@ -1,0 +1,168 @@
+/* vox.css — vizuální základ pro animace ve stylu Vox.
+ * Barvy a písma jsou tokeny – měň je tady, ne ve scénách.
+ * Hodnoty vycházejí z references/style-guide.md (a z feedbacku). */
+
+:root {
+  /* papír & inkoust */
+  --paper: #f3eee4;
+  --paper-shade: #e6dfd1;
+  --ink: #141414;
+  --ink-soft: #4a4744;
+  --muted: #a8a29a;      /* "ostatní" data – šedá */
+
+  /* akcenty – max. 1 dominantní akcent na záběr */
+  --vox-yellow: #fff200; /* zvýrazňovač, hlavní akcent */
+  --accent-red: #e4472b;
+  --accent-blue: #2f6db5;
+  --accent-teal: #2a9d8f;
+
+  /* tmavá varianta */
+  --dark: #1b1a19;
+  --dark-ink: #f3eee4;
+
+  /* písma (Inter je lokálně; Google Fonts lze doplnit ve scéně) */
+  --font-head: 'Inter Display', 'Inter', 'Liberation Sans', sans-serif;
+  --font-serif: 'Bitstream Charter', 'Charter', 'Liberation Serif', Georgia, serif;
+  --font-mono: 'DejaVu Sans Mono', 'Liberation Mono', monospace;
+
+  --shadow-paper: 0 2px 2px rgba(0, 0, 0, 0.18), 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #000; overflow: hidden; }
+
+#stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-head);
+  -webkit-font-smoothing: antialiased;
+}
+#stage.dark { background: var(--dark); color: var(--dark-ink); }
+
+/* vrstvy */
+.layer, .world { position: absolute; inset: 0; }
+.abs { position: absolute; }
+.center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+/* textury nad/pod vším */
+.vox-paper { position: absolute; inset: 0; pointer-events: none; opacity: 0.55; mix-blend-mode: multiply; }
+.vox-paper--dark { opacity: 0.25; mix-blend-mode: screen; }
+.vox-grain { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply; z-index: 900; }
+.dark .vox-grain { mix-blend-mode: screen; }
+.vox-vignette {
+  position: absolute; inset: 0; pointer-events: none; z-index: 901;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.9) 130%);
+}
+
+/* ---------- typografie ---------- */
+.headline {
+  font-family: var(--font-head);
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+}
+.subhead { font-weight: 800; font-size: 72px; line-height: 1.08; letter-spacing: -0.015em; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.label {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.serif { font-family: var(--font-serif); }
+.big-number { font-weight: 900; font-size: 220px; letter-spacing: -0.04em; line-height: 0.9; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* ---------- zvýrazňovač ---------- */
+.hl {
+  --hl: 0;
+  --hl-color: var(--vox-yellow);
+  background-image: linear-gradient(var(--hl-color), var(--hl-color));
+  background-repeat: no-repeat;
+  background-size: calc(var(--hl) * 100%) 78%;
+  background-position: 0 70%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 0.12em;
+  margin: 0 -0.12em;
+}
+/* podtržení místo plochy */
+.hl-under { background-size: calc(var(--hl) * 100%) 0.16em; background-position: 0 95%; }
+
+/* ---------- papírové výřezy (koláž) ---------- */
+.cutout {
+  position: absolute;
+  filter: drop-shadow(0 2px 1.5px rgba(0,0,0,.25)) drop-shadow(0 12px 18px rgba(0,0,0,.22));
+}
+.cutout::before {               /* bílý trhaný okraj papíru */
+  content: '';
+  position: absolute;
+  inset: -16px;
+  background: #fbf8f2;
+  filter: url(#vox-torn);
+  z-index: -1;
+}
+.cutout.clean::before { filter: none; inset: -12px; }
+.cutout img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.bw img { filter: grayscale(1) contrast(1.25) brightness(1.03); }
+
+/* rychlý "halftone" přes obrázek (pro skutečný rastr použij scripts/halftone.py) */
+.halftone { position: relative; }
+.halftone::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(0,0,0,.55) 30%, transparent 32%);
+  background-size: 7px 7px;
+  mix-blend-mode: multiply;
+  opacity: .35;
+  pointer-events: none;
+}
+
+/* ---------- dokument / výstřižek z novin ---------- */
+.doc {
+  position: absolute;
+  background: #fdfbf6;
+  color: #1e1e1e;
+  font-family: var(--font-serif);
+  font-size: 46px;
+  line-height: 1.42;
+  padding: 64px 76px;
+  box-shadow: var(--shadow-paper);
+}
+.doc .doc-source { font-family: var(--font-mono); font-size: 24px; letter-spacing: .1em; text-transform: uppercase; color: #777; margin-bottom: 18px; }
+.doc .doc-title { font-family: var(--font-serif); font-weight: 700; font-size: 68px; line-height: 1.1; margin-bottom: 22px; }
+.doc .dim { color: #9a968f; }   /* text mimo pointu – ztlumit */
+
+/* ---------- popisky / štítky ---------- */
+.tag {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 12px 20px 10px;
+}
+.tag.yellow { background: var(--vox-yellow); color: var(--ink); }
+
+/* ---------- grafy ---------- */
+svg .axis { stroke: var(--ink); stroke-width: 3; }
+svg .grid { stroke: rgba(0,0,0,.12); stroke-width: 2; stroke-dasharray: 2 8; stroke-linecap: round; }
+svg .line { fill: none; stroke: var(--ink); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+svg .line.accent { stroke: var(--accent-red); }
+svg .route { fill: none; stroke: var(--accent-red); stroke-width: 6; stroke-dasharray: 2 14; stroke-linecap: round; }
+svg text { font-family: var(--font-mono); }

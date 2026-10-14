@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>Vox demo</title>
+<link rel="stylesheet" href="../runtime/vox.css">
+<script src="../runtime/vox.js"></script>
+<style>
+  /* záběr 1 – titulek */
+  #title { left: 160px; top: 300px; width: 1600px; }
+  #title .eyebrow { margin-bottom: 28px; }
+  #title-bar { position: absolute; left: 160px; top: 250px; width: 120px; height: 12px; background: var(--ink); transform-origin: 0 50%; }
+
+  /* záběr 2 – dokument se zvýrazněním */
+  #doc { left: 260px; top: 150px; width: 1400px; }
+  #tag-src { left: 1480px; top: 110px; }
+
+  /* záběr 3 – graf */
+  #chart { left: 0; top: 0; }
+  #chart-title { left: 160px; top: 110px; }
+  #chart-note { left: 1240px; top: 820px; width: 560px; }
+  #big { left: 1220px; top: 400px; font-size: 170px; color: var(--accent-red); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- ZÁBĚR 1: titulková karta -->
+  <div id="s1" class="layer">
+    <div class="world" id="w1">
+      <div id="title-bar"></div>
+      <div id="title" class="abs">
+        <div class="eyebrow" id="t-eyebrow">Animace ve stylu Vox · ukázka</div>
+        <div class="headline" id="t-head">Proč se o&nbsp;tom <span class="hl" id="t-hl">vůbec</span> mluví?</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZÁBĚR 2: dokument + zvýrazňovač -->
+  <div id="s2" class="layer">
+    <div class="world" id="w2">
+      <div class="doc" id="doc">
+        <div class="doc-source">Výstřižek · ilustrační text</div>
+        <div class="doc-title">Vysvětlující video stojí na jedné myšlence</div>
+        <p><span class="dim">Každý záběr má odpovídat tomu, co právě říká komentář.</span>
+          <span class="hl" id="d-hl1">Grafika nemá zdobit, má vysvětlovat.</span>
+          <span class="dim">Když divák neví, kam se dívat, zvýrazněte to za něj.</span></p>
+      </div>
+      <div class="abs tag yellow" id="tag-src">Pravidlo č. 1</div>
+    </div>
+  </div>
+
+  <!-- ZÁBĚR 3: animovaný graf -->
+  <div id="s3" class="layer">
+    <div class="world" id="w3">
+      <div class="abs" id="chart-title">
+        <div class="eyebrow" style="margin-bottom:14px">Ilustrační data</div>
+        <div class="subhead">Jedna čára, jeden příběh</div>
+      </div>
+      <svg id="chart" class="abs" width="1920" height="1080">
+        <g transform="translate(160,0)">
+          <line class="grid" x1="0" y1="420" x2="1000" y2="420"/>
+          <line class="grid" x1="0" y1="600" x2="1000" y2="600"/>
+          <line class="grid" x1="0" y1="780" x2="1000" y2="780"/>
+          <line class="axis" x1="0" y1="900" x2="1000" y2="900"/>
+          <path class="line" id="l-grey" style="stroke:var(--muted);stroke-width:5"
+                d="M0,760 L120,740 L240,750 L360,720 L480,730 L600,700 L720,710 L840,690 L1000,680"/>
+          <path class="line accent" id="l-main"
+                d="M0,800 L120,790 L240,770 L360,740 L480,690 L600,610 L720,540 L840,450 L1000,330"/>
+          <circle id="dot" cx="1000" cy="330" r="16" fill="var(--accent-red)"/>
+          <text x="0" y="950" font-size="28" fill="#4a4744">2015</text>
+          <text x="920" y="950" font-size="28" fill="#4a4744">2025</text>
+          <text id="lab-grey" x="1020" y="690" font-size="28" fill="#8a847c">OSTATNÍ</text>
+        </g>
+      </svg>
+      <div class="abs label" id="chart-note">Přímé popisky místo legendy. Ostatní data šedě, příběh barevně.</div>
+      <div class="abs big-number" id="big">+150 %</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  VOX.setup({ duration: 12 });
+  const { set, prog, pop, boil, highlight, draw, count, camera, cutBlur, push, shot, ease, inOut } = VOX;
+
+  // časová osa (s)
+  const CUT1 = 4, CUT2 = 8;
+
+  VOX.scene((t) => {
+    // ---------- ZÁBĚR 1 ----------
+    if (shot('#s1', t, 0, CUT1)) {
+      const b = cutBlur(t, CUT1, 22);
+      set('#w1', { s: push(t, 0, CUT1, 1, 1.05), origin: '30% 45%', blur: b });
+      set('#title-bar', { sx: prog(t, 0.15, 0.35, ease.outExpo) });
+      const e = prog(t, 0.3, 0.4);
+      set('#t-eyebrow', { y: (1 - e) * 20, o: e });
+      const h = prog(t, 0.6, 0.5, ease.outBack);
+      set('#t-head', { y: (1 - h) * 60, o: prog(t, 0.6, 0.25) });
+      highlight('#t-hl', prog(t, 1.6, 0.5, ease.inOutCubic));
+    }
+
+    // ---------- ZÁBĚR 2 ----------
+    if (shot('#s2', t, CUT1, CUT2)) {
+      const b = cutBlur(t, CUT1, 22) + cutBlur(t, CUT2, 22);
+      // kamera: začne blízko dokumentu a pomalu odjíždí
+      const s = push(t, CUT1, CUT2, 1.12, 1.0);
+      set('#w2', { s, origin: '55% 45%', blur: b });
+      const bo = boil(t, 'doc', 1.0, 0.15);
+      const d = pop(t, CUT1, 0.42, 1.3);
+      set('#doc', { x: bo.x, y: bo.y + (1 - d) * 40, r: -1.2 + bo.r, s: 0.9 + 0.1 * d, o: prog(t, CUT1, 0.15) });
+      highlight('#d-hl1', prog(t, CUT1 + 1.0, 0.9, ease.inOutSine));
+      const tg = pop(t, CUT1 + 2.1);
+      const tb = boil(t, 'tag', 1.2, 0.3);
+      set('#tag-src', { x: tb.x, y: tb.y, r: 4 + tb.r, s: tg, o: tg > 0 ? 1 : 0 });
+    }
+
+    // ---------- ZÁBĚR 3 ----------
+    if (shot('#s3', t, CUT2, 99)) {
+      const b = cutBlur(t, CUT2, 22);
+      set('#w3', { s: push(t, CUT2, 12, 1.0, 1.04), origin: '60% 55%', blur: b });
+      const ti = prog(t, CUT2 + 0.1, 0.35);
+      set('#chart-title', { y: (1 - ti) * 24, o: ti });
+      draw('#l-grey', prog(t, CUT2 + 0.3, 1.0, ease.inOutCubic));
+      set('#lab-grey', { o: prog(t, CUT2 + 1.2, 0.2) });
+      draw('#l-main', prog(t, CUT2 + 0.9, 1.6, ease.inOutCubic));
+      const dp = pop(t, CUT2 + 2.4);
+      set('#dot', { s: dp });
+      document.querySelector('#dot').style.transformBox = 'fill-box';
+      document.querySelector('#dot').style.transformOrigin = 'center';
+      const bp = pop(t, CUT2 + 2.5, 0.4);
+      set('#big', { s: bp, o: bp > 0 ? 1 : 0, origin: '0% 50%' });
+      count('#big', 0, 150, prog(t, CUT2 + 2.5, 0.8, ease.outCubic), (n) => `+${Math.round(n)} %`);
+      const n = prog(t, CUT2 + 3.0, 0.3);
+      set('#chart-note', { y: (1 - n) * 20, o: n });
+    }
+  });
+</script>
+</body>
+</html>
