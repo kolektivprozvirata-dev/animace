@@ -111,7 +111,7 @@ Pořadí odpovídá záběrům. „→“ = šipka nebo návaznost ve schématu.
 - Uprostřed: Krutá praxe = „nutnost“
 
 ## FARMY S KONTAKTEM
-- Nad kartou: Krávy se dají zneužívat i „šetrněji“
+- Nad kartou: „Šetrnější“ chov? Pořád využívání.
 - Karta: Mléčné farmy · 6 zemí Evropy – 104 farem: tele s matkou 7 až 305 dní – ✓ krávy se dojí a telata přitom sají
 - Karta: Okamžité oddělení nutné není. – štítek: Přebytek mléka = výmluva
 - Štítek: Ani tady nehledejte útěchu
