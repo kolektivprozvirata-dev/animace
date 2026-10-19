@@ -4,12 +4,11 @@ Fotobanky jsou z prostředí blokované, proto fotky z veřejných datasetů na 
 - **Unsplash** (licence Unsplash) – kopie v `wtcherr/unsplash_20k`,
 - **COCO 2017** (fotky z Flickru, licence CC dle jednotlivých fotek) – kopie v `Multimodal-Fatima/COCO_captions_train`.
 
-Úpravy: ořez, zvětšeno 2× (originály mají 512–640 px → ve videu měkké). Čísla na známkách rozostřená uvnitř známky (`tag_retouch.py`).
+Úpravy: ořez, zvětšeno 2× (originály mají 512–640 px → ve videu měkké). Čísla na známkách rozostřená (`tag_retouch.py --rect`).
 **Pravidlo KPZ: zvířata ve výstřižcích vždy celá – žádné useknuté půlky těla.**
 
 | soubor | zdroj (soubor_rowgroup_řádek) | popis | kde ve videu |
 |---|---|---|---|
-| pastva-stado-telata.jpg | COCO 00028_0_0690 | krávy s telaty na pastvině | hygiena – utržený kus fotky |
 | pastva-matka-telata.jpg | COCO 00011_1_0183 | kráva (galloway) se dvěma telaty | zalehnutí – na kreslené pastvě |
 | tele-olizuje-matku.jpg | COCO 00032_2_0091 | tele olizuje ležící matku | pouto |
 
@@ -21,4 +20,5 @@ Zvířata vystřižená s okrajem z utrženého papíru, prostředí jako utrže
 
 Po výměně za fotky KPZ stačí výstřižky vyrobit znovu.
 
-Tele v boudě a kravín už jsou z fotek KPZ – viz `../foto-kpz/README.md`.
+Úvod, tele v boudě, kravín a pastva (hygiena) už jsou z fotek KPZ – viz `../foto-kpz/README.md`.
+Provizorní zůstává: kráva s telaty na pastvě (zalehnutí) a pouto.

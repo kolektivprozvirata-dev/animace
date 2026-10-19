@@ -87,9 +87,10 @@ Výchozí podoba = **papírový výstřižek**: `scripts/cutout.py foto.jpg out.
 (model BiRefNet, stáhne se z Hugging Face) a dá mu okraj z utrženého papíru; `--piece` udělá
 utržený kus celé fotky (hala, krajina). Ve scéně `<div class="kpz-cut"><img src=out.png></div>`
 + `cutout()` boil. Celé fotky přes celou šířku (`.kpz-photo fade-y`) KPZ nechtějí („je to divné“).
-Ušní známky: čísla **rozostřit jen uvnitř obrysu známky** – `scripts/tag_retouch.py foto.jpg
-out.jpg --box x0,y0,x1,y1 …` (výchozí `--mode blur`; oblasti známek zadat ručně, automatika
-bez `--box` venku plete suchou trávu). Ne rozmazaný flek přes ucho, ne plné přebarvení. Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Vystřihovat jen **celá zvířata** – fotku,
+Ušní známky: rozostřit **jen samotné číslo** – `scripts/tag_retouch.py foto.jpg out.jpg
+--rect x0,y0,x1,y1 …` (obdélník kolem čísla; rozostření se ořízne na plochu známky, takže tvar
+známky zůstane ostrý; růžové známky `--hue 235,14 --sat 40` nebo `--noclip`). Polohy čísel najdi
+na zvětšeném výřezu s mřížkou. Ne flek přes ucho, ne přebarvení; nečitelně malá čísla nechat. Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Vystřihovat jen **celá zvířata** – fotku,
 kde okraj usekne část těla, nepoužít. Fotky s kravami a telaty: `hf_photos.py` nad COCO
 (`Multimodal-Fatima/COCO_captions_train`, sloupec `sentences_raw`). Provizorní fotky,
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky

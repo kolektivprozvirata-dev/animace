@@ -4,7 +4,7 @@
  *
  *   el.innerHTML = VOXI.cow();                 // kráva z boku (hlavou doleva)
  *   el.innerHTML = VOXI.cow({ calf: true });   // tele
- *   el.innerHTML = VOXI.icon('germ');          // ikony: germ, cart, milk, plant, scissors, clock, tag
+ *   el.innerHTML = VOXI.icon('germ');          // ikony: germ, cart, milk, cheese, yogurt, plant, scissors, tag, barn
  *   VOXI.palette({ ink: '#17323d', ... });     // jiná paleta (volat před kreslením)
  *
  * Kreslí se do viewBoxu; velikost určuje CSS šířka obalového elementu.
@@ -14,7 +14,7 @@
   const P = {
     ink: '#141414', paper: '#fbf8f2', pink: '#e8b4a6', shade: '#e6dfd1', horn: '#efe4c9',
     germ: '#c8442a', steel: '#cfd3d6', red: '#e4472b', blue: '#2f6db5', leaf: '#00c800', stem: '#2f8a2f',
-    soil: '#f1e9d4', price: '#fff200', barn: '#c9533b', border: '#fbf8f2',
+    soil: '#f1e9d4', price: '#fff200', barn: '#c9533b', border: '#fbf8f2', cheese: '#f3c64e',
   };
   let uid = 0;
 
@@ -124,6 +124,19 @@
       <path d="M30,6 L132,6 L132,74 L30,74 L4,40 Z" fill="${P.price}" stroke="${P.ink}" stroke-width="6" stroke-linejoin="round"/>
       <circle cx="28" cy="40" r="7" fill="${P.paper}" stroke="${P.ink}" stroke-width="4"/>
       <text x="84" y="52" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-weight="900" font-size="34" fill="${P.ink}">${txt}</text></svg>`,
+    cheese: () => `<svg viewBox="0 0 220 170" width="100%" overflow="visible">
+      <path d="M10,80 L150,18 L210,80 Z" fill="${P.cheese}" stroke="${P.ink}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M10,80 L210,80 L210,160 L10,160 Z" fill="${P.cheese}" stroke="${P.ink}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M10,80 L210,80 L210,96 L10,96 Z" fill="${P.ink}" opacity=".12"/>
+      <circle cx="58" cy="122" r="14" fill="${P.paper}" stroke="${P.ink}" stroke-width="4"/>
+      <circle cx="120" cy="138" r="9" fill="${P.paper}" stroke="${P.ink}" stroke-width="4"/>
+      <circle cx="168" cy="112" r="12" fill="${P.paper}" stroke="${P.ink}" stroke-width="4"/>
+      <ellipse cx="120" cy="56" rx="12" ry="6" fill="${P.paper}" stroke="${P.ink}" stroke-width="3"/></svg>`,
+    yogurt: () => `<svg viewBox="0 0 200 220" width="100%" overflow="visible">
+      <path d="M30,46 L170,46 L150,206 L50,206 Z" fill="${P.paper}" stroke="${P.ink}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M38,104 L162,104 L154,166 L46,166 Z" fill="${P.blue}"/>
+      <text x="100" y="146" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-weight="900" font-size="26" fill="#fff">JOGURT</text>
+      <rect x="20" y="24" width="160" height="24" rx="6" fill="${P.shade}" stroke="${P.ink}" stroke-width="6"/></svg>`,
     barn: () => `<svg viewBox="0 0 200 170" width="100%" overflow="visible">
       <path d="M10,70 L100,8 L190,70 L190,164 L10,164 Z" fill="${P.barn}" stroke="${P.ink}" stroke-width="7" stroke-linejoin="round"/>
       <path d="M70,164 L70,96 L130,96 L130,164" fill="${P.paper}" stroke="${P.ink}" stroke-width="6"/>

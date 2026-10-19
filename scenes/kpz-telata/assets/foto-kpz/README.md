@@ -1,6 +1,6 @@
 # Fotky KPZ (dodané 2026-10-19)
 
-Čísla na ušních známkách rozostřená jen uvnitř známky (`scripts/tag_retouch.py`, pokyn KPZ).
+Na ušních známkách rozostřená jen samotná čísla (`scripts/tag_retouch.py --rect`, pokyn KPZ).
 Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cutout.py`.
 
 | soubor | popis | použití ve videu |
@@ -10,14 +10,15 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | farma-z-vysky.jpg | farma z výšky: sila, haly, řady bud | kus `farma-z-vysky.png` (varianta D) |
 | kravin-uvnitr.jpg | krávy ležící ve slámě v hale | kus `kravin-uvnitr.png` – hygiena, „velkokapacitní hala“ |
 | kravin-vrata.jpg | krávy za vraty velké haly | zatím nepoužito (rezerva: zalehnutí / bizarní kruh) |
-| krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
+| krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
+| masny-skot.jpg | čtyři kusy tzv. masného skotu na pastvě (růžové známky) | utržený kus `masny-skot.png` – hygiena, „tzv. masné krávy na pastvě“ |
 
-Příkazy (známky – originály 25.jpg/26.jpg/29.png ze zprávy KPZ):
+Příkazy (známky – originály 25.jpg / 26.jpg / 30.webp ze zpráv KPZ):
 
     T=.claude/skills/vox-animation/scripts/tag_retouch.py
-    python3 $T 26.jpg telata-boudy-detail.jpg --box 488,360,556,436 --box 600,352,664,416 --box 928,496,992,584 --box 1068,504,1136,580 --box 0,515,25,560 --box 1470,385,1505,428
-    python3 $T 25.jpg kravin-uvnitr.jpg --box 385,690,470,780 --box 680,665,760,760 --box 240,500,285,545 --box 358,495,400,540 --box 1025,455,1060,495 --box 1222,500,1262,565 --box 1748,650,1790,695 --box 1775,712,1812,760
-    python3 $T 29.png krava-s-teletem.jpg --box 425,118,452,146
+    python3 $T 26.jpg telata-boudy-detail.jpg --rect 506,388,544,416 --rect 614,376,648,400 --rect 945,530,976,565 --rect 1086,530,1120,560 --rect 2,525,22,552 --rect 1474,394,1500,420
+    python3 $T 25.jpg kravin-uvnitr.jpg --rect 400,712,458,764 --rect 694,684,748,740 --rect 251,513,272,534 --rect 369,508,386,529 --rect 1233,510,1250,555 --rect 1756,663,1777,688 --rect 1783,725,1800,748 --rect 1019,467,1044,488
+    python3 $T 30.webp masny-skot.jpg --noclip --rect 196,186,212,198 --rect 325,186,340,200 --rect 391,172,415,185 --rect 515,172,535,188 --rect 622,208,640,222 --rect 748,210,768,224 --rect 830,214,848,230 --rect 945,228,965,242
 
 Výstřižky:
 
@@ -28,3 +29,4 @@ Výstřižky:
     python3 $S kravin-uvnitr.jpg vystrizky/kravin-uvnitr.png --piece --crop 260,240,1700,1080
     python3 $S farma-z-vysky.jpg vystrizky/farma-z-vysky.png --piece --crop 430,150,1530,920
     python3 $S krava-s-teletem.jpg vystrizky/krava-s-teletem.png --crop 60,90,560,395 --scale 2 --largest
+    python3 $S masny-skot.jpg vystrizky/masny-skot.png --piece --crop 70,60,1060,600 --scale 1.5

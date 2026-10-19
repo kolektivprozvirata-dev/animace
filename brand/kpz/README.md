@@ -39,7 +39,8 @@ tmavě modrá nálepek `#17323d`. Nebezpečí / krutost = vínová, alternativa 
 zvýraznění = oranžová (na krémové kartě hořčicová s černým textem).
 
 Pravidla:
-- **Žádný detailní záběr na ušní známku [KPZ].** Čísla na známkách **rozostřit jen uvnitř známky** (tvar známky zůstane ostrý) – ne rozmazaný flek přes ucho, ne přebarvení [KPZ].
+- **Žádný detailní záběr na ušní známku [KPZ].** Na známkách **rozostřit jen samotné číslo** (plocha i tvar známky zůstanou) – ne flek přes ucho, ne přebarvení, ne celá známka [KPZ].
+- **Komunikace [KPZ]:** tykáme si.
 - Bez samoúčelně drastických obrazů (platí dál); fotky jen dodané KPZ.
 - Starší styl KPZ (pastelová růžová, bloky se stínem a obrysovým písmem, razítkové logo)
   je známý, ale výchozí je novější styl výše.

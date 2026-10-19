@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – telata (reel 9:16, styl KPZ, v5 s fotkami)</title>
+<title>KPZ – telata (reel 9:16, styl KPZ, v6 s fotkami KPZ)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
@@ -102,9 +102,9 @@
     <div class="abs h1 kblocks print" id="a-head2" style="left:70px; top:345px; width:940px"><span class="kb mustard">4</span> <span class="kb hl" id="a-hl">nejčastější</span></div>
     <div id="a-ghosts"></div>
     <div class="card row teal" id="a-c1" style="left:90px; top:548px; width:860px; padding:20px 40px"><span class="num">1</span><span class="h2">Hygiena</span></div>
-    <div class="card row" id="a-c2" style="left:90px; top:728px; width:860px; padding:20px 40px"><span class="num">2</span><span class="h2">Zalehnutí</span></div>
-    <div class="card row maroon" id="a-c3" style="left:90px; top:908px; width:860px; padding:20px 40px"><span class="num">3</span><span class="h2">Pouto</span></div>
-    <div class="card row" id="a-c4" style="left:90px; top:1088px; width:860px; padding:20px 40px"><span class="num">4</span><span class="h2">Přebytek mléka</span></div>
+    <div class="card row teal" id="a-c2" style="left:90px; top:728px; width:860px; padding:20px 40px"><span class="num">2</span><span class="h2">Zalehnutí</span></div>
+    <div class="card row teal" id="a-c3" style="left:90px; top:908px; width:860px; padding:20px 40px"><span class="num">3</span><span class="h2">Pouto</span></div>
+    <div class="card row teal" id="a-c4" style="left:90px; top:1088px; width:860px; padding:20px 40px"><span class="num">4</span><span class="h2">Přebytek mléka</span></div>
   </div></div>
 
   <!-- 4 · HYGIENA -->
@@ -130,7 +130,7 @@
       <div class="h3" style="margin-top:6px">Přínos časného oddělení pro zdraví telat: <span class="hl" id="g-hl">neprokázán</span></div>
     </div>
     <!-- c) pastva -->
-    <div class="kpz-cut" id="g-past" style="left:70px; top:460px; width:940px"><img src="assets/foto-provizorni/vystrizky/pastva-stado-telata.png"></div>
+    <div class="kpz-cut" id="g-past" style="left:70px; top:430px; width:940px"><img src="assets/foto-kpz/vystrizky/masny-skot.png"></div>
     <div class="abs tag green big print" id="g-tag2" style="left:90px; top:990px; font-size:50px; line-height:1.15">Tzv. masné krávy:<br>telata s matkami měsíce</div>
     <!-- d) schéma -->
     <div class="abs" id="g-sch" style="left:90px; top:430px; width:900px">
@@ -255,7 +255,7 @@
 
   <!-- 10 · JDE TO JINAK – A NENÍ TO IDEÁL -->
   <div id="s10" class="layer"><div class="world" id="w10">
-    <div class="abs eyebrow" id="j-eye" style="left:80px; top:290px">Jde to jinak</div>
+    <div class="abs eyebrow" id="j-eye" style="left:80px; top:290px">„Šetrnější“ chov? Pořád využívání.</div>
     <div class="card" id="j-c2" style="left:70px; top:360px; width:940px; padding:28px 36px">
       <div class="mono" style="color:var(--kpz-teal)">Mléčné farmy · 6 zemí Evropy</div>
       <div class="row" style="margin-top:4px"><div class="big-number" id="j-104" style="font-size:200px; color:var(--kpz-teal)">104</div>
@@ -266,6 +266,11 @@
     <div class="card" id="j-not" style="left:70px; top:820px; width:940px; padding:34px 44px">
       <div class="h1" style="font-size:108px; line-height:1.1">Okamžité oddělení <span class="hl" id="j-hl3">nutné není.</span></div>
     </div>
+    <!-- mateřské mléko nebo sýry (vyplní prázdné místo, než naskočí býčci a tzv. dojnice) -->
+    <div class="abs" id="j-p1" style="left:150px; top:600px; width:170px"></div>
+    <div class="abs" id="j-p2" style="left:390px; top:700px; width:300px"></div>
+    <div class="abs" id="j-p3" style="left:745px; top:610px; width:190px"></div>
+    <div class="stk" id="j-st" style="left:820px; top:930px; width:150px"></div>
     <!-- není to ideál -->
     <div class="abs tag red big print" id="j-idyl" style="left:80px; top:350px; font-size:58px; white-space:nowrap">Ani tady nehledejte útěchu</div>
     <div class="card row" id="j-r1" style="left:70px; top:520px; width:940px; padding:22px 30px">
@@ -332,7 +337,7 @@
   VOX.setup({ width: 1080, height: 1920, duration: VO.duration, vignette: 0.1, grain: 0, background: 'none' });
   KPZ.theme();
   VOXI.palette({ ink: '#17323d', paper: '#f3e9e3', border: '#f3e9e3', shade: '#e0cfc6', pink: '#eaa3aa', horn: '#efe0cc',
-    germ: '#d26c11', red: '#920637', blue: '#115c61', price: '#d38f03', barn: '#920637', leaf: '#3f877c', stem: '#2a6a63', soil: '#ead8cf' });
+    germ: '#d26c11', red: '#920637', blue: '#115c61', price: '#d38f03', barn: '#920637', leaf: '#3f877c', stem: '#2a6a63', soil: '#ead8cf', cheese: '#e8b443' });
   const { set, prog, pop, boil, highlight, draw, count, cutBlur, push, shot, ease, lerp, $ } = VOX;
   const T = (id) => VOX.vo(id).t0, E = (id) => VOX.vo(id).t1;
   const W = (id, word) => VOX.wordT(id, word);
@@ -389,6 +394,7 @@
   const PILE = [[720, 560], [820, 560], [920, 560], [770, 440], [870, 440], [820, 320]];
   $('#m-pile').innerHTML = PILE.map(([x, y], i) => `<div class="abs" id="mp${i}" style="left:${x - 50}px; top:${y - 40}px; width:96px">${VOXI.icon('milk')}</div>`).join('');
   put('j-bull', VOXI.cow({ calf: true, facing: 'right' })); put('j-cowd', VOXI.cow({ facing: 'right' }));
+  put('j-p1', VOXI.icon('milk')); put('j-p2', VOXI.icon('cheese')); put('j-p3', VOXI.icon('yogurt')); put('j-st', KPZ.sticker('sprig'));
   put('d-cart', VOXI.icon('cart')); put('d-barn', VOXI.icon('barn')); put('d-milk', VOXI.icon('milk')); put('d-plant', VOXI.icon('plant'));
   // styl KPZ: logo, nálepky, tmavé pozadí
   put('wm', '<img src="../../brand/kpz/logo-kpz-svetle.png" alt="">');   // klasické logo KPZ (feedback: ne kulaté)
@@ -646,6 +652,13 @@
       highlight('#j-hl3', prog(t, W('alt1b', 'nutné') - 0.1, 0.5));
       popIn('#j-exc', t, W('alt1b', 'přebytek') - 0.1, { r: -3, o: 1 - out1 });
       popIn('#j-idyl', t, t2 + 0.15, { r: -3 });
+      // výrobky: naskočí při „mateřské mléko nebo sýry“, odletí před řádky býčci / dojnice
+      const pOut = prog(t, W('alt2', 'býčci') - 0.55, 0.35, ease.inCubic);
+      [['#j-p1', W('alt2', 'mateřské') - 0.1, -6], ['#j-p2', W('alt2', 'sýry') - 0.15, 3], ['#j-p3', W('alt2', 'sýry') + 0.1, 7]].forEach(([sel, t0p, r0], i) => {
+        const p = pop(t, t0p, 0.35);
+        cutout(sel, t, sel, 0, pOut * 160, r0 + pOut * (i - 1) * 20, p || 0.001, (p > 0 ? 1 : 0) * (1 - pOut));
+      });
+      sticker('#j-st', t, W('alt2', 'sýry') + 0.3, -8, 1 - pOut);
       slideIn('#j-r1', t, W('alt2', 'býčci') - 0.2, 0, 100);
       cutout('#j-bull', t, 'jb');
       slideIn('#j-r2', t, W('alt2', 'dojnice') - 0.3, 0, 100);
