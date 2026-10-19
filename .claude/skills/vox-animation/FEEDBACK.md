@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.4.1**
+**Verze skillu: 0.5.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -27,6 +27,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
 - **[obsah]** Žádné detaily ušních známek ani čitelná čísla na známkách. _(2026-10-19, KPZ)_
 - **[vizuál]** Textury („grunge“, špína) dávkovat střídmě – na blocích s textem a na písmu jen jemně, aby nešpinily čitelnost. _(2026-10-19, kpz-telata v4-kpz)_
+- **[vizuál]** Skutečné fotky zvířat ve 4–6 klíčových momentech (hook, tele samo, hala, pastva, pouto), ilustrace na vysvětlování; ne rychlá montáž fotek na konci. Ušní známky rozmazat. _(2026-10-19, kpz-telata v5)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
 
 ## ✅ Osvědčené (nechat tak)
@@ -51,3 +52,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | 0.4.0 | kpz-telata v4-kpz | KPZ poslali svou grafiku (font Bebas Neue): „zkus to udělat podobně“; inspirovat se jen vizuální stránkou, obsah neřešit; fotky z grafiky nebrat – jde o font, barvy a styl; detail známky nikam (čísla). | Téma `brand/kpz/kpz-theme.css/js` (bloky po řádcích, růžový papír, grunge, linoryt nálepky, štětec, kulaté logo, titulky v blocích), `VOXI.palette`, titulky dělené na úseky `.cap-run/.cap-hl`, `render.mjs`: JPEG snímky (5× rychlejší) a `--stills`; scéna `reel-kpz.html`; pravidlo o srovnání s lidskými tragédiemi → rozhoduje KPZ. |
 | 2026-10-19 | 0.4.1 | kpz-telata v4-kpz | „Je to dobrý.“ Logo jako ve starších verzích (ne kulaté); bloky a text zbytečně špinavé – o 50 % míň. | `kpz-print` / `kpz-print-soft` poloviční síla (hrany i vybledlá místa); klasické logo `logo-kpz-svetle.png` jako vodoznak + v outru, na tmavých záběrech skryté; README KPZ upraveno. |
 | 2026-10-19 | (v5 – scénář) | kpz-telata | KPZ poslali upravený scénář (drobné úpravy hlasu, nadpis „Krávy se dají zneužívat i „šetrněji““); zvažují skutečné fotky krav a telat – v průběhu videa, nebo 4s záblesk na konci. | Uloženo jako `scenar-v5.md` (opraveno: „krávámi“ → „kravami“, rovné uvozovky → české). Render čeká na rozhodnutí o fotkách. |
+| 2026-10-19 | 0.5.0 | kpz-telata v5 | „…ale dej tam ‚a telata tam zůstávají‘“, „v drtivé většině (chovů)“; fotky zkusit najít na internetu provizorně (pak dodají vlastní), chtějí vidět, jak to vypadá. | Hlas v5 (`vo-v5.json`, `assets-v5/`, kratší pauzy → 2:58,7); scéna `reel-kpz-foto.html` s 6 provizorními fotkami (Unsplash přes HF), `.kpz-photo` v tématu, `scripts/hf_photos.py`, postup 2f v SKILL.md. |

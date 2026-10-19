@@ -2,4 +2,4 @@ out/
 node_modules/
 *.tmp.png
 .cache/
-scenes/*/assets/vo.wav
+scenes/*/assets*/vo.wav

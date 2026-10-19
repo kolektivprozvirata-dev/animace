@@ -155,3 +155,22 @@ body.kpz #vox-captions .cap-hl {
 }
 body.kpz #vox-captions .cap-run { background: var(--kpz-cream); color: var(--kpz-teal-d); }
 body.kpz #vox-captions .cap-hl { background: var(--kpz-orange); color: var(--kpz-cream); }
+
+/* ---------- fotky: teplý tón do palety KPZ, okraje prolnuté do růžové ---------- */
+.kpz-photo { position: absolute; overflow: hidden; }
+.kpz-photo img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: sepia(.22) saturate(.85) contrast(1.06) brightness(1.03);
+}
+.kpz-photo::after {            /* jemný růžový nádech, aby fotka seděla do pozadí */
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: var(--kpz-pink); mix-blend-mode: soft-light; opacity: .4;
+}
+.kpz-photo.fade-y {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 80%, transparent 100%);
+}
+.kpz-photo.fade-top {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 25%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 25%);
+}

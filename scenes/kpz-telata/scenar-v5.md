@@ -10,7 +10,7 @@
 Věděli jste, že krabice mléka z obchodu začíná *porodem?*
 Příručky tzv. chovatelů uvádějí, že se tele odebírá matce *nejpozději do 12 hodin.*
 V praxi je to ale často *hned.*
-Tele pak tráví týdny *samo v boxu,* přestože je to *společenské zvíře.*
+Tele pak v drtivé většině chovů tráví týdny *samo v boxu,* přestože je to *společenské zvíře.*
 
 ## NÁŠ POHLED
 Ať hned, nebo později: oddělit mládě od matky po porodu je *kruté.*
@@ -21,7 +21,7 @@ Chovatelé mají několik argumentů. Mezi *nejčastější* patří tyto čtyř
 ## 1 · HYGIENA
 Za prvé: *hygiena.* Tele prý musí pryč, aby se nenakazilo.
 Jenže ve *velkokapacitních halách* žije spousta krav na malé ploše. Výkaly a moč přibývají průběžně. A i když bývají většinou standardně uklízeny, *bakteriím* se tam logicky daří.
-Zajímavé je, že například u tzv. masných krav na pastvě je prostoru dost, tam telata zůstávají s matkami *měsíce.*
+Zajímavé je, že například u tzv. masných krav na pastvě je prostoru dost a telata tam zůstávají s matkami *měsíce.*
 Problém je tedy v prostředí vytvořeném chovateli. Odnese to, jak jinak, *tele a jeho máma.*
 
 ## 2 · ZALEHNUTÍ

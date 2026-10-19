@@ -80,6 +80,14 @@ zůstávají Vox, mění se písmo, barvy, textury a tvary. Hotové téma: **KPZ
 (`brand/kpz/kpz-theme.css` + `kpz-theme.js`, popis v `brand/kpz/README.md` → Vizuální styl),
 vzor scény `scenes/kpz-telata/reel-kpz.html`. Z grafiky klienta přebírej jen vizuál, ne obsah.
 
+### 2f. Skutečné fotky
+Ilustrace nech na vysvětlování (schémata, grafy, kruhy), skutečné fotky dej do momentů
+„tohle je skutečné“ (hook, zvíře samo, hala, pastva, pouto) – 4–6 fotek, ne montáž na konci.
+Fotka ve stylu KPZ: `<div class="kpz-photo fade-y"><img src=…></div>` (teplý tón, prolnutí
+do pozadí; ve framu panelu bez `fade-y`). Ušní známky s čísly vždy rozmazat. Provizorní fotky,
+když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky
+jsou z prostředí blokované) – jen na náhled, zdroj zapsat do README u fotek.
+
 ### 2d. Svislý formát (reels)
 `VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].
 Vzor: `scenes/kpz-telata/reel.html` (Vox papír), `scenes/kpz-telata/reel-kpz.html` (styl KPZ).
@@ -158,6 +166,7 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
 ├── scripts/
 │   ├── render.mjs            ← HTML → MP4 / PNG / kontaktní arch
 │   ├── tts.py                ← český voiceover (Piper) + časování + titulky
+│   ├── hf_photos.py          ← provizorní fotky z datasetů Hugging Face
 │   └── halftone.py           ← fotka → halftone / duotón PNG
 └── examples/demo.html        ← ukázka: titulek, dokument, graf
 ```
