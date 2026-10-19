@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.8.0**
+**Verze skillu: 0.8.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -35,6 +35,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Skutečné fotky zvířat ve 4–6 klíčových momentech (hook, tele samo, hala, pastva, pouto), ilustrace na vysvětlování; ne rychlá montáž fotek na konci. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Fotky ne celé přes obraz, ale jako **papírové výstřižky**: zvíře vystřižené s okrajem z utrženého papíru (`scripts/cutout.py`), prostředí jako utržený kus fotky. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Ve výstřižcích jen **celá zvířata** – žádné useknuté půlky těla (fotka oříznutá okrajem = nepoužít). _(2026-10-19, kpz-telata v5)_
+- **[vizuál]** Krajinné fotky (pastva, prostředí) ne jako pravidelný obdélník, ale **nepravidelný utržený kus** (`cutout.py --shape blob`). _(2026-10-19, kpz-telata v7)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
 
 ## ✅ Osvědčené (nechat tak)
@@ -69,4 +70,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | 0.7.1 | kpz-telata v5 | „Známky jdou zadělat tak, aby nesvítily – místo textu se dá barva známky.“ + fotka krávy se sajícím teletem (vlastní nález KPZ), „zkus podle sebe“. | `scripts/tag_retouch.py` (text uvnitř známky → místní barva známky, oblasti `--box`); fotky KPZ přebarveny, výstřižky znovu; úvod = kráva se sajícím teletem; bouda = varianta A. |
 | 2026-10-19 | 0.7.2 | kpz-telata v5 | Přebarvení známek „taky nevypadá dobře – udělej gaussian blur, prostě číslo rozostříš“ → „jo, to vypadá líp“. | `tag_retouch.py --mode blur` (výchozí): rozostření jen uvnitř konvexního obrysu známky, sláma/ucho odfiltrované; fotky a výstřižky znovu. |
 | 2026-10-19 | 0.8.0 | kpz-telata v6 | „Rozostři jen to číslo, ne celý prostor známky“; fotka masného skotu (KPZ) + „můžeš začít“; „tykej mi“. | `tag_retouch.py --rect` (obdélník čísla, oříznuto na plochu známky; `--hue/--sat` pro růžové známky, `--noclip`); ikony `cheese`, `yogurt`; **v6**: hlas přegenerován (9 500 v jednom titulku, 2:59,2), úvod kráva se sajícím teletem (KPZ), tele KPZ v kreslené boudě, kravín KPZ, pastva = masný skot KPZ, karty argumentů jednou barvou, nadpis „„Šetrnější“ chov? Pořád využívání.“, ve 2:30 mléko/sýr/jogurt. |
-| 2026-10-19 | (do v7) | kpz-telata | „Teď ti budu dávat nápady, až je nahromadím, přidáš je do videa – ukládej si to.“ #1: do boudy v 0:18 dát nové tele (tele-studio). #2: někam vložit individuální boxy ze záběru z výšky (ořez kolem bud). #3: v 1:10 fotka stáda na pastvě (KPZ). | Sekce „Do v7“ v `dalsi-verze.md`; foto + výstřižek připraveny, scéna zatím beze změny. |
+| 2026-10-19 | (do v7) | kpz-telata | „Teď ti budu dávat nápady, až je nahromadím, přidáš je do videa – ukládej si to.“ #1: do boudy v 0:18 dát nové tele (tele-studio). #2: někam vložit individuální boxy ze záběru z výšky (ořez kolem bud). #3: v 1:10 fotka stáda na pastvě (KPZ). #4: fotky z pastvy nepravidelným tvarem – vybráno B (blob). | Sekce „Do v7“ v `dalsi-verze.md`; foto + výstřižek připraveny, scéna zatím beze změny. |

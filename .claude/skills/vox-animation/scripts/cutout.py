@@ -7,6 +7,7 @@ Výstřižek z fotky s okrajem z utrženého papíru (koláž).
   python3 cutout.py foto.jpg kus.png --piece --crop 0,380,1024,1110
   volby: --border 26 (šířka papíru v px) --seed 7 --paper f3e9e3
          --largest (jen největší objekt, bez ulétlých kousků) --scale 2 (zvětšit malý výřez)
+         --shape island (zvířata + pruh louky, bez nebe) | blob (organický utržený tvar)
 
 Model BiRefNet lite (MIT, onnx-community/BiRefNet_lite-ONNX, 224 MB) se při prvním
 spuštění stáhne do .cache/birefnet/. Potřebuje: pip install onnxruntime numpy pillow.
@@ -72,13 +73,38 @@ def piece_mask(w, h, seed):
     sm = np.asarray(m.filter(ImageFilter.GaussianBlur(6)), dtype=np.float32) / 255.0
     return Image.fromarray(((sm > 0.35 + 0.3 * (noise(w, h, 14, seed + 5) - 0.5)) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.7))
 
-def make(src, out, piece=False, border=26, seed=7, paper=(243, 233, 227), crop=None, pad=60, largest=False, scale=1):
+def island_mask(im, seed, grow=5, band=0.30):
+    """„Ostrov“: zvířata + pruh louky pod nimi; horní hrana kopíruje hřbety zvířat, nebe a les pryč."""
+    a = matte(im); w, h = im.size
+    m = np.asarray(a.filter(ImageFilter.MaxFilter(grow | 1)).filter(ImageFilter.GaussianBlur(1)), dtype=np.float32) / 255.0
+    ys = np.nonzero(np.asarray(a) > 128)[0]
+    feet = int(np.percentile(ys, 97)) if len(ys) else int(h * 0.75)
+    top = int(feet - band * h)
+    rows = np.arange(h)[:, None]
+    n = noise(w, h, 60, seed + 3)[:, :] * 0.12 * h + noise(w, h, 12, seed + 4) * 0.03 * h
+    ground = (rows >= top + n).astype(np.float32)
+    side = np.minimum(np.arange(w)[None, :], w - 1 - np.arange(w)[None, :]) > (0.02 * w + noise(w, h, 30, seed + 6) * 0.05 * w)
+    return Image.fromarray((np.clip(np.maximum(m, ground) * side, 0, 1) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.8))
+
+
+def blob_mask(w, h, seed):
+    """Organický, nepravidelný tvar (ručně utržený kus) místo obdélníku."""
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    d = np.maximum(np.abs(xx / w - 0.5) / 0.5, np.abs(yy / h - 0.5) / 0.5) ** 3 + ((xx / w - 0.5) ** 2 + (yy / h - 0.5) ** 2) * 1.2
+    n = 0.6 * noise(w, h, max(8, w // 6), seed + 7) + 0.4 * noise(w, h, max(4, w // 20), seed + 8)
+    return Image.fromarray(((d < 0.55 + 0.45 * n) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1))
+
+
+def make(src, out, piece=False, border=26, seed=7, paper=(243, 233, 227), crop=None, pad=60, largest=False, scale=1, shape=None):
     im = Image.open(src).convert('RGB')
     if crop: im = im.crop(crop)
     if scale != 1: im = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
     w, h = im.size
-    a = piece_mask(w, h, seed) if piece else matte(im)
-    if largest and not piece: a = keep_largest(a)
+    if shape == 'island': a = island_mask(im, seed)
+    elif shape == 'blob': a = blob_mask(w, h, seed)
+    else:
+        a = piece_mask(w, h, seed) if piece else matte(im)
+        if largest and not piece: a = keep_largest(a)
     W, H = w + 2 * pad, h + 2 * pad
     A = Image.new('L', (W, H), 0); A.paste(a, (pad, pad))
     rgb = np.zeros((H, W, 3), dtype=np.float32) + paper + (noise(W, H, 2, seed + 9)[..., None] - 0.5) * 14
@@ -97,6 +123,8 @@ if __name__ == '__main__':
     ap.add_argument('--crop', default=None, help='x0,y0,x1,y1')
     ap.add_argument('--largest', action='store_true', help='jen největší souvislý objekt (bez ulétlých kousků)')
     ap.add_argument('--scale', type=float, default=1, help='zvětšení výřezu před vystřižením (malé fotky)')
+    ap.add_argument('--shape', choices=['island', 'blob'], default=None,
+                    help='nepravidelný kus fotky: island = zvířata + pruh louky (bez nebe), blob = organický tvar')
     a = ap.parse_args()
     make(a.src, a.out, a.piece, a.border, a.seed, tuple(int(a.paper[i:i + 2], 16) for i in (0, 2, 4)),
-         tuple(int(v) for v in a.crop.split(',')) if a.crop else None, largest=a.largest, scale=a.scale)
+         tuple(int(v) for v in a.crop.split(',')) if a.crop else None, largest=a.largest, scale=a.scale, shape=a.shape)

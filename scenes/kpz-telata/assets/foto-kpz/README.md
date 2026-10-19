@@ -35,3 +35,5 @@ Výstřižky:
     python3 $S tele-studio.jpg vystrizky/tele-studio.png --largest
     python3 $S farma-z-vysky.jpg vystrizky/boudy-z-vysky.png --piece --crop 610,370,1480,900
     python3 $S pastva-stado.jpg vystrizky/pastva-stado.png --piece --scale 1.6
+    python3 $S masny-skot.jpg vystrizky/masny-skot-tvar.png --shape blob --seed 62 --crop 70,60,1060,600 --scale 1.5
+    python3 $S pastva-stado.jpg vystrizky/pastva-stado-tvar.png --shape blob --seed 64 --scale 1.6
