@@ -21,4 +21,5 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 | # | datum | úprava | stav |
 |---|---|---|---|
 | 1 | 2026-10-19 | **0:18** „samo v boxu“ – do kreslené boudy dát nové tele od KPZ (`assets/foto-kpz/tele-studio.jpg`, celé, žluté známky bez čísel). Výstřižek připraven: `vystrizky/tele-studio.png` (ve scéně vyměnit `#h-bcalf` img; tele je vyšší a štíhlejší → doladit šířku/pozici). | připraveno |
+| 2 | 2026-10-19 | **Individuální boxy z výšky** (záběr z dronu, ořez kolem řad boud): utržený kus `vystrizky/boudy-z-vysky.png` (z `farma-z-vysky.jpg`). Návrh umístění: 0:13–0:15 při „Tele pak **v drtivé většině chovů**…“ naskočí boudy z výšky se štítkem „Desítky boxů, v každém jedno tele“, při „samo v boxu“ je vystřídá detail – tele v kreslené boudě (bod 1). Alternativa: pozadí „bizarního kruhu“ (~2:00). | připraveno, čeká na potvrzení umístění |
 
