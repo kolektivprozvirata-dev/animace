@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.5.0**
+**Verze skillu: 0.6.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -28,6 +28,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[obsah]** Žádné detaily ušních známek ani čitelná čísla na známkách. _(2026-10-19, KPZ)_
 - **[vizuál]** Textury („grunge“, špína) dávkovat střídmě – na blocích s textem a na písmu jen jemně, aby nešpinily čitelnost. _(2026-10-19, kpz-telata v4-kpz)_
 - **[vizuál]** Skutečné fotky zvířat ve 4–6 klíčových momentech (hook, tele samo, hala, pastva, pouto), ilustrace na vysvětlování; ne rychlá montáž fotek na konci. Ušní známky rozmazat. _(2026-10-19, kpz-telata v5)_
+- **[vizuál]** Fotky ne celé přes obraz, ale jako **papírové výstřižky**: zvíře vystřižené s okrajem z utrženého papíru (`scripts/cutout.py`), prostředí jako utržený kus fotky. _(2026-10-19, kpz-telata v5)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
 
 ## ✅ Osvědčené (nechat tak)
@@ -53,3 +54,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | 0.4.1 | kpz-telata v4-kpz | „Je to dobrý.“ Logo jako ve starších verzích (ne kulaté); bloky a text zbytečně špinavé – o 50 % míň. | `kpz-print` / `kpz-print-soft` poloviční síla (hrany i vybledlá místa); klasické logo `logo-kpz-svetle.png` jako vodoznak + v outru, na tmavých záběrech skryté; README KPZ upraveno. |
 | 2026-10-19 | (v5 – scénář) | kpz-telata | KPZ poslali upravený scénář (drobné úpravy hlasu, nadpis „Krávy se dají zneužívat i „šetrněji““); zvažují skutečné fotky krav a telat – v průběhu videa, nebo 4s záblesk na konci. | Uloženo jako `scenar-v5.md` (opraveno: „krávámi“ → „kravami“, rovné uvozovky → české). Render čeká na rozhodnutí o fotkách. |
 | 2026-10-19 | 0.5.0 | kpz-telata v5 | „…ale dej tam ‚a telata tam zůstávají‘“, „v drtivé většině (chovů)“; fotky zkusit najít na internetu provizorně (pak dodají vlastní), chtějí vidět, jak to vypadá. | Hlas v5 (`vo-v5.json`, `assets-v5/`, kratší pauzy → 2:58,7); scéna `reel-kpz-foto.html` s 6 provizorními fotkami (Unsplash přes HF), `.kpz-photo` v tématu, `scripts/hf_photos.py`, postup 2f v SKILL.md. |
+| 2026-10-19 | 0.6.0 | kpz-telata v5 | „Zvládl bys zvířata oříznout a dát jim papírový okraj / utržený papír? Celé fotky jsou divné.“ | `scripts/cutout.py` (BiRefNet lite z HF + utržený okraj), `.kpz-cut` v tématu; scéna: kráva s teletem a tele v kreslené boudě jako výstřižky, hala a pastvina jako utržené kusy fotek, krávy na kreslené pastvě, pouto jako výstřižek. |

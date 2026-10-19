@@ -174,3 +174,11 @@ body.kpz #vox-captions .cap-hl { background: var(--kpz-orange); color: var(--kpz
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 25%);
   mask-image: linear-gradient(to bottom, transparent 0%, #000 25%);
 }
+
+/* ---------- výstřižky z fotek (scripts/cutout.py – papírový okraj je už v PNG) ---------- */
+.kpz-cut { position: absolute; }
+.kpz-cut > img {
+  width: 100%; display: block;
+  filter: sepia(.14) saturate(.9) contrast(1.04)
+          drop-shadow(0 3px 2px rgba(60, 0, 20, .25)) drop-shadow(0 14px 18px rgba(60, 0, 20, .22));
+}

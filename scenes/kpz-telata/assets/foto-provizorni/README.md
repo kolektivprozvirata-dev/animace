@@ -15,3 +15,14 @@ rozmazané, zvětšeno 2× (originál má jen 512 px na kratší straně → ve 
 
 Výměna: stačí nahradit soubor stejným názvem (ideálně ≥ 1500 px, na výšku) – scéna
 `reel-kpz-foto.html` si ho načte sama; případně upravit `object-position` u `<img>`.
+
+## Výstřižky (`vystrizky/`)
+
+Ve videu se fotky nepoužívají celé, ale jako **papírové výstřižky**: zvíře vystřižené
+z fotky s okrajem z utrženého papíru, prostředí (hala, pastvina) jako utržený kus fotky.
+Vyrobeno skriptem skillu:
+
+    python3 .claude/skills/vox-animation/scripts/cutout.py tele-samo.jpg vystrizky/tele-samo.png
+    python3 .claude/skills/vox-animation/scripts/cutout.py hala-krmeni.jpg vystrizky/hala-krmeni.png --piece --crop 0,380,1024,1110
+
+Po výměně za fotky KPZ stačí výstřižky vyrobit znovu stejnými příkazy (známky rozmazat předem).

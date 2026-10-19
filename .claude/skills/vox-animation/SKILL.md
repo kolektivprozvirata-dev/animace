@@ -83,8 +83,11 @@ vzor scény `scenes/kpz-telata/reel-kpz.html`. Z grafiky klienta přebírej jen 
 ### 2f. Skutečné fotky
 Ilustrace nech na vysvětlování (schémata, grafy, kruhy), skutečné fotky dej do momentů
 „tohle je skutečné“ (hook, zvíře samo, hala, pastva, pouto) – 4–6 fotek, ne montáž na konci.
-Fotka ve stylu KPZ: `<div class="kpz-photo fade-y"><img src=…></div>` (teplý tón, prolnutí
-do pozadí; ve framu panelu bez `fade-y`). Ušní známky s čísly vždy rozmazat. Provizorní fotky,
+Výchozí podoba = **papírový výstřižek**: `scripts/cutout.py foto.jpg out.png` vystřihne zvíře
+(model BiRefNet, stáhne se z Hugging Face) a dá mu okraj z utrženého papíru; `--piece` udělá
+utržený kus celé fotky (hala, krajina). Ve scéně `<div class="kpz-cut"><img src=out.png></div>`
++ `cutout()` boil. Celé fotky přes celou šířku (`.kpz-photo fade-y`) KPZ nechtějí („je to divné“).
+Ušní známky s čísly vždy rozmazat (ve zdroji i ve výstřižku). Provizorní fotky,
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky
 jsou z prostředí blokované) – jen na náhled, zdroj zapsat do README u fotek.
 
@@ -167,6 +170,7 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
 │   ├── render.mjs            ← HTML → MP4 / PNG / kontaktní arch
 │   ├── tts.py                ← český voiceover (Piper) + časování + titulky
 │   ├── hf_photos.py          ← provizorní fotky z datasetů Hugging Face
+│   ├── cutout.py             ← výstřižek z fotky s okrajem z utrženého papíru
 │   └── halftone.py           ← fotka → halftone / duotón PNG
 └── examples/demo.html        ← ukázka: titulek, dokument, graf
 ```
@@ -176,5 +180,5 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
   předinstalované. Lokálně: `npm i -g playwright && npx playwright install chromium`.
 - Písma: lokálně Inter / Charter / DejaVu Mono (podporují češtinu). Google Fonts
   lze ve scéně načíst `<link>`em; renderer čeká na `document.fonts.ready`.
-- Výřez postavy z fotky (odstranění pozadí) skill neumí – potřebuje PNG
-  s průhledností od uživatele.
+- Výřez postavy z fotky (odstranění pozadí) umí `scripts/cutout.py` (BiRefNet); u zvířat
+  oříznutých okrajem fotky vznikne rovná hrana – vybírat fotky s celým zvířetem.
