@@ -1,7 +1,7 @@
 # Fotky KPZ (dodané 2026-10-19)
 
-Originály bez úprav (známky se nerozmazávají – pokyn KPZ). Výstřižky v `vystrizky/`
-vyrobené `.claude/skills/vox-animation/scripts/cutout.py`.
+Čísla na ušních známkách přebarvená barvou známky (`scripts/tag_retouch.py`, pokyn KPZ – ne rozmazání).
+Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cutout.py`.
 
 | soubor | popis | použití ve videu |
 |---|---|---|
@@ -12,7 +12,14 @@ vyrobené `.claude/skills/vox-animation/scripts/cutout.py`.
 | kravin-vrata.jpg | krávy za vraty velké haly | zatím nepoužito (rezerva: zalehnutí / bizarní kruh) |
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
 
-Příkazy:
+Příkazy (známky – originály 25.jpg/26.jpg/29.png ze zprávy KPZ):
+
+    T=.claude/skills/vox-animation/scripts/tag_retouch.py
+    python3 $T 26.jpg telata-boudy-detail.jpg --box 488,360,556,436 --box 600,352,664,416 --box 928,496,992,584 --box 1068,504,1136,580 --box 0,515,25,560 --box 1470,385,1505,428
+    python3 $T 25.jpg kravin-uvnitr.jpg --box 385,690,470,780 --box 680,665,760,760 --box 240,500,285,545 --box 358,495,400,540 --box 1025,455,1060,495 --box 1222,500,1262,565 --box 1748,650,1790,695 --box 1775,712,1812,760
+    python3 $T 29.png krava-s-teletem.jpg --box 425,118,452,146
+
+Výstřižky:
 
     S=.claude/skills/vox-animation/scripts/cutout.py
     python3 $S telata-boudy-detail.jpg vystrizky/tele-kpz.png --crop 420,280,760,720 --scale 2 --largest

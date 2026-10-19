@@ -4,7 +4,7 @@ Fotobanky jsou z prostředí blokované, proto fotky z veřejných datasetů na 
 - **Unsplash** (licence Unsplash) – kopie v `wtcherr/unsplash_20k`,
 - **COCO 2017** (fotky z Flickru, licence CC dle jednotlivých fotek) – kopie v `Multimodal-Fatima/COCO_captions_train`.
 
-Úpravy: ořez, zvětšeno 2× (originály mají 512–640 px → ve videu měkké). Známky se nerozmazávají.
+Úpravy: ořez, zvětšeno 2× (originály mají 512–640 px → ve videu měkké). Čísla na známkách přebarvená (`tag_retouch.py`).
 **Pravidlo KPZ: zvířata ve výstřižcích vždy celá – žádné useknuté půlky těla.**
 
 | soubor | zdroj (soubor_rowgroup_řádek) | popis | kde ve videu |
