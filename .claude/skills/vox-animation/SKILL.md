@@ -87,9 +87,9 @@ Výchozí podoba = **papírový výstřižek**: `scripts/cutout.py foto.jpg out.
 (model BiRefNet, stáhne se z Hugging Face) a dá mu okraj z utrženého papíru; `--piece` udělá
 utržený kus celé fotky (hala, krajina). Ve scéně `<div class="kpz-cut"><img src=out.png></div>`
 + `cutout()` boil. Celé fotky přes celou šířku (`.kpz-photo fade-y`) KPZ nechtějí („je to divné“).
-Ušní známky **nerozmazávat**; čísla přebarvit barvou známky: `scripts/tag_retouch.py foto.jpg
-out.jpg --box x0,y0,x1,y1 …` (oblasti známek; automatika bez `--box` jen v hale – venku plete
-suchou trávu). Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Vystřihovat jen **celá zvířata** – fotku,
+Ušní známky: čísla **rozostřit jen uvnitř obrysu známky** – `scripts/tag_retouch.py foto.jpg
+out.jpg --box x0,y0,x1,y1 …` (výchozí `--mode blur`; oblasti známek zadat ručně, automatika
+bez `--box` venku plete suchou trávu). Ne rozmazaný flek přes ucho, ne plné přebarvení. Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Vystřihovat jen **celá zvířata** – fotku,
 kde okraj usekne část těla, nepoužít. Fotky s kravami a telaty: `hf_photos.py` nad COCO
 (`Multimodal-Fatima/COCO_captions_train`, sloupec `sentences_raw`). Provizorní fotky,
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky
@@ -175,7 +175,7 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
 │   ├── tts.py                ← český voiceover (Piper) + časování + titulky
 │   ├── hf_photos.py          ← provizorní fotky z datasetů Hugging Face
 │   ├── cutout.py             ← výstřižek z fotky s okrajem z utrženého papíru
-│   ├── tag_retouch.py        ← čísla na ušních známkách → barva známky
+│   ├── tag_retouch.py        ← čísla na ušních známkách rozostřit uvnitř známky
 │   └── halftone.py           ← fotka → halftone / duotón PNG
 └── examples/demo.html        ← ukázka: titulek, dokument, graf
 ```

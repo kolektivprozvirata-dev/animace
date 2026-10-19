@@ -1,6 +1,6 @@
 # Fotky KPZ (dodané 2026-10-19)
 
-Čísla na ušních známkách přebarvená barvou známky (`scripts/tag_retouch.py`, pokyn KPZ – ne rozmazání).
+Čísla na ušních známkách rozostřená jen uvnitř známky (`scripts/tag_retouch.py`, pokyn KPZ).
 Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cutout.py`.
 
 | soubor | popis | použití ve videu |

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Zakrytí čísel na ušních známkách: text ve známce se přebarví barvou známky
-(známka zůstane vidět, jen bez čísel – nesvítí jako rozmazaný flek).
+Zakrytí čísel na ušních známkách. Výchozí (--mode blur): číslo se gaussovsky rozostří
+jen uvnitř obrysu známky – tvar známky zůstane ostrý, nevznikne rozmazaný flek kolem.
+--mode fill: text se přebarví barvou známky (KPZ se nelíbilo – „nevypadá dobře“).
 
   python3 tag_retouch.py foto.jpg out.jpg                 # automaticky najde žluté známky
   python3 tag_retouch.py foto.jpg out.jpg --box 488,360,556,436 --box ...   # jen dané oblasti
@@ -38,6 +39,26 @@ def components(mask, min_px):
     return boxes
 
 
+def component_masks(mask):
+    from collections import deque
+    h, w = mask.shape; seen = np.zeros_like(mask, bool); out = []
+    for y0, x0 in zip(*np.nonzero(mask)):
+        if seen[y0, x0]: continue
+        m = np.zeros_like(mask, bool); q = deque([(y0, x0)]); seen[y0, x0] = True
+        while q:
+            y, x = q.popleft(); m[y, x] = True
+            for ny, nx in ((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)):
+                if 0 <= ny < h and 0 <= nx < w and mask[ny, nx] and not seen[ny, nx]:
+                    seen[ny, nx] = True; q.append((ny, nx))
+        out.append(m)
+    return out
+
+
+def bbox(m):
+    ys, xs = np.nonzero(m)
+    return int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1
+
+
 def convex_hull(points):
     """Konvexní obal (monotone chain)."""
     pts = sorted(set(points))
@@ -59,6 +80,38 @@ def box_blur(a, r):
     c = np.cumsum(np.cumsum(p, 0), 1); c = np.pad(c, ((1, 0), (1, 0)))
     n = 2 * r + 1; h, w = a.shape
     return (c[n:n + h, n:n + w] - c[:h, n:n + w] - c[n:n + h, :w] + c[:h, :w]) / (n * n)
+
+
+def blur_box(img, box, radius=None):
+    """Gaussovské rozostření čísla jen uvnitř obrysu známky – tvar známky zůstane ostrý."""
+    x0, y0, x1, y1 = box
+    reg = img.crop(box); hsv = np.asarray(reg.convert('HSV')).astype(int)
+    hue = (hsv[..., 0] >= 24) & (hsv[..., 0] <= 52) & (hsv[..., 1] > 95) & (hsv[..., 2] > 70)
+    # řádek textu dělí známku na dvě části → žlutou plochu spojit, vybrat největší a vzít jen její žluté px
+    hi = Image.fromarray((hue * 255).astype(np.uint8))
+    hue = np.asarray(hi.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.MaxFilter(3))) > 0   # pryč drobná sláma
+    joined = np.asarray(Image.fromarray((hue * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(11))) > 0
+    masks = component_masks(joined)
+    if not masks: return 0
+    sel = max(masks, key=lambda m: int((m & hue).sum()))
+    core = sel & hue
+    cb = bbox(core)
+    hull = convex_hull([tuple(map(int, p)) for p in np.argwhere(core)[:, ::-1]])
+    if len(hull) < 3: return 0
+    hm = Image.new('L', reg.size, 0); ImageDraw.Draw(hm).polygon(hull, fill=255)
+    hm = hm.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(1))
+    w, h = cb[2] - cb[0], cb[3] - cb[1]
+    r = radius or max(1.6, min(w, h) / 20)   # jen rozostřit, ne vymazat
+    # rozostřit jen obsah známky: okolí nahradit barvou známky, ať do ní nezatéká tmavé ucho
+    arr = np.asarray(reg).astype(np.float32)
+    tag_col = np.median(arr[core], axis=0)
+    inside = np.asarray(hm) > 127
+    base = np.where(inside[..., None], arr, tag_col)
+    bl = np.asarray(Image.fromarray(base.astype(np.uint8)).filter(ImageFilter.GaussianBlur(r))).astype(np.float32)
+    m = np.asarray(hm, dtype=np.float32)[..., None] / 255.0
+    out = arr * (1 - m) + bl * m
+    img.paste(Image.fromarray(np.clip(out, 0, 255).astype(np.uint8)), (x0, y0))
+    return int(inside.sum())
 
 
 def retouch_box(img, box, close=None):
@@ -103,6 +156,9 @@ def main():
     ap.add_argument('--box', action='append', default=[])
     ap.add_argument('--min', type=int, default=60, help='min. velikost známky v px (auto režim)')
     ap.add_argument('--debug', default=None)
+    ap.add_argument('--mode', choices=['blur', 'fill'], default='blur',
+                    help='blur = rozostřit číslo uvnitř známky (výchozí, KPZ), fill = přebarvit barvou známky')
+    ap.add_argument('--radius', type=float, default=None, help='síla rozostření (px), výchozí ~1/9 známky')
     a = ap.parse_args()
     img = Image.open(a.src).convert('RGB')
     if a.box:
@@ -113,8 +169,11 @@ def main():
     pad = 4; done = []
     for (x0, y0, x1, y1) in boxes:
         b = (max(0, x0 - pad), max(0, y0 - pad), min(img.width, x1 + pad), min(img.height, y1 + pad))
-        n = retouch_box(img, b)
-        n += retouch_box(img, b)   # druhý průchod dočistí zbytky písma
+        if a.mode == 'blur':
+            n = blur_box(img, b, a.radius)
+        else:
+            n = retouch_box(img, b)
+            n += retouch_box(img, b)   # druhý průchod dočistí zbytky písma
         if n: done.append((b, n))
     img.save(a.out, quality=93)
     print(a.out, 'známek upraveno:', len(done), done)

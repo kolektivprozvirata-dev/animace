@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.7.1**
+**Verze skillu: 0.7.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -29,7 +29,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
-- **[obsah]** Žádný samostatný detailní záběr na ušní známku. Čísla na známkách **přebarvit barvou známky** (`scripts/tag_retouch.py`) – známka zůstane, čísla zmizí. Nikdy nerozmazávat („vypadá strašně“). _(2026-10-19, KPZ)_
+- **[obsah]** Žádný samostatný detailní záběr na ušní známku. Čísla na známkách **gaussovsky rozostřit jen uvnitř obrysu známky** (`scripts/tag_retouch.py`, výchozí `--mode blur`) – „vypadá líp“. Ne rozmazaný flek přes celé ucho („vypadá strašně“), ne plné přebarvení („nevypadá dobře“). _(2026-10-19, KPZ)_
 - **[vizuál]** Textury („grunge“, špína) dávkovat střídmě – na blocích s textem a na písmu jen jemně, aby nešpinily čitelnost. _(2026-10-19, kpz-telata v4-kpz)_
 - **[vizuál]** Skutečné fotky zvířat ve 4–6 klíčových momentech (hook, tele samo, hala, pastva, pouto), ilustrace na vysvětlování; ne rychlá montáž fotek na konci. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Fotky ne celé přes obraz, ale jako **papírové výstřižky**: zvíře vystřižené s okrajem z utrženého papíru (`scripts/cutout.py`), prostředí jako utržený kus fotky. _(2026-10-19, kpz-telata v5)_
@@ -40,6 +40,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 
 - Hlas Jirka (Piper) při `length_scale` 0.83 – tempo „v pohodě“. _(kpz-telata v1)_
 - Vizuální styl KPZ (Bebas Neue, bloky po řádcích, růžový papír, nálepky, titulky v blocích) – „Je to dobrý.“ _(kpz-telata v4-kpz)_
+- Čísla na známkách rozostřená jen uvnitř známky – „jo, to vypadá líp.“ _(kpz-telata v5)_
 
 ## Otevřené otázky na uživatele
 
@@ -65,3 +66,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | (do další verze) | kpz-telata v5 | 2:30 prázdná obrazovka – přidat „koření“; 2:16 „Jde to jinak“ zní jako schvalování → „Krávy se dají zneužívat i „šetrněji““; 0:28 karty argumentů sjednotit jednou barvou; fotky dodá KPZ. Zatím nevyrábět. | Zapsáno do `scenes/kpz-telata/dalsi-verze.md` (body 3–5). Poučení: text z části B scénáře propsat do scény hned (nadpis „Jde to jinak“ zůstal). |
 | 2026-10-19 | 0.7.0 | kpz-telata v5 | KPZ dodali vlastní fotky (tele v boudě, řada boud, farma z výšky, kravín zevnitř, vrata kravínu); „líbí se mi tele fyzicky a za ním animovaná boudička – zkus i skutečnou“; „ořež to jako předtím“; „zadělávání známek vypadá strašně, vyser se na to“. | Fotky KPZ v `assets/foto-kpz/` (bez rozmazání), výstřižky; `cutout.py --largest --scale`; 4 varianty záběru „samo v boxu“ (A tele v kreslené boudě, B skutečná bouda, C řada boud, D farma z výšky) přepínané `BOX` ve scéně; hygiena = kravín KPZ; pravidlo: známky nerozmazávat. |
 | 2026-10-19 | 0.7.1 | kpz-telata v5 | „Známky jdou zadělat tak, aby nesvítily – místo textu se dá barva známky.“ + fotka krávy se sajícím teletem (vlastní nález KPZ), „zkus podle sebe“. | `scripts/tag_retouch.py` (text uvnitř známky → místní barva známky, oblasti `--box`); fotky KPZ přebarveny, výstřižky znovu; úvod = kráva se sajícím teletem; bouda = varianta A. |
+| 2026-10-19 | 0.7.2 | kpz-telata v5 | Přebarvení známek „taky nevypadá dobře – udělej gaussian blur, prostě číslo rozostříš“ → „jo, to vypadá líp“. | `tag_retouch.py --mode blur` (výchozí): rozostření jen uvnitř konvexního obrysu známky, sláma/ucho odfiltrované; fotky a výstřižky znovu. |
