@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.6.1**
+**Verze skillu: 0.6.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -13,12 +13,14 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[workflow]** Před psaním scénáře pro KPZ si projít hodnotový rámec v `brand/kpz/README.md` (veganská etika). _(2026-10-14, kpz-telata)_
 - **[formát]** Reely pro sítě: **9:16, 1080×1920**. Grafika v zóně y 260–1300, titulky kolem y 1470, spodek (>1560) a pravý okraj (x>960 v dolní polovině) nechat volný kvůli UI sítí. _(2026-10-14, kpz-telata)_
 - **[titulky]** Titulky **ano** – vypálené, součást designu: kousky po 2–5 slovech, papírový pruh, klíčové slovo žlutě. Kde je věta už velkým textem v animaci, titulek vypnout (`cap: false`). _(2026-10-14, kpz-telata)_
+- **[titulky]** Čísla s mezerou (9 500) se mezi titulky nedělí – číslo musí být celé v jednom kousku (`tts.py` → pevná mezera). _(2026-10-19, kpz-telata v5)_
 - **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`). Bez patetické hudby. _(2026-10-14, kpz-telata)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
+- **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
 - **[formát]** Pro Instagram držet reel **pod 3:00** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
@@ -57,3 +59,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | 0.5.0 | kpz-telata v5 | „…ale dej tam ‚a telata tam zůstávají‘“, „v drtivé většině (chovů)“; fotky zkusit najít na internetu provizorně (pak dodají vlastní), chtějí vidět, jak to vypadá. | Hlas v5 (`vo-v5.json`, `assets-v5/`, kratší pauzy → 2:58,7); scéna `reel-kpz-foto.html` s 6 provizorními fotkami (Unsplash přes HF), `.kpz-photo` v tématu, `scripts/hf_photos.py`, postup 2f v SKILL.md. |
 | 2026-10-19 | 0.6.0 | kpz-telata v5 | „Zvládl bys zvířata oříznout a dát jim papírový okraj / utržený papír? Celé fotky jsou divné.“ | `scripts/cutout.py` (BiRefNet lite z HF + utržený okraj), `.kpz-cut` v tématu; scéna: kráva s teletem a tele v kreslené boudě jako výstřižky, hala a pastvina jako utržené kusy fotek, krávy na kreslené pastvě, pouto jako výstřižek. |
 | 2026-10-19 | 0.6.1 | kpz-telata v5 | „Určitě nepoužívej krávy, které mají useklou půlku těla.“ | Výstřižky s oříznutými zvířaty vyřazeny; nové fotky s celými zvířaty z COCO (tele saje, tele olizuje matku, kráva s telaty, stádo s telaty); pravidlo do FEEDBACK, SKILL a README fotek. |
+| 2026-10-19 | 0.6.2 | kpz-telata v5 | „Přes 9 500 litrů“ – devítka oddělená od 500, dát dohromady (nevadí o 0,5 s později); zapsat do další verze, zatím nic nevyrábět. | `tts.py`: čísla s mezerou drží pevná mezera (nedělí se mezi titulky); `scenes/kpz-telata/dalsi-verze.md` jako seznam úprav do příští verze. Nic nepřegenerováno. |

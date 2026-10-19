@@ -66,14 +66,23 @@ def ensure_voice(name):
     return os.path.join(cache, name + '.onnx')
 
 
+NBSP = '\u00a0'
+
+
+def keep_numbers(text):
+    """„9 500“ → pevná mezera, aby se číslo v titulcích nerozdělilo na „9“ | „500“."""
+    return re.sub(r'(?<=\d) (?=\d{3}\b)', NBSP, text)
+
+
 def mark_words(text):
-    """*více slov* → *více* *slov*, aby zvýraznění přežilo dělení na kousky."""
-    return re.sub(r'\*([^*]+)\*', lambda m: ' '.join(f'*{w}*' for w in m.group(1).split()), text)
+    """*více slov* → *více* *slov*, aby zvýraznění přežilo dělení na kousky.
+    Dělí se jen běžnou mezerou – pevná mezera (čísla) drží slova pohromadě."""
+    return re.sub(r'\*([^*]+)\*', lambda m: ' '.join(f'*{w}*' for w in m.group(1).split(' ') if w), text)
 
 
 def chunk_text(text, max_chars=26, max_words=5):
-    """Rozdělí titulek na krátké kousky; láme přednostně za interpunkcí."""
-    words = mark_words(text).split()
+    """Rozdělí titulek na krátké kousky; láme přednostně za interpunkcí. Čísla nedělí."""
+    words = [w for w in mark_words(keep_numbers(text)).split(' ') if w]
     chunks, cur = [], []
     for w in words:
         trial = ' '.join(cur + [w])
