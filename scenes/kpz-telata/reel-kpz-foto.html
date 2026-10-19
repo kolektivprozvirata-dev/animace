@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – telata (reel 9:16, styl KPZ, v6 s fotkami KPZ)</title>
+<title>KPZ – telata (reel 9:16, styl KPZ, v7)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
@@ -67,7 +67,7 @@
           <path d="M120,420 L120,170 C120,90 200,40 300,40 L480,40 C580,40 660,90 660,170 L660,420 Z" fill="var(--kpz-cream)" stroke="var(--kpz-navy)" stroke-width="8" stroke-linejoin="round"/>
           <path d="M250,420 L250,230 C250,190 280,170 320,170 L460,170 C500,170 530,190 530,230 L530,420 Z" fill="#3b2730"/>
         </svg>
-        <div class="kpz-cut" id="h-bcalf" style="left:278px; top:40px; width:225px"><img src="assets/foto-kpz/vystrizky/tele-kpz.png"></div>
+        <div class="kpz-cut" id="h-bcalf" style="left:288px; top:66px; width:205px"><img src="assets/foto-kpz/vystrizky/tele-studio.png"></div>
         <svg width="780" height="560" style="position:absolute;left:0;top:0">
           <path d="M40,520 L740,520 M40,440 L740,440 M70,420 L70,540 M190,420 L190,540 M310,420 L310,540 M430,420 L430,540 M550,420 L550,540 M670,420 L670,540" stroke="var(--kpz-navy)" stroke-width="10" stroke-linecap="round"/>
         </svg>
@@ -79,6 +79,9 @@
       <!-- varianta d: farma z výšky (řady boud vedle hal) -->
       <div class="kpz-cut" id="hb-d" style="left:-110px; top:-60px; width:1000px"><img src="assets/foto-kpz/vystrizky/farma-z-vysky.png"></div>
     </div>
+    <!-- v7: řady individuálních boxů z dronu, pak detail jednoho telete -->
+    <div class="kpz-cut" id="h-aerial" style="left:80px; top:600px; width:920px"><img src="assets/foto-kpz/vystrizky/boudy-z-vysky.png"></div>
+    <div class="abs tag red big print" id="h-atag" style="left:90px; top:1150px; font-size:50px; line-height:1.15">Desítky boxů, v každém<br>jedno tele bez mámy</div>
     <div class="abs tag green big print" id="h-btag" style="left:90px; top:1212px; font-size:44px; white-space:nowrap">Samo v boxu · často až 8 týdnů</div>
     <div class="abs tag yellow big print" id="h-stag" style="left:450px; top:622px; font-size:48px; white-space:nowrap">Společenské zvíře</div>
   </div></div>
@@ -130,7 +133,7 @@
       <div class="h3" style="margin-top:6px">Přínos časného oddělení pro zdraví telat: <span class="hl" id="g-hl">neprokázán</span></div>
     </div>
     <!-- c) pastva -->
-    <div class="kpz-cut" id="g-past" style="left:70px; top:430px; width:940px"><img src="assets/foto-kpz/vystrizky/masny-skot.png"></div>
+    <div class="kpz-cut" id="g-past" style="left:70px; top:430px; width:940px"><img src="assets/foto-kpz/vystrizky/masny-skot-tvar.png"></div>
     <div class="abs tag green big print" id="g-tag2" style="left:90px; top:990px; font-size:50px; line-height:1.15">Tzv. masné krávy:<br>telata s matkami měsíce</div>
     <!-- d) schéma -->
     <div class="abs" id="g-sch" style="left:90px; top:430px; width:900px">
@@ -150,13 +153,7 @@
       <div id="z-herd"></div>
     </div>
     <div class="abs tag red big print" id="z-tag" style="left:110px; top:1050px; white-space:nowrap">Hodně zvířat, málo prostoru</div>
-    <div class="panel" id="z-past" style="background:#f2ddd5; height:700px">
-      <svg width="900" height="700" style="position:absolute;left:0;top:0">
-        <path d="M0,240 C200,170 380,230 560,190 C720,160 820,200 900,180 L900,700 L0,700 Z" fill="#3f877c"/>
-        <path d="M0,440 C260,380 520,450 900,380 L900,700 L0,700 Z" fill="#2a6a63" opacity=".6"/>
-      </svg>
-      <div class="kpz-cut" id="z-cows" style="left:70px; top:240px; width:760px"><img src="assets/foto-provizorni/vystrizky/pastva-matka-telata.png"></div>
-    </div>
+    <div class="kpz-cut" id="z-past" style="left:70px; top:470px; width:940px"><img src="assets/foto-kpz/vystrizky/pastva-stado-tvar.png"></div>
     <div class="abs tag green big print" id="z-tag2" style="left:110px; top:1050px; white-space:nowrap">Tzv. masné krávy: prostor</div>
     <div class="abs" id="z-sch" style="left:90px; top:430px; width:900px">
       <div class="eyebrow">Problém</div>
@@ -381,6 +378,12 @@
     set(sel, { x: (1 - pin) * 1100 - pout * 1100, o: (pin > 0 && pout < 1 ? 1 : 0) * oMul });
     return pin * (1 - pout);
   };
+  /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
+  const PHOTOS = ['#h0-photo', '#h-bcalf', '#h-aerial', '#g-photo', '#g-past', '#z-past', '#p-photo'];
+  const jiggle = (t) => PHOTOS.forEach((sel) => {
+    const b = boil(Math.floor(t * 6) / 6, sel, 2, 0.6);
+    $(sel + ' > img').style.transform = `translate(${b.x.toFixed(2)}px, ${b.y.toFixed(2)}px) rotate(${b.r.toFixed(3)}deg)`;
+  });
   /** linoryt nálepka: vyskočí, pak se jemně chvěje */
   const sticker = (sel, t, t0, r = 0, o = 1) => { const p = pop(t, t0, 0.4); const b = boil(t, sel, 1, 1.2); set(sel, { x: b.x, y: b.y, r: r + b.r, s: p, o: (p > 0 ? 1 : 0) * o }); };
 
@@ -487,9 +490,15 @@
       popIn('#h-now', t, tNow, { r: -5, o: 1 - prog(t, tBox - 0.3, 0.3) });
       const cowOut = prog(t, tBox - 0.3, 0.45, ease.inCubic);
       cutout('#h-cow', t, 'hc', (1 - prog(t, t0, 0.5, ease.outBack)) * -500 - cowOut * 700, 0, 0, 1, t >= t0 ? 1 : 0);
-      const bx = slideIn('#h-box', t, tBox, 900, 0);
+      // boxy z výšky („v drtivé většině chovů“) → detail telete v boudě („samo v boxu“)
+      const tSolo = W('hook3', 'samo') - 0.35;
+      const aOut = prog(t, tSolo - 0.1, 0.35, ease.inCubic);
+      const ap = slideIn('#h-aerial', t, tBox, 0, 120, -1.5, 0.4, 1 - aOut);
+      set('#h-aerial', { x: -aOut * 1100, y: (1 - ap) * 120, r: -1.5, o: (t >= tBox ? 1 : 0) * (aOut < 1 ? 1 : 0) });
+      popIn('#h-atag', t, W('hook3', 'většině') - 0.1, { r: -2, o: 1 - aOut });
+      const bx = slideIn('#h-box', t, tSolo, 900, 0);
       cutout('#h-bcalf', t, 'hb');
-      popIn('#h-btag', t, W('hook3', 'týdny') - 0.1, { r: -2 });
+      popIn('#h-btag', t, W('hook3', 'samo') + 0.25, { r: -2 });
       popIn('#h-stag', t, W('hook3', 'společenské') - 0.1, { r: 3 });
       const calfOut = prog(t, tNow + 0.75, 0.6, ease.inCubic);
       cutout('#h-calf', t, 'hk', (1 - prog(t, t0 + 0.2, 0.5, ease.outBack)) * 500 + calfOut * 520, calfOut * -30, calfOut * 12, 1, t >= t0 + 0.2 ? 1 : 0);
@@ -559,7 +568,6 @@
       draw('#zh-ring', prog(t, W('cru1', 'zalehnout'), 0.5));
       popIn('#z-tag', t, W('cru2', 'přeplněných'), { r: 2, o: 1 - pout });
       panelIO('#z-past', t, tP - 0.25, t3 - 0.15);
-      cutout('#z-cows', t, 'zc');
       popIn('#z-tag2', t, W('cru2', 'pastvě'), { r: -2, o: 1 - prog(t, t3 - 0.15, 0.2) });
       const sch = prog(t, t3 - 0.05, 0.35);
       set('#z-sch', { o: sch, y: (1 - sch) * 40 });
@@ -698,6 +706,7 @@
       fadeUp('#o-src', t, T('out') + 1.6);
     }
 
+    jiggle(t);
     // ---------- trvalé prvky ----------
     const inDark = (t >= C.s7[0] && t < C.s7[1]) || (t >= C.s11[0] && t < C.s11[1]), inOutro = t >= C.s13[0];
     set('#wm', { o: inDark || inOutro ? 0 : prog(t, 0.3, 0.3) * 0.95 });
