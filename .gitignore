@@ -3,3 +3,4 @@ node_modules/
 *.tmp.png
 .cache/
 scenes/*/assets*/vo.wav
+__pycache__/
