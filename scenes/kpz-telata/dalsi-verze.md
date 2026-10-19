@@ -15,3 +15,10 @@ Seznam změn, které se mají promítnout při příštím renderu reelu o telat
 
 Při další verzi: přegenerovat hlas a časování (`tts.py vo-v5.json --out-dir assets-v5`),
 zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
+
+## Do v7 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-19 | **0:18** „samo v boxu“ – do kreslené boudy dát nové tele od KPZ (`assets/foto-kpz/tele-studio.jpg`, celé, žluté známky bez čísel). Výstřižek připraven: `vystrizky/tele-studio.png` (ve scéně vyměnit `#h-bcalf` img; tele je vyšší a štíhlejší → doladit šířku/pozici). | připraveno |
+

@@ -11,6 +11,7 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | kravin-uvnitr.jpg | krávy ležící ve slámě v hale | kus `kravin-uvnitr.png` – hygiena, „velkokapacitní hala“ |
 | kravin-vrata.jpg | krávy za vraty velké haly | zatím nepoužito (rezerva: zalehnutí / bizarní kruh) |
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
+| tele-studio.jpg | tele celé na bílém pozadí, žluté známky bez čísel (KPZ, 2026-10-19) | výstřižek `tele-studio.png` – do v7 do boudy (0:18) |
 | masny-skot.jpg | čtyři kusy tzv. masného skotu na pastvě (růžové známky) | utržený kus `masny-skot.png` – hygiena, „tzv. masné krávy na pastvě“ |
 
 Příkazy (známky – originály 25.jpg / 26.jpg / 30.webp ze zpráv KPZ):
@@ -30,3 +31,4 @@ Výstřižky:
     python3 $S farma-z-vysky.jpg vystrizky/farma-z-vysky.png --piece --crop 430,150,1530,920
     python3 $S krava-s-teletem.jpg vystrizky/krava-s-teletem.png --crop 60,90,560,395 --scale 2 --largest
     python3 $S masny-skot.jpg vystrizky/masny-skot.png --piece --crop 70,60,1060,600 --scale 1.5
+    python3 $S tele-studio.jpg vystrizky/tele-studio.png --largest
