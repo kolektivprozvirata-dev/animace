@@ -16,21 +16,22 @@
   const NAVY = '#17323d', CREAM = '#efe4dd', RASP = '#d9465f', MAROON = '#920637';
 
   const FILTERS = `
-    <!-- tiskový grunge na bloky textu: lehce roztřepené hrany + vybledlá místa -->
+    <!-- tiskový grunge na bloky textu: lehce roztřepené hrany + vybledlá místa
+         (síla podle KPZ: „o 50 % míň špinavé“ než první verze – 2026-10-19) -->
     <filter id="kpz-print" x="-4%" y="-10%" width="108%" height="120%" color-interpolation-filters="sRGB">
       <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G" result="d"/>
       <feTurbulence type="fractalNoise" baseFrequency="0.32" numOctaves="2" seed="9" result="g"/>
       <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -10 0 0 0 7.2" result="m"/>
-      <feComponentTransfer in="m" result="m2"><feFuncA type="linear" slope="0.5" intercept="0.5"/></feComponentTransfer>
+      <feComponentTransfer in="m" result="m2"><feFuncA type="linear" slope="0.25" intercept="0.75"/></feComponentTransfer>
       <feComposite in="d" in2="m2" operator="in"/>
     </filter>
     <filter id="kpz-print-soft" x="-4%" y="-10%" width="108%" height="120%" color-interpolation-filters="sRGB">
       <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="6" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.5" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.2" xChannelSelector="R" yChannelSelector="G" result="d"/>
       <feTurbulence type="fractalNoise" baseFrequency="0.35" numOctaves="2" seed="12" result="g"/>
       <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -10 0 0 0 7.4" result="m"/>
-      <feComponentTransfer in="m" result="m2"><feFuncA type="linear" slope="0.3" intercept="0.7"/></feComponentTransfer>
+      <feComponentTransfer in="m" result="m2"><feFuncA type="linear" slope="0.15" intercept="0.85"/></feComponentTransfer>
       <feComposite in="d" in2="m2" operator="in"/>
     </filter>
     <!-- tah štětcem: roztřepený okraj + suché pruhy -->

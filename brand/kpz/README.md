@@ -10,7 +10,7 @@ pokyny organizace a mají přednost.
 | `logo-kpz-svetle.png` | průhledné pozadí, černé „KPZ“ – na papírový/světlý podklad (výchozí) |
 | `logo-kpz-tmave.png` | černé pozadí, bílé „KPZ“ – tmavé scény |
 | `logo-kpz-text-tmave.png` | černé pozadí + nápis KOLEKTIV PRO ZVÍŘATA – outro na tmavém |
-| `KPZ.badge()` (z `logo-kpz-tmave.png`) | kulaté černé logo – výchozí ve stylu KPZ |
+| `KPZ.badge()` (z `logo-kpz-tmave.png`) | kulaté černé logo z grafiky – ve videích **nepoužívat**, KPZ chtějí klasické logo výše **[KPZ]** |
 
 Zelená z loga: **`#00c800`** (token `--kpz-green`). Ve stylu KPZ (níže) se zelená
 objevuje jen v logu; pozitivní prvky jsou teal.
@@ -27,9 +27,9 @@ Používat pro videa KPZ, pokud nechtějí klasický Vox papír. Hotové téma:
 | text | plné obdélníkové **bloky po řádcích**, střídání barev řádků, mezery mezi bloky | `.kb`, `.kb.cream` … , `KPZ.blocks()` |
 | zvýraznění | slovo v **bloku jiné barvy** (oranžová), ne žlutý zvýrazňovač | `<span class="kb hl">` |
 | pozadí | sytě růžový papír se skvrnami a zrnem | `KPZ.theme()`, tmavé záběry `KPZ.bg('#0d4a4f')` |
-| textura | tiskový „grunge“ na blocích (vybledlá místa, roztřepené hrany) | `.print`, `.print-soft` |
+| textura | tiskový „grunge“ na blocích a textu – **jen jemně** (KPZ: „o 50 % míň špinavé“) | `.print`, `.print-soft` |
 | dekor | linoryt nálepky (listy, klasy, srdce) tmavě modré s krémovými rytinami; šipky a škrty tahem štětce | `KPZ.sticker()`, `filter="url(#kpz-brush)"` |
-| logo | **kulaté černé** s ptákem, KPZ a „KOLEKTIV PRO ZVÍŘATA“ | `KPZ.badge(px)` |
+| logo | ve videu **klasické logo** `logo-kpz-svetle.png` (vodoznak vlevo nahoře + outro), na tmavých záběrech skrýt **[KPZ]**; kulaté černé z grafiky ne | `<img>` |
 | titulky | krémové bloky s tmavým textem, klíčové slovo v oranžovém bloku | `#vox-captions` v tématu |
 | drobný text | tučný bezpatkový s prostrkáním (jako spodní karta na grafice) | `.kpz-body` |
 

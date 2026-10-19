@@ -26,7 +26,8 @@
   .strike { position: absolute; left: -14px; right: -14px; top: 46%; height: 18px; background: var(--kpz-maroon);
             transform-origin: 0 50%; filter: url(#kpz-brush); }
   .strike-wrap { position: relative; display: inline-block; }
-  #wm { left: 52px; top: 86px; }
+  #wm { left: 56px; top: 96px; width: 132px; }
+  #wm img { width: 100%; display: block; }
   #src { left: 64px; top: 1322px; width: 900px; font-size: 21px; line-height: 1.35; color: var(--ink-soft); }
   .dark-bg { position: absolute; inset: 0; }
   .ring-node { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; text-align: center; }
@@ -321,10 +322,10 @@
 
   <!-- 13 · OUTRO -->
   <div id="s13" class="layer"><div class="world" id="w13">
-    <div class="stk" id="o-st1" style="left:110px; top:560px; width:210px"></div>
-    <div class="stk" id="o-st2" style="left:790px; top:470px; width:170px"></div>
-    <div class="stk" id="o-st3" style="left:780px; top:850px; width:190px"></div>
-    <div class="abs" id="o-logo" style="left:310px; top:500px"></div>
+    <div class="stk" id="o-st1" style="left:40px; top:400px; width:200px"></div>
+    <div class="stk" id="o-st2" style="left:850px; top:380px; width:170px"></div>
+    <div class="stk" id="o-st3" style="left:850px; top:850px; width:170px"></div>
+    <div class="abs" id="o-logo" style="left:240px; top:510px; width:600px"><img src="../../brand/kpz/logo-kpz-svetle.png" style="width:100%; display:block"></div>
     <div class="abs h2 kblocks print" id="o-name" style="left:0; width:1080px; top:1040px; text-align:center; font-size:96px"><span class="kb">Kolektiv pro zvířata</span></div>
     <div class="abs eyebrow" id="o-src" style="left:0; width:1080px; top:1190px; text-align:center">Zdroje v popisku</div>
   </div></div>
@@ -400,7 +401,7 @@
   put('j-bull', VOXI.cow({ calf: true, facing: 'right' })); put('j-cowd', VOXI.cow({ facing: 'right' }));
   put('d-cart', VOXI.icon('cart')); put('d-barn', VOXI.icon('barn')); put('d-milk', VOXI.icon('milk')); put('d-plant', VOXI.icon('plant'));
   // styl KPZ: logo, nálepky, tmavé pozadí
-  put('wm', KPZ.badge(150)); put('o-logo', KPZ.badge(460));
+  put('wm', '<img src="../../brand/kpz/logo-kpz-svetle.png" alt="">');   // klasické logo KPZ (feedback: ne kulaté)
   put('st1', KPZ.sticker('sprig')); put('st3', KPZ.sticker('wheat')); put('st12', KPZ.sticker('heart'));
   put('o-st1', KPZ.sticker('sprig')); put('o-st2', KPZ.sticker('wheat')); put('o-st3', KPZ.sticker('heart'));
   put('dk7', KPZ.bg('#0d4a4f')); put('dk11', KPZ.bg('#0d4a4f'));
@@ -700,8 +701,8 @@
     }
 
     // ---------- trvalé prvky ----------
-    const inOutro = t >= C.s13[0];
-    set('#wm', { o: inOutro ? 0 : prog(t, 0.3, 0.3) });
+    const inDark = (t >= C.s7[0] && t < C.s7[1]) || (t >= C.s11[0] && t < C.s11[1]), inOutro = t >= C.s13[0];
+    set('#wm', { o: inDark || inOutro ? 0 : prog(t, 0.3, 0.3) * 0.95 });
     let src = '';
     for (const k in SRC) if (t >= C[k][0] + 0.4 && t < C[k][1]) src = SRC[k];
     $('#src').textContent = src;
