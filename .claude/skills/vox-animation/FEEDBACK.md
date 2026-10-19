@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.6.2**
+**Verze skillu: 0.7.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -29,9 +29,9 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
-- **[obsah]** Žádné detaily ušních známek ani čitelná čísla na známkách. _(2026-10-19, KPZ)_
+- **[obsah]** Žádný samostatný detailní záběr na ušní známku. Známky na fotkách se **nerozmazávají** – rozmazání „vypadá strašně“ (KPZ). _(2026-10-19, KPZ)_
 - **[vizuál]** Textury („grunge“, špína) dávkovat střídmě – na blocích s textem a na písmu jen jemně, aby nešpinily čitelnost. _(2026-10-19, kpz-telata v4-kpz)_
-- **[vizuál]** Skutečné fotky zvířat ve 4–6 klíčových momentech (hook, tele samo, hala, pastva, pouto), ilustrace na vysvětlování; ne rychlá montáž fotek na konci. Ušní známky rozmazat. _(2026-10-19, kpz-telata v5)_
+- **[vizuál]** Skutečné fotky zvířat ve 4–6 klíčových momentech (hook, tele samo, hala, pastva, pouto), ilustrace na vysvětlování; ne rychlá montáž fotek na konci. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Fotky ne celé přes obraz, ale jako **papírové výstřižky**: zvíře vystřižené s okrajem z utrženého papíru (`scripts/cutout.py`), prostředí jako utržený kus fotky. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Ve výstřižcích jen **celá zvířata** – žádné useknuté půlky těla (fotka oříznutá okrajem = nepoužít). _(2026-10-19, kpz-telata v5)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
@@ -63,3 +63,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | 0.6.1 | kpz-telata v5 | „Určitě nepoužívej krávy, které mají useklou půlku těla.“ | Výstřižky s oříznutými zvířaty vyřazeny; nové fotky s celými zvířaty z COCO (tele saje, tele olizuje matku, kráva s telaty, stádo s telaty); pravidlo do FEEDBACK, SKILL a README fotek. |
 | 2026-10-19 | 0.6.2 | kpz-telata v5 | „Přes 9 500 litrů“ – devítka oddělená od 500, dát dohromady (nevadí o 0,5 s později); zapsat do další verze, zatím nic nevyrábět. | `tts.py`: čísla s mezerou drží pevná mezera (nedělí se mezi titulky); `scenes/kpz-telata/dalsi-verze.md` jako seznam úprav do příští verze. Nic nepřegenerováno. |
 | 2026-10-19 | (do další verze) | kpz-telata v5 | 2:30 prázdná obrazovka – přidat „koření“; 2:16 „Jde to jinak“ zní jako schvalování → „Krávy se dají zneužívat i „šetrněji““; 0:28 karty argumentů sjednotit jednou barvou; fotky dodá KPZ. Zatím nevyrábět. | Zapsáno do `scenes/kpz-telata/dalsi-verze.md` (body 3–5). Poučení: text z části B scénáře propsat do scény hned (nadpis „Jde to jinak“ zůstal). |
+| 2026-10-19 | 0.7.0 | kpz-telata v5 | KPZ dodali vlastní fotky (tele v boudě, řada boud, farma z výšky, kravín zevnitř, vrata kravínu); „líbí se mi tele fyzicky a za ním animovaná boudička – zkus i skutečnou“; „ořež to jako předtím“; „zadělávání známek vypadá strašně, vyser se na to“. | Fotky KPZ v `assets/foto-kpz/` (bez rozmazání), výstřižky; `cutout.py --largest --scale`; 4 varianty záběru „samo v boxu“ (A tele v kreslené boudě, B skutečná bouda, C řada boud, D farma z výšky) přepínané `BOX` ve scéně; hygiena = kravín KPZ; pravidlo: známky nerozmazávat. |

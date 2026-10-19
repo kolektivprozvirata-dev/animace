@@ -61,14 +61,23 @@
     </svg>
     <div class="abs" id="h-sc" style="left:612px; top:690px; width:120px"></div>
     <div class="abs" id="h-box" style="left:150px; top:660px; width:780px; height:560px">
-      <svg width="780" height="560" style="position:absolute;left:0;top:0">
-        <path d="M120,420 L120,170 C120,90 200,40 300,40 L480,40 C580,40 660,90 660,170 L660,420 Z" fill="var(--kpz-cream)" stroke="var(--kpz-navy)" stroke-width="8" stroke-linejoin="round"/>
-        <path d="M250,420 L250,230 C250,190 280,170 320,170 L460,170 C500,170 530,190 530,230 L530,420 Z" fill="#3b2730"/>
-      </svg>
-      <div class="kpz-cut" id="h-bcalf" style="left:303px; top:40px; width:173px"><img src="assets/foto-provizorni/vystrizky/tele-samo.png"></div>
-      <svg width="780" height="560" style="position:absolute;left:0;top:0">
-        <path d="M40,520 L740,520 M40,440 L740,440 M70,420 L70,540 M190,420 L190,540 M310,420 L310,540 M430,420 L430,540 M550,420 L550,540 M670,420 L670,540" stroke="var(--kpz-navy)" stroke-width="10" stroke-linecap="round"/>
-      </svg>
+      <!-- varianta a: skutečné tele (KPZ) v kreslené boudě -->
+      <div id="hb-a">
+        <svg width="780" height="560" style="position:absolute;left:0;top:0">
+          <path d="M120,420 L120,170 C120,90 200,40 300,40 L480,40 C580,40 660,90 660,170 L660,420 Z" fill="var(--kpz-cream)" stroke="var(--kpz-navy)" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M250,420 L250,230 C250,190 280,170 320,170 L460,170 C500,170 530,190 530,230 L530,420 Z" fill="#3b2730"/>
+        </svg>
+        <div class="kpz-cut" id="h-bcalf" style="left:278px; top:40px; width:225px"><img src="assets/foto-kpz/vystrizky/tele-kpz.png"></div>
+        <svg width="780" height="560" style="position:absolute;left:0;top:0">
+          <path d="M40,520 L740,520 M40,440 L740,440 M70,420 L70,540 M190,420 L190,540 M310,420 L310,540 M430,420 L430,540 M550,420 L550,540 M670,420 L670,540" stroke="var(--kpz-navy)" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <!-- varianta b: skutečná bouda s teletem jako utržený kus fotky -->
+      <div class="kpz-cut" id="hb-b" style="left:180px; top:-110px; width:410px"><img src="assets/foto-kpz/vystrizky/bouda-s-teletem-kus.png"></div>
+      <!-- varianta c: řada boud -->
+      <div class="kpz-cut" id="hb-c" style="left:-110px; top:-40px; width:1000px"><img src="assets/foto-kpz/vystrizky/telata-boudy-rada.png"></div>
+      <!-- varianta d: farma z výšky (řady boud vedle hal) -->
+      <div class="kpz-cut" id="hb-d" style="left:-110px; top:-60px; width:1000px"><img src="assets/foto-kpz/vystrizky/farma-z-vysky.png"></div>
     </div>
     <div class="abs tag green big print" id="h-btag" style="left:90px; top:1212px; font-size:44px; white-space:nowrap">Samo v boxu · často až 8 týdnů</div>
     <div class="abs tag yellow big print" id="h-stag" style="left:450px; top:622px; font-size:48px; white-space:nowrap">Společenské zvíře</div>
@@ -105,7 +114,7 @@
     <div class="abs" id="g-calf" style="left:330px; top:560px; width:420px"></div>
     <div id="g-germs"></div>
     <!-- b) přeplněná hala: nejdřív fotka, pak schéma s výkaly a bakteriemi -->
-    <div class="kpz-cut" id="g-photo" style="left:80px; top:420px; width:920px"><img src="assets/foto-provizorni/vystrizky/hala-krmeni.png">
+    <div class="kpz-cut" id="g-photo" style="left:70px; top:430px; width:940px"><img src="assets/foto-kpz/vystrizky/kravin-uvnitr.png">
       <div class="abs tag green big" style="left:40px; top:40px">Velkokapacitní hala</div>
     </div>
     <div class="panel" id="g-barn" style="background:#d2b8a3">
@@ -328,6 +337,9 @@
   const T = (id) => VOX.vo(id).t0, E = (id) => VOX.vo(id).t1;
   const W = (id, word) => VOX.wordT(id, word);
   const LEAD = 0.15;
+  /** „samo v boxu“: a = tele KPZ v kreslené boudě, b = skutečná bouda, c = řada boud, d = farma z výšky */
+  const BOX = 'a';
+  ['a', 'b', 'c', 'd'].forEach((v) => { $('#hb-' + v).style.display = v === BOX ? '' : 'none'; });
   const C = {
     s1: [0, T('veg2') - LEAD], s2: [T('veg2') - LEAD, T('why') - LEAD], s3: [T('why') - LEAD, T('hyg1') - LEAD],
     s4: [T('hyg1') - LEAD, T('cru1') - LEAD], s5: [T('cru1') - LEAD, T('bon1') - LEAD], s6: [T('bon1') - LEAD, T('bon3') - LEAD],
