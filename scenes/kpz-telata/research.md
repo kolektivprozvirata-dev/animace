@@ -157,7 +157,7 @@ vynechat.
 
 | příklad | typ kontaktu | délka | odstav | zdroj |
 |---|---|---|---|---|
-| 104 farem v 6 evr. zemích | 34 % s vlastní matkou, 12 % kojné krávy, 28 % kombinace, 23 % matka → pak umělé napájení | 7–305 dní; denně od ~30 min po téměř nonstop | většinou bez předchozího omezení kontaktu; 87 % hlásí stres | Eriksson et al. 2022 |
+| 104 farem v 6 evr. zemích (**vzorek jedné studie, ne celkový počet** – AT 15, CH 11, DE 21, FR 26, IT 19, SE 12; nereprezentativní, farmy s kontaktem nejsou v žádné evidenci) | 34 % s vlastní matkou, 12 % kojné krávy, 28 % kombinace, 23 % matka → pak umělé napájení | 7–305 dní; denně od ~30 min po téměř nonstop | většinou bez předchozího omezení kontaktu; 87 % hlásí stres | Eriksson et al. 2022 |
 | Rainton Farm (Skotsko), ~120–130 dojnic | vlastní matka, celodenní | ~5–6 měsíců (zdroje se liší) | postupně, tele dostane „náhradní matku“ (starší krávu) | businessinfo.cz, Scotsman, Countryfile |
 | De Öko Melkburen (Německo), 5 bio farem | vlastní matka, den i noc | min. 3 měsíce | – | landwirtschaft.de / oekolandbau.de |
 | Demeter Heumilchbauern (Německo) | matka | 95 % telat 4–6 měsíců | – | tamtéž |
@@ -271,3 +271,13 @@ designu, ne přes něj:
 ## Nápady pro další verzi (od KPZ)
 - Hláška k hygieně: „Zvířata jsme zavřeli do hal, kde díky systému, který jsme vytvořili, mají zemědělci další argument, proč oddělit telata od matek. Samozřejmě, ani pastvina není bez infekčních rizik, ale v normálních podmínkách přítomnost matky sama o sobě není hygienický problém, který by se musel řešit odloučením.“
   - Poznámka k přesnosti: výjimkou je infikovaná matka (např. paratuberkulóza – přenos mlezivem, mlékem, trusem). Formulace „v normálních podmínkách“ to kryje; při použití mít po ruce zdroj (Beaver et al. 2019 – kontakt s matkou nebyl v přehledu významným rizikovým faktorem; Nunney et al. 2023 – špinavé prostředí jako samostatné riziko).
+
+### Oprava 2026-10-19 (dotaz KPZ)
+Ve videu (v2–v7) zaznívá „v Evropě je přes sto mléčných farem“ – to je chybná interpretace:
+104 je velikost vzorku v Eriksson et al. 2022 (rozhovory na farmách v 6 zemích), ne počet takových
+farem v Evropě. Celkový počet se nesleduje (farmy s kontaktem nejsou v centrálních databázích).
+Opravit v další verzi (viz `dalsi-verze.md`, Do v8 #1). Česko: běžně telata s matkami jen u tzv.
+masných krav (bez dojení); doložený komerční mléčný chov s kontaktem jsem nenašel.
+Zdroje: https://doaj.org/article/5b5e473c99894bd3aa2f15fe3c37b341 · https://pub.epsilon.slu.se/30177/ ·
+https://orgprints.org/id/eprint/50768/1/Beitrag_259_final_b.pdf (rozpad 104 farem po zemích).
+

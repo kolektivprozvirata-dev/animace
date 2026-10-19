@@ -30,4 +30,5 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-19 | **Oprava faktu (~2:12, alt1):** „Přitom v Evropě je přes sto mléčných farem…“ je zavádějící – 104 je počet farem **dotázaných v jedné studii** (Eriksson et al. 2022: AT 15, CH 11, DE 21, FR 26, IT 19, SE 12; nereprezentativní vzorek, celkový počet takových farem nikdo neeviduje). Návrh hlasu: „Přitom **jen jedna studie popsala** přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce.“ Karta: „Jedna studie · 6 zemí Evropy · 104 farem“. Hlídat délku pod 3:00 (+~0,6 s). | navrženo, čeká na KPZ |
 
