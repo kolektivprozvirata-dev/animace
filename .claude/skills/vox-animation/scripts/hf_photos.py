@@ -30,11 +30,12 @@ for fi, f in enumerate(files):
         pf = pq.ParquetFile(fh)
         for rg in range(pf.num_row_groups):
             texts = pf.read_row_group(rg, columns=[a.text]).column(a.text).to_pylist()
+            texts = [' | '.join(t) if isinstance(t, list) else t for t in texts]   # více popisků (COCO)
             idx = [i for i, t in enumerate(texts) if t and pat.search(t) and not (exc and exc.search(t))]
             if not idx: continue
             imgs = pf.read_row_group(rg, columns=[a.image]).column(a.image).to_pylist()
             for i in idx:
-                b = imgs[i]['bytes']; im = Image.open(io.BytesIO(b))
+                b = imgs[i]['bytes'] if isinstance(imgs[i], dict) else imgs[i]; im = Image.open(io.BytesIO(b))
                 name = f'{fi:02d}_{rg}_{i:04d}.{(im.format or "jpg").lower().replace("jpeg", "jpg")}'
                 open(os.path.join(a.out, name), 'wb').write(b)
                 print(name, im.size, texts[i][:90])

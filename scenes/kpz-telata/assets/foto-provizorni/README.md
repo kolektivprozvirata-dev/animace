@@ -1,28 +1,26 @@
 # Provizorní fotky (jen náhled – nahradit fotkami KPZ)
 
-Zdroj: fotky z Unsplash (licence Unsplash), kopie v datasetu Hugging Face
-`wtcherr/unsplash_20k` (fotobanky jsou z prostředí blokované). Upraveno: ušní známky
-rozmazané, zvětšeno 2× (originál má jen 512 px na kratší straně → ve videu měkké).
+Fotobanky jsou z prostředí blokované, proto fotky z veřejných datasetů na Hugging Face:
+- **Unsplash** (licence Unsplash) – kopie v `wtcherr/unsplash_20k`,
+- **COCO 2017** (fotky z Flickru, licence CC dle jednotlivých fotek) – kopie v `Multimodal-Fatima/COCO_captions_train`.
 
-| soubor | dataset (soubor_rowgroup_řádek) | popis | kde ve videu |
+Úpravy: ušní známky rozmazané, ořez, zvětšeno 2× (originály mají 512–640 px → ve videu měkké).
+**Pravidlo KPZ: zvířata ve výstřižcích vždy celá – žádné useknuté půlky těla.**
+
+| soubor | zdroj (soubor_rowgroup_řádek) | popis | kde ve videu |
 |---|---|---|---|
-| krava-s-teletem.jpg | 00005_2_093 | kráva a ležící tele na pastvě | úvod („začíná porodem“) |
-| tele-samo.jpg | 00000_0_727 | tele v dece samo v hale s boxy | „samo v boxu“ |
-| hala-krmeni.jpg | 00000_0_865 | krávy u krmného žlabu v hale | hygiena – velkokapacitní hala |
-| pastva-stado.jpg | 00005_2_830 | stádo na široké pastvině | hygiena – tzv. masné krávy, prostor |
-| pastva-kravy.jpg | 00004_0_250 | tři krávy na horské pastvě | zalehnutí – pastva |
-| pouto.jpg | 00001_0_452 | dvě krávy hlavou k sobě | pouto |
-
-Výměna: stačí nahradit soubor stejným názvem (ideálně ≥ 1500 px, na výšku) – scéna
-`reel-kpz-foto.html` si ho načte sama; případně upravit `object-position` u `<img>`.
+| tele-saje.jpg | COCO 00006_0_0887 | tele saje u matky na pastvě | úvod („začíná porodem“) |
+| tele-samo.jpg | Unsplash 00000_0_727 | tele v dece samo v hale | „samo v boxu“ (v kreslené boudě) |
+| hala-krmeni.jpg | Unsplash 00000_0_865 | krávy u krmného žlabu v hale | hygiena – utržený kus fotky haly |
+| pastva-stado-telata.jpg | COCO 00028_0_0690 | krávy s telaty na pastvině | hygiena – utržený kus fotky |
+| pastva-matka-telata.jpg | COCO 00011_1_0183 | kráva (galloway) se dvěma telaty | zalehnutí – na kreslené pastvě |
+| tele-olizuje-matku.jpg | COCO 00032_2_0091 | tele olizuje ležící matku | pouto |
 
 ## Výstřižky (`vystrizky/`)
 
-Ve videu se fotky nepoužívají celé, ale jako **papírové výstřižky**: zvíře vystřižené
-z fotky s okrajem z utrženého papíru, prostředí (hala, pastvina) jako utržený kus fotky.
-Vyrobeno skriptem skillu:
+Zvířata vystřižená s okrajem z utrženého papíru, prostředí jako utržený kus fotky:
 
-    python3 .claude/skills/vox-animation/scripts/cutout.py tele-samo.jpg vystrizky/tele-samo.png
+    python3 .claude/skills/vox-animation/scripts/cutout.py tele-saje.jpg vystrizky/tele-saje.png
     python3 .claude/skills/vox-animation/scripts/cutout.py hala-krmeni.jpg vystrizky/hala-krmeni.png --piece --crop 0,380,1024,1110
 
-Po výměně za fotky KPZ stačí výstřižky vyrobit znovu stejnými příkazy (známky rozmazat předem).
+Po výměně za fotky KPZ stačí výstřižky vyrobit znovu (známky rozmazat předem).
