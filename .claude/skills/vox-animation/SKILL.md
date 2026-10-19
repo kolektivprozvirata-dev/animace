@@ -70,24 +70,35 @@ zadání větší než jeden záběr:
 `runtime/vox-icons.js`: `VOXI.cow()`, `VOXI.cow({calf:true, facing:'right', spots:false})`,
 `VOXI.cowTop()`, `VOXI.icon('germ'|'scissors'|'milk'|'cart'|'plant'|'tag'|'barn')`.
 Papírový výřez s trhaným okrajem je zabudovaný. Nové ilustrace přidávej sem, ať jsou znovupoužitelné.
+Barvy ilustrací lze přepnout pro celou scénu: `VOXI.palette({ ink, paper, border, red, blue, … })`
+(volat před kreslením).
+
+### 2e. Vizuální styl značky (brand theme)
+Když má klient vlastní vizuál, nepřepisuj `vox.css` – přidej téma do `brand/<klient>/`:
+CSS (`body.<klient>` přemapuje tokeny a třídy) + JS (filtry, pozadí, prvky). Pohyb a postup
+zůstávají Vox, mění se písmo, barvy, textury a tvary. Hotové téma: **KPZ**
+(`brand/kpz/kpz-theme.css` + `kpz-theme.js`, popis v `brand/kpz/README.md` → Vizuální styl),
+vzor scény `scenes/kpz-telata/reel-kpz.html`. Z grafiky klienta přebírej jen vizuál, ne obsah.
 
 ### 2d. Svislý formát (reels)
 `VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].
-Vzor: `scenes/kpz-telata/reel.html`.
+Vzor: `scenes/kpz-telata/reel.html` (Vox papír), `scenes/kpz-telata/reel-kpz.html` (styl KPZ).
 
 ### 3. Kontrola vlastníma očima (povinné před odevzdáním)
 ```bash
 S=.claude/skills/vox-animation/scripts
 node $S/render.mjs scenes/x/scena.html --contact 12      # kontaktní arch
 node $S/render.mjs scenes/x/scena.html --still 3.5        # jeden snímek
+node $S/render.mjs scenes/x/scena.html --stills 3.5,9,17 --out out/kontrola   # víc snímků najednou
 ```
 Kontaktní arch si **otevři (Read) a zkontroluj** podle checklistu níže.
 Teprve pak renderuj celé video:
 ```bash
 node $S/render.mjs scenes/x/scena.html --out out/scena.mp4 [--audio vo.mp3]
 ```
-Render trvá cca 10 s na 1 s videa ve FullHD (12 fps grafika = poloviční počet
-unikátních snímků). Pro rychlý náhled `--scale 0.5`, pro výřez `--from/--to`.
+Render trvá cca 2–3 s na 1 s videa (12 fps grafika = poloviční počet unikátních snímků;
+snímky jdou do ffmpeg jako JPEG q95 – PNG kódování zrnitých textur bylo 5× pomalejší,
+`--png` vrátí bezeztrátové). Pro rychlý náhled `--scale 0.5`, pro výřez `--from/--to`.
 Náhled v prohlížeči: otevři HTML s `?t=2.5` nebo `?play`.
 
 ### 4. Checklist před odevzdáním

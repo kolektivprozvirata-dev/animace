@@ -329,9 +329,15 @@
     if (cur && (opts.hide || []).some(([a, b]) => t >= a && t < b)) cur = null;
     if (!cur) { box.style.visibility = 'hidden'; box.__txt = null; return; }
     if (box.__txt !== cur.text) {
-      const html = cur.text.split(' ').map((w) =>
-        /^\*.*\*[.,!?…:;]*$/.test(w) || /^\*[^*]+\*?$/.test(w)
-          ? `<span class="cap-hl">${w.replace(/\*/g, '')}</span>` : w).join(' ');
+      // slova → úseky: obyčejný text (.cap-run) a zvýraznění (.cap-hl); styl může z úseků dělat samostatné bloky
+      const runs = [];
+      for (const w of cur.text.split(' ')) {
+        const hl = /^\*.*\*[.,!?…:;]*$/.test(w) || /^\*[^*]+\*?$/.test(w);
+        const last = runs[runs.length - 1];
+        if (last && last.hl === hl) last.words.push(w.replace(/\*/g, ''));
+        else runs.push({ hl, words: [w.replace(/\*/g, '')] });
+      }
+      const html = runs.map((r) => `<span class="${r.hl ? 'cap-hl' : 'cap-run'}">${r.words.join(' ')}</span>`).join(' ');
       box.innerHTML = `<span class="cap">${html}</span>`;
       box.__txt = cur.text;
     }

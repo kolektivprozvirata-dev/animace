@@ -10,9 +10,39 @@ pokyny organizace a mají přednost.
 | `logo-kpz-svetle.png` | průhledné pozadí, černé „KPZ“ – na papírový/světlý podklad (výchozí) |
 | `logo-kpz-tmave.png` | černé pozadí, bílé „KPZ“ – tmavé scény |
 | `logo-kpz-text-tmave.png` | černé pozadí + nápis KOLEKTIV PRO ZVÍŘATA – outro na tmavém |
+| `KPZ.badge()` (z `logo-kpz-tmave.png`) | kulaté černé logo – výchozí ve stylu KPZ |
 
-Zelená z loga: **`#00c800`** (token `--kpz-green`). Používat jako barvu
-„východu / alternativy“ a v outru, ne jako výplň grafů s problémy.
+Zelená z loga: **`#00c800`** (token `--kpz-green`). Ve stylu KPZ (níže) se zelená
+objevuje jen v logu; pozitivní prvky jsou teal.
+
+## Vizuální styl KPZ (z grafiky na sítích, 2026-10)
+
+Používat pro videa KPZ, pokud nechtějí klasický Vox papír. Hotové téma:
+`kpz-theme.css` + `kpz-theme.js` (vzor `scenes/kpz-telata/reel-kpz.html`).
+**Z grafiky KPZ bereme jen vizuál – ne obsah, hesla ani fotky [KPZ].**
+
+| prvek | jak vypadá | v tématu |
+|---|---|---|
+| písmo | **Bebas Neue**, vše verzálkami (`fonts/`, licence OFL) | `--font-head`, `.h1/.h2/.tag/...` |
+| text | plné obdélníkové **bloky po řádcích**, střídání barev řádků, mezery mezi bloky | `.kb`, `.kb.cream` … , `KPZ.blocks()` |
+| zvýraznění | slovo v **bloku jiné barvy** (oranžová), ne žlutý zvýrazňovač | `<span class="kb hl">` |
+| pozadí | sytě růžový papír se skvrnami a zrnem | `KPZ.theme()`, tmavé záběry `KPZ.bg('#0d4a4f')` |
+| textura | tiskový „grunge“ na blocích (vybledlá místa, roztřepené hrany) | `.print`, `.print-soft` |
+| dekor | linoryt nálepky (listy, klasy, srdce) tmavě modré s krémovými rytinami; šipky a škrty tahem štětce | `KPZ.sticker()`, `filter="url(#kpz-brush)"` |
+| logo | **kulaté černé** s ptákem, KPZ a „KOLEKTIV PRO ZVÍŘATA“ | `KPZ.badge(px)` |
+| titulky | krémové bloky s tmavým textem, klíčové slovo v oranžovém bloku | `#vox-captions` v tématu |
+| drobný text | tučný bezpatkový s prostrkáním (jako spodní karta na grafice) | `.kpz-body` |
+
+Paleta (vzorkováno): růžová `#e05d73`, teal `#115c61` / tmavý `#0b3f43`, krémová `#efe4dd`,
+oranžová `#d26c11`, vínová `#920637`, hořčicová `#d38f03`, malinová `#c63f58`,
+tmavě modrá nálepek `#17323d`. Nebezpečí / krutost = vínová, alternativa = teal,
+zvýraznění = oranžová (na krémové kartě hořčicová s černým textem).
+
+Pravidla:
+- **Žádné detaily ušních známek ani čitelná čísla na známkách [KPZ].**
+- Bez samoúčelně drastických obrazů (platí dál); fotky jen dodané KPZ.
+- Starší styl KPZ (pastelová růžová, bloky se stínem a obrysovým písmem, razítkové logo)
+  je známý, ale výchozí je novější styl výše.
 
 ## Kdo jsme (podle zadání KPZ)
 Veganská organizace; VeganFest, veganské ochutnávky, vzdělávání o veganství
@@ -64,8 +94,8 @@ používat jen s vysvětlením.
    **[KPZ]**. Říkat obecně; nekvantifikovat dopad jednotlivého nákupu bez dat.
 6. **Bez drastických záběrů a patetické hudby** **[KPZ]**. Absurditu nechat
    vyplynout ze souvislostí; lehká ironie je v pořádku.
-7. **Žádná srovnání s lidskými tragédiemi** (otroctví, holokaust) – odpuzují
-   a odvádějí od tématu.
+7. **Srovnání s lidskými tragédiemi** (např. otroctví) – rozhoduje KPZ; jejich grafika je
+   občas používá. Do videa je nevkládat z vlastní iniciativy, jen na pokyn KPZ.
 
 ## Slovník
 

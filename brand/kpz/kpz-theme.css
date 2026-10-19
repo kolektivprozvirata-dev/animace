@@ -1,0 +1,157 @@
+/* kpz-theme.css — vizuální styl Kolektivu pro zvířata pro Vox scény.
+ *
+ * Použití ve scéně (po vox.css):
+ *   <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+ *   <script src="../../brand/kpz/kpz-theme.js"></script>
+ *   <body class="kpz">  …  VOX.setup({..., background: 'none'}); KPZ.theme();
+ *
+ * Co z grafiky KPZ přebíráme (jen vizuál): Bebas Neue verzálkami, text
+ * v plných blocích po řádcích (box-decoration-break), růžové zrnité pozadí,
+ * paleta teal / krémová / oranžová / vínová / hořčicová, tiskový „grunge“,
+ * linoryt nálepky, tahy štětcem, kulaté černé logo. Podrobně v README.md. */
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url(fonts/bebas-neue-latin-ext-400-normal.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url(fonts/bebas-neue-latin-400-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body.kpz {
+  /* paleta KPZ (vzorkováno z grafiky) */
+  --kpz-pink: #e05d73;
+  --kpz-pink-hi: #ef7c8e;
+  --kpz-pink-lo: #c94862;
+  --kpz-teal: #115c61;
+  --kpz-teal-d: #0b3f43;
+  --kpz-cream: #efe4dd;
+  --kpz-orange: #d26c11;
+  --kpz-maroon: #920637;
+  --kpz-mustard: #d38f03;
+  --kpz-rasp: #c63f58;
+  --kpz-navy: #17323d;
+  --kpz-black: #120a06;
+
+  /* přemapování tokenů vox.css */
+  --paper: var(--kpz-cream);
+  --ink: #12272b;
+  --ink-soft: #3a0f1d;
+  --muted: #8fa9a7;
+  --vox-yellow: var(--kpz-orange);
+  --accent-red: var(--kpz-maroon);
+  --accent-teal: var(--kpz-teal);
+  --font-head: 'Bebas Neue', 'Inter Display', sans-serif;
+  --font-mono: 'Bebas Neue', 'Inter Display', sans-serif;
+  --font-body: 'Inter Display', 'Inter', 'Liberation Sans', sans-serif;
+  --shadow-paper: none;
+
+  /* blok textu: odsazení v em, aby sedělo pro každou velikost */
+  --kb-pt: .05em;
+  --kb-pb: 0em;
+  --kb-px: .2em;
+}
+body.kpz #stage { background: var(--kpz-pink); color: var(--ink); }
+
+/* ---------- pozadí: růžový papír s mapami a zrnem ---------- */
+.kpz-bg { position: absolute; inset: 0; pointer-events: none; will-change: transform; }
+.kpz-bg svg { position: absolute; inset: 0; }
+
+/* ---------- typografie: vše Bebas Neue, verzálky, bez faux-bold ---------- */
+body.kpz :is(.h1, .h2, .h3, .headline, .subhead, .big-number, .eyebrow, .label, .mono, .tag, .num, .kpz-t) {
+  font-family: 'Bebas Neue', 'Inter Display', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+body.kpz svg text { font-family: 'Bebas Neue', 'Inter Display', sans-serif; font-weight: 400 !important; letter-spacing: .04em; }
+body.kpz .eyebrow { font-size: 46px; letter-spacing: .05em; color: var(--kpz-teal-d); }
+body.kpz .label, body.kpz .mono { letter-spacing: .04em; }
+body.kpz .big-number { letter-spacing: 0; }
+/* drobný čitelný text (zdroje, poznámky) – jako spodní karta na grafice KPZ */
+body.kpz .kpz-body { font-family: var(--font-body); font-weight: 700; letter-spacing: .04em; text-transform: none; }
+
+/* ---------- textové bloky po řádcích ---------- */
+.kb {
+  background-color: var(--kb-bg, var(--kpz-teal));
+  color: var(--kb-fg, var(--kpz-cream));
+  padding: var(--kb-pt) var(--kb-px) var(--kb-pb);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.kb.cream   { --kb-bg: var(--kpz-cream);   --kb-fg: var(--kpz-teal-d); }
+.kb.orange  { --kb-bg: var(--kpz-orange);  --kb-fg: var(--kpz-cream); }
+.kb.maroon  { --kb-bg: var(--kpz-maroon);  --kb-fg: #f7eef1; }
+.kb.mustard { --kb-bg: var(--kpz-mustard); --kb-fg: var(--kpz-black); }
+.kb.rasp    { --kb-bg: var(--kpz-rasp);    --kb-fg: #f7eef1; }
+.kb.teal    { --kb-bg: var(--kpz-teal);    --kb-fg: var(--kpz-cream); }
+/* nadpis složený z bloků: mezera mezi řádky */
+body.kpz .kblocks { line-height: 1.42; }
+
+/* zvýraznění = jiná barva bloku (ne žlutý zvýrazňovač) */
+body.kpz .hl {
+  --hl-color: var(--kpz-orange);
+  background-size: calc(var(--hl) * 100%) 100%;
+  background-position: 0 0;
+  padding: var(--kb-pt) var(--kb-px) var(--kb-pb);
+  margin: 0 calc(-1 * var(--kb-px));
+}
+body.kpz .kb .hl { margin: 0 calc(-1 * var(--kb-px)); }
+/* zvýraznění jako samostatný blok: <span class="kb hl">slovo</span> – blok se „přebarví“ zleva */
+body.kpz .kb.hl { margin: 0; padding: var(--kb-pt) var(--kb-px) var(--kb-pb); }
+body.kpz .card .hl, body.kpz .kb.cream .hl.mustard { --hl-color: var(--kpz-mustard); color: var(--kpz-black); }
+
+/* ---------- štítky ---------- */
+body.kpz .tag {
+  background: var(--kpz-cream);
+  color: var(--kpz-teal-d);
+  padding: .14em .3em .05em;
+  letter-spacing: .02em;
+}
+body.kpz .tag.green, body.kpz .tag.teal { background: var(--kpz-teal); color: var(--kpz-cream); }
+body.kpz .tag.red, body.kpz .tag.maroon { background: var(--kpz-maroon); color: #f7eef1; }
+body.kpz .tag.yellow, body.kpz .tag.mustard { background: var(--kpz-mustard); color: var(--kpz-black); }
+body.kpz .tag.orange { background: var(--kpz-orange); color: var(--kpz-cream); }
+
+/* ---------- tiskový grunge (filtr #kpz-print z kpz-theme.js) ---------- */
+body.kpz .print { filter: url(#kpz-print); }
+body.kpz .print-soft { filter: url(#kpz-print-soft); }
+
+/* ---------- kulaté logo ---------- */
+.kpz-badge {
+  position: absolute; border-radius: 50%; background: #000; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.kpz-badge img { width: 70%; margin-top: -4%; display: block; }
+.kpz-badge span {
+  font-family: var(--font-body); font-weight: 800; color: #f4f1ee; text-align: center;
+  font-size: 9.2cqw; line-height: 1.05; letter-spacing: .01em; margin-top: 2%;
+}
+.kpz-badge { container-type: inline-size; }
+
+/* ---------- vypálené titulky ---------- */
+body.kpz #vox-captions { filter: url(#kpz-print-soft); }
+body.kpz #vox-captions .cap {
+  font-family: 'Bebas Neue', 'Inter Display', sans-serif;
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 1.3;
+  letter-spacing: .015em;
+  text-transform: uppercase;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+/* každý úsek titulku je samostatný blok: text krémový, zvýraznění oranžové */
+body.kpz #vox-captions .cap-run,
+body.kpz #vox-captions .cap-hl {
+  padding: var(--kb-pt) .22em var(--kb-pb);
+  margin: 0;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+body.kpz #vox-captions .cap-run { background: var(--kpz-cream); color: var(--kpz-teal-d); }
+body.kpz #vox-captions .cap-hl { background: var(--kpz-orange); color: var(--kpz-cream); }

@@ -8,10 +8,12 @@
  *   --out <soubor.mp4>      výstupní video (default: out/<scéna>.mp4)
  *   --from <s> --to <s>     jen část časové osy
  *   --still <s>             jeden snímek v čase s → PNG (--out <soubor.png>)
+ *   --stills <s,s,…>        víc snímků najednou → PNG do složky (--out <složka>)
  *   --contact <N>           kontaktní arch N snímků rovnoměrně přes scénu → PNG
  *   --scale <k>             zmenšení výstupu (0.5 = 960×540, rychlé náhledy)
  *   --audio <soubor>        přimíchat zvukovou stopu (voiceover / hudba)
  *   --crf <n>               kvalita x264 (default 18)
+ *   --png                   bezeztrátové snímky videa (pomalé; výchozí je JPEG q95)
  *
  * Grafika se kvantuje na animFps (12 fps). Snímky se stejným kvantovaným
  * časem se nerenderují znovu – použije se předchozí obrázek.
@@ -53,7 +55,7 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   const scenePath = args._[0];
   if (!scenePath) {
-    console.error('Použití: node render.mjs <scene.html> [--out f.mp4] [--still s] [--contact N] [--scale k] [--audio f]');
+    console.error('Použití: node render.mjs <scene.html> [--out f.mp4] [--still s | --stills a,b,c] [--contact N] [--scale k] [--audio f] [--crf n] [--png]');
     process.exit(1);
   }
   const abs = path.resolve(scenePath);
@@ -75,11 +77,14 @@ async function main() {
   await page.setViewportSize({ width: cfg.width, height: cfg.height });
   const stage = (await page.$('#stage')) || page;
 
-  const shoot = async (t) => {
+  // Snímky videa jako JPEG q95: PNG kódování zrnitých textur trvá ~1 s/snímek, JPEG ~0,2 s.
+  // Rozdíl v kvalitě po x264 není vidět; --png vrátí bezeztrátové snímky.
+  const usePng = !!args.png;
+  const shoot = async (t, type = 'png') => {
     await page.evaluate((tt) => window.__render(tt), t);
     // dva rAF, ať se filtry a fonty skutečně vykreslí
     await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
-    return stage.screenshot({ type: 'png' });
+    return type === 'jpeg' ? stage.screenshot({ type: 'jpeg', quality: 95 }) : stage.screenshot({ type: 'png' });
   };
 
   try {
@@ -88,6 +93,18 @@ async function main() {
       const out = path.resolve(args.out || path.join(outDir, `${name}_t${t}.png`));
       fs.writeFileSync(out, await shoot(t));
       console.log('still →', out);
+      return;
+    }
+
+    if (args.stills !== undefined) {
+      // víc snímků v jednom prohlížeči: --stills 3.5,9,17.8 [--out složka]
+      const dir = path.resolve(args.out || outDir);
+      fs.mkdirSync(dir, { recursive: true });
+      for (const t of String(args.stills).split(',').map(parseFloat)) {
+        const out = path.join(dir, `${name}_t${t}.png`);
+        fs.writeFileSync(out, await shoot(t));
+        console.log('still →', out);
+      }
       return;
     }
 
@@ -118,7 +135,7 @@ async function main() {
     const to = Math.min(parseFloat(args.to || String(cfg.duration)), cfg.duration);
     const total = Math.round((to - from) * fps);
     const out = path.resolve(args.out || path.join(outDir, `${name}.mp4`));
-    const ff = ['-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'png', '-i', '-'];
+    const ff = ['-f', 'image2pipe', '-framerate', String(fps), '-c:v', usePng ? 'png' : 'mjpeg', '-i', '-'];
     if (args.audio) {
       // kopie zvuku, aby ho souběžné přegenerování (tts.py) nepřepsalo uprostřed renderu
       const audioCopy = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'vox-audio-')), path.basename(args.audio));
@@ -134,7 +151,7 @@ async function main() {
     for (let i = 0; i < total; i++) {
       const t = from + i / fps;
       const s = Math.floor(t * cfg.animFps + 1e-6);
-      if (s !== lastStep) { lastBuf = await shoot(t); lastStep = s; }
+      if (s !== lastStep) { lastBuf = await shoot(t, usePng ? 'png' : 'jpeg'); lastStep = s; }
       if (!f.stdin.write(lastBuf)) await new Promise((r) => f.stdin.once('drain', r));
       if (i % fps === 0) process.stdout.write(`\r  ${i}/${total} snímků`);
     }

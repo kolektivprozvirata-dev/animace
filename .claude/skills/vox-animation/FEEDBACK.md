@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.3.2**
+**Verze skillu: 0.4.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -24,6 +24,9 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[formát]** Pro Instagram držet reel **pod 3:00** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
+- **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
+- **[obsah]** Žádné detaily ušních známek ani čitelná čísla na známkách. _(2026-10-19, KPZ)_
+- **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
 
 ## ✅ Osvědčené (nechat tak)
 
@@ -43,3 +46,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-14 | 0.3.1 | kpz-telata v2 | Instagram – zvolena varianta pod 3:00. | Zkrácený scénář (177 s), plná verze zálohována (`vo-plna.json`, `reel-plna.html`, `assets-plna/`). Renderer kopíruje zvuk do temp a snese předčasný konec ffmpeg (dřív přepsání `vo.wav` během renderu rozbilo plnou verzi). SKILL.md: Piper není deterministický, limity platforem. |
 | 2026-10-14 | (v3 – zadání) | kpz-telata | Hook na začátek místo popisu krav; hygiena = podlaha, moč, bakterie; „jak jinak než tele a jeho máma“; „velkokapacitní haly“ místo stájí; pouto „údajně“; „Není to bizarní?“; farmy s kontaktem přísněji + zabíjení; článek KPZ jako podklad. | Pravidla do `brand/kpz/README.md`, článek do `brand/kpz/clanky/`; obecné pravidlo „hook první“ sem. Video v3 čeká na odpovědi na otázky. |
 | 2026-10-15 | 0.3.2 | kpz-telata v4 | KPZ upravili scénář v textu (hook „Věděli jste…“, „tzv. chovatelů“, bez věty „počítá s tím…“, „bizarní důsledek systému“, „mašina“ bez „krutá“, „bere mléko pro lidi“); pokud se nevejde, zrychlit. | Workflow „scénář v textu“ do pravidel; hlas 0.75; scéna v4 (zálohy v3-ig). |
+| 2026-10-19 | 0.4.0 | kpz-telata v4-kpz | KPZ poslali svou grafiku (font Bebas Neue): „zkus to udělat podobně“; inspirovat se jen vizuální stránkou, obsah neřešit; fotky z grafiky nebrat – jde o font, barvy a styl; detail známky nikam (čísla). | Téma `brand/kpz/kpz-theme.css/js` (bloky po řádcích, růžový papír, grunge, linoryt nálepky, štětec, kulaté logo, titulky v blocích), `VOXI.palette`, titulky dělené na úseky `.cap-run/.cap-hl`, `render.mjs`: JPEG snímky (5× rychlejší) a `--stills`; scéna `reel-kpz.html`; pravidlo o srovnání s lidskými tragédiemi → rozhoduje KPZ. |
