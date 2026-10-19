@@ -9,7 +9,6 @@ Fotobanky jsou z prostředí blokované, proto fotky z veřejných datasetů na 
 
 | soubor | zdroj (soubor_rowgroup_řádek) | popis | kde ve videu |
 |---|---|---|---|
-| tele-saje.jpg | COCO 00006_0_0887 | tele saje u matky na pastvě | úvod („začíná porodem“) |
 | pastva-stado-telata.jpg | COCO 00028_0_0690 | krávy s telaty na pastvině | hygiena – utržený kus fotky |
 | pastva-matka-telata.jpg | COCO 00011_1_0183 | kráva (galloway) se dvěma telaty | zalehnutí – na kreslené pastvě |
 | tele-olizuje-matku.jpg | COCO 00032_2_0091 | tele olizuje ležící matku | pouto |
@@ -18,7 +17,7 @@ Fotobanky jsou z prostředí blokované, proto fotky z veřejných datasetů na 
 
 Zvířata vystřižená s okrajem z utrženého papíru, prostředí jako utržený kus fotky:
 
-    python3 .claude/skills/vox-animation/scripts/cutout.py tele-saje.jpg vystrizky/tele-saje.png
+    python3 .claude/skills/vox-animation/scripts/cutout.py pastva-matka-telata.jpg vystrizky/pastva-matka-telata.png
 
 Po výměně za fotky KPZ stačí výstřižky vyrobit znovu.
 

@@ -10,6 +10,7 @@ vyrobené `.claude/skills/vox-animation/scripts/cutout.py`.
 | farma-z-vysky.jpg | farma z výšky: sila, haly, řady bud | kus `farma-z-vysky.png` (varianta D) |
 | kravin-uvnitr.jpg | krávy ležící ve slámě v hale | kus `kravin-uvnitr.png` – hygiena, „velkokapacitní hala“ |
 | kravin-vrata.jpg | krávy za vraty velké haly | zatím nepoužito (rezerva: zalehnutí / bizarní kruh) |
+| krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
 
 Příkazy:
 
@@ -19,3 +20,4 @@ Příkazy:
     python3 $S telata-boudy-rada.jpg vystrizky/telata-boudy-rada.png --piece --crop 380,60,2000,1125
     python3 $S kravin-uvnitr.jpg vystrizky/kravin-uvnitr.png --piece --crop 260,240,1700,1080
     python3 $S farma-z-vysky.jpg vystrizky/farma-z-vysky.png --piece --crop 430,150,1530,920
+    python3 $S krava-s-teletem.jpg vystrizky/krava-s-teletem.png --crop 60,90,560,395 --scale 2 --largest
