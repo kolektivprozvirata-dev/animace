@@ -20,7 +20,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
-- **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
+- **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75, v8: ~0.73 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
 - **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[komunikace]** S KPZ si **tykáme**. _(2026-10-19)_
@@ -28,7 +28,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
-- **[formát]** Pro Instagram držet reel **pod 3:00** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
+- **[formát]** Pro Instagram držet reel **pod 3:00, bezpečně max. 2:58** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
