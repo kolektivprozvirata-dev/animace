@@ -41,4 +41,5 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-20 | **Hygiena: porodna vs. hala** (dotaz KPZ). Studie o bakteriích mluví o **porodním prostoru** (Nunney 2023: delší pobyt ve špinavé porodně = 3,68× vyšší riziko paratuberkulózy; EFSA 2023: „Hygiene of the calving area is a major determinant of calf health“ a časné oddělení „should not be a substitute for appropriate management of hygiene … of the maternity/calving pen area“). V ČR rodí krávy na **67,6 % farem ve skupinových porodnách** (Staněk 2014). Návrh hlasu (hyg2): „Jenže krávy často rodí ve společných porodnách a žijí ve velkokapacitních halách, kde je spousta krav na malé ploše…“; štítek „Společná porodna: 2/3 farem“; do zdroje „EFSA 2023: oddělení nemá nahrazovat hygienu porodny“. +~1–2 s → hlídat 2:58. | navrženo, čeká na KPZ |
 
