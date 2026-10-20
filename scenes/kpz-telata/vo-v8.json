@@ -1,0 +1,168 @@
+{
+ "voice": "cs_CZ-jirka-medium",
+ "length_scale": 0.72,
+ "gap": 0.18,
+ "lead_in": 0.2,
+ "tail": 0.5,
+ "segments": [
+  {
+   "id": "hook0",
+   "text": "Věděli jste, že krabice mléka z obchodu začíná *porodem?*",
+   "pause": 0.21
+  },
+  {
+   "id": "hook1",
+   "say": "Na naprosté většině českých farem se tele odebírá matce do dvanácti hodin po porodu.",
+   "text": "Na naprosté většině českých farem se tele odebírá matce *do 12 hodin* po porodu.",
+   "pause": 0.12
+  },
+  {
+   "id": "hook2",
+   "text": "Často je to ale *hned.*",
+   "pause": 0.15
+  },
+  {
+   "id": "hook3",
+   "text": "Tele pak v drtivé většině chovů tráví týdny *samo v boxu,* přestože je to *společenské zvíře.*",
+   "pause": 0.21
+  },
+  {
+   "id": "veg2",
+   "text": "Ať hned, nebo později: oddělit mládě od matky po porodu je *kruté.*",
+   "pause": 0.21
+  },
+  {
+   "id": "why",
+   "text": "Chovatelé mají několik argumentů. Nejčastěji slýcháme *tyto čtyři.*",
+   "pause": 0.18
+  },
+  {
+   "id": "hyg1",
+   "text": "Za prvé: *hygiena.* Tele prý musí pryč, aby se nenakazilo.",
+   "pause": 0.12
+  },
+  {
+   "id": "hyg2",
+   "text": "Jenže ve *velkokapacitních halách* žije spousta krav na malé ploše. Výkaly a moč přibývají průběžně. A i když bývají většinou standardně uklízeny, *bakteriím* se tam logicky daří.",
+   "pause": 0.12
+  },
+  {
+   "id": "hyg3",
+   "say": "Zajímavé je, že například u takzvaných masných krav na pastvě je prostoru dost a telata tam zůstávají s matkami měsíce.",
+   "text": "Zajímavé je, že například u tzv. masných krav na pastvě je prostoru dost a telata tam zůstávají s matkami *měsíce.*",
+   "pause": 0.12
+  },
+  {
+   "id": "hyg4",
+   "text": "Problém je tedy v prostředí vytvořeném chovateli. Odnese to, jak jinak, *tele a jeho máma.*",
+   "pause": 0.21
+  },
+  {
+   "id": "cru1",
+   "text": "Za druhé: kráva může tele *zalehnout.*",
+   "pause": 0.12
+  },
+  {
+   "id": "cru2",
+   "say": "To údajně hrozí hlavně v přeplněných velkokapacitních halách. Na pastvě u takzvaných masných krav se o zalehnutí prakticky neslyší.",
+   "text": "To údajně hrozí hlavně v *přeplněných velkokapacitních halách.* Na pastvě u tzv. masných krav se o zalehnutí prakticky neslyší.",
+   "pause": 0.12
+  },
+  {
+   "id": "cru3",
+   "text": "Problém je opět v malém prostoru, který vytvořili chovatelé. Odnese to zase *tele a jeho máma.*",
+   "pause": 0.21
+  },
+  {
+   "id": "bon1",
+   "text": "Za třetí: *pouto.* Mezi matkou a narozeným teletem vzniká pochopitelně mateřské pouto. Pozdější oddělení podle výzkumů *bolí víc.* Přitom tele, které zůstane s mámou déle, podle výzkumů *lépe roste* a je společenštější.",
+   "pause": 0.5
+  },
+  {
+   "id": "bon3",
+   "text": "Takže aby je odloučení nebolelo,",
+   "pause": 0.35,
+   "cap": false
+  },
+  {
+   "id": "bon4",
+   "text": "odloučí je dřív.",
+   "pause": 0.45,
+   "cap": false
+  },
+  {
+   "id": "bon5",
+   "text": "Není to bizarní důsledek systému?",
+   "pause": 0.5,
+   "cap": false
+  },
+  {
+   "id": "mil1",
+   "text": "Za čtvrté: kráva prý vytváří tolik mléka, že by ho tele *nevypilo.*",
+   "pause": 0.12
+  },
+  {
+   "id": "mil2",
+   "text": "Kráva ale dává mléko *pro tele.* A tolik ho dává proto, že ji lidé desítky let šlechtili na výkon.",
+   "pause": 0.12
+  },
+  {
+   "id": "mil3",
+   "say": "Takzvaná dojnice dnes v Česku dá v průměru přes devět a půl tisíce litrů mléka ročně.",
+   "text": "Tzv. dojnice dnes v Česku dá v průměru přes *9 500 litrů* mléka ročně.",
+   "pause": 0.15
+  },
+  {
+   "id": "mil4",
+   "text": "Problém tedy není tele, ale systém, který z krávy udělal *mašinu* na mléko.",
+   "pause": 0.21
+  },
+  {
+   "id": "loop",
+   "text": "Systém si tak problémy vytvoří *velkokapacitními halami* plnými krav a kravami, které jsou vyšlechtěné na maximální výkon. Důsledek řeší tím, že matce vezme mládě. *Krutou praxi* vydává za nutnost.",
+   "pause": 0.21
+  },
+  {
+   "id": "alt1",
+   "text": "Přitom jen jedna studie popsala přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. A krávám se tam i tak odebírá mateřské mléko pro lidi.",
+   "pause": 0.12
+  },
+  {
+   "id": "alt1b",
+   "text": "Okamžité oddělení tedy *nutné není.* A přebytek mléka je výmluva chovatelů, ne důvod.",
+   "pause": 0.18
+  },
+  {
+   "id": "alt2",
+   "text": "Pokud ale konzumujete mateřské mléko nebo sýry, ani tady *nehledejte útěchu.* I odtud jdou *býčci na jatka* a tzv. dojnice taky, když přestanou být pro lidi výnosné.",
+   "say": "Pokud ale konzumujete mateřské mléko nebo sýry, ani tady nehledejte útěchu. I odtud jdou býčci na jatka a takzvané dojnice taky, když přestanou být pro lidi výnosné.",
+   "pause": 0.12
+  },
+  {
+   "id": "alt2b",
+   "text": "Je to taky *krvavý a krutý byznys,* jen se v něm zvířata mají možná o trochu lépe.",
+   "pause": 0.18
+  },
+  {
+   "id": "alt3",
+   "text": "Zvíře není stroj ani zboží.",
+   "pause": 0.45,
+   "cap": false
+  },
+  {
+   "id": "dem1",
+   "text": "Celý ten kruh se točí, protože jeho mléko *kupujeme.*",
+   "pause": 0.15
+  },
+  {
+   "id": "dem2",
+   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je spousta.",
+   "pause": 0.24
+  },
+  {
+   "id": "out",
+   "text": "Kolektiv pro zvířata. Zdroje v popisku.",
+   "cap": false
+  }
+ ]
+}
