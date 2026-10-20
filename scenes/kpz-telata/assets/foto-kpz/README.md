@@ -13,6 +13,7 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
 | tele-studio.jpg | tele celé na bílém pozadí, žluté známky bez čísel (KPZ, 2026-10-19) | výstřižek `tele-studio.png` – do v7 do boudy (0:18) |
 | pastva-stado.jpg | stádo na pastvině, v trávě ležící telata (KPZ, 745 px) | utržený kus `pastva-stado.png` – do v7 v 1:10 (zalehnutí, pastva) |
+| pouto-krava-tele.jpg | holštýnka se sajícím teletem, bílé pozadí (KPZ, 2026-10-20) | výstřižek `pouto-krava-tele.png` – do v8 scéna pouto |
 | masny-skot.jpg | čtyři kusy tzv. masného skotu na pastvě (růžové známky) | utržený kus `masny-skot.png` – hygiena, „tzv. masné krávy na pastvě“ |
 
 Příkazy (známky – originály 25.jpg / 26.jpg / 30.webp ze zpráv KPZ):
@@ -37,3 +38,4 @@ Výstřižky:
     python3 $S pastva-stado.jpg vystrizky/pastva-stado.png --piece --scale 1.6
     python3 $S masny-skot.jpg vystrizky/masny-skot-tvar.png --shape blob --seed 62 --crop 70,60,1060,600 --scale 1.5
     python3 $S pastva-stado.jpg vystrizky/pastva-stado-tvar.png --shape blob --seed 64 --scale 1.6
+    python3 $S pouto-krava-tele.jpg vystrizky/pouto-krava-tele.png --largest
