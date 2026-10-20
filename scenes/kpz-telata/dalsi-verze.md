@@ -37,9 +37,14 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 | 5 | 2026-10-20 | **Fotka mateřského pouta** od KPZ: kráva se sajícím teletem (holštýnka) – `assets/foto-kpz/pouto-krava-tele.jpg`, výstřižek `vystrizky/pouto-krava-tele.png`; nahradí provizorní „tele olizuje matku“ (scéna pouto, ~1:17). Známka bez čísla – bez úprav. | hotovo v8 |
 | 6 | 2026-10-20 | **Nápad KPZ: zmínit studie o škodách.** Návrh do pouta za „Pozdější oddělení podle výzkumů bolí víc.“: „**Přitom výzkumy zároveň ukazují, že tele, které zůstane s mámou déle, lépe roste a je společenštější.**“ (Flower & Weary 2001; Meagher 2019), pak „Takže aby je odloučení nebolelo, odloučí je dřív.“ Štítek „S mámou déle: rychlejší růst, víc společenské“. +~3 s → hlídat 2:58. | hotovo v8 |
 
-## Do v9 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v9 (2026-10-20) – zapracováno, render `out/kpz-telata-reel-v9.mp4`, scénář `scenar-v9.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-20 | **Hygiena: porodna + hala** (KPZ: „pojmi to do videa“; haly nechat – kdyby tele šlo s mámou do haly, je tam hnůj a moč). Návrh hyg2: „Jenže krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. A s mámou by tele muselo do velkokapacitní haly: spousta krav na malé ploše, výkaly a moč přibývají průběžně. A i když bývají většinou uklízeny, bakteriím se tam logicky daří.“ Obraz: kreslená společná porodna (víc krav) + štítek „Společná porodna: 2/3 farem“ → foto haly + „Výkaly + moč = bakterie“. Zdroj: Staněk 2014 · VÚŽV 2023 („infekční agens v porodním kotci“) · EFSA 2023 (oddělení nenahrazuje hygienu porodny). Délka +~3,5 s → hlas 0.72 → 0.71 + kratší pauzy, cíl ≤ 2:58. | navrženo, čeká na schválení textu |
+| 1 | 2026-10-20 | **Hygiena: porodna + hala** (KPZ: „pojmi to do videa“; haly nechat – kdyby tele šlo s mámou do haly, je tam hnůj a moč). Návrh hyg2: „Jenže krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. A s mámou by tele muselo do velkokapacitní haly: spousta krav na malé ploše, výkaly a moč přibývají průběžně. A i když bývají většinou uklízeny, bakteriím se tam logicky daří.“ Obraz: kreslená společná porodna (víc krav) + štítek „Společná porodna: 2/3 farem“ → foto haly + „Výkaly + moč = bakterie“. Zdroj: Staněk 2014 · VÚŽV 2023 („infekční agens v porodním kotci“) · EFSA 2023 (oddělení nenahrazuje hygienu porodny). Délka +~3,5 s → hlas 0.72 → 0.71 + kratší pauzy, cíl ≤ 2:58. | hotovo v9 (hlas 0.705, kratší pauzy → 2:56,9) |
+
+## Do v10 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
 

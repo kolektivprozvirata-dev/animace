@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.9.1**
+**Verze skillu: 0.9.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -79,3 +79,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-19 | (oprava faktu) | kpz-telata v7 | KPZ: „Přes sto farem v Evropě je strašně málo – co se tím myslí?“ | Prověřeno: 104 = vzorek jedné studie (Eriksson 2022), ne celkový počet → chybná formulace ve videu od v2. Oprava navržena do v8; obecné pravidlo do [data]. |
 | 2026-10-19 | (ověření) | kpz-telata v7 | „Využij všechny síly a zdroje a ověř všechna tvrzení ve videu.“ (KPZ povolili domény vědeckých databází a českých zdrojů) | 4 paralelní ověření + kontrola v primárních textech → `scenes/kpz-telata/overeni-tvrzeni.md`; chyby: 104 farem, důvod vyřazení dojnic; nepřesnosti: 12 h (praxe, ne příručky), pouto, zalehnutí, 1989, zdrojové řádky. |
 | 2026-10-20 | 0.9.1 | kpz-telata v8 | Rozhodnutí k opravám: „pro lidi výnosné“, 104 farem přesně, 12 h varianta A, pouto „podle výzkumů bolí víc“ (+ věta o přínosech delšího kontaktu), zalehnutí „slýcháme / neslyší“, hlas o 3 % rychleji, max 2:58 (nejistota, zda IG bere 3:00); fotka pouta od KPZ. „Udělej to.“ | **v8**: hlas `vo-v8.json` (0.72, kratší lead-in/tail) = 2:56,8; scéna: graf 1989: 3 982, karta „Jedna studie…“, dojnice „nemoc, neplodnost, nízký výkon“, štítky „Podle výzkumů“ a „S mámou déle…“, fotka pouta KPZ, opravené zdrojové řádky; `scenar-v8.md`, popisek. |
+| 2026-10-20 | 0.9.2 | kpz-telata v9 | Dotaz: rozdíl porodna × hala, kde se mluví o bakteriích; „pojmi to do videa“, haly nechat (tele by šlo s mámou mezi hnůj a moč). „OK, udělej to.“ | **v9**: hyg2 = společné porodny (67,6 % farem) + hala; kreslená společná porodna se zárodky; zdroje Staněk 2014, VÚŽV 2023, EFSA 2023; hlas 0.705 + kratší pauzy = 2:56,9. |

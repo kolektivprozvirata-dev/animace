@@ -2,13 +2,13 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – telata (reel 9:16, styl KPZ, v8)</title>
+<title>KPZ – telata (reel 9:16, styl KPZ, v9)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v8/vo-timing.js"></script>
+<script src="assets-v9/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -117,6 +117,18 @@
     <div class="abs" id="g-calf" style="left:330px; top:560px; width:420px"></div>
     <div id="g-germs"></div>
     <!-- b) přeplněná hala: nejdřív fotka, pak schéma s výkaly a bakteriemi -->
+    <!-- v9: společná porodna (víc krav, nákazy) → pak hala -->
+    <div class="panel" id="g-pen" style="background:#e3cdb0">
+      <svg width="900" height="640" style="position:absolute;left:0;top:0" id="g-straw"></svg>
+      <div class="abs" id="gp-c1" style="left:20px; top:150px; width:330px"></div>
+      <div class="abs" id="gp-c2" style="left:300px; top:80px; width:300px"></div>
+      <div class="abs" id="gp-c3" style="left:560px; top:170px; width:320px"></div>
+      <div class="abs" id="gp-k" style="left:380px; top:380px; width:170px"></div>
+      <svg width="900" height="640" style="position:absolute;left:0;top:0"><path d="M0,600 L900,600 M0,540 L900,540 M30,520 L30,640 M180,520 L180,640 M330,520 L330,640 M480,520 L480,640 M630,520 L630,640 M780,520 L780,640" stroke="var(--kpz-navy)" stroke-width="10" stroke-linecap="round"/></svg>
+      <div id="g-pgerms"></div>
+      <div class="abs tag green big" style="left:20px; top:20px">Společná porodna</div>
+    </div>
+    <div class="abs tag yellow big print" id="g-ptag" style="left:110px; top:996px; white-space:nowrap">Společná porodna: 2/3 farem</div>
     <div class="kpz-cut" id="g-photo" style="left:70px; top:430px; width:940px"><img src="assets/foto-kpz/vystrizky/kravin-uvnitr.png">
       <div class="abs tag green big" style="left:40px; top:40px">Velkokapacitní hala</div>
     </div>
@@ -352,7 +364,7 @@
   };
   const SRC = {
     s1: 'Zdroj: Staněk et al. 2014 (VÚŽV, 136 farem) · R. Šárová, Náš chov 2021 · EFSA 2023',
-    s4: 'Zdroj: Beaver et al. 2019 · Nunney et al. 2023 · odstav tzv. masných telat obvykle 8–10 měsíců (NSW DPI)',
+    s4: 'Zdroj: porodna – Staněk et al. 2014, VÚŽV 2023, EFSA 2023 · Beaver et al. 2019 · Nunney et al. 2023 · odstav tzv. masných telat obvykle 8–10 měsíců (NSW DPI)',
     s6: 'Zdroj: Stěhulová et al. 2008 (VÚŽV) · Weary & Chua 2000 · Flower & Weary 2001 · Meagher et al. 2019',
     s8: 'Zdroj: MZe/ČSÚ – dojivost 2024 · 1989: MZe Mléko 12/2006 · příjem telete: Virginia Tech 2016',
     s10: 'Zdroj: Eriksson et al. 2022 (Animal; vzorek 104 farem) · vyřazování: Kašná et al. 2022 (VÚŽV) · Agropress 2025',
@@ -417,6 +429,16 @@
   // bakterie kolem telete
   const GERMS = [[260, 560], [800, 540], [230, 860], [860, 820], [540, 480], [660, 960], [380, 980]];
   $('#g-germs').innerHTML = GERMS.map((g, i) => `<div class="abs" id="germ${i}" style="left:${g[0] - 45}px; top:${g[1] - 45}px; width:${70 + (i % 3) * 16}px">${VOXI.icon('germ')}</div>`).join('');
+  // společná porodna: krávy, tele, sláma, zárodky
+  put('gp-c1', VOXI.cow({ facing: 'right' })); put('gp-c2', VOXI.cow({})); put('gp-c3', VOXI.cow({ facing: 'left' })); put('gp-k', VOXI.cow({ calf: true }));
+  (() => { const R = VOX.rng(33); let st = '';
+    for (let i = 0; i < 70; i++) { const x = R() * 900, y = 300 + R() * 330, a = R() * 180;
+      st += `<line x1="${x}" y1="${y}" x2="${x + 26 * Math.cos(a)}" y2="${y + 26 * Math.sin(a)}" stroke="#c9a874" stroke-width="5" stroke-linecap="round"/>`; }
+    for (let i = 0; i < 9; i++) { const x = 60 + R() * 780, y = 360 + R() * 220, w = 26 + R() * 30;
+      st += `<ellipse cx="${x}" cy="${y}" rx="${w}" ry="${w * 0.55}" fill="#6b4a33" opacity=".75"/>`; }
+    $('#g-straw').innerHTML = st; })();
+  const PG = [[150, 120], [470, 70], [790, 130], [260, 470], [700, 470]];
+  $('#g-pgerms').innerHTML = PG.map(([x, y], i) => `<div class="abs" id="pgerm${i}" style="left:${x - 35}px; top:${y - 35}px; width:${60 + (i % 3) * 12}px; z-index:5">${VOXI.icon('germ')}</div>`).join('');
   // bakterie na podlaze haly
   const BG = [[120, 120], [420, 90], [760, 140], [240, 420], [560, 360], [820, 470], [120, 560], [480, 560]];
   $('#g-bgerms').innerHTML = BG.map(([x, y], i) => `<div class="abs" id="bgerm${i}" style="left:${x - 35}px; top:${y - 35}px; width:${60 + (i % 3) * 12}px; z-index:5">${VOXI.icon('germ')}</div>`).join('');
@@ -539,8 +561,13 @@
       GERMS.forEach((g, i) => { const p = pop(t, W('hyg1', 'nenakazilo') - 0.4 + i * 0.1, 0.3); const b = boil(t, 'g' + i, 3, 8);
         set('#germ' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 - outA : 0 }); });
       // b) kravín
-      const tDirt = W('hyg2', 'výkaly') - 0.35;
-      panelIO('#g-photo', t, t2 - 0.2, tDirt);
+      const tDirt = W('hyg2', 'výkaly') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
+      panelIO('#g-pen', t, t2 - 0.2, tHall);
+      ['#gp-c1', '#gp-c2', '#gp-c3', '#gp-k'].forEach((sel, i) => cutout(sel, t, 'gpc' + i));
+      PG.forEach((g, i) => { const p = pop(t, W('hyg2', 'nákazy') - 0.2 + i * 0.1, 0.3); const b = boil(t, 'pg' + i, 3, 8);
+        set('#pgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
+      popIn('#g-ptag', t, W('hyg2', 'společných') - 0.1, { r: -2, o: 1 - prog(t, tHall, 0.2) });
+      panelIO('#g-photo', t, tHall, tDirt);
       panelIO('#g-barn', t, tDirt, t3 - 0.2);
       animHerd('gh', NG, t, tDirt + 0.25);
       popIn('#g-tag', t, W('hyg2', 'spousta'), { r: -2, o: 1 - prog(t, W('hyg2', 'výkaly') - 0.2, 0.2) });
