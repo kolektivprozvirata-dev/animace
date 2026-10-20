@@ -91,7 +91,8 @@ utržený kus celé fotky (hala, krajina); `--shape blob` = nepravidelný utrže
 Ušní známky: rozostřit **jen samotné číslo** – `scripts/tag_retouch.py foto.jpg out.jpg
 --rect x0,y0,x1,y1 …` (obdélník kolem čísla; rozostření se ořízne na plochu známky, takže tvar
 známky zůstane ostrý; růžové známky `--hue 235,14 --sat 40` nebo `--noclip`). Polohy čísel najdi
-na zvětšeném výřezu s mřížkou. Ne flek přes ucho, ne přebarvení; nečitelně malá čísla nechat. Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Vystřihovat jen **celá zvířata** – fotku,
+na zvětšeném výřezu s mřížkou. Ne flek přes ucho, ne přebarvení; nečitelně malá čísla nechat. Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Pravidlo: **zvíře = fotka, kresba = věci a schémata**. Efekt „vytržení“ (tele z fotky s mámou):
+`scripts/tear_pair.py` – polygon kolem telete, dva výstřižky na stejném plátně. Vystřihovat jen **celá zvířata** – fotku,
 kde okraj usekne část těla, nepoužít. Fotky s kravami a telaty: `hf_photos.py` nad COCO
 (`Multimodal-Fatima/COCO_captions_train`, sloupec `sentences_raw`). Provizorní fotky,
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky
@@ -178,6 +179,7 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
 │   ├── hf_photos.py          ← provizorní fotky z datasetů Hugging Face
 │   ├── cutout.py             ← výstřižek z fotky s okrajem z utrženého papíru
 │   ├── tag_retouch.py        ← čísla na ušních známkách rozostřit uvnitř známky
+│   ├── tear_pair.py          ← dvojice výstřižků (např. máma + tele) – „vytržení“ z fotky (vzor, upravit polygon)
 │   └── halftone.py           ← fotka → halftone / duotón PNG
 └── examples/demo.html        ← ukázka: titulek, dokument, graf
 ```

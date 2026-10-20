@@ -43,7 +43,13 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 |---|---|---|---|
 | 1 | 2026-10-20 | **Hygiena: porodna + hala** (KPZ: „pojmi to do videa“; haly nechat – kdyby tele šlo s mámou do haly, je tam hnůj a moč). Návrh hyg2: „Jenže krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. A s mámou by tele muselo do velkokapacitní haly: spousta krav na malé ploše, výkaly a moč přibývají průběžně. A i když bývají většinou uklízeny, bakteriím se tam logicky daří.“ Obraz: kreslená společná porodna (víc krav) + štítek „Společná porodna: 2/3 farem“ → foto haly + „Výkaly + moč = bakterie“. Zdroj: Staněk 2014 · VÚŽV 2023 („infekční agens v porodním kotci“) · EFSA 2023 (oddělení nenahrazuje hygienu porodny). Délka +~3,5 s → hlas 0.72 → 0.71 + kratší pauzy, cíl ≤ 2:58. | hotovo v9 (hlas 0.705, kratší pauzy → 2:56,9) |
 
-## Do v10 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v10 (2026-10-20) – render `out/kpz-telata-reel-v10.mp4` (hlas v9 beze změny)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-20 | **Pravidlo: zvíře = fotka, kresba = věci a schémata** (KPZ: „není divné, že je tam občas fotka a občas animace?“ → „zkus to“). Úvod: kreslená kráva + tele + nůžky → výstřižek krávy s teletem, při „hned“ se tele **vytrhne** (díra ve tvaru telete; `scripts/tear_pair.py`); hygiena: tele = tele-studio; přebytek mléka: fotka pouta (tele saje) + šipka „Pro tele“; řádky → Jatka: vytržené tele a máma s dírou z úvodu; společná porodna jako schéma shora (jako hala). | hotovo v10 |
+
+## Do v11 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

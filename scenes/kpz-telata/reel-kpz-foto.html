@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – telata (reel 9:16, styl KPZ, v9)</title>
+<title>KPZ – telata (reel 9:16, styl KPZ, v10)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
@@ -54,12 +54,9 @@
       <div class="tag print" style="margin-top:14px; font-size:42px">na 87,5 % českých farem</div>
     </div>
     <div class="abs tag red big print" id="h-now" style="left:90px; top:700px; font-size:64px; white-space:nowrap">V praxi často: hned</div>
-    <div class="abs" id="h-cow" style="left:10px; top:800px; width:660px"></div>
-    <div class="abs" id="h-calf" style="left:680px; top:900px; width:370px"></div>
-    <svg class="abs" id="h-cutsvg" width="1080" height="1920" style="left:0; top:0">
-      <path id="h-cut" d="M672,750 L660,1290" fill="none" stroke="var(--kpz-maroon)" stroke-width="12" stroke-linecap="round" filter="url(#kpz-brush)"/>
-    </svg>
-    <div class="abs" id="h-sc" style="left:612px; top:690px; width:120px"></div>
+    <!-- v10: máma a tele z fotky; při „hned“ se tele vytrhne (stejné plátno → před trhem sedí na sebe) -->
+    <div class="kpz-cut" id="h-cow" style="left:130px; top:790px; width:820px"><img src="assets/foto-kpz/vystrizky/trh-krava.png"></div>
+    <div class="kpz-cut" id="h-calf" style="left:130px; top:790px; width:820px"><img src="assets/foto-kpz/vystrizky/trh-tele.png"></div>
     <div class="abs" id="h-box" style="left:150px; top:660px; width:780px; height:560px">
       <!-- varianta a: skutečné tele (KPZ) v kreslené boudě -->
       <div id="hb-a">
@@ -114,16 +111,16 @@
   <div id="s4" class="layer"><div class="world" id="w4">
     <div class="abs row" id="g-head" style="left:80px; top:290px"><span class="num">1</span><span class="h2 kblocks print"><span class="kb">Hygiena</span></span></div>
     <!-- a) tele a "nákazy" -->
-    <div class="abs" id="g-calf" style="left:330px; top:560px; width:420px"></div>
+    <div class="kpz-cut" id="g-calf" style="left:400px; top:470px; width:280px"><img src="assets/foto-kpz/vystrizky/tele-studio.png"></div>
     <div id="g-germs"></div>
     <!-- b) přeplněná hala: nejdřív fotka, pak schéma s výkaly a bakteriemi -->
     <!-- v9: společná porodna (víc krav, nákazy) → pak hala -->
     <div class="panel" id="g-pen" style="background:#e3cdb0">
       <svg width="900" height="640" style="position:absolute;left:0;top:0" id="g-straw"></svg>
-      <div class="abs" id="gp-c1" style="left:20px; top:150px; width:330px"></div>
-      <div class="abs" id="gp-c2" style="left:300px; top:80px; width:300px"></div>
-      <div class="abs" id="gp-c3" style="left:560px; top:170px; width:320px"></div>
-      <div class="abs" id="gp-k" style="left:380px; top:380px; width:170px"></div>
+      <div class="abs" id="gp-c1" style="left:150px; top:120px; width:130px"></div>
+      <div class="abs" id="gp-c2" style="left:400px; top:90px; width:130px"></div>
+      <div class="abs" id="gp-c3" style="left:640px; top:170px; width:130px"></div>
+      <div class="abs" id="gp-k" style="left:420px; top:330px; width:100px"></div>
       <svg width="900" height="640" style="position:absolute;left:0;top:0"><path d="M0,600 L900,600 M0,540 L900,540 M30,520 L30,640 M180,520 L180,640 M330,520 L330,640 M480,520 L480,640 M630,520 L630,640 M780,520 L780,640" stroke="var(--kpz-navy)" stroke-width="10" stroke-linecap="round"/></svg>
       <div id="g-pgerms"></div>
       <div class="abs tag green big" style="left:20px; top:20px">Společná porodna</div>
@@ -211,16 +208,15 @@
   <div id="s8" class="layer"><div class="world" id="w8">
     <div class="abs row" id="m-head" style="left:80px; top:290px"><span class="num">4</span><span class="h2 kblocks print"><span class="kb">Přebytek mléka</span></span></div>
     <div class="abs" id="m-ill" style="left:0; top:0; width:1080px; height:1920px">
-      <div class="abs" id="m-cow" style="left:40px; top:520px; width:560px"></div>
-      <div class="abs" id="m-calf" style="left:680px; top:720px; width:300px"></div>
+      <div class="kpz-cut" id="m-cow" style="left:40px; top:560px; width:640px"><img src="assets/foto-kpz/vystrizky/pouto-krava-tele.png"></div>
       <div id="m-pile"></div>
       <svg class="abs" width="1080" height="1920" style="left:0;top:0">
         <g filter="url(#kpz-brush)">
-          <path id="m-a1" d="M225,800 C300,960 600,960 722,850" fill="none" stroke="var(--kpz-maroon)" stroke-width="18" stroke-linecap="round"/>
-          <path id="m-a1h" d="M712,900 L724,848 L672,858" fill="none" stroke="var(--kpz-maroon)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="m-a1" d="M770,610 C720,760 470,850 305,845" fill="none" stroke="var(--kpz-maroon)" stroke-width="18" stroke-linecap="round"/>
+          <path id="m-a1h" d="M338,866 L305,845 L340,826" fill="none" stroke="var(--kpz-maroon)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
       </svg>
-      <div class="abs tag green big print" id="m-l1" style="left:300px; top:930px">Pro tele</div>
+      <div class="abs tag green big print" id="m-l1" style="left:700px; top:740px">Pro tele</div>
     </div>
     <div class="abs tag big print" id="m-tag1" style="left:110px; top:1080px; white-space:nowrap">„Tele by to nevypilo“</div>
     <div class="abs tag red big print" id="m-tag2" style="left:110px; top:1080px; white-space:nowrap">Šlechtění na co nejvyšší výkon</div>
@@ -284,7 +280,7 @@
     <!-- není to ideál -->
     <div class="abs tag red big print" id="j-idyl" style="left:80px; top:350px; font-size:58px; white-space:nowrap">Ani tady nehledejte útěchu</div>
     <div class="card row" id="j-r1" style="left:70px; top:520px; width:940px; padding:22px 30px">
-      <div id="j-bull" style="width:230px"></div>
+      <div class="kpz-cut" id="j-bull" style="position:relative; width:170px"><img src="assets/foto-kpz/vystrizky/trh-tele-samostatne.png"></div>
       <div style="margin-left:24px"><div class="h3">Býčci</div><div class="mono" style="color:var(--kpz-teal); margin-top:4px">nedávají mléko</div></div>
       <svg width="110" height="60" style="margin-left:auto"><path d="M6,30 L92,30 M70,10 L94,30 L70,50" fill="none" stroke="var(--kpz-teal-d)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <div class="tag red big" style="margin-left:16px">Jatka</div>
@@ -292,7 +288,7 @@
     <div class="abs tag red big print" id="j-blood" style="left:90px; top:1104px; font-size:66px; white-space:nowrap">Krvavý a krutý byznys</div>
     <div class="abs mono" id="j-bit" style="left:100px; top:1206px; font-size:36px; color:var(--kpz-teal-d)">jen možná o trochu lepší</div>
     <div class="card row" id="j-r2" style="left:70px; top:840px; width:940px; padding:22px 30px">
-      <div id="j-cowd" style="width:230px"></div>
+      <div class="kpz-cut" id="j-cowd" style="position:relative; width:230px"><img src="assets/foto-kpz/vystrizky/trh-krava-samostatne.png"></div>
       <div style="margin-left:24px"><div class="h3">Tzv. dojnice</div><div class="mono" style="color:var(--kpz-teal); margin-top:4px">nemoc, neplodnost, nízký výkon</div><div class="kpz-body mut" style="margin-top:2px">ČR: vyřazena průměrně ve 3.–4. laktaci</div></div>
       <svg width="110" height="60" style="margin-left:auto"><path d="M6,30 L92,30 M70,10 L94,30 L70,50" fill="none" stroke="var(--kpz-teal-d)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <div class="tag red big" style="margin-left:16px">Jatka</div>
@@ -392,7 +388,7 @@
     return pin * (1 - pout);
   };
   /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
-  const PHOTOS = ['#h0-photo', '#h-bcalf', '#h-aerial', '#g-photo', '#g-past', '#z-past', '#p-photo'];
+  const PHOTOS = ['#h0-photo', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
   const jiggle = (t) => PHOTOS.forEach((sel) => {
     const b = boil(Math.floor(t * 6) / 6, sel, 2, 0.6);
     $(sel + ' > img').style.transform = `translate(${b.x.toFixed(2)}px, ${b.y.toFixed(2)}px) rotate(${b.r.toFixed(3)}deg)`;
@@ -402,14 +398,11 @@
 
   // ---------- ilustrace ----------
   const put = (id, html) => { $('#' + id).innerHTML = html; };
-  put('h-cow', VOXI.cow({ facing: 'right' })); put('h-calf', VOXI.cow({ calf: true })); put('h-sc', VOXI.icon('scissors'));
-  put('g-calf', VOXI.cow({ calf: true }));
-  put('m-cow', VOXI.cow({ facing: 'right' })); put('m-calf', VOXI.cow({ calf: true }));
   put('m-milk', VOXI.icon('milk')); put('m-milk2', VOXI.icon('milk')); put('m-tag', VOXI.icon('tag', 'Kč'));
   put('h0-milk', VOXI.icon('milk'));
   const PILE = [[720, 560], [820, 560], [920, 560], [770, 440], [870, 440], [820, 320]];
   $('#m-pile').innerHTML = PILE.map(([x, y], i) => `<div class="abs" id="mp${i}" style="left:${x - 50}px; top:${y - 40}px; width:96px">${VOXI.icon('milk')}</div>`).join('');
-  put('j-bull', VOXI.cow({ calf: true, facing: 'right' })); put('j-cowd', VOXI.cow({ facing: 'right' }));
+
   put('j-p1', VOXI.icon('milk')); put('j-p2', VOXI.icon('cheese')); put('j-p3', VOXI.icon('yogurt')); put('j-st', KPZ.sticker('sprig'));
   put('d-cart', VOXI.icon('cart')); put('d-barn', VOXI.icon('barn')); put('d-milk', VOXI.icon('milk')); put('d-plant', VOXI.icon('plant'));
   // styl KPZ: logo, nálepky, tmavé pozadí
@@ -430,7 +423,8 @@
   const GERMS = [[260, 560], [800, 540], [230, 860], [860, 820], [540, 480], [660, 960], [380, 980]];
   $('#g-germs').innerHTML = GERMS.map((g, i) => `<div class="abs" id="germ${i}" style="left:${g[0] - 45}px; top:${g[1] - 45}px; width:${70 + (i % 3) * 16}px">${VOXI.icon('germ')}</div>`).join('');
   // společná porodna: krávy, tele, sláma, zárodky
-  put('gp-c1', VOXI.cow({ facing: 'right' })); put('gp-c2', VOXI.cow({})); put('gp-c3', VOXI.cow({ facing: 'left' })); put('gp-k', VOXI.cow({ calf: true }));
+  put('gp-c1', VOXI.cowTop()); put('gp-c2', VOXI.cowTop()); put('gp-c3', VOXI.cowTop()); put('gp-k', VOXI.cowTop({ calf: true }));
+  const GPR = [62, -18, 105, 30];
   (() => { const R = VOX.rng(33); let st = '';
     for (let i = 0; i < 70; i++) { const x = R() * 900, y = 300 + R() * 330, a = R() * 180;
       st += `<line x1="${x}" y1="${y}" x2="${x + 26 * Math.cos(a)}" y2="${y + 26 * Math.sin(a)}" stroke="#c9a874" stroke-width="5" stroke-linecap="round"/>`; }
@@ -500,7 +494,7 @@
   VOX.scene((t) => {
     // ---------- 1 · HOOK ----------
     if (frame('s1', t, 1.0, 1.06, '50% 55%')) {
-      const t0 = T('hook1'), tNum = W('hook1', 'do 12'), tNow = W('hook2', 'hned') - 0.1, tBox = T('hook3');
+      const t0 = T('hook1'), tNum = W('hook1', 'do 12'), tNow = W('hook2', 'hned') - 0.1, tBox = T('hook3') + 0.45;
       const out0 = prog(t, t0 - 0.25, 0.25);
       sticker('#st1', t, 0.6, 8);
       const ph = pop(t, 0.35, 0.5);
@@ -512,7 +506,9 @@
       popIn('#h-num', t, tNum, { origin: '0% 50%', r: -1.5, o: 1 - prog(t, tBox - 0.3, 0.3) });
       popIn('#h-now', t, tNow, { r: -5, o: 1 - prog(t, tBox - 0.3, 0.3) });
       const cowOut = prog(t, tBox - 0.3, 0.45, ease.inCubic);
-      cutout('#h-cow', t, 'hc', (1 - prog(t, t0, 0.5, ease.outBack)) * -500 - cowOut * 700, 0, 0, 1, t >= t0 ? 1 : 0);
+      const pin = prog(t, t0, 0.5, ease.outBack), tear = prog(t, tNow - 0.05, 0.6, ease.inCubic);
+      const jolt = (t >= tNow - 0.05 && t < tNow + 0.2) ? 7 : 0;
+      cutout('#h-cow', t, 'hc', -cowOut * 950 - jolt, (1 - pin) * 140, -cowOut * 4, 1, t >= t0 ? 1 : 0);
       // boxy z výšky („v drtivé většině chovů“) → detail telete v boudě („samo v boxu“)
       const tSolo = W('hook3', 'samo') - 0.35;
       const aOut = prog(t, tSolo - 0.1, 0.35, ease.inCubic);
@@ -523,12 +519,7 @@
       cutout('#h-bcalf', t, 'hb');
       popIn('#h-btag', t, W('hook3', 'samo') + 0.25, { r: -2 });
       popIn('#h-stag', t, W('hook3', 'společenské') - 0.1, { r: 3 });
-      const calfOut = prog(t, tNow + 0.75, 0.6, ease.inCubic);
-      cutout('#h-calf', t, 'hk', (1 - prog(t, t0 + 0.2, 0.5, ease.outBack)) * 500 + calfOut * 520, calfOut * -30, calfOut * 12, 1, t >= t0 + 0.2 ? 1 : 0);
-      draw('#h-cut', prog(t, tNow, 0.6, ease.inOutCubic));
-      set('#h-cutsvg', { o: 1 - prog(t, tNow + 1.6, 0.3) });
-      const sc = prog(t, tNow, 0.7, ease.inOutCubic);
-      set('#h-sc', { x: -sc * 12, y: sc * 520, r: 90 + Math.sin(t * 30) * 8, o: (sc > 0 && sc < 1) ? 1 : 0 });
+      cutout('#h-calf', t, 'hc', tear * 760 + jolt * 2, (1 - pin) * 140 + tear * 60, tear * 16, 1, (t >= t0 ? 1 : 0) * (tear < 1 ? 1 : 0));
     }
     // ---------- 2 · VEGANSKÝ POHLED ----------
     if (frame('s2', t)) {
@@ -563,7 +554,7 @@
       // b) kravín
       const tDirt = W('hyg2', 'výkaly') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
       panelIO('#g-pen', t, t2 - 0.2, tHall);
-      ['#gp-c1', '#gp-c2', '#gp-c3', '#gp-k'].forEach((sel, i) => cutout(sel, t, 'gpc' + i));
+      ['#gp-c1', '#gp-c2', '#gp-c3', '#gp-k'].forEach((sel, i) => cutout(sel, t, 'gpc' + i, 0, 0, GPR[i]));
       PG.forEach((g, i) => { const p = pop(t, W('hyg2', 'nákazy') - 0.2 + i * 0.1, 0.3); const b = boil(t, 'pg' + i, 3, 8);
         set('#pgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
       popIn('#g-ptag', t, W('hyg2', 'společných') - 0.1, { r: -2, o: 1 - prog(t, tHall, 0.2) });
@@ -634,7 +625,6 @@
       const outIll = prog(t, t3 - 0.2, 0.3);
       set('#m-ill', { o: 1 - outIll });
       cutout('#m-cow', t, 'mc', (1 - prog(t, t0 + 0.1, 0.45, ease.outBack)) * -600);
-      cutout('#m-calf', t, 'mk', (1 - prog(t, t0 + 0.3, 0.45, ease.outBack)) * 500);
       PILE.forEach((_, i) => { const p = pop(t, W('mil1', 'tolik') + i * 0.15, 0.3); const b = boil(t, 'mp' + i, 1, 2);
         set('#mp' + i, { x: b.x, y: b.y, r: b.r * 3, s: p, o: p > 0 ? 1 - prog(t, t2 - 0.1, 0.3) : 0 }); });
       popIn('#m-tag1', t, W('mil1', 'nevypilo') - 0.2, { r: -2, o: 1 - prog(t, t2 - 0.1, 0.2) });
