@@ -60,6 +60,36 @@ důvod uvádí spíš „víc mléka na prodej“ a „kontrola mleziva“.
 - **B5 zalehnutí ⚠️** – žádná data o četnosti zalehnutí/rozšlápnutí telat ani pro haly, ani pro pastvu;
   EFSA zmiňuje zranění telat agresí krav při nedostatku místa. „Prakticky neděje“ = postoj KPZ, nedoložený.
 
+## B5+ · Zalehnutí: porodna, nebo hala? (dotaz KPZ 2026-10-21)
+
+Otázka: hrozí zalehnutí/ušlapání v porodně, nebo i v hale? (Kdyby jen v porodně, šlo by tele z porodny vzít a dát s mámou do haly.)
+✔ = ověřeno v plném textu, (ú) = jen úryvek vyhledávače (web zde blokovaný).
+
+**Četnost:** nikde žádná data o tom, jak často kráva tele zalehne/ušlápne – ani pro porodnu, halu, ani pastvu.
+
+**Porodna**
+- ✔ Kjæstad & Simensen 2001 (Norsko, 1 019 telat, prvních 24 h; hlásili farmáři): zranění telete (matka, jiné krávy, vybavení) 1,3 % u telat narozených v hale s boxy × 1,4 % v porodním kotci/vazném stání; „calves born in the cubicle section are not subject to excessive aggression or trampling by other cows“; častá „krádež“ telat čerstvě otelenými kravami. https://pmc.ncbi.nlm.nih.gov/articles/PMC2202338/
+- ✔ Rørvang et al. 2018: ve skupinové porodně „frequently disturbed by other cows and the risk of mismothering is high“ → doporučen individuální porodní kotec. https://pmc.ncbi.nlm.nih.gov/articles/PMC5773170/
+- ✔ Náš chov 2001 „Volné porodny krav“: údery krav, když telata „přikrádala“ mlezivo u cizích matek; porodny s 10–20 kravami „tristní, ale dosti běžná praxe“. https://naschov.cz/volne-porodny-krav/
+- (ú) Zootechnika.cz – výhoda individuálního kotce: „výrazně menší riziko poranění telete, zejména jeho přišlápnutí a zalehnutí“. Řešení = vlastní kotec, tele zůstává s matkou.
+- ✔ Česká odborná zdůvodnění včasného oddělení (VÚŽV 2023, ZSČR 2019) = infekce/hygiena porodního kotce, **ne zalehnutí**.
+
+**Hala (telata s matkami ve volném ustájení – běžná praxe farem s kontaktem)**
+- ✔ EFSA 2023: haly s boxy/hlubokou podestýlkou „often with a creep area“; dvojice kráva–tele „usually is kept separately for some days after calving“; úrazy z agrese krav „has not been reported in scientific studies“; „often cows seem to be quite tolerant to calves“; rizika „High stocking density, restricted space and lack of a creep area“. https://pmc.ncbi.nlm.nih.gov/articles/PMC10050971/
+- ✔ FiBL/Bioland/Demeter 2023: v halách s boxy „kann im Ausnahmefall ein Erdrücken eines Kalbes vorkommen“ → dost ležení mimo boxy, Kälberschlupf, zábrany proti přiskřípnutí. https://orgprints.org/id/eprint/53645/2/1575-kaelberaufzucht.pdf
+- ✔ Vaarst & Christiansen 2020 (DK katalog): NL farma – „ganske få dødsfald… typisk en ko, der træder på sin kalv“; ověřit bezpečnost shrnovačů hnoje. https://orgprints.org/id/eprint/39655/1/Ko_kalv_katalog_2020.pdf
+- ✔ Vaarst et al. 2020: rizika „squeezed by cows in heat, or by floor scrapers“; cizí krávy telata někdy nepřijímají. https://orgprints.org/id/eprint/39654/1/LBF-70-01-11_Research_Vaarst_200805.pdf
+- ✔ Johanssen 2023 (NO, 12 farem): farmářka „more injuries from cows stepping on the calf, or lying on the calf“; „childproofing“ haly, telata leží i v boxech krav. https://orgprints.org/id/eprint/55087/1/-%20Johanssen%202023%20thesis.pdf
+- ✔ Mee 2013/2020: smrtelné úrazy telat i od automatických shrnovačů hnoje v halách; „stood on or laid on by cow“ jako kategorie bez četnosti. https://pmc.ncbi.nlm.nih.gov/articles/PMC4494359/ · https://pmc.ncbi.nlm.nih.gov/articles/PMC7487920/
+- ✔ Rademann et al. 2025 (AT, 25 + 25 farem): „Contrary to farmers’ concerns…“ léze u telat na 6 farmách s časným oddělením × 1 s kontaktem; úmrtnost bez rozdílu (p = 0,627). https://pmc.ncbi.nlm.nih.gov/articles/PMC12370454/
+- Eriksson 2022: 80 % farem s kontaktem = hala s boxy nebo hluboká podestýlka; úmrtnost 0–3 měs. 4,5 % (příčiny nesledovány).
+
+**Pastva / masný skot**
+- ✔ Virginia Tech (Hall 1998): úrazy (kopnutí, přišlápnutí, zalehnutí) zabijí „a small percentage“, obvykle kvůli přeplnění míst k ležení/krmení; páry potřebují pastvu „with plenty of room“. https://www.sites.ext.vt.edu/newsletter-archive/livestock/aps-98_02/aps-881.html
+- (ú) Zemědělec, kamir.cz: v zimovišti masného skotu telecí školka chrání před „pošlapáním“/„zalehnutím“ – telata zůstávají u matek.
+
+**Závěr:** riziko není vázané na matku ani na porodnu, ale na **tlačenici a vybavení** (skupinové porodny, přeplněné haly, boxy, rošty, shrnovače). Řeší se individuálním porodním kotcem, prostorem jen pro telata a úpravou haly – ne odebráním telete. Formulace ve videu („údajně hrozí hlavně v přeplněných velkokapacitních halách“) je s tím v souladu; přesnější by bylo „v přeplněných porodnách a halách“.
+
 ## C · Pouto, farmy s kontaktem
 
 - **C1 Stěhulová, Lidfors, Špinka 2008 ⚠️ (formulace)** – AABS 110:144; 46 párů, oddělení **1., 4. nebo
