@@ -92,7 +92,7 @@ Ušní známky: rozostřit **jen samotné číslo** – `scripts/tag_retouch.py 
 --rect x0,y0,x1,y1 …` (obdélník kolem čísla; rozostření se ořízne na plochu známky, takže tvar
 známky zůstane ostrý; růžové známky `--hue 235,14 --sat 40` nebo `--noclip`). Polohy čísel najdi
 na zvětšeném výřezu s mřížkou. Ne flek přes ucho, ne přebarvení; nečitelně malá čísla nechat. Nedělat detail známky jako samostatný záběr. Výřez se ulétlými kousky pozadí: `--largest`, malá fotka: `--scale 2`. Pravidlo: **zvíře = fotka, kresba = věci a schémata**. Efekt „vytržení“ (tele z fotky s mámou):
-`scripts/tear_pair.py` – polygon kolem telete, dva výstřižky na stejném plátně. Lépe `scripts/tear_swap.py` A.jpg B.jpg out/ – dvojice srovnaných fotek (s teletem / bez telete): kousky `par`, `mama` (celá), `tele` na stejném plátně; při trhnutí vyměnit `par` za `mama` + `tele`, aby krávě nechyběl kus těla. Vystřihovat jen **celá zvířata** – fotku,
+`scripts/tear_pair.py` – polygon kolem telete, dva výstřižky na stejném plátně. Lépe `scripts/tear_swap.py` A.jpg B.jpg out/ – dvojice srovnaných fotek (s teletem / bez telete): kousky `par`, `mama` (celá), `tele` na stejném plátně; při trhnutí vyměnit `par` za `mama` + `tele`, aby krávě nechyběl kus těla. Fotky s průhledným pozadím (PNG/WebP) dávají čistou masku; kde se fotky liší i mimo tele (generátor překreslil nohy krávy), vyřízni to `--cut x,y,…` podle náhledu `--debug`. Testovací varianty masek klientovi neposílat – jen výsledek. Vystřihovat jen **celá zvířata** – fotku,
 kde okraj usekne část těla, nepoužít. Fotky s kravami a telaty: `hf_photos.py` nad COCO
 (`Multimodal-Fatima/COCO_captions_train`, sloupec `sentences_raw`). Provizorní fotky,
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky

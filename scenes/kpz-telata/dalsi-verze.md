@@ -49,9 +49,20 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 |---|---|---|---|
 | 1 | 2026-10-20 | **Pravidlo: zvíře = fotka, kresba = věci a schémata** (KPZ: „není divné, že je tam občas fotka a občas animace?“ → „zkus to“). Úvod: kreslená kráva + tele + nůžky → výstřižek krávy s teletem, při „hned“ se tele **vytrhne** (díra ve tvaru telete; `scripts/tear_pair.py`); hygiena: tele = tele-studio; přebytek mléka: fotka pouta (tele saje) + šipka „Pro tele“; řádky → Jatka: vytržené tele a máma s dírou z úvodu; společná porodna jako schéma shora (jako hala). | hotovo v10 |
 
-## Do v11 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v11 (2026-10-21) – render `out/kpz-telata-reel-v11.mp4`, hlas `vo-v11.json` → `assets-v11/` (2:56,3), scénář `scenar-v11.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-21 | **0:09–0:11 vytržení telete** – po odtržení krávě chybí kus těla (díra po teleti), působí divně. KPZ dodali dvojici srovnaných fotek holštýnky: s kojícím teletem (`foto-kpz/krava-tele-hol.jpg`) a stejnou krávu bez telete (`krava-sama-hol.jpg`). Postup: před vytržením `vystrizky/trh2-par.png` (kráva + tele), v okamžiku trhnutí výměna za `trh2-mama.png` (celá kráva) + `trh2-tele.png` odjíždí pryč (`scripts/tear_swap.py`, plátno 1003×662). Návrh k tomu: (a) úvodní fotka 0–4 s (`#h0-photo`) taky tahle holštýnka, ať je to stejná kráva; (b) v řádcích „→ Jatka“ (~2:30) použít `trh2-tele-samostatne` / `trh2-mama-samostatne`. Fotky ověřit práva před zveřejněním. | připraveno (výstřižky hotové), čeká na render |
+| 1 | 2026-10-21 | **0:09–0:11 vytržení telete** – po odtržení krávě chybí kus těla (díra po teleti), působí divně. KPZ dodali dvojici srovnaných fotek holštýnky: s kojícím teletem (`foto-kpz/krava-tele-hol.webp`) a stejnou krávu bez telete (`krava-sama-hol.webp`). Postup: před vytržením `vystrizky/trh2-par.png` (kráva + tele), v okamžiku trhnutí výměna za `trh2-mama.png` (celá kráva) + `trh2-tele.png` odjíždí pryč (`scripts/tear_swap.py` – maska z průhledného pozadí fotek, nohy krávy za teletem vyříznuté `--cut`; plátno 994×656). Fotky ověřit práva před zveřejněním. | hotovo v11 |
+| 2 | 2026-10-21 | **Úvod 0–4 s:** místo tzv. masné krávy (hnědá, `krava-s-teletem`) dvojfotka holštýnky s teletem (`trh2-par`) – mluvíme o mléčných kravách. Fotka pak plynule přejede na místo v hooku (stejná kráva). | hotovo v11 |
+| 3 | 2026-10-21 | **0:18 časová osa s nůžkami:** vyřadit „Měsíce“ (o tom by se dalo diskutovat); zbylé 4 body (Hned · 12 h · 1 den · Týden) roztáhnout přes celou osu, nůžky naskakují pomaleji přes celou větu. | hotovo v11 |
+| 4 | 2026-10-21 | **1:41 přebytek mléka:** jiná fotka než pouto (to už je ve videu několikrát) → „další kráva“: holštýnka, pod ní ležící tele (`krava-tele-lezi`); šipka „Pro tele“ vede k hlavě telete. | hotovo v11 |
+| 5 | 2026-10-21 | **1:42 hlas:** „Kráva ale dává mléko pro tele.“ → KPZ: „…primárně pro tele“, nebo varianta „Jako každá máma, tak i kráva dává mléko primárně pro tele.“ (mateřská nota). Zvoleno: „**Jako každá máma, i kráva dává mléko *primárně pro tele.***“ | hotovo v11 |
+| 6 | 2026-10-21 | **2:26 hlas:** „…přebytek mléka je výmluva chovatelů, ne důvod.“ → „…výmluva chovatelů, **která se jim hodí**, ne důvod.“ Délka: hlas 0.705 → 0.69 (~2 % rychleji) → 2:56,3. | hotovo v11 |
+| 7 | 2026-10-21 | **2:36 řádek „Tzv. dojnice → Jatka“:** fotka krávy s celým tělem („Celé tělo“, `krava-cele-telo`). | hotovo v11 |
+| 8 | 2026-10-21 | **2:40 řádek „Býčci → Jatka“:** fotka „Růžové“ – býček s růžovými známkami (`tele-ruzove`). | hotovo v11 |
 
+## Do v12 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
