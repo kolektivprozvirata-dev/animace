@@ -15,6 +15,8 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | pastva-stado.jpg | stádo na pastvině, v trávě ležící telata (KPZ, 745 px) | utržený kus `pastva-stado.png` – do v7 v 1:10 (zalehnutí, pastva) |
 | pouto-krava-tele.jpg | holštýnka se sajícím teletem, bílé pozadí (KPZ, 2026-10-20) | výstřižek `pouto-krava-tele.png` – do v8 scéna pouto |
 | masny-skot.jpg | čtyři kusy tzv. masného skotu na pastvě (růžové známky) | utržený kus `masny-skot.png` – hygiena, „tzv. masné krávy na pastvě“ |
+| krava-tele-hol.jpg | holštýnka s kojícím teletem, bílé pozadí (KPZ 35.webp, 2026-10-21; práva ověřit) | `trh2-par.png` – v11 hook před vytržením |
+| krava-sama-hol.jpg | stejná kráva bez telete, srovnaná s předchozí (KPZ 36.webp) | `trh2-mama.png` (celá kráva) + `trh2-tele.png` – v11 vytržení (0:09–0:11) |
 
 Příkazy (známky – originály 25.jpg / 26.jpg / 30.webp ze zpráv KPZ):
 
@@ -39,3 +41,7 @@ Výstřižky:
     python3 $S masny-skot.jpg vystrizky/masny-skot-tvar.png --shape blob --seed 62 --crop 70,60,1060,600 --scale 1.5
     python3 $S pastva-stado.jpg vystrizky/pastva-stado-tvar.png --shape blob --seed 64 --scale 1.6
     python3 $S pouto-krava-tele.jpg vystrizky/pouto-krava-tele.png --largest
+
+Vytržení ze dvou fotek (v11; kousky na společném plátně 1003×662, `-samostatne` = ořez na zvíře):
+
+    python3 .claude/skills/vox-animation/scripts/tear_swap.py krava-tele-hol.jpg krava-sama-hol.jpg vystrizky --prefix trh2-

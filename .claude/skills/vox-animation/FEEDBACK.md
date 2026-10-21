@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.10.0**
+**Verze skillu: 0.11.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -38,6 +38,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Fotky ne celé přes obraz, ale jako **papírové výstřižky**: zvíře vystřižené s okrajem z utrženého papíru (`scripts/cutout.py`), prostředí jako utržený kus fotky. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Ve výstřižcích jen **celá zvířata** – žádné useknuté půlky těla (fotka oříznutá okrajem = nepoužít). _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Jednotné pravidlo: **zvíře = fotka (výstřižek), kresba = jen věci a schémata** (grafy, šipky, ikony, pohled shora). Stejnou věc neukazovat jednou fotkou a jindy kresbou. _(2026-10-20, kpz-telata v10)_
+- **[vizuál]** Při „vytržení“ jednoho zvířete z fotky nesmí tomu, které zůstane, chybět kus těla (díra po vytrženém). Použít dvojici srovnaných fotek – s teletem a stejnou bez telete – a `scripts/tear_swap.py`: v okamžiku trhnutí se kráva vymění za celou. _(2026-10-21, kpz-telata v10 → v11)_
 - **[vizuál]** Krajinné fotky (pastva, prostředí) ne jako pravidelný obdélník, ale **nepravidelný utržený kus** (`cutout.py --shape blob`). _(2026-10-19, kpz-telata v7)_
 - **[pohyb]** Výstřižky z fotek se lehce třesou jako papír (≈2 px, 0,6°, 6× za s) – stejně jako kreslené prvky, ale klidněji. _(2026-10-19, kpz-telata v7)_
 - **[workflow]** Nápady KPZ sbírat do `dalsi-verze.md` (sekce „Do vN“), připravit podklady (výřezy), a vyrábět až na pokyn („pojď do toho“). _(2026-10-19)_
@@ -82,3 +83,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-20 | 0.9.1 | kpz-telata v8 | Rozhodnutí k opravám: „pro lidi výnosné“, 104 farem přesně, 12 h varianta A, pouto „podle výzkumů bolí víc“ (+ věta o přínosech delšího kontaktu), zalehnutí „slýcháme / neslyší“, hlas o 3 % rychleji, max 2:58 (nejistota, zda IG bere 3:00); fotka pouta od KPZ. „Udělej to.“ | **v8**: hlas `vo-v8.json` (0.72, kratší lead-in/tail) = 2:56,8; scéna: graf 1989: 3 982, karta „Jedna studie…“, dojnice „nemoc, neplodnost, nízký výkon“, štítky „Podle výzkumů“ a „S mámou déle…“, fotka pouta KPZ, opravené zdrojové řádky; `scenar-v8.md`, popisek. |
 | 2026-10-20 | 0.9.2 | kpz-telata v9 | Dotaz: rozdíl porodna × hala, kde se mluví o bakteriích; „pojmi to do videa“, haly nechat (tele by šlo s mámou mezi hnůj a moč). „OK, udělej to.“ | **v9**: hyg2 = společné porodny (67,6 % farem) + hala; kreslená společná porodna se zárodky; zdroje Staněk 2014, VÚŽV 2023, EFSA 2023; hlas 0.705 + kratší pauzy = 2:56,9. |
 | 2026-10-20 | 0.10.0 | kpz-telata v10 | „Není divné, že tam mám občas fotku a občas animaci?“ → návrh pravidla „zvíře = fotka, kresba = věci/schémata“ → „zkus to“. | Všechny kreslené krávy nahrazeny výstřižky; nový efekt **vytržení telete z fotky** (`scripts/tear_pair.py`: dva výstřižky na stejném plátně, díra ve tvaru telete); porodna jako schéma shora; pravidlo do [vizuál]. |
+| 2026-10-21 | 0.11.0 | kpz-telata v10 | „V 0:11 je divný, jak odděláš to tele a původní krávě pak chybí část těla.“ KPZ dodali dvě srovnané fotky (kráva s teletem / stejná kráva bez telete). „Zatím si to ulož.“ | Nový `scripts/tear_swap.py` (maska telete = rozdíl fotek ∩ matte A ∪ matte A bez matte B, uzavření, vyplnění děr); výstřižky `trh2-*`; zapsáno do v11 (`dalsi-verze.md` #1), render až na pokyn; pravidlo do [vizuál]. |

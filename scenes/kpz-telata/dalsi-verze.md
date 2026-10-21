@@ -53,4 +53,5 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-21 | **0:09–0:11 vytržení telete** – po odtržení krávě chybí kus těla (díra po teleti), působí divně. KPZ dodali dvojici srovnaných fotek holštýnky: s kojícím teletem (`foto-kpz/krava-tele-hol.jpg`) a stejnou krávu bez telete (`krava-sama-hol.jpg`). Postup: před vytržením `vystrizky/trh2-par.png` (kráva + tele), v okamžiku trhnutí výměna za `trh2-mama.png` (celá kráva) + `trh2-tele.png` odjíždí pryč (`scripts/tear_swap.py`, plátno 1003×662). Návrh k tomu: (a) úvodní fotka 0–4 s (`#h0-photo`) taky tahle holštýnka, ať je to stejná kráva; (b) v řádcích „→ Jatka“ (~2:30) použít `trh2-tele-samostatne` / `trh2-mama-samostatne`. Fotky ověřit práva před zveřejněním. | připraveno (výstřižky hotové), čeká na render |
 
