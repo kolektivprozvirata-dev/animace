@@ -70,7 +70,7 @@ Otázka: hrozí zalehnutí/ušlapání v porodně, nebo i v hale? (Kdyby jen v p
 **Porodna**
 - ✔ Kjæstad & Simensen 2001 (Norsko, 1 019 telat, prvních 24 h; hlásili farmáři): zranění telete (matka, jiné krávy, vybavení) 1,3 % u telat narozených v hale s boxy × 1,4 % v porodním kotci/vazném stání; „calves born in the cubicle section are not subject to excessive aggression or trampling by other cows“; častá „krádež“ telat čerstvě otelenými kravami. https://pmc.ncbi.nlm.nih.gov/articles/PMC2202338/
 - ✔ Rørvang et al. 2018: ve skupinové porodně „frequently disturbed by other cows and the risk of mismothering is high“ → doporučen individuální porodní kotec. https://pmc.ncbi.nlm.nih.gov/articles/PMC5773170/
-- ✔ Náš chov 2001 „Volné porodny krav“: údery krav, když telata „přikrádala“ mlezivo u cizích matek; porodny s 10–20 kravami „tristní, ale dosti běžná praxe“. https://naschov.cz/volne-porodny-krav/
+- ✔ Náš chov 2001 (25. 9. 2001) „Volné porodny krav“: údery krav, když telata „přikrádala“ mlezivo u cizích matek; porodny s 10–20 kravami „tristní, ale dosti běžná praxe“. https://naschov.cz/volne-porodny-krav/
 - (ú) Zootechnika.cz – výhoda individuálního kotce: „výrazně menší riziko poranění telete, zejména jeho přišlápnutí a zalehnutí“. Řešení = vlastní kotec, tele zůstává s matkou.
 - ✔ Česká odborná zdůvodnění včasného oddělení (VÚŽV 2023, ZSČR 2019) = infekce/hygiena porodního kotce, **ne zalehnutí**.
 
@@ -88,7 +88,8 @@ Otázka: hrozí zalehnutí/ušlapání v porodně, nebo i v hale? (Kdyby jen v p
 - ✔ Virginia Tech (Hall 1998): úrazy (kopnutí, přišlápnutí, zalehnutí) zabijí „a small percentage“, obvykle kvůli přeplnění míst k ležení/krmení; páry potřebují pastvu „with plenty of room“. https://www.sites.ext.vt.edu/newsletter-archive/livestock/aps-98_02/aps-881.html
 - (ú) Zemědělec, kamir.cz: v zimovišti masného skotu telecí školka chrání před „pošlapáním“/„zalehnutím“ – telata zůstávají u matek.
 
-**Závěr:** riziko není vázané na matku ani na porodnu, ale na **tlačenici a vybavení** (skupinové porodny, přeplněné haly, boxy, rošty, shrnovače). Řeší se individuálním porodním kotcem, prostorem jen pro telata a úpravou haly – ne odebráním telete. Formulace ve videu („údajně hrozí hlavně v přeplněných velkokapacitních halách“) je s tím v souladu; přesnější by bylo „v přeplněných porodnách a halách“.
+**Závěr:** riziko není vázané na matku ani na porodnu, ale na **tlačenici a vybavení** (skupinové porodny, přeplněné haly, boxy, rošty, shrnovače). Řeší se individuálním porodním kotcem, prostorem jen pro telata a úpravou haly – ne odebráním telete. Formulace ve videu („údajně hrozí hlavně v přeplněných velkokapacitních halách“) je s tím v souladu.
+**„Přeplněné porodny“ v ČR nejsou doložené** (doplněno 2026-10-21): české zdroje dokládají jen, že **společné porodny převažují** (Staněk 2014: 67,6 % ze 136 farem; počet krav v kotci neuvádí) a že zákonné minimum je 9 m² na krávu v porodním kotci pro volné telení (vyhl. 208/2004 Sb.). O tlačenici mluví jen Náš chov **2001** (kotce s 10–20 kravami „dosti běžnou praxí“) – 25 let starý text. Souvislost tlačenice → úrazy je ze zahraničních zdrojů (EFSA, Rørvang). Do videu tedy spíš „ve společných porodnách a přeplněných halách“, ne „přeplněné porodny“.
 
 ## C · Pouto, farmy s kontaktem
 
