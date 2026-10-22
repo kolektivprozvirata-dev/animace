@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.12.0**
+**Verze skillu: 0.13.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -18,6 +18,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
+- **[data]** Odlišit doložený současný stav od hypotézy: kde zvířata dnes nejsou (např. telata v hale), mluvit podmiňovacím způsobem („v hale, kam by tele muselo“) a argument přiřadit chovatelům („údajně“); nepoužívat „hlavně/nejčastěji“ bez měření. _(2026-10-21, kpz-telata – dotaz KPZ k zalehnutí)_
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75, v8: ~0.73 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
@@ -87,3 +88,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-20 | 0.10.0 | kpz-telata v10 | „Není divné, že tam mám občas fotku a občas animaci?“ → návrh pravidla „zvíře = fotka, kresba = věci/schémata“ → „zkus to“. | Všechny kreslené krávy nahrazeny výstřižky; nový efekt **vytržení telete z fotky** (`scripts/tear_pair.py`: dva výstřižky na stejném plátně, díra ve tvaru telete); porodna jako schéma shora; pravidlo do [vizuál]. |
 | 2026-10-21 | 0.11.0 | kpz-telata v10 | „V 0:11 je divný, jak odděláš to tele a původní krávě pak chybí část těla.“ KPZ dodali dvě srovnané fotky (kráva s teletem / stejná kráva bez telete). „Zatím si to ulož.“ | Nový `scripts/tear_swap.py` (maska telete = rozdíl fotek ∩ matte A ∪ matte A bez matte B, uzavření, vyplnění děr); výstřižky `trh2-*`; zapsáno do v11 (`dalsi-verze.md` #1), render až na pokyn; pravidlo do [vizuál]. |
 | 2026-10-21 | 0.12.0 | kpz-telata v11 | Úvod: „na začátku jsou krávy na maso, bavíme se o mléčných“ → dvojfotka holštýnky; 0:18 osa bez „Měsíce“ (diskutabilní), roztáhnout a zpomalit; 1:41 jiná kráva s teletem (pouto „už je tam několikrát“); řádky → Jatka: fotky „Celé tělo“ a „Růžové“; hlas: „Jako každá máma, i kráva dává mléko primárně pro tele“, „výmluva chovatelů, která se jim hodí“. „Renderuj.“ Dotaz k testovacím maskám telete („proč je tak osekané?“). | **v11**: hlas 0.69 = 2:56,3; `tear_swap.py` bere masku z průhledného pozadí fotek (bez barevných lemů) + `--cut` (ruční výřez nohou krávy, které generátor ve druhé fotce překreslil) + `--debug`; úvodní fotka plynule přejede do hooku; pravidla do [obsah] a [vizuál]. |
+| 2026-10-21 | 0.13.0 | kpz-telata v11 | Zdroje jako odkazy do chatu. Dotazy k zalehnutí: porodna, nebo hala? „Přeplněné porodny“ z českých zdrojů? „V hale telata nikdy nebyla – jak to můžeme tvrdit? Chci to neprůstřelné.“ → varianta 2 věty. | 3 paralelní rešerše (literatura, haly s telaty, české zdroje) + ověření citací v plném textu → `overeni-tvrzeni.md` B5+; „přeplněné porodny“ v ČR nedoložené (jen Náš chov 2001); cru2 = varianta 2 do v12; pravidlo do [data]. |
