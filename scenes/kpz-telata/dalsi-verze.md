@@ -62,8 +62,13 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 | 7 | 2026-10-21 | **2:36 řádek „Tzv. dojnice → Jatka“:** fotka krávy s celým tělem („Celé tělo“, `krava-cele-telo`). | hotovo v11 |
 | 8 | 2026-10-21 | **2:40 řádek „Býčci → Jatka“:** fotka „Růžové“ – býček s růžovými známkami (`tele-ruzove`). | hotovo v11 |
 
-## Do v12 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v12 (2026-10-23) – render `out/kpz-telata-reel-v12.mp4`, hlas `vo-v12.json` → `assets-v12/` (2:56,7), scénář `scenar-v12.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-21 | **~0:59 zalehnutí – neprůstřelnost** (KPZ: telata v hale v ČR nikdy nejsou, jak můžeme tvrdit, že tam hrozí?). Rešerše (`overeni-tvrzeni.md` B5+): riziko se ve zdrojích váže na tlačenici (společné porodny, přeplněné haly), ne na matku; „hlavně“ nikdo nezměřil. Varianty s porodnou a halou („A prý taky v hale, kam by tele muselo, kdyby zůstalo s mámou“) vyšly dlouhé a složité → KPZ: zjednodušit. **Schválené cru2:** „To údajně hrozí **tam, kde je moc krav na malém prostoru.** Na pastvě u tzv. masných krav se o zalehnutí prakticky neslyší.“ Délka ≈ jako dosud (bez zrychlení). Obraz beze změny (přeplněná hala s teletem); kotvu štítku `W('cru2','přeplněných')` přesunout na „moc“. | schváleno KPZ, čeká na render |
+| 1 | 2026-10-21 | **~0:59 zalehnutí – neprůstřelnost** (KPZ: telata v hale v ČR nikdy nejsou, jak můžeme tvrdit, že tam hrozí?). Rešerše (`overeni-tvrzeni.md` B5+): riziko se ve zdrojích váže na tlačenici (společné porodny, přeplněné haly), ne na matku; „hlavně“ nikdo nezměřil. Varianty s porodnou a halou („A prý taky v hale, kam by tele muselo, kdyby zůstalo s mámou“) vyšly dlouhé a složité → KPZ: zjednodušit. **Schválené cru2:** „To údajně hrozí **tam, kde je moc krav na malém prostoru.** Na pastvě u tzv. masných krav se o zalehnutí prakticky neslyší.“ Délka ≈ jako dosud (bez zrychlení). Obraz beze změny (přeplněná hala s teletem); kotva štítku `W('cru2','moc krav')`. | hotovo v12 |
+
+## Do v13 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
