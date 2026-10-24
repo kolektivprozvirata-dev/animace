@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.14.4**
+**Verze skillu: 0.14.5**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -96,3 +96,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | 0.14.2 | kpz-telata | „Otestuj klíč ElevenLabs, když funguje, pošli krátkou ukázku hlasu (věty s tzv., 9 500, 12 h z vo-v12.json); video nerenderovat.“ | Doména secretu už je správně (`api.elevenlabs.io`, proxy klíč přidává), ale ElevenLabs vrací 401 `invalid_api_key` na `/v1/user/subscription` i `/v1/voices/{id}` → hodnota klíče je neplatná. Ukázka negenerována, nic neúčtováno. SKILL.md: rozlišení 401 `invalid_api_key` + co s tím. |
 | 2026-10-24 | 0.14.3 | kpz-telata | „Já už fakt netuším, co mám dělat. API key jsem do value zkopíroval v pořádku.“ | Nový test: odpověď se změnila na 401 `missing_permissions` (chybí `user_read`) → klíč platí; ukázka 3 vět (hook1, hyg3, mil3) přes ElevenLabs = 19,7 s, odesláno (`out/`); cache se stejným kontextem jako celý vo-v12.json. Tempo ≈ Piper 0.69 (17,9 × 18,3 s). SKILL.md: `missing_permissions` ≠ nefunkční klíč; poučení: při změně chyby test zopakovat, ne hned posílat uživatele znovu do nastavení. |
 | 2026-10-24 | 0.14.4 | kpz-telata | „Ne, nezačíná SK“ (do Value šlo něco jiného než klíč) → nový klíč `sk_…`; „Zkus ukázku s tímto? Fpj3lp9mRnYq6RZpHq9D“. | Ukázka 6 vět v hlasu Fpj3 + pro srovnání 7JbZ (Fpj3 o ~60 % pomalejší, celý hlas by měl ~4:38 → nad limitem 2:58). SKILL.md: klíč začíná `sk_`; u nového hlasu nejdřív ukázka a odhad délky. |
+| 2026-10-24 | 0.14.5 | kpz-telata | „Udělej ukázku s tímto dSByRdUbTGloB7TFA1qD“. | Stejná ukázka 6 vět: 29,6 s, tempo ≈ 7JbZ, odhad celku ≈ 2:51 (vejde se do 2:58). Bez změny skillu. |
