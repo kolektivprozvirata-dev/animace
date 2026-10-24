@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.14.5**
+**Verze skillu: 0.15.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -16,6 +16,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[titulky]** Čísla s mezerou (9 500) se mezi titulky nedělí – číslo musí být celé v jednom kousku (`tts.py` → pevná mezera). _(2026-10-19, kpz-telata v5)_
 - **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`). Bez patetické hudby. _(2026-10-14, kpz-telata)_
 - **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud v prostředí není network secret pro `api.elevenlabs.io` (hlavička `xi-api-key`). Klíč od 2026-10-24 funguje. _(2026-10-24, kpz-telata)_
+- **[zvuk]** Hlas ElevenLabs **bez slyšitelných nádechů** mezi větami a u čárek („vždycky když dořekne část věty, tak se nadechne – to je na hovno“) – `tts.py` je ztlumí do ticha (výchozí). _(2026-10-24, kpz-telata v13)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
@@ -97,3 +98,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | 0.14.3 | kpz-telata | „Já už fakt netuším, co mám dělat. API key jsem do value zkopíroval v pořádku.“ | Nový test: odpověď se změnila na 401 `missing_permissions` (chybí `user_read`) → klíč platí; ukázka 3 vět (hook1, hyg3, mil3) přes ElevenLabs = 19,7 s, odesláno (`out/`); cache se stejným kontextem jako celý vo-v12.json. Tempo ≈ Piper 0.69 (17,9 × 18,3 s). SKILL.md: `missing_permissions` ≠ nefunkční klíč; poučení: při změně chyby test zopakovat, ne hned posílat uživatele znovu do nastavení. |
 | 2026-10-24 | 0.14.4 | kpz-telata | „Ne, nezačíná SK“ (do Value šlo něco jiného než klíč) → nový klíč `sk_…`; „Zkus ukázku s tímto? Fpj3lp9mRnYq6RZpHq9D“. | Ukázka 6 vět v hlasu Fpj3 + pro srovnání 7JbZ (Fpj3 o ~60 % pomalejší, celý hlas by měl ~4:38 → nad limitem 2:58). SKILL.md: klíč začíná `sk_`; u nového hlasu nejdřív ukázka a odhad délky. |
 | 2026-10-24 | 0.14.5 | kpz-telata | „Udělej ukázku s tímto dSByRdUbTGloB7TFA1qD“. | Stejná ukázka 6 vět: 29,6 s, tempo ≈ 7JbZ, odhad celku ≈ 2:51 (vejde se do 2:58). Bez změny skillu. |
+| 2026-10-24 | 0.15.0 | kpz-telata v13 | Hlas dSBy: „vždycky když dořekne část věty, tak se nadechne, to je na hovno. Jinak by to bylo dobrý.“ | `tts.py`: `debreath()` – v mezerách mezi slovy (časy znaků ElevenLabs) najde šum bez hlasu (>50 % energie nad 2 kHz, −58…−25 dB, ≥ 60 ms) a ztlumí ho do ticha i s dozvukem; výchozí zapnuto, `--keep-breaths` / `"debreath": false`. Ukázka dSBy: 8 nádechů pryč (byly −25…−36 dBFS), přepočteno z cache bez placení. Pravidlo do [zvuk]. |

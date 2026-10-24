@@ -38,7 +38,9 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
   - endpoint /with-timestamps vrací časy znaků → kousky titulků (a tím i VOX.wordT) sedí na skutečnou řeč;
   - odpovědi se ukládají do .cache/elevenlabs/ (klíč = hlas + model + nastavení + text + kontext),
     takže nezměněné segmenty se znovu neplatí. Kontext sousedních vět (previous/next_text) zlepšuje
-    intonaci; vypnout „el_context“: false (pak změna věty nepřegeneruje sousedy).
+    intonaci; vypnout „el_context“: false (pak změna věty nepřegeneruje sousedy);
+  - nádechy mezi slovy a na konci vět se ztlumí do ticha (debreath, podle časů slov); nechat je:
+    „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
 """
 import argparse
 import base64
@@ -168,6 +170,72 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir):
     return base64.b64decode(res['audio_base64']), res.get('alignment') or res.get('normalized_alignment')
 
 
+def debreath(path, al):
+    """Ztlumí nádechy v mezerách mezi slovy (časy slov z alignmentu ElevenLabs).
+    Nádech = šum bez hlasu (víc než polovina energie nad 2 kHz), tišší než řeč, aspoň 60 ms.
+    Konce a začátky slov zůstanou – hledá se jen mezi nimi. Vrací počet ztlumených nádechů."""
+    import numpy as np
+    with wave.open(path) as wf:
+        sr, params = wf.getframerate(), wf.getparams()
+        x = np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float64)
+    ch, st, en = al['characters'], al['character_start_times_seconds'], al['character_end_times_seconds']
+    words, cur = [], None
+    for k, c in enumerate(ch):
+        if c.isalnum():
+            cur = [st[k], en[k]] if cur is None else [cur[0], en[k]]
+        elif cur:
+            words.append(cur); cur = None
+    if cur:
+        words.append(cur)
+    if not words:
+        return 0
+    dur = len(x) / sr
+    gaps = [(0.0, words[0][0] - 0.015)] + [(words[j][1], words[j + 1][0] - 0.015) for j in range(len(words) - 1)] \
+        + [(words[-1][1], dur)]
+    def level(f):
+        return 20 * np.log10(np.sqrt(np.mean(f ** 2)) / 32768 + 1e-9)
+
+    n = int(0.01 * sr)
+    win = np.hanning(n)
+    fr = np.fft.rfftfreq(n, 1 / sr)
+    gain = np.ones(len(x))
+    fade = int(0.008 * sr)
+    count = 0
+    for a, b in gaps:
+        if b - a < 0.06:
+            continue
+        o0, o1 = int(a * sr), int(b * sr)
+        run = []          # rámce nádechu za sebou
+        for o in list(range(o0, o1 - n + 1, n)) + [None]:
+            if o is not None:
+                f = x[o:o + n]
+                lvl = level(f)
+                sp = np.abs(np.fft.rfft(f * win))
+                hi = sp[fr > 2000].sum() / (sp.sum() + 1e-9)
+                if hi > 0.5 and -58 < lvl < -25:
+                    run.append(o)
+                    continue
+            if len(run) >= 6:
+                # rozšířit přes tiché okolí: dozvuk nádechu (< -30 dB) a ticho před ním (< -50 dB)
+                s0, s1 = run[0], run[-1] + n
+                while s1 + n <= o1 and level(x[s1:s1 + n]) < -30:
+                    s1 += n
+                while s0 - n >= o0 and level(x[s0 - n:s0]) < -50:
+                    s0 -= n
+                s1 = min(o1, s1 + n)
+                gain[s0:s1] = 0
+                gain[max(0, s0 - fade):s0] = np.minimum(gain[max(0, s0 - fade):s0], np.linspace(1, 0, s0 - max(0, s0 - fade)))
+                e = min(len(x), s1 + fade)
+                gain[s1:e] = np.minimum(gain[s1:e], np.linspace(0, 1, e - s1))
+                count += 1
+            run = []
+    if count:
+        with wave.open(path, 'wb') as wf:
+            wf.setparams(params)
+            wf.writeframes((x * gain).astype(np.int16).tobytes())
+    return count
+
+
 def norm(s):
     return re.sub(r'\s+', ' ', s.replace('*', '').replace(NBSP, ' ')).strip()
 
@@ -196,6 +264,7 @@ def main():
     ap.add_argument('--voice-id', default=None, help='ElevenLabs voice_id')
     ap.add_argument('--model-id', default=None, help='ElevenLabs model (výchozí eleven_multilingual_v2)')
     ap.add_argument('--speed', type=float, default=None, help='ElevenLabs rychlost 0.7–1.2')
+    ap.add_argument('--keep-breaths', action='store_true', help='ElevenLabs: nechat nádechy (jinak se ztlumí)')
     a = ap.parse_args()
 
     spec = json.load(open(a.spec, encoding='utf-8'))
@@ -211,7 +280,8 @@ def main():
               'model_id': a.model_id or spec.get('model_id', 'eleven_multilingual_v2'),
               'speed': a.speed if a.speed is not None else spec.get('speed'),
               'voice_settings': spec.get('voice_settings'), 'language_code': spec.get('language_code'),
-              'context': spec.get('el_context', True)}
+              'context': spec.get('el_context', True),
+              'debreath': spec.get('debreath', True) and not a.keep_breaths}
         if not el['voice_id']:
             sys.exit('ElevenLabs: chybí voice_id (ve vo.json nebo --voice-id).')
         el_cache = os.path.join(repo_root(), '.cache', 'elevenlabs')
@@ -225,6 +295,7 @@ def main():
     files, segs = [], []
     sr = None
     t = lead_in
+    breaths = 0
 
     def silence(sec, idx):
         p = os.path.join(tmp, f's{idx:03}.wav')
@@ -248,6 +319,8 @@ def main():
                 f.write(mp3)
             subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', mp,
                             '-ar', '44100', '-ac', '1', '-sample_fmt', 's16', p], check=True)
+            if el['debreath'] and al and al.get('character_end_times_seconds'):
+                breaths += debreath(p, al)
         with wave.open(p) as wf:
             sr = wf.getframerate()
             dur = wf.getnframes() / sr
@@ -315,6 +388,8 @@ def main():
                 n += 1
 
     print(f'voiceover ({engine}) {duration:.1f} s, {len(segs)} segmentů →', out_dir)
+    if breaths:
+        print(f'  ztlumeno nádechů: {breaths}')
     for s in segs:
         print(f"  {s['t0']:6.2f}–{s['t1']:6.2f}  {s['id']:<10} {s['text'][:60]}")
 
