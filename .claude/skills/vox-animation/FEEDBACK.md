@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.14.0**
+**Verze skillu: 0.14.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -92,3 +92,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-21 | 0.13.0 | kpz-telata v11 | Zdroje jako odkazy do chatu. Dotazy k zalehnutí: porodna, nebo hala? „Přeplněné porodny“ z českých zdrojů? „V hale telata nikdy nebyla – jak to můžeme tvrdit? Chci to neprůstřelné.“ → varianta 2 věty. | 3 paralelní rešerše (literatura, haly s telaty, české zdroje) + ověření citací v plném textu → `overeni-tvrzeni.md` B5+; „přeplněné porodny“ v ČR nedoložené (jen Náš chov 2001); cru2 = varianta 2 do v12; pravidlo do [data]. |
 | 2026-10-22 | 0.13.1 | kpz-telata v11 | „Přijde mi, že už to strašně komplikuju.“ → ok na krátkou obecnou větu. | cru2 = „To údajně hrozí tam, kde je moc krav na malém prostoru.“ ✅ osvědčené: neprůstřelnost řešit nejdřív obecnější přesnou formulací, ne přidáváním vedlejších vět. |
 | 2026-10-24 | 0.14.0 | kpz-telata | „Jak uděláme to audio od AI, který zaplatíme?“ → postup ElevenLabs; KPZ vybrali hlas 7JbZPqJGWUfXXBim0T8U. Dotaz k API klíči (vysvětleno). | `tts.py` umí `--engine elevenlabs` (časy znaků → titulky, cache odpovědí, kontext sousedních vět), otestováno se simulovaným API; čeká na klíč a doménu v nové session; pravidlo do [zvuk]. |
+| 2026-10-24 | 0.14.1 | kpz-telata | „Vygeneruj hlas přes ElevenLabs (bod 1 Do v13), nejdřív otestuj klíč, pak ukázku; video nerenderovat.“ | Test klíče selhal: network secret má doménu `api.elevenlabs.com` (neexistuje → 502), na `api.elevenlabs.io` proxy klíč nepřidá (401). Nic se nevygenerovalo ani neúčtovalo. SKILL.md: upozornění „.io, ne .com“ + bezplatný test klíče přes `/v1/user/subscription`. |
