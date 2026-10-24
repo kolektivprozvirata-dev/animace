@@ -41,7 +41,8 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
     (commitnout – nahrávky jsou placené a nedeterministické, vybraný take by se jinak ztratil). Kontext sousedních vět (previous/next_text) zlepšuje
     intonaci; vypnout „el_context“: false (pak změna věty nepřegeneruje sousedy);
   - segment může mít „el“: {…} = vlastní nastavení jen pro něj, např. vybraný take
-    {"seed": 22} nebo {"voice_settings": {"stability": 0.3}, "model_id": …};
+    {"seed": 22} nebo {"voice_settings": {"stability": 0.3}, "model_id": …}; pevný kontext
+    {"previous_text": "…", "next_text": ""} („“ = hlas ví, že tu věta končí / začíná);
   - nádechy mezi slovy a na konci vět se vystřihnou (debreath, podle časů slov) – místo nich ticho
     nejvýš „breath_pause“ s (výchozí 0,15), na konci segmentu jen pauza „pause“/„gap“; nechat je:
     „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
@@ -164,6 +165,8 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir, fallback=()):
         body['language_code'] = cfg['language_code']
     if cfg.get('seed') is not None:
         body['seed'] = cfg['seed']
+    prev_text = cfg.get('previous_text', prev_text)   # „el“: {"previous_text": …} = pevný kontext
+    next_text = cfg.get('next_text', next_text)       # ("" = věta končí; jiný text = sousedé se nepřegenerují)
     if cfg.get('context', True):
         if prev_text: body['previous_text'] = prev_text
         if next_text: body['next_text'] = next_text
