@@ -78,3 +78,5 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-24 | **2:42 „Zvíře není stroj ani zboží.“** (alt3) – říct důrazněji / důsledněji. Návrh: pár verzí jen této věty (`eleven_v3` jako u otázky, příp. „Zvíře. Není stroj. Ani zboží.“ jen v `say`, titulek beze změny), poslat na výběr, vybranou zapsat jako `"el"` u alt3. Rezerva do 2:58 ≈ 2,6 s. | čeká |
+| 2 | 2026-10-24 | **Propad zvuku po vystřižených nádeších** (ve sluchátkách je slyšet „uříznutí“ – úplné digitální ticho proti „vzduchu“ v řeči). Návrh: pod celý hlas velmi tichý „room tone“ (šum prostoru podle tichých míst nahrávky), nádechy neřezat do nuly, ale ztlumit o ~20–25 dB s delšími přechody (~40 ms); ukázka A/B na poslech. Z cache, bez placení. | čeká |
