@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.15.1**
+**Verze skillu: 0.16.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -14,9 +14,10 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[formát]** Reely pro sítě: **9:16, 1080×1920**. Grafika v zóně y 260–1300, titulky kolem y 1470, spodek (>1560) a pravý okraj (x>960 v dolní polovině) nechat volný kvůli UI sítí. _(2026-10-14, kpz-telata)_
 - **[titulky]** Titulky **ano** – vypálené, součást designu: kousky po 2–5 slovech, papírový pruh, klíčové slovo žlutě. Kde je věta už velkým textem v animaci, titulek vypnout (`cap: false`). _(2026-10-14, kpz-telata)_
 - **[titulky]** Čísla s mezerou (9 500) se mezi titulky nedělí – číslo musí být celé v jednom kousku (`tts.py` → pevná mezera). _(2026-10-19, kpz-telata v5)_
-- **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`). Bez patetické hudby. _(2026-10-14, kpz-telata)_
-- **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud v prostředí není network secret pro `api.elevenlabs.io` (hlavička `xi-api-key`). Klíč od 2026-10-24 funguje. _(2026-10-24, kpz-telata)_
-- **[zvuk]** Hlas ElevenLabs **bez slyšitelných nádechů** mezi větami a u čárek („vždycky když dořekne část věty, tak se nadechne – to je na hovno“) – `tts.py` je ztlumí do ticha (výchozí). _(2026-10-24, kpz-telata v13)_
+- **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`) – od v13 jen náhled/záloha (viz ElevenLabs níže). Bez patetické hudby. _(2026-10-14, kpz-telata)_
+- **[zvuk]** Hlas KPZ: **ElevenLabs, voice_id `dSByRdUbTGloB7TFA1qD`** (od v13; dřív zvažované 7JbZPqJGWUfXXBim0T8U, Fpj3lp9mRnYq6RZpHq9D – ten o 60 % pomalejší, nevejde se), model `eleven_multilingual_v2`, `tts.py --engine elevenlabs`. Klíč = network secret pro `api.elevenlabs.io` (hlavička `xi-api-key`). Nahrávky commitovat (`"el_cache"` ve vo.json) – jsou placené a nedeterministické. _(2026-10-24, kpz-telata)_
+- **[zvuk]** Otázka musí znít jako otázka (stoupnout na konci). Když nezní: vygenerovat několik verzí jen té věty (seed, bez kontextu, pauza, model `eleven_v3`), změřit stoupnutí melodie a poslat 3–5 na výběr; vybraná se zapíše k segmentu `"el": {…}`. U KPZ vyhrál `eleven_v3` bez kontextu. _(2026-10-24, kpz-telata v13)_
+- **[zvuk]** Hlas ElevenLabs **bez slyšitelných nádechů** mezi větami a u čárek („vždycky když dořekne část věty, tak se nadechne – to je na hovno“) – `tts.py` je vystřihne (výchozí); místo nich max. 0,15 s ticha, pauzy mezi větami pak doladit přes `pause` (u KPZ +0,15 s, ať to nezní uspěchaně). _(2026-10-24, kpz-telata v13)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
@@ -100,3 +101,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | 0.14.5 | kpz-telata | „Udělej ukázku s tímto dSByRdUbTGloB7TFA1qD“. | Stejná ukázka 6 vět: 29,6 s, tempo ≈ 7JbZ, odhad celku ≈ 2:51 (vejde se do 2:58). Bez změny skillu. |
 | 2026-10-24 | 0.15.0 | kpz-telata v13 | Hlas dSBy: „vždycky když dořekne část věty, tak se nadechne, to je na hovno. Jinak by to bylo dobrý.“ | `tts.py`: `debreath()` – v mezerách mezi slovy (časy znaků ElevenLabs) najde šum bez hlasu (>50 % energie nad 2 kHz, −58…−25 dB, ≥ 60 ms) a ztlumí ho do ticha i s dozvukem; výchozí zapnuto, `--keep-breaths` / `"debreath": false`. Ukázka dSBy: 8 nádechů pryč (byly −25…−36 dBFS), přepočteno z cache bez placení. Pravidlo do [zvuk]. |
 | 2026-10-24 | 0.15.1 | kpz-telata v13 | Hlas dSBy „jo dobrý“; „jestli by úvodní věta, která je otázka, nemohla znít víc jako otázka“. | `tts.py`: segment může mít `"el": {…}` (seed, voice_settings, model_id, context) – výběr „take“ pro jednu větu. 10 verzí hook0 (seed, expresivita, bez kontextu, pauza „začíná… porodem“, model v3) změřeno stoupání melodie na „porodem“; poslány A (původní, +4 půltóny) a B–E (+5 až +8). Čeká na výběr. |
+| 2026-10-24 | 0.16.0 | kpz-telata v13 | Otázka: vybrána varianta **E** (`eleven_v3`, bez kontextu) – „nejlepší“. „Vygeneruj celý video rovnou i s hlasem.“ | **v13**: `vo-v13.json` (hlas dSBy, hook0 = take E), celý hlas 3:01 → `debreath` nádechy vystřihuje (max 0,15 s ticha, časy znaků posunuté) = 2:51,8 → pauzy na koncích vět +0,15 s = **2:55,4**; nic znovu neplaceno (cache). `tts.py`: `"el_cache"` = commitnutá cache u projektu (`scenes/kpz-telata/el-cache/`, 3,8 MB) s načtením z `.cache/`. Scéna `reel-kpz-foto.html` → `assets-v13/`, render `out/kpz-telata-reel-v13.mp4`. Pravidla [zvuk] (hlas dSBy, otázky, vystřižené nádechy). |

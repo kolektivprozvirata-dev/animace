@@ -37,11 +37,13 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
     „voice_settings“ (stability, similarity_boost, style…), „language_code“ (jen u modelů, které ho berou);
   - endpoint /with-timestamps vrací časy znaků → kousky titulků (a tím i VOX.wordT) sedí na skutečnou řeč;
   - odpovědi se ukládají do .cache/elevenlabs/ (klíč = hlas + model + nastavení + text + kontext),
-    takže nezměněné segmenty se znovu neplatí. Kontext sousedních vět (previous/next_text) zlepšuje
+    takže nezměněné segmenty se znovu neplatí. „el_cache“: „el-cache“ ve vo.json = cache vedle vo.json
+    (commitnout – nahrávky jsou placené a nedeterministické, vybraný take by se jinak ztratil). Kontext sousedních vět (previous/next_text) zlepšuje
     intonaci; vypnout „el_context“: false (pak změna věty nepřegeneruje sousedy);
   - segment může mít „el“: {…} = vlastní nastavení jen pro něj, např. vybraný take
     {"seed": 22} nebo {"voice_settings": {"stability": 0.3}, "model_id": …};
-  - nádechy mezi slovy a na konci vět se ztlumí do ticha (debreath, podle časů slov); nechat je:
+  - nádechy mezi slovy a na konci vět se vystřihnou (debreath, podle časů slov) – místo nich ticho
+    nejvýš „breath_pause“ s (výchozí 0,15), na konci segmentu jen pauza „pause“/„gap“; nechat je:
     „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
 """
 import argparse
@@ -146,8 +148,9 @@ def el_request(body, voice_id, key):
         sys.exit(f'ElevenLabs nedostupný ({e.reason}) – je api.elevenlabs.io povolená v síti prostředí?')
 
 
-def el_synth(say, prev_text, next_text, cfg, cache_dir):
-    """Namluví segment přes ElevenLabs (s cache). Vrací (mp3 bytes, alignment dict | None)."""
+def el_synth(say, prev_text, next_text, cfg, cache_dir, fallback=()):
+    """Namluví segment přes ElevenLabs (s cache). Vrací (mp3 bytes, alignment dict | None).
+    Hledá v cache_dir, pak ve fallback složkách (nalezené zkopíruje do cache_dir)."""
     body = {'text': say, 'model_id': cfg['model_id']}
     vs = dict(cfg.get('voice_settings') or {})
     if cfg.get('speed') is not None:
@@ -163,8 +166,13 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir):
         if next_text: body['next_text'] = next_text
     h = hashlib.sha1(json.dumps([cfg['voice_id'], body], ensure_ascii=False, sort_keys=True).encode('utf-8')).hexdigest()
     cp = os.path.join(cache_dir, h + '.json')
+    old = next((os.path.join(d, h + '.json') for d in fallback if os.path.exists(os.path.join(d, h + '.json'))), None)
     if os.path.exists(cp):
         res = json.load(open(cp, encoding='utf-8'))
+    elif old:
+        res = json.load(open(old, encoding='utf-8'))
+        with open(cp, 'w', encoding='utf-8') as f:
+            json.dump(res, f)
     else:
         key = os.environ.get('ELEVENLABS_API_KEY')   # volitelné; v cloudu ho přidává proxy (network secret)
         print('  ElevenLabs:', say[:60], file=sys.stderr)
@@ -174,10 +182,12 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir):
     return base64.b64decode(res['audio_base64']), res.get('alignment') or res.get('normalized_alignment')
 
 
-def debreath(path, al):
-    """Ztlumí nádechy v mezerách mezi slovy (časy slov z alignmentu ElevenLabs).
+def debreath(path, al, max_pause=0.15):
+    """Vystřihne nádechy v mezerách mezi slovy (časy slov z alignmentu ElevenLabs).
     Nádech = šum bez hlasu (víc než polovina energie nad 2 kHz), tišší než řeč, aspoň 60 ms.
-    Konce a začátky slov zůstanou – hledá se jen mezi nimi. Vrací počet ztlumených nádechů."""
+    Konce a začátky slov zůstanou – hledá se jen mezi nimi. Místo nádechu zůstane ticho
+    nejvýš max_pause s (na konci segmentu jen 0,03 s – pauzu dá „pause“/„gap“), časy znaků
+    v al se posunou. Vrací (počet nádechů, posunutý alignment)."""
     import numpy as np
     with wave.open(path) as wf:
         sr, params = wf.getframerate(), wf.getparams()
@@ -192,7 +202,7 @@ def debreath(path, al):
     if cur:
         words.append(cur)
     if not words:
-        return 0
+        return 0, al
     dur = len(x) / sr
     gaps = [(0.0, words[0][0] - 0.015)] + [(words[j][1], words[j + 1][0] - 0.015) for j in range(len(words) - 1)] \
         + [(words[-1][1], dur)]
@@ -205,7 +215,8 @@ def debreath(path, al):
     gain = np.ones(len(x))
     fade = int(0.008 * sr)
     count = 0
-    for a, b in gaps:
+    cuts = []         # (od, do) ve vzorcích – vystřižené ticho
+    for gi, (a, b) in enumerate(gaps):
         if b - a < 0.06:
             continue
         o0, o1 = int(a * sr), int(b * sr)
@@ -232,12 +243,28 @@ def debreath(path, al):
                 e = min(len(x), s1 + fade)
                 gain[s1:e] = np.minimum(gain[s1:e], np.linspace(0, 1, e - s1))
                 count += 1
+                keep = int((0.03 if gi == len(gaps) - 1 else max_pause) * sr)
+                if s1 - s0 > keep:
+                    cuts.append((s0 + keep // 2, s1 - (keep - keep // 2)))
             run = []
-    if count:
-        with wave.open(path, 'wb') as wf:
-            wf.setparams(params)
-            wf.writeframes((x * gain).astype(np.int16).tobytes())
-    return count
+    if not count:
+        return 0, al
+    y = x * gain
+    if cuts:
+        mask = np.ones(len(y), bool)
+        for c0, c1 in cuts:
+            mask[c0:c1] = False
+        y = y[mask]
+
+    def shift(t):
+        ts = t * sr
+        return (ts - sum(min(c1, ts) - c0 for c0, c1 in cuts if c0 < ts)) / sr
+    al = dict(al, character_start_times_seconds=[shift(t) for t in st],
+              character_end_times_seconds=[shift(t) for t in en])
+    with wave.open(path, 'wb') as wf:
+        wf.setparams(params)
+        wf.writeframes(y.astype(np.int16).tobytes())
+    return count, al
 
 
 def norm(s):
@@ -289,6 +316,10 @@ def main():
         if not el['voice_id']:
             sys.exit('ElevenLabs: chybí voice_id (ve vo.json nebo --voice-id).')
         el_cache = os.path.join(repo_root(), '.cache', 'elevenlabs')
+        el_fallback = ()
+        if spec.get('el_cache'):     # cache u projektu (commitnutá) – placené nahrávky se neztratí
+            el_fallback = (el_cache,)
+            el_cache = os.path.join(os.path.dirname(os.path.abspath(a.spec)), spec['el_cache'])
         os.makedirs(el_cache, exist_ok=True)
     ls = a.length_scale or spec.get('length_scale', 1.0)
     gap = spec.get('gap', 0.35)
@@ -321,14 +352,15 @@ def main():
             cfg = {**el, **ov}
             if 'voice_settings' in ov:
                 cfg['voice_settings'] = {**(el['voice_settings'] or {}), **ov['voice_settings']}
-            mp3, al = el_synth(say, says[i - 1] if i else '', says[i + 1] if i + 1 < len(says) else '', cfg, el_cache)
+            mp3, al = el_synth(say, says[i - 1] if i else '', says[i + 1] if i + 1 < len(says) else '', cfg, el_cache, el_fallback)
             mp = os.path.join(tmp, f'v{i:03}.mp3')
             with open(mp, 'wb') as f:
                 f.write(mp3)
             subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', mp,
                             '-ar', '44100', '-ac', '1', '-sample_fmt', 's16', p], check=True)
             if el['debreath'] and al and al.get('character_end_times_seconds'):
-                breaths += debreath(p, al)
+                nb, al = debreath(p, al, spec.get('breath_pause', 0.15))
+                breaths += nb
         with wave.open(p) as wf:
             sr = wf.getframerate()
             dur = wf.getnframes() / sr
