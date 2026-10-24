@@ -45,6 +45,9 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
   - nádechy mezi slovy a na konci vět se vystřihnou (debreath, podle časů slov) – místo nich ticho
     nejvýš „breath_pause“ s (výchozí 0,15), na konci segmentu jen pauza „pause“/„gap“; nechat je:
     „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
+  - zvuk před prvním / za posledním slovem segmentu se ztlumí (clean_edges – lupnutí na konci
+    nahrávek; „clean_edges“: false); pod celý hlas jde tichý šum prostoru „room_tone“ (dBFS RMS,
+    výchozí -66 u ElevenLabs, null = vypnout), ať mezi slovy není digitální ticho („střih“).
 """
 import argparse
 import base64
@@ -213,7 +216,7 @@ def debreath(path, al, max_pause=0.15):
     win = np.hanning(n)
     fr = np.fft.rfftfreq(n, 1 / sr)
     gain = np.ones(len(x))
-    fade = int(0.008 * sr)
+    fade = int(0.02 * sr)
     count = 0
     cuts = []         # (od, do) ve vzorcích – vystřižené ticho
     for gi, (a, b) in enumerate(gaps):
@@ -265,6 +268,61 @@ def debreath(path, al, max_pause=0.15):
         wf.setparams(params)
         wf.writeframes(y.astype(np.int16).tobytes())
     return count, al
+
+
+def _level(f):
+    import numpy as np
+    return 20 * np.log10(np.sqrt(np.mean(np.asarray(f, float) ** 2)) / 32768 + 1e-9)
+
+
+def clean_edges(path, al):
+    """Ztlumí zvuk před prvním a za posledním slovem segmentu – ElevenLabs občas na konec nahrávky
+    přidá uříznutý začátek dalšího zvuku (lupnutí). Konec slova se nechá doznít (> -60 dB), pak
+    30ms doběh do ticha; na začátku 10ms náběh. Délka se nemění – časování titulků zůstává."""
+    import numpy as np
+    with wave.open(path) as wf:
+        sr, params = wf.getframerate(), wf.getparams()
+        x = np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float64)
+    t = [(s_, e_) for c, s_, e_ in zip(al['characters'], al['character_start_times_seconds'],
+                                       al['character_end_times_seconds']) if c.isalnum()]
+    if not t:
+        return
+    n = int(0.01 * sr)
+    e = min(len(x), int(t[-1][1] * sr))
+    lim = min(len(x), e + int(0.4 * sr))
+    while e + n <= lim and _level(x[e:e + n]) > -60:
+        e += n
+    s = int(t[0][0] * sr)
+    lim0 = max(0, s - int(0.15 * sr))
+    while s - n >= lim0 and _level(x[s - n:s]) > -55:
+        s -= n
+    g = np.ones(len(x))
+    fo, fi = min(int(0.03 * sr), e), int(0.01 * sr)
+    g[e:] = 0
+    g[e - fo:e] *= np.linspace(1, 0, fo)
+    g[:s] = 0
+    g[s:s + fi] *= np.linspace(0, 1, len(g[s:s + fi]))
+    with wave.open(path, 'wb') as wf:
+        wf.setparams(params)
+        wf.writeframes((x * g).astype(np.int16).tobytes())
+
+
+def room_tone(path, db, seed=7):
+    """Pod celý hlas přimíchá tichý šum prostoru (růžový, 80 Hz–4 kHz, db = RMS v dBFS), aby mezi
+    slovy a větami nebylo úplné digitální ticho – ve sluchátkách to jinak zní jako střih."""
+    import numpy as np
+    with wave.open(path) as wf:
+        params, sr, ch = wf.getparams(), wf.getframerate(), wf.getnchannels()
+        x = np.frombuffer(wf.readframes(wf.getnframes()), np.int16).astype(np.float64).reshape(-1, ch)
+    n = len(x)
+    sp = np.fft.rfft(np.random.default_rng(seed).standard_normal(n))
+    f = np.fft.rfftfreq(n, 1 / sr)
+    sp *= np.where((f > 80) & (f < 4000), 1 / np.sqrt(np.maximum(f, 1)), 0)
+    noise = np.fft.irfft(sp, n)
+    noise *= 32768 * 10 ** (db / 20) / np.sqrt(np.mean(noise ** 2))
+    with wave.open(path, 'wb') as wf:
+        wf.setparams(params)
+        wf.writeframes(np.clip(x + noise[:, None], -32768, 32767).astype(np.int16).tobytes())
 
 
 def norm(s):
@@ -361,6 +419,8 @@ def main():
             if el['debreath'] and al and al.get('character_end_times_seconds'):
                 nb, al = debreath(p, al, spec.get('breath_pause', 0.15))
                 breaths += nb
+            if al and al.get('character_end_times_seconds') and spec.get('clean_edges', True):
+                clean_edges(p, al)
         with wave.open(p) as wf:
             sr = wf.getframerate()
             dur = wf.getnframes() / sr
@@ -415,6 +475,9 @@ def main():
                     '-af', 'highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=5:release=80,'
                            'loudnorm=I=-16:TP=-1.5:LRA=9',
                     '-ar', '48000', '-ac', '2', wav], check=True)
+    rt = spec.get('room_tone', -66 if engine == 'elevenlabs' else None)
+    if rt is not None:
+        room_tone(wav, rt)
 
     data = {'duration': round(duration, 3), 'segments': segs}
     with open(os.path.join(out_dir, 'vo-timing.js'), 'w', encoding='utf-8') as f:
