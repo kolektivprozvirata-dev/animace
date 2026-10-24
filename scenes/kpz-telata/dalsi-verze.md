@@ -72,4 +72,4 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-24 | **Hlas ElevenLabs** místo Piperu – hlas KPZ `7JbZPqJGWUfXXBim0T8U`. Předpoklad: KPZ přidají `ELEVENLABS_API_KEY` (tajný údaj prostředí) a povolí `api.elevenlabs.io`, pak nová session. Postup: `tts.py vo-v12.json --engine elevenlabs --voice-id 7JbZPqJGWUfXXBim0T8U --out-dir assets-v13`, poslech výslovnosti (tzv., 9 500, 12 h), délka ≤ 2:58 (`speed`/pauzy), render. | čeká na klíč a doménu |
+| 1 | 2026-10-24 | **Hlas ElevenLabs** místo Piperu – hlas KPZ `7JbZPqJGWUfXXBim0T8U`. Předpoklad: KPZ přidají network secret (Allowed websites `api.elevenlabs.io`, hlavička `xi-api-key` bez prefixu). Postup: `tts.py vo-v12.json --engine elevenlabs --voice-id 7JbZPqJGWUfXXBim0T8U --out-dir assets-v13`, poslech výslovnosti (tzv., 9 500, 12 h), délka ≤ 2:58 (`speed`/pauzy), render. | čeká na klíč a doménu |

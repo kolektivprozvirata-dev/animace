@@ -63,7 +63,8 @@ zadání větší než jeden záběr:
    vždy spolu. Nikdy nepřegenerovávej hlas, když běží render, který ho používá. Víc verzí
    jedné scény (např. plná a zkrácená) drž v oddělených složkách (`tts.py --out-dir assets-plna`).
    **Placený hlas ElevenLabs:** `tts.py vo.json --engine elevenlabs --voice-id <ID> [--speed 1.0] --out-dir assets-vN-el`.
-   Potřebuje tajný údaj prostředí `ELEVENLABS_API_KEY` a povolenou doménu `api.elevenlabs.io` (projeví se až v nové session).
+   Klíč: network secret prostředí (Add secret → Allowed websites `api.elevenlabs.io`, Custom header `xi-api-key`, prefix prázdný);
+   proxy ho přidá k požadavkům sama a doménu pak není třeba povolovat. Mimo cloud proměnná `ELEVENLABS_API_KEY`.
    Časy titulků bere ze skutečných časů znaků; odpovědi cachuje v `.cache/elevenlabs/` (nezměněné věty se znovu neplatí).
    Rychlost řídí `speed` (0.7–1.2), ne `length_scale`. Po prvním vygenerování poslechnout čísla a zkratky (tzv., 9 500, 12 h).
 5. Limity platforem: Instagram Reels obvykle **max. 3:00** (některé účty víc) – při delším

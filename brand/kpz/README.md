@@ -173,5 +173,5 @@ používat jen s vysvětlením.
 
 ## Hlas
 
-- Voiceover: **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (vybrali KPZ 2026-10-24), `tts.py --engine elevenlabs --voice-id 7JbZPqJGWUfXXBim0T8U`. Klíč `ELEVENLABS_API_KEY` je v tajných údajích prostředí (ne v repu).
+- Voiceover: **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (vybrali KPZ 2026-10-24), `tts.py --engine elevenlabs --voice-id 7JbZPqJGWUfXXBim0T8U`. Klíč je network secret prostředí pro `api.elevenlabs.io` (hlavička `xi-api-key`), ne v repu.
 - Záloha / rychlý náhled: Piper `cs_CZ-jirka-medium`.

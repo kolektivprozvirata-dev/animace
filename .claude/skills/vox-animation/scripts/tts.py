@@ -30,8 +30,9 @@ Výstup do --out-dir:
 Model se hledá v .cache/piper/ v kořeni repa; chybí-li, stáhne se z Hugging Face.
 
 ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
-  - klíč z proměnné prostředí ELEVENLABS_API_KEY (tajný údaj prostředí, nikdy do repa ani chatu),
-    doména api.elevenlabs.io musí být povolená v síti prostředí;
+  - klíč: v cloudu jako network secret prostředí (Add secret → Allowed websites api.elevenlabs.io,
+    Custom header xi-api-key bez prefixu „Bearer“) – proxy ho přidá sama, session ho nevidí a doménu
+    není třeba povolovat; jinde proměnná ELEVENLABS_API_KEY. Nikdy do repa ani chatu;
   - „voice_id“, „model_id“ (výchozí eleven_multilingual_v2), „speed“ (0.7–1.2, místo length_scale),
     „voice_settings“ (stability, similarity_boost, style…), „language_code“ (jen u modelů, které ho berou);
   - endpoint /with-timestamps vrací časy znaků → kousky titulků (a tím i VOX.wordT) sedí na skutečnou řeč;
@@ -126,13 +127,17 @@ EL_API = 'https://api.elevenlabs.io/v1/text-to-speech/{voice}/with-timestamps?ou
 
 def el_request(body, voice_id, key):
     """Jeden požadavek na ElevenLabs; vrací JSON {audio_base64, alignment}."""
-    req = urllib.request.Request(EL_API.format(voice=voice_id), data=json.dumps(body).encode('utf-8'),
-                                 headers={'xi-api-key': key, 'Content-Type': 'application/json'})
+    headers = {'Content-Type': 'application/json'}
+    if key:   # jinak klíč přidá proxy prostředí (network secret s hlavičkou xi-api-key)
+        headers['xi-api-key'] = key
+    req = urllib.request.Request(EL_API.format(voice=voice_id), data=json.dumps(body).encode('utf-8'), headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=180) as r:
             return json.loads(r.read().decode('utf-8'))
     except urllib.error.HTTPError as e:
-        sys.exit(f'ElevenLabs HTTP {e.code}: {e.read().decode("utf-8", "replace")[:400]}')
+        hint = (' – chybí klíč: network secret pro api.elevenlabs.io (hlavička xi-api-key, bez prefixu) '
+                'nebo proměnná ELEVENLABS_API_KEY') if e.code == 401 else ''
+        sys.exit(f'ElevenLabs HTTP {e.code}{hint}: {e.read().decode("utf-8", "replace")[:400]}')
     except urllib.error.URLError as e:
         sys.exit(f'ElevenLabs nedostupný ({e.reason}) – je api.elevenlabs.io povolená v síti prostředí?')
 
@@ -155,9 +160,7 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir):
     if os.path.exists(cp):
         res = json.load(open(cp, encoding='utf-8'))
     else:
-        key = os.environ.get('ELEVENLABS_API_KEY')
-        if not key:
-            sys.exit('Chybí ELEVENLABS_API_KEY – přidej ho jako tajný údaj prostředí a otevři novou session.')
+        key = os.environ.get('ELEVENLABS_API_KEY')   # volitelné; v cloudu ho přidává proxy (network secret)
         print('  ElevenLabs:', say[:60], file=sys.stderr)
         res = el_request(body, cfg['voice_id'], key)
         with open(cp, 'w', encoding='utf-8') as f:

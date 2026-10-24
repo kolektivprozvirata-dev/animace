@@ -15,7 +15,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[titulky]** Titulky **ano** – vypálené, součást designu: kousky po 2–5 slovech, papírový pruh, klíčové slovo žlutě. Kde je věta už velkým textem v animaci, titulek vypnout (`cap: false`). _(2026-10-14, kpz-telata)_
 - **[titulky]** Čísla s mezerou (9 500) se mezi titulky nedělí – číslo musí být celé v jednom kousku (`tts.py` → pevná mezera). _(2026-10-19, kpz-telata v5)_
 - **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`). Bez patetické hudby. _(2026-10-14, kpz-telata)_
-- **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud nejsou v prostředí klíč `ELEVENLABS_API_KEY` a povolená doména `api.elevenlabs.io`. _(2026-10-24, kpz-telata)_
+- **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud v prostředí není network secret pro `api.elevenlabs.io` (hlavička `xi-api-key`). _(2026-10-24, kpz-telata)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
