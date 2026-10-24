@@ -62,6 +62,10 @@ zadání větší než jeden záběr:
    **Pozor:** Piper není deterministický – `vo.wav` a `vo-timing.js` patří k sobě a vznikají
    vždy spolu. Nikdy nepřegenerovávej hlas, když běží render, který ho používá. Víc verzí
    jedné scény (např. plná a zkrácená) drž v oddělených složkách (`tts.py --out-dir assets-plna`).
+   **Placený hlas ElevenLabs:** `tts.py vo.json --engine elevenlabs --voice-id <ID> [--speed 1.0] --out-dir assets-vN-el`.
+   Potřebuje tajný údaj prostředí `ELEVENLABS_API_KEY` a povolenou doménu `api.elevenlabs.io` (projeví se až v nové session).
+   Časy titulků bere ze skutečných časů znaků; odpovědi cachuje v `.cache/elevenlabs/` (nezměněné věty se znovu neplatí).
+   Rychlost řídí `speed` (0.7–1.2), ne `length_scale`. Po prvním vygenerování poslechnout čísla a zkratky (tzv., 9 500, 12 h).
 5. Limity platforem: Instagram Reels obvykle **max. 3:00** (některé účty víc) – při delším
    scénáři počítej s variantou pod 3:00 nebo sérií.
    Model hlasu se stahuje z huggingface.co do `.cache/piper/` (gitignored).
@@ -175,7 +179,7 @@ Pozitivní feedback („tohle je přesně ono“) zapisuj taky – jako
 │   └── vox.css               ← tokeny, typografie, koláž, dokument, grafy
 ├── scripts/
 │   ├── render.mjs            ← HTML → MP4 / PNG / kontaktní arch
-│   ├── tts.py                ← český voiceover (Piper) + časování + titulky
+│   ├── tts.py                ← český voiceover (Piper / ElevenLabs --engine elevenlabs) + časování + titulky
 │   ├── hf_photos.py          ← provizorní fotky z datasetů Hugging Face
 │   ├── cutout.py             ← výstřižek z fotky s okrajem z utrženého papíru
 │   ├── tag_retouch.py        ← čísla na ušních známkách rozostřit uvnitř známky

@@ -170,3 +170,8 @@ používat jen s vysvětlením.
 - Marino & Allen 2017, The Psychology of Cows: https://www.animalbehaviorandcognition.org/article.php?id=1110
 - Padilla de la Torre et al. 2016, Animal Behaviour 114:147 – vzájemné poznávání matky a telete po hlase: https://eprints.nottingham.ac.uk/34713
 - § 494 OZ – epravo.cz: https://www.epravo.cz/top/clanky/prestava-byt-zvire-veci-aneb-kratky-exkurz-do-pravni-upravy-zvirat-v-novem-obcanskem-zakoniku-82444.html
+
+## Hlas
+
+- Voiceover: **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (vybrali KPZ 2026-10-24), `tts.py --engine elevenlabs --voice-id 7JbZPqJGWUfXXBim0T8U`. Klíč `ELEVENLABS_API_KEY` je v tajných údajích prostředí (ne v repu).
+- Záloha / rychlý náhled: Piper `cs_CZ-jirka-medium`.

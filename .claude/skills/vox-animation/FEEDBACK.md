@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.13.1**
+**Verze skillu: 0.14.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -15,6 +15,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[titulky]** Titulky **ano** – vypálené, součást designu: kousky po 2–5 slovech, papírový pruh, klíčové slovo žlutě. Kde je věta už velkým textem v animaci, titulek vypnout (`cap: false`). _(2026-10-14, kpz-telata)_
 - **[titulky]** Čísla s mezerou (9 500) se mezi titulky nedělí – číslo musí být celé v jednom kousku (`tts.py` → pevná mezera). _(2026-10-19, kpz-telata v5)_
 - **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`). Bez patetické hudby. _(2026-10-14, kpz-telata)_
+- **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud nejsou v prostředí klíč `ELEVENLABS_API_KEY` a povolená doména `api.elevenlabs.io`. _(2026-10-24, kpz-telata)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
@@ -90,3 +91,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-21 | 0.12.0 | kpz-telata v11 | Úvod: „na začátku jsou krávy na maso, bavíme se o mléčných“ → dvojfotka holštýnky; 0:18 osa bez „Měsíce“ (diskutabilní), roztáhnout a zpomalit; 1:41 jiná kráva s teletem (pouto „už je tam několikrát“); řádky → Jatka: fotky „Celé tělo“ a „Růžové“; hlas: „Jako každá máma, i kráva dává mléko primárně pro tele“, „výmluva chovatelů, která se jim hodí“. „Renderuj.“ Dotaz k testovacím maskám telete („proč je tak osekané?“). | **v11**: hlas 0.69 = 2:56,3; `tear_swap.py` bere masku z průhledného pozadí fotek (bez barevných lemů) + `--cut` (ruční výřez nohou krávy, které generátor ve druhé fotce překreslil) + `--debug`; úvodní fotka plynule přejede do hooku; pravidla do [obsah] a [vizuál]. |
 | 2026-10-21 | 0.13.0 | kpz-telata v11 | Zdroje jako odkazy do chatu. Dotazy k zalehnutí: porodna, nebo hala? „Přeplněné porodny“ z českých zdrojů? „V hale telata nikdy nebyla – jak to můžeme tvrdit? Chci to neprůstřelné.“ → varianta 2 věty. | 3 paralelní rešerše (literatura, haly s telaty, české zdroje) + ověření citací v plném textu → `overeni-tvrzeni.md` B5+; „přeplněné porodny“ v ČR nedoložené (jen Náš chov 2001); cru2 = varianta 2 do v12; pravidlo do [data]. |
 | 2026-10-22 | 0.13.1 | kpz-telata v11 | „Přijde mi, že už to strašně komplikuju.“ → ok na krátkou obecnou větu. | cru2 = „To údajně hrozí tam, kde je moc krav na malém prostoru.“ ✅ osvědčené: neprůstřelnost řešit nejdřív obecnější přesnou formulací, ne přidáváním vedlejších vět. |
+| 2026-10-24 | 0.14.0 | kpz-telata | „Jak uděláme to audio od AI, který zaplatíme?“ → postup ElevenLabs; KPZ vybrali hlas 7JbZPqJGWUfXXBim0T8U. Dotaz k API klíči (vysvětleno). | `tts.py` umí `--engine elevenlabs` (časy znaků → titulky, cache odpovědí, kontext sousedních vět), otestováno se simulovaným API; čeká na klíč a doménu v nové session; pravidlo do [zvuk]. |
