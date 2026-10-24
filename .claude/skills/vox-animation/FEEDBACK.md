@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.17.0**
+**Verze skillu: 0.17.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -20,6 +20,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[zvuk]** Hlas ElevenLabs **bez slyšitelných nádechů** mezi větami a u čárek („vždycky když dořekne část věty, tak se nadechne – to je na hovno“) – `tts.py` je vystřihne (výchozí); místo nich max. 0,15 s ticha, pauzy mezi větami pak doladit přes `pause` (u KPZ +0,15 s, ať to nezní uspěchaně). _(2026-10-24, kpz-telata v13)_
 - **[zvuk]** Hlas nesmí mít „střihy“: žádné digitální ticho mezi slovy a větami (pod hlasem tichý `room_tone`, výchozí −66 dBFS), žádné zbytky zvuku za posledním slovem nahrávky (`clean_edges`); ověřit skenem skoků hlasitosti a poslechem ve sluchátkách. _(2026-10-24, kpz-telata v13)_
 - **[zvuk]** Věta po otázce / nový odstavec má začít jako nová věta, ne „chcíple“ navazovat – u ElevenLabs bez kontextu (`"context": false`), příp. `eleven_v3` jako u otázky. _(2026-10-24, kpz-telata v13)_
+- **[zvuk]** Heslo / slogan („Zvíře není stroj ani zboží.“) oddělit tichem ~0,5 s před i za ním, ať vynikne; věta před ním musí znít jako uzavřená (ElevenLabs bez `next_text`). _(2026-10-24, kpz-telata v14)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
@@ -107,3 +108,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | (do v14) | kpz-telata v13 | „Ve 2:42 říct důsledněji ‚Zvíře není stroj ani zboží‘.“ „Ve sluchátkách je po oddělaných nádeších zvukový propad, jde slyšet, že sis to uřízl – dát do mezer ‚prázdný zvuk‘, případně fade?“ „Zatím nic nedělej.“ | Zapsáno do `dalsi-verze.md` (Do v14 #1–2) s návrhem: take alt3 v `eleven_v3`; room tone pod hlas + nádechy ztlumit o ~20–25 dB místo do nuly. Nic nevyrobeno. |
 | 2026-10-24 | (do v14) | kpz-telata v13 | ~1:09: „ten prostor není malý, kravíny jsou obrovský, ale je tam hodně krav“; „tlačenice tam je málo kdy“; „přeplněné haly – bavíme se o porodnách i halách“; mezi dvěma variantami „nechám to na tobě“. | cru3 = „Problém je opět v tom, kolik krav chovatelé nahromadí na jedno místo.“ (Do v14 #3). Poučení: rozlišovat „na malém prostoru“ (hustota – OK) × „v malém prostoru“ (malá budova – nepravda); u přepisu pointy hlídat refrén a nedávat dvě pointy za sebe. |
 | 2026-10-24 | 0.17.0 | kpz-telata v13 | „V 1:14 jde zas slyšet, že je to násilně střihlý… dát fadeout nebo ‚zvuk ticha‘“; „Tak kde to mám?“ (varianty „Zvíře není stroj ani zboží“); „0:04 ‚Na naprosté většině…‘ by měla začít silnějším hlasem, oproti úvodu je to chcíplý“ → vybrána E (v3). | `tts.py`: `clean_edges()` (ztlumí lupnutí za posledním slovem – artefakt ElevenLabs; délka beze změny), přechody nádechů 20 ms, `room_tone()` (růžový šum 80 Hz–4 kHz, −66 dBFS) – skoky do/z digitálního ticha 171 → 13; A/B ukázka. Varianty alt3 (6) a hook1 (6) v kontextu, nahrávky v `el-cache/`. Pravidla do [zvuk]. Poučení: slíbené ukázky poslat hned, ne až s dalšími úpravami. |
+| 2026-10-24 | 0.17.1 | kpz-telata v14 | „U ‚Zvíře není stroj ani zboží‘ půl vteřiny ticha před i po – ať vynikne jako slogan. Šel bych do této verze.“ „‚Lépe‘ ať zní, jako by ukončoval větu.“ → vybrána D (bez kontextu). „Vyrenderuj mi další verzi.“ | **v14**: `vo-v14.json` – hook1 v3 (take E), cru3 nový text, cru2/bon1 s pevným starým kontextem (`previous_text`/`next_text` v `"el"` – nepřegenerovaly se), alt2b bez kontextu (take D), alt3 původní s tichem 0,59/0,56 s; clean_edges + room tone; 2:57,1; jen 1 nová nahrávka. `scenar-v14.md`. Pravidlo [zvuk] o hesle. |
