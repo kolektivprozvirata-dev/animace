@@ -14,7 +14,7 @@ Vstup (vo.json):
     "tail": 1.5,                         # ticho na konci
     "segments": [
       {"id": "hook", "say": "text pro hlas", "text": "text *titulku*",
-       "pause": 0.6, "cap": true}
+       "pause": 0.6, "cap": true, "el": {"seed": 22}}
     ]
   }
   - "say"  = co se namluví (čísla slovy, výslovnost); když chybí, použije se "text"
@@ -39,6 +39,8 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
   - odpovědi se ukládají do .cache/elevenlabs/ (klíč = hlas + model + nastavení + text + kontext),
     takže nezměněné segmenty se znovu neplatí. Kontext sousedních vět (previous/next_text) zlepšuje
     intonaci; vypnout „el_context“: false (pak změna věty nepřegeneruje sousedy);
+  - segment může mít „el“: {…} = vlastní nastavení jen pro něj, např. vybraný take
+    {"seed": 22} nebo {"voice_settings": {"stability": 0.3}, "model_id": …};
   - nádechy mezi slovy a na konci vět se ztlumí do ticha (debreath, podle časů slov); nechat je:
     „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
 """
@@ -154,6 +156,8 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir):
         body['voice_settings'] = vs
     if cfg.get('language_code'):
         body['language_code'] = cfg['language_code']
+    if cfg.get('seed') is not None:
+        body['seed'] = cfg['seed']
     if cfg.get('context', True):
         if prev_text: body['previous_text'] = prev_text
         if next_text: body['next_text'] = next_text
@@ -313,7 +317,11 @@ def main():
             with wave.open(p, 'wb') as wf:
                 voice.synthesize_wav(say, wf, syn_config=SynthesisConfig(length_scale=ls))
         else:
-            mp3, al = el_synth(say, says[i - 1] if i else '', says[i + 1] if i + 1 < len(says) else '', el, el_cache)
+            ov = seg.get('el') or {}      # přepsání pro jeden segment (jiný „take“: seed, voice_settings…)
+            cfg = {**el, **ov}
+            if 'voice_settings' in ov:
+                cfg['voice_settings'] = {**(el['voice_settings'] or {}), **ov['voice_settings']}
+            mp3, al = el_synth(say, says[i - 1] if i else '', says[i + 1] if i + 1 < len(says) else '', cfg, el_cache)
             mp = os.path.join(tmp, f'v{i:03}.mp3')
             with open(mp, 'wb') as f:
                 f.write(mp3)

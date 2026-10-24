@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.15.0**
+**Verze skillu: 0.15.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -99,3 +99,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | 0.14.4 | kpz-telata | „Ne, nezačíná SK“ (do Value šlo něco jiného než klíč) → nový klíč `sk_…`; „Zkus ukázku s tímto? Fpj3lp9mRnYq6RZpHq9D“. | Ukázka 6 vět v hlasu Fpj3 + pro srovnání 7JbZ (Fpj3 o ~60 % pomalejší, celý hlas by měl ~4:38 → nad limitem 2:58). SKILL.md: klíč začíná `sk_`; u nového hlasu nejdřív ukázka a odhad délky. |
 | 2026-10-24 | 0.14.5 | kpz-telata | „Udělej ukázku s tímto dSByRdUbTGloB7TFA1qD“. | Stejná ukázka 6 vět: 29,6 s, tempo ≈ 7JbZ, odhad celku ≈ 2:51 (vejde se do 2:58). Bez změny skillu. |
 | 2026-10-24 | 0.15.0 | kpz-telata v13 | Hlas dSBy: „vždycky když dořekne část věty, tak se nadechne, to je na hovno. Jinak by to bylo dobrý.“ | `tts.py`: `debreath()` – v mezerách mezi slovy (časy znaků ElevenLabs) najde šum bez hlasu (>50 % energie nad 2 kHz, −58…−25 dB, ≥ 60 ms) a ztlumí ho do ticha i s dozvukem; výchozí zapnuto, `--keep-breaths` / `"debreath": false`. Ukázka dSBy: 8 nádechů pryč (byly −25…−36 dBFS), přepočteno z cache bez placení. Pravidlo do [zvuk]. |
+| 2026-10-24 | 0.15.1 | kpz-telata v13 | Hlas dSBy „jo dobrý“; „jestli by úvodní věta, která je otázka, nemohla znít víc jako otázka“. | `tts.py`: segment může mít `"el": {…}` (seed, voice_settings, model_id, context) – výběr „take“ pro jednu větu. 10 verzí hook0 (seed, expresivita, bez kontextu, pauza „začíná… porodem“, model v3) změřeno stoupání melodie na „porodem“; poslány A (původní, +4 půltóny) a B–E (+5 až +8). Čeká na výběr. |
