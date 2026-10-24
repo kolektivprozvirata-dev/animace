@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.14.2**
+**Verze skillu: 0.14.3**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -15,7 +15,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[titulky]** Titulky **ano** – vypálené, součást designu: kousky po 2–5 slovech, papírový pruh, klíčové slovo žlutě. Kde je věta už velkým textem v animaci, titulek vypnout (`cap: false`). _(2026-10-14, kpz-telata)_
 - **[titulky]** Čísla s mezerou (9 500) se mezi titulky nedělí – číslo musí být celé v jednom kousku (`tts.py` → pevná mezera). _(2026-10-19, kpz-telata v5)_
 - **[zvuk]** Voiceover: Piper, hlas `cs_CZ-jirka-medium` (`scripts/tts.py`). Bez patetické hudby. _(2026-10-14, kpz-telata)_
-- **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud v prostředí není network secret pro `api.elevenlabs.io` (hlavička `xi-api-key`). _(2026-10-24, kpz-telata)_
+- **[zvuk]** KPZ chtějí placený hlas **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (`tts.py --engine elevenlabs`); Piper jen jako náhled/záloha, dokud v prostředí není network secret pro `api.elevenlabs.io` (hlavička `xi-api-key`). Klíč od 2026-10-24 funguje. _(2026-10-24, kpz-telata)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
@@ -94,3 +94,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | 0.14.0 | kpz-telata | „Jak uděláme to audio od AI, který zaplatíme?“ → postup ElevenLabs; KPZ vybrali hlas 7JbZPqJGWUfXXBim0T8U. Dotaz k API klíči (vysvětleno). | `tts.py` umí `--engine elevenlabs` (časy znaků → titulky, cache odpovědí, kontext sousedních vět), otestováno se simulovaným API; čeká na klíč a doménu v nové session; pravidlo do [zvuk]. |
 | 2026-10-24 | 0.14.1 | kpz-telata | „Vygeneruj hlas přes ElevenLabs (bod 1 Do v13), nejdřív otestuj klíč, pak ukázku; video nerenderovat.“ | Test klíče selhal: network secret má doménu `api.elevenlabs.com` (neexistuje → 502), na `api.elevenlabs.io` proxy klíč nepřidá (401). Nic se nevygenerovalo ani neúčtovalo. SKILL.md: upozornění „.io, ne .com“ + bezplatný test klíče přes `/v1/user/subscription`. |
 | 2026-10-24 | 0.14.2 | kpz-telata | „Otestuj klíč ElevenLabs, když funguje, pošli krátkou ukázku hlasu (věty s tzv., 9 500, 12 h z vo-v12.json); video nerenderovat.“ | Doména secretu už je správně (`api.elevenlabs.io`, proxy klíč přidává), ale ElevenLabs vrací 401 `invalid_api_key` na `/v1/user/subscription` i `/v1/voices/{id}` → hodnota klíče je neplatná. Ukázka negenerována, nic neúčtováno. SKILL.md: rozlišení 401 `invalid_api_key` + co s tím. |
+| 2026-10-24 | 0.14.3 | kpz-telata | „Já už fakt netuším, co mám dělat. API key jsem do value zkopíroval v pořádku.“ | Nový test: odpověď se změnila na 401 `missing_permissions` (chybí `user_read`) → klíč platí; ukázka 3 vět (hook1, hyg3, mil3) přes ElevenLabs = 19,7 s, odesláno (`out/`); cache se stejným kontextem jako celý vo-v12.json. Tempo ≈ Piper 0.69 (17,9 × 18,3 s). SKILL.md: `missing_permissions` ≠ nefunkční klíč; poučení: při změně chyby test zopakovat, ne hned posílat uživatele znovu do nastavení. |
