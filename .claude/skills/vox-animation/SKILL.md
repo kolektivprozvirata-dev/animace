@@ -66,7 +66,7 @@ zadání větší než jeden záběr:
    Klíč: network secret prostředí (Add secret → Allowed websites `api.elevenlabs.io` – **.io, ne .com** (`api.elevenlabs.com` neexistuje), Custom header `xi-api-key`, prefix prázdný);
    proxy ho přidá k požadavkům sama a doménu pak není třeba povolovat. Mimo cloud proměnná `ELEVENLABS_API_KEY`.
    Časy titulků bere ze skutečných časů znaků; odpovědi cachuje v `.cache/elevenlabs/` (nezměněné věty se znovu neplatí).
-   Test klíče zdarma: `curl -sS https://api.elevenlabs.io/v1/user/subscription` (200 = klíč funguje, 401 = proxy ho nepřidala). Rychlost řídí `speed` (0.7–1.2), ne `length_scale`. Po prvním vygenerování poslechnout čísla a zkratky (tzv., 9 500, 12 h).
+   Test klíče zdarma: `curl -sS https://api.elevenlabs.io/v1/user/subscription` (200 = klíč funguje; 401 `invalid_api_key` = klíč dorazil, ale je neplatný → v ElevenLabs (Developers → API Keys) vytvořit nový s oprávněním Text to Speech + User read a vložit znovu do hodnoty secretu, bez mezer; po změně secretu nová session). Rychlost řídí `speed` (0.7–1.2), ne `length_scale`. Po prvním vygenerování poslechnout čísla a zkratky (tzv., 9 500, 12 h).
 5. Limity platforem: Instagram Reels obvykle **max. 3:00** (některé účty víc) – při delším
    scénáři počítej s variantou pod 3:00 nebo sérií.
    Model hlasu se stahuje z huggingface.co do `.cache/piper/` (gitignored).

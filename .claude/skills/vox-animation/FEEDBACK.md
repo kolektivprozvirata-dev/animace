@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.14.1**
+**Verze skillu: 0.14.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -93,3 +93,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-22 | 0.13.1 | kpz-telata v11 | „Přijde mi, že už to strašně komplikuju.“ → ok na krátkou obecnou větu. | cru2 = „To údajně hrozí tam, kde je moc krav na malém prostoru.“ ✅ osvědčené: neprůstřelnost řešit nejdřív obecnější přesnou formulací, ne přidáváním vedlejších vět. |
 | 2026-10-24 | 0.14.0 | kpz-telata | „Jak uděláme to audio od AI, který zaplatíme?“ → postup ElevenLabs; KPZ vybrali hlas 7JbZPqJGWUfXXBim0T8U. Dotaz k API klíči (vysvětleno). | `tts.py` umí `--engine elevenlabs` (časy znaků → titulky, cache odpovědí, kontext sousedních vět), otestováno se simulovaným API; čeká na klíč a doménu v nové session; pravidlo do [zvuk]. |
 | 2026-10-24 | 0.14.1 | kpz-telata | „Vygeneruj hlas přes ElevenLabs (bod 1 Do v13), nejdřív otestuj klíč, pak ukázku; video nerenderovat.“ | Test klíče selhal: network secret má doménu `api.elevenlabs.com` (neexistuje → 502), na `api.elevenlabs.io` proxy klíč nepřidá (401). Nic se nevygenerovalo ani neúčtovalo. SKILL.md: upozornění „.io, ne .com“ + bezplatný test klíče přes `/v1/user/subscription`. |
+| 2026-10-24 | 0.14.2 | kpz-telata | „Otestuj klíč ElevenLabs, když funguje, pošli krátkou ukázku hlasu (věty s tzv., 9 500, 12 h z vo-v12.json); video nerenderovat.“ | Doména secretu už je správně (`api.elevenlabs.io`, proxy klíč přidává), ale ElevenLabs vrací 401 `invalid_api_key` na `/v1/user/subscription` i `/v1/voices/{id}` → hodnota klíče je neplatná. Ukázka negenerována, nic neúčtováno. SKILL.md: rozlišení 401 `invalid_api_key` + co s tím. |
