@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.18.0**
+**Verze skillu: 0.18.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -37,7 +37,6 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
 - **[formát]** Pro Instagram držet reel **pod 3:00, bezpečně max. 2:58** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
-- **[vizuál]** Počítadla čísel nesmí na začátku viset na „0“ – počítat hned od naskočení karty (nebo kartu ukázat až s číslem). _(2026-10-25, kpz-telata v15)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
 - **[obsah]** Žádný samostatný detailní záběr na ušní známku. Na známkách **rozostřit jen samotné číslo** (`scripts/tag_retouch.py --rect` kolem čísla; plocha a tvar známky zůstanou ostré). Ne rozmazaný flek přes ucho („vypadá strašně“), ne přebarvení („nevypadá dobře“), ne celá plocha známky. Nečitelně malá čísla nechat být. _(2026-10-19, KPZ)_
@@ -55,6 +54,8 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
 
 ## ✅ Osvědčené (nechat tak)
+
+- Počítadlo čísla nabíhá z nuly se slovem (104 farem) – „líbí se mi, jak to z nuly nabíhá“. _(kpz-telata v15)_
 
 - Hlas Jirka (Piper) při `length_scale` 0.83 – tempo „v pohodě“. _(kpz-telata v1)_
 - Vizuální styl KPZ (Bebas Neue, bloky po řádcích, růžový papír, nálepky, titulky v blocích) – „Je to dobrý.“ _(kpz-telata v4-kpz)_
@@ -114,3 +115,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | (do v15) | kpz-telata v14 | „U posledního slidu by mohla být i naše adresa www.kolektivprozvirata.cz.“ | Zapsáno do `dalsi-verze.md` (Do v15 #2). Kandidát na pravidlo [branding] (web v outru) – zapsat po schválení podoby. |
 | 2026-10-25 | 0.17.2 | kpz-telata v15 | „OK, udělej další verzi.“ | **v15**: „Přitom jedna studie…“ (bez „jen“; nová nahrávka jen alt1, sousedé s pevným kontextem), web www.kolektivprozvirata.cz v outru pod názvem; 2:56,3. |
 | 2026-10-25 | 0.18.0 | kpz-telata v15 | „Jo, nech ho (104) naskočit začátkem věty. Líbí se mi, ale ještě hledám další věci, ať to máme neprůstřelný.“ | Do v16 #1; pravidlo [vizuál] o počítadlech. |
+| 2026-10-25 | 0.18.1 | kpz-telata v15 | „Beru zpět to s tou nulou. Líbí se mi, jak to z nuly nabíhá.“ KPZ poslali 4 fotky masných krav pro 0:48 a 1:06 („zase to ořízni jako předtím“). „1:36 ‚Není to bizarní důsledek systému?‘ – víc jako otázka.“ | Pravidlo o počítadlech z 0.18.0 **zrušeno** (✅ náběh z nuly je v pořádku). Fotky: 0:48 kojeni, 1:06 lezi (blob; první výřezy usekly zvířata na kraji → posunuté hranice tak, aby každé zvíře bylo celé uvnitř, nebo celé venku). Varianty bon5 v kontextu. |

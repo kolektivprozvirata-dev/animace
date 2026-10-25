@@ -10,6 +10,10 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | farma-z-vysky.jpg | farma z výšky: sila, haly, řady bud | kus `farma-z-vysky.png` (varianta D); ořez jen na řady bud `boudy-z-vysky.png` (do v7) |
 | kravin-uvnitr.jpg | krávy ležící ve slámě v hale | kus `kravin-uvnitr.png` – hygiena, „velkokapacitní hala“ |
 | kravin-vrata.jpg | krávy za vraty velké haly | zatím nepoužito (rezerva: zalehnutí / bizarní kruh) |
+| masne-pastva-kojeni.jpg | tzv. masné krávy na pastvě, tele pije u krávy, ležící tele, les (KPZ 2026-10-25, 1456 px) | blob `masne-pastva-kojeni-tvar.png` – v16 hygiena 0:48 („telata s matkami měsíce“) |
+| masne-pastva-lezi.jpg | tzv. masné krávy, tele leží u stojící krávy, vpravo býk (KPZ 2026-10-25) | blob `masne-pastva-lezi-tvar.png` – v16 zalehnutí 1:06 (býk mimo výřez) |
+| masne-pastva-rada.jpg | krávy s telaty jdou v řadě po svahu (KPZ 2026-10-25) | zatím nepoužito (zvířata malá) |
+| masne-pastva-celem.jpg | krávy čelem k fotografovi, ležící kráva s teletem (KPZ 2026-10-25) | zatím nepoužito (málo telat) |
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
 | tele-studio.jpg | tele celé na bílém pozadí, žluté známky bez čísel (KPZ, 2026-10-19) | výstřižek `tele-studio.png` – do v7 do boudy (0:18) |
 | pastva-stado.jpg | stádo na pastvině, v trávě ležící telata (KPZ, 745 px) | utržený kus `pastva-stado.png` – do v7 v 1:10 (zalehnutí, pastva) |
@@ -52,3 +56,8 @@ Vytržení ze dvou fotek (v11; kousky na společném plátně 1003×662, `-samos
     python3 $S krava-cele-telo.jpg vystrizky/krava-cele-telo.png --largest
     python3 $S tele-ruzove.jpg vystrizky/tele-ruzove.png --largest
     python3 $S krava-tele-lezi.jpg vystrizky/krava-tele-lezi.png
+
+v16 (2026-10-25) – nové pastviny (čísla na známkách nečitelně malá, bez úprav):
+
+    python3 $S masne-pastva-kojeni.jpg vystrizky/masne-pastva-kojeni-tvar.png --shape blob --seed 62 --crop 225,200,1105,610 --scale 1.4
+    python3 $S masne-pastva-lezi.jpg vystrizky/masne-pastva-lezi-tvar.png --shape blob --seed 64 --crop 110,140,990,650 --scale 1.3
