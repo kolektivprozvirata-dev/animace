@@ -98,3 +98,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | # | datum | úprava | stav |
 |---|---|---|---|
 | 1 | 2026-10-25 | **2:13 karta 104 farem** – číslo stojí ~1,5 s na „0 farem“ (počítá až od slova „sto“) → může vypadat jako „žádná farma“. KPZ: **nechat naskočit se začátkem věty** – `count(
+| 2 | 2026-10-25 | **0:48 hygiena – fotka tzv. masných krav** (`#g-past`, teď `masny-skot-tvar.png`) vyměnit; KPZ pošlou několik fotek, vybrat jednu a vystřihnout stejně: čísla na známkách rozostřit (`tag_retouch.py --rect`), `cutout.py --shape blob` (nepravidelný utržený kus, šířka ~940 px). Výběr: celá zvířata, pastva s prostorem, ideálně krávy s telaty (věta: „telata tam zůstávají s matkami měsíce“). | čeká na fotky |
