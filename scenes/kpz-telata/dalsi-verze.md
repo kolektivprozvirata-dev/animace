@@ -97,3 +97,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-25 | **2:13 karta 104 farem** – číslo stojí ~1,5 s na „0 farem“ (počítá až od slova „sto“) → může vypadat jako „žádná farma“. KPZ: **nechat naskočit se začátkem věty** – `count(
