@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v14/vo-timing.js"></script>
+<script src="assets-v15/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -331,7 +331,8 @@
     <div class="stk" id="o-st3" style="left:850px; top:850px; width:170px"></div>
     <div class="abs" id="o-logo" style="left:240px; top:510px; width:600px"><img src="../../brand/kpz/logo-kpz-svetle.png" style="width:100%; display:block"></div>
     <div class="abs h2 kblocks print" id="o-name" style="left:0; width:1080px; top:1040px; text-align:center; font-size:96px"><span class="kb">Kolektiv pro zvířata</span></div>
-    <div class="abs eyebrow" id="o-src" style="left:0; width:1080px; top:1190px; text-align:center">Zdroje v popisku</div>
+    <div class="abs h3 kblocks print" id="o-web" style="left:0; width:1080px; top:1160px; text-align:center; font-size:58px"><span class="kb cream">www.kolektivprozvirata.cz</span></div>
+    <div class="abs eyebrow" id="o-src" style="left:0; width:1080px; top:1262px; text-align:center">Zdroje v popisku</div>
   </div></div>
 
   <!-- trvalé prvky -->
@@ -729,6 +730,7 @@
       set('#o-logo', { s: lp, o: lp > 0 ? 1 : 0 });
       sticker('#o-st1', t, t0 + 0.45, -6); sticker('#o-st2', t, t0 + 0.6, 10); sticker('#o-st3', t, t0 + 0.75, -4);
       fadeUp('#o-name', t, t0 + 0.5);
+      fadeUp('#o-web', t, t0 + 0.9);
       fadeUp('#o-src', t, T('out') + 1.6);
     }
 

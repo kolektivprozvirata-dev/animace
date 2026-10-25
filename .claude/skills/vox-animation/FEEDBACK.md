@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.17.1**
+**Verze skillu: 0.17.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -111,3 +111,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-24 | 0.17.1 | kpz-telata v14 | „U ‚Zvíře není stroj ani zboží‘ půl vteřiny ticha před i po – ať vynikne jako slogan. Šel bych do této verze.“ „‚Lépe‘ ať zní, jako by ukončoval větu.“ → vybrána D (bez kontextu). „Vyrenderuj mi další verzi.“ | **v14**: `vo-v14.json` – hook1 v3 (take E), cru3 nový text, cru2/bon1 s pevným starým kontextem (`previous_text`/`next_text` v `"el"` – nepřegenerovaly se), alt2b bez kontextu (take D), alt3 původní s tichem 0,59/0,56 s; clean_edges + room tone; 2:57,1; jen 1 nová nahrávka. `scenar-v14.md`. Pravidlo [zvuk] o hesle. |
 | 2026-10-24 | (do v15) | kpz-telata v14 | „2:15 ‚Přitom jen jedna studie‘ – nevím, proč je tam to ‚jen‘, mělo by to být ‚Přitom jedna studie‘. Zapiš si to a pak to odděláme v další verzi.“ | Zapsáno do `dalsi-verze.md` (Do v15 #1). |
 | 2026-10-24 | (do v15) | kpz-telata v14 | „U posledního slidu by mohla být i naše adresa www.kolektivprozvirata.cz.“ | Zapsáno do `dalsi-verze.md` (Do v15 #2). Kandidát na pravidlo [branding] (web v outru) – zapsat po schválení podoby. |
+| 2026-10-25 | 0.17.2 | kpz-telata v15 | „OK, udělej další verzi.“ | **v15**: „Přitom jedna studie…“ (bez „jen“; nová nahrávka jen alt1, sousedé s pevným kontextem), web www.kolektivprozvirata.cz v outru pod názvem; 2:56,3. |

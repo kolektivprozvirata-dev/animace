@@ -86,9 +86,14 @@ zkontrolovat délku pod 3:00 a kotvy slov ve scéně, pak jeden render.
 
 Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před 0,59 s, za 0,56 s.
 
-## Do v15 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v15 (2026-10-25) – render `out/kpz-telata-reel-v15.mp4`, hlas `vo-v15.json` → `assets-v15/` (2:56,3), scénář `scenar-v15.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-24 | **2:15 alt1** – „Přitom **jen** jedna studie popsala…“ → **„Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce.“** (KPZ: „nevím, proč je tam to ‚jen‘“). „Jen“ pochází z opravy ve v8 (zdůraznit, že 104 je vzorek jedné studie); bez něj je věta pořád přesná – karta „Jedna studie · mléčné farmy · 6 zemí Evropy“ zůstává. Hlas + titulek; přegeneruje se jen alt1, sousedům (loop, alt1b) držet starý kontext (`next_text`/`previous_text`). Délka −0,2 s. | čeká |
-| 2 | 2026-10-24 | **Outro (poslední záběr, ~2:52)** – přidat adresu **www.kolektivprozvirata.cz**. Návrh: pod název „Kolektiv pro zvířata“ (y ≈ 1150) jako blok v tématu KPZ, naskočí chvíli po názvu; „Zdroje v popisku“ posunout níž (y ≈ 1250, pořád v zóně grafiky do 1300). Jen grafika, hlas beze změny (adresu neříká). | čeká |
+| 1 | 2026-10-24 | **2:15 alt1** – „Přitom **jen** jedna studie popsala…“ → **„Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce.“** (KPZ: „nevím, proč je tam to ‚jen‘“). „Jen“ pochází z opravy ve v8 (zdůraznit, že 104 je vzorek jedné studie); bez něj je věta pořád přesná – karta „Jedna studie · mléčné farmy · 6 zemí Evropy“ zůstává. Hlas + titulek; přegeneruje se jen alt1, sousedům (loop, alt1b) držet starý kontext (`next_text`/`previous_text`). Délka −0,2 s. | hotovo v15 (nová nahrávka jen alt1; 2:56,3) |
+| 2 | 2026-10-24 | **Outro (poslední záběr, ~2:52)** – přidat adresu **www.kolektivprozvirata.cz**. Návrh: pod název „Kolektiv pro zvířata“ (y ≈ 1150) jako blok v tématu KPZ, naskočí chvíli po názvu; „Zdroje v popisku“ posunout níž (y ≈ 1250, pořád v zóně grafiky do 1300). Jen grafika, hlas beze změny (adresu neříká). | hotovo v15 (`#o-web`, krémový blok pod názvem, y 1160; „Zdroje v popisku“ y 1262) |
+
+## Do v16 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
