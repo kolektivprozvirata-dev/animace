@@ -87,21 +87,24 @@ def island_mask(im, seed, grow=5, band=0.30):
     return Image.fromarray((np.clip(np.maximum(m, ground) * side, 0, 1) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.8))
 
 
-def blob_mask(w, h, seed):
-    """Organický, nepravidelný tvar (ručně utržený kus) místo obdélníku."""
+def blob_mask(w, h, seed, tight=0.0):
+    """Organický, nepravidelný tvar (ručně utržený kus) místo obdélníku.
+    tight 0–1: tvar se víc drží okrajů výřezu (výchozí okraj si bere ~7 % šířky z každé strany,
+    při tight 0.8 jen ~2–4 %) – když jsou zvířata blízko kraje fotky."""
     yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
     d = np.maximum(np.abs(xx / w - 0.5) / 0.5, np.abs(yy / h - 0.5) / 0.5) ** 3 + ((xx / w - 0.5) ** 2 + (yy / h - 0.5) ** 2) * 1.2
+    d *= 1 - 0.4 * tight
     n = 0.6 * noise(w, h, max(8, w // 6), seed + 7) + 0.4 * noise(w, h, max(4, w // 20), seed + 8)
     return Image.fromarray(((d < 0.55 + 0.45 * n) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1))
 
 
-def make(src, out, piece=False, border=26, seed=7, paper=(243, 233, 227), crop=None, pad=60, largest=False, scale=1, shape=None):
+def make(src, out, piece=False, border=26, seed=7, paper=(243, 233, 227), crop=None, pad=60, largest=False, scale=1, shape=None, tight=0.0):
     im = Image.open(src).convert('RGB')
     if crop: im = im.crop(crop)
     if scale != 1: im = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
     w, h = im.size
     if shape == 'island': a = island_mask(im, seed)
-    elif shape == 'blob': a = blob_mask(w, h, seed)
+    elif shape == 'blob': a = blob_mask(w, h, seed, tight)
     else:
         a = piece_mask(w, h, seed) if piece else matte(im)
         if largest and not piece: a = keep_largest(a)
@@ -125,6 +128,8 @@ if __name__ == '__main__':
     ap.add_argument('--scale', type=float, default=1, help='zvětšení výřezu před vystřižením (malé fotky)')
     ap.add_argument('--shape', choices=['island', 'blob'], default=None,
                     help='nepravidelný kus fotky: island = zvířata + pruh louky (bez nebe), blob = organický tvar')
+    ap.add_argument('--tight', type=float, default=0.0,
+                    help='blob: 0–1, tvar se víc drží okrajů výřezu (zvířata blízko kraje fotky)')
     a = ap.parse_args()
     make(a.src, a.out, a.piece, a.border, a.seed, tuple(int(a.paper[i:i + 2], 16) for i in (0, 2, 4)),
-         tuple(int(v) for v in a.crop.split(',')) if a.crop else None, largest=a.largest, scale=a.scale, shape=a.shape)
+         tuple(int(v) for v in a.crop.split(',')) if a.crop else None, largest=a.largest, scale=a.scale, shape=a.shape, tight=a.tight)

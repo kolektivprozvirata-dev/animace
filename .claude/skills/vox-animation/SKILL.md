@@ -90,7 +90,7 @@ Ilustrace nech na vysvětlování (schémata, grafy, kruhy), skutečné fotky de
 „tohle je skutečné“ (hook, zvíře samo, hala, pastva, pouto) – 4–6 fotek, ne montáž na konci.
 Výchozí podoba = **papírový výstřižek**: `scripts/cutout.py foto.jpg out.png` vystřihne zvíře
 (model BiRefNet, stáhne se z Hugging Face) a dá mu okraj z utrženého papíru; `--piece` udělá
-utržený kus celé fotky (hala, krajina); `--shape blob` = nepravidelný utržený tvar
+utržený kus celé fotky (hala, krajina); `--shape blob` = nepravidelný utržený tvar (okraj si bere ~7 % šířky z každé strany; zvířata blízko kraje fotky → `--tight 0.8`, náhled zkontrolovat, jestli žádné zvíře není useknuté)
 (výchozí pro krajinu u KPZ), `--shape island` = zvířata + pruh louky bez nebe. Ve scéně `<div class="kpz-cut"><img src=out.png></div>`
 + `cutout()` boil. Celé fotky přes celou šířku (`.kpz-photo fade-y`) KPZ nechtějí („je to divné“).
 Ušní známky: rozostřit **jen samotné číslo** – `scripts/tag_retouch.py foto.jpg out.jpg

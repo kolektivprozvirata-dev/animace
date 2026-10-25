@@ -106,3 +106,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-25 | **1:06–1:08 zalehnutí – jiná fotka** (KPZ poslali novou: stádo tzv. masných krav, tele leží mezi pasoucími se kravami, další tele u ležící krávy) → `foto-kpz/masne-pastva-lezi2.webp` → `vystrizky/masne-pastva-lezi2-tvar.png` (blob, crop 70,90,1456,700, `--tight 0.8`, seed 66 – zvířata u krajů fotky; nová volba `cutout.py --tight`), `#z-past` šířka 1000, top 450; štítek `#z-tag2` y 960. Zvířata menší (stádo přes celou šířku). Čísla na známkách nečitelná. | ve scéně, čeká na render |
