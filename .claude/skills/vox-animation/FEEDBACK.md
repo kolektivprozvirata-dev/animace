@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.18.1**
+**Verze skillu: 0.18.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -116,3 +116,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-25 | 0.17.2 | kpz-telata v15 | „OK, udělej další verzi.“ | **v15**: „Přitom jedna studie…“ (bez „jen“; nová nahrávka jen alt1, sousedé s pevným kontextem), web www.kolektivprozvirata.cz v outru pod názvem; 2:56,3. |
 | 2026-10-25 | 0.18.0 | kpz-telata v15 | „Jo, nech ho (104) naskočit začátkem věty. Líbí se mi, ale ještě hledám další věci, ať to máme neprůstřelný.“ | Do v16 #1; pravidlo [vizuál] o počítadlech. |
 | 2026-10-25 | 0.18.1 | kpz-telata v15 | „Beru zpět to s tou nulou. Líbí se mi, jak to z nuly nabíhá.“ KPZ poslali 4 fotky masných krav pro 0:48 a 1:06 („zase to ořízni jako předtím“). „1:36 ‚Není to bizarní důsledek systému?‘ – víc jako otázka.“ | Pravidlo o počítadlech z 0.18.0 **zrušeno** (✅ náběh z nuly je v pořádku). Fotky: 0:48 kojeni, 1:06 lezi (blob; první výřezy usekly zvířata na kraji → posunuté hranice tak, aby každé zvíře bylo celé uvnitř, nebo celé venku). Varianty bon5 v kontextu. |
+| 2026-10-25 | 0.18.2 | kpz-telata v16 | „Na základě tohoto jdi do další verze.“ (bez výběru varianty otázky) | **v16**: otázka 1:36 = F (stoupá nejvíc; řečeno KPZ, že jde vyměnit), fotky masných krav 0:48 + 1:06; 2:56,4; bez nových nahrávek. |
