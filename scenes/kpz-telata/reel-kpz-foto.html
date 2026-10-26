@@ -127,16 +127,18 @@
       <div class="abs tag green big" style="left:20px; top:20px">Společná porodna</div>
     </div>
     <div class="abs tag yellow big print" id="g-ptag" style="left:110px; top:996px; white-space:nowrap">Společná porodna: 2/3 farem</div>
-    <div class="kpz-cut" id="g-photo" style="left:70px; top:430px; width:940px"><img src="assets/foto-kpz/vystrizky/kravin-uvnitr.png">
-      <div class="abs tag green big" style="left:40px; top:40px">Velkokapacitní hala</div>
+    <div class="kpz-cut" id="g-photo" style="left:40px; top:400px; width:1000px"><img src="assets/foto-kpz/vystrizky/hala-stan-zhora.png">
+      <div class="abs tag green big" style="left:50px; top:50px">Velkokapacitní hala</div>
     </div>
+    <div class="kpz-cut" id="g-photo2" style="left:20px; top:790px; width:450px"><img src="assets/foto-kpz/vystrizky/hala-kravy-slama.png"></div>
+    <div class="kpz-cut" id="g-photo3" style="left:420px; top:845px; width:540px"><img src="assets/foto-kpz/vystrizky/hala-krmny-zlab.png"></div>
     <div class="panel" id="g-barn" style="background:#d2b8a3">
       <svg width="900" height="640" style="position:absolute;left:0;top:0" id="g-dirt"></svg>
       <div id="g-herd"></div>
       <div class="abs tag green big" style="left:20px; top:20px">Velkokapacitní hala</div>
       <div id="g-bgerms"></div>
     </div>
-    <div class="abs tag yellow big print" id="g-tag" style="left:110px; top:996px; white-space:nowrap">Spousta krav na malé ploše</div>
+    <div class="abs tag yellow big print" id="g-tag" style="left:110px; top:790px; white-space:nowrap; z-index:6">Spousta krav na malé ploše</div>
     <div class="abs tag red big print" id="g-tag3" style="left:110px; top:996px; white-space:nowrap">Výkaly + moč = bakterie</div>
     <div class="card" id="g-study" style="left:90px; top:1085px; width:900px; padding:24px 34px">
       <div class="mono" style="color:var(--kpz-teal)">Přehled studií · Beaver et al. 2019</div>
@@ -389,8 +391,13 @@
     set(sel, { x: (1 - pin) * 1100 - pout * 1100, o: (pin > 0 && pout < 1 ? 1 : 0) * oMul });
     return pin * (1 - pout);
   };
+  /** fotka do koláže: přijede zespodu s natočením, odjede doleva spolu s panelem */
+  const collage = (sel, t, tin, tout, r = 0) => {
+    const pin = prog(t, tin, 0.4, ease.outCubic), pout = prog(t, tout, 0.45, ease.inOutCubic);
+    set(sel, { x: -pout * 1100, y: (1 - pin) * 220, r: r * pin, s: 0.94 + 0.06 * pin, o: pin > 0 && pout < 1 ? Math.min(1, pin * 3) : 0 });
+  };
   /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
-  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
+  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-photo2', '#g-photo3', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
   const jiggle = (t) => PHOTOS.forEach((sel) => {
     const b = boil(Math.floor(t * 6) / 6, sel, 2, 0.6);
     $(sel + ' > img').style.transform = `translate(${b.x.toFixed(2)}px, ${b.y.toFixed(2)}px) rotate(${b.r.toFixed(3)}deg)`;
@@ -559,13 +566,16 @@
       GERMS.forEach((g, i) => { const p = pop(t, W('hyg1', 'nenakazilo') - 0.4 + i * 0.1, 0.3); const b = boil(t, 'g' + i, 3, 8);
         set('#germ' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 - outA : 0 }); });
       // b) kravín
-      const tDirt = W('hyg2', 'výkaly') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
+      const tDirt = W('hyg2', 'přibývají') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
+      const tB = W('hyg2', 'spousta') - 0.1, tC = tB + 0.55;
       panelIO('#g-pen', t, t2 - 0.2, tHall);
       ['#gp-c1', '#gp-c2', '#gp-c3', '#gp-k'].forEach((sel, i) => cutout(sel, t, 'gpc' + i, 0, 0, GPR[i]));
       PG.forEach((g, i) => { const p = pop(t, W('hyg2', 'nákazy') - 0.2 + i * 0.1, 0.3); const b = boil(t, 'pg' + i, 3, 8);
         set('#pgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
       popIn('#g-ptag', t, W('hyg2', 'společných') - 0.1, { r: -2, o: 1 - prog(t, tHall, 0.2) });
       panelIO('#g-photo', t, tHall, tDirt);
+      collage('#g-photo2', t, tB, tDirt, -2.5);
+      collage('#g-photo3', t, tC, tDirt, 2);
       panelIO('#g-barn', t, tDirt, t3 - 0.2);
       animHerd('gh', NG, t, tDirt + 0.25);
       popIn('#g-tag', t, W('hyg2', 'spousta'), { r: -2, o: 1 - prog(t, W('hyg2', 'výkaly') - 0.2, 0.2) });

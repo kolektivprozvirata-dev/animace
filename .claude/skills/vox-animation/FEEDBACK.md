@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.19.1**
+**Verze skillu: 0.20.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -37,6 +37,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
 - **[formát]** Pro Instagram držet reel **pod 3:00, bezpečně max. 2:58** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
+- **[obsah]** Na fotkách z konkrétních farem rozmazat loga a názvy podniků (i značky zařízení) – video kritizuje systém, ne jednu farmu. _(2026-10-26, kpz-telata v18)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
 - **[obsah]** Žádný samostatný detailní záběr na ušní známku. Na známkách **rozostřit jen samotné číslo** (`scripts/tag_retouch.py --rect` kolem čísla; plocha a tvar známky zůstanou ostré). Ne rozmazaný flek přes ucho („vypadá strašně“), ne přebarvení („nevypadá dobře“), ne celá plocha známky. Nečitelně malá čísla nechat být. _(2026-10-19, KPZ)_
@@ -119,3 +120,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-25 | 0.18.2 | kpz-telata v16 | „Na základě tohoto jdi do další verze.“ (bez výběru varianty otázky) | **v16**: otázka 1:36 = F (stoupá nejvíc; řečeno KPZ, že jde vyměnit), fotky masných krav 0:48 + 1:06; 2:56,4; bez nových nahrávek. |
 | 2026-10-25 | 0.19.0 | kpz-telata v16 | „Místo 1:08 dej tento obrázek.“ (nová fotka masných krav s ležícími telaty) | `cutout.py --tight` (blob se drží okrajů výřezu – zvířata u kraje fotky by jinak byla useknutá); výřez seed 66; zapsáno Do v17 #1, ve scéně. SKILL.md: poznámka k okraji blobu. |
 | 2026-10-26 | 0.19.1 | kpz-telata v17 | „Začni renderovat.“ | **v17**: nová fotka zalehnutí 1:06–1:08 (`masne-pastva-lezi2-tvar.png`), hlas v16 beze změny. |
+| 2026-10-26 | 0.20.0 | kpz-telata v17 | „V 0:36 použij tyto dva obrázky – vedle sebe, nebo se rychle prostřídají.“ → „Že by mohly být tři.“ → „Klidně částečně vyřízni.“ (Fotka poslaná během práce se neuložila jako soubor – poslat znovu, až agent čeká.) | Koláž 3 fotek v hale (Do v18 #1): hala zhora + 2 bloby, `collage()` ve scéně; logo družstva rozmazané (pravidlo [obsah]); čísla rozostřená. Poučení: obrázky poslané uprostřed práce nejsou na disku – říct hned. |
