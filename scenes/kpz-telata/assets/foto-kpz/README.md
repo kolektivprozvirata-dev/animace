@@ -14,8 +14,8 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | masne-pastva-lezi.jpg | tzv. masné krávy, tele leží u stojící krávy, vpravo býk (KPZ 2026-10-25) | blob `masne-pastva-lezi-tvar.png` – v16 zalehnutí 1:06 (býk mimo výřez); od v17 rezerva |
 | masne-pastva-lezi2.webp | stádo tzv. masných krav, tele leží mezi pasoucími se kravami, tele u ležící krávy (KPZ 2026-10-25) | blob `masne-pastva-lezi2-tvar.png` – v17 zalehnutí 1:06–1:08 |
 | hala-stan-zhora.jpg | velká stanová hala zhora, kotce s holštýnkami (KPZ 2026-10-26; **práva ověřit**) | `-upr.jpg` (logo družstva + DeLaval rozmazané) → kus `hala-stan-zhora.png` – v18 hygiena 0:36 |
-| hala-kravy-slama.webp/.jpg | holštýnky ležící ve slámě ve staré hale (KPZ 2026-10-26) | `-upr.jpg` (čísla na známkách/obojcích rozostřená) → blob `hala-kravy-slama.png` – v18 0:37 |
-| hala-krmny-zlab.webp/.jpg | holštýnky v krmném žlabu, modrý tón (KPZ 2026-10-26) | `-upr.jpg` (274601 rozostřené) → blob `hala-krmny-zlab.png` – v18 0:38 |
+| hala-kravy-slama.webp/.jpg | holštýnky ležící ve slámě ve staré hale (KPZ 2026-10-26) | `-upr.jpg` (čísla na známkách/obojcích rozostřená) → celá jako kus `hala-kravy-slama-cela.png` – v18 0:37 (blob `hala-kravy-slama.png` = zamítnutá koláž) |
+| hala-krmny-zlab.webp/.jpg | holštýnky v krmném žlabu, modrý tón (KPZ 2026-10-26) | `-upr.jpg` (274601 rozostřené) → blob `hala-krmny-zlab.png` – rezerva (koláž zamítnuta) |
 | masne-pastva-rada.jpg | krávy s telaty jdou v řadě po svahu (KPZ 2026-10-25) | zatím nepoužito (zvířata malá) |
 | masne-pastva-celem.jpg | krávy čelem k fotografovi, ležící kráva s teletem (KPZ 2026-10-25) | zatím nepoužito (málo telat) |
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
@@ -73,3 +73,4 @@ v16 (2026-10-25) – nové pastviny (čísla na známkách nečitelně malá, be
     python3 $S hala-stan-zhora-upr.jpg vystrizky/hala-stan-zhora.png --piece --seed 21 --crop 0,30,1200,600
     python3 $S hala-kravy-slama-upr.jpg vystrizky/hala-kravy-slama.png --shape blob --tight 0.5 --seed 31 --crop 590,320,1250,980 --scale 0.75
     python3 $S hala-krmny-zlab-upr.jpg vystrizky/hala-krmny-zlab.png --shape blob --tight 0.5 --seed 32 --crop 540,280,1540,1000 --scale 0.6
+    python3 $S hala-kravy-slama-upr.jpg vystrizky/hala-kravy-slama-cela.png --piece --seed 22 --scale 0.6   # v18: celá fotka
