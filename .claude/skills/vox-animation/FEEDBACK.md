@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.20.0**
+**Verze skillu: 0.20.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -124,3 +124,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-26 | (do v18) | kpz-telata v17 | Koláž 3 fotek: „Chci, aby minimálně ta vlevo dole byla vidět celá… napřed ta velká nahoře, pak místo ní ta druhá… nebo se vysrat na tu vpravo dole a prostě prostřídat.“ | Hala → celá fotka krav ve slámě (střídání ve stejném místě), 3. fotka rezerva. Poučení: malé ořezané fotky v koláži KPZ nechtějí – fotku s obsahem ukázat celou a velkou, radši střídat. |
 | 2026-10-26 | (do v18) | kpz-telata v17 | „Spousta krav na *relativně* malé ploše?“ → „Krávy se tam pohnou, je to kumulovaně moc krav… nenapadá tě něco jiného?“ → „Spousta krav pod jednou střechou – beru.“ | Štítek změněn (Do v18 #2). Poučení: místo zmírňujících slov („relativně“) pojmenovat to, co je opravdu problém (nahromadění) – přesnější a silnější zároveň. |
 | 2026-10-26 | (do v18) | kpz-telata v17 | Schéma haly: „na fotkách krávy nejsou jedna na druhé – udělat ~30 % víc místa, pošli jen návrh“ → 22 krav → „ještě o trošku víc“. | `herdRows()` ve scéně (řady s posunem), 20 krav místo 28. Poučení: kreslená schémata ladit s fotkami ve stejném záběru (hustota, měřítko). |
+| 2026-10-26 | 0.20.1 | kpz-telata v18 | „Dej tam 14 krav.“ „OK, vyrenderuj to s těma čtrnácti.“ | **v18**: hala → krávy ve slámě, štítek „Spousta krav pod jednou střechou“, schéma haly 14 krav (`herdRows`); hlas v16. |
