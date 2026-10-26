@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.20.3**
+**Verze skillu: 0.20.4**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -35,7 +35,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
-- **[formát]** Pro Instagram držet reel **pod 3:00, bezpečně max. 2:58** (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
+- **[formát]** Pro Instagram držet reel **pod 3:00, max. 2:59** (KPZ 2026-10-26; dřív bezpečně 2:58) (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
 - **[obsah]** Na fotkách z konkrétních farem rozmazat loga a názvy podniků (i značky zařízení) – video kritizuje systém, ne jednu farmu. _(2026-10-26, kpz-telata v18)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
@@ -127,3 +127,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-26 | 0.20.1 | kpz-telata v18 | „Dej tam 14 krav.“ „OK, vyrenderuj to s těma čtrnácti.“ | **v18**: hala → krávy ve slámě, štítek „Spousta krav pod jednou střechou“, schéma haly 14 krav (`herdRows`); hlas v16. |
 | 2026-10-26 | 0.20.2 | kpz-telata v19 | „1:52 ‚dá v průměru‘ → ‚tvoří v průměru‘. V 0:37 mělo být i ve voiceoveru ‚Spousta krav pod jednou střechou‘. V 1:00 v animaci krav zase 14 a někam dvě malá telátka. Udělej další verzi.“ | **v19**: 2 nové nahrávky (hyg2, mil3; sousedé s pevným kontextem), schéma zalehnutí `herdRows` 14 krav + 2 telata; starý `herd()` odstraněn. Poučení: když se mění text štítku, který opakuje hlas, zeptat se rovnou, jestli změnit i hlas. |
 | 2026-10-26 | 0.20.3 | kpz-telata v19 | „V 1:35 je slovo ‚Dřív.‘ na konci trochu useklé.“ „1:46 ‚tolik ho tvoří‘.“ „2:23 ‚…nutné není ani z pohledu chovatelů‘ – řekni názor.“ | `tts.py` debreath: neznělý konec slova (sykavka, „v z h ř“ → [f s š ch]) navazující bez ticha se nestříhá (dřív, byznys). Do v20 #1–3. |
+| 2026-10-26 | 0.20.4 | kpz-telata v20 | „‚…nutné není ani z pohledu chovatelů. A přebytek mléka je jen výmluva, která se jim hodí, ne důvod.‘ – souhlas. Udělej další verzi.“ „Tak limit je 2:59.“ | **v20**: mil2 „tolik ho tvoří“, alt1b nová věta (+ řádek „ani z pohledu chovatelů“ v kartě, karta a štítek výš), „dřív“ bez useknutí; 2:57,6. Limit [formát] 2:58 → **2:59**. |

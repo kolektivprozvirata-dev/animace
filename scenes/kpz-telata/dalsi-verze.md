@@ -124,10 +124,15 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 2 | 2026-10-26 | **0:37 hyg2 hlas:** „spousta krav na malé ploše“ → **„spousta krav pod jednou střechou“** (sladit se štítkem); nová nahrávka jen hyg2, hyg1/hyg3 s pevným kontextem; kotvy ve scéně beze změny. | hotovo v19 |
 | 3 | 2026-10-26 | **1:00 schéma zalehnutí:** **14 krav** (řady 4/3/4/3 jako v hale, `herdRows`) + **2 telata** v mezerách – jedno v kroužku (ohrožené, `#zh-calf`/`#zh-ring`), druhé vpravo nahoře (`#zh-calf2`, naskočí o 0,3 s později). Štítek „Hodně zvířat, málo prostoru“ beze změny. | hotovo v19 |
 
-## Do v20 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v20 (2026-10-26) – render `out/kpz-telata-reel-v20.mp4`, hlas `vo-v20.json` → `assets-v20/` (2:57,6; limit KPZ 2:59), scénář `scenar-v20.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-26 | **1:35 „odloučí je dřív.“ – konec useknutý.** Příčina: koncové „v“ zní jako neznělé [f] (šum) a `debreath` ho bral jako nádech. Oprava v `tts.py`: šum navazující bez ticha na slovo zakončené sykavkou / „v z h ř“ se nestříhá. Dotklo se 2 míst („dřív“ +0,06 s, „byznys“ +0,11 s – doznívající „s“), délka +0,17 s. | opraveno v `tts.py`, projeví se ve v20 |
-| 2 | 2026-10-26 | **1:46 mil2:** „A tolik ho **dává** proto, že ji lidé…“ → **„A tolik ho tvoří proto…“** (první „kráva dává mléko primárně pro tele“ zůstává). Nová nahrávka mil2, mil1/mil3 s pevným kontextem. | rozhodnuto |
-| 3 | 2026-10-26 | **2:23 alt1b:** návrh KPZ „Okamžité oddělení tedy nutné není **ani z pohledu chovatelů**.“ – názor poslán (doporučeno: ano; zvážit opakování „chovatelů“ v další větě). | čeká na rozhodnutí |
+| 1 | 2026-10-26 | **1:35 „odloučí je dřív.“ – konec useknutý.** Příčina: koncové „v“ zní jako neznělé [f] (šum) a `debreath` ho bral jako nádech. Oprava v `tts.py`: šum navazující bez ticha na slovo zakončené sykavkou / „v z h ř“ se nestříhá. Dotklo se 2 míst („dřív“ +0,06 s, „byznys“ +0,11 s – doznívající „s“), délka +0,17 s. | hotovo v20 |
+| 2 | 2026-10-26 | **1:46 mil2:** „A tolik ho **dává** proto, že ji lidé…“ → **„A tolik ho tvoří proto…“** (první „kráva dává mléko primárně pro tele“ zůstává). Nová nahrávka mil2, mil1/mil3 s pevným kontextem. | hotovo v20 |
+| 3 | 2026-10-26 | **2:23 alt1b:** návrh KPZ „Okamžité oddělení tedy nutné není **ani z pohledu chovatelů**.“ – KPZ souhlasí s variantou: „Okamžité oddělení tedy nutné není ani z pohledu chovatelů. A přebytek mléka je jen výmluva, která se jim hodí, ne důvod.“ Karta: řádek „ani z pohledu chovatelů“ (naskočí se slovem), karta y 760, štítek „Přebytek mléka = výmluva“ y 1170. | hotovo v20 |
+
+## Do v21 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|

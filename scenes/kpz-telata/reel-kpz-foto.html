@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v19/vo-timing.js"></script>
+<script src="assets-v20/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -270,9 +270,10 @@
         <div class="h3" style="margin-left:34px">farem: tele s matkou<br>nebo kojnou <span class="hl" id="j-hl2">7–305 dní</span></div></div>
       <div class="h3" id="j-milk" style="margin-top:4px; font-size:50px"><b style="color:var(--kpz-teal); font-family:var(--font-body); font-weight:900">✓</b> krávy se dojí a telata přitom sají</div>
     </div>
-    <div class="abs tag red big print" id="j-exc" style="left:110px; top:1160px; white-space:nowrap">Přebytek mléka = výmluva</div>
-    <div class="card" id="j-not" style="left:70px; top:820px; width:940px; padding:34px 44px">
+    <div class="abs tag red big print" id="j-exc" style="left:110px; top:1170px; white-space:nowrap">Přebytek mléka = výmluva</div>
+    <div class="card" id="j-not" style="left:70px; top:760px; width:940px; padding:34px 44px">
       <div class="h1" style="font-size:108px; line-height:1.1">Okamžité oddělení <span class="hl" id="j-hl3">nutné není.</span></div>
+      <div class="h3" id="j-why" style="margin-top:10px; font-size:56px; color:var(--kpz-teal)">ani z pohledu chovatelů</div>
     </div>
     <!-- mateřské mléko nebo sýry (vyplní prázdné místo, než naskočí býčci a tzv. dojnice) -->
     <div class="abs" id="j-p1" style="left:150px; top:600px; width:170px"></div>
@@ -696,6 +697,7 @@
       fadeUp('#j-milk', t, W('alt1', 'odebírá') - 0.1, 20);
       slideIn('#j-not', t, tNot - 0.1, 0, 80, 0, 0.4, 1 - out1);
       highlight('#j-hl3', prog(t, W('alt1b', 'nutné') - 0.1, 0.5));
+      fadeUp('#j-why', t, W('alt1b', 'pohledu') - 0.2, 20);
       popIn('#j-exc', t, W('alt1b', 'přebytek') - 0.1, { r: -3, o: 1 - out1 });
       popIn('#j-idyl', t, t2 + 0.15, { r: -3 });
       // výrobky: naskočí při „mateřské mléko nebo sýry“, odletí před řádky býčci / dojnice
