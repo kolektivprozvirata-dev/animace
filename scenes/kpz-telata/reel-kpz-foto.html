@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v16/vo-timing.js"></script>
+<script src="assets-v19/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -449,22 +449,8 @@
     $('#g-dirt').innerHTML = s;
   })();
   // stádo shora (přeplněná hala)
-  function herd(sel, prefix, rows, cols, gapX, gapY, withCalf) {
-    let h = '', i = 0; const R = VOX.rng(prefix.length * 7 + 3);
-    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
-      if (withCalf && r === 2 && c === 3) continue;
-      const x = 18 + c * gapX + (R() * 20 - 10), y = 14 + r * gapY + (R() * 20 - 10);
-      h += `<div class="abs" id="${prefix}${i}" data-r="${R() * 40 - 20}" style="left:${x}px; top:${y}px; width:100px">${VOXI.cowTop()}</div>`; i++;
-    }
-    if (withCalf) {
-      h += `<div class="abs" id="${prefix}-calf" style="left:${18 + 3 * gapX + 10}px; top:${14 + 2 * gapY + 30}px; width:80px">${VOXI.cowTop({ calf: true })}</div>`;
-      h += `<svg class="abs" width="200" height="200" style="left:${18 + 3 * gapX - 40}px; top:${14 + 2 * gapY - 20}px"><circle id="${prefix}-ring" cx="100" cy="100" r="86" fill="none" stroke="var(--kpz-maroon)" stroke-width="14" filter="url(#kpz-brush)"/></svg>`;
-    }
-    $(sel).innerHTML = h;
-    return i;
-  }
   /** řídší stádo: řady s daným počtem krav, sudé řady posunuté o půl kroku (víc místa, ne mřížka) */
-  function herdRows(sel, prefix, counts, width, gapY) {
+  function herdRows(sel, prefix, counts, width, gapY, calves = []) {
     let h = '', i = 0; const R = VOX.rng(prefix.length * 7 + 3);
     const maxN = Math.max(...counts), uneven = counts.some((n) => n < maxN);
     const step = (width - 100) / (maxN - 1 + (uneven ? 0 : 0.5));
@@ -475,11 +461,17 @@
         h += `<div class="abs" id="${prefix}${i}" data-r="${R() * 40 - 20}" style="left:${x}px; top:${y}px; width:100px">${VOXI.cowTop()}</div>`; i++;
       }
     });
+    // telata do mezer: první s kroužkem (#…-calf, #…-ring), další #…-calf2, …
+    calves.forEach(([x, y], k) => {
+      const id = `${prefix}-calf${k ? k + 1 : ''}`;
+      h += `<div class="abs" id="${id}" style="left:${x}px; top:${y}px; width:80px">${VOXI.cowTop({ calf: true })}</div>`;
+      if (!k) h += `<svg class="abs" width="200" height="200" style="left:${x - 60}px; top:${y - 50}px"><circle id="${prefix}-ring" cx="100" cy="100" r="86" fill="none" stroke="var(--kpz-maroon)" stroke-width="14" filter="url(#kpz-brush)"/></svg>`;
+    });
     $(sel).innerHTML = h;
     return i;
   }
   const NG = herdRows('#g-herd', 'gh', [4, 3, 4, 3], 860, 156);   // v18: 14 krav místo 28 (KPZ: na fotkách krávy nejsou jedna na druhé)
-  const NZ = herd('#z-herd', 'zh', 4, 7, 124, 170, true);
+  const NZ = herdRows('#z-herd', 'zh', [4, 3, 4, 3], 860, 170, [[405, 384], [668, 46]]);   // v19: 14 krav + 2 telata (KPZ)
   function animHerd(prefix, n, t, t0) {
     for (let i = 0; i < n; i++) {
       const el = $('#' + prefix + i); const p = pop(t, t0 + (i % 9) * 0.05, 0.3); const b = boil(t, prefix + i, 2.2, 1.5);
@@ -609,6 +601,7 @@
       set('#z-pen', { y: (1 - pin) * 80, x: -pout * 1100, o: prog(t, t0 + 0.2, 0.15) * (pout < 1 ? 1 : 0) });
       animHerd('zh', NZ, t, t0 + 0.35);
       popIn('#zh-calf', t, W('cru1', 'zalehnout') - 0.2);
+      popIn('#zh-calf2', t, W('cru1', 'zalehnout') + 0.1);
       draw('#zh-ring', prog(t, W('cru1', 'zalehnout'), 0.5));
       popIn('#z-tag', t, W('cru2', 'moc krav'), { r: 2, o: 1 - pout });
       panelIO('#z-past', t, tP - 0.25, t3 - 0.15);

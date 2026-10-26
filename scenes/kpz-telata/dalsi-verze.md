@@ -116,7 +116,15 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 2 | 2026-10-26 | **0:37 štítek pod fotkou krav ve slámě:** „Spousta krav na malé ploše“ → **„Spousta krav pod jednou střechou“** (KPZ: krávy se v hale pohnou, „je to kumulovaně moc krav“ – „relativně“ by znělo jako vytáčka; pro hygienu je podstatné nahromadění, ne plocha; sedí k obří hale). Hlas beze změny („spousta krav na malé ploše“ = hustota). | hotovo v18 |
 | 3 | 2026-10-26 | **0:41 schéma haly (kreslené krávy shora)** – KPZ: na fotkách krávy nejsou jedna na druhé, ve schématu ~o 30 % víc místa. Návrh: `herdRows()` – 22 krav v posunutých řadách 6/5/6/5 místo mřížky 4×7 = 28 (~+27 % místa na krávu). Schéma zalehnutí (`#z-herd`, „Hodně zvířat, málo prostoru“) zatím beze změny. | 1. návrh 22 krav → KPZ „ještě o trošku víc místa“ → 20 krav → KPZ „ještě 10 % místa navíc“ → 18 krav → KPZ „dej tam 14 krav“ → **14 krav** (řady 4/3/4/3, kratší posunuté do mezer; 2× víc místa proti 28) – hotovo v18 |
 
-## Do v19 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v19 (2026-10-26) – render `out/kpz-telata-reel-v19.mp4`, hlas `vo-v19.json` → `assets-v19/` (2:56,3), scénář `scenar-v19.md`
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-26 | **1:52 mil3:** „dá v průměru“ → **„tvoří v průměru“** (hlas i titulek); nová nahrávka jen mil3, mil2/mil4 s pevným kontextem. | hotovo v19 |
+| 2 | 2026-10-26 | **0:37 hyg2 hlas:** „spousta krav na malé ploše“ → **„spousta krav pod jednou střechou“** (sladit se štítkem); nová nahrávka jen hyg2, hyg1/hyg3 s pevným kontextem; kotvy ve scéně beze změny. | hotovo v19 |
+| 3 | 2026-10-26 | **1:00 schéma zalehnutí:** **14 krav** (řady 4/3/4/3 jako v hale, `herdRows`) + **2 telata** v mezerách – jedno v kroužku (ohrožené, `#zh-calf`/`#zh-ring`), druhé vpravo nahoře (`#zh-calf2`, naskočí o 0,3 s později). Štítek „Hodně zvířat, málo prostoru“ beze změny. | hotovo v19 |
+
+## Do v20 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
