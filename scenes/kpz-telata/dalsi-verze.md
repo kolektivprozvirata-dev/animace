@@ -128,3 +128,6 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-26 | **1:35 „odloučí je dřív.“ – konec useknutý.** Příčina: koncové „v“ zní jako neznělé [f] (šum) a `debreath` ho bral jako nádech. Oprava v `tts.py`: šum navazující bez ticha na slovo zakončené sykavkou / „v z h ř“ se nestříhá. Dotklo se 2 míst („dřív“ +0,06 s, „byznys“ +0,11 s – doznívající „s“), délka +0,17 s. | opraveno v `tts.py`, projeví se ve v20 |
+| 2 | 2026-10-26 | **1:46 mil2:** „A tolik ho **dává** proto, že ji lidé…“ → **„A tolik ho tvoří proto…“** (první „kráva dává mléko primárně pro tele“ zůstává). Nová nahrávka mil2, mil1/mil3 s pevným kontextem. | rozhodnuto |
+| 3 | 2026-10-26 | **2:23 alt1b:** návrh KPZ „Okamžité oddělení tedy nutné není **ani z pohledu chovatelů**.“ – názor poslán (doporučeno: ano; zvážit opakování „chovatelů“ v další větě). | čeká na rozhodnutí |

@@ -190,7 +190,8 @@ def el_synth(say, prev_text, next_text, cfg, cache_dir, fallback=()):
 
 def debreath(path, al, max_pause=0.15):
     """Vystřihne nádechy v mezerách mezi slovy (časy slov z alignmentu ElevenLabs).
-    Nádech = šum bez hlasu (víc než polovina energie nad 2 kHz), tišší než řeč, aspoň 60 ms.
+    Nádech = šum bez hlasu (víc než polovina energie nad 2 kHz), tišší než řeč, aspoň 60 ms. Když na
+    slovo zakončené sykavkou / „v z h ř“ navazuje bez ticha, je to konec slova („dřív“ = [dřif]), ne nádech.
     Konce a začátky slov zůstanou – hledá se jen mezi nimi. Místo nádechu zůstane ticho
     nejvýš max_pause s (na konci segmentu jen 0,03 s – pauzu dá „pause“/„gap“), časy znaků
     v al se posunou. Vrací (počet nádechů, posunutý alignment)."""
@@ -202,16 +203,18 @@ def debreath(path, al, max_pause=0.15):
     words, cur = [], None
     for k, c in enumerate(ch):
         if c.isalnum():
-            cur = [st[k], en[k]] if cur is None else [cur[0], en[k]]
+            cur = [st[k], en[k], c] if cur is None else [cur[0], en[k], c]
         elif cur:
             words.append(cur); cur = None
     if cur:
         words.append(cur)
     if not words:
         return 0, al
+    # slovo končí hláskou, která na konci zní jako šum („dřív“ [f], „ves“, „muž“ [š], „bůh“ [ch], „keř“)
+    fric = set('fvszšžhřcčx')
     dur = len(x) / sr
-    gaps = [(0.0, words[0][0] - 0.015)] + [(words[j][1], words[j + 1][0] - 0.015) for j in range(len(words) - 1)] \
-        + [(words[-1][1], dur)]
+    gaps = [(0.0, words[0][0] - 0.015, '')] + [(words[j][1], words[j + 1][0] - 0.015, words[j][2]) for j in range(len(words) - 1)] \
+        + [(words[-1][1], dur, words[-1][2])]
     def level(f):
         return 20 * np.log10(np.sqrt(np.mean(f ** 2)) / 32768 + 1e-9)
 
@@ -222,7 +225,7 @@ def debreath(path, al, max_pause=0.15):
     fade = int(0.02 * sr)
     count = 0
     cuts = []         # (od, do) ve vzorcích – vystřižené ticho
-    for gi, (a, b) in enumerate(gaps):
+    for gi, (a, b, last) in enumerate(gaps):
         if b - a < 0.06:
             continue
         o0, o1 = int(a * sr), int(b * sr)
@@ -236,7 +239,10 @@ def debreath(path, al, max_pause=0.15):
                 if hi > 0.5 and -58 < lvl < -25:
                     run.append(o)
                     continue
-            if len(run) >= 6:
+            # šum navazující bez ticha na slovo zakončené sykavkou / „v z h ř“ je konec slova
+            # („dřív“ → [dřif]), ne nádech – ten se nestříhá
+            dip = run and any(level(x[q:q + n]) < -50 for q in range(o0, run[0], n))
+            if len(run) >= 6 and (dip or last.lower() not in fric):
                 # rozšířit přes tiché okolí: dozvuk nádechu (< -30 dB) a ticho před ním (< -50 dB)
                 s0, s1 = run[0], run[-1] + n
                 while s1 + n <= o1 and level(x[s1:s1 + n]) < -30:

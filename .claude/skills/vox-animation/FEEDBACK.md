@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.20.2**
+**Verze skillu: 0.20.3**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -126,3 +126,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-26 | (do v18) | kpz-telata v17 | Schéma haly: „na fotkách krávy nejsou jedna na druhé – udělat ~30 % víc místa, pošli jen návrh“ → 22 krav → „ještě o trošku víc“. | `herdRows()` ve scéně (řady s posunem), 20 krav místo 28. Poučení: kreslená schémata ladit s fotkami ve stejném záběru (hustota, měřítko). |
 | 2026-10-26 | 0.20.1 | kpz-telata v18 | „Dej tam 14 krav.“ „OK, vyrenderuj to s těma čtrnácti.“ | **v18**: hala → krávy ve slámě, štítek „Spousta krav pod jednou střechou“, schéma haly 14 krav (`herdRows`); hlas v16. |
 | 2026-10-26 | 0.20.2 | kpz-telata v19 | „1:52 ‚dá v průměru‘ → ‚tvoří v průměru‘. V 0:37 mělo být i ve voiceoveru ‚Spousta krav pod jednou střechou‘. V 1:00 v animaci krav zase 14 a někam dvě malá telátka. Udělej další verzi.“ | **v19**: 2 nové nahrávky (hyg2, mil3; sousedé s pevným kontextem), schéma zalehnutí `herdRows` 14 krav + 2 telata; starý `herd()` odstraněn. Poučení: když se mění text štítku, který opakuje hlas, zeptat se rovnou, jestli změnit i hlas. |
+| 2026-10-26 | 0.20.3 | kpz-telata v19 | „V 1:35 je slovo ‚Dřív.‘ na konci trochu useklé.“ „1:46 ‚tolik ho tvoří‘.“ „2:23 ‚…nutné není ani z pohledu chovatelů‘ – řekni názor.“ | `tts.py` debreath: neznělý konec slova (sykavka, „v z h ř“ → [f s š ch]) navazující bez ticha se nestříhá (dřív, byznys). Do v20 #1–3. |
