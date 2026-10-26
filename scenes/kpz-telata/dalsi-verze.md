@@ -102,8 +102,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 3 | 2026-10-25 | **1:06 zalehnutí – fotka tzv. masných krav na pastvě** („v 1:06 uděláš to samý“) → **lezi** (tele leží těsně u stojící krávy – k větě „na pastvě se o zalehnutí prakticky neslyší“; býk vpravo mimo výřez) → `vystrizky/masne-pastva-lezi-tvar.png` (blob, crop 110,140,990,650, ×1,3), `#z-past`. Jiná fotka než v 0:48 (pravidlo neopakovat). | hotovo v16 |
 | 4 | 2026-10-25 | **1:36 bon5 „Není to bizarní důsledek systému?“** – má znít víc jako otázka. Varianty v kontextu (`out/bizarni-*.mp3`): A původní (konec +0,2 půltónu), C v3 seed 11, **E** bez kontextu (+3,2), **F** bez kontextu seed 33 (+6,4, stoupá nejvíc). | hotovo v16: KPZ „na základě tohoto jdi do další verze“ bez písmene → vybráno **F** (stoupá nejvíc), `"el": {"context": false, "seed": 33}`; po otázce 0,8 s ticha. Na požádání vyměnit za E/C/A. |
 
-## Do v17 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v17 (2026-10-26) – render `out/kpz-telata-reel-v17.mp4`, hlas beze změny (`assets-v16/`, 2:56,4), scénář `scenar-v16.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-25 | **1:06–1:08 zalehnutí – jiná fotka** (KPZ poslali novou: stádo tzv. masných krav, tele leží mezi pasoucími se kravami, další tele u ležící krávy) → `foto-kpz/masne-pastva-lezi2.webp` → `vystrizky/masne-pastva-lezi2-tvar.png` (blob, crop 70,90,1456,700, `--tight 0.8`, seed 66 – zvířata u krajů fotky; nová volba `cutout.py --tight`), `#z-past` šířka 1000, top 450; štítek `#z-tag2` y 960. Zvířata menší (stádo přes celou šířku). Čísla na známkách nečitelná. | ve scéně, čeká na render |
+| 1 | 2026-10-25 | **1:06–1:08 zalehnutí – jiná fotka** (KPZ poslali novou: stádo tzv. masných krav, tele leží mezi pasoucími se kravami, další tele u ležící krávy) → `foto-kpz/masne-pastva-lezi2.webp` → `vystrizky/masne-pastva-lezi2-tvar.png` (blob, crop 70,90,1456,700, `--tight 0.8`, seed 66 – zvířata u krajů fotky; nová volba `cutout.py --tight`), `#z-past` šířka 1000, top 450; štítek `#z-tag2` y 960. Zvířata menší (stádo přes celou šířku). Čísla na známkách nečitelná. | hotovo v17 |
+
+## Do v18 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|

@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.19.0**
+**Verze skillu: 0.19.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -118,3 +118,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-25 | 0.18.1 | kpz-telata v15 | „Beru zpět to s tou nulou. Líbí se mi, jak to z nuly nabíhá.“ KPZ poslali 4 fotky masných krav pro 0:48 a 1:06 („zase to ořízni jako předtím“). „1:36 ‚Není to bizarní důsledek systému?‘ – víc jako otázka.“ | Pravidlo o počítadlech z 0.18.0 **zrušeno** (✅ náběh z nuly je v pořádku). Fotky: 0:48 kojeni, 1:06 lezi (blob; první výřezy usekly zvířata na kraji → posunuté hranice tak, aby každé zvíře bylo celé uvnitř, nebo celé venku). Varianty bon5 v kontextu. |
 | 2026-10-25 | 0.18.2 | kpz-telata v16 | „Na základě tohoto jdi do další verze.“ (bez výběru varianty otázky) | **v16**: otázka 1:36 = F (stoupá nejvíc; řečeno KPZ, že jde vyměnit), fotky masných krav 0:48 + 1:06; 2:56,4; bez nových nahrávek. |
 | 2026-10-25 | 0.19.0 | kpz-telata v16 | „Místo 1:08 dej tento obrázek.“ (nová fotka masných krav s ležícími telaty) | `cutout.py --tight` (blob se drží okrajů výřezu – zvířata u kraje fotky by jinak byla useknutá); výřez seed 66; zapsáno Do v17 #1, ve scéně. SKILL.md: poznámka k okraji blobu. |
+| 2026-10-26 | 0.19.1 | kpz-telata v17 | „Začni renderovat.“ | **v17**: nová fotka zalehnutí 1:06–1:08 (`masne-pastva-lezi2-tvar.png`), hlas v16 beze změny. |
