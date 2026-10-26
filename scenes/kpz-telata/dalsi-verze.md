@@ -112,3 +112,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-26 | **0:36 velkokapacitní hala – 3 fotky místo `kravin-uvnitr`** (KPZ: „vedle sebe, nebo se rychle prostřídají“ → „že by mohly být tři“). Návrh koláže: při „velkokapacitní haly“ nahoře přes celou šířku **hala zhora** (`hala-stan-zhora-upr.jpg` – logo družstva a nápis DeLaval rozmazané, ať video necílí na konkrétní farmu/firmu), při „spousta krav“ a „na malé ploše“ pod ní dvě menší fotky vedle sebe: **krávy ve slámě** (`hala-kravy-slama-upr.jpg` – čísla na známkách a obojcích 269076, 320, 9, 15 rozostřená) a **krávy v krmném žlabu** (3. fotka – čeká na soubor; poslaná během práce se neuložila). Odejdou společně při „výkaly“ (→ schéma haly). Práva k fotkám ověřit. | čeká na 3. fotku |
