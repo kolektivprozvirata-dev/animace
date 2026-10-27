@@ -1,6 +1,6 @@
-# Popisek k reelu (návrh, v25 – Instagram, 2:58)
+# Popisek k reelu (návrh, v27 – Instagram, 2:58)
 
-Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu – často je to ale hned. Pak tráví týdny v samostatném boxu a ostatní telata vidí jen přes ohrádku, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
+Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu – často je to ale hned. Pak tráví týdny v samostatném boxu a jiné tele má nanejvýš ve vedlejším boxu, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
 
 Chovatelé mají několik argumentů. Nejčastěji slýcháme tyto čtyři – a co o nich víme:
 1️⃣ Hygiena – krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. S mámou by tele muselo do velkokapacitní haly: spousta krav pod jednou střechou, výkaly a moč přibývají průběžně, a i když se většinou uklízejí, čistá podlaha nebude. Nicméně výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější. U tzv. masných krav na pastvě zůstávají telata s matkami měsíce.
@@ -8,7 +8,7 @@ Chovatelé mají několik argumentů. Nejčastěji slýcháme tyto čtyři – a
 3️⃣ Pouto – pozdější oddělení podle výzkumů bolí víc. Přitom tele, které zůstane s mámou déle, lépe roste a je společenštější. Takže aby je odloučení nebolelo, odloučí je dřív. Není to bizarní důsledek systému?
 4️⃣ Přebytek mléka – jako každá máma, i kráva dává mléko primárně pro své mládě. Tzv. dojnice dnes v Česku tvoří v průměru přes 9 500 litrů mléka ročně – protože ji lidé desítky let šlechtili na výkon.
 
-Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s matkou týdny až měsíce. Okamžité oddělení tedy nutné není ani z pohledu chovatelů. Pokud ale konzumujete mateřské mléko nebo sýry, ani tady nehledejte útěchu: býčci jdou na jatka a tzv. dojnice taky, když přestanou být pro lidi výnosné. Zvíře není stroj ani zboží. 🌱
+Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s krávou týdny až měsíce. Okamžité oddělení tedy nutné není ani z pohledu chovatelů. Pokud ale konzumujete mateřské mléko nebo sýry, ani tady nehledejte útěchu: býčci jdou na jatka a tzv. dojnice taky, když přestanou být pro lidi výnosné. Zvíře není stroj ani zboží. 🌱
 
 #veganstvi #zvirata #mleko #kolektivprozvirata
 
@@ -17,7 +17,7 @@ Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s 
 📚 Zdroje:
 • Česká praxe – oddělení do 12 h po porodu (87,5 % farem), individuální boxy (96,7 % farem): Staněk et al. (2014), Journal of Dairy Science 97:3973 a Agritech Science 2014 (VÚŽV); R. Šárová (VÚŽV), Náš chov 2021 – Odchov telat a legislativa (do 12 h, individuálně do 8 týdnů)
 • „Hned“: EFSA (2023) Welfare of calves – „the great majority of dairy farms separate dam and calf immediately after birth“; metodika VÚŽV (Malá et al. 2023) doporučuje oddělit do 2 h
-• Kontakt v individuálních boxech jen přes ohrádku: vyhláška 208/2004 Sb., § 2
+• Individuální boxy – kontakt s ostatními telaty jen přes stěnu boxu: vyhláška 208/2004 Sb., § 2
 • Společné porodny (67,6 % farem): Staněk et al. (2014); infekce v porodním kotci: metodika VÚŽV (2023)
 • Zdraví telat a kontakt s matkou (přínos časného oddělení ve studiích nejednoznačný): K. Bučková (VÚŽV), Náš chov 12/2020; Beaver et al. (2019), Journal of Dairy Science 102:5784
 • Odstav telat tzv. masných krav (6–10 měsíců): Náš chov 2018 – Plodnost a ekonomické ukazatele chovu masných krav

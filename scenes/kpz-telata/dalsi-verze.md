@@ -173,12 +173,17 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-27 | **0:50 hyg3:** KPZ – po „Nicméně výzkumy…“ nesedí „U tzv. masných krav … je **ale** …“ → **„Například u tzv. masných krav na pastvě je prostoru dost a telata tam zůstávají s matkami měsíce.“** Nová nahrávka jen hyg3 (hyg2b/hyg4 s pevným kontextem), pauza před ní +0,06 s. | hotovo v26 |
 
-## Do v27 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v27 (2026-10-27) – render `out/kpz-telata-reel-v27.mp4`, hlas `vo-v27.json` → `assets-v27/` (2:58,6), scénář `scenar-v27.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
 | 1 | 2026-10-27 | **Kontrola očima kritického zemědělce** (KPZ) → `kritika-zemedelce.md`: 5 vážných bodů (původ fotek / AI, chybí argument mlezivo, „vidí jen přes ohrádku“ × vyhláška hmatový kontakt, „ani z pohledu chovatelů“, „s matkou“ × kojná), 7 středních. | bod 1 (AI fotky): **neoznačovat** (KPZ – pastviny z Midjourney místo cizích fotek, holštýnky přiznají na dotaz); body 2–5 čekají |
 | 2 | 2026-10-27 | K fotkám se **nikde nic nepíše** (KPZ). Bod 2 (mlezivo): **nechat „Nejčastěji slýcháme tyto čtyři“**. | rozhodnuto |
-| 3 | 2026-10-27 | **0:15 hook3:** „Ostatní telata vidí jen přes ohrádku“ zní jako celé stádo za plotem – ve skutečnosti 1 zleva, 1 zprava, často ani to (prázdné boudy). KPZ: „soused zní nekonkrétně“ → zvoleno **„Jiné tele má nanejvýš ve vedlejším boxu, přestože je to společenské zvíře.“** | rozhodnuto |
-| 4 | 2026-10-27 | **2:10 alt1:** „…kde tele zůstává **s matkou**…“ → **„…s krávou…“** (část farem s kojnou). | rozhodnuto |
+| 3 | 2026-10-27 | **0:15 hook3:** „Ostatní telata vidí jen přes ohrádku“ zní jako celé stádo za plotem – ve skutečnosti 1 zleva, 1 zprava, často ani to (prázdné boudy). KPZ: „soused zní nekonkrétně“ → zvoleno **„Jiné tele má nanejvýš ve vedlejším boxu, přestože je to společenské zvíře.“** Zdroj: „box s otvory do vedlejších – vyhláška 208/2004 Sb.“ | hotovo v27 |
+| 4 | 2026-10-27 | **2:10 alt1:** „…kde tele zůstává **s matkou**…“ → **„…s krávou…“** (část farem s kojnou). | hotovo v27 |
 | 5 | 2026-10-27 | **2:21 alt1b:** „…nutné není **ani z pohledu chovatelů**“ – návrh „Okamžité oddělení tedy nutné není. Jde to i jinak.“ → KPZ: **nechat beze změny**. | vyřízeno |
+
+## Do v28 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
