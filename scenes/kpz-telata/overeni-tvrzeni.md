@@ -57,6 +57,13 @@ důvod uvádí spíš „víc mléka na prodej“ a „kontrola mleziva“.
   transmission“ se očekává; Wenker 2022: víc potíží u telat v plném kontaktu (autoři: nevhodné ustájení).
 - **B4 odstav tzv. masných telat ⚠️** – NSW DPI: obvykle **8–10 měsíců** (dřív 6–7 jen ve specifických
   případech); RSPCA 8–10; USA průměr ~7. „Měsíce“ v hlase sedí; řádek opravit na 8–10.
+  **Český zdroj (doplněno 2026-10-27, KPZ: „nemělo bychom tam mít české zdroje?“):** Náš chov, 11. 1. 2018,
+  „Plodnost a ekonomické ukazatele chovu masných krav“ – ověřeno v plném textu: „Hlavními a někde téměř jedinými
+  tržními produkty chovu krav bez TPM jsou **telata odstavená ve věku šesti až deseti měsíců** a z chovu vyřazené
+  krávy a jalovice.“ https://naschov.cz/plodnost-a-ekonomicke-ukazatele-chovu-masnych-krav/
+  Další české (jen ze shrnutí vyhledávání, plný text nedostupný z prostředí): Zemědělec – odstav 7–9 měsíců; certifikovaná
+  metodika JU ČB – 4–6 měs. (konec pastvy) nebo 6–8 měs. (leden); chovzvirat.cz (ekologický chov KBTPM) – 7–8 měsíců.
+  → Zdrojový řádek: „tzv. masné krávy – telata odstavená ve věku 6–10 měsíců (Náš chov 2018)“.
 - **B5 zalehnutí ⚠️** – žádná data o četnosti zalehnutí/rozšlápnutí telat ani pro haly, ani pro pastvu;
   EFSA zmiňuje zranění telat agresí krav při nedostatku místa. „Prakticky neděje“ = postoj KPZ, nedoložený.
 
