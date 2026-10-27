@@ -167,7 +167,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-27 | **0:45 hyg2b:** KPZ „Nicméně, výzkumy přitom…“ → bez zdvojení a bez čárky: **„Nicméně výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější.“** Nová nahrávka jen hyg2b. | hotovo v25 |
 
-## Do v26 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v26 (2026-10-27) – render `out/kpz-telata-reel-v26.mp4`, hlas `vo-v26.json` → `assets-v26/` (2:58,6), scénář `scenar-v26.md`
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-27 | **0:50 hyg3:** KPZ – po „Nicméně výzkumy…“ nesedí „U tzv. masných krav … je **ale** …“ → **„Například u tzv. masných krav na pastvě je prostoru dost a telata tam zůstávají s matkami měsíce.“** Nová nahrávka jen hyg3 (hyg2b/hyg4 s pevným kontextem), pauza před ní +0,06 s. | hotovo v26 |
+
+## Do v27 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
