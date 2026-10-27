@@ -139,8 +139,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 1 | 2026-10-27 | **0:15 hook3 „samo v boxu“** – KPZ: boudy bývají vedle sebe, „to je první, co nám vyčtou“ (vyhláška 208/2004 Sb. vyžaduje zrakový a hmatový kontakt se sousedy). Zvolena alternativa: **„Tele pak v drtivé většině chovů tráví týdny v samostatném boxu. Ostatní telata vidí jen přes ohrádku, přestože je to společenské zvíře.“** Nahrávka +3 s → 3:00,6 → zkráceny pauzy (19 běžných −0,06 s, mil1→mil2 0,59→0,41, po „Není to bizarní…?“ 0,82→0,61, před „Za prvé/Za třetí“ −0,1 s, lead_in/tail) = **2:58,6**; ticho kolem hesla beze změny. Obraz: štítek „Samostatný box · často až 8 týdnů“; fotka řady bud při „Ostatní telata“ zkoušena a **vyřazena** (KPZ: „vždyť je tam ten záběr z dronu v 0:13, kde je dost telat najednou“) – zůstává kreslená bouda s teletem. | hotovo v21 |
 | 2 | 2026-10-27 | **0:41 hyg2 „A i když bývají většinou uklízeny, bakteriím se tam logicky daří.“** – KPZ: i po odklizení zůstává směs výkalů s močí na podlaze, čisto tam nebude. Zvoleno: **„A i když se uklízejí, podlaha čistá nebude a bakteriím se tam daří.“** (stejná délka). Nová nahrávka hyg2. | hotovo v21 |
 
-## Do v22 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v22 (2026-10-27) – render `out/kpz-telata-reel-v22.mp4`, hlas `vo-v22.json` → `assets-v22/` (2:58,9), scénář `scenar-v22.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-27 | **0:41 hyg2 – vrátit „většinou“** (KPZ: „zapomněli jsme na ‚i když se většinou uklízejí‘“ – v návrhu pro v21 vypadlo): „A i když se **většinou** uklízejí, podlaha čistá nebude a bakteriím se tam daří.“ Nová nahrávka je o ~1 s delší (pomalejší tempo, ne pauzy; 2 další take se seedem po vyčištění delší) → 2:59,3. KPZ navrhli vyhodit „Zvíře není stroj ani zboží“ (−2,9 s) – doporučeno nechat (jádro videa, heslo s tichem). Místo toho pauzy: po „Není to bizarní…?“ 0,61→0,50, před „Za prvé/Za třetí“ −0,05, alt1b a dem2 −0,05, lead_in 0,1, tail 0,3 → **2:58,9**. | hlas připraven (`vo-v22.json` → `assets-v22/`), čeká na rozhodnutí o hesle a render |
+| 1 | 2026-10-27 | **0:41 hyg2 – vrátit „většinou“** (KPZ: „zapomněli jsme na ‚i když se většinou uklízejí‘“ – v návrhu pro v21 vypadlo): „A i když se **většinou** uklízejí, podlaha čistá nebude a bakteriím se tam daří.“ Nová nahrávka je o ~1 s delší (pomalejší tempo, ne pauzy; 2 další take se seedem po vyčištění delší) → 2:59,3. KPZ navrhli vyhodit „Zvíře není stroj ani zboží“ (−2,9 s) – doporučeno nechat (jádro videa, heslo s tichem). Místo toho pauzy: po „Není to bizarní…?“ 0,61→0,50, před „Za prvé/Za třetí“ −0,05, alt1b a dem2 −0,05, lead_in 0,1, tail 0,3 → **2:58,9**. | hotovo v22 (KPZ: heslo nechat – „OK, tak jo“) |
+
+## Do v23 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|

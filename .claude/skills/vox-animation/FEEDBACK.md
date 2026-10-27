@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.21.0**
+**Verze skillu: 0.21.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -130,3 +130,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-26 | 0.20.3 | kpz-telata v19 | „V 1:35 je slovo ‚Dřív.‘ na konci trochu useklé.“ „1:46 ‚tolik ho tvoří‘.“ „2:23 ‚…nutné není ani z pohledu chovatelů‘ – řekni názor.“ | `tts.py` debreath: neznělý konec slova (sykavka, „v z h ř“ → [f s š ch]) navazující bez ticha se nestříhá (dřív, byznys). Do v20 #1–3. |
 | 2026-10-26 | 0.20.4 | kpz-telata v20 | „‚…nutné není ani z pohledu chovatelů. A přebytek mléka je jen výmluva, která se jim hodí, ne důvod.‘ – souhlas. Udělej další verzi.“ „Tak limit je 2:59.“ | **v20**: mil2 „tolik ho tvoří“, alt1b nová věta (+ řádek „ani z pohledu chovatelů“ v kartě, karta a štítek výš), „dřív“ bez useknutí; 2:57,6. Limit [formát] 2:58 → **2:59**. |
 | 2026-10-27 | 0.21.0 | kpz-telata v21 | „0:15 ‚samo v boxu‘ – boudičky jsou vedle sebe, to je první, co nám vyčtou“ → alternativa v hlase; „dron v 0:13 už sousedy ukazuje, další fotku tam nedávej“; „0:41 i po uklizení zůstává směs s močí, čistý to nebude“ → „podlaha čistá nebude“. „Renderuj.“ | **v21**: hook3 + hyg2 nové nahrávky, pauzy zkrácené (19× −0,06 s aj.) kvůli limitu 2:59 → 2:58,3; štítek „Samostatný box“. Pravidlo [data] „co nám vyčtou?“. |
+| 2026-10-27 | 0.21.1 | kpz-telata v22 | „Zapomněli jsme na ‚i když se většinou uklízejí‘.“ „Pro zkrácení oddělat ‚Zvíře není stroj ani zboží‘? Co myslíš?“ → doporučeno nechat, ubrat pauzy → „OK, tak jo.“ | **v22**: hyg2 s „většinou“, pauzy −0,3 s → 2:58,9. Poučení: při přepisu věty KPZ držet všechna jejich slova (vypadlé „většinou“); zkracovat nejdřív pauzy, ne obsahové pointy. |
