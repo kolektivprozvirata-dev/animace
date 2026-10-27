@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.20.4**
+**Verze skillu: 0.21.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -21,6 +21,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[zvuk]** Hlas nesmí mít „střihy“: žádné digitální ticho mezi slovy a větami (pod hlasem tichý `room_tone`, výchozí −66 dBFS), žádné zbytky zvuku za posledním slovem nahrávky (`clean_edges`); ověřit skenem skoků hlasitosti a poslechem ve sluchátkách. _(2026-10-24, kpz-telata v13)_
 - **[zvuk]** Věta po otázce / nový odstavec má začít jako nová věta, ne „chcíple“ navazovat – u ElevenLabs bez kontextu (`"context": false`), příp. `eleven_v3` jako u otázky. _(2026-10-24, kpz-telata v13)_
 - **[zvuk]** Heslo / slogan („Zvíře není stroj ani zboží.“) oddělit tichem ~0,5 s před i za ním, ať vynikne; věta před ním musí znít jako uzavřená (ElevenLabs bez `next_text`). _(2026-10-24, kpz-telata v14)_
+- **[data]** Předjímat první námitku kritiků a formulovat tak, aby ji tvrzení ustálo („samo v boxu“ × sousedé za ohrádkou → „v samostatném boxu, ostatní telata vidí jen přes ohrádku“); u každé věty si položit otázku „co nám vyčtou?“. _(2026-10-27, kpz-telata v21)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
@@ -128,3 +129,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-26 | 0.20.2 | kpz-telata v19 | „1:52 ‚dá v průměru‘ → ‚tvoří v průměru‘. V 0:37 mělo být i ve voiceoveru ‚Spousta krav pod jednou střechou‘. V 1:00 v animaci krav zase 14 a někam dvě malá telátka. Udělej další verzi.“ | **v19**: 2 nové nahrávky (hyg2, mil3; sousedé s pevným kontextem), schéma zalehnutí `herdRows` 14 krav + 2 telata; starý `herd()` odstraněn. Poučení: když se mění text štítku, který opakuje hlas, zeptat se rovnou, jestli změnit i hlas. |
 | 2026-10-26 | 0.20.3 | kpz-telata v19 | „V 1:35 je slovo ‚Dřív.‘ na konci trochu useklé.“ „1:46 ‚tolik ho tvoří‘.“ „2:23 ‚…nutné není ani z pohledu chovatelů‘ – řekni názor.“ | `tts.py` debreath: neznělý konec slova (sykavka, „v z h ř“ → [f s š ch]) navazující bez ticha se nestříhá (dřív, byznys). Do v20 #1–3. |
 | 2026-10-26 | 0.20.4 | kpz-telata v20 | „‚…nutné není ani z pohledu chovatelů. A přebytek mléka je jen výmluva, která se jim hodí, ne důvod.‘ – souhlas. Udělej další verzi.“ „Tak limit je 2:59.“ | **v20**: mil2 „tolik ho tvoří“, alt1b nová věta (+ řádek „ani z pohledu chovatelů“ v kartě, karta a štítek výš), „dřív“ bez useknutí; 2:57,6. Limit [formát] 2:58 → **2:59**. |
+| 2026-10-27 | 0.21.0 | kpz-telata v21 | „0:15 ‚samo v boxu‘ – boudičky jsou vedle sebe, to je první, co nám vyčtou“ → alternativa v hlase; „dron v 0:13 už sousedy ukazuje, další fotku tam nedávej“; „0:41 i po uklizení zůstává směs s močí, čistý to nebude“ → „podlaha čistá nebude“. „Renderuj.“ | **v21**: hook3 + hyg2 nové nahrávky, pauzy zkrácené (19× −0,06 s aj.) kvůli limitu 2:59 → 2:58,3; štítek „Samostatný box“. Pravidlo [data] „co nám vyčtou?“. |
