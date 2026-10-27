@@ -143,3 +143,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-27 | **0:41 hyg2 – vrátit „většinou“** (KPZ: „zapomněli jsme na ‚i když se většinou uklízejí‘“ – v návrhu pro v21 vypadlo): „A i když se **většinou** uklízejí, podlaha čistá nebude a bakteriím se tam daří.“ Nová nahrávka je o ~1 s delší (pomalejší tempo, ne pauzy; 2 další take se seedem po vyčištění delší) → 2:59,3. KPZ navrhli vyhodit „Zvíře není stroj ani zboží“ (−2,9 s) – doporučeno nechat (jádro videa, heslo s tichem). Místo toho pauzy: po „Není to bizarní…?“ 0,61→0,50, před „Za prvé/Za třetí“ −0,05, alt1b a dem2 −0,05, lead_in 0,1, tail 0,3 → **2:58,9**. | hlas připraven (`vo-v22.json` → `assets-v22/`), čeká na rozhodnutí o hesle a render |
