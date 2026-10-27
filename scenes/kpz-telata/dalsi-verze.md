@@ -136,3 +136,5 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-27 | **0:15 hook3 „samo v boxu“** – KPZ: boudy bývají vedle sebe, „to je první, co nám vyčtou“ (vyhláška 208/2004 Sb. vyžaduje zrakový a hmatový kontakt se sousedy). Zvolena alternativa: **„Tele pak v drtivé většině chovů tráví týdny v samostatném boxu. Ostatní telata vidí jen přes ohrádku, přestože je to společenské zvíře.“** Nahrávka +3 s → 3:00,6 → zkráceny pauzy (19 běžných −0,06 s, mil1→mil2 0,59→0,41, po „Není to bizarní…?“ 0,82→0,61, před „Za prvé/Za třetí“ −0,1 s, lead_in/tail) = **2:58,6**; ticho kolem hesla beze změny. Obraz: štítek „Samostatný box · často až 8 týdnů“; při „Ostatní telata“ bouda odjede a přijede fotka KPZ **řada bud s telaty** (`telata-boudy-rada.png`, `#h-row`). | ve scéně, čeká na render |
+| 2 | 2026-10-27 | **0:41 hyg2 „A i když bývají většinou uklízeny, bakteriím se tam logicky daří.“** – KPZ: i po odklizení zůstává směs výkalů s močí na podlaze, čisto tam nebude. Návrhy formulací poslány (rezerva do 2:59 jen ~0,35 s). | čeká na rozhodnutí |

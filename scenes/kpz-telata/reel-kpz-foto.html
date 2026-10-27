@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v20/vo-timing.js"></script>
+<script src="assets-v21/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -77,10 +77,12 @@
       <!-- varianta d: farma z výšky (řady boud vedle hal) -->
       <div class="kpz-cut" id="hb-d" style="left:-110px; top:-60px; width:1000px"><img src="assets/foto-kpz/vystrizky/farma-z-vysky.png"></div>
     </div>
+    <!-- v21: „Ostatní telata vidí jen přes ohrádku“ – řada bud s telaty vedle sebe (KPZ) -->
+    <div class="kpz-cut" id="h-row" style="left:80px; top:560px; width:920px"><img src="assets/foto-kpz/vystrizky/telata-boudy-rada.png"></div>
     <!-- v7: řady individuálních boxů z dronu, pak detail jednoho telete -->
     <div class="kpz-cut" id="h-aerial" style="left:80px; top:600px; width:920px"><img src="assets/foto-kpz/vystrizky/boudy-z-vysky.png"></div>
     <div class="abs tag red big print" id="h-atag" style="left:90px; top:1150px; font-size:50px; line-height:1.15">Desítky boxů, v každém<br>jedno tele bez mámy</div>
-    <div class="abs tag green big print" id="h-btag" style="left:90px; top:1212px; font-size:44px; white-space:nowrap">Samo v boxu · často až 8 týdnů</div>
+    <div class="abs tag green big print" id="h-btag" style="left:90px; top:1212px; font-size:44px; white-space:nowrap">Samostatný box · často až 8 týdnů</div>
     <div class="abs tag yellow big print" id="h-stag" style="left:450px; top:622px; font-size:48px; white-space:nowrap">Společenské zvíře</div>
   </div></div>
 
@@ -392,7 +394,7 @@
     return pin * (1 - pout);
   };
   /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
-  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-photo2', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
+  const PHOTOS = ['#h0-photo', '#h-row', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-photo2', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
   const jiggle = (t) => PHOTOS.forEach((sel) => {
     const b = boil(Math.floor(t * 6) / 6, sel, 2, 0.6);
     $(sel + ' > img').style.transform = `translate(${b.x.toFixed(2)}px, ${b.y.toFixed(2)}px) rotate(${b.r.toFixed(3)}deg)`;
@@ -531,6 +533,10 @@
       set('#h-aerial', { x: -aOut * 1100, y: (1 - ap) * 120, r: -1.5, o: (t >= tBox ? 1 : 0) * (aOut < 1 ? 1 : 0) });
       popIn('#h-atag', t, W('hook3', 'většině') - 0.1, { r: -2, o: 1 - aOut });
       const bx = slideIn('#h-box', t, tSolo, 900, 0);
+      // „Ostatní telata vidí jen přes ohrádku“ → bouda odjede, přijede řada bud se sousedy
+      const rowIn = prog(t, W('hook3', 'Ostatní') - 0.3, 0.45, ease.inOutCubic);
+      if (rowIn > 0) set('#h-box', { x: (1 - bx) * 900 - rowIn * 1100, o: rowIn < 1 ? 1 : 0 });
+      set('#h-row', { x: (1 - rowIn) * 1100, r: 1, o: rowIn > 0 ? 1 : 0 });
       cutout('#h-bcalf', t, 'hb');
       popIn('#h-btag', t, W('hook3', 'samo') + 0.25, { r: -2 });
       popIn('#h-stag', t, W('hook3', 'společenské') - 0.1, { r: 3 });
