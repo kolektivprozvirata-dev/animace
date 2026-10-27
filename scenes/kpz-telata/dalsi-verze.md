@@ -183,7 +183,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 4 | 2026-10-27 | **2:10 alt1:** „…kde tele zůstává **s matkou**…“ → **„…s krávou…“** (část farem s kojnou). | hotovo v27 |
 | 5 | 2026-10-27 | **2:21 alt1b:** „…nutné není **ani z pohledu chovatelů**“ – návrh „Okamžité oddělení tedy nutné není. Jde to i jinak.“ → KPZ: **nechat beze změny**. | vyřízeno |
 
-## Do v28 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v28 (2026-10-27) – render `out/kpz-telata-reel-v28.mp4`, hlas `vo-v28.json` → `assets-v28/` (2:56,3), scénář `scenar-v28.md`
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-27 | **0:15 hook3:** dvakrát „v boxu“; KPZ: proti výtce „sousedé“ už argumentuje záběr z dronu s řadami bud → druhá věta pryč: **„Tele pak v drtivé většině chovů tráví týdny v samostatném boxu, přestože je to společenské zvíře.“** Zdroj bez vyhlášky. −2,5 s. | hotovo v28 |
+
+## Do v29 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

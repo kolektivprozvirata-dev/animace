@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.23.4**
+**Verze skillu: 0.23.5**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -139,3 +139,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-27 | 0.23.2 | kpz-telata v26 | „V 0:52 by mělo být ‚Například u tzv. masných krav‘, teď to nesedí, jak jsme upravili větu předtím.“ → „Udělej to.“ | **v26**: hyg3 „Například u tzv. …“ (bez „ale“). Poučení: při změně věty zkontrolovat i spojku na začátku následující (dva protiklady „nicméně … ale“ za sebou). |
 | 2026-10-27 | 0.23.3 | kpz-telata v26 | Kontrola „očima chytrého zemědělce“ → `kritika-zemedelce.md`. K AI fotkám: „normální člověk metadata neuvidí; jsou z Midjourney“; „u pastvin jde o to, že nechci krást cizí fotky… u holštýnek nemám problém přiznat, že jsou AI, ale psát to tam nebudeme.“ | Rozhodnutí zapsáno; připravena odpověď do komentářů. Oprava vlastní chyby: SynthID je jen u Google, ne u Midjourney. Poučení: AI původ poznat podle rozměrů/metadat jen jako náznak, ověřit u klienta; nenavrhovat „vylepšení“ AI obrázků, aby vypadaly víc jako skutečné (např. dokreslit čísla na známky). |
 | 2026-10-27 | 0.23.4 | kpz-telata v27 | Body ze „zemědělce“: fotky nic nepsat; „Nejčastěji slýcháme tyto čtyři“ nechat; „ostatní telata za ohrádkou zní jako 10, je to 1 zleva a 1 zprava, často ani to“ → „soused je nekonkrétní“ → „Jiné tele má nanejvýš ve vedlejším boxu“; „s krávou“; „ani z pohledu chovatelů“ nechat. „OK, udělej.“ | **v27**: 2 nové nahrávky. Vlastní chyba: při připínání kontextu sousedů jsem přepsal už připnutý kontext → 3 nezměněné věty se omylem namluvily znovu; vráceno na původní nahrávky z cache. Pravidlo pro práci: připnutý `previous_text`/`next_text` nikdy nepřepisovat, jen doplnit chybějící; změny scény dělat před spuštěním renderu (scéna se načte jednou na začátku). |
+| 2026-10-27 | 0.23.5 | kpz-telata v28 | „V 0:17 je dvakrát ‚v boxu‘… a proti té připomínce už argumentuje fotka s hromadou boudiček – nemusela by tam být vůbec.“ „Nechápu, prostě to udělej, jak to má být.“ „OK, udělej to.“ | **v28**: druhá věta pryč, 2:56,3. Poučení: když námitku už vyvrací obraz, nepřidávat kvůli ní větu do hlasu; KPZ nezatěžovat technickými detaily vlastních oprav. |
