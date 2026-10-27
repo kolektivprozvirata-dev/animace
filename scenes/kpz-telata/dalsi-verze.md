@@ -156,3 +156,6 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-27 | **0:17 veg2:** „Ať hned, nebo později**:** oddělit mládě…“ → **„Ať hned, nebo později, oddělit mládě od matky po porodu je kruté.“** (KPZ: jedna věta; bez „tak“). Přenamluvit jen veg2 (sousedé s pevným kontextem); v obraze `#v-eye` „Ať hned, nebo později,“. | rozhodnuto |
+| 2 | 2026-10-27 | **2:07 „kravami“** – dotaz KPZ, zda „krávami“: spisovně je 7. p. mn. č. **kravami** (krácení jako „žabami“). Beze změny. | vyřízeno |
+| 3 | 2026-10-27 | **0:44 karta „Přínos časného oddělení pro zdraví telat: neprokázán“** – zdroj na kartě „Beaver et al. 2019 · K. Bučková (VÚŽV), Náš chov 2020“ (v23 jen Bučková; metodika VÚŽV 2023 tvrdí opak). KPZ: „sedí to s tím, co říkáme ve videu?“ – vysvětleno, navržena i formulace „…ve studiích nejednoznačný“. | čeká na rozhodnutí |
