@@ -179,6 +179,6 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-27 | **Kontrola očima kritického zemědělce** (KPZ) → `kritika-zemedelce.md`: 5 vážných bodů (původ fotek / AI, chybí argument mlezivo, „vidí jen přes ohrádku“ × vyhláška hmatový kontakt, „ani z pohledu chovatelů“, „s matkou“ × kojná), 7 středních. | bod 1 (AI fotky): **neoznačovat** (KPZ – pastviny z Midjourney místo cizích fotek, holštýnky přiznají na dotaz); body 2–5 čekají |
 | 2 | 2026-10-27 | K fotkám se **nikde nic nepíše** (KPZ). Bod 2 (mlezivo): **nechat „Nejčastěji slýcháme tyto čtyři“**. | rozhodnuto |
-| 3 | 2026-10-27 | **0:15 hook3:** „Ostatní telata vidí jen přes ohrádku“ zní jako celé stádo za plotem – ve skutečnosti 1 zleva, 1 zprava, často ani to (prázdné boudy). Návrh: **„Sousedy má nanejvýš za ohrádkou, přestože je to společenské zvíře.“** | čeká na potvrzení |
+| 3 | 2026-10-27 | **0:15 hook3:** „Ostatní telata vidí jen přes ohrádku“ zní jako celé stádo za plotem – ve skutečnosti 1 zleva, 1 zprava, často ani to (prázdné boudy). KPZ potvrdili: **„Sousedy má nanejvýš za ohrádkou, přestože je to společenské zvíře.“** | rozhodnuto |
 | 4 | 2026-10-27 | **2:10 alt1:** „…kde tele zůstává **s matkou**…“ → **„…s krávou…“** (část farem s kojnou). | rozhodnuto |
-| 5 | 2026-10-27 | **2:21 alt1b:** „…nutné není **ani z pohledu chovatelů**“ – návrh „Okamžité oddělení tedy nutné není. Jde to i jinak.“ | čeká na rozhodnutí |
+| 5 | 2026-10-27 | **2:21 alt1b:** „…nutné není **ani z pohledu chovatelů**“ – návrh „Okamžité oddělení tedy nutné není. Jde to i jinak.“ → KPZ: **nechat beze změny**. | vyřízeno |
