@@ -150,3 +150,29 @@ Otázka: hrozí zalehnutí/ušlapání v porodně, nebo i v hale? (Kdyby jen v p
 - Kašná et al. 2022 (důvody vyřazení) – https://vuzv.cz/publikace/culling-reasons-in-czech-dairy-cattle/
 - Virginia Tech 2016 – https://www.sites.ext.vt.edu/newsletter-archive/dairy/pdfs/2016/DASC-77-pdf.pdf
 - Vývoz telat ČSÚ 2018 – https://csu.gov.cz/rychle-informace/zemedelstvi-4-ctvrtleti-a-rok-2018
+
+## F · České zdroje místo zahraničních (2026-10-27, dotaz KPZ: „dají se zahraniční vyměnit za české – to samé tvrzení?“)
+
+Ověřeno v plném textu (citace doslova):
+- **Vyhláška 208/2004 Sb.** (zakonyprolidi.cz/cs/2004-208): „Individuální kotce pro telata, kromě vyhrazených pro izolaci
+  nemocných zvířat, nesmějí mít celistvé stěny, ale stěny s otvory, které poskytují telatům přímý vizuální a hmatový kontakt
+  s ostatními“ → k nové větě „Ostatní telata vidí jen přes ohrádku“ (úvod). *Nový zdroj, dosud chyběl.*
+- **K. Bučková (VÚŽV), Náš chov 12/2020** – „Kontakt teľaťa s matkou a jeho zdravie“ (slovensky, naschov.cz 16. 11. 2020):
+  „Výsledky prác zameraných na vzťah zdravotného stavu teliat a predĺženého kontaktu s matkou sú variabilné. Niektoré práce
+  zistili pozitívny vplyv…, iné medzi nimi nenašli žiadny súvis a ďalšie zaznamenali negatívny vplyv“; „Žiadna z uvedených prác
+  nepotvrdila negatívny vzťah predĺženého kontaktu s matkou k respiračným problémom“; 3× nižší výskyt pneumonie u sajících telat
+  → stejné tvrzení jako Beaver et al. 2019 (karta „Přínos časného oddělení pro zdraví telat: neprokázán“).
+- **Náš chov 13. 1. 2026** – „Odchov telat u krav: úspěch možný, ale otázky zůstávají“ (přehled zahraničních studií, NL):
+  „sající telata rostla rychleji během prvních 10 týdnů života … než telata, která se oddělila od krávy do 24 hodin od narození“
+  → místo Flower & Weary 2001 (růst); „Tele může vypít až 20 litrů mléka denně; omezený systém umožňuje 8–12 litrů denně“
+  → místo Virginia Tech 2016 (karta „Tele: ~8–15 l denně“ by se musela změnit na „až ~20 l“).
+- **Náš chov 11. 1. 2018** – odstav telat masných krav 6–10 měsíců (viz B4) → místo NSW DPI.
+- **Stěhulová et al. 2008 (VÚŽV)** – už ve videu; sama dokládá „pozdější oddělení bolí víc“ → Weary & Chua 2000 a Flower &
+  Weary 2001 jsou u pouta navíc.
+- **Staněk et al. 2014 + VÚŽV 2023** – už ve videu; dokládají porodnu (67,6 % společné porodny; „infekční agens v porodním kotci“)
+  → EFSA 2023 a Nunney 2023 v řádku hygieny jsou navíc.
+
+Bez české náhrady: **EFSA 2023** pro „Často je to ale hned“ (český podíl „hned“ neexistuje; metodika VÚŽV 2023 jen *doporučuje*
+oddělit do 2 h – doporučení, ne praxe); **Meagher et al. 2019** pro „s mámou déle … víc společenské“ (české zdroje srovnávají
+jen individuální × párové/skupinové ustájení – Šárová 2021: „Párově odchovaná telata … se lépe socializují“, ne kontakt s matkou);
+**Eriksson et al. 2022** – hlas cituje přímo tuto studii („jedna studie popsala přes sto farem“).
