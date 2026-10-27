@@ -145,7 +145,14 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-27 | **0:41 hyg2 – vrátit „většinou“** (KPZ: „zapomněli jsme na ‚i když se většinou uklízejí‘“ – v návrhu pro v21 vypadlo): „A i když se **většinou** uklízejí, podlaha čistá nebude a bakteriím se tam daří.“ Nová nahrávka je o ~1 s delší (pomalejší tempo, ne pauzy; 2 další take se seedem po vyčištění delší) → 2:59,3. KPZ navrhli vyhodit „Zvíře není stroj ani zboží“ (−2,9 s) – doporučeno nechat (jádro videa, heslo s tichem). Místo toho pauzy: po „Není to bizarní…?“ 0,61→0,50, před „Za prvé/Za třetí“ −0,05, alt1b a dem2 −0,05, lead_in 0,1, tail 0,3 → **2:58,9**. | hotovo v22 (KPZ: heslo nechat – „OK, tak jo“) |
 
-## Do v23 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v23 (2026-10-27) – render `out/kpz-telata-reel-v23.mp4`, hlas `vo-v23.json` → `assets-v23/` (2:58,5), scénář `scenar-v23.md`
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-27 | **1:45 mil2:** „…primárně pro tele“ → **„…primárně pro své mládě“** (KPZ: zní, jako by každá matka dávala mléko pro tele). Nová nahrávka o 0,3 s kratší. Štítek „Pro tele“ u fotky beze změny. | hotovo v23 |
+| 2 | 2026-10-27 | **Zdroje:** řádky po tvrzeních místo po záběrech (hygiena měla 1 řádek na 20 s), české zdroje (Náš chov 2018 místo NSW DPI, Bučková 2020 na kartě místo Beaver, Náš chov 1/2026 místo Flower & Weary, Weary & Chua vypuštěni), „hned“ + metodika VÚŽV 2023, vyhláška 208/2004 k ohrádce, EFSA k zalehnutí; graf pouta 4.–7. den; popisek přepsán podle hlasu v23 (dřív text v9 s „hlavně v přeplněných halách“). Kontrola: `overeni-tvrzeni.md` část G. | hotovo v23 |
+
+## Do v24 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

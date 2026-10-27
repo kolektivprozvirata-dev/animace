@@ -176,3 +176,33 @@ Bez české náhrady: **EFSA 2023** pro „Často je to ale hned“ (český pod
 oddělit do 2 h – doporučení, ne praxe); **Meagher et al. 2019** pro „s mámou déle … víc společenské“ (české zdroje srovnávají
 jen individuální × párové/skupinové ustájení – Šárová 2021: „Párově odchovaná telata … se lépe socializují“, ne kontakt s matkou);
 **Eriksson et al. 2022** – hlas cituje přímo tuto studii („jedna studie popsala přes sto farem“).
+
+## G · Kontrola zdrojů v23 (2026-10-27, KPZ: „důkladně projdi zdroje s tím, co tvrdíme, a jestli se zdroje neobjevují v době, kdy se bavíme o něčem jiném“)
+
+**Načasování:** do v22 byl u každého záběru jeden řádek po celou dobu záběru – u hygieny 20 s (porodna, hala, karta studií
+i pastva dohromady, vč. NSW DPI k pastvě už během porodny), u přebytku mléka zdroj dojivosti už při „tele by to nevypilo“.
+Od v23 má každé tvrzení vlastní řádek jen po dobu, kdy zní / je v obraze (`srcParts()` ve scéně):
+
+| čas (v23) | tvrzení | zdroj v obraze |
+|---|---|---|
+| 0:04–0:11 | do 12 h na naprosté většině farem · často hned | Staněk 2014 (87,5 %), Šárová 2021 · EFSA 2023, metodika VÚŽV 2023 (doporučuje do 2 h) |
+| 0:11–0:20 | v drtivé většině chovů samostatný box, týdny (až 8) · sousedy jen přes ohrádku | Staněk 2014 (96,7 %) · Šárová 2021 · vyhl. 208/2004 Sb. |
+| 0:29–0:34 | společné porodny, nákazy | Staněk 2014 (67,6 %) · metodika VÚŽV 2023 |
+| 0:44–0:46 | karta „Přínos časného oddělení pro zdraví telat: neprokázán“ | zdroj přímo na kartě (Bučková 2020) – řádek by ji duplikoval |
+| 0:46–0:53 | masné krávy: telata s matkami měsíce | Náš chov 2018 (6–10 měsíců) |
+| 1:00–1:08 | zalehnutí hrozí, kde je moc krav na malém prostoru | EFSA 2023 (riziko při vysoké hustotě) |
+| 1:13–1:28 | pozdější oddělení bolí víc · s mámou déle rychlejší růst, víc společenské | Stěhulová 2008 · Náš chov 1/2026 · Meagher 2019 |
+| 1:47–1:53 | 1989 3 982 l → 2024 9 574 l · tele ~8–15 l / dojnice ~30 l | MZe/ČSÚ · MZe 2006 · Virginia Tech 2016 |
+| 2:11–2:28 | jedna studie, 104 farem, 7–305 dní, mléko se prodává | Eriksson 2022 |
+| 2:28–2:42 | býčci na jatka · dojnice vyřazované | Eriksson 2022 · Kašná 2022, Agropress 2025 |
+
+Graf u pouta: „4.–14. den“ → **„4.–7. den“** (zbyl jen Stěhulová 2008 = oddělení 1./4./7. den; 14. den pocházel z Flower & Weary).
+
+**Tvrzení bez zdroje v obraze (záměrně – postoj KPZ / úsudek):** „kruté“, „nejčastěji slýcháme tyto čtyři“ (zkušenost KPZ;
+zalehnutí jako častý argument v literatuře nedoloženo – A6), „na pastvě se o zalehnutí prakticky neslyší“ (B5), „bakteriím se tam daří“,
+„šlechtili na výkon“ (zjednodušení – genetika ≈ 56–60 % nárůstu dojivosti, zbytek výživa a management; D4).
+
+**Slabé místo k rozhodnutí KPZ:** metodika VÚŽV 2023 (kterou citujeme u porodny) zároveň tvrdí, že **včasné oddělení snižuje výskyt
+onemocnění** a delší kontakt s matkou zvyšuje riziko kryptosporidií a respiračních onemocnění. Karta „Přínos … neprokázán“ teď cituje
+jen Bučkovou 2020 („výsledky jsou variabilní“). Nejsilnější protiargument je Beaver et al. 2019 (systematický přehled 70 studií,
+„no consistent evidence in support of early separation“) – doporučeno ho na kartě ponechat vedle Bučkové.

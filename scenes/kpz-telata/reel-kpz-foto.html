@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v22/vo-timing.js"></script>
+<script src="assets-v23/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -140,7 +140,7 @@
     <div class="abs tag yellow big print" id="g-tag" style="left:110px; top:996px; white-space:nowrap">Spousta krav pod jednou střechou</div>
     <div class="abs tag red big print" id="g-tag3" style="left:110px; top:996px; white-space:nowrap">Výkaly + moč = bakterie</div>
     <div class="card" id="g-study" style="left:90px; top:1085px; width:900px; padding:24px 34px">
-      <div class="mono" style="color:var(--kpz-teal)">Přehled studií · Beaver et al. 2019</div>
+      <div class="mono" style="color:var(--kpz-teal)">Přehled studií · K. Bučková (VÚŽV), Náš chov 2020</div>
       <div class="h3" style="margin-top:6px">Přínos časného oddělení pro zdraví telat: <span class="hl" id="g-hl">neprokázán</span></div>
     </div>
     <!-- c) pastva -->
@@ -188,7 +188,7 @@
         <rect id="p-b1" x="70" y="140" width="190" height="60" fill="#8fa9a7"/>
         <rect id="p-b2" x="520" y="44" width="190" height="156" fill="var(--kpz-maroon)"/>
         <text x="165" y="126" text-anchor="middle" font-size="34" fill="var(--kpz-teal-d)">1. DEN</text>
-        <text x="615" y="32" text-anchor="middle" font-size="34" fill="var(--kpz-teal-d)">4.–14. DEN</text>
+        <text x="615" y="32" text-anchor="middle" font-size="34" fill="var(--kpz-teal-d)">4.–7. DEN</text>
       </svg>
     </div>
     <div class="abs tag big print" id="p-true" style="left:620px; top:845px; white-space:nowrap">Podle výzkumů</div>
@@ -362,13 +362,21 @@
     s10: [T('alt1') - LEAD, T('alt3') - LEAD], s11: [T('alt3') - LEAD, T('dem1') - LEAD],
     s12: [T('dem1') - LEAD, T('out') - LEAD], s13: [T('out') - LEAD, VO.duration + 1],
   };
-  const SRC = {
-    s1: 'Zdroj: Staněk et al. 2014 (VÚŽV, 136 farem) · R. Šárová, Náš chov 2021 · EFSA 2023',
-    s4: 'Zdroj: porodna – Staněk et al. 2014, VÚŽV 2023, EFSA 2023 · Beaver et al. 2019 · Nunney et al. 2023 · odstav tzv. masných telat obvykle 8–10 měsíců (NSW DPI)',
-    s6: 'Zdroj: Stěhulová et al. 2008 (VÚŽV) · Weary & Chua 2000 · Flower & Weary 2001 · Meagher et al. 2019',
-    s8: 'Zdroj: MZe/ČSÚ – dojivost 2024 · 1989: MZe Mléko 12/2006 · příjem telete: Virginia Tech 2016',
-    s10: 'Zdroj: Eriksson et al. 2022 (Animal; vzorek 104 farem) · vyřazování: Kašná et al. 2022 (VÚŽV) · Agropress 2025',
-  };
+  // řádky se zdroji: každý jen u tvrzení, ke kterému patří (v23 – dřív jeden řádek na celý záběr);
+  // české zdroje tam, kde říkají totéž co zahraniční (overeni-tvrzeni.md, část F)
+  let SRCS = null;
+  const srcParts = () => SRCS || (SRCS = [
+    [T('hook1'), T('hook3'), 'Zdroj: do 12 h – Staněk et al. 2014 (VÚŽV, 136 farem), Šárová, Náš chov 2021 · hned – EFSA 2023, metodika VÚŽV 2023 (doporučuje do 2 h)'],
+    [T('hook3'), C.s1[1], 'Zdroj: boxy na 96,7 % farem – Staněk et al. 2014 (VÚŽV) · do 8 týdnů – Šárová, Náš chov 2021 · kontakt jen přes ohrádku – vyhláška 208/2004 Sb.'],
+    [T('hyg2') - 0.1, W('hyg2', 'mámou') - 0.35, 'Zdroj: společné porodny na 67,6 % farem – Staněk et al. 2014 (VÚŽV) · nákazy v porodním kotci – metodika VÚŽV 2023'],
+    // (karta „Přehled studií · K. Bučková…“ má zdroj v sobě – řádek by ji duplikoval a překrýval)
+    [T('hyg3') - 0.2, T('hyg4') - 0.2, 'Zdroj: tzv. masné krávy – telata odstavená ve věku 6–10 měsíců (Náš chov 2018)'],
+    [T('cru2'), T('cru3') - 0.2, 'Zdroj: riziko úrazů telat při vysoké hustotě ustájení – EFSA 2023'],
+    [C.s6[0] + 0.4, C.s6[1], 'Zdroj: Stěhulová et al. 2008 (VÚŽV) · s mámou déle: rychlejší růst – Náš chov 1/2026, víc společenské – Meagher et al. 2019'],
+    [T('mil3') - 0.1, T('mil4') - 0.2, 'Zdroj: dojivost 2024 – MZe/ČSÚ · 1989 – MZe Mléko 12/2006 · příjem telete – Virginia Tech 2016'],
+    [C.s10[0] + 0.4, T('alt2') - 0.2, 'Zdroj: Eriksson et al. 2022 (Animal; vzorek 104 farem)'],
+    [T('alt2') - 0.2, C.s10[1], 'Zdroj: býčci – Eriksson et al. 2022 · vyřazování dojnic – Kašná et al. 2022 (VÚŽV), Agropress 2025'],
+  ]);
 
   /** zobrazí záběr, kamera pomalu najíždí, blur přes oba střihy */
   function frame(n, t, s0 = 1, s1 = 1.05, origin = '50% 45%') {
@@ -752,7 +760,7 @@
     const inDark = (t >= C.s7[0] && t < C.s7[1]) || (t >= C.s11[0] && t < C.s11[1]), inOutro = t >= C.s13[0];
     set('#wm', { o: inDark || inOutro ? 0 : prog(t, 0.3, 0.3) * 0.95 });
     let src = '';
-    for (const k in SRC) if (t >= (k === 's1' ? T('hook1') : C[k][0] + 0.4) && t < C[k][1]) src = SRC[k];
+    for (const [a, b, txt] of srcParts()) if (t >= a && t < b) src = txt;
     $('#src').textContent = src;
     set('#src', { o: src ? 0.9 : 0 });
     // titulek se skryje tam, kde stejnou větu nese velký nadpis

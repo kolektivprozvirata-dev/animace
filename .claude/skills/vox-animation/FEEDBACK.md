@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.21.1**
+**Verze skillu: 0.22.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -24,6 +24,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[data]** Předjímat první námitku kritiků a formulovat tak, aby ji tvrzení ustálo („samo v boxu“ × sousedé za ohrádkou → „v samostatném boxu, ostatní telata vidí jen přes ohrádku“); u každé věty si položit otázku „co nám vyčtou?“. _(2026-10-27, kpz-telata v21)_
 - **[branding]** Logo KPZ jako vodoznak vlevo nahoře + logo v outru (`brand/kpz/`). _(2026-10-14, kpz-telata)_
 - **[data]** Na obrazovce u každého tvrzení drobný řádek „Zdroj: …“; plný seznam zdrojů do popisku příspěvku. _(2026-10-14, kpz-telata)_
+- **[data]** Řádek „Zdroj: …“ je vidět **jen po dobu tvrzení, ke kterému patří** (ne celý záběr – jinak visí u jiného tématu); zdroj přímo na kartě řádkem neduplikovat. U videí pro ČR přednostně **české zdroje**, pokud říkají totéž; zahraniční jen tam, kde český údaj neexistuje. Popisek příspěvku aktualizovat s každou verzí hlasu. _(2026-10-27, kpz-telata v23)_
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
 - **[data]** Odlišit doložený současný stav od hypotézy: kde zvířata dnes nejsou (např. telata v hale), mluvit podmiňovacím způsobem („v hale, kam by tele muselo“) a argument přiřadit chovatelům („údajně“); nepoužívat „hlavně/nejčastěji“ bez měření. _(2026-10-21, kpz-telata – dotaz KPZ k zalehnutí)_
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
@@ -131,3 +132,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-26 | 0.20.4 | kpz-telata v20 | „‚…nutné není ani z pohledu chovatelů. A přebytek mléka je jen výmluva, která se jim hodí, ne důvod.‘ – souhlas. Udělej další verzi.“ „Tak limit je 2:59.“ | **v20**: mil2 „tolik ho tvoří“, alt1b nová věta (+ řádek „ani z pohledu chovatelů“ v kartě, karta a štítek výš), „dřív“ bez useknutí; 2:57,6. Limit [formát] 2:58 → **2:59**. |
 | 2026-10-27 | 0.21.0 | kpz-telata v21 | „0:15 ‚samo v boxu‘ – boudičky jsou vedle sebe, to je první, co nám vyčtou“ → alternativa v hlase; „dron v 0:13 už sousedy ukazuje, další fotku tam nedávej“; „0:41 i po uklizení zůstává směs s močí, čistý to nebude“ → „podlaha čistá nebude“. „Renderuj.“ | **v21**: hook3 + hyg2 nové nahrávky, pauzy zkrácené (19× −0,06 s aj.) kvůli limitu 2:59 → 2:58,3; štítek „Samostatný box“. Pravidlo [data] „co nám vyčtou?“. |
 | 2026-10-27 | 0.21.1 | kpz-telata v22 | „Zapomněli jsme na ‚i když se většinou uklízejí‘.“ „Pro zkrácení oddělat ‚Zvíře není stroj ani zboží‘? Co myslíš?“ → doporučeno nechat, ubrat pauzy → „OK, tak jo.“ | **v22**: hyg2 s „většinou“, pauzy −0,3 s → 2:58,9. Poučení: při přepisu věty KPZ držet všechna jejich slova (vypadlé „většinou“); zkracovat nejdřív pauzy, ne obsahové pointy. |
+| 2026-10-27 | 0.22.0 | kpz-telata v23 | „Zdroj porodna by měl být jen do přechodu k halám.“ „1:45 ‚primárně pro mládě‘.“ „NSW DPI – nemělo bychom mít české zdroje?“ „Dají se vyměnit i další?“ „Udělej to tak a důkladně projdi zdroje s tím, co tvrdíme, a jestli se neobjevují, když se bavíme o něčem jiném.“ | Scéna: `srcParts()` (řádky po tvrzeních s časy podle slov), české zdroje ověřené v plném textu (Náš chov 2018/2020/2021/2026, vyhl. 208/2004, metodika VÚŽV 2023), graf pouta 4.–7. den, popisek přepsán; audit v `overeni-tvrzeni.md` G. Pravidlo [data]. |
