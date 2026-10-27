@@ -177,4 +177,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-27 | **Kontrola očima kritického zemědělce** (KPZ) → `kritika-zemedelce.md`: 5 vážných bodů (původ fotek / AI, chybí argument mlezivo, „vidí jen přes ohrádku“ × vyhláška hmatový kontakt, „ani z pohledu chovatelů“, „s matkou“ × kojná), 7 středních. | čeká na rozhodnutí KPZ |
+| 1 | 2026-10-27 | **Kontrola očima kritického zemědělce** (KPZ) → `kritika-zemedelce.md`: 5 vážných bodů (původ fotek / AI, chybí argument mlezivo, „vidí jen přes ohrádku“ × vyhláška hmatový kontakt, „ani z pohledu chovatelů“, „s matkou“ × kojná), 7 středních. | bod 1 (AI fotky): **neoznačovat** (KPZ – pastviny z Midjourney místo cizích fotek, holštýnky přiznají na dotaz); body 2–5 čekají |

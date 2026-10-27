@@ -15,6 +15,12 @@ Skutečné fotografie z farem mívají jiné rozměry (např. 2000×1125 boudy, 
 „ilustrační obrázek (AI)“. Pozor i na evropský AI Act: od 2. 8. 2026 se mají realisticky vypadající AI obrázky
 označovat (čl. 50) – ověřit s právníkem. U hal zhora (tisková fotka) ověřit licenci.
 
+**Rozhodnutí KPZ (2026-10-27):** obrázky ve videu **neoznačovat**. Pastviny jsou z Midjourney, aby se nepoužívaly cizí fotky
+bez svolení – neukazují nic zavádějícího. U vyřezaných holštýnek KPZ přiznají AI, pokud se někdo zeptá. Viditelná slabina:
+prázdné ušní známky (v EU musí mít každý skot známku s kódem). Připravená odpověď do komentářů: „Ano, některé ilustrační
+obrázky zvířat jsme vytvořili pomocí AI, abychom nepoužívali cizí fotky bez svolení. Čísla a tvrzení ve videu jsou skutečná,
+zdroje najdete v popisku.“
+
 ### 2. Chybí hlavní argument chovatelů: mlezivo
 **Útok:** „Zalehnutí jste si vymysleli jako slabý argument, a ten hlavní vynechali. Tele u matky nevypije dost
 mleziva – podle VÚŽV až 50 % telat. Proto se odděluje a napájí se z kbelíku. Stojí to v metodice, kterou sami citujete.“
