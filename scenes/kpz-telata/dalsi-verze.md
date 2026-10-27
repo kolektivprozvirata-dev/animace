@@ -161,7 +161,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 3 | 2026-10-27 | **0:44 karta „Přínos časného oddělení pro zdraví telat: neprokázán“** – zdroj na kartě „Beaver et al. 2019 · K. Bučková (VÚŽV), Náš chov 2020“ (v23 jen Bučková; metodika VÚŽV 2023 tvrdí opak). KPZ: „sedí to s tím, co říkáme ve videu?“ – vysvětleno. KPZ: varianta B bez dvojtečky → **„Přínos časného oddělení pro zdraví telat je ve studiích nejednoznačný“**, zdroj na kartě „Beaver et al. 2019 · K. Bučková (VÚŽV), Náš chov 2020“. Dotaz KPZ „neříkáme tím, že je kvůli bakteriím oddělit musí?“ – vysvětleno: riziko v těchto podmínkách přiznáváme záměrně (problém = prostředí vytvořené chovateli, odebrání telete = „řešení“ na úkor telete a mámy; schéma Problém → ~~Víc prostoru a úklid~~ → Odebrat tele). | hotovo v24 |
 | 4 | 2026-10-27 | **0:45 hyg2b – nová věta v hlase:** KPZ: „určitě i do hlasu“ – **„Výzkumy přitom jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější.“** hned za „…bakteriím se tam daří“, kdy naskočí karta. Kvůli délce: hyg3 „U tzv. masných krav na pastvě je ale prostoru dost…“ (bez „Zajímavé je, že například“), loop „…a kravami vyšlechtěnými…“ (anchor `vyšlechtěn`) a celý hlas **tempo 1.016** (ffmpeg atempo, nová volba `tts.py`) → 2:58,3. Sousedé změněných vět s pevným kontextem. | hotovo v24 |
 
-## Do v25 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v25 (2026-10-27) – render `out/kpz-telata-reel-v25.mp4`, hlas `vo-v25.json` → `assets-v25/` (2:58,5), scénář `scenar-v25.md`
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-27 | **0:45 hyg2b:** KPZ „Nicméně, výzkumy přitom…“ → bez zdvojení a bez čárky: **„Nicméně výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější.“** Nová nahrávka jen hyg2b. | hotovo v25 |
+
+## Do v26 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

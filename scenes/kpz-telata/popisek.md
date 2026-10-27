@@ -1,9 +1,9 @@
-# Popisek k reelu (návrh, v24 – Instagram, 2:58)
+# Popisek k reelu (návrh, v25 – Instagram, 2:58)
 
 Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu – často je to ale hned. Pak tráví týdny v samostatném boxu a ostatní telata vidí jen přes ohrádku, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
 
 Chovatelé mají několik argumentů. Nejčastěji slýcháme tyto čtyři – a co o nich víme:
-1️⃣ Hygiena – krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. S mámou by tele muselo do velkokapacitní haly: spousta krav pod jednou střechou, výkaly a moč přibývají průběžně, a i když se většinou uklízejí, čistá podlaha nebude. Výzkumy přitom jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější. U tzv. masných krav na pastvě zůstávají telata s matkami měsíce.
+1️⃣ Hygiena – krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. S mámou by tele muselo do velkokapacitní haly: spousta krav pod jednou střechou, výkaly a moč přibývají průběžně, a i když se většinou uklízejí, čistá podlaha nebude. Nicméně výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější. U tzv. masných krav na pastvě zůstávají telata s matkami měsíce.
 2️⃣ Zalehnutí – údajně hrozí tam, kde je moc krav na malém prostoru. Na pastvě u tzv. masných krav se o něm prakticky neslyší. Problém je opět v tom, kolik krav chovatelé nahromadí na jedno místo.
 3️⃣ Pouto – pozdější oddělení podle výzkumů bolí víc. Přitom tele, které zůstane s mámou déle, lépe roste a je společenštější. Takže aby je odloučení nebolelo, odloučí je dřív. Není to bizarní důsledek systému?
 4️⃣ Přebytek mléka – jako každá máma, i kráva dává mléko primárně pro své mládě. Tzv. dojnice dnes v Česku tvoří v průměru přes 9 500 litrů mléka ročně – protože ji lidé desítky let šlechtili na výkon.

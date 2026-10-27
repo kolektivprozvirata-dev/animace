@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.23.0**
+**Verze skillu: 0.23.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -135,3 +135,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-27 | 0.21.1 | kpz-telata v22 | „Zapomněli jsme na ‚i když se většinou uklízejí‘.“ „Pro zkrácení oddělat ‚Zvíře není stroj ani zboží‘? Co myslíš?“ → doporučeno nechat, ubrat pauzy → „OK, tak jo.“ | **v22**: hyg2 s „většinou“, pauzy −0,3 s → 2:58,9. Poučení: při přepisu věty KPZ držet všechna jejich slova (vypadlé „většinou“); zkracovat nejdřív pauzy, ne obsahové pointy. |
 | 2026-10-27 | 0.22.0 | kpz-telata v23 | „Zdroj porodna by měl být jen do přechodu k halám.“ „1:45 ‚primárně pro mládě‘.“ „NSW DPI – nemělo bychom mít české zdroje?“ „Dají se vyměnit i další?“ „Udělej to tak a důkladně projdi zdroje s tím, co tvrdíme, a jestli se neobjevují, když se bavíme o něčem jiném.“ | Scéna: `srcParts()` (řádky po tvrzeních s časy podle slov), české zdroje ověřené v plném textu (Náš chov 2018/2020/2021/2026, vyhl. 208/2004, metodika VÚŽV 2023), graf pouta 4.–7. den, popisek přepsán; audit v `overeni-tvrzeni.md` G. Pravidlo [data]. |
 | 2026-10-27 | 0.23.0 | kpz-telata v24 | „Ať hned nebo později – jedna věta.“ „Karta: B, ale místo ‚:‘ ‚je‘.“ „Nepřiznáváme tím, že je musí oddělit?“ + „Vysvětli mi to jako 8letému… ne s dětmi, s kravami, mám ADHD.“ → „Určitě i do hlasu… pošli to celý, renderuj.“ | **v24**: veg2 s čárkou, nová věta hyg2b, karta „…je ve studiích nejednoznačný“ (Beaver + Bučková), kratší hyg3 a loop, `tts.py` volba `tempo` (atempo celého hlasu) → 2:58,3. Poučení ke komunikaci: vysvětlovat krátce, v bodech, jen na tématu (krávy), bez odboček a analogií z jiné oblasti. |
+| 2026-10-27 | 0.23.1 | kpz-telata v25 | „Co kdyby tam bylo ‚Nicméně, výzkumy přitom‘ – poukazuje na to, že přestože argumentují hygienou…“ → „OK, udělej to.“ | **v25**: „Nicméně výzkumy jednoznačně nepotvrzují…“ (bez „přitom“ – zdvojený odporovací výraz; bez čárky za „nicméně“). |
