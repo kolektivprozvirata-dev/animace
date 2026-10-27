@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v23/vo-timing.js"></script>
+<script src="assets-v24/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -86,7 +86,7 @@
 
   <!-- 2 · VEGANSKÝ POHLED -->
   <div id="s2" class="layer"><div class="world" id="w2">
-    <div class="abs eyebrow" id="v-eye" style="left:80px; top:320px">Ať hned, nebo později:</div>
+    <div class="abs eyebrow" id="v-eye" style="left:80px; top:320px">Ať hned, nebo později,</div>
     <div class="abs h1 kblocks print" id="v-head" style="left:70px; top:390px; width:940px"><span class="kb">Oddělit mládě</span><br><span class="kb cream">od matky je</span><br><span class="kb hl" id="v-hl">kruté.</span></div>
     <svg class="abs" id="v-tl" width="1080" height="400" style="left:0; top:900px">
       <line x1="80" y1="200" x2="1000" y2="200" stroke="var(--kpz-teal-d)" stroke-width="5"/>
@@ -140,8 +140,8 @@
     <div class="abs tag yellow big print" id="g-tag" style="left:110px; top:996px; white-space:nowrap">Spousta krav pod jednou střechou</div>
     <div class="abs tag red big print" id="g-tag3" style="left:110px; top:996px; white-space:nowrap">Výkaly + moč = bakterie</div>
     <div class="card" id="g-study" style="left:90px; top:1085px; width:900px; padding:24px 34px">
-      <div class="mono" style="color:var(--kpz-teal)">Přehled studií · K. Bučková (VÚŽV), Náš chov 2020</div>
-      <div class="h3" style="margin-top:6px">Přínos časného oddělení pro zdraví telat: <span class="hl" id="g-hl">neprokázán</span></div>
+      <div class="mono" style="color:var(--kpz-teal)">Přehledy studií · Beaver et al. 2019 · K. Bučková (VÚŽV), Náš chov 2020</div>
+      <div class="h3" style="margin-top:6px">Přínos časného oddělení pro zdraví telat je ve studiích <span class="hl" id="g-hl">nejednoznačný</span></div>
     </div>
     <!-- c) pastva -->
     <div class="kpz-cut" id="g-past" style="left:40px; top:430px; width:1000px"><img src="assets/foto-kpz/vystrizky/masne-pastva-kojeni-tvar.png"></div>
@@ -591,8 +591,8 @@
       popIn('#g-tag3', t, W('hyg2', 'výkaly'), { r: 2, o: 1 - prog(t, t3 - 0.2, 0.2) });
       BG.forEach((g, i) => { const p = pop(t, W('hyg2', 'bakteriím') - 0.2 + i * 0.08, 0.3); const b = boil(t, 'bg' + i, 3, 8);
         set('#bgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
-      slideIn('#g-study', t, W('hyg2', 'bakteriím') + 0.4, 0, 120, 0, 0.4, 1 - prog(t, t3 - 0.2, 0.3));
-      highlight('#g-hl', prog(t, W('hyg2', 'bakteriím') + 1.0, 0.6, ease.inOutSine));
+      slideIn('#g-study', t, T('hyg2b') - 0.1, 0, 120, 0, 0.4, 1 - prog(t, t3 - 0.2, 0.3));
+      highlight('#g-hl', prog(t, W('hyg2b', 'nepotvrzují'), 0.6, ease.inOutSine));
       // c) pastva tzv. masných krav
       panelIO('#g-past', t, t3 - 0.2, t4 - 0.15);
       popIn('#g-tag2', t, W('hyg3', 'telata') - 0.1, { r: -2, o: 1 - prog(t, t4 - 0.15, 0.2) });
@@ -680,7 +680,7 @@
     // ---------- 9 · BIZARNÍ KRUH ----------
     if (frame('s9', t, 1.0, 1.05, '50% 42%')) {
       const t0 = T('loop');
-      const tn = [W('loop', 'velkokapacitní'), W('loop', 'plnými'), W('loop', 'vyšlechtěné'), W('loop', 'Důsledek'), W('loop', 'vezme')];
+      const tn = [W('loop', 'velkokapacitní'), W('loop', 'plnými'), W('loop', 'vyšlechtěn'), W('loop', 'Důsledek'), W('loop', 'vezme')];
       fadeUp('#l-eye', t, t0);
       ['#l-n0', '#l-n1', '#l-n2', '#l-n3', '#l-n4'].forEach((s, i) => node(s, pop(t, tn[i] - 0.1), boil(t, s, 1, .4)));
       for (let i = 0; i < 5; i++) {

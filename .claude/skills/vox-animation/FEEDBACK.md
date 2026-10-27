@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.22.0**
+**Verze skillu: 0.23.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -33,6 +33,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
 - **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[komunikace]** S KPZ si **tykáme**. _(2026-10-19)_
+- **[komunikace]** Vysvětlovat **krátce, v číslovaných bodech a jen na tématu videa** (krávy, ne analogie z jiné oblasti); jedna myšlenka na bod, na konci shrnutí jednou větou. _(2026-10-27, KPZ: „mám ADHD, blbě se soustředím a ztrácím se v tom“)_
 - **[workflow]** Když KPZ upraví scénář, projít i **část B (texty v grafice)** a každou změnu propsat do scény – ne jen hlas. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
@@ -133,3 +134,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-27 | 0.21.0 | kpz-telata v21 | „0:15 ‚samo v boxu‘ – boudičky jsou vedle sebe, to je první, co nám vyčtou“ → alternativa v hlase; „dron v 0:13 už sousedy ukazuje, další fotku tam nedávej“; „0:41 i po uklizení zůstává směs s močí, čistý to nebude“ → „podlaha čistá nebude“. „Renderuj.“ | **v21**: hook3 + hyg2 nové nahrávky, pauzy zkrácené (19× −0,06 s aj.) kvůli limitu 2:59 → 2:58,3; štítek „Samostatný box“. Pravidlo [data] „co nám vyčtou?“. |
 | 2026-10-27 | 0.21.1 | kpz-telata v22 | „Zapomněli jsme na ‚i když se většinou uklízejí‘.“ „Pro zkrácení oddělat ‚Zvíře není stroj ani zboží‘? Co myslíš?“ → doporučeno nechat, ubrat pauzy → „OK, tak jo.“ | **v22**: hyg2 s „většinou“, pauzy −0,3 s → 2:58,9. Poučení: při přepisu věty KPZ držet všechna jejich slova (vypadlé „většinou“); zkracovat nejdřív pauzy, ne obsahové pointy. |
 | 2026-10-27 | 0.22.0 | kpz-telata v23 | „Zdroj porodna by měl být jen do přechodu k halám.“ „1:45 ‚primárně pro mládě‘.“ „NSW DPI – nemělo bychom mít české zdroje?“ „Dají se vyměnit i další?“ „Udělej to tak a důkladně projdi zdroje s tím, co tvrdíme, a jestli se neobjevují, když se bavíme o něčem jiném.“ | Scéna: `srcParts()` (řádky po tvrzeních s časy podle slov), české zdroje ověřené v plném textu (Náš chov 2018/2020/2021/2026, vyhl. 208/2004, metodika VÚŽV 2023), graf pouta 4.–7. den, popisek přepsán; audit v `overeni-tvrzeni.md` G. Pravidlo [data]. |
+| 2026-10-27 | 0.23.0 | kpz-telata v24 | „Ať hned nebo později – jedna věta.“ „Karta: B, ale místo ‚:‘ ‚je‘.“ „Nepřiznáváme tím, že je musí oddělit?“ + „Vysvětli mi to jako 8letému… ne s dětmi, s kravami, mám ADHD.“ → „Určitě i do hlasu… pošli to celý, renderuj.“ | **v24**: veg2 s čárkou, nová věta hyg2b, karta „…je ve studiích nejednoznačný“ (Beaver + Bučková), kratší hyg3 a loop, `tts.py` volba `tempo` (atempo celého hlasu) → 2:58,3. Poučení ke komunikaci: vysvětlovat krátce, v bodech, jen na tématu (krávy), bez odboček a analogií z jiné oblasti. |

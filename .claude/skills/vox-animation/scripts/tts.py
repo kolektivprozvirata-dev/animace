@@ -46,6 +46,8 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
   - nádechy mezi slovy a na konci vět se vystřihnou (debreath, podle časů slov) – místo nich ticho
     nejvýš „breath_pause“ s (výchozí 0,15), na konci segmentu jen pauza „pause“/„gap“; nechat je:
     „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
+  - „tempo“: 1.015 ve vo.json = celý hlas o 1,5 % rychleji (ffmpeg atempo, výška beze změny, časy titulků se přepočtou)
+    – na doladění délky bez nového namlouvání; do ~3 % neslyšitelné
   - zvuk před prvním / za posledním slovem segmentu se ztlumí (clean_edges – lupnutí na konci
     nahrávek; „clean_edges“: false); pod celý hlas jde tichý šum prostoru „room_tone“ (dBFS RMS,
     výchozí -66 u ElevenLabs, null = vypnout), ať mezi slovy není digitální ticho („střih“).
@@ -391,6 +393,7 @@ def main():
     ls = a.length_scale or spec.get('length_scale', 1.0)
     gap = spec.get('gap', 0.35)
     lead_in = spec.get('lead_in', 0.4)
+    tempo = float(spec.get('tempo', 1.0))   # např. 1.015 = o 1,5 % rychleji (atempo, výška stejná)
     tail = spec.get('tail', 1.5)
 
     tmp = tempfile.mkdtemp(prefix='vox-tts-')
@@ -430,6 +433,15 @@ def main():
                 breaths += nb
             if al and al.get('character_end_times_seconds') and spec.get('clean_edges', True):
                 clean_edges(p, al)
+        if tempo != 1.0:
+            # celý hlas o pár procent rychleji, výška beze změny (ffmpeg atempo); časy znaků se přepočtou
+            st = p[:-4] + '-t.wav'
+            subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', p,
+                            '-filter:a', f'atempo={tempo}', st], check=True)
+            os.replace(st, p)
+            if al:
+                al = dict(al, **{k: [x / tempo for x in al[k]] for k in
+                                 ('character_start_times_seconds', 'character_end_times_seconds') if k in al})
         with wave.open(p) as wf:
             sr = wf.getframerate()
             dur = wf.getnframes() / sr
