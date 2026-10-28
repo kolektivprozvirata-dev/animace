@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v28/vo-timing.js"></script>
+<script src="assets-v29/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -33,6 +33,8 @@
   .dark-bg { position: absolute; inset: 0; }
   .ring-node { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; text-align: center; }
   .ring-node.tag { line-height: 1.05; font-size: 44px; }
+  .ilu { right: 74px; bottom: 70px; font: 600 24px/1 Inter, sans-serif; letter-spacing: .02em; color: #f7eef1;
+         background: rgba(30, 20, 26, .55); padding: 6px 10px 7px; border-radius: 3px; }
   .panel { position: absolute; left: 90px; top: 430px; width: 900px; height: 640px; overflow: hidden;
            border: 12px solid var(--kpz-cream); box-sizing: border-box; }
   .stk { position: absolute; }
@@ -78,7 +80,7 @@
       <div class="kpz-cut" id="hb-d" style="left:-110px; top:-60px; width:1000px"><img src="assets/foto-kpz/vystrizky/farma-z-vysky.png"></div>
     </div>
     <!-- v7: řady individuálních boxů z dronu, pak detail jednoho telete -->
-    <div class="kpz-cut" id="h-aerial" style="left:80px; top:600px; width:920px"><img src="assets/foto-kpz/vystrizky/boudy-z-vysky.png"></div>
+    <div class="kpz-cut" id="h-aerial" style="left:80px; top:600px; width:920px"><img src="assets/foto-kpz/vystrizky/boudy-z-vysky.png"><div class="abs ilu">Ilustrační záběr</div></div>
     <div class="abs tag red big print" id="h-atag" style="left:90px; top:1150px; font-size:50px; line-height:1.15">Desítky boxů, v každém<br>jedno tele bez mámy</div>
     <div class="abs tag green big print" id="h-btag" style="left:90px; top:1212px; font-size:44px; white-space:nowrap">Samostatný box · často až 8 týdnů</div>
     <div class="abs tag yellow big print" id="h-stag" style="left:450px; top:622px; font-size:48px; white-space:nowrap">Společenské zvíře</div>
@@ -129,8 +131,9 @@
     <div class="abs tag yellow big print" id="g-ptag" style="left:110px; top:996px; white-space:nowrap">Společná porodna: 2/3 farem</div>
     <div class="kpz-cut" id="g-photo" style="left:40px; top:400px; width:1000px"><img src="assets/foto-kpz/vystrizky/hala-stan-zhora.png">
       <div class="abs tag green big" style="left:50px; top:50px">Velkokapacitní hala</div>
+      <div class="abs ilu">Ilustrační záběr</div>
     </div>
-    <div class="kpz-cut" id="g-photo2" style="left:40px; top:400px; width:1000px"><img src="assets/foto-kpz/vystrizky/hala-kravy-slama-cela.png"></div>
+    <div class="kpz-cut" id="g-photo2" style="left:40px; top:400px; width:1000px"><img src="assets/foto-kpz/vystrizky/hala-kravy-slama-cela.png"><div class="abs ilu">Ilustrační záběr</div></div>
     <div class="panel" id="g-barn" style="background:#d2b8a3">
       <svg width="900" height="640" style="position:absolute;left:0;top:0" id="g-dirt"></svg>
       <div id="g-herd"></div>
@@ -370,7 +373,7 @@
     [T('hook3'), C.s1[1], 'Zdroj: boxy na 96,7 % farem – Staněk et al. 2014 (VÚŽV) · do 8 týdnů – Šárová, Náš chov 2021'],
     [T('hyg2') - 0.1, W('hyg2', 'mámou') - 0.35, 'Zdroj: společné porodny na 67,6 % farem – Staněk et al. 2014 (VÚŽV) · nákazy v porodním kotci – metodika VÚŽV 2023'],
     // (karta „Přehled studií · K. Bučková…“ má zdroj v sobě – řádek by ji duplikoval a překrýval)
-    [T('hyg3') - 0.2, T('hyg4') - 0.2, 'Zdroj: tzv. masné krávy – telata odstavená ve věku 6–10 měsíců (Náš chov 2018)'],
+    [T('hyg3') - 0.2, T('hyg2b') - 0.2, 'Zdroj: tzv. masné krávy – telata odstavená ve věku 6–10 měsíců (Náš chov 2018)'],
     [T('cru2'), T('cru3') - 0.2, 'Zdroj: riziko úrazů telat při vysoké hustotě ustájení – EFSA 2023'],
     [C.s6[0] + 0.4, C.s6[1], 'Zdroj: Stěhulová et al. 2008 (VÚŽV) · s mámou déle: rychlejší růst – Náš chov 1/2026, víc společenské – Meagher et al. 2019'],
     [T('mil3') - 0.1, T('mil4') - 0.2, 'Zdroj: dojivost 2024 – MZe/ČSÚ · 1989 – MZe Mléko 12/2006 · příjem telete – Virginia Tech 2016'],
@@ -585,21 +588,22 @@
       popIn('#g-ptag', t, W('hyg2', 'společných') - 0.1, { r: -2, o: 1 - prog(t, tHall, 0.2) });
       panelIO('#g-photo', t, tHall, tSwap);
       panelIO('#g-photo2', t, tSwap, tDirt);
-      panelIO('#g-barn', t, tDirt, t3 - 0.2);
+      const tR = T('hyg2b') - 0.2;   // „Ani v kravínech ale výzkumy…“ – hala se vrátí s kartou studií
+      if (t < tR - 0.1) panelIO('#g-barn', t, tDirt, t3 - 0.2); else panelIO('#g-barn', t, tR, t4 - 0.15);
       animHerd('gh', NG, t, tDirt + 0.25);
       popIn('#g-tag', t, W('hyg2', 'spousta'), { r: -2, o: 1 - prog(t, W('hyg2', 'výkaly') - 0.2, 0.2) });
       popIn('#g-tag3', t, W('hyg2', 'výkaly'), { r: 2, o: 1 - prog(t, t3 - 0.2, 0.2) });
       BG.forEach((g, i) => { const p = pop(t, W('hyg2', 'bakteriím') - 0.2 + i * 0.08, 0.3); const b = boil(t, 'bg' + i, 3, 8);
         set('#bgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
-      slideIn('#g-study', t, T('hyg2b') - 0.1, 0, 120, 0, 0.4, 1 - prog(t, t3 - 0.2, 0.3));
+      slideIn('#g-study', t, tR + 0.2, 0, 120, 0, 0.4, 1 - prog(t, t4 - 0.15, 0.3));
       highlight('#g-hl', prog(t, W('hyg2b', 'nepotvrzují'), 0.6, ease.inOutSine));
       // c) pastva tzv. masných krav
-      panelIO('#g-past', t, t3 - 0.2, t4 - 0.15);
-      popIn('#g-tag2', t, W('hyg3', 'telata') - 0.1, { r: -2, o: 1 - prog(t, t4 - 0.15, 0.2) });
+      panelIO('#g-past', t, t3 - 0.2, tR);
+      popIn('#g-tag2', t, W('hyg3', 'telata') - 0.1, { r: -2, o: 1 - prog(t, tR, 0.2) });
       // d) schéma
       const sch = prog(t, t4 - 0.05, 0.35);
       set('#g-sch', { o: sch, y: (1 - sch) * 40 });
-      set('#g-strike', { sx: prog(t, t4 + 0.8, 0.35, ease.outCubic) });
+      set('#g-strike', { sx: prog(t, W('hyg4', 'problém'), 0.35, ease.outCubic) });
       popIn('#g-res', t, W('hyg4', 'Odnese') + 0.2, { r: -3 });
     }
     // ---------- 5 · ZALEHNUTÍ ----------

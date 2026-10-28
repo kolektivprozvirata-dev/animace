@@ -189,7 +189,14 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-27 | **0:15 hook3:** dvakrát „v boxu“; KPZ: proti výtce „sousedé“ už argumentuje záběr z dronu s řadami bud → druhá věta pryč: **„Tele pak v drtivé většině chovů tráví týdny v samostatném boxu, přestože je to společenské zvíře.“** Zdroj bez vyhlášky. −2,5 s. | hotovo v28 |
 
-## Do v29 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v29 (2026-10-28) – render `out/kpz-telata-reel-v29.mp4`, hlas `vo-v29.json` → `assets-v29/` (2:58,8), scénář `scenar-v29.md`
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-28 | **Hygiena – nové pořadí** (KPZ: výzkumy rozbíjely kontrast hala × pastva): hala → **„Oproti tomu u tzv. masných krav na pastvě…“** → **„Ani v kravínech ale výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější.“** (vrací se kreslená hala s kartou studií) → **„I kdyby měli chovatelé pravdu, problém je stejně v prostředí, které sami vytvořili. Odnese to, jak jinak, tele a jeho máma.“** (KPZ navrhli „Pokud bychom ale přistoupili na rétoriku některých chovatelů…“ – zjednodušeno). Nové nahrávky 3 vět (o 3,6 s delší) → tempo 1,016 → 1,022, závěrečné ticho 0,2 s = 2:58,8. Přeškrtnutí „Víc prostoru a úklid“ při „problém“. | hotovo v29 |
+| 2 | 2026-10-28 | **„Ilustrační záběr“** (KPZ: krýt se, že nenapadáme konkrétní kravín) – malý nápis v rohu skutečných fotek z farem: boudy z dronu, hala zhora, krávy ve slámě (`.ilu`). | hotovo v29 |
+
+## Do v30 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

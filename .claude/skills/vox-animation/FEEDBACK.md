@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.23.5**
+**Verze skillu: 0.24.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -40,6 +40,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
 - **[formát]** Pro Instagram držet reel **pod 3:00, max. 2:59** (KPZ 2026-10-26; dřív bezpečně 2:58) (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
+- **[obsah]** Skutečné fotky z farem označit malým nápisem **„Ilustrační záběr“** (KPZ – nenapadáme konkrétní kravín). _(2026-10-28, kpz-telata v29)_
 - **[obsah]** Na fotkách z konkrétních farem rozmazat loga a názvy podniků (i značky zařízení) – video kritizuje systém, ne jednu farmu. _(2026-10-26, kpz-telata v18)_
 - **[technika]** Na tmavém pozadí zvýrazněný text musí být čitelný i před podbarvením (světlý → tmavý při zvýraznění). _(2026-10-14, kpz-telata v2)_
 - **[vizuál]** Když klient pošle svou grafiku „ať je to podobné“: převzít **jen vizuál** (písmo, barvy, textury, tvary bloků, dekor, logo), ne obsah, hesla ani fotky – fotky jen ty, které klient dodá k videu. Styl zapsat jako téma do `brand/<klient>/`. _(2026-10-19, kpz-telata v4-kpz)_
@@ -140,3 +141,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-27 | 0.23.3 | kpz-telata v26 | Kontrola „očima chytrého zemědělce“ → `kritika-zemedelce.md`. K AI fotkám: „normální člověk metadata neuvidí; jsou z Midjourney“; „u pastvin jde o to, že nechci krást cizí fotky… u holštýnek nemám problém přiznat, že jsou AI, ale psát to tam nebudeme.“ | Rozhodnutí zapsáno; připravena odpověď do komentářů. Oprava vlastní chyby: SynthID je jen u Google, ne u Midjourney. Poučení: AI původ poznat podle rozměrů/metadat jen jako náznak, ověřit u klienta; nenavrhovat „vylepšení“ AI obrázků, aby vypadaly víc jako skutečné (např. dokreslit čísla na známky). |
 | 2026-10-27 | 0.23.4 | kpz-telata v27 | Body ze „zemědělce“: fotky nic nepsat; „Nejčastěji slýcháme tyto čtyři“ nechat; „ostatní telata za ohrádkou zní jako 10, je to 1 zleva a 1 zprava, často ani to“ → „soused je nekonkrétní“ → „Jiné tele má nanejvýš ve vedlejším boxu“; „s krávou“; „ani z pohledu chovatelů“ nechat. „OK, udělej.“ | **v27**: 2 nové nahrávky. Vlastní chyba: při připínání kontextu sousedů jsem přepsal už připnutý kontext → 3 nezměněné věty se omylem namluvily znovu; vráceno na původní nahrávky z cache. Pravidlo pro práci: připnutý `previous_text`/`next_text` nikdy nepřepisovat, jen doplnit chybějící; změny scény dělat před spuštěním renderu (scéna se načte jednou na začátku). |
 | 2026-10-27 | 0.23.5 | kpz-telata v28 | „V 0:17 je dvakrát ‚v boxu‘… a proti té připomínce už argumentuje fotka s hromadou boudiček – nemusela by tam být vůbec.“ „Nechápu, prostě to udělej, jak to má být.“ „OK, udělej to.“ | **v28**: druhá věta pryč, 2:56,3. Poučení: když námitku už vyvrací obraz, nepřidávat kvůli ní větu do hlasu; KPZ nezatěžovat technickými detaily vlastních oprav. |
+| 2026-10-28 | 0.24.0 | kpz-telata v29 | „Pod záběry z kravínu ‚Ilustrativní záběry‘ – abychom se kryli.“ „V 0:51 výzkumy narušují kontinuitu – dát je až po masných kravách: ‚Nicméně, i když se vrátíme ke kravínům…‘“ → návrh pořadí; „‚Pokud bychom ale přistoupili na rétoriku některých chovatelů…‘ – nekomplikujeme to?“ → „I kdyby měli chovatelé pravdu…“ → „Super, udělej to, i s nápisy – gramaticky správně.“ | **v29**: nové pořadí hygieny, hala se vrací s kartou, `.ilu` nápisy, tempo 1,022. Pravidlo [obsah]. Nástroj: kontext nezměněných vět se počítá z předchozí verze a připíná automaticky (nepřegenerují se). |
