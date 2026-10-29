@@ -1,0 +1,191 @@
+{
+ "engine": "elevenlabs",
+ "voice_id": "dSByRdUbTGloB7TFA1qD",
+ "model_id": "eleven_multilingual_v2",
+ "el_cache": "el-cache",
+ "gap": 0.18,
+ "lead_in": 0.1,
+ "tail": 0.2,
+ "segments": [
+  {
+   "id": "hook0",
+   "text": "Válí se vaše jídlo ve svých vlastních *výkalech?*",
+   "pause": 0.35,
+   "el": {
+    "model_id": "eleven_v3",
+    "context": false,
+    "seed": 44
+   }
+  },
+  {
+   "id": "hook1",
+   "text": "Než kuře skončí na talíři, žije ve většině případů v hale s *desítkami tisíc* dalších.",
+   "pause": 0.17,
+   "el": {
+    "context": false
+   }
+  },
+  {
+   "id": "hook2",
+   "text": "Celý jeho život trvá jen kolem *30 dní.*",
+   "pause": 0.17,
+   "say": "Celý jeho život trvá jen kolem třiceti dní."
+  },
+  {
+   "id": "hook3",
+   "text": "A celou tu dobu žije na *stejné podestýlce*, která se nemění.",
+   "pause": 0.3
+  },
+  {
+   "id": "foto1",
+   "text": "Možná znáte fotky z hal, které vám ukazují prodejci tzv. kuřecího: roztomilá malá žlutá kuřátka na *čisté podestýlce*, kde má každé kuřátko spoustu prostoru.",
+   "pause": 0.17,
+   "say": "Možná znáte fotky z hal, které vám ukazují prodejci takzvaného kuřecího: roztomilá malá žlutá kuřátka na čisté podestýlce, kde má každé kuřátko spoustu prostoru."
+  },
+  {
+   "id": "foto2",
+   "text": "Tak ale hala vypadá *jen na začátku.*",
+   "pause": 0.3,
+   "el": {
+    "previous_text": "Možná znáte fotky z hal: malá žlutá kuřátka na čisté podestýlce."
+   }
+  },
+  {
+   "id": "rust1",
+   "text": "Kuřata jsou vyšlechtěná na rychlý růst. Za pár týdnů z malého kuřátka vyroste kuře kolem *dvou kil.*",
+   "pause": 0.2,
+   "el": {
+    "next_text": "V hale je pořád stejný počet kuřat. Jen rostou. Ke konci má každé zhruba plochu listu á čtyři."
+   }
+  },
+  {
+   "id": "rust2",
+   "text": "V hale je pořád stejný počet kuřat. Jen víc a víc rostou. Ke konci má každé zhruba plochu *listu A4.*",
+   "pause": 0.2,
+   "say": "V hale je pořád stejný počet kuřat. Jen víc a víc rostou. Ke konci má každé zhruba plochu listu á čtyři."
+  },
+  {
+   "id": "trus1",
+   "say": "A čím jsou větší, tím víc trusu vyprodukují. Za celý výkrm odhadem dvě kila, skoro tolik, kolik kuře samo váží.",
+   "text": "A čím jsou větší, tím víc trusu vyprodukují. Za celý výkrm odhadem *dvě kila* – skoro tolik, kolik kuře samo váží.",
+   "pause": 0.3,
+   "el": {
+    "previous_text": "V hale je pořád stejný počet kuřat. Jen rostou. Ke konci má každé zhruba plochu listu á čtyři."
+   }
+  },
+  {
+   "id": "pod1",
+   "text": "Všechen ten trus padá do *stejné podestýlky.* Ta se po celou dobu výkrmu *nemění.*",
+   "pause": 0.17,
+   "el": {
+    "next_text": "Nanejvýš se na ni přisype trocha nové. Ta stará zůstává pod ní. Vyklidí se až po vyskladnění, když kuřata odvezou na jatka."
+   }
+  },
+  {
+   "id": "pod2",
+   "text": "Nanejvýš se na ni přisype trocha nové. Ta stará zůstává pod ní. Vyklidí se až po tzv. vyskladnění těchto živých tvorů, když kuřata odvezou na jatka.",
+   "pause": 0.25,
+   "say": "Nanejvýš se na ni přisype trocha nové. Ta stará zůstává pod ní. Vyklidí se až po takzvaném vyskladnění těchto živých tvorů, když kuřata odvezou na jatka."
+  },
+  {
+   "id": "pod3",
+   "text": "Měnit podestýlku zvířatům, která za pár týdnů stejně pojedou na jatka?",
+   "pause": 0.25,
+   "el": {
+    "model_id": "eleven_v3",
+    "context": false
+   }
+  },
+  {
+   "id": "pod4",
+   "text": "S tím tenhle systém zaměřený na zisk *nepočítá.*",
+   "pause": 0.35,
+   "el": {
+    "context": false
+   }
+  },
+  {
+   "id": "lez1",
+   "text": "V posledních týdnech kuřata *většinu dne leží.* A leží v tom, co se za celý výkrm nahromadilo.",
+   "pause": 0.2,
+   "el": {
+    "previous_text": "S tím tenhle systém nepočítá."
+   }
+  },
+  {
+   "id": "lez2",
+   "text": "Přitom se kuřata přirozeně koupou v suchém prachu – tak si čistí peří.",
+   "pause": 0.2
+  },
+  {
+   "id": "lez3",
+   "text": "Tady se *válí ve vlastních výkalech.*",
+   "pause": 0.3
+  },
+  {
+   "id": "lez4",
+   "text": "To, co se na konci z haly vyveze, už se ani nepočítá jako podestýlka, ale jako *hnojivo.*",
+   "pause": 0.3
+  },
+  {
+   "id": "dus1",
+   "text": "Z trusu se uvolňuje *čpavek.* Dráždí kuřatům oči a dýchací cesty.",
+   "pause": 0.17
+  },
+  {
+   "id": "dus2",
+   "text": "A kůže, která je dlouho ve vlhkém trusu, se zanítí. Kuřata mají bolestivé *popáleniny* na chodidlech, hleznech i na hrudi.",
+   "pause": 0.45,
+   "el": {
+    "next_text": "Ta fotka s kuřátky na čisté podestýlce nelže."
+   }
+  },
+  {
+   "id": "poi1",
+   "text": "Ty reklamní fotky a videa s kuřátky na čisté podestýlce nelžou.",
+   "pause": 0.35,
+   "cap": false,
+   "el": {
+    "context": false
+   }
+  },
+  {
+   "id": "poi2",
+   "text": "Jen jsou z prvních dnů jejich pobytu v této obří hale.",
+   "pause": 0.45,
+   "cap": false
+  },
+  {
+   "id": "poi3",
+   "text": "Kdyby vám měli zemědělci ukázat, jak vypadá hala pár dní před odvozem na jatka, moc lichotivé by to nebylo.",
+   "pause": 0.2
+  },
+  {
+   "id": "poi4",
+   "text": "Kdybyste měli stát v té hale a cítit puch z výkalů, možná by vás chuť na toto zneužívané zvíře přešla.",
+   "pause": 0.45
+  },
+  {
+   "id": "zav1",
+   "text": "V Česku jich ročně skončí na jatkách přes *110 milionů.* Celý ten systém ale neběží sám od sebe. Běží, protože kuřecí maso *kupujeme.*",
+   "pause": 0.2,
+   "say": "V Česku jich ročně skončí na jatkách přes sto deset milionů. Celý ten systém ale neběží sám od sebe. Běží, protože kuřecí maso kupujeme.",
+   "el": {
+    "context": false
+   }
+  },
+  {
+   "id": "zav2",
+   "text": "Vystoupit z něj ale můžeme. *Rostlinných alternativ* je spousta.",
+   "pause": 0.3,
+   "el": {
+    "previous_text": "V Česku se jich ročně porazí přes sto deset milionů. Celý ten systém běží, protože kuřecí maso kupujeme."
+   }
+  },
+  {
+   "id": "out",
+   "text": "Kolektiv pro zvířata. Zdroje v popisku.",
+   "cap": false
+  }
+ ]
+}

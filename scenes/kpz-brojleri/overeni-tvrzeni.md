@@ -137,3 +137,13 @@ a EFSA, fotky jsou „Ilustrační záběr“ bez loga a názvu farmy → riziko
 - ❌ „Chovatelům se nevyplatí měnit podestýlku“ jako tvrzení o motivu – doložené nemáme; ve videu jako ironická otázka o logice systému
   („…zvířatům, která za pár týdnů pojedou na jatka?“), ne jako výrok o chovatelích (brand KPZ: kritizujeme systém, ne lidi).
 - ⚠️ Výkrm 28 dní – český zdroj jsme nenašli (nejkratší doložené 30 dní, ČZU 2024).
+
+## v2 – nová tvrzení z textu KPZ (2026-10-29)
+
+| tvrzení | stav | poznámka |
+|---|---|---|
+| „Fotky z hal, které vám ukazují prodejci… / reklamní fotky a videa s kuřátky… jsou z prvních dnů“ | ⚠️ doloženo příkladem | Kampaň obchodního řetězce „Královské kuře“ (2021): podle mluvčích natočena na skutečných farmách a ptáci byli **jednodenní kuřátka** (MediaGuru 9/2021; arecenze.cz) – jen výňatky, weby z prostředí nejdou otevřít. Řetězec ve videu nejmenovat (soudní spor s OBRAZ, Městský soud v Praze nařídil OBRAZu omluvu za některé výroky – nepravomocně). Kolik reklam ukazuje mladá kuřata, nikdo neměřil – formulace „Možná znáte…“ / „Ty reklamní fotky…“ neříká „všechny“. |
+| „ve většině případů v hale s desítkami tisíc dalších“ | ⚠️ | Přesný podíl nemáme. Konvenční výkrm v halách převažuje (Ross 308 / Cobb, 6–7 turnusů ročně; haly 28–45 tis. kuřat – Náš chov 2021, Seznam Zprávy 2024; ekologický výkrm je okrajový). Kdyby to někdo napadl: „většina produkce pochází z velkochovů“. |
+| „Celý jeho život trvá jen kolem 30 dní“ | ✅ | ČZU (Chodová, Náš chov 2024): Ross a Cobb v ČR 30–35 dní; na obrazovce „ČR: 30–35 dní“. Pozor: JČU 2017 uvádí 35–42 dní, Habart 2024 „jateční váha za 35 dní“. |
+| „V Česku jich ročně v těchto podmínkách žije 110 milionů. Je to zároveň stejný počet kuřat, které skončí na jatkách.“ | ❌ → upraveno | 116 mil. (ČSÚ 2025) je počet **poražených** kuřat. Živých je víc (část uhyne v hale – v testech 2–5 %), a „v těchto podmínkách“ u všech doložené nemáme. Ve v2: „V Česku jich ročně skončí na jatkách přes 110 milionů.“ |
+| „cítit puch z výkalů“ | ✅ | čpavek z trusu – VFU (Kosťuková, Náš chov 2023), VÚŽV 2024. |

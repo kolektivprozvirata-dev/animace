@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.25.1**
+**Verze skillu: 0.26.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -32,6 +32,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75, v8: ~0.73 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
+- **[workflow]** Text hlasu k úpravám posílat KPZ jako **`hlas-vN.txt`** (UTF-8 s BOM, Windows konce řádků – otevřou ho v Poznámkovém bloku), věta na řádek, *hvězdičky* = zvýraznění. KPZ ho upraví a pošlou zpět; nové se namlouvají jen změněné věty (u nezměněných připnout `previous_text`/`next_text` z minulé verze). _(2026-10-29, kpz-brojleri)_
 - **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[komunikace]** S KPZ si **tykáme**. _(2026-10-19)_
 - **[komunikace]** Vysvětlovat **krátce, v číslovaných bodech a jen na tématu videa** (krávy, ne analogie z jiné oblasti); jedna myšlenka na bod, na konci shrnutí jednou větou. _(2026-10-27, KPZ: „mám ADHD, blbě se soustředím a ztrácím se v tom“)_
@@ -146,3 +147,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-29 | 0.24.1 | kpz-telata v30 | „Co musím napsat do dalšího chatu, aby měl všechny informace?“ → prompt + `brand/kpz/README.md` (aktuální hlas, „Nové video pro KPZ“). „V 0:37 přidej ještě tuto fotku; na pastvinách taky ‚Ilustrační záběr‘.“ „Klidně renderuj.“ | **v30**: 3. fotka haly (krávy v boxech na roštech) při „výkaly a moč přibývají“, `.ilu` i na pastvinách; hlas v29. |
 | 2026-10-29 | 0.25.0 | kpz-brojleri v1 (scénář) | Nové video: kuřata se na konci výkrmu válí ve výkalech, podestýlka se nemění; hook otázkou „Válí se vaše jídlo ve výkalech?“. Během rešerše: „Dívej se i po investigativních zdrojích, nejenom zdroje zemědělců.“ „Popalují se jim nohy – dobře to popisují OBRAZ, Zvířata nejíme.“ „Primární message je, že se válí ve výkalech, ostatní jen k tomu.“ „Fotky dodám, zatím tam hoď provizorní.“ | `scenes/kpz-brojleri/` – `overeni-tvrzeni.md` (VÚŽV 2024 „neměněná podestýlka“, vyhl. 208/2004 § 11, EFSA 2023, investigace + soudní spor OBRAZ), `scenar-v1.md` (≈ 1:50) ke schválení; pravidlo [data] o investigativních zdrojích; README KPZ krok 1. Nic nevygenerováno ani nerenderováno. |
 | 2026-10-29 | 0.25.1 | kpz-brojleri v1 | „Potvrzuju ti vše, abys mohl pokračovat.“ (scénář v1 schválen, povolen push) | **v1**: hlas ElevenLabs `vo-v1.json` (1:57,5; otázky – 9 verzí, nejvíc stoupá původní hook0 +2,8 půltónu, řečnická otázka skoro rovná → `dalsi-verze.md`), provizorní fotky kuřat z `xiannovoa/poultry-weight-dataset` (váha přemalovaná / vymaskovaná), scéna `reel-kpz-foto.html` (10 záběrů, schéma haly s rostoucími kuřaty, řez podestýlkou, kalendář 35 dní), render `out/kpz-brojleri-reel-v1.mp4`, popisek. SKILL 2f: zdroj provizorních fotek kuřat. |
+| 2026-10-29 | 0.26.0 | kpz-brojleri v2 | „Kde si můžu stáhnout ten voiceover? Upravil bych ho.“ → „Myslel jsem textový dokument… v poznámkovým bloku.“ → poslán `hlas-v1.txt`; KPZ ho upravili: „Přizpůsob tomu animaci.“ | **v2**: 13 nových nahrávek (zbytek z v1 s připnutým kontextem), otázka hook0 – 7 verzí, vybrán seed 44 (+2,9 půltónu); opraveny čárky, „zhruba kolem“, „chuť … přešla“, „zneužívané“; věta „žije 110 milionů … stejný počet jako na jatkách“ → „skončí na jatkách přes 110 milionů“ (poražená ≠ žijící); pointa = 2 polaroidy (Den 1 × „?“ pár dní před jatky) a zápach; záběr „Kuře není jídlo“ vypuštěn (KPZ větu smazali). Pravidlo [workflow] o `hlas-vN.txt`. |
