@@ -200,3 +200,5 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-10-29 | **0:38 třetí fotka haly** (KPZ): krávy ležící v boxech, zezadu, rošty (`foto-kpz/hala-boxy-lezi.jpg` → kus `vystrizky/hala-boxy-lezi.png`; čísla nečitelná, bez loga) – při „výkaly a moč přibývají“ (krávy ve slámě do té doby), kreslená hala až při „uklízejí“. „Ilustrační záběr“ i na ní. | ve scéně (náhled poslán) |
+| 2 | 2026-10-29 | **„Ilustrační záběr“ i na pastvinách** (0:46 a 1:06), uvnitř nepravidelného tvaru. | ve scéně (náhled poslán) |

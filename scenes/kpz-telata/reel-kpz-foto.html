@@ -134,6 +134,7 @@
       <div class="abs ilu">Ilustrační záběr</div>
     </div>
     <div class="kpz-cut" id="g-photo2" style="left:40px; top:400px; width:1000px"><img src="assets/foto-kpz/vystrizky/hala-kravy-slama-cela.png"><div class="abs ilu">Ilustrační záběr</div></div>
+    <div class="kpz-cut" id="g-photo3" style="left:90px; top:380px; width:900px"><img src="assets/foto-kpz/vystrizky/hala-boxy-lezi.png"><div class="abs ilu">Ilustrační záběr</div></div>
     <div class="panel" id="g-barn" style="background:#d2b8a3">
       <svg width="900" height="640" style="position:absolute;left:0;top:0" id="g-dirt"></svg>
       <div id="g-herd"></div>
@@ -147,7 +148,7 @@
       <div class="h3" style="margin-top:6px">Přínos časného oddělení pro zdraví telat je ve studiích <span class="hl" id="g-hl">nejednoznačný</span></div>
     </div>
     <!-- c) pastva -->
-    <div class="kpz-cut" id="g-past" style="left:40px; top:430px; width:1000px"><img src="assets/foto-kpz/vystrizky/masne-pastva-kojeni-tvar.png"></div>
+    <div class="kpz-cut" id="g-past" style="left:40px; top:430px; width:1000px"><img src="assets/foto-kpz/vystrizky/masne-pastva-kojeni-tvar.png"><div class="abs ilu" style="right:110px; bottom:95px">Ilustrační záběr</div></div>
     <div class="abs tag green big print" id="g-tag2" style="left:90px; top:950px; font-size:50px; line-height:1.15">Tzv. masné krávy:<br>telata s matkami měsíce</div>
     <!-- d) schéma -->
     <div class="abs" id="g-sch" style="left:90px; top:430px; width:900px">
@@ -167,7 +168,7 @@
       <div id="z-herd"></div>
     </div>
     <div class="abs tag red big print" id="z-tag" style="left:110px; top:1050px; white-space:nowrap">Hodně zvířat, málo prostoru</div>
-    <div class="kpz-cut" id="z-past" style="left:40px; top:450px; width:1000px"><img src="assets/foto-kpz/vystrizky/masne-pastva-lezi2-tvar.png"></div>
+    <div class="kpz-cut" id="z-past" style="left:40px; top:450px; width:1000px"><img src="assets/foto-kpz/vystrizky/masne-pastva-lezi2-tvar.png"><div class="abs ilu" style="right:110px; bottom:95px">Ilustrační záběr</div></div>
     <div class="abs tag green big print" id="z-tag2" style="left:110px; top:960px; white-space:nowrap">Tzv. masné krávy: prostor</div>
     <div class="abs" id="z-sch" style="left:90px; top:430px; width:900px">
       <div class="eyebrow">Problém</div>
@@ -403,7 +404,7 @@
     return pin * (1 - pout);
   };
   /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
-  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-photo2', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
+  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#g-calf', '#g-photo', '#g-photo2', '#g-photo3', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
   const jiggle = (t) => PHOTOS.forEach((sel) => {
     const b = boil(Math.floor(t * 6) / 6, sel, 2, 0.6);
     $(sel + ' > img').style.transform = `translate(${b.x.toFixed(2)}px, ${b.y.toFixed(2)}px) rotate(${b.r.toFixed(3)}deg)`;
@@ -579,7 +580,8 @@
       GERMS.forEach((g, i) => { const p = pop(t, W('hyg1', 'nenakazilo') - 0.4 + i * 0.1, 0.3); const b = boil(t, 'g' + i, 3, 8);
         set('#germ' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 - outA : 0 }); });
       // b) kravín
-      const tDirt = W('hyg2', 'přibývají') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
+      const tDirt = W('hyg2', 'uklízejí') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
+      const tBoxy = W('hyg2', 'výkaly') - 0.3;   // v30: krávy v boxech na roštech (KPZ)
       const tSwap = W('hyg2', 'spousta') - 0.25;
       panelIO('#g-pen', t, t2 - 0.2, tHall);
       ['#gp-c1', '#gp-c2', '#gp-c3', '#gp-k'].forEach((sel, i) => cutout(sel, t, 'gpc' + i, 0, 0, GPR[i]));
@@ -587,7 +589,8 @@
         set('#pgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
       popIn('#g-ptag', t, W('hyg2', 'společných') - 0.1, { r: -2, o: 1 - prog(t, tHall, 0.2) });
       panelIO('#g-photo', t, tHall, tSwap);
-      panelIO('#g-photo2', t, tSwap, tDirt);
+      panelIO('#g-photo2', t, tSwap, tBoxy);
+      panelIO('#g-photo3', t, tBoxy, tDirt);
       const tR = T('hyg2b') - 0.2;   // „Ani v kravínech ale výzkumy…“ – hala se vrátí s kartou studií
       if (t < tR - 0.1) panelIO('#g-barn', t, tDirt, t3 - 0.2); else panelIO('#g-barn', t, tR, t4 - 0.15);
       animHerd('gh', NG, t, tDirt + 0.25);
