@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.24.1**
+**Verze skillu: 0.24.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -143,3 +143,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-27 | 0.23.5 | kpz-telata v28 | „V 0:17 je dvakrát ‚v boxu‘… a proti té připomínce už argumentuje fotka s hromadou boudiček – nemusela by tam být vůbec.“ „Nechápu, prostě to udělej, jak to má být.“ „OK, udělej to.“ | **v28**: druhá věta pryč, 2:56,3. Poučení: když námitku už vyvrací obraz, nepřidávat kvůli ní větu do hlasu; KPZ nezatěžovat technickými detaily vlastních oprav. |
 | 2026-10-28 | 0.24.0 | kpz-telata v29 | „Pod záběry z kravínu ‚Ilustrativní záběry‘ – abychom se kryli.“ „V 0:51 výzkumy narušují kontinuitu – dát je až po masných kravách: ‚Nicméně, i když se vrátíme ke kravínům…‘“ → návrh pořadí; „‚Pokud bychom ale přistoupili na rétoriku některých chovatelů…‘ – nekomplikujeme to?“ → „I kdyby měli chovatelé pravdu…“ → „Super, udělej to, i s nápisy – gramaticky správně.“ | **v29**: nové pořadí hygieny, hala se vrací s kartou, `.ilu` nápisy, tempo 1,022. Pravidlo [obsah]. Nástroj: kontext nezměněných vět se počítá z předchozí verze a připíná automaticky (nepřegenerují se). |
 | 2026-10-29 | 0.24.1 | kpz-telata v30 | „Co musím napsat do dalšího chatu, aby měl všechny informace?“ → prompt + `brand/kpz/README.md` (aktuální hlas, „Nové video pro KPZ“). „V 0:37 přidej ještě tuto fotku; na pastvinách taky ‚Ilustrační záběr‘.“ „Klidně renderuj.“ | **v30**: 3. fotka haly (krávy v boxech na roštech) při „výkaly a moč přibývají“, `.ilu` i na pastvinách; hlas v29. |
+| 2026-10-29 | 0.24.2 | kpz-telata v31 | „V 1:24 dej tuto fotku krávy a telete místo těch, co tam jsou.“ | **v31**: pouto = kráva s teletem vedle (výstřižek). |

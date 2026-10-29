@@ -203,7 +203,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 1 | 2026-10-29 | **0:38 třetí fotka haly** (KPZ): krávy ležící v boxech, zezadu, rošty (`foto-kpz/hala-boxy-lezi.jpg` → kus `vystrizky/hala-boxy-lezi.png`; čísla nečitelná, bez loga) – při „výkaly a moč přibývají“ (krávy ve slámě do té doby), kreslená hala až při „uklízejí“. „Ilustrační záběr“ i na ní. | hotovo v30 |
 | 2 | 2026-10-29 | **„Ilustrační záběr“ i na pastvinách** (0:46 a 1:06), uvnitř nepravidelného tvaru. | hotovo v30 |
 
-## Do v31 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v31 (2026-10-29) – render `out/kpz-telata-reel-v31.mp4`, hlas beze změny (`assets-v29/`, 2:58,8)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-29 | **1:24 pouto – nová fotka** (KPZ): holštýnka a tele stojící vedle ní (`foto-kpz/krava-tele-vedle.webp` → výstřižek `vystrizky/krava-tele-vedle.png`, `--largest`) místo krávy se sajícím teletem; `#p-photo` šířka 780, top 405. Původní `pouto-krava-tele.png` jinde ve videu není. | hotovo v31 |
+
+## Do v32 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

@@ -17,6 +17,7 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | hala-kravy-slama.webp/.jpg | holštýnky ležící ve slámě ve staré hale (KPZ 2026-10-26) | `-upr.jpg` (čísla na známkách/obojcích rozostřená) → celá jako kus `hala-kravy-slama-cela.png` – v18 0:37 (blob `hala-kravy-slama.png` = zamítnutá koláž) |
 | hala-krmny-zlab.webp/.jpg | holštýnky v krmném žlabu, modrý tón (KPZ 2026-10-26) | `-upr.jpg` (274601 rozostřené) → blob `hala-krmny-zlab.png` – rezerva (koláž zamítnuta) |
 | hala-boxy-lezi.jpg | holštýnky ležící v boxech zezadu, rošty (KPZ 2026-10-29, 1024 px; práva ověřit) | kus `hala-boxy-lezi.png` – v30 hygiena 0:38 („výkaly a moč přibývají“) |
+| krava-tele-vedle.webp | holštýnka a tele stojící vedle ní, světlé pozadí (KPZ 2026-10-29, Midjourney) | výstřižek `krava-tele-vedle.png` – v31 pouto 1:24 |
 | masne-pastva-rada.jpg | krávy s telaty jdou v řadě po svahu (KPZ 2026-10-25) | zatím nepoužito (zvířata malá) |
 | masne-pastva-celem.jpg | krávy čelem k fotografovi, ležící kráva s teletem (KPZ 2026-10-25) | zatím nepoužito (málo telat) |
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
@@ -76,3 +77,4 @@ v16 (2026-10-25) – nové pastviny (čísla na známkách nečitelně malá, be
     python3 $S hala-krmny-zlab-upr.jpg vystrizky/hala-krmny-zlab.png --shape blob --tight 0.5 --seed 32 --crop 540,280,1540,1000 --scale 0.6
     python3 $S hala-kravy-slama-upr.jpg vystrizky/hala-kravy-slama-cela.png --piece --seed 22 --scale 0.6   # v18: celá fotka
     python3 $S hala-boxy-lezi.jpg vystrizky/hala-boxy-lezi.png --piece --seed 24 --scale 1.2   # v30
+    python3 $S krava-tele-vedle.webp vystrizky/krava-tele-vedle.png --largest   # v31
