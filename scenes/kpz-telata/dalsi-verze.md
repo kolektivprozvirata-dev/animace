@@ -196,9 +196,14 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 1 | 2026-10-28 | **Hygiena – nové pořadí** (KPZ: výzkumy rozbíjely kontrast hala × pastva): hala → **„Oproti tomu u tzv. masných krav na pastvě…“** → **„Ani v kravínech ale výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější.“** (vrací se kreslená hala s kartou studií) → **„I kdyby měli chovatelé pravdu, problém je stejně v prostředí, které sami vytvořili. Odnese to, jak jinak, tele a jeho máma.“** (KPZ navrhli „Pokud bychom ale přistoupili na rétoriku některých chovatelů…“ – zjednodušeno). Nové nahrávky 3 vět (o 3,6 s delší) → tempo 1,016 → 1,022, závěrečné ticho 0,2 s = 2:58,8. Přeškrtnutí „Víc prostoru a úklid“ při „problém“. | hotovo v29 |
 | 2 | 2026-10-28 | **„Ilustrační záběr“** (KPZ: krýt se, že nenapadáme konkrétní kravín) – malý nápis v rohu skutečných fotek z farem: boudy z dronu, hala zhora, krávy ve slámě (`.ilu`). | hotovo v29 |
 
-## Do v30 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v30 (2026-10-29) – render `out/kpz-telata-reel-v30.mp4`, hlas beze změny (`assets-v29/`, 2:58,8), scénář `scenar-v29.md`
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-10-29 | **0:38 třetí fotka haly** (KPZ): krávy ležící v boxech, zezadu, rošty (`foto-kpz/hala-boxy-lezi.jpg` → kus `vystrizky/hala-boxy-lezi.png`; čísla nečitelná, bez loga) – při „výkaly a moč přibývají“ (krávy ve slámě do té doby), kreslená hala až při „uklízejí“. „Ilustrační záběr“ i na ní. | ve scéně (náhled poslán) |
-| 2 | 2026-10-29 | **„Ilustrační záběr“ i na pastvinách** (0:46 a 1:06), uvnitř nepravidelného tvaru. | ve scéně (náhled poslán) |
+| 1 | 2026-10-29 | **0:38 třetí fotka haly** (KPZ): krávy ležící v boxech, zezadu, rošty (`foto-kpz/hala-boxy-lezi.jpg` → kus `vystrizky/hala-boxy-lezi.png`; čísla nečitelná, bez loga) – při „výkaly a moč přibývají“ (krávy ve slámě do té doby), kreslená hala až při „uklízejí“. „Ilustrační záběr“ i na ní. | hotovo v30 |
+| 2 | 2026-10-29 | **„Ilustrační záběr“ i na pastvinách** (0:46 a 1:06), uvnitř nepravidelného tvaru. | hotovo v30 |
+
+## Do v31 (sbírá se – nevyrábět, dokud KPZ neřekne)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
