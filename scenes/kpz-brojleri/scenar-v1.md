@@ -1,4 +1,4 @@
-# Scénář v1 – „Válí se vaše jídlo ve výkalech?“ (kuřata chovaná na maso) – NÁVRH KE SCHVÁLENÍ
+# Scénář v1 – „Válí se vaše jídlo ve výkalech?“ (kuřata chovaná na maso) – schváleno KPZ 2026-10-29 (1:57,5)
 
 Hlavní sdělení: **kuřata se na konci výkrmu válí ve vlastních výkalech**, protože se podestýlka za celý výkrm nevymění.
 Všechno ostatní (růst, prostor, čpavek, popáleniny) jen podpírá tohle.
@@ -105,13 +105,13 @@ bez log a názvů farem. Zvíře = výstřižek z fotky, kresba = jen věci a sc
 - Hnojivo: vyhl. 377/2013 Sb.
 - 110 milionů: ČSÚ 2025
 
-# C · OTÁZKY KE SCHVÁLENÍ
+# C · ROZHODNUTÍ KPZ (2026-10-29: „Potvrzuju ti vše, abys mohl pokračovat.“)
 
-1. **Délka výkrmu:** „zhruba 30 až 40 dní“ (české zdroje: 30–35 a 35–42). Tvých 28 dní jsem v českých zdrojích nenašel.
-2. **Investigace KPZ:** chceš v hlase větu „Na vlastní oči jsme to viděli při našich investigacích“? (Doporučuju **ne** v hlase,
-   jen v popisku – OBRAZ kvůli podobným tvrzením řešil soud s farmou; my mluvíme o systému a opíráme se o VÚŽV.)
-3. **„Válí se vaše jídlo“** – vykání divákům jako u telat („Věděli jste…“). OK?
-4. **Ironie „Měnit podestýlku zvířatům, která za pár týdnů pojedou na jatka?“** – to je tvoje „nevyplatí se“, ale jako otázka o logice
-   systému, ne tvrzení o chovatelích. OK?
-5. **Fotky:** potřebuju od vás 4–5 záběrů: (a) malá kuřátka v čisté hale, (b) hala na konci výkrmu, (c) kuře ležící v podestýlce,
-   (d) dospělé kuře celé na výstřižek, případně (e) podestýlka zblízka. Zatím dám provizorní.
+1. Délka výkrmu: „zhruba 30 až 40 dní“.
+2. Investigace KPZ: v hlase ne, jen v popisku (riziko jako u sporu OBRAZ × Rabbit).
+3. Vykání divákům („Válí se vaše jídlo…“).
+4. Ironická otázka „Měnit podestýlku zvířatům, která za pár týdnů pojedou na jatka?“ místo „nevyplatí se“.
+5. Fotky: zatím provizorní (`assets/foto-provizorni/README.md`), KPZ dodají své.
+
+Odchylky scény od části B: hala na konci jen jako schéma shora (fotka chybí); kuře v hooku a v „leží“ je stejná fotka
+(záměrná návaznost, do dodání fotek KPZ); „Ilustrační záběr“ i na provizorních fotkách.

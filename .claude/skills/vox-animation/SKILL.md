@@ -101,7 +101,7 @@ na zvětšeném výřezu s mřížkou. Ne flek přes ucho, ne přebarvení; neč
 kde okraj usekne část těla, nepoužít. Fotky s kravami a telaty: `hf_photos.py` nad COCO
 (`Multimodal-Fatima/COCO_captions_train`, sloupec `sentences_raw`). Provizorní fotky,
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky
-jsou z prostředí blokované) – jen na náhled, zdroj zapsat do README u fotek.
+jsou z prostředí blokované) – jen na náhled, zdroj zapsat do README u fotek. Kuřata (brojleři, kuřátka na podestýlce): dataset `xiannovoa/poultry-weight-dataset` (MIT) přes `https://datasets-server.huggingface.co/first-rows?dataset=…&config=default&split=train` (endpoint `rows` z prostředí často padá); dospělá kuřata stojí na váze – plošinu vymaskovat v matte, nohy nechat podle barvy.
 
 ### 2d. Svislý formát (reels)
 `VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].
