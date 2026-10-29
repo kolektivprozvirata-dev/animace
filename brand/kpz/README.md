@@ -188,6 +188,7 @@ Nový projekt = kopie do `scenes/<projekt>/`, vlastní `vo-v1.json` (stejné nas
 
 **Postup, který se osvědčil:**
 1. Rešerše a ověření tvrzení v primárních zdrojích → `overeni-tvrzeni.md`; **přednostně české zdroje**, zahraniční jen kde český údaj chybí.
+   Vedle zemědělských a úředních zdrojů i **investigace** (OBRAZ, Zvířata nejíme, investigativní média) – nosná tvrzení ale opírat o odborné zdroje (vzor `scenes/kpz-brojleri/overeni-tvrzeni.md`).
 2. Hodnoty a slovník KPZ (výše) → scénář po větách (`scenar-v1.md`), hook na začátek, KPZ ho upraví.
 3. Hlas (ElevenLabs), scéna, kontaktní arch, render až na pokyn KPZ.
 4. Před zveřejněním kontrola „očima kritického zemědělce“ (vzor `scenes/kpz-telata/kritika-zemedelce.md`).
