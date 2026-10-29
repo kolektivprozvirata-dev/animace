@@ -209,7 +209,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-29 | **1:24 pouto – nová fotka** (KPZ): holštýnka a tele stojící vedle ní (`foto-kpz/krava-tele-vedle.webp` → výstřižek `vystrizky/krava-tele-vedle.png`, `--largest`) místo krávy se sajícím teletem; `#p-photo` šířka 780, top 405. Původní `pouto-krava-tele.png` jinde ve videu není. | hotovo v31 |
 
-## Do v32 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v32 (2026-10-29) – render `out/kpz-telata-reel-v32.mp4`, hlas beze změny (`assets-v29/`, 2:58,8)
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-10-29 | **0:50 pastvina masných krav – nová fotka** (KPZ): stádo na pastvě s ležícími telaty, kopce a obloha (`foto-kpz/masne-pastva-2.webp` → blob `vystrizky/masne-pastva-2-tvar.png`, crop 20,40,1440,760, `--tight 0.8`, seed 71 – zvířata u krajů celá; víc oblohy a trávy, ať je vidět prostor). `#g-past` šířka 1020, top 400; štítek y 960; „Ilustrační záběr“ zůstává. | hotovo v32 |
+
+## Do v33 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
