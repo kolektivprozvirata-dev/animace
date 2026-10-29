@@ -173,5 +173,29 @@ používat jen s vysvětlením.
 
 ## Hlas
 
-- Voiceover: **ElevenLabs, voice_id `7JbZPqJGWUfXXBim0T8U`** (vybrali KPZ 2026-10-24), `tts.py --engine elevenlabs --voice-id 7JbZPqJGWUfXXBim0T8U`. Klíč je network secret prostředí pro `api.elevenlabs.io` (hlavička `xi-api-key`), ne v repu.
+- Voiceover: **ElevenLabs, voice_id `dSByRdUbTGloB7TFA1qD`** (od reelu o telatech v13; dřív zkoušené 7JbZPqJGWUfXXBim0T8U a Fpj3lp9mRnYq6RZpHq9D),
+  model `eleven_multilingual_v2`; otázky a věty, které mají „začít nově“, často lépe v `eleven_v3` bez kontextu (`"el": {"model_id": "eleven_v3", "context": false}`).
+- Klíč je network secret prostředí pro `api.elevenlabs.io` (hlavička `xi-api-key`, bez prefixu), ne v repu. Účet Starter (40 000 znaků/měsíc; jedno ~3min video ≈ 3 000 znaků).
+- `tts.py` sám: vystřihne nádechy, ztlumí lupnutí na koncích, přidá tichý šum pod hlas, `tempo` dorovná délku (do ~3 % neslyšitelné).
+  Nahrávky drž v repu (`"el_cache": "el-cache"` ve vo.json) – vybrané verze vět se pak neztratí ani neplatí znovu.
+- Při změně jedné věty nechat ostatní věty namluvené, jak jsou (připnout jejich kontext – viz SKILL.md 2b).
 - Záloha / rychlý náhled: Piper `cs_CZ-jirka-medium`.
+
+## Nové video pro KPZ – postup a šablona (podle reelu o telatech, v29)
+
+**Šablona:** `scenes/kpz-telata/reel-kpz-foto.html` (styl KPZ, výstřižky fotek, titulky, zdroje u tvrzení, outro s webem).
+Nový projekt = kopie do `scenes/<projekt>/`, vlastní `vo-v1.json` (stejné nastavení hlasu jako `scenes/kpz-telata/vo-v29.json`).
+
+**Postup, který se osvědčil:**
+1. Rešerše a ověření tvrzení v primárních zdrojích → `overeni-tvrzeni.md`; **přednostně české zdroje**, zahraniční jen kde český údaj chybí.
+2. Hodnoty a slovník KPZ (výše) → scénář po větách (`scenar-v1.md`), hook na začátek, KPZ ho upraví.
+3. Hlas (ElevenLabs), scéna, kontaktní arch, render až na pokyn KPZ.
+4. Před zveřejněním kontrola „očima kritického zemědělce“ (vzor `scenes/kpz-telata/kritika-zemedelce.md`).
+5. Připomínky sbírat do `dalsi-verze.md`, vyrábět až na pokyn („udělej to“).
+
+**Pravidla, na která se snadno zapomene:**
+- Reel 9:16, **max. 2:59**. Zdroj „Zdroj: …“ jen po dobu tvrzení, ke kterému patří; popisek příspěvku aktualizovat s každou verzí hlasu.
+- Fotky: zvíře = výstřižek z fotky, kresba = věci a schémata; jen celá zvířata; čísla na známkách a loga podniků rozostřit;
+  skutečné fotky z farem označit „Ilustrační záběr“. Ilustrační obrázky zvířat smí být z Midjourney (aby se nebraly cizí fotky) –
+  **neoznačovat** je (rozhodnutí KPZ 2026-10-27); viditelná slabina: prázdné ušní známky.
+- Komunikace: tykáme si; vysvětlovat krátce, v číslovaných bodech, jen na tématu; ke změnám textu nabídnout 2–3 varianty s doporučením.
