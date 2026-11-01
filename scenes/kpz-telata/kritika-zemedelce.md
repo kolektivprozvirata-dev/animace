@@ -101,3 +101,14 @@ potvrzuje slovy („převažuje“).
 Do 12 h (87,5 %) · boxy na 96,7 % farem · do 8 týdnů · společné porodny 67,6 % · dojivost 1989 3 982 l → 2024 9 574 l ·
 104 farem 7–305 dní · vyřazení ve 3,7. laktaci a důvody · odstav masných telat 6–10 měsíců · pozdější oddělení =
 silnější a delší reakce (Stěhulová 2008).
+
+## Midjourney – veřejnost obrázků (průzkum 2026-11-01)
+- KPZ mají tarif **Basic** → všechny obrázky jsou veřejné (i se zadáním „Amateur smartphone photo of a Czech rural…“).
+- **Trash obrázky nemaže ani neskrývá** (oficiální nápověda: „Trashed creations are not private. Others might still find them on
+  the Explore page, in rating, or see them if they have the Job ID or creation URL.“; „Trashing creations does not delete them.“).
+  Zmizí jen z vlastního profilu (záložka Archive). Jednotlivé obrázky smazat nejde.
+- Skutečně skrýt: tarif **Pro/Mega** (Stealth) → v Organize ručně „Make Private“ i u starších obrázků; po návratu na Basic
+  zůstanou soukromé. Nebo smazání celého účtu (midjourney.com/account → FAQ, data do 30 dní).
+- Job ID z metadat fotek (pro ověření v anonymním okně, https://www.midjourney.com/jobs/<ID>):
+  1b2538d6-e7e9-4922-a0d0-d97b075eec49 (pastva – kojení, čelem), d158449e-8dbc-4575-99e0-06f452040b9e (pastva – leží),
+  a57b56ac-df3f-4cf3-b93a-30c02fd02bc6 (pastva – řada). U .webp (pastva 2, lezi2, holštýnky) metadata nejsou.
