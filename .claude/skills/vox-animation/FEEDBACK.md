@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.24.3**
+**Verze skillu: 0.25.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -145,3 +145,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-29 | 0.24.1 | kpz-telata v30 | „Co musím napsat do dalšího chatu, aby měl všechny informace?“ → prompt + `brand/kpz/README.md` (aktuální hlas, „Nové video pro KPZ“). „V 0:37 přidej ještě tuto fotku; na pastvinách taky ‚Ilustrační záběr‘.“ „Klidně renderuj.“ | **v30**: 3. fotka haly (krávy v boxech na roštech) při „výkaly a moč přibývají“, `.ilu` i na pastvinách; hlas v29. |
 | 2026-10-29 | 0.24.2 | kpz-telata v31 | „V 1:24 dej tuto fotku krávy a telete místo těch, co tam jsou.“ | **v31**: pouto = kráva s teletem vedle (výstřižek). |
 | 2026-10-29 | 0.24.3 | kpz-telata v32 | „0:50 nahraď masné krávy touto fotkou.“ | **v32**: nová pastvina; první výřez úzký pruh → víc oblohy a trávy (prostor = pointa věty). Poučení: když zvířata zabírají celou šířku fotky, nezužovat výřez na pruh – přidat výšku. |
+| 2026-11-01 | 0.25.0 | kpz-telata v33 | Dvě videa krav na pastvě místo dvou fotek: „zkus to, kdyžtak se vrátíme; oddělej zvuk; krátký úsek, kde nejdou přečíst známky“. | `scripts/video_cutout.py` (úsek videa → snímky 12 fps + papír + maska), `vidCut()` ve scéně (canvas, přednačtení před `VOX.scene`, maska v canvasu kvůli CORS na file://). Videa na výšku → kus na výšku. |

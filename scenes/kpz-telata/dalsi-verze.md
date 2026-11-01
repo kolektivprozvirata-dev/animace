@@ -215,7 +215,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-10-29 | **0:50 pastvina masných krav – nová fotka** (KPZ): stádo na pastvě s ležícími telaty, kopce a obloha (`foto-kpz/masne-pastva-2.webp` → blob `vystrizky/masne-pastva-2-tvar.png`, crop 20,40,1440,760, `--tight 0.8`, seed 71 – zvířata u krajů celá; víc oblohy a trávy, ať je vidět prostor). `#g-past` šířka 1020, top 400; štítek y 960; „Ilustrační záběr“ zůstává. | hotovo v32 |
 
-## Do v33 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v33 (2026-11-01, zkušební) – render `out/kpz-telata-reel-v33.mp4`, hlas beze změny (`assets-v29/`, 2:58,8). Návrat k fotkám = v32 (`git` commit před v33).
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-11-01 | **Pastviny jako video** (KPZ: „zkus to, kdyžtak se vrátíme k předchozí verzi“, bez zvuku, úsek bez čitelných známek). 0:46 hygiena = `assets/video/pastva-svitani.mp4` 0,5–8,1 s (svítání, stádo daleko); 1:11 zalehnutí = `assets/video/pastva-stado.mp4` 52,3–57,2 s (stádo jde přes louku; při 432 px čísla nečitelná). Videa jsou na výšku a malá (540/432 px) → utržený kus **na výšku** 600×800 (`scripts/video_cutout.py`, snímky 12 fps do canvasu), štítky pod kusem. Fotky zůstávají v `vystrizky/`. | zkušební render v33 |
+
+## Do v34 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
