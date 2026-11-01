@@ -51,10 +51,30 @@ Spotřeba: pracovní počítač + 2 monitory ~0,2 kW × 8 h × 35 dní ≈ **55 
 S podílem kanceláře (topení, světlo) **+30–60 kg**, s dojížděním autem 20 km denně **+~100 kg**.
 → Člověk: **~25 kg** (jen počítač) až **~150–200 kg** CO₂e (s kanceláří a dojížděním) × video s AI **~4,5 kg**.
 
+## Kritika odhadu očima odpůrce AI (2026-11-01)
+1. **Odhaduje AI sama sebe** (Claude od Anthropicu) – střet zájmů; Anthropic data nezveřejňuje, nic se nedá ověřit.
+2. **Přepočet energie je z cizích, menších modelů** (Epoch AI = odhad pro GPT-4o; Google = medián krátkého dotazu, sám si
+   to měřil, nikdo neověřil). Claude Opus je větší model. **297 mil. tokenů z mezipaměti jsem v odhadu prakticky nepočítal** –
+   nejsou zadarmo (dlouhý kontext zatěžuje každou odpověď). Bez úspory z mezipaměti by jen tato session vyšla až ~120 kWh;
+   realistický pesimistický odhad celého projektu ~50–100 kWh → **20–45 kg CO₂e**, ne 4,5.
+3. **Chybí výroba čipů a datacenter, trénink modelu, sítě** – u AI tvoří desítky % celkové stopy.
+4. **Voda**: odhad pro AI míchá spotřebu a odběr; nezávislé studie (Li et al. 2023) dávají řádově víc vody na dotaz než Google.
+   A hovězí v ČR je hlavně z dojených stád krmených bez závlah → **modrá voda je u nás mnohem nižší** než světové
+   2 714 l/kg. „60–100× víc vody“ pro české hovězí neplatí.
+5. **Srovnání s člověkem je zaujaté**: u člověka počítám dojíždění a topení kanceláře, u AI ne práci KPZ (týdny kontroly,
+   32 stažených renderů, telefon, počítač). 30 kol úprav vzniklo, protože s AI je úprava snadná – člověk by jich dělal 3–5.
+   Animátor s notebookem (~40 W) by spotřeboval ~10–15 kWh – **tedy zhruba stejně jako AI**, ne 5–40× víc.
+6. **Srovnání s hovězím je odvádění pozornosti** – nikdo netvrdí, že video škodí víc než kilo masa; „zaplatí se, když
+   přesvědčí jednoho člověka“ je nedoložená hypotéza.
+7. **Falešná přesnost** – „4,5 kg“ s desetinným místem budí dojem měření.
+
+**Co obstojí i při pesimistickém odhadu:** výroba videa (~5–45 kg CO₂e) je pod 1 kg hovězího z masného stáda (99 kg)
+a řádově srovnatelná s 1 kg hovězího z dojeného stáda (33 kg). **Neobstojí:** „AI je 5–40× šetrnější než člověk“ – nepublikovat.
+
 ## Připravená odpověď do komentářů
-„Spočítali jsme to: výroba celého videa vč. AI odpovídá zhruba 4–5 kg CO₂ a pár desítkám litrů vody – asi jako 30 km autem.
-Jedno kilo hovězího je 33–99 kg CO₂ a 1 500–2 700 litrů vody, litr mléka 3 kg CO₂ a 600 litrů vody.
-Pokud video přesvědčí jediného člověka vynechat kilo hovězího, je ‚zaplacené‘ několikrát.“
+„Přesná data o spotřebě AI firmy nezveřejňují, takže jde jen o odhad: výroba celého videa vychází řádově na jednotky až
+nízké desítky kg CO₂ – zhruba jako 1 kg hovězího nebo cesta autem z Prahy do Brna. Jedno video za mnoho tisíc zhlédnutí.
+Stopa toho, o čem video mluví, je v milionech litrů mléka a tun masa ročně.“
 
 ## Tip
 Nový chat pro každé nové video (ne pokračovat v tomto) – kratší historie = výrazně méně zpracovaných tokenů.
