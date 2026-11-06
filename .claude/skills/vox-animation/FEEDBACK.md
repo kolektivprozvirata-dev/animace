@@ -60,6 +60,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 
 ## ✅ Osvědčené (nechat tak)
 
+- Statický IG příspěvek ve stylu reelu (bloky KPZ vlevo, výstřižek telete vpravo, ▶, nálepky) – „Jo, je to super.“ (zatím test, témata na sítě KPZ vymyslí). _(kpz-telata, ig-novy-reel, 2026-11-06)_
 - Počítadlo čísla nabíhá z nuly se slovem (104 farem) – „líbí se mi, jak to z nuly nabíhá“. _(kpz-telata v15)_
 
 - Hlas Jirka (Piper) při `length_scale` 0.83 – tempo „v pohodě“. _(kpz-telata v1)_
