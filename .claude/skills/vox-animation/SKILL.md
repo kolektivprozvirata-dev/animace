@@ -103,6 +103,12 @@ kde okraj usekne část těla, nepoužít. Fotky s kravami a telaty: `hf_photos.
 když klient ještě nedodal své: `scripts/hf_photos.py` (Unsplash z Hugging Face, fotobanky
 jsou z prostředí blokované) – jen na náhled, zdroj zapsat do README u fotek.
 
+### 2g. Statická grafika (příspěvek na IG)
+Stejné téma a výstřižky jako ve videu, jen jeden snímek: `VOX.setup({ width: 1080, height: 1350, duration: 1, grain: 0, background: 'none' })`
+(4:5 do feedu; story 1080×1920), `VOX.scene(() => {})`, render `render.mjs scena.html --still 0 --out out/x.png`.
+Mřížka profilu ořezává do 3:4 (~35 px z každé strany) – text a zvíře dál od okrajů.
+Vzor: `scenes/kpz-telata/ig-novy-reel.html` (nadpis v blocích vlevo, výstřižek telete vpravo, logo, nálepky).
+
 ### 2d. Svislý formát (reels)
 `VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].
 Vzor: `scenes/kpz-telata/reel.html` (Vox papír), `scenes/kpz-telata/reel-kpz.html` (styl KPZ).

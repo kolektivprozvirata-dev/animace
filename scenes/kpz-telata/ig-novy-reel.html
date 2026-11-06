@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – IG příspěvek „Viděli jste už náš nový reel?“ (4:5)</title>
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  /* Statický příspěvek na Instagram (1080×1350, 4:5) ve stylu reelu o telatech.
+     Render: node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-telata/ig-novy-reel.html --still 0 --out out/ig-novy-reel.png
+     Mřížka profilu ořízne do 3:4 (~35 px z každé strany) – nic důležitého k okrajům. */
+  .h1 { font-size: 154px; line-height: 1; white-space: nowrap; }
+  #wm { left: 64px; top: 60px; width: 150px; }
+  #wm img { width: 100%; display: block; }
+  .play { display: inline-flex; align-items: center; justify-content: center; vertical-align: top;
+          width: .82em; height: .82em; margin-left: .14em; margin-top: .27em; background: var(--kpz-teal); rotate: -4deg; }
+  .play svg { width: 46%; margin-left: 9%; display: block; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="layer">
+    <div class="abs" id="wm"><img src="../../brand/kpz/logo-kpz-svetle.png" alt=""></div>
+    <div class="abs" id="st-sprig" style="left:850px; top:58px; width:170px"></div>
+
+    <div class="abs h1 kblocks print" style="left:66px; top:236px">
+      <span class="kb">Viděli</span><br><span class="kb">jste už</span><br><span class="kb cream">náš nový</span><br><span class="kb orange">reel?</span><span class="play"><svg viewBox="0 0 10 12"><path d="M0,0 L10,6 L0,12 Z" fill="var(--kpz-cream)"/></svg></span>
+    </div>
+
+    <div class="kpz-cut" id="calf" style="left:574px; top:372px; width:466px"><img src="assets/foto-kpz/vystrizky/tele-studio.png" alt=""></div>
+    <div class="abs" id="st-heart" style="left:86px; top:1128px; width:168px"></div>
+  </div>
+</div>
+<script>
+  VOX.setup({ width: 1080, height: 1350, duration: 1, vignette: 0.1, grain: 0, background: 'none' });
+  KPZ.theme();
+  document.getElementById('st-sprig').innerHTML = KPZ.sticker('sprig');
+  document.getElementById('st-heart').innerHTML = KPZ.sticker('heart');
+  VOX.scene(() => {});
+</script>
+</body>
+</html>
