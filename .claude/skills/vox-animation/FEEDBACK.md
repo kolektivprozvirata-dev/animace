@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.25.3**
+**Verze skillu: 0.26.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -33,6 +33,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
 - **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[komunikace]** S KPZ si **tykáme**. _(2026-10-19)_
+- **[vizuál]** Grafiku s daty dělat tak, aby ji pochopilo **desetileté dítě**: kostičky (jednotky) + šipky + postavičky, mezikrok (např. prase) jako samostatný článek řetězu, ztráta jako přerušované kostičky s krátkým popiskem. Na slajdu napsat „Kostičky jsou zjednodušení“ a skutečné rozmezí dát do zdroje. _(2026-11-07, kpz-planeta)_
 - **[komunikace]** Vysvětlovat **krátce, v číslovaných bodech a jen na tématu videa** (krávy, ne analogie z jiné oblasti); jedna myšlenka na bod, na konci shrnutí jednou větou. _(2026-10-27, KPZ: „mám ADHD, blbě se soustředím a ztrácím se v tom“)_
 - **[workflow]** Když KPZ upraví scénář, projít i **část B (texty v grafice)** a každou změnu propsat do scény – ne jen hlas. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
@@ -150,3 +151,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-06 | 0.25.1 | kpz-telata | „Udělej obrázek na Instagram, kde bude tele a „Viděli jste už náš nový reel?“, ve stejném stylu jako reel.“ | Statický příspěvek `scenes/kpz-telata/ig-novy-reel.html` (1080×1350, tele-studio, bloky KPZ, ▶); SKILL.md 2g – statická grafika přes `--still 0`. |
 | 2026-11-07 | 0.25.2 | kpz-planeta | „Udělat carousel o tom, že živočišná výroba zatěžuje planetu?“ → rešerše + texty v1 → „OK, vyrob slajdy.“ | Ověření v primárních zdrojích (`overeni-tvrzeni.md`; FAO/OWID/Science z prostředí nedostupné → jejich čísla vynechána), 8 slajdů `scenes/kpz-planeta/karusel.html`; SKILL.md 2g: karusel jako jedna scéna. |
 | 2026-11-07 | 0.25.3 | kpz-planeta | „Neměla by tam být informace, že živočišná výroba stojí 14,5 % celkových emisí?“ → doporučeno novější 12 % (FAO 2023; 14,5 % = FAO 2013, data 2005) → „Ano“ (varianta A, nový slajd). | Nový 3. slajd (waffle 100 čtverečků, 12 vínových), karusel 9 slajdů; ověření 2b, scénář, popisek se zdrojem FAO 2023. Poučení: u známých „kulatých“ čísel ověřit, jestli je zdroj mezitím nevydal novější odhad. |
+| 2026-11-07 | 0.26.0 | kpz-planeta | „Slide, který ukazuje neefektivitu přenosu bílkovin u výkrmu prasete… aby to pochopilo i desetileté dítě, kostičkami a šipkami, 10 kostiček → postavičky, pak to samé s prasetem jako mezistupeň.“ | Nový 7. slajd (10 kostiček → 10 lidí × → prase → nanejvýš 3 lidé, zbytek vykaká a vyčůrá), Pomar et al. 2021 (15–33 %); karusel 10 slajdů; pravidlo [vizuál] „pro desetileté“. Prase jako piktogram – fotka prasete od KPZ zatím není. |
