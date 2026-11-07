@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.0**
+**Verze skillu: 0.27.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -155,3 +155,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.26.0 | kpz-planeta | „Slide, který ukazuje neefektivitu přenosu bílkovin u výkrmu prasete… aby to pochopilo i desetileté dítě, kostičkami a šipkami, 10 kostiček → postavičky, pak to samé s prasetem jako mezistupeň.“ | Nový 7. slajd (10 kostiček → 10 lidí × → prase → nanejvýš 3 lidé, zbytek vykaká a vyčůrá), Pomar et al. 2021 (15–33 %); karusel 10 slajdů; pravidlo [vizuál] „pro desetileté“. Prase jako piktogram – fotka prasete od KPZ zatím není. |
 | 2026-11-07 | 0.26.1 | kpz-planeta | „Nemělo by tam být ‚rostlinných bílkovin‘? U ‚vyčůrá a vykaká‘ dospělejší výraz. Nemělo by to být na konkrétní kila?“ | Nadpis „Pro kolik lidí vystačí 100 kg rostlinných bílkovin?“, legenda „1 kostička = 10 kg“, „zbytek skončí ve výkalech a moči“, ve zdroji 15–33 kg ze 100 kg. Přepočet na lidi/čas (denní dávka EFSA) nepoužit – web EFSA z prostředí neověřitelný. Pravidlo [vizuál] doplněno. |
 | 2026-11-07 | 0.27.0 | kpz-planeta | „Moc nechápu ten čtvrtej slide, můžeš mi ho vysvětlit?“ → vysvětleno + přiznán zdánlivý rozpor FAO 12 % × Xu 57 % → vybrána varianta A. | Slajdy 57 % a „hovězí = čtvrtina“ (Xu 2021) vyřazeny, nový 4. slajd FAO „Chov skotu pro maso i mléko = 62 % emisí z chovu zvířat“ (masný skot + holštýnka); karusel 9 slajdů; popisek bez Xu. Pravidlo [data] o míchání zdrojů. |
+| 2026-11-07 | 0.27.1 | kpz-planeta | „Mám ti povolit nějaký weby nebo studie?“ → povoleny FAO, ORA, IOP, OWID → ověřeno v originálech; „JJ udělej“ (slajd 83 % půdy). | FAO 12 % a 62 % ✅, Poore & Nemecek ✅ (autorská verze ORA), Shepon 2016: vepřové 9 % (slajd s prasetem je opatrný). Nový 6. slajd „Zabírají 83 % půdy, dávají jen 18 % kalorií a 37 % bílkovin“, karusel 10 slajdů. Poznámka: WebFetch nové povolené domény hned nevidí, curl ano. |

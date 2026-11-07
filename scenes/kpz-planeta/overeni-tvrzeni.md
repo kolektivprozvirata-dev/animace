@@ -43,7 +43,7 @@ z Poore & Nemecek 2018, podíl metanu z UNEP 2021). Číslo FAO 2023 (12 %) při
 - **Poore & Nemecek 2018 – autorská verze** (ora.ox.ac.uk, uuid:b0b53649-…): „impacts of the lowest-impact animal products
   typically exceed those of vegetable substitutes“; v textu: „exceed average impacts of substitute vegetable proteins across GHG
   emissions, eutrophication, acidification (excluding nuts), and frequently land use“ → slajd 7 („obvykle“) ✅
-  - Navíc ověřeno (zatím **není** v karuselu): „meat, aquaculture, eggs, and dairy use ~83% of the world’s farmland and contribute
+  - Navíc ověřeno, **od 2026-11-07 nový 6. slajd** („Zabírají 83 % půdy, dávají jen 18 % kalorií a 37 % bílkovin“): „meat, aquaculture, eggs, and dairy use ~83% of the world’s farmland and contribute
     56-58% of food’s different emissions, despite providing only 37% of our protein and 18% of our calories.“
   - Strava bez živočišných produktů: půda −76 % (3,1 mld. ha), emise z jídla −49 % (6,6 Gt CO2eq), referenční rok 2010.
     **Nedávat vedle Scarborough 2023** (−75 % emisí u veganů oproti hodně masa) – jiný základ, působilo by jako rozpor.

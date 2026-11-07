@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – karusel „Živočišná výroba a planeta“ (9 × 1080×1350)</title>
+<title>KPZ – karusel „Živočišná výroba a planeta“ (10 × 1080×1350)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
@@ -10,7 +10,7 @@
 <style>
   /* Karusel na Instagram ve stylu KPZ. Texty: scenar-v1.md, ověření: overeni-tvrzeni.md.
      Slajd N = čas N-1 až N s. Render všech:
-     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5 --out out/kpz-planeta
+     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5 --out out/kpz-planeta
      Mřížka profilu ořezává do 3:4 (~35 px z každé strany). */
   .h1 { font-size: 104px; line-height: 1; white-space: nowrap; }
   .big { font-size: 210px; line-height: 1; }
@@ -107,7 +107,32 @@
     <div class="src kpz-body">Zdroj: MZe – Situační a výhledová zpráva Obiloviny 2024/2025</div>
   </div>
 
-  <!-- 6 · bílkoviny přes prase (pro desetileté): 100 kg rostlinných bílkovin → 10 lidí × → prase → nanejvýš 3 lidé; 1 kostička = 10 kg -->
+  <!-- 6 · půda × kalorie × bílkoviny (Poore & Nemecek 2018, ověřeno v autorské verzi) -->
+  <div class="layer" id="s-puda">
+    <div class="abs eyebrow" style="left:70px; top:196px">Maso, mléko, vejce a ryby z chovů</div>
+    <div class="abs h1 kblocks print" style="left:66px; top:256px; font-size:100px">
+      <span class="kb">Zabírají</span> <span class="kb orange">83 % půdy,</span><br><span class="kb cream">dávají jen 18 % kalorií</span><br><span class="kb cream">a 37 % bílkovin.</span>
+    </div>
+    <div class="lbl" style="left:70px; top:736px; font-size:42px; color:var(--kpz-teal-d)">zemědělská půda světa</div>
+    <div class="abs print-soft" style="left:70px; top:784px; width:940px; height:96px; background:var(--kpz-cream)">
+      <div class="seg" style="left:0; top:0; width:780px; height:96px; background:var(--kpz-maroon); color:#f7eef1; font-size:62px">83&nbsp;%</div>
+    </div>
+    <div class="lbl" style="left:70px; top:904px; font-size:42px; color:var(--kpz-teal-d)">kalorie v jídle</div>
+    <div class="abs print-soft" style="left:70px; top:952px; width:940px; height:96px; background:var(--kpz-cream)">
+      <div class="seg" style="left:0; top:0; width:169px; height:96px; background:var(--kpz-maroon); color:#f7eef1; font-size:62px">18&nbsp;%</div>
+    </div>
+    <div class="lbl" style="left:70px; top:1072px; font-size:42px; color:var(--kpz-teal-d)">bílkoviny v jídle</div>
+    <div class="abs print-soft" style="left:70px; top:1120px; width:940px; height:96px; background:var(--kpz-cream)">
+      <div class="seg" style="left:0; top:0; width:348px; height:96px; background:var(--kpz-maroon); color:#f7eef1; font-size:62px">37&nbsp;%</div>
+    </div>
+    <div class="abs kpz-body note" style="left:70px; top:1234px; font-size:26px">
+      <span style="display:inline-block; width:22px; height:22px; background:var(--kpz-maroon); vertical-align:-3px"></span> živočišné potraviny
+      &nbsp;&nbsp;<span style="display:inline-block; width:22px; height:22px; background:var(--kpz-cream); vertical-align:-3px"></span> rostlinné potraviny
+    </div>
+    <div class="src kpz-body">Zdroj: Poore &amp; Nemecek 2018, Science · svět, data kolem r. 2010 · ryby jen z chovů</div>
+  </div>
+
+  <!-- 7 · bílkoviny přes prase (pro desetileté): 100 kg rostlinných bílkovin → 10 lidí × → prase → nanejvýš 3 lidé; 1 kostička = 10 kg -->
   <div class="layer" id="s-prase">
     <div class="abs h1 kblocks print" style="left:66px; top:176px; font-size:84px">
       <span class="kb">Pro kolik lidí vystačí</span><br><span class="kb orange">100 kg</span> <span class="kb cream">rostlinných</span><br><span class="kb cream">bílkovin?</span>
@@ -159,7 +184,7 @@
     <div class="src kpz-body">Zdroj: Pomar et al. 2021, Frontiers in Veterinary Science – prase uloží do těla jen 15–33&nbsp;% bílkovin z&nbsp;krmiva (ze 100&nbsp;kg tedy 15–33&nbsp;kg). Kostičky jsou zjednodušení.</div>
   </div>
 
-  <!-- 7 · i nejšetrnější -->
+  <!-- 8 · i nejšetrnější -->
   <div class="layer" id="s6">
     <div class="abs h1 kblocks print" style="left:66px; top:200px; font-size:96px">
       <span class="kb">I ta</span> <span class="kb orange">nejšetrnější</span><br><span class="kb">živočišná výroba</span><br><span class="kb cream">má obvykle větší dopad</span><br><span class="kb cream">než rostlinné</span><br><span class="kb cream">alternativy.</span>
@@ -182,7 +207,7 @@
     <div class="src kpz-body">Zdroj: Poore &amp; Nemecek 2018, Science · data z 38 700 farem</div>
   </div>
 
-  <!-- 8 · strava veganů -->
+  <!-- 9 · strava veganů -->
   <div class="layer" id="s7">
     <div class="abs h1 kblocks print" style="left:66px; top:200px">
       <span class="kb">Strava veganů:</span><br><span class="kb orange">čtvrtina emisí</span><br><span class="kb orange">a čtvrtina půdy.</span>
@@ -206,7 +231,7 @@
     <div class="src kpz-body">Zdroj: Scarborough et al. 2023, Nature Food · britská studie, 55 504 lidí</div>
   </div>
 
-  <!-- 9 · outro -->
+  <!-- 10 · outro -->
   <div class="layer" id="s8">
     <div class="stk" style="left:860px; top:52px; width:150px" data-stk="sprig"></div>
     <div class="abs h1 kblocks print" style="left:0; width:1080px; top:200px; text-align:center">
