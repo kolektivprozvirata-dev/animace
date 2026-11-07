@@ -108,6 +108,8 @@ Stejné téma a výstřižky jako ve videu, jen jeden snímek: `VOX.setup({ widt
 (4:5 do feedu; story 1080×1920), `VOX.scene(() => {})`, render `render.mjs scena.html --still 0 --out out/x.png`.
 Mřížka profilu ořezává do 3:4 (~35 px z každé strany) – text a zvíře dál od okrajů.
 Vzor: `scenes/kpz-telata/ig-novy-reel.html` (nadpis v blocích vlevo, výstřižek telete vpravo, logo, nálepky).
+**Karusel** = jedna scéna, slajd N v čase N−1…N s (`VOX.scene` přepíná `.layer`), render `--stills 0.5,1.5,…`;
+na každém slajdu logo vlevo nahoře a řádek „Zdroj: …“ dole, grafy od nuly. Vzor: `scenes/kpz-planeta/karusel.html`.
 
 ### 2d. Svislý formát (reels)
 `VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].
