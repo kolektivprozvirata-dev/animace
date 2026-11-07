@@ -1,6 +1,6 @@
 # Popisek příspěvku (návrh v1)
 
-Hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. A planeta to cítí: výroba jídla tvoří třetinu skleníkových plynů a samotný chov zvířat podle FAO 12 % všech emisí lidstva – z toho skoro dvě třetiny připadají na chov skotu pro maso a mléko. 🌍
+Hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. A planeta to cítí: výroba jídla tvoří třetinu skleníkových plynů a samotný chov zvířat podle FAO 12 % všech emisí lidstva – a z toho 62 % připadá na chov skotu pro maso a mléko. 🌍
 
 A když rostlinné bílkoviny nejdřív sní prase, v jeho těle jich zůstane nanejvýš třetina. 🐖
 
