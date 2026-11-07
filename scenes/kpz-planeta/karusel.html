@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – karusel „Živočišná výroba a planeta“ (10 × 1080×1350)</title>
+<title>KPZ – karusel „Živočišná výroba a planeta“ (9 × 1080×1350)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
@@ -10,7 +10,7 @@
 <style>
   /* Karusel na Instagram ve stylu KPZ. Texty: scenar-v1.md, ověření: overeni-tvrzeni.md.
      Slajd N = čas N-1 až N s. Render všech:
-     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5 --out out/kpz-planeta
+     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5 --out out/kpz-planeta
      Mřížka profilu ořezává do 3:4 (~35 px z každé strany). */
   .h1 { font-size: 104px; line-height: 1; white-space: nowrap; }
   .big { font-size: 210px; line-height: 1; }
@@ -75,34 +75,19 @@
     <div class="src kpz-body">Zdroj: FAO 2023, Pathways towards lower emissions (model GLEAM)</div>
   </div>
 
-  <!-- 4 · 57 % na živočišné potraviny -->
-  <div class="layer" id="s3">
-    <div class="abs h1 kblocks print" style="left:66px; top:200px">
-      <span class="kb">Z emisí z výroby</span><br><span class="kb">jídla jde</span> <span class="kb orange">57 %</span><br><span class="kb cream">na živočišné</span><br><span class="kb cream">potraviny.</span>
-    </div>
-    <div class="abs print-soft" style="left:70px; top:900px; width:940px; height:170px">
-      <div class="seg" style="left:0; top:0; width:536px; height:170px; background:var(--kpz-maroon); color:#f7eef1">57 %</div>
-      <div class="seg" style="left:536px; top:0; width:272px; height:170px; background:var(--kpz-teal); color:var(--kpz-cream)">29 %</div>
-      <div class="seg" style="left:808px; top:0; width:132px; height:170px; background:var(--kpz-cream); color:var(--kpz-teal-d)">14 %</div>
-    </div>
-    <div class="lbl" style="left:70px; top:1090px; font-size:46px; color:var(--kpz-maroon)">živočišné potraviny</div>
-    <div class="lbl" style="left:606px; top:1090px; font-size:46px; color:var(--kpz-teal-d)">rostlinné</div>
-    <div class="lbl" style="left:878px; top:1090px; font-size:46px; color:var(--kpz-teal-d)">jiné</div>
-    <div class="abs kpz-body note" style="left:70px; top:1160px">včetně krmiv · data kolem roku 2010</div>
-    <div class="src kpz-body">Zdroj: Xu et al. 2021, Nature Food · „jiné“ = jiné využití plodin</div>
-  </div>
-
-  <!-- 5 · hovězí = čtvrtina -->
-  <div class="layer" id="s4">
+  <!-- 4 · skot (maso i mléko) = 62 % emisí z chovu zvířat (FAO 2023) – navazuje na 3. slajd; dřívější slajdy 57 % a hovězí 25 % (Xu 2021) vyřazeny 2026-11-07 kvůli zdánlivému rozporu s FAO 12 % -->
+  <div class="layer" id="s-skot">
     <div class="abs h1 kblocks print" style="left:66px; top:200px; font-size:100px">
-      <span class="kb">Jen hovězí maso</span><br><span class="kb">=</span> <span class="kb orange">čtvrtina emisí</span><br><span class="kb cream">z výroby jídla</span><br><span class="kb cream">na světě.</span>
+      <span class="kb">Chov skotu</span><br><span class="kb">pro maso i mléko</span><br><span class="kb">=</span> <span class="kb orange">62 %</span> <span class="kb cream">emisí</span><br><span class="kb cream">z chovu zvířat.</span>
     </div>
-    <div class="kpz-cut" style="left:150px; top:790px; width:840px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/masny-skot-tvar.png" alt=""><div class="abs ilu">Ilustrační záběr</div></div>
-    <div class="abs tag mustard print" style="left:76px; top:770px; font-size:50px; white-space:nowrap; rotate:-4deg">Nejvíc ze všech potravin</div>
-    <div class="src kpz-body">Zdroj: Xu et al. 2021, Nature Food (25 % emisí z výroby jídla, data kolem roku 2010)</div>
+    <div class="kpz-cut" style="left:46px; top:800px; width:600px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/masny-skot-tvar.png" alt=""><div class="abs ilu" style="left:60px; right:auto">Ilustrační záběr</div></div>
+    <div class="kpz-cut" style="left:566px; top:900px; width:470px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/krava-cele-telo.png" alt=""></div>
+    <div class="abs tag mustard print" style="left:70px; top:782px; font-size:52px; rotate:-4deg">maso</div>
+    <div class="abs tag mustard print" style="left:850px; top:872px; font-size:52px; rotate:3deg">mléko</div>
+    <div class="src kpz-body">Zdroj: FAO 2023, Pathways towards lower emissions (model GLEAM) – skot 3,8&nbsp;Gt CO₂e ročně, data z roku 2015</div>
   </div>
 
-  <!-- 6 · Česko: obilí na krmiva -->
+  <!-- 5 · Česko: obilí na krmiva -->
   <div class="layer" id="s5">
     <div class="stk" style="left:850px; top:48px; width:170px" data-stk="wheat"></div>
     <div class="abs eyebrow" style="left:70px; top:200px">Česko · obilí spotřebované doma · 2024/25</div>
@@ -122,7 +107,7 @@
     <div class="src kpz-body">Zdroj: MZe – Situační a výhledová zpráva Obiloviny 2024/2025</div>
   </div>
 
-  <!-- 7 · bílkoviny přes prase (pro desetileté): 100 kg rostlinných bílkovin → 10 lidí × → prase → nanejvýš 3 lidé; 1 kostička = 10 kg -->
+  <!-- 6 · bílkoviny přes prase (pro desetileté): 100 kg rostlinných bílkovin → 10 lidí × → prase → nanejvýš 3 lidé; 1 kostička = 10 kg -->
   <div class="layer" id="s-prase">
     <div class="abs h1 kblocks print" style="left:66px; top:176px; font-size:84px">
       <span class="kb">Pro kolik lidí vystačí</span><br><span class="kb orange">100 kg</span> <span class="kb cream">rostlinných</span><br><span class="kb cream">bílkovin?</span>
@@ -174,7 +159,7 @@
     <div class="src kpz-body">Zdroj: Pomar et al. 2021, Frontiers in Veterinary Science – prase uloží do těla jen 15–33&nbsp;% bílkovin z&nbsp;krmiva (ze 100&nbsp;kg tedy 15–33&nbsp;kg). Kostičky jsou zjednodušení.</div>
   </div>
 
-  <!-- 8 · i nejšetrnější -->
+  <!-- 7 · i nejšetrnější -->
   <div class="layer" id="s6">
     <div class="abs h1 kblocks print" style="left:66px; top:200px; font-size:96px">
       <span class="kb">I ta</span> <span class="kb orange">nejšetrnější</span><br><span class="kb">živočišná výroba</span><br><span class="kb cream">má obvykle větší dopad</span><br><span class="kb cream">než rostlinné</span><br><span class="kb cream">alternativy.</span>
@@ -197,7 +182,7 @@
     <div class="src kpz-body">Zdroj: Poore &amp; Nemecek 2018, Science · data z 38 700 farem</div>
   </div>
 
-  <!-- 9 · strava veganů -->
+  <!-- 8 · strava veganů -->
   <div class="layer" id="s7">
     <div class="abs h1 kblocks print" style="left:66px; top:200px">
       <span class="kb">Strava veganů:</span><br><span class="kb orange">čtvrtina emisí</span><br><span class="kb orange">a čtvrtina půdy.</span>
@@ -221,7 +206,7 @@
     <div class="src kpz-body">Zdroj: Scarborough et al. 2023, Nature Food · britská studie, 55 504 lidí</div>
   </div>
 
-  <!-- 10 · outro -->
+  <!-- 9 · outro -->
   <div class="layer" id="s8">
     <div class="stk" style="left:860px; top:52px; width:150px" data-stk="sprig"></div>
     <div class="abs h1 kblocks print" style="left:0; width:1080px; top:200px; text-align:center">

@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.26.1**
+**Verze skillu: 0.27.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -28,6 +28,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
 - **[data]** Odlišit doložený současný stav od hypotézy: kde zvířata dnes nejsou (např. telata v hale), mluvit podmiňovacím způsobem („v hale, kam by tele muselo“) a argument přiřadit chovatelům („údajně“); nepoužívat „hlavně/nejčastěji“ bez měření. _(2026-10-21, kpz-telata – dotaz KPZ k zalehnutí)_
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
+- **[data]** V jednom příspěvku/videu nemíchat čísla **o stejné věci z různých studií** s různým základem (např. FAO „chov = 12 % všech emisí“ vedle Xu „57 % emisí z jídla“) – čtenář je dá dohromady a vyjde mu rozpor. Držet jeden zdroj a jeden „koláč“, slajdy řetězit („z toho…“). _(2026-11-07, kpz-planeta – KPZ: „moc nechápu ten čtvrtej slide“)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75, v8: ~0.73 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
@@ -153,3 +154,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.25.3 | kpz-planeta | „Neměla by tam být informace, že živočišná výroba stojí 14,5 % celkových emisí?“ → doporučeno novější 12 % (FAO 2023; 14,5 % = FAO 2013, data 2005) → „Ano“ (varianta A, nový slajd). | Nový 3. slajd (waffle 100 čtverečků, 12 vínových), karusel 9 slajdů; ověření 2b, scénář, popisek se zdrojem FAO 2023. Poučení: u známých „kulatých“ čísel ověřit, jestli je zdroj mezitím nevydal novější odhad. |
 | 2026-11-07 | 0.26.0 | kpz-planeta | „Slide, který ukazuje neefektivitu přenosu bílkovin u výkrmu prasete… aby to pochopilo i desetileté dítě, kostičkami a šipkami, 10 kostiček → postavičky, pak to samé s prasetem jako mezistupeň.“ | Nový 7. slajd (10 kostiček → 10 lidí × → prase → nanejvýš 3 lidé, zbytek vykaká a vyčůrá), Pomar et al. 2021 (15–33 %); karusel 10 slajdů; pravidlo [vizuál] „pro desetileté“. Prase jako piktogram – fotka prasete od KPZ zatím není. |
 | 2026-11-07 | 0.26.1 | kpz-planeta | „Nemělo by tam být ‚rostlinných bílkovin‘? U ‚vyčůrá a vykaká‘ dospělejší výraz. Nemělo by to být na konkrétní kila?“ | Nadpis „Pro kolik lidí vystačí 100 kg rostlinných bílkovin?“, legenda „1 kostička = 10 kg“, „zbytek skončí ve výkalech a moči“, ve zdroji 15–33 kg ze 100 kg. Přepočet na lidi/čas (denní dávka EFSA) nepoužit – web EFSA z prostředí neověřitelný. Pravidlo [vizuál] doplněno. |
+| 2026-11-07 | 0.27.0 | kpz-planeta | „Moc nechápu ten čtvrtej slide, můžeš mi ho vysvětlit?“ → vysvětleno + přiznán zdánlivý rozpor FAO 12 % × Xu 57 % → vybrána varianta A. | Slajdy 57 % a „hovězí = čtvrtina“ (Xu 2021) vyřazeny, nový 4. slajd FAO „Chov skotu pro maso i mléko = 62 % emisí z chovu zvířat“ (masný skot + holštýnka); karusel 9 slajdů; popisek bez Xu. Pravidlo [data] o míchání zdrojů. |
