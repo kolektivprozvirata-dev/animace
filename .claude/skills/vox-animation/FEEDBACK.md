@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.2**
+**Verze skillu: 0.28.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -35,6 +35,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[komunikace]** S KPZ si **tykáme**. _(2026-10-19)_
 - **[vizuál]** Grafiku s daty dělat tak, aby ji pochopilo **desetileté dítě**: kostičky (jednotky) + šipky + postavičky, mezikrok (např. prase) jako samostatný článek řetězu, ztráta jako přerušované kostičky s krátkým popiskem. Kostičky mají jednotku (např. „1 kostička = 10 kg“), aby byla vidět konkrétní čísla; na slajdu napsat „Kostičky jsou zjednodušení“ a skutečné rozmezí dát do zdroje. Jednoduché neznamená dětské: žádná dětská slova („vykaká“) – věcně („výkaly a moč“). _(2026-11-07, kpz-planeta)_
+- **[struktura]** Složitější graf dát ve dvou krocích: nejdřív **jednoduchá verze** („8 polí z 10“, kostičky, šipky) a hned za ní stejná data **„Odborněji:“** (přesná procenta, pruhy) – laik pochopí, znalý najde čísla. _(2026-11-07, kpz-planeta)_
 - **[komunikace]** Vysvětlovat **krátce, v číslovaných bodech a jen na tématu videa** (krávy, ne analogie z jiné oblasti); jedna myšlenka na bod, na konci shrnutí jednou větou. _(2026-10-27, KPZ: „mám ADHD, blbě se soustředím a ztrácím se v tom“)_
 - **[workflow]** Když KPZ upraví scénář, projít i **část B (texty v grafice)** a každou změnu propsat do scény – ne jen hlas. _(2026-10-19, kpz-telata v5)_
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
@@ -63,6 +64,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 ## ✅ Osvědčené (nechat tak)
 
 - Statický IG příspěvek ve stylu reelu (bloky KPZ vlevo, výstřižek telete vpravo, ▶, nálepky) – „Jo, je to super.“ (zatím test, témata na sítě KPZ vymyslí). _(kpz-telata, ig-novy-reel, 2026-11-06)_
+- Slajd „10 polí → 10 talířů“ (zvířatům 8 polí → necelé 2 talíře; rostlinné 2 pole → přes 8 talířů) – „Jo to je super“. _(kpz-planeta, 2026-11-07)_
 - Počítadlo čísla nabíhá z nuly se slovem (104 farem) – „líbí se mi, jak to z nuly nabíhá“. _(kpz-telata v15)_
 
 - Hlas Jirka (Piper) při `length_scale` 0.83 – tempo „v pohodě“. _(kpz-telata v1)_
@@ -157,3 +159,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.27.0 | kpz-planeta | „Moc nechápu ten čtvrtej slide, můžeš mi ho vysvětlit?“ → vysvětleno + přiznán zdánlivý rozpor FAO 12 % × Xu 57 % → vybrána varianta A. | Slajdy 57 % a „hovězí = čtvrtina“ (Xu 2021) vyřazeny, nový 4. slajd FAO „Chov skotu pro maso i mléko = 62 % emisí z chovu zvířat“ (masný skot + holštýnka); karusel 9 slajdů; popisek bez Xu. Pravidlo [data] o míchání zdrojů. |
 | 2026-11-07 | 0.27.1 | kpz-planeta | „Mám ti povolit nějaký weby nebo studie?“ → povoleny FAO, ORA, IOP, OWID → ověřeno v originálech; „JJ udělej“ (slajd 83 % půdy). | FAO 12 % a 62 % ✅, Poore & Nemecek ✅ (autorská verze ORA), Shepon 2016: vepřové 9 % (slajd s prasetem je opatrný). Nový 6. slajd „Zabírají 83 % půdy, dávají jen 18 % kalorií a 37 % bílkovin“, karusel 10 slajdů. Poznámka: WebFetch nové povolené domény hned nevidí, curl ano. |
 | 2026-11-07 | 0.27.2 | kpz-planeta | „Já ten slide s 83 % půdy nechápu. Dalo by se to víc vymyslet pro míň chápavé?“ | Procentní pruhy → „10 polí → 10 talířů“: zvířatům 8 polí → necelé 2 talíře, rostlinné jídlo 2 pole → přes 8 talířů; přesná čísla ve zdroji. Poučení: procenta ze tří různých základů (půda, kalorie, bílkoviny) v jednom grafu jsou pro laiky moc; převést na jednu srovnatelnou jednotku „z 10“ a vstup → výstup šipkou (jako u prasete). |
+| 2026-11-07 | 0.28.0 | kpz-planeta | „Jo to je super, ale není to pak už podobný tomu předtím? Případně dát pak další slide, který byl předtím místo tohoto, s nadpisem ‚Odborněji:‘.“ | Za jednoduchý 6. slajd (pole → talíře) vrácen původní slajd s pruhy 83/18/37 % se štítkem „Odborněji:“ (7.); karusel 11 slajdů. Pravidlo [struktura] „jednoduše → odborněji“. ✅ jednoduchá verze „Jo to je super“. |
