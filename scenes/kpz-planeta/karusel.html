@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – karusel „Živočišná výroba a planeta“ (8 × 1080×1350)</title>
+<title>KPZ – karusel „Živočišná výroba a planeta“ (9 × 1080×1350)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
@@ -10,7 +10,7 @@
 <style>
   /* Karusel na Instagram ve stylu KPZ. Texty: scenar-v1.md, ověření: overeni-tvrzeni.md.
      Slajd N = čas N-1 až N s. Render všech:
-     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5 --out out/kpz-planeta
+     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5 --out out/kpz-planeta
      Mřížka profilu ořezává do 3:4 (~35 px z každé strany). */
   .h1 { font-size: 104px; line-height: 1; white-space: nowrap; }
   .big { font-size: 210px; line-height: 1; }
@@ -60,7 +60,22 @@
     <div class="src kpz-body">Zdroj: Crippa et al. 2021, Nature Food</div>
   </div>
 
-  <!-- 3 · 57 % na živočišné potraviny -->
+  <!-- 3 · chov zvířat = 12 % všech emisí (FAO 2023) -->
+  <div class="layer" id="s3">
+    <div class="abs h1 kblocks print" style="left:66px; top:200px">
+      <span class="kb">Samotný chov zvířat</span><br><span class="kb">=</span> <span class="kb orange">12 %</span> <span class="kb cream">všech emisí</span><br><span class="kb cream">lidstva.</span>
+    </div>
+    <!-- 100 čtverečků = všechny emise lidstva, 12 vínových = chov zvířat -->
+    <div class="abs print-soft" id="waffle" style="left:66px; top:730px; width:480px; height:480px"></div>
+    <div class="abs" style="left:610px; top:740px">
+      <div class="big" style="color:var(--kpz-teal-d)">12 %</div>
+      <div class="abs tag maroon print" style="left:0; top:226px; font-size:52px; white-space:nowrap">chov zvířat</div>
+      <div class="abs kpz-body note" style="left:0; top:316px; width:420px">včetně pěstování krmiv<br>a zpracování<br>data z roku 2015<br><br>1 čtvereček = 1 % emisí</div>
+    </div>
+    <div class="src kpz-body">Zdroj: FAO 2023, Pathways towards lower emissions (model GLEAM)</div>
+  </div>
+
+  <!-- 4 · 57 % na živočišné potraviny -->
   <div class="layer" id="s3">
     <div class="abs h1 kblocks print" style="left:66px; top:200px">
       <span class="kb">Z emisí z výroby</span><br><span class="kb">jídla jde</span> <span class="kb orange">57 %</span><br><span class="kb cream">na živočišné</span><br><span class="kb cream">potraviny.</span>
@@ -77,7 +92,7 @@
     <div class="src kpz-body">Zdroj: Xu et al. 2021, Nature Food · „jiné“ = jiné využití plodin</div>
   </div>
 
-  <!-- 4 · hovězí = čtvrtina -->
+  <!-- 5 · hovězí = čtvrtina -->
   <div class="layer" id="s4">
     <div class="abs h1 kblocks print" style="left:66px; top:200px; font-size:100px">
       <span class="kb">Jen hovězí maso</span><br><span class="kb">=</span> <span class="kb orange">čtvrtina emisí</span><br><span class="kb cream">z výroby jídla</span><br><span class="kb cream">na světě.</span>
@@ -87,7 +102,7 @@
     <div class="src kpz-body">Zdroj: Xu et al. 2021, Nature Food (25 % emisí z výroby jídla, data kolem roku 2010)</div>
   </div>
 
-  <!-- 5 · Česko: obilí na krmiva -->
+  <!-- 6 · Česko: obilí na krmiva -->
   <div class="layer" id="s5">
     <div class="stk" style="left:850px; top:48px; width:170px" data-stk="wheat"></div>
     <div class="abs eyebrow" style="left:70px; top:200px">Česko · obilí spotřebované doma · 2024/25</div>
@@ -107,7 +122,7 @@
     <div class="src kpz-body">Zdroj: MZe – Situační a výhledová zpráva Obiloviny 2024/2025</div>
   </div>
 
-  <!-- 6 · i nejšetrnější -->
+  <!-- 7 · i nejšetrnější -->
   <div class="layer" id="s6">
     <div class="abs h1 kblocks print" style="left:66px; top:200px; font-size:96px">
       <span class="kb">I ta</span> <span class="kb orange">nejšetrnější</span><br><span class="kb">živočišná výroba</span><br><span class="kb cream">má obvykle větší dopad</span><br><span class="kb cream">než rostlinné</span><br><span class="kb cream">alternativy.</span>
@@ -130,7 +145,7 @@
     <div class="src kpz-body">Zdroj: Poore &amp; Nemecek 2018, Science · data z 38 700 farem</div>
   </div>
 
-  <!-- 7 · strava veganů -->
+  <!-- 8 · strava veganů -->
   <div class="layer" id="s7">
     <div class="abs h1 kblocks print" style="left:66px; top:200px">
       <span class="kb">Strava veganů:</span><br><span class="kb orange">čtvrtina emisí</span><br><span class="kb orange">a čtvrtina půdy.</span>
@@ -154,7 +169,7 @@
     <div class="src kpz-body">Zdroj: Scarborough et al. 2023, Nature Food · britská studie, 55 504 lidí</div>
   </div>
 
-  <!-- 8 · outro -->
+  <!-- 9 · outro -->
   <div class="layer" id="s8">
     <div class="stk" style="left:860px; top:52px; width:150px" data-stk="sprig"></div>
     <div class="abs h1 kblocks print" style="left:0; width:1080px; top:200px; text-align:center">
@@ -177,6 +192,15 @@
     const a = 0.34 * 2 * Math.PI, r = 190;
     const x = r * Math.sin(a), y = -r * Math.cos(a);
     document.getElementById('pie34').setAttribute('d', `M0,0 L0,${-r} A${r},${r} 0 0 1 ${x.toFixed(1)},${y.toFixed(1)} Z`);
+  })();
+  // waffle 10×10: 12 % = 12 čtverečků
+  (() => {
+    let h = '';
+    for (let i = 0; i < 100; i++) {
+      const x = (i % 10) * 48, y = Math.floor(i / 10) * 48;
+      h += `<div style="position:absolute; left:${x}px; top:${y}px; width:42px; height:42px; background:${i < 12 ? 'var(--kpz-maroon)' : 'var(--kpz-cream)'}"></div>`;
+    }
+    document.getElementById('waffle').innerHTML = h;
   })();
   const slides = [...document.querySelectorAll('.layer')];
   VOX.scene((t) => {

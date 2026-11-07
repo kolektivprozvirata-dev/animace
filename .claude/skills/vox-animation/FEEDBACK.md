@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.25.2**
+**Verze skillu: 0.25.3**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -149,3 +149,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-01 | 0.25.0 | kpz-telata v33 | Dvě videa krav na pastvě místo dvou fotek: „zkus to, kdyžtak se vrátíme; oddělej zvuk; krátký úsek, kde nejdou přečíst známky“. | `scripts/video_cutout.py` (úsek videa → snímky 12 fps + papír + maska), `vidCut()` ve scéně (canvas, přednačtení před `VOX.scene`, maska v canvasu kvůli CORS na file://). Videa na výšku → kus na výšku. |
 | 2026-11-06 | 0.25.1 | kpz-telata | „Udělej obrázek na Instagram, kde bude tele a „Viděli jste už náš nový reel?“, ve stejném stylu jako reel.“ | Statický příspěvek `scenes/kpz-telata/ig-novy-reel.html` (1080×1350, tele-studio, bloky KPZ, ▶); SKILL.md 2g – statická grafika přes `--still 0`. |
 | 2026-11-07 | 0.25.2 | kpz-planeta | „Udělat carousel o tom, že živočišná výroba zatěžuje planetu?“ → rešerše + texty v1 → „OK, vyrob slajdy.“ | Ověření v primárních zdrojích (`overeni-tvrzeni.md`; FAO/OWID/Science z prostředí nedostupné → jejich čísla vynechána), 8 slajdů `scenes/kpz-planeta/karusel.html`; SKILL.md 2g: karusel jako jedna scéna. |
+| 2026-11-07 | 0.25.3 | kpz-planeta | „Neměla by tam být informace, že živočišná výroba stojí 14,5 % celkových emisí?“ → doporučeno novější 12 % (FAO 2023; 14,5 % = FAO 2013, data 2005) → „Ano“ (varianta A, nový slajd). | Nový 3. slajd (waffle 100 čtverečků, 12 vínových), karusel 9 slajdů; ověření 2b, scénář, popisek se zdrojem FAO 2023. Poučení: u známých „kulatých“ čísel ověřit, jestli je zdroj mezitím nevydal novější odhad. |
