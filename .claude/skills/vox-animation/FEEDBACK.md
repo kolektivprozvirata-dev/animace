@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.1**
+**Verze skillu: 0.27.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -156,3 +156,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.26.1 | kpz-planeta | „Nemělo by tam být ‚rostlinných bílkovin‘? U ‚vyčůrá a vykaká‘ dospělejší výraz. Nemělo by to být na konkrétní kila?“ | Nadpis „Pro kolik lidí vystačí 100 kg rostlinných bílkovin?“, legenda „1 kostička = 10 kg“, „zbytek skončí ve výkalech a moči“, ve zdroji 15–33 kg ze 100 kg. Přepočet na lidi/čas (denní dávka EFSA) nepoužit – web EFSA z prostředí neověřitelný. Pravidlo [vizuál] doplněno. |
 | 2026-11-07 | 0.27.0 | kpz-planeta | „Moc nechápu ten čtvrtej slide, můžeš mi ho vysvětlit?“ → vysvětleno + přiznán zdánlivý rozpor FAO 12 % × Xu 57 % → vybrána varianta A. | Slajdy 57 % a „hovězí = čtvrtina“ (Xu 2021) vyřazeny, nový 4. slajd FAO „Chov skotu pro maso i mléko = 62 % emisí z chovu zvířat“ (masný skot + holštýnka); karusel 9 slajdů; popisek bez Xu. Pravidlo [data] o míchání zdrojů. |
 | 2026-11-07 | 0.27.1 | kpz-planeta | „Mám ti povolit nějaký weby nebo studie?“ → povoleny FAO, ORA, IOP, OWID → ověřeno v originálech; „JJ udělej“ (slajd 83 % půdy). | FAO 12 % a 62 % ✅, Poore & Nemecek ✅ (autorská verze ORA), Shepon 2016: vepřové 9 % (slajd s prasetem je opatrný). Nový 6. slajd „Zabírají 83 % půdy, dávají jen 18 % kalorií a 37 % bílkovin“, karusel 10 slajdů. Poznámka: WebFetch nové povolené domény hned nevidí, curl ano. |
+| 2026-11-07 | 0.27.2 | kpz-planeta | „Já ten slide s 83 % půdy nechápu. Dalo by se to víc vymyslet pro míň chápavé?“ | Procentní pruhy → „10 polí → 10 talířů“: zvířatům 8 polí → necelé 2 talíře, rostlinné jídlo 2 pole → přes 8 talířů; přesná čísla ve zdroji. Poučení: procenta ze tří různých základů (půda, kalorie, bílkoviny) v jednom grafu jsou pro laiky moc; převést na jednu srovnatelnou jednotku „z 10“ a vstup → výstup šipkou (jako u prasete). |
