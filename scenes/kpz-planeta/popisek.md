@@ -2,7 +2,7 @@
 
 Hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. A planeta to cítí: výroba jídla tvoří třetinu skleníkových plynů a samotný chov zvířat podle FAO 12 % všech emisí lidstva. 🌍
 
-A když bílkoviny z rostlin nejdřív sní prase, v jeho těle jich zůstane nanejvýš třetina. 🐖
+A když rostlinné bílkoviny nejdřív sní prase, v jeho těle jich zůstane nanejvýš třetina. 🐖
 
 Dobrá zpráva? Rostlinná strava má podle velké britské studie zhruba čtvrtinovou uhlíkovou stopu i spotřebu půdy oproti stravě s hodně masem. Lehčí pro planetu i pro zvířata. 🌱
 
