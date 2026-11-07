@@ -31,3 +31,24 @@ z Poore & Nemecek 2018, podíl metanu z UNEP 2021). Číslo FAO 2023 (12 %) při
 - **„Prase žere i to, co lidi nejedí (odpady, šroty).“** – I když se počítají jen bílkoviny jedlé pro lidi a jejich kvalita,
   vrací chov prasat méně, než spotřebuje: čistý příspěvek bílkovin ~0,64 (Ertl et al. 2016, Rakousko; citováno v Pomar et al. 2021).
   V ČR navíc jde na krmiva hlavně obilí (pšenice 1,23 mil. t, ječmen 0,52 mil. t, kukuřice 0,35 mil. t – MZe 2026).
+
+## Kontrola v originálech (2026-11-07, po povolení webů FAO, Oxford ORA, IOP, OWID)
+
+- **FAO 2023 – tisková zpráva** (fao.org/newsroom, „New FAO report maps pathways towards lower livestock emissions“):
+  „In 2015, livestock agrifood systems, including on farm production activities and some key supply chain processes such as
+  land use change related to feed, transport and input manufacturing, accounted for approximately 6.2 billion tonnes of CO2
+  equivalent emissions (GtCO2eq) per year, equal to around 12 percent of all anthropogenic GHG emissions“ a „cattle – including
+  meat and milk – contribute around 3.8 GtCO2 equivalent per year, or 62 percent of the livestock total, while 14 percent are
+  attributed to pigs, 9 percent to chickens, 8 percent to buffaloes and 7 percent to small ruminants.“ → slajdy 3 a 4 ✅
+- **Poore & Nemecek 2018 – autorská verze** (ora.ox.ac.uk, uuid:b0b53649-…): „impacts of the lowest-impact animal products
+  typically exceed those of vegetable substitutes“; v textu: „exceed average impacts of substitute vegetable proteins across GHG
+  emissions, eutrophication, acidification (excluding nuts), and frequently land use“ → slajd 7 („obvykle“) ✅
+  - Navíc ověřeno (zatím **není** v karuselu): „meat, aquaculture, eggs, and dairy use ~83% of the world’s farmland and contribute
+    56-58% of food’s different emissions, despite providing only 37% of our protein and 18% of our calories.“
+  - Strava bez živočišných produktů: půda −76 % (3,1 mld. ha), emise z jídla −49 % (6,6 Gt CO2eq), referenční rok 2010.
+    **Nedávat vedle Scarborough 2023** (−75 % emisí u veganů oproti hodně masa) – jiný základ, působilo by jako rozpor.
+- **Shepon et al. 2016, Environ. Res. Lett. 11:105002** (IOP, tab. 1): účinnost přeměny bílkovin krmivo → snědené jídlo
+  u vepřového **9 ± 4,5 %** (USA, celý chov, hmotnost po ztrátách u spotřebitele); hovězí 2,5 %, drůbež 21 %, mléko 14 %,
+  vejce 31 %, průměr 8 %. → Slajd 6 („nanejvýš 3 lidé“ = do 33 kg) je **opatrný**; podle Shepon by ze 100 kg zbylo v snědeném
+  vepřovém ~9 kg (≈ 1 člověk). Necháváme „nanejvýš 3“ – neprůstřelné (Shepon počítá i ztráty u spotřebitele).
+- Web science.org vrací automatickému stahování 403 – plný text čten v autorské verzi na ORA.
