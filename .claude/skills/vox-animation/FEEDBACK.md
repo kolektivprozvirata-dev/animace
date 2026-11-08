@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.28.0**
+**Verze skillu: 0.28.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -41,6 +41,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
+- **[formát]** Karusel na Instagram **max. 10 slajdů** (aplikace od 2024 bere 20, ale plánovače/API jen 10 – KPZ počítá s 10). _(2026-11-08, kpz-planeta)_
 - **[formát]** Pro Instagram držet reel **pod 3:00, max. 2:59** (KPZ 2026-10-26; dřív bezpečně 2:58) (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Začínat **hookem** (nejsilnější konkrétní fakt), ne úvodním popisem. Kontext a citlivost zvířat až za hookem. _(2026-10-14, kpz-telata v3 – zadání)_
 - **[obsah]** Skutečné fotky z farem označit malým nápisem **„Ilustrační záběr“** (KPZ – nenapadáme konkrétní kravín). _(2026-10-28, kpz-telata v29)_
@@ -160,3 +161,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.27.1 | kpz-planeta | „Mám ti povolit nějaký weby nebo studie?“ → povoleny FAO, ORA, IOP, OWID → ověřeno v originálech; „JJ udělej“ (slajd 83 % půdy). | FAO 12 % a 62 % ✅, Poore & Nemecek ✅ (autorská verze ORA), Shepon 2016: vepřové 9 % (slajd s prasetem je opatrný). Nový 6. slajd „Zabírají 83 % půdy, dávají jen 18 % kalorií a 37 % bílkovin“, karusel 10 slajdů. Poznámka: WebFetch nové povolené domény hned nevidí, curl ano. |
 | 2026-11-07 | 0.27.2 | kpz-planeta | „Já ten slide s 83 % půdy nechápu. Dalo by se to víc vymyslet pro míň chápavé?“ | Procentní pruhy → „10 polí → 10 talířů“: zvířatům 8 polí → necelé 2 talíře, rostlinné jídlo 2 pole → přes 8 talířů; přesná čísla ve zdroji. Poučení: procenta ze tří různých základů (půda, kalorie, bílkoviny) v jednom grafu jsou pro laiky moc; převést na jednu srovnatelnou jednotku „z 10“ a vstup → výstup šipkou (jako u prasete). |
 | 2026-11-07 | 0.28.0 | kpz-planeta | „Jo to je super, ale není to pak už podobný tomu předtím? Případně dát pak další slide, který byl předtím místo tohoto, s nadpisem ‚Odborněji:‘.“ | Za jednoduchý 6. slajd (pole → talíře) vrácen původní slajd s pruhy 83/18/37 % se štítkem „Odborněji:“ (7.); karusel 11 slajdů. Pravidlo [struktura] „jednoduše → odborněji“. ✅ jednoduchá verze „Jo to je super“. |
+| 2026-11-08 | 0.28.1 | kpz-planeta | „Počkej. 11? Na IG je max 10.“ → varianty → „A“. | Vyřazen slajd „Jídlo tvoří třetinu emisí“ (Crippa 2021 – jiná studie vedle FAO 12 %), „Samotný chov zvířat“ → „Chov zvířat“; karusel 10 slajdů; popisek bez Crippa. Pravidlo [formát] max. 10 slajdů. |
