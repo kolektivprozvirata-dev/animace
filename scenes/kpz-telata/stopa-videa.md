@@ -92,7 +92,7 @@ Stopa toho, o čem video mluví, je v milionech litrů mléka a tun masa ročně
 ## Tip
 Nový chat pro každé nové video (ne pokračovat v tomto) – kratší historie = výrazně méně zpracovaných tokenů.
 
-## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 2047 znaků)
+## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 2136 znaků)
 
 Dobrý den, takový komentář jsme čekali a je dobře, že přišel. Ekologický dopad AI je legitimní téma a nechceme ho zametat pod koberec. Sami jsme ho interně řešili a nakonec se rozhodli video udělat. Takže jak to bylo:
 
@@ -104,6 +104,6 @@ Nechali jsme AI spočítat i stopu tohoto videa. Přesná data firmy nezveřejň
 
 Klidně bychom animaci zadali člověku. Jsme ale dobrovolnická organizace o pár lidech a na profesionální animaci nemáme kapacitu, natož peníze. Bez těchto nástrojů by video nevzniklo vůbec.
 
-Uvědomujeme si, že spousta našich sledujících řeší environmentální dopady různých odvětví, od živočišné výroby přes fast fashion až po dopravu. Řešíme je i my. Úplně bez dopadu ale fungovat nejde. Když stánkujeme ve městě, vozíme věci autem. Tiskneme papírové letáky pro starší lidi, kteří informace na internetu nenajdou. Benefiční merch sice tiskneme na fair wear trička, přesto jsou to nová trička, která by nemusela vzniknout, když jsou sekáče plné oblečení. Snažíme se škodit co nejméně a vybírat, kde má naše stopa smysl.
+Uvědomujeme si, že spousta našich sledujících řeší environmentální dopady různých odvětví, od živočišné výroby přes fast fashion až po dopravu. Řešíme je i my. Úplně bez dopadu ale fungovat nejde. Když stánkujeme ve městě, vozíme věci autem. Tiskneme plakáty VeganFestu a papírové letáky pro starší lidi, kteří informace na internetu nenajdou. Benefiční merch sice tiskneme na fair wear trička, přesto jsou to nová trička, která by nemusela vzniknout, když jsou sekáče plné oblečení. Zároveň na něm vyděláváme a i díky tomu můžeme dělat naše aktivity. Snažíme se škodit co nejméně a vybírat, kde má naše stopa smysl.
 
 Rozumné použití AI na video, které může pomoct zvířatům, proto nevnímáme jako prohřešek proti tomu, za čím stojíme. A největší dopad, a to zvířat i planety, má pořád to, co máme na talíři. 🌱
