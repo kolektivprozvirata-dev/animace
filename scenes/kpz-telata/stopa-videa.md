@@ -92,7 +92,7 @@ Stopa toho, o čem video mluví, je v milionech litrů mléka a tun masa ročně
 ## Tip
 Nový chat pro každé nové video (ne pokračovat v tomto) – kratší historie = výrazně méně zpracovaných tokenů.
 
-## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 1 672 znaků)
+## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 1708 znaků)
 
 Dobrý den, takový komentář jsme čekali a je dobře, že přišel. Ekologický dopad AI je legitimní téma a nechceme ho zametat pod koberec. Takže jak to bylo:
 
@@ -100,7 +100,7 @@ Obsah je náš. Témata, argumenty, postoje i finální znění textu jsme přip
 
 Nejde o brainrot ani o AI na zábavu. Je to video, které může změnit pohled spousty lidí na mléko a na to, co se děje telatům. Čím víc lidí ho uvidí, tím víc to dává smysl.
 
-Spočítali jsme si i stopu. Přesná data firmy nezveřejňují, takže jde o odhad: výroba celého videa i se všemi verzemi a úpravami vyšla zhruba na tolik CO₂ jako jeden burger v restauraci a vody spotřebovala asi desetinu toho, co jeden burger. Ideální to není, katastrofa ale taky ne. Další videa budou mít stopu odhadem 3–5× menší, protože základ grafiky i postupy už máme hotové.
+Nechali jsme AI spočítat i stopu tohoto videa. Přesná data firmy nezveřejňují, takže jde jen o odhad: výroba celého videa i se všemi verzemi a úpravami vyšla zhruba na tolik CO₂ jako jeden burger v restauraci a vody spotřebovala asi desetinu toho, co jeden burger. Ideální to není, katastrofa ale taky ne. Další videa budou mít podle tohoto odhadu stopu 3–5× menší, protože základ grafiky i postupy už máme hotové.
 
 Klidně bychom animaci zadali člověku. Jsme ale dobrovolnická organizace o pár lidech a na profesionální animaci nemáme kapacitu, natož peníze. Bez těchto nástrojů by video nevzniklo vůbec.
 
