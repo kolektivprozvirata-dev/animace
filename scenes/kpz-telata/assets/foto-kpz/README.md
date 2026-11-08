@@ -19,8 +19,8 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | hala-boxy-lezi.jpg | holštýnky ležící v boxech zezadu, rošty (KPZ 2026-10-29, 1024 px; práva ověřit) | kus `hala-boxy-lezi.png` – v30 hygiena 0:38 („výkaly a moč přibývají“) |
 | krava-tele-vedle.webp | holštýnka a tele stojící vedle ní, světlé pozadí (KPZ 2026-10-29, Midjourney) | výstřižek `krava-tele-vedle.png` – v31 pouto 1:24 |
 | masne-pastva-2.webp | stádo tzv. masných krav na pastvě, ležící telata, kopce (KPZ 2026-10-29, Midjourney) | blob `masne-pastva-2-tvar.png` – v32 hygiena 0:46–0:52 (místo `masne-pastva-kojeni`) |
-| pastva-skutecna-blize.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11): stádo tzv. masných krav u stromů, telata u krav, podzim | blob `pastva-skutecna-blize-tvar.png` – v34 hygiena 0:46 |
-| pastva-skutecna-dal.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11): stádo daleko na pastvě, podzimní les, západ slunce | blob `pastva-skutecna-dal-tvar.png` (přiblíženo) – v34 zalehnutí 1:06 |
+| pastva-skutecna-blize.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11; nafoceno pro toto video, souhlas s použitím, autorku neuvádět): stádo tzv. masných krav u stromů, telata u krav, podzim | blob `pastva-skutecna-blize-tvar.png` – v34 hygiena 0:46 |
+| pastva-skutecna-dal.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11; nafoceno pro toto video, souhlas s použitím, autorku neuvádět): stádo daleko na pastvě, podzimní les, západ slunce | blob `pastva-skutecna-dal-tvar.png` (přiblíženo) – v34 zalehnutí 1:06 |
 | masne-pastva-rada.jpg | krávy s telaty jdou v řadě po svahu (KPZ 2026-10-25) | zatím nepoužito (zvířata malá) |
 | masne-pastva-celem.jpg | krávy čelem k fotografovi, ležící kráva s teletem (KPZ 2026-10-25) | zatím nepoužito (málo telat) |
 | krava-s-teletem.jpg | kráva a sající tele na pastvě (našli KPZ, 612 px; práva k fotce ověřit před zveřejněním; číslo na známce nečitelné – bez úprav) | výstřižek `krava-s-teletem.png` – úvod („začíná porodem“) |
