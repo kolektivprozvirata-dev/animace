@@ -71,6 +71,19 @@ S podílem kanceláře (topení, světlo) **+30–60 kg**, s dojížděním aute
 **Co obstojí i při pesimistickém odhadu:** výroba videa (~5–45 kg CO₂e) je pod 1 kg hovězího z masného stáda (99 kg)
 a řádově srovnatelná s 1 kg hovězího z dojeného stáda (33 kg). **Neobstojí:** „AI je 5–40× šetrnější než člověk“ – nepublikovat.
 
+## Aktualizace 2026-11-08 (v34) a srovnání s hamburgerem
+Do v34 přibylo práce: 712 volání modelu, 9,5 mil. nově zpracovaných a 367 mil. načtených tokenů, 0,61 mil. výstupních,
+22 renderů (2,3 h) → odhad celého projektu **~5,5 kg CO₂e** (rozpětí ~2–13), pesimisticky **~25–55 kg**; voda ~30 l (10–70).
+
+Hamburger (Poore & Nemecek 2018: hovězí z mléčného chovu 33 kg CO₂e/kg, z masného 99 kg/kg; + houska, sýr, zelenina ~0,5 kg):
+| | CO₂e | voda (odběr) |
+|---|---|---|
+| burger v restauraci (150 g hovězího) | ~5,5 kg (mléčný chov) – ~15 kg (masný chov) | ~250–450 l |
+| hamburger z fastfoodu (~45 g hovězího) | ~2 kg – ~5 kg | ~70–130 l |
+| **celé video** | **~5,5 kg** (pesimisticky 25–55) | **~30 l** |
+→ Video ≈ **1 burger v restauraci** (z hovězího z mléčného chovu, běžné v ČR) nebo **2–3 hamburgery z fastfoodu**;
+pesimisticky 4–10 burgerů. Vody video spotřebovalo zhruba desetinu jednoho burgeru.
+
 ## Připravená odpověď do komentářů
 „Přesná data o spotřebě AI firmy nezveřejňují, takže jde jen o odhad: výroba celého videa vychází řádově na jednotky až
 nízké desítky kg CO₂ – zhruba jako 1 kg hovězího nebo cesta autem z Prahy do Brna. Jedno video za mnoho tisíc zhlédnutí.
