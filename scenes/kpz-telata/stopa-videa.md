@@ -91,3 +91,19 @@ Stopa toho, o čem video mluví, je v milionech litrů mléka a tun masa ročně
 
 ## Tip
 Nový chat pro každé nové video (ne pokračovat v tomto) – kratší historie = výrazně méně zpracovaných tokenů.
+
+## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 1 672 znaků)
+
+Dobrý den, takový komentář jsme čekali a je dobře, že přišel. Ekologický dopad AI je legitimní téma a nechceme ho zametat pod koberec. Takže jak to bylo:
+
+Obsah je náš. Témata, argumenty, postoje i finální znění textu jsme připravili a mnohokrát přepisovali my. Zdroje jsme četli a ověřovali, protože chceme, aby každé tvrzení obstálo. Vizuální styl vychází z naší vlastní grafiky. AI nám pomohla hlavně s tím, na co nemáme lidi: s animací a hlasem. Polovinu práce tak odvedl člověk.
+
+Nejde o brainrot ani o AI na zábavu. Je to video, které může změnit pohled spousty lidí na mléko a na to, co se děje telatům. Čím víc lidí ho uvidí, tím víc to dává smysl.
+
+Spočítali jsme si i stopu. Přesná data firmy nezveřejňují, takže jde o odhad: výroba celého videa i se všemi verzemi a úpravami vyšla zhruba na tolik CO₂ jako jeden burger v restauraci a vody spotřebovala asi desetinu toho, co jeden burger. Ideální to není, katastrofa ale taky ne. Další videa budou mít stopu odhadem 3–5× menší, protože základ grafiky i postupy už máme hotové.
+
+Klidně bychom animaci zadali člověku. Jsme ale dobrovolnická organizace o pár lidech a na profesionální animaci nemáme kapacitu, natož peníze. Bez těchto nástrojů by video nevzniklo vůbec.
+
+Víme, že spousta z vás řeší i fast fashion, auta nebo cestování, a to je dobře. My taky. Ale úplně bez dopadu nefunguje nikdo z nás. Když stánkujeme ve městě, vozíme věci autem na benzín. Snažíme se škodit co nejméně a vybírat, kde má naše stopa smysl.
+
+Rozumné použití AI na video, které může pomoct zvířatům, proto nevnímáme jako prohřešek proti tomu, za čím stojíme. A největší dopad, a to zvířat i planety, má pořád to, co máme na talíři. 🌱
