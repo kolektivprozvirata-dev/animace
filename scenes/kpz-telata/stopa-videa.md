@@ -92,9 +92,9 @@ Stopa toho, o čem video mluví, je v milionech litrů mléka a tun masa ročně
 ## Tip
 Nový chat pro každé nové video (ne pokračovat v tomto) – kratší historie = výrazně méně zpracovaných tokenů.
 
-## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 1843 znaků)
+## Odpověď na Instagram pro vegany (návrh KPZ + úpravy, 2026-11-08, 1907 znaků)
 
-Dobrý den, takový komentář jsme čekali a je dobře, že přišel. Ekologický dopad AI je legitimní téma a nechceme ho zametat pod koberec. Takže jak to bylo:
+Dobrý den, takový komentář jsme čekali a je dobře, že přišel. Ekologický dopad AI je legitimní téma a nechceme ho zametat pod koberec. Sami jsme ho interně řešili a nakonec se rozhodli video udělat. Takže jak to bylo:
 
 Obsah je náš. Témata, argumenty, postoje i finální znění textu jsme připravili a mnohokrát přepisovali my. Zdroje jsme četli a ověřovali, protože chceme, aby každé tvrzení obstálo. Vizuální styl vychází z naší vlastní grafiky. AI nám pomohla hlavně s tím, na co nemáme lidi: s animací a hlasem. Polovinu práce tak odvedl člověk.
 
