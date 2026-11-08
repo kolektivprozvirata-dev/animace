@@ -221,7 +221,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-11-01 | **Pastviny jako video** (KPZ: „zkus to, kdyžtak se vrátíme k předchozí verzi“, bez zvuku, úsek bez čitelných známek). 0:46 hygiena = `assets/video/pastva-svitani.mp4` 0,5–8,1 s (svítání, stádo daleko); 1:11 zalehnutí = `assets/video/pastva-stado.mp4` 52,3–57,2 s (stádo jde přes louku; při 432 px čísla nečitelná). Videa jsou na výšku a malá (540/432 px) → utržený kus **na výšku** 600×800 (`scripts/video_cutout.py`, snímky 12 fps do canvasu), štítky pod kusem. Fotky zůstávají v `vystrizky/`. | zkušební render v33 |
 
-## Do v34 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v34 (2026-11-08) – render `out/kpz-telata-reel-v34.mp4`, hlas beze změny (`assets-v29/`, 2:58,8). Scéna vychází z v32 (videa z v33 odstraněna, zůstávají v `assets/video/`).
+
+| # | datum | úprava | stav |
+|---|---|---|---|
+| 1 | 2026-11-08 | **Skutečné fotky pastvin místo AI** (KPZ: „dvě fotky krav na pastvě, co vyfotila kamarádka; jako první tu, kde jsou blíž, jako druhou tu, kde jsou dál – klidně ji přibliž“). 0:46 hygiena = `foto-kpz/pastva-skutecna-blize.jpg` (stádo u stromů, telata u krav) → blob `pastva-skutecna-blize-tvar.png`; 1:06 zalehnutí = `pastva-skutecna-dal.jpg` (stádo daleko, podzimní les) přiblížená ~1,5× → `pastva-skutecna-dal-tvar.png`. Čísla na známkách nečitelná. Štítky těsně pod fotkami (y 860 / 880). „Ilustrační záběr“ zůstává. Pro návrat stačí vyměnit `src` zpět na `masne-pastva-2-tvar.png` / `masne-pastva-lezi2-tvar.png`. | hotovo v34 |
+
+## Do v35 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.25.0**
+**Verze skillu: 0.25.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -146,3 +146,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-10-29 | 0.24.2 | kpz-telata v31 | „V 1:24 dej tuto fotku krávy a telete místo těch, co tam jsou.“ | **v31**: pouto = kráva s teletem vedle (výstřižek). |
 | 2026-10-29 | 0.24.3 | kpz-telata v32 | „0:50 nahraď masné krávy touto fotkou.“ | **v32**: nová pastvina; první výřez úzký pruh → víc oblohy a trávy (prostor = pointa věty). Poučení: když zvířata zabírají celou šířku fotky, nezužovat výřez na pruh – přidat výšku. |
 | 2026-11-01 | 0.25.0 | kpz-telata v33 | Dvě videa krav na pastvě místo dvou fotek: „zkus to, kdyžtak se vrátíme; oddělej zvuk; krátký úsek, kde nejdou přečíst známky“. | `scripts/video_cutout.py` (úsek videa → snímky 12 fps + papír + maska), `vidCut()` ve scéně (canvas, přednačtení před `VOX.scene`, maska v canvasu kvůli CORS na file://). Videa na výšku → kus na výšku. |
+| 2026-11-08 | 0.25.1 | kpz-telata v34 | „Pošli verzi před videi“ (v32) → „Tady máš dvě fotky krav na pastvě, co vyfotila kamarádka – první bližší, druhá dál, klidně přibliž.“ | **v34**: scéna zpět na v32 + skutečné fotky pastvin (místo Midjourney). ✅ Skutečné fotky od lidí kolem KPZ jsou lepší než AI i cizí videa – nabízet tuto cestu jako první. |
