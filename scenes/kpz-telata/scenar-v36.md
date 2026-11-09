@@ -1,4 +1,4 @@
-# Scénář v36 – hygiena v novém pořadí (hala → pastva → výzkumy → „i kdyby měli chovatelé pravdu“), „Ilustrační záběr“ (2:58,8)
+# Scénář v36 – hygiena v novém pořadí (hala → pastva → výzkumy → „i kdyby měli chovatelé pravdu“), „Ilustrační záběr“ (2:58,7)
 
 _v36 (2026-11-09): bez sloganu „Zvíře není stroj ani zboží“ (KPZ: „lepší bez toho hesla“), hlas z cache bez nového generování, tempo 1,0118 → 2:58,7._
 
