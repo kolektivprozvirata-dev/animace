@@ -1,4 +1,4 @@
-// vygenerováno z assets-v29 (v35b: vystřižen slogan „Zvíře není stroj ani zboží“ 166,80–168,55 s) – neupravovat ručně
+// vygenerováno strih-bez-sloganu.py z assets-v29 (vystřižen slogan 166.8–168.55 s) – neupravovat ručně
 window.VO = {
  "duration": 177.083,
  "segments": [
