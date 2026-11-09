@@ -187,7 +187,7 @@ používat jen s vysvětlením.
 Nový projekt = kopie do `scenes/<projekt>/`, vlastní `vo-v1.json` (stejné nastavení hlasu jako `scenes/kpz-telata/vo-v29.json`).
 
 **Postup, který se osvědčil:**
-1. Rešerše a ověření tvrzení v primárních zdrojích → `overeni-tvrzeni.md`; **přednostně české zdroje**, zahraniční jen kde český údaj chybí. Platí i pro každou dílčí výměnu zdroje během úprav (v35: Virginia Tech → VFU Brno).
+1. Rešerše a ověření tvrzení v primárních zdrojích → `overeni-tvrzeni.md`; **přednostně české zdroje**, zahraniční jen kde český údaj chybí. Platí i pro každou dílčí výměnu zdroje během úprav (v35: Virginia Tech → VFU Brno). Rozlišení KPZ: **chov a praxe v kravínech → hlavně české zdroje; etologie zvířat → zahraniční v pořádku**.
 2. Hodnoty a slovník KPZ (výše) → scénář po větách (`scenar-v1.md`), hook na začátek, KPZ ho upraví.
 3. Hlas (ElevenLabs), scéna, kontaktní arch, render až na pokyn KPZ.
 4. Před zveřejněním kontrola „očima kritického zemědělce“ (vzor `scenes/kpz-telata/kritika-zemedelce.md`).

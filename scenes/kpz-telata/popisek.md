@@ -24,7 +24,7 @@ Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s 
 • Reakce na odloučení (silnější a delší při pozdějším oddělení): Stěhulová, Lidfors, Špinka (2008), Applied Animal Behaviour Science 110:144 (VÚŽV)
 • Přínosy delšího kontaktu: rychlejší růst – Náš chov 1/2026 (Odchov telat u krav); sociální chování – Meagher et al. (2019), Journal of Dairy Science 102:5765
 • Dojivost v ČR 2024 (9 574 l): MZe – komoditní karta Mléko (data ČSÚ); 1989 (3 982 l): MZe – Mléko 12/2006
-• Příjem mléka telete (~8–15 l/den): Virginia Tech Dairy (2016)
+• Příjem mléka telete (~8–20 l/den; při sání u krávy až 20 l): Náš chov 1/2026 – Odchov telat u krav
 • Mléčné farmy s kontaktem matky a telete (vzorek 104 farem v 6 zemích): Eriksson et al. (2022), Animal 16(9)
 • Vyřazování dojnic (průměrně ve 3,7. laktaci; důvody hlavně nemoci a neplodnost): Agropress (2025); Kašná et al. (2022), VÚŽV
 • Více v článku KPZ „Mléčné krávy: mateřství ve službách výroby“
