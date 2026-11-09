@@ -236,9 +236,13 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 3 | 2026-11-09 | Hygiena (kritika GPT): „zdravotní rizika nezpůsobuje jen špína“, „VÚŽV 2023 časné oddělení podporuje“, „s mámou by tele muselo do velkokapacitní haly – není jediná možnost“. Doporučení: neměnit – VÚŽV 2023 citujeme jen k nákazám v porodním kotci (tak, jak GPT sám uznává), závěr o zdraví stojí na Beaver 2019 a Bučkové 2020, hyg4 je podmíněný postoj („I kdyby…“); hala = kde dojnice v ČR žije (i 80 % farem s kontaktem jsou haly, Eriksson 2022); změna by znamenala přegenerovat 16 s hlasu. | **KPZ: necháváme** |
 | 4 | 2026-11-09 | Poměr zdrojů (KPZ: „z chovu v kravínech bychom měli mít hlavně české, etologie klidně zahraniční“): 11 českých / 5 zahraničních. Karta „Tele: ~8–15 l denně“ (Virginia Tech 2016) → **„Tele: ~8–20 l denně“** podle Náš chov 1/2026 („může vypít až 20 litrů… omezený systém 8–12 litrů“); zdrojový řádek zkrácen na „MZe 2006“. Zahraniční zůstávají: EFSA („hned“ – český podíl neexistuje; doplněk u zalehnutí), Eriksson 2022 (farmy s kontaktem v ČR nejsou), Beaver 2019 (s Bučkovou), Meagher 2019 (etologie). | ✅ ve scéně |
 
-## v35b – zkušebně bez sloganu (2026-11-09)
+## v35b – zkušebně bez sloganu (2026-11-09) → nahrazeno v36
 
-KPZ: „Zkusme verzi, kde úplně vystřihneš ‚Zvíře není stroj ani zboží‘ – jak to bude vypadat a navazovat.“
-- Hlas se negeneruje znovu: `python3 strih-bez-sloganu.py` vystřihne slogan z assets-v29/vo.wav (ticho 166,80 → 168,55 s, prolnutí 20 ms) → assets-v35b + `reel-kpz-foto-bez-sloganu.html` (kopie scény, neupravovat ručně).
-- Scéna: `HAS('alt3')` – bez sloganu záběr 11 (tmavý) odpadne, záběr 10 („krvavý a krutý byznys“) vydrží do „Celý ten kruh se točí“; pauza ~0,8 s.
-- Délka 2:57,1 (v35: 2:58,8). Render: `out/kpz-telata-reel-v35b-bez-sloganu.mp4`.
+Slogan vystřižený přímo z vo.wav v29 (skript `strih-bez-sloganu.py`, kopie scény) – 2:57,1. Soubory smazány ve v36 (jsou v historii gitu).
+
+## v36 (2026-11-09) – bez sloganu, pomalejší hlas
+
+KPZ: „Jsme na 2:57, co ten hlas zpomalit na 2:59? Přijde mi to lepší teď bez toho hesla.“
+- `vo-v36.json` = vo-v29 bez `alt3`; `alt2b` pauza 0,63 s (stejná mezera jako ve v35b); `dem1` s pevným `previous_text` „Zvíře není stroj ani zboží.“ → stejný take z cache; **tempo 1,022 → 1,0118** (hlas o ~1 % pomalejší). Vše z `el-cache`, nic se negenerovalo (tts.py spuštěn s vypnutým `el_request`).
+- Hlavní scéna `reel-kpz-foto.html` načítá `assets-v36`; záběr 11 (tmavý slogan) se přeskočí díky `HAS('alt3')`.
+- Délka **2:58,7**. Render `out/kpz-telata-reel-v36.mp4`. Scénář `scenar-v36.md`.

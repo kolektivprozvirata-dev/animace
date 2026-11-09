@@ -148,7 +148,7 @@ používat jen s vysvětlením.
   krávy na maximální výkon“.
 - **Chovy s kontaktem matky a telete [KPZ]:** vždy dodat, že nejde o ideál – i tam
   jdou býčci na jatka (nedávají mléko) a tzv. dojnice skončí na jatkách, když jim klesne
-  dojivost. „Zvíře není stroj ani zboží.“ Nedoporučovat domácí/bio chovy.
+  dojivost. „Zvíře není stroj ani zboží.“ (v reelu o telatech v36 jako mluvený slogan vypuštěn – KPZ: „lepší bez toho hesla“; postoj platí dál.) Nedoporučovat domácí/bio chovy.
 - **Argument „přebytek mléka“ [KPZ]:** kráva dává tolik mléka kvůli šlechtění;
   farmy s kontaktem ukazují, že dojit a nechat tele sát jde → výmluva velkochovů,
   problém systému („co nejefektivnější krutá mašina“).
@@ -181,10 +181,10 @@ používat jen s vysvětlením.
 - Při změně jedné věty nechat ostatní věty namluvené, jak jsou (připnout jejich kontext – viz SKILL.md 2b).
 - Záloha / rychlý náhled: Piper `cs_CZ-jirka-medium`.
 
-## Nové video pro KPZ – postup a šablona (podle reelu o telatech, v29)
+## Nové video pro KPZ – postup a šablona (podle reelu o telatech, v36)
 
 **Šablona:** `scenes/kpz-telata/reel-kpz-foto.html` (styl KPZ, výstřižky fotek, titulky, zdroje u tvrzení, outro s webem).
-Nový projekt = kopie do `scenes/<projekt>/`, vlastní `vo-v1.json` (stejné nastavení hlasu jako `scenes/kpz-telata/vo-v29.json`).
+Nový projekt = kopie do `scenes/<projekt>/`, vlastní `vo-v1.json` (stejné nastavení hlasu jako `scenes/kpz-telata/vo-v36.json`).
 
 **Postup, který se osvědčil:**
 1. Rešerše a ověření tvrzení v primárních zdrojích → `overeni-tvrzeni.md`; **přednostně české zdroje**, zahraniční jen kde český údaj chybí. Platí i pro každou dílčí výměnu zdroje během úprav (v35: Virginia Tech → VFU Brno). Rozlišení KPZ: **chov a praxe v kravínech → hlavně české zdroje; etologie zvířat → zahraniční v pořádku**.
