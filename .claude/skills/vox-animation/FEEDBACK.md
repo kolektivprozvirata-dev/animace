@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.25.3**
+**Verze skillu: 0.26.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -150,3 +150,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-09 | 0.25.2 | kpz-telata v35 | Kritika GPT (chovatel): zdroj u zalehnutí, rok a vzorek českých procent, hygiena. KPZ: „udělej jen to, co myslíš, že je dobrý; hygienu necháme“. Pak: „A Virginia Tech je český zdroj? Víš, že bychom měli hlavně vycházet z českých zdrojů.“ | **v35**: štítek „na 87,5 % ze 136 farem (VÚŽV 2014)“, „ze 136 farem“ u 96,7 % a 67,6 %; zdroj u zalehnutí = VFU Brno 2024 · EFSA 2023 (Virginia Tech vyřazen). Pravidlo „přednostně české zdroje“ už v brand/kpz/README.md bylo – porušeno při rychlé výměně zdroje; doplněno, že platí i pro dílčí výměny. |
 | 2026-11-09 | 0.25.2 | kpz-telata v35 | „Jaký máme poměr českých a zahraničních zdrojů? U etologie zahraniční nevadí, z chovu v kravínech hlavně české.“ → 11 : 5; „JJ“ na změnu karty. | Karta „Tele: ~8–20 l denně“ (Náš chov 1/2026 místo Virginia Tech). Rozlišení zdrojů zapsáno do brand/kpz/README.md. |
 | 2026-11-09 | 0.25.3 | kpz-telata v35b, v36 | „Zkusme verzi bez ‚Zvíře není stroj ani zboží‘ – jak to bude navazovat.“ → „Jsme na 2:57, co hlas zpomalit na 2:59? Lepší bez toho hesla.“ | v35b: střih přímo ve vo.wav (rychlý náhled bez generování). v36: tts.py z cache – vypuštěný segment, soused s pevným kontextem, tempo 1,0118 → 2:58,7. Poučení: kratší video → nejdřív zkusit vrátit tempo (zpomalit), ne přidávat text. Scéna umí chybějící segment (HAS). |
+| 2026-11-09 | 0.26.0 | kpz-telata v37 | „Zkusme verzi bez ‚Odnese to tele a jeho máma‘ (je to tam dvakrát) a o to víc to natáhni, ať hlas není tak rychlej. Jen pokus.“ | `tts.py`: nová volba segmentu `cut_after` – zkrátit větu z hotové nahrávky bez generování (say celé = stejná cache i kontext). v37: tempo 0,9854, 2:58,6. Poučení: opakovanou pointu v hlase nahradit pauzou a vizuálem (štítek visí déle). |

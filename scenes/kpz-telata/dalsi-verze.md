@@ -246,3 +246,12 @@ KPZ: „Jsme na 2:57, co ten hlas zpomalit na 2:59? Přijde mi to lepší teď b
 - `vo-v36.json` = vo-v29 bez `alt3`; `alt2b` pauza 0,63 s (stejná mezera jako ve v35b); `dem1` s pevným `previous_text` „Zvíře není stroj ani zboží.“ → stejný take z cache; **tempo 1,022 → 1,0118** (hlas o ~1 % pomalejší). Vše z `el-cache`, nic se negenerovalo (tts.py spuštěn s vypnutým `el_request`).
 - Hlavní scéna `reel-kpz-foto.html` načítá `assets-v36`; záběr 11 (tmavý slogan) se přeskočí díky `HAS('alt3')`.
 - Délka **2:58,7**. Render `out/kpz-telata-reel-v36.mp4`. Scénář `scenar-v36.md`.
+
+## v37 (2026-11-09) – pokus: bez „Odnese to … tele a jeho máma“
+
+KPZ: „Zkusme verzi, kde odděláme ‚Odnese to tele a jeho máma‘, je to tam dvakrát. A o to víc to natáhneš, aby hlas nebyl tak rychlej. Je to jen pokus – když to tam bude chybět, zůstaneme u v36.“
+- `vo-v37.json`: hyg4 a cru3 s `cut_after` („vytvořili.“, „jedno místo.“) – nová volba `tts.py`, usekne zbytek věty z nahrávky v cache; `say` celé původní → stejný take, sousedé beze změny. Pauza po obou 0,6 s (místo 0,23 / 0,14), ať „Odebrat tele“ chvíli visí.
+- Tempo 1,0118 → **0,9854** (hlas ~1,5 % pomalejší než přirozený, o ~2,6 % pomalejší než v36). Délka **2:58,6**. Nic se negenerovalo.
+- Scéna: „Odebrat tele“ naskočí při „které sami vytvořili“ / „nahromadí“ (`hasW`), s větou „Odnese“ funguje i dál (v36).
+- Návrat na v36: v `reel-kpz-foto.html` načíst `assets-v36/vo-timing.js`.
+

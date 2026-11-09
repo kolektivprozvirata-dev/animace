@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v36/vo-timing.js"></script>
+<script src="assets-v37/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -360,6 +360,8 @@
   const BOX = 'a';
   ['a', 'b', 'c', 'd'].forEach((v) => { $('#hb-' + v).style.display = v === BOX ? '' : 'none'; });
   const HAS = (id) => VO.segments.some((x) => x.id === id);
+  // v37: věta „Odnese to … tele a jeho máma“ může v hlase chybět → kotva na jiné slovo
+  const hasW = (id, w) => VOX.vo(id).text.toLowerCase().includes(w.toLowerCase());
   const C = {
     s1: [0, T('veg2') - LEAD], s2: [T('veg2') - LEAD, T('why') - LEAD], s3: [T('why') - LEAD, T('hyg1') - LEAD],
     s4: [T('hyg1') - LEAD, T('cru1') - LEAD], s5: [T('cru1') - LEAD, T('bon1') - LEAD], s6: [T('bon1') - LEAD, T('bon3') - LEAD],
@@ -610,7 +612,7 @@
       const sch = prog(t, t4 - 0.05, 0.35);
       set('#g-sch', { o: sch, y: (1 - sch) * 40 });
       set('#g-strike', { sx: prog(t, W('hyg4', 'problém'), 0.35, ease.outCubic) });
-      popIn('#g-res', t, W('hyg4', 'Odnese') + 0.2, { r: -3 });
+      popIn('#g-res', t, hasW('hyg4', 'Odnese') ? W('hyg4', 'Odnese') + 0.2 : W('hyg4', 'které'), { r: -3 });
     }
     // ---------- 5 · ZALEHNUTÍ ----------
     if (frame('s5', t, 1.0, 1.04)) {
@@ -628,7 +630,7 @@
       const sch = prog(t, t3 - 0.05, 0.35);
       set('#z-sch', { o: sch, y: (1 - sch) * 40 });
       set('#z-strike', { sx: prog(t, t3 + 0.85, 0.35, ease.outCubic) });
-      popIn('#z-res', t, W('cru3', 'Odnese') + 0.2, { r: -3 });
+      popIn('#z-res', t, hasW('cru3', 'Odnese') ? W('cru3', 'Odnese') + 0.2 : W('cru3', 'nahromadí'), { r: -3 });
     }
     // ---------- 6 · POUTO ----------
     if (frame('s6', t, 1.0, 1.05)) {

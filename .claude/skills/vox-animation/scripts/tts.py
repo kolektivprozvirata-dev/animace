@@ -47,6 +47,8 @@ ElevenLabs („engine“: „elevenlabs“ ve vo.json, nebo --engine):
     nejvýš „breath_pause“ s (výchozí 0,15), na konci segmentu jen pauza „pause“/„gap“; nechat je:
     „debreath“: false ve vo.json nebo --keep-breaths. Funguje i nad cache – nic se znovu neplatí.
   - „tempo“: 1.015 ve vo.json = celý hlas o 1,5 % rychleji (ffmpeg atempo, výška beze změny, časy titulků se přepočtou)
+  - „cut_after“: "vytvořili." v segmentu = z nahrávky v cache nechat jen text po tuto značku, zbytek věty useknout
+    (bez nového generování). „say“ nechat celé původní (klíč cache, kontext sousedů), „text“ = zkrácený titulek.
     – na doladění délky bez nového namlouvání; do ~3 % neslyšitelné
   - zvuk před prvním / za posledním slovem segmentu se ztlumí (clean_edges – lupnutí na konci
     nahrávek; „clean_edges“: false); pod celý hlas jde tichý šum prostoru „room_tone“ (dBFS RMS,
@@ -432,6 +434,24 @@ def main():
                 nb, al = debreath(p, al, spec.get('breath_pause', 0.15))
                 breaths += nb
             if al and al.get('character_end_times_seconds') and spec.get('clean_edges', True):
+                clean_edges(p, al)
+            cut = seg.get('cut_after')
+            if cut and al and al.get('character_end_times_seconds'):
+                # „cut_after“: z hotové nahrávky (cache) nechat jen text po tuto značku včetně – zbytek věty
+                # se usekne bez nového generování; „say“ zůstává celé (stejný klíč cache i kontext sousedů)
+                k = say.find(cut)
+                if k < 0:
+                    raise SystemExit(f'cut_after „{cut}“ není v textu segmentu {seg["id"]}')
+                k += len(cut)
+                say = say[:k]
+                al = {kk: (v[:k] if isinstance(v, list) else v) for kk, v in al.items()}
+                with wave.open(p) as wf:
+                    prm, fr = wf.getparams(), wf.getframerate()
+                    keep = min(wf.getnframes(), int((al['character_end_times_seconds'][-1] + 0.25) * fr))
+                    frames = wf.readframes(keep)
+                with wave.open(p, 'wb') as wf:
+                    wf.setparams(prm)
+                    wf.writeframes(frames)
                 clean_edges(p, al)
         if tempo != 1.0:
             # celý hlas o pár procent rychleji, výška beze změny (ffmpeg atempo); časy znaků se přepočtou
