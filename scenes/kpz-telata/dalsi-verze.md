@@ -231,3 +231,4 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 
 | # | datum | úprava | stav |
 |---|---|---|---|
+| 1 | 2026-11-09 | Zalehnutí (kritika GPT z pohledu chovatele): věta „Na pastvě u tzv. masných krav se o zalehnutí prakticky neslyší“ nemá data a náš vlastní zdroj (Hall 1998, Virginia Tech – masný skot) píše, že úrazy včetně zalehnutí „kills a small percentage of calves every year“. Návrh cru2: „To údajně hrozí tam, kde je *moc krav na malém prostoru.* U tzv. masných krav se to řeší prostorem, ne oddělením.“ (Hall 1998: „usually a result of over crowded conditions…“, „pairs need to be in pastures with plenty of room“; obraz i štítek „Tzv. masné krávy: prostor“ beze změny, o ~0,7 s kratší). Zdrojový řádek: „úrazy telat vč. zalehnutí hlavně při přeplnění – Hall 1998 (Virginia Tech) · EFSA 2023“ (EFSA řeší agresi krav, ne zalehnutí). Náhradu od GPT („Riziko úrazů je potřeba řešit…“) nedoporučuji – úřední tón, cru3 to říká. | čeká na KPZ |
