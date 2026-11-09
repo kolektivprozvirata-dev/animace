@@ -206,3 +206,27 @@ zalehnutí jako častý argument v literatuře nedoloženo – A6), „na pastv�
 onemocnění** a delší kontakt s matkou zvyšuje riziko kryptosporidií a respiračních onemocnění. Karta „Přínos … neprokázán“ teď cituje
 jen Bučkovou 2020 („výsledky jsou variabilní“). Nejsilnější protiargument je Beaver et al. 2019 (systematický přehled 70 studií,
 „no consistent evidence in support of early separation“) – doporučeno ho na kartě ponechat vedle Bučkové.
+
+## H · Masné krávy – kdy a kde se rodí telata (dotaz KPZ 2026-11-09)
+
+✔ = ověřeno v plném textu, (ú) = jen úryvek vyhledávače (cschms.cz, zemedelec.cz, katedry.czu.cz, adoc.pub, cit.vfu.cz jsou ze sítě session blokované).
+
+**Celostátní data (KUMP, jen zapsaná stáda):**
+- ✔ Ročenka Chov skotu v ČR 2019 (ČMSCH/VÚŽV; data ČSCHMS), graf 29 – frekvence telení 2017/18 (~19,5 tis. narozených telat v KU):
+  10.–11. **5,9 %** · 12.–1. **20,5 %** · 2.–3. **40,5 %** · 4.–5. **24,3 %** · 6.–7. **6,0 %** · 8.–9. **2,8 %**.
+  „dlouhodobě se uplatňuje sezónní telení … nejvíce telat se narodilo v únoru a březnu, nejméně v srpnu a v září“.
+  → ~2/3 telat v říjnu–březnu, ~1/4 v dubnu–květnu, <10 % v létě.
+  https://vuzv.cz/wp-content/uploads/2020/07/Rocenka-chovu-skotu-v-Ceske-republice-za-rok-2019.pdf
+- (ú) ČSCHMS, plemeno hereford 2015: 82,4 % porodů leden–duben. https://www.cschms.cz/DOC_AKCE/1209_Hereford.pdf
+- (ú) ČSCHMS, uzávěrka KUMP 2024 (telata 1. 10. 2023–30. 9. 2024): graf podle měsíců existuje, čísla nečitelná. https://www.cschms.cz/DOC_SLECHTENI_kump/452_Uzaverky_KUMP_CH.pdf
+
+**Kde (celostátní údaj neexistuje – nikdo neeviduje):**
+- (ú) Diplomová práce (theses.cz): sledovaná farma – 76 % porodů v zimovišti, 24 % na pastvě. https://theses.cz/id/qzr3xf/zaverecna_prace.pdf
+- (ú) 31 farem v marginálních oblastech jižních a západních Čech, 5 let: 69,7 % telení leden–březen. https://adoc.pub/chov-masnych-plemen-skotu-v-marginalnich-oblastech-jinich-a-.html
+- ✔ Náš chov 22. 11. 2001 (Adamski, Kučera, Chládek): 4 stáda (2 ČR, 2 PL) celoročně na pastvě „bez jakýchkoliv budov“, zimoviště z balíků slámy, telení únor–březen přímo venku. https://naschov.cz/celorocni-pobytu-skotu-na-pastvine-s-telenim-v-zimnich-mesicich/
+- (ú) Zemědělec – Zásady reprodukce u masného skotu: telení v květnu–červnu na pastvě = hygieničtější, menší ztráty telat, ale horší dohled. https://zemedelec.cz/zasady-reprodukce-u-masneho-skotu/
+- (ú) ČZU výukové materiály: zimoviště = nezateplený přístřešek s hlubokou podestýlkou (7–8 m²/krávu), porodní kotce 10–12 m² na 5–10 krav; po porodu kráva s teletem 2–5 dní stranou (ČSCHMS, Hlubek); „školka“ s přístupem jen pro telata (příkrm).
+
+**Závěr pro video:** většina telat masných krav se v ČR rodí v zimě (zimoviště nebo zimní pastva), menšina na jaře a v létě na pastvě.
+Video netvrdí, že se rodí na pastvě (hyg3: „na pastvě je prostoru dost a telata tam zůstávají s matkami měsíce“) – v pořádku.
+Možný útok: „masné krávy telí ve stáji stejně jako dojnice“ → odpověď: i v zimovišti zůstává tele s matkou (porodní kotec, pak stádo + školka) – rozdíl je prostor a uspořádání, ne budova.
