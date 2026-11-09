@@ -116,6 +116,8 @@ používat jen s vysvětlením.
   brakace, jatka, azyly). Čerpat odtud fakta i formulace.
 
 ## Specifické postoje KPZ (z feedbacku)
+
+- **Refrén „Odnese to (zase) tele a jeho máma.“ [KPZ, 2026-11-09]:** nechat i když se opakuje – bez něj „to tam chybí“ (pokus v37 zamítnut, i přes pomalejší hlas). Opakování pointy je záměr, ne chyba.
 - **Začátek videa [KPZ]:** začínat hookem (nejsilnější fakt – odebrání telete), ne popisem
   toho, jaké krávy jsou.
 - **Industriální slovník [KPZ]:** „velkokapacitní haly“, ne „stáje“ – výrazy, které ukazují
