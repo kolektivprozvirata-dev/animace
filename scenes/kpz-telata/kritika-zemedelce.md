@@ -78,7 +78,7 @@ i tam hynou na průjmy.“
 **Útok:** „Neslyší, protože to nikdo neeviduje.“
 **Co máme:** Žádná data o četnosti nikde (overeni-tvrzeni B5) – je to postoj KPZ, formulace „neslyší“ je opatrná.
 **Odpověď:** Netvrdíme, že se to neděje – tvrdíme, že se o tom nemluví; riziko podle zdrojů roste s hustotou (EFSA).
-**Doplněno 2026-11-09 (kritika GPT):** obhajoba je slabá – Hall 1998 (Virginia Tech, masný skot): trauma „kills a small percentage of calves every year“, „usually a result of over crowded conditions in bedding or feeding areas“. EFSA řeší agresi krav, ne zalehnutí. → návrh na v35 v dalsi-verze.md.
+**Doplněno 2026-11-09 (kritika GPT):** obhajoba je slabá – Hall 1998 (Virginia Tech, masný skot): trauma „kills a small percentage of calves every year“, „usually a result of over crowded conditions in bedding or feeding areas“. EFSA řeší agresi krav, ne zalehnutí. **Rozhodnutí KPZ:** větu nechat (o zalehnutí na pastvě se v praxi opravdu prakticky neslyší), zdroj ve videu vyměněn za Virginia Tech 1998 · EFSA 2023.
 
 ### 11. Stáří dat – „Do 12 h na 87,5 % farem“
 **Útok:** „Průzkum z roku 2014 (data asi 2012), 136 farem. Dnes je to jinak.“

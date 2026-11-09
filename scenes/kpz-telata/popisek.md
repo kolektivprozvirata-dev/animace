@@ -15,12 +15,12 @@ Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s 
 ---
 
 📚 Zdroje:
-• Česká praxe – oddělení do 12 h po porodu (87,5 % farem), individuální boxy (96,7 % farem): Staněk et al. (2014), Journal of Dairy Science 97:3973 a Agritech Science 2014 (VÚŽV); R. Šárová (VÚŽV), Náš chov 2021 – Odchov telat a legislativa (do 12 h, individuálně do 8 týdnů)
+• Česká praxe – oddělení do 12 h po porodu (87,5 % ze 136 farem), individuální boxy (96,7 % farem): Staněk et al. (2014, dotazníkový průzkum 136 farem = 11,9 % dojnic ČR), Journal of Dairy Science 97:3973 a Agritech Science 2014 (VÚŽV); R. Šárová (VÚŽV), Náš chov 2021 – Odchov telat a legislativa (do 12 h, individuálně do 8 týdnů)
 • „Hned“: EFSA (2023) Welfare of calves – „the great majority of dairy farms separate dam and calf immediately after birth“; metodika VÚŽV (Malá et al. 2023) doporučuje oddělit do 2 h
 • Společné porodny (67,6 % farem): Staněk et al. (2014); infekce v porodním kotci: metodika VÚŽV (2023)
 • Zdraví telat a kontakt s matkou (přínos časného oddělení ve studiích nejednoznačný): K. Bučková (VÚŽV), Náš chov 12/2020; Beaver et al. (2019), Journal of Dairy Science 102:5784
 • Odstav telat tzv. masných krav (6–10 měsíců): Náš chov 2018 – Plodnost a ekonomické ukazatele chovu masných krav
-• Zalehnutí / úrazy telat a hustota ustájení: EFSA (2023)
+• Zalehnutí / úrazy telat a přeplnění: Hall (1998), Virginia Tech – Livestock Update; EFSA (2023)
 • Reakce na odloučení (silnější a delší při pozdějším oddělení): Stěhulová, Lidfors, Špinka (2008), Applied Animal Behaviour Science 110:144 (VÚŽV)
 • Přínosy delšího kontaktu: rychlejší růst – Náš chov 1/2026 (Odchov telat u krav); sociální chování – Meagher et al. (2019), Journal of Dairy Science 102:5765
 • Dojivost v ČR 2024 (9 574 l): MZe – komoditní karta Mléko (data ČSÚ); 1989 (3 982 l): MZe – Mléko 12/2006
