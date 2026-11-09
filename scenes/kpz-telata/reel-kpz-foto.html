@@ -359,11 +359,14 @@
   /** „samo v boxu“: a = tele KPZ v kreslené boudě, b = skutečná bouda, c = řada boud, d = farma z výšky */
   const BOX = 'a';
   ['a', 'b', 'c', 'd'].forEach((v) => { $('#hb-' + v).style.display = v === BOX ? '' : 'none'; });
+  const HAS = (id) => VO.segments.some((x) => x.id === id);
   const C = {
     s1: [0, T('veg2') - LEAD], s2: [T('veg2') - LEAD, T('why') - LEAD], s3: [T('why') - LEAD, T('hyg1') - LEAD],
     s4: [T('hyg1') - LEAD, T('cru1') - LEAD], s5: [T('cru1') - LEAD, T('bon1') - LEAD], s6: [T('bon1') - LEAD, T('bon3') - LEAD],
     s7: [T('bon3') - LEAD, T('mil1') - LEAD], s8: [T('mil1') - LEAD, T('loop') - LEAD], s9: [T('loop') - LEAD, T('alt1') - LEAD],
-    s10: [T('alt1') - LEAD, T('alt3') - LEAD], s11: [T('alt3') - LEAD, T('dem1') - LEAD],
+    // v35b: bez sloganu (alt3) v časování → záběr 11 se přeskočí, 10 navazuje rovnou na 12
+    s10: [T('alt1') - LEAD, (HAS('alt3') ? T('alt3') : T('dem1')) - LEAD],
+    s11: HAS('alt3') ? [T('alt3') - LEAD, T('dem1') - LEAD] : [1e9, 1e9],
     s12: [T('dem1') - LEAD, T('out') - LEAD], s13: [T('out') - LEAD, VO.duration + 1],
   };
   // řádky se zdroji: každý jen u tvrzení, ke kterému patří (v23 – dřív jeden řádek na celý záběr);

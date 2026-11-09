@@ -235,3 +235,10 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 | 2 | 2026-11-09 | Česká procenta – rok a vzorek (kritika GPT). Štítek „na 87,5 % českých farem“ → „na 87,5 % ze 136 farem (VÚŽV 2014)“; zdrojové řádky 96,7 % a 67,6 % → „ze 136 farem“. Hlas beze změny (přítomný čas dokládá Šárová 2021: „převažuje“). Rok sběru dat (GPT: 2012) neověřen – článek je za paywallem, uvádí se rok vydání. | ✅ ve scéně (KPZ: „udělej, co myslíš, že je dobrý“) |
 | 3 | 2026-11-09 | Hygiena (kritika GPT): „zdravotní rizika nezpůsobuje jen špína“, „VÚŽV 2023 časné oddělení podporuje“, „s mámou by tele muselo do velkokapacitní haly – není jediná možnost“. Doporučení: neměnit – VÚŽV 2023 citujeme jen k nákazám v porodním kotci (tak, jak GPT sám uznává), závěr o zdraví stojí na Beaver 2019 a Bučkové 2020, hyg4 je podmíněný postoj („I kdyby…“); hala = kde dojnice v ČR žije (i 80 % farem s kontaktem jsou haly, Eriksson 2022); změna by znamenala přegenerovat 16 s hlasu. | **KPZ: necháváme** |
 | 4 | 2026-11-09 | Poměr zdrojů (KPZ: „z chovu v kravínech bychom měli mít hlavně české, etologie klidně zahraniční“): 11 českých / 5 zahraničních. Karta „Tele: ~8–15 l denně“ (Virginia Tech 2016) → **„Tele: ~8–20 l denně“** podle Náš chov 1/2026 („může vypít až 20 litrů… omezený systém 8–12 litrů“); zdrojový řádek zkrácen na „MZe 2006“. Zahraniční zůstávají: EFSA („hned“ – český podíl neexistuje; doplněk u zalehnutí), Eriksson 2022 (farmy s kontaktem v ČR nejsou), Beaver 2019 (s Bučkovou), Meagher 2019 (etologie). | ✅ ve scéně |
+
+## v35b – zkušebně bez sloganu (2026-11-09)
+
+KPZ: „Zkusme verzi, kde úplně vystřihneš ‚Zvíře není stroj ani zboží‘ – jak to bude vypadat a navazovat.“
+- Hlas se negeneruje znovu: `python3 strih-bez-sloganu.py` vystřihne slogan z assets-v29/vo.wav (ticho 166,80 → 168,55 s, prolnutí 20 ms) → assets-v35b + `reel-kpz-foto-bez-sloganu.html` (kopie scény, neupravovat ručně).
+- Scéna: `HAS('alt3')` – bez sloganu záběr 11 (tmavý) odpadne, záběr 10 („krvavý a krutý byznys“) vydrží do „Celý ten kruh se točí“; pauza ~0,8 s.
+- Délka 2:57,1 (v35: 2:58,8). Render: `out/kpz-telata-reel-v35b-bez-sloganu.mp4`.
