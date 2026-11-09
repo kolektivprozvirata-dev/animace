@@ -227,7 +227,7 @@ Ticho kolem hesla vyšlo samo (alt2b bez kontextu končí delší pauzou): před
 |---|---|---|---|
 | 1 | 2026-11-08 | **Skutečné fotky pastvin místo AI** (KPZ: „dvě fotky krav na pastvě, co vyfotila kamarádka; jako první tu, kde jsou blíž, jako druhou tu, kde jsou dál – klidně ji přibliž“). 0:46 hygiena = `foto-kpz/pastva-skutecna-blize.jpg` (stádo u stromů, telata u krav) → blob `pastva-skutecna-blize-tvar.png`; 1:06 zalehnutí = `pastva-skutecna-dal.jpg` (stádo daleko, podzimní les) přiblížená ~1,5× → `pastva-skutecna-dal-tvar.png`. Čísla na známkách nečitelná. Štítky těsně pod fotkami (y 860 / 880). „Ilustrační záběr“ zůstává. Pro návrat stačí vyměnit `src` zpět na `masne-pastva-2-tvar.png` / `masne-pastva-lezi2-tvar.png`. | hotovo v34 |
 
-## v35 (2026-11-09, hlas v29 beze změny, jen grafika)
+## v35 (2026-11-09, hlas v29 beze změny, jen grafika) – vyrenderováno, 2:58,8, out/kpz-telata-reel-v35.mp4
 
 | # | datum | úprava | stav |
 |---|---|---|---|
