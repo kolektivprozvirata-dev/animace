@@ -20,7 +20,7 @@ Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s 
 • Společné porodny (67,6 % farem): Staněk et al. (2014); infekce v porodním kotci: metodika VÚŽV (2023)
 • Zdraví telat a kontakt s matkou (přínos časného oddělení ve studiích nejednoznačný): K. Bučková (VÚŽV), Náš chov 12/2020; Beaver et al. (2019), Journal of Dairy Science 102:5784
 • Odstav telat tzv. masných krav (6–10 měsíců): Náš chov 2018 – Plodnost a ekonomické ukazatele chovu masných krav
-• Zalehnutí / úrazy telat a přeplnění: Hall (1998), Virginia Tech – Livestock Update; EFSA (2023)
+• Zalehnutí a přišlápnutí telete cizí krávou: VFU Brno – Chov a welfare skotu (přednáška, 2024); úrazy telat a hustota ustájení: EFSA (2023)
 • Reakce na odloučení (silnější a delší při pozdějším oddělení): Stěhulová, Lidfors, Špinka (2008), Applied Animal Behaviour Science 110:144 (VÚŽV)
 • Přínosy delšího kontaktu: rychlejší růst – Náš chov 1/2026 (Odchov telat u krav); sociální chování – Meagher et al. (2019), Journal of Dairy Science 102:5765
 • Dojivost v ČR 2024 (9 574 l): MZe – komoditní karta Mléko (data ČSÚ); 1989 (3 982 l): MZe – Mléko 12/2006

@@ -190,7 +190,7 @@ Od v23 má každé tvrzení vlastní řádek jen po dobu, kdy zní / je v obraze
 | 0:29–0:34 | společné porodny, nákazy | Staněk 2014 (67,6 %) · metodika VÚŽV 2023 |
 | 0:44–0:46 | karta „Přínos časného oddělení pro zdraví telat: neprokázán“ | zdroj přímo na kartě (Bučková 2020) – řádek by ji duplikoval |
 | 0:46–0:53 | masné krávy: telata s matkami měsíce | Náš chov 2018 (6–10 měsíců) |
-| 1:00–1:08 | zalehnutí hrozí, kde je moc krav na malém prostoru | Virginia Tech (Hall 1998: úrazy vč. zalehnutí „usually a result of over crowded conditions“) · EFSA 2023 (agrese krav při vysoké hustotě) |
+| 1:00–1:08 | zalehnutí hrozí, kde je moc krav na malém prostoru | VFU Brno 2024, přednáška Chov a welfare skotu (ú): individuální porodní kotec – „snížení rizika zalehnutí, přišlápnutí cizí krávou“ · EFSA 2023 (agrese krav při vysoké hustotě) · zahraniční doplněk: Hall 1998, Virginia Tech („usually a result of over crowded conditions“) |
 | 1:13–1:28 | pozdější oddělení bolí víc · s mámou déle rychlejší růst, víc společenské | Stěhulová 2008 · Náš chov 1/2026 · Meagher 2019 |
 | 1:47–1:53 | 1989 3 982 l → 2024 9 574 l · tele ~8–15 l / dojnice ~30 l | MZe/ČSÚ · MZe 2006 · Virginia Tech 2016 |
 | 2:11–2:28 | jedna studie, 104 farem, 7–305 dní, mléko se prodává | Eriksson 2022 |
