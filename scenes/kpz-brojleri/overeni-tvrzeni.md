@@ -14,7 +14,7 @@ irozhlas.cz – u nich jen výňatky z vyhledávače (⚠️). Před zveřejněn
 | # | tvrzení ve videu | stav | hlavní zdroj |
 |---|---|---|---|
 | 1 | Podestýlka se po celou dobu výkrmu **nevyměňuje** | ✅ | VÚŽV – Mikulášková & Glancová, Náš chov 3. 10. 2024 |
-| 2 | v3: „Některé zdroje uvádějí, že se na ni **přisype další**. V praxi se to ale podle našich zkušeností nejspíše neděje.“ (do v2: „Nanejvýš se přisype nová, stará zůstává pod ní“) | ✅ / ⚠️ | zdroje: VÚŽV (částečné doplňování), EFSA 2023; „v praxi spíš ne“ = zkušenost KPZ, ve videu tak i podané |
+| 2 | v3: „Některé zdroje uvádějí, že se na ni **přisype další**. V praxi se to ale podle našich zkušeností nejspíše neděje.“ (do v2: „Nanejvýš se přisype nová, stará zůstává pod ní“) | ✅ / ⚠️ | zdroje: VÚŽV (částečné doplňování), EFSA 2023; „v praxi spíš ne“ = zkušenost KPZ, ve videu tak i podané; od v5 pojistka „A i když ano, ta stará zůstává pod ní.“ |
 | 3 | Vyklízí se až **po vyskladnění** (odvozu na jatka) | ✅ | vyhl. 208/2004 Sb. § 11 odst. 7; Náš chov 8/2020 |
 | 4 | Výkrm trvá zhruba **30–40 dní** | ✅ | ČZU – Chodová, Náš chov 27. 5. 2024 (30–35 dní); JČU, Náš chov 2017 (35–42 dní) |
 | 5 | Kuřata na začátku malá, na konci **kolem 2 kg** | ✅ | Náš chov 2002 (1,4–2,0 kg), 2007 (do 2,4 kg); IPPC (≈ 2 kg / 40 dní) |

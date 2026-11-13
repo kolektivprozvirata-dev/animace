@@ -22,11 +22,16 @@ místo `eleven_v3` (byla o 3,8 půltónu výš). Kontrola přepisem (ElevenLabs 
 Tempo mezi v2 a v3 (`tempo` 1.05 nad nahrávkami v3, pauzy −0,075 s), „Jenže v hale je stále…“, důrazný konec „…nepočítá.“,
 nová věta „A většina z nich se předtím týdny válí ve vlastních výkalech.“ + fotka a štítek v závěru. Přepis sedí na 393 slovech.
 
-## Do v5 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v5 (2026-11-13) – render `out/kpz-brojleri-reel-v5.mp4`, hlas `vo-v5.json` → `assets-v5/` (2:39,3), scénář `scenar-v5.md`
+
+„V posledních dnech“ místo týdnů (i v závěru a grafice), pojistka „A i když ano, ta stará zůstává pod ní.“ (Do v5 #4).
+Přepis sedí na 401 slovech.
+
+## Do v6 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
 | 1 | 2026-10-29 | **Fotky KPZ** místo provizorních (`assets/foto-provizorni/README.md`): (a) malá kuřátka v čisté hale – polaroid „Den 1“ a pointa, (b) hala na konci výkrmu – hook nebo „leží“ (zatím jen schéma), (c) kuře ležící v podestýlce – hook + „leží“ + závěr (v4), (d) dospělé kuře celé, vidět nohy – popáleniny. Přidat „Ilustrační záběr“. | čeká na fotky |
 | 2 | 2026-10-29 | (z v1) Řečnická otázka „Měnit podestýlku zvířatům…?“ zní skoro oznamovacím tónem (z 9 verzí nejlepší původní). Když vadí: kratší otázka, např. „Proč ji měnit, když za pár týdnů jedou na jatka?“ – zeptat se KPZ. | v3: nový take stoupá +3,7 půltónu, výška jako okolí – čeká na poslech KPZ |
 | 3 | 2026-10-29 | (z v2) KPZ vypustili „Kuře není jídlo. Je to někdo.“ – vrátit? | k rozhodnutí |
-| 4 | 2026-11-13 | (z v3) Bezpečnější varianta přisypávání: „…nejspíše neděje. A i když ano, ta stará zůstává pod ní.“ – na námitku „přistýláme“ (viz `overeni-tvrzeni.md`). | k rozhodnutí |
+| 4 | 2026-11-13 | (z v3) Bezpečnější varianta přisypávání: „…nejspíše neděje. A i když ano, ta stará zůstává pod ní.“ – na námitku „přistýláme“ (viz `overeni-tvrzeni.md`). | hotovo ve v5 |
