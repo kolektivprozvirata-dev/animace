@@ -1,4 +1,4 @@
-# Popisek k reelu (návrh, v6 – Instagram, 2:40)
+# Popisek k reelu (návrh, v7 – Instagram, 2:39)
 
 Válí se vaše jídlo ve svých vlastních výkalech? 🐔 Než kuře skončí na talíři, žije ve většině případů v hale s desítkami tisíc dalších. Celý jeho život trvá jen kolem 30 dní – a celou tu dobu žije na stejné podestýlce, která se nemění.
 

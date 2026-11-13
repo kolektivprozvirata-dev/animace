@@ -32,7 +32,11 @@ Přepis sedí na 401 slovech.
 „Z trusu se navíc…“, podpis „Kolektiv pro zvířata.“ jako konec + „Zdroje v popisku.“ jako tišší dovětek, vážnější úvodní otázka
 (`eleven_multilingual_v2` místo `eleven_v3`). Přepis sedí na 402 slovech.
 
-## Do v7 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v7 (2026-11-13) – render `out/kpz-brojleri-reel-v7.mp4`, hlas `vo-v7.json` → `assets-v7/` (2:39,3), scénář `scenar-v7.md`
+
+Úvodní otázka: KPZ vybrali z ukázek dvojku (`eleven_multilingual_v2`, bez kontextu, seed 4). Jinak jako v6. Přepis sedí na 402 slovech.
+
+## Do v8 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
@@ -40,4 +44,4 @@ Přepis sedí na 401 slovech.
 | 2 | 2026-10-29 | (z v1) Řečnická otázka „Měnit podestýlku zvířatům…?“ zní skoro oznamovacím tónem (z 9 verzí nejlepší původní). Když vadí: kratší otázka, např. „Proč ji měnit, když za pár týdnů jedou na jatka?“ – zeptat se KPZ. | v3: nový take stoupá +3,7 půltónu, výška jako okolí – čeká na poslech KPZ |
 | 3 | 2026-10-29 | (z v2) KPZ vypustili „Kuře není jídlo. Je to někdo.“ – vrátit? | k rozhodnutí |
 | 4 | 2026-11-13 | (z v3) Bezpečnější varianta přisypávání: „…nejspíše neděje. A i když ano, ta stará zůstává pod ní.“ – na námitku „přistýláme“ (viz `overeni-tvrzeni.md`). | hotovo ve v5 |
-| 5 | 2026-11-13 | (z v6) Úvodní otázka zní „chcíple“, hlavně konec – vybrat z ukázek 1–4 (bez kontextu seed 3 / 4 / 1; nápověda „zeptal se vážně a důrazně“ seed 4), pak render v7. | čeká na výběr KPZ |
+| 5 | 2026-11-13 | (z v6) Úvodní otázka zní „chcíple“, hlavně konec – vybrat z ukázek 1–4 (bez kontextu seed 3 / 4 / 1; nápověda „zeptal se vážně a důrazně“ seed 4), pak render v7. | hotovo ve v7 – vybrána 2 (seed 4) |
