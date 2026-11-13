@@ -2,15 +2,15 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – kuřata ve výkalech (reel 9:16, styl KPZ, v1)</title>
+<title>KPZ – kuřata ve výkalech (reel 9:16, styl KPZ, v3)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v2/vo-timing.js"></script>
+<script src="assets-v3/vo-timing.js"></script>
 <style>
-  /* Scénář v2 (scenar-v2.md, hlas assets-v2/) ve stylu KPZ – šablona scenes/kpz-telata/reel-kpz-foto.html.
+  /* Scénář v3 (scenar-v3.md, hlas assets-v3/) ve stylu KPZ – šablona scenes/kpz-telata/reel-kpz-foto.html.
      Fotky v assets/foto-provizorni/ jsou provizorní (dataset na HF) – nahradit fotkami KPZ (README u fotek). */
   .tag.big { font-size: 52px; }
   .card { position: absolute; background: var(--kpz-cream); color: var(--kpz-teal-d); padding: 34px 40px; filter: url(#kpz-print-soft); }
@@ -116,8 +116,8 @@
     </svg>
     <div class="abs tag print" id="p-l0" style="left:120px; top:840px; font-size:38px">Den 1: čisté hobliny</div>
     <div class="abs tag red big print" id="p-never" style="left:90px; top:990px; font-size:64px; white-space:nowrap">Celý výkrm se nemění</div>
-    <div class="abs tag green big print" id="p-top" style="left:560px; top:330px; font-size:42px; white-space:nowrap">Nová vrstva navrch</div>
-    <div class="abs tag print" id="p-old" style="left:600px; top:760px; font-size:42px; white-space:nowrap">Stará zůstává pod ní</div>
+    <div class="abs tag green big print" id="p-top" style="left:560px; top:330px; font-size:42px; white-space:nowrap"><span class="strike-wrap">Nová vrstva navrch?<span class="strike" id="p-topx" style="height:12px"></span></span></div>
+    <div class="abs tag red big print" id="p-old" style="left:600px; top:412px; font-size:42px; white-space:nowrap">V praxi spíš ne</div>
     <div class="abs tag yellow big print" id="p-out" style="left:90px; top:1090px; font-size:50px; line-height:1.15">Vyklízí se až po<br>odvozu na jatka</div>
     <!-- kalendář: 35 dní -->
     <div class="card" id="p-cal" style="left:110px; top:380px; width:860px; padding:24px 30px">
@@ -450,11 +450,15 @@
         set('#pl' + i, { y: (1 - p) * -80, o: p > 0 ? 1 : 0 }); });
       set('#p-l0', { o: prog(t, t0 + 0.1, 0.2) * (1 - prog(t, tL + dL, 0.2)) * (1 - outS) });
       popIn('#p-never', t, W('pod1', 'nemění') - 0.1, { r: -2, o: 1 - prog(t, t2 - 0.15, 0.2) });
+      // „Některé zdroje uvádějí, že se na ni přisype další.“ → nová vrstva spadne navrch;
+      // „V praxi se to ale … nejspíše neděje.“ → vrstva zase zmizí, štítek škrtnutý, „V praxi spíš ne“
       const pn = prog(t, W('pod2', 'přisype') - 0.1, 0.45, ease.outBack);
-      set('#p-new', { y: (1 - pn) * -160, o: pn > 0 ? 1 : 0 });
+      const pg = prog(t, W('pod2', 'praxi') - 0.05, 0.45, ease.inCubic);
+      set('#p-new', { y: (1 - pn) * -160 - pg * 160, o: pn > 0 ? 1 - pg : 0 });
       popIn('#p-top', t, W('pod2', 'přisype') + 0.2, { r: 2, o: 1 - outS });
-      popIn('#p-old', t, W('pod2', 'stará') - 0.1, { r: -2, o: 1 - outS });
-      popIn('#p-out', t, W('pod2', 'Vyklidí') - 0.1, { r: -2, o: 1 - outS });
+      set('#p-topx', { sx: prog(t, W('pod2', 'praxi') - 0.05, 0.3, ease.outCubic) });
+      popIn('#p-old', t, W('pod2', 'neděje') - 0.15, { r: -2, o: 1 - outS });
+      popIn('#p-out', t, W('pod2b', 'vyklidí') - 0.1, { r: -2, o: 1 - outS });
       // kalendář: 35 dní se odškrtá během otázky, na konci „Jatka“
       slideIn('#p-cal', t, t3 - 0.05, 0, 100, 0.5);
       for (let i = 0; i < 35; i++) draw('#cx' + i, prog(t, t3 + 0.25 + i * (E('pod3') - t3 - 0.6) / 35, 0.15));

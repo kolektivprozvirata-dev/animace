@@ -105,19 +105,34 @@ def mark_words(text):
 
 
 def chunk_text(text, max_chars=26, max_words=5):
-    """Rozdělí titulek na krátké kousky; láme přednostně za interpunkcí. Čísla nedělí."""
+    """Rozdělí titulek na krátké kousky; láme přednostně za interpunkcí. Čísla nedělí.
+    Konec věty (. ! ? … a za ním velké písmeno / konec) kousek vždy ukončí – titulek nikdy nepřeteče
+    do další věty („další. V praxi se to“); osamocené krátké slovo si vezme poslední slovo
+    předchozího kousku („že se na ni | přisype další.“). Jednopísmenná předložka/spojka nezůstane na konci."""
     words = [w for w in mark_words(keep_numbers(text)).split(' ') if w]
-    chunks, cur = [], []
-    for w in words:
-        trial = ' '.join(cur + [w])
-        plain = trial.replace('*', '')
-        if cur and (len(plain) > max_chars or len(cur) >= max_words):
-            chunks.append(' '.join(cur))
-            cur = [w]
+    plain = lambda ws: ' '.join(ws).replace('*', '')
+    chunks, cur, hard = [], [], []      # hard[i] = kousek i skončil interpunkcí (nebrat z něj slova)
+    for k, w in enumerate(words):
+        if cur and (len(plain(cur + [w])) > max_chars or len(cur) >= max_words):
+            carry = []
+            if len(cur) > 1 and len(cur[-1].replace('*', '')) == 1 and cur[-1].replace('*', '').isalpha():
+                carry = [cur.pop()]     # jednopísmenné „v, s, z, k, o, u, a, i“ nenechat na konci titulku
+            chunks.append(' '.join(cur)); hard.append(False)
+            cur = carry + [w]
         else:
             cur.append(w)
-        if re.search(r'[.,!?…:;–]$', w.replace('*', '')) and len(' '.join(cur).replace('*', '')) >= 10:
-            chunks.append(' '.join(cur))
+        pw = w.replace('*', '')
+        nxt = words[k + 1].replace('*', '') if k + 1 < len(words) else ''
+        sent_end = re.search(r'[.!?…]$', pw) and (not nxt or nxt[:1].isupper() or nxt[:1].isdigit())
+        if sent_end:
+            if len(plain(cur)) < 10 and chunks and not hard[-1] and len(chunks[-1].split(' ')) >= 3:
+                prev = chunks[-1].split(' ')
+                cur = [prev.pop()] + cur
+                chunks[-1] = ' '.join(prev)
+            chunks.append(' '.join(cur)); hard.append(True)
+            cur = []
+        elif re.search(r'[.,!?…:;–]$', pw) and len(plain(cur)) >= 10:
+            chunks.append(' '.join(cur)); hard.append(True)
             cur = []
     if cur:
         # krátký zbytek přilepit k předchozímu, ať nevisí jedno slovo

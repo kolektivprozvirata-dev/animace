@@ -14,7 +14,7 @@ irozhlas.cz – u nich jen výňatky z vyhledávače (⚠️). Před zveřejněn
 | # | tvrzení ve videu | stav | hlavní zdroj |
 |---|---|---|---|
 | 1 | Podestýlka se po celou dobu výkrmu **nevyměňuje** | ✅ | VÚŽV – Mikulášková & Glancová, Náš chov 3. 10. 2024 |
-| 2 | Nanejvýš se **přisype nová** (stará zůstává pod ní) | ✅ | tamtéž; EFSA 2023 |
+| 2 | v3: „Některé zdroje uvádějí, že se na ni **přisype další**. V praxi se to ale podle našich zkušeností nejspíše neděje.“ (do v2: „Nanejvýš se přisype nová, stará zůstává pod ní“) | ✅ / ⚠️ | zdroje: VÚŽV (částečné doplňování), EFSA 2023; „v praxi spíš ne“ = zkušenost KPZ, ve videu tak i podané |
 | 3 | Vyklízí se až **po vyskladnění** (odvozu na jatka) | ✅ | vyhl. 208/2004 Sb. § 11 odst. 7; Náš chov 8/2020 |
 | 4 | Výkrm trvá zhruba **30–40 dní** | ✅ | ČZU – Chodová, Náš chov 27. 5. 2024 (30–35 dní); JČU, Náš chov 2017 (35–42 dní) |
 | 5 | Kuřata na začátku malá, na konci **kolem 2 kg** | ✅ | Náš chov 2002 (1,4–2,0 kg), 2007 (do 2,4 kg); IPPC (≈ 2 kg / 40 dní) |
@@ -54,6 +54,8 @@ irozhlas.cz – u nich jen výňatky z vyhledávače (⚠️). Před zveřejněn
 
 **Co nám vyčtou:** „Podestýlku hlídáme a přistýláme.“ → Proto ve videu: „Nanejvýš se na ni přisype trocha nové. Ta stará zůstává pod ní.“
 (VÚŽV: „částečné doplňování… často nestačí“.)
+**v3 (text KPZ):** přisypávání zpochybňujeme vlastní zkušeností („podle našich zkušeností nejspíše neděje“) – na námitku
+„přistýláme, zákon chce suchou podestýlku“ odpovídá: i když se přisype, stará vrstva s trusem zůstává pod ní (VÚŽV, vyhl. 208/2004).
 „Zákon chce suchou a kyprou podestýlku.“ (§ 11 odst. 2: „stále přístup k suché a na povrchu kypré podestýlce“) → netvrdíme, že je
 všude mokrá; tvrdíme, že je to pořád ta samá vrstva, do které celý výkrm padá trus. I suchý trus je trus.
 

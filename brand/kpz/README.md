@@ -174,7 +174,10 @@ používat jen s vysvětlením.
 ## Hlas
 
 - Voiceover: **ElevenLabs, voice_id `dSByRdUbTGloB7TFA1qD`** (od reelu o telatech v13; dřív zkoušené 7JbZPqJGWUfXXBim0T8U a Fpj3lp9mRnYq6RZpHq9D),
-  model `eleven_multilingual_v2`; otázky a věty, které mají „začít nově“, často lépe v `eleven_v3` bez kontextu (`"el": {"model_id": "eleven_v3", "context": false}`).
+  model `eleven_multilingual_v2`, **`"speed": 0.9`** a pauzy mezi větami ~0,3–0,6 s, u čárek `"breath_pause": 0.22` („mluví zbytečně rychle,
+  když máme do tří minut hromadu času“ – kuřata v3; zrychlovat jen kvůli limitu 2:59). Věty, které mají „začít nově“: bez kontextu
+  (`"context": false`). `eleven_v3` jen na úvodní otázku – uprostřed textu zní o ~4 půltóny výš a jinou barvou (kuřata v3);
+  otázku uprostřed radši `eleven_multilingual_v2` s několika seedy a vybrat podle `vo_pitch.py` / `vo_takes.py` (SKILL.md 4).
 - Klíč je network secret prostředí pro `api.elevenlabs.io` (hlavička `xi-api-key`, bez prefixu), ne v repu. Účet Starter (40 000 znaků/měsíc; jedno ~3min video ≈ 3 000 znaků).
 - `tts.py` sám: vystřihne nádechy, ztlumí lupnutí na koncích, přidá tichý šum pod hlas, `tempo` dorovná délku (do ~3 % neslyšitelné).
   Nahrávky drž v repu (`"el_cache": "el-cache"` ve vo.json) – vybrané verze vět se pak neztratí ani neplatí znovu.
