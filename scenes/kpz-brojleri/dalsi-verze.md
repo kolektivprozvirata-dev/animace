@@ -40,3 +40,4 @@ Přepis sedí na 401 slovech.
 | 2 | 2026-10-29 | (z v1) Řečnická otázka „Měnit podestýlku zvířatům…?“ zní skoro oznamovacím tónem (z 9 verzí nejlepší původní). Když vadí: kratší otázka, např. „Proč ji měnit, když za pár týdnů jedou na jatka?“ – zeptat se KPZ. | v3: nový take stoupá +3,7 půltónu, výška jako okolí – čeká na poslech KPZ |
 | 3 | 2026-10-29 | (z v2) KPZ vypustili „Kuře není jídlo. Je to někdo.“ – vrátit? | k rozhodnutí |
 | 4 | 2026-11-13 | (z v3) Bezpečnější varianta přisypávání: „…nejspíše neděje. A i když ano, ta stará zůstává pod ní.“ – na námitku „přistýláme“ (viz `overeni-tvrzeni.md`). | hotovo ve v5 |
+| 5 | 2026-11-13 | (z v6) Úvodní otázka zní „chcíple“, hlavně konec – vybrat z ukázek 1–4 (bez kontextu seed 3 / 4 / 1; nápověda „zeptal se vážně a důrazně“ seed 4), pak render v7. | čeká na výběr KPZ |
