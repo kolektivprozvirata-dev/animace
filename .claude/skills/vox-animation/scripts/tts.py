@@ -21,6 +21,7 @@ Vstup (vo.json):
   - "text" = co se zobrazí v titulcích; *hvězdičky* = zvýrazněné slovo
   - "pause" = pauza po segmentu (přepíše "gap")
   - "cap": false = titulek se pro tento segment nezobrazí (text je v animaci)
+  - "gain": -3 = věta o 3 dB tišeji (dovětek, poznámka stranou); celek se pak normalizuje, poměr zůstane
 
 Výstup do --out-dir:
   vo.wav       – normalizovaný voiceover (-16 LUFS, vhodné pro sítě)
@@ -448,6 +449,12 @@ def main():
                 breaths += nb
             if al and al.get('character_end_times_seconds') and spec.get('clean_edges', True):
                 clean_edges(p, al)
+        if seg.get('gain'):
+            # hlasitost jedné věty v dB (např. dovětek „Zdroje v popisku.“ -3); normalizace celku poměr zachová
+            st = p[:-4] + '-g.wav'
+            subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', p,
+                            '-filter:a', f"volume={float(seg['gain'])}dB", st], check=True)
+            os.replace(st, p)
         if tempo != 1.0:
             # celý hlas o pár procent rychleji, výška beze změny (ffmpeg atempo); časy znaků se přepočtou
             st = p[:-4] + '-t.wav'

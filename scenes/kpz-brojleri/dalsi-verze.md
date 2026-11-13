@@ -27,7 +27,12 @@ nová věta „A většina z nich se předtím týdny válí ve vlastních výka
 „V posledních dnech“ místo týdnů (i v závěru a grafice), pojistka „A i když ano, ta stará zůstává pod ní.“ (Do v5 #4).
 Přepis sedí na 401 slovech.
 
-## Do v6 (sbírá se – nevyrábět, dokud KPZ neřekne)
+## v6 (2026-11-13) – render `out/kpz-brojleri-reel-v6.mp4`, hlas `vo-v6.json` → `assets-v6/` (2:40,0), scénář `scenar-v6.md`
+
+„Z trusu se navíc…“, podpis „Kolektiv pro zvířata.“ jako konec + „Zdroje v popisku.“ jako tišší dovětek, vážnější úvodní otázka
+(`eleven_multilingual_v2` místo `eleven_v3`). Přepis sedí na 402 slovech.
+
+## Do v7 (sbírá se – nevyrábět, dokud KPZ neřekne)
 
 | # | datum | úprava | stav |
 |---|---|---|---|

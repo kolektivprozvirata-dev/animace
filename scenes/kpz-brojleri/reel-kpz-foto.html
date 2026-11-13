@@ -2,15 +2,15 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8">
-<title>KPZ – kuřata ve výkalech (reel 9:16, styl KPZ, v5)</title>
+<title>KPZ – kuřata ve výkalech (reel 9:16, styl KPZ, v6)</title>
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
 <link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v5/vo-timing.js"></script>
+<script src="assets-v6/vo-timing.js"></script>
 <style>
-  /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ – šablona scenes/kpz-telata/reel-kpz-foto.html.
+  /* Scénář v6 (scenar-v6.md, hlas assets-v6/) ve stylu KPZ – šablona scenes/kpz-telata/reel-kpz-foto.html.
      Fotky v assets/foto-provizorni/ jsou provizorní (dataset na HF) – nahradit fotkami KPZ (README u fotek). */
   .tag.big { font-size: 52px; }
   .card { position: absolute; background: var(--kpz-cream); color: var(--kpz-teal-d); padding: 34px 40px; filter: url(#kpz-print-soft); }
@@ -562,7 +562,7 @@
       sticker('#o-st1', t, t0 + 0.45, -6); sticker('#o-st2', t, t0 + 0.6, 10); sticker('#o-st3', t, t0 + 0.75, -4);
       fadeUp('#o-name', t, t0 + 0.5);
       fadeUp('#o-web', t, t0 + 0.9);
-      fadeUp('#o-src', t, T('out') + 1.6);
+      fadeUp('#o-src', t, T('out2') - 0.1);   // dovětek „Zdroje v popisku.“ (samostatná věta, tišeji)
     }
 
     jiggle(t);

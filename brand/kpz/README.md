@@ -176,8 +176,10 @@ používat jen s vysvětlením.
 - Voiceover: **ElevenLabs, voice_id `dSByRdUbTGloB7TFA1qD`** (od reelu o telatech v13; dřív zkoušené 7JbZPqJGWUfXXBim0T8U a Fpj3lp9mRnYq6RZpHq9D),
   model `eleven_multilingual_v2`, **`"speed": 0.9` + `"tempo": 1.05`** (~12,5 zn/s), pauzy mezi větami ~0,25–0,5 s, u čárek
   `"breath_pause": 0.19` (kuřata: v2 rychlost 1.0 „zbytečně rychle“, v3 0.9 bez tempa „už moc pomalý“, v4 mezi oběma; zrychlovat jen kvůli limitu 2:59).
-  Věta, která uzavírá myšlenku, musí znít jako konec (take s kontextem předchozí věty, bez následující – viz FEEDBACK [zvuk]). Věty, které mají „začít nově“: bez kontextu
-  (`"context": false`). `eleven_v3` jen na úvodní otázku – uprostřed textu zní o ~4 půltóny výš a jinou barvou (kuřata v3);
+  Věta, která uzavírá myšlenku, musí znít jako konec (take s kontextem předchozí věty, bez následující – viz FEEDBACK [zvuk]).
+  Podpis na konci: „Kolektiv pro zvířata.“ jako ukončení, „Zdroje v popisku.“ jako dovětek – samostatná věta po pauze ~0,55 s,
+  níž a `"gain": -3` (kuřata v6). Věty, které mají „začít nově“: bez kontextu
+  (`"context": false`). **`eleven_v3` ne** – uprostřed textu zní o ~4 půltóny výš a jinou barvou (kuřata v3), na úvodní otázce „hodně nadšeně“ (kuřata v6); tón KPZ je vážný;
   otázku uprostřed radši `eleven_multilingual_v2` s několika seedy a vybrat podle `vo_pitch.py` / `vo_takes.py` (SKILL.md 4).
 - Klíč je network secret prostředí pro `api.elevenlabs.io` (hlavička `xi-api-key`, bez prefixu), ne v repu. Účet Starter (40 000 znaků/měsíc; jedno ~3min video ≈ 3 000 znaků).
 - `tts.py` sám: vystřihne nádechy, ztlumí lupnutí na koncích, přidá tichý šum pod hlas, `tempo` dorovná délku (do ~3 % neslyšitelné).
