@@ -1,4 +1,4 @@
-# Popisek k reelu (návrh, v3 – Instagram, 2:43)
+# Popisek k reelu (návrh, v4 – Instagram, 2:37)
 
 Válí se vaše jídlo ve svých vlastních výkalech? 🐔 Než kuře skončí na talíři, žije ve většině případů v hale s desítkami tisíc dalších. Celý jeho život trvá jen kolem 30 dní – a celou tu dobu žije na stejné podestýlce, která se nemění.
 
@@ -6,7 +6,7 @@ Možná znáte fotky z hal, které ukazují prodejci: roztomilá malá žlutá k
 
 Podestýlka se po celou dobu výkrmu nemění. Některé zdroje uvádějí, že se na ni přisype další, podle našich zkušeností se to ale v praxi nejspíše neděje. Vyklidí se až po vyskladnění, když kuřata odvezou na jatka. V posledních týdnech kuřata většinu dne leží – a válí se ve vlastních výkalech. Přitom se přirozeně koupou v suchém prachu, tak si čistí peří. Z trusu se uvolňuje čpavek, který dráždí oči a dýchací cesty, a na kůži, která je dlouho ve vlhkém trusu, vznikají bolestivé popáleniny.
 
-Reklamní fotky s kuřátky na čisté podestýlce nelžou. Jen jsou z prvních dnů. V Česku ročně skončí na jatkách přes 110 milionů kuřat – a systém běží, protože kuřecí maso kupujeme. Vystoupit z něj můžeme: rostlinných alternativ je spousta. 🌱
+Reklamní fotky s kuřátky na čisté podestýlce nelžou. Jen jsou z prvních dnů. V Česku ročně skončí na jatkách přes 110 milionů kuřat a většina z nich se předtím týdny válí ve vlastních výkalech. Systém běží, protože kuřecí maso kupujeme. Vystoupit z něj můžeme: rostlinných alternativ je spousta. 🌱
 
 #veganstvi #zvirata #kurata #kolektivprozvirata
 

@@ -8,7 +8,7 @@ a každou změří (výška, stoupnutí na konci, délka). Vybraný seed pak zap
 
 Nahrávky jdou do stejné cache jako tts.py („el_cache“ ve vo.json), takže vybraný take se při dalším tts.py už neplatí.
 Platí se jen nové verze (≈ délka věty ve znacích za každou). Na otázku: vybírat výšku do ±1 pt od sousedních vět
-(vo_pitch.py) a „konec“ aspoň ~+3 pt.
+(vo_pitch.py) a „konec“ aspoň ~+3 pt; důrazný konec oznamovací věty = „konec“ ≤ ~−4 pt, větší rozsah a hlasitost.
 """
 import argparse, json, math, os, subprocess, sys
 import numpy as np
@@ -21,6 +21,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument('spec'); ap.add_argument('seg'); ap.add_argument('out')
 ap.add_argument('seeds', nargs='+', type=int)
 ap.add_argument('--ref-wav', default=None, help='celý hlas – výška takes v půltónech vůči jeho mediánu')
+ap.add_argument('--el', default=None, help='JSON přepsání „el“ pro všechny takes, např. {"context": true, "next_text": ""}')
 a = ap.parse_args()
 
 spec = json.load(open(a.spec, encoding='utf-8'))
@@ -42,7 +43,7 @@ def f0(path):
 
 ref = float(np.median(f0(a.ref_wav)[1])) if a.ref_wav else None
 for seed in a.seeds:
-    ov = dict(spec['segments'][i].get('el') or {})
+    ov = {**(spec['segments'][i].get('el') or {}), **(json.loads(a.el) if a.el else {})}
     cfg = {**el, **ov, 'seed': seed}
     if 'voice_settings' in ov:
         cfg['voice_settings'] = {**(el['voice_settings'] or {}), **ov['voice_settings']}
@@ -54,5 +55,8 @@ for seed in a.seeds:
     tail, body = v[tt >= tt[-1] - 0.35], v[(tt >= tt[-1] - 1.2) & (tt < tt[-1] - 0.35)]
     med = float(np.median(v))
     rel = f' ({12 * math.log2(med / ref):+4.1f} pt vůči celku)' if ref else ''
+    rng = 12 * math.log2(np.percentile(v, 90) / np.percentile(v, 10))
+    x = parselmouth.Sound(wv).values[0]
+    rms = 20 * math.log10(math.sqrt(float(np.mean(x[np.abs(x) > 0.01] ** 2))) + 1e-9)
     print(f'seed {seed:4}: F0 {med:5.0f} Hz{rel}  konec {12 * math.log2(np.median(tail) / np.median(body)):+4.1f} pt'
-          f'  délka {tt[-1]:.2f} s  → {mp}')
+          f'  rozsah {rng:4.1f} pt  hlasitost {rms:5.1f} dB  délka {tt[-1]:.2f} s  → {mp}')
