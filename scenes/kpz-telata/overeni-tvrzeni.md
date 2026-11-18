@@ -230,3 +230,10 @@ jen Bučkovou 2020 („výsledky jsou variabilní“). Nejsilnější protiargum
 **Závěr pro video:** většina telat masných krav se v ČR rodí v zimě (zimoviště nebo zimní pastva), menšina na jaře a v létě na pastvě.
 Video netvrdí, že se rodí na pastvě (hyg3: „na pastvě je prostoru dost a telata tam zůstávají s matkami měsíce“) – v pořádku.
 Možný útok: „masné krávy telí ve stáji stejně jako dojnice“ → odpověď: i v zimovišti zůstává tele s matkou (porodní kotec, pak stádo + školka) – rozdíl je prostor a uspořádání, ne budova.
+
+## I · Metodika VÚŽV 2023 – co přesně říká o 2 hodinách (ověřeno v plném textu 2026-11-18)
+
+G. Malá a kol. (2023): *Management odchovu skupinově ustájených telat*, certifikovaná metodika VÚŽV, ISBN 978-80-7403-297-4, s. 6:
+„Včasné oddělení telete od matky a jeho umístění do individuálního boxu/kotce má pozitivní vliv na snížení incidence onemocnění. U telat, která zůstala u krav po dobu delší než 2 hodiny, byla prokázána vyšší frekvence výskytu onemocnění z důvodu jejich expozice velkému množství infekčních agens v porodním kotci. U telat, která zůstávala u matky déle než 24 hodin, byla zjištěna vyšší mortalita.“ Shrnutí (s. 27): „Včasné oddělení telete od matky z porodního kotce.“
+→ Doslova „doporučuje do 2 hodin“ v metodice **není** (v40/v41 „dokonce doporučuje do dvou hodin“ bylo přehnané). v42: „Podle Výzkumného ústavu živočišné výroby by tele nemělo zůstat u matky déle než dvě hodiny.“ = věrná parafráze (doporučuje včasné oddělení, nad 2 h víc nemocí). Pozor: metodika je na straně chovatelů – citovat jen jako „co se doporučuje v praxi“, ne jako důkaz.
+

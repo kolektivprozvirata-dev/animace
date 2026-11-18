@@ -285,3 +285,10 @@ KPZ: „Dal bych tam ‚Často je to ale hned‘, protože my nevíme, jak čast
 - hook2 = původní take z v36 (cache), hook1b s připnutým `next_text` z v40 → stejný take. Nic se negenerovalo. Tempo 1,0347 → **2:58,8**.
 - Štítek zpět „V praxi často: hned“, popisek upraven.
 
+## v42 (2026-11-18) – začátek výzkumným ústavem, bez „do 12 hodin“
+
+KPZ: „Já ale chtěl oddělat to do těch 12 hodin. A začít tím výzkumným ústavem.“
+- hook1 nově: **„Podle Výzkumného ústavu živočišné výroby by tele nemělo zůstat u matky déle než dvě hodiny.“** (eleven_v3 bez kontextu jako dřív hook1; namluvena jen tato věta). Metodika doslova „do 2 h doporučuje“ neříká (viz overeni-tvrzeni I) → formulace podle textu metodiky. hook1b vypuštěn, hook2 „Často je to ale hned.“ původní take.
+- Grafika: velké „Max. 2 h“ + „u matky – podle VÚŽV (metodika 2023)“ (místo „Do 12 h / 87,5 %“); štítek „V praxi často: hned“. Zdroj: „2 h – metodika VÚŽV (Malá a kol. 2023): telata u matky déle než 2 h víc onemocní · hned – EFSA 2023“.
+- Tempo 1,016 → **2:58,8**. Popisek upraven (87,5 % už ve videu není).
+
