@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.26.4**
+**Verze skillu: 0.26.5**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -155,3 +155,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-18 | 0.26.2 | kpz-telata v38 | „Ke krávám přihoď tu fotku přes ten plot. U telat přidej taky jednu – ty telata, ale rozmaž známky.“ | Fotka dvou telat v boudách při „společenské zvíře“ (čísla rozostřená, jen čísla), kravín přes plot při „průběžně“; obě „Ilustrační záběr“. |
 | 2026-11-18 | 0.26.3 | kpz-telata v39 | „V 0:10 dej místo ‚Často‘ ‚Většinou‘. Je to korektní? Podle našich informací je to většinou hned, nebo do hodiny.“ | Přegenerována jen jedna věta (strážce v tts: jiné generování = chyba), sousedé s připnutým kontextem, tempo dorovnáno pod 2:59. Štítek a popisek sladěny. |
 | 2026-11-18 | 0.26.4 | kpz-telata v40 | „Dej tam tu metodiku… nevím, jak to namluvit… ‚Výzkumný ústav živočišné výroby dokonce doporučuje do dvou hodin‘, ať to dává smysl.“ | Nový segment jen s touto větou, ostatní z cache; štítek „VÚŽV doporučuje: do 2 h“; tempo 1,036. Varianta „většinou do 2 h, potvrzuje metodika“ odmítnuta jako nepravdivá (doporučení ≠ praxe). |
+| 2026-11-18 | 0.26.5 | kpz-telata v41 | „Dal bych tam ‚Často je to ale hned‘, protože my nevíme, jak často to je.“ | Zpět na původní take (cache). Poučení: kvantifikátor (často × většinou) volit podle toho, co je změřené pro ČR, ne podle zkušenosti nebo EU dat. |

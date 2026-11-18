@@ -1,6 +1,6 @@
 # Popisek k reelu (návrh, v29 – Instagram, 2:59)
 
-Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu. Výzkumný ústav živočišné výroby dokonce doporučuje do dvou hodin – většinou je to ale hned. Pak tráví týdny v samostatném boxu, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
+Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu. Výzkumný ústav živočišné výroby dokonce doporučuje do dvou hodin – často je to ale hned. Pak tráví týdny v samostatném boxu, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
 
 Chovatelé mají několik argumentů. Nejčastěji slýcháme tyto čtyři – a co o nich víme:
 1️⃣ Hygiena – krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. S mámou by tele muselo do velkokapacitní haly: spousta krav pod jednou střechou, výkaly a moč přibývají průběžně, a i když se většinou uklízejí, čistá podlaha nebude. Oproti tomu u tzv. masných krav na pastvě zůstávají telata s matkami měsíce. Ani v kravínech ale výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější. I kdyby měli chovatelé pravdu, problém je stejně v prostředí, které sami vytvořili.

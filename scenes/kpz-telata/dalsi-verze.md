@@ -279,3 +279,9 @@ KPZ: „Tak tam dej tu metodiku.“ → „Nevím, jak to namluvit.“ → „Bu
 - Štítek „VÚŽV doporučuje: do 2 h“ (vystřídá ho „V praxi většinou: hned“); zdroj „do 2 h – metodika VÚŽV (Malá a kol. 2023)“; popisek doplněn.
 - +3,8 s → **tempo 1,0133 → 1,0362** (hlas ~3,6 % rychleji než přirozený; v29 byl 2,2 %) → 2:58,8.
 
+## v41 (2026-11-18) – zpět „Často je to ale hned.“
+
+KPZ: „Dal bych tam ‚Často je to ale hned‘, protože my nevíme, jak často to je.“
+- hook2 = původní take z v36 (cache), hook1b s připnutým `next_text` z v40 → stejný take. Nic se negenerovalo. Tempo 1,0347 → **2:58,8**.
+- Štítek zpět „V praxi často: hned“, popisek upraven.
+
