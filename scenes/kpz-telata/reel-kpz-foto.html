@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v42/vo-timing.js"></script>
+<script src="assets-v41/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -52,8 +52,8 @@
     <div class="abs" id="h0-milk" style="left:50px; top:930px; width:170px"></div>
     <div class="abs eyebrow" id="h-eye" style="left:80px; top:290px">Mléčné chovy · Česko</div>
     <div class="abs" id="h-num" style="left:70px; top:350px">
-      <div class="big-number kblocks print" style="font-size:200px; line-height:1.3"><span class="kb">Max. 2 h</span></div>
-      <div class="tag print" style="margin-top:14px; font-size:42px">u matky – podle VÚŽV (metodika 2023)</div>
+      <div class="big-number kblocks print" style="font-size:200px; line-height:1.3"><span class="kb">Do 12 h</span></div>
+      <div class="tag print" style="margin-top:14px; font-size:42px">na 87,5 % ze 136 farem (VÚŽV 2014)</div>
     </div>
     <!-- v40: doporučení VÚŽV (metodika Malá a kol. 2023) – při „Výzkumný ústav … do dvou hodin“, pak ho vystřídá „V praxi většinou: hned“ -->
     <div class="abs tag green big print" id="h-rec" style="left:90px; top:700px; font-size:56px; white-space:nowrap">VÚŽV doporučuje: do 2 h</div>
@@ -381,7 +381,7 @@
   // české zdroje tam, kde říkají totéž co zahraniční (overeni-tvrzeni.md, část F)
   let SRCS = null;
   const srcParts = () => SRCS || (SRCS = [
-    [T('hook1'), T('hook3'), 'Zdroj: 2 h – metodika VÚŽV (Malá a kol. 2023): telata u matky déle než 2 h víc onemocní · hned – EFSA 2023'],
+    [T('hook1'), T('hook3'), 'Zdroj: do 12 h – Staněk et al. 2014 (VÚŽV, 136 farem), Šárová, Náš chov 2021 · do 2 h – metodika VÚŽV (Malá a kol. 2023) · hned – EFSA 2023'],
     [T('hook3'), C.s1[1], 'Zdroj: boxy na 96,7 % ze 136 farem – Staněk et al. 2014 (VÚŽV) · do 8 týdnů – Šárová, Náš chov 2021'],
     [T('hyg2') - 0.1, W('hyg2', 'mámou') - 0.35, 'Zdroj: společné porodny na 67,6 % ze 136 farem – Staněk et al. 2014 (VÚŽV) · nákazy v porodním kotci – metodika VÚŽV 2023'],
     // (karta „Přehled studií · K. Bučková…“ má zdroj v sobě – řádek by ji duplikoval a překrýval)
@@ -528,7 +528,7 @@
   VOX.scene((t) => {
     // ---------- 1 · HOOK ----------
     if (frame('s1', t, 1.0, 1.06, '50% 55%')) {
-      const t0 = T('hook1'), tNum = hasW('hook1', 'do 12') ? W('hook1', 'do 12') : W('hook1', 'nemělo'), tNow = W('hook2', 'hned') - 0.1, tBox = T('hook3') + 0.45;
+      const t0 = T('hook1'), tNum = W('hook1', 'do 12'), tNow = W('hook2', 'hned') - 0.1, tBox = T('hook3') + 0.45;
       const out0 = prog(t, t0 - 0.25, 0.25);
       sticker('#st1', t, 0.6, 8);
       const ph = pop(t, 0.35, 0.5);
