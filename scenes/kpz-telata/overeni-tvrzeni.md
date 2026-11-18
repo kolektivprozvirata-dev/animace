@@ -29,7 +29,7 @@ důvod uvádí spíš „víc mléka na prodej“ a „kontrola mleziva“.
   věta o 12 h je ve sborníku ZSČR 2019 (Stádník, Kořínek, Novotný), ne v Novotném 2023.
   Data: Staněk et al. 2014 (136 farem, 11,9 % krav ČR): oddělení do 12 h na **87,5 %** farem.
   Metodika VÚŽV 2023 (Malá a kol.): u telat, která zůstala u krav déle než 2 h, vyšší výskyt onemocnění.
-- **A2 „často hned“ ✅** – EFSA 2023: „The great majority of dairy farms separate dam and calf
+- **A2 „často hned“ ✅ → v39 „většinou hned“ (KPZ: „podle našich informací je to většinou hned, nebo do hodiny“)** – EFSA 2023: „The great majority of dairy farms separate dam and calf
   immediately after birth.“ VÚŽV kontrolní otázky (Náš chov 2023): „Je tele bezprostředně po narození
   odděleno od matky?“ Český podíl „hned“ neexistuje.
 - **A3 „v drtivé většině chovů … v boxu“ ✅** – Staněk et al. 2014, J Dairy Sci 97:3973: „newborn calves

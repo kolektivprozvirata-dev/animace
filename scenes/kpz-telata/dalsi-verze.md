@@ -263,3 +263,11 @@ KPZ: „Ke krávám, jak tam je pár fotek z kravína, ještě přihoď tu fotku
 - Hygiena 0:40: po fotce boxů (výkaly a moč) **kravín přes plot s hromadou hnoje** při „průběžně“, pak kreslená hala s úklidem.
 - Obě s nápisem „Ilustrační záběr“. Délka beze změny 2:58,7.
 
+## v39 (2026-11-18) – „Většinou je to ale hned.“
+
+KPZ: „V 0:10 bych dal místo ‚Často‘ ‚Většinou‘.“ + „Je to korektní? Podle našich informací je to většinou hned. Nebo do hodiny nebo tak.“
+- Nově namluvena jen věta hook2 (stejné nastavení, `next_text` připnutý), hook3 s připnutým původním `previous_text` → ostatní věty z cache. Tempo 1,0118 → 1,0133 (delší slovo) → **2:58,7**.
+- Štítek „V praxi často: hned“ → „V praxi většinou: hned“; popisek upraven.
+- Opora: EFSA 2023 „the great majority of dairy farms separate dam and calf immediately after birth“ (EU) + metodika VÚŽV 2023 doporučuje do 2 h + zkušenost KPZ. Český podíl „hned“ nikdo neměřil (Staněk 2014 jen „do 12 h“ na 87,5 % farem).
+- Render `out/kpz-telata-reel-v39.mp4`.
+

@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.26.2**
+**Verze skillu: 0.26.3**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -153,3 +153,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-09 | 0.26.0 | kpz-telata v37 | „Zkusme verzi bez ‚Odnese to tele a jeho máma‘ (je to tam dvakrát) a o to víc to natáhni, ať hlas není tak rychlej. Jen pokus.“ | `tts.py`: nová volba segmentu `cut_after` – zkrátit větu z hotové nahrávky bez generování (say celé = stejná cache i kontext). v37: tempo 0,9854, 2:58,6. Poučení: opakovanou pointu v hlase nahradit pauzou a vizuálem (štítek visí déle). |
 | 2026-11-09 | 0.26.1 | kpz-telata v37 → v36 | „Podle mě to tam chybí. Sice cítím, jak je text pomalejší, ale chybí to tam. Zůstaneme u předchozí verze.“ | Zpět na v36. Poučení: opakovaný refrén může být nosný – před vyškrtnutím „duplicit“ v hlase se zeptat / nabídnout jako pokus (tak se i stalo). Pravidlo KPZ zapsáno do brand/kpz/README.md. |
 | 2026-11-18 | 0.26.2 | kpz-telata v38 | „Ke krávám přihoď tu fotku přes ten plot. U telat přidej taky jednu – ty telata, ale rozmaž známky.“ | Fotka dvou telat v boudách při „společenské zvíře“ (čísla rozostřená, jen čísla), kravín přes plot při „průběžně“; obě „Ilustrační záběr“. |
+| 2026-11-18 | 0.26.3 | kpz-telata v39 | „V 0:10 dej místo ‚Často‘ ‚Většinou‘. Je to korektní? Podle našich informací je to většinou hned, nebo do hodiny.“ | Přegenerována jen jedna věta (strážce v tts: jiné generování = chyba), sousedé s připnutým kontextem, tempo dorovnáno pod 2:59. Štítek a popisek sladěny. |
