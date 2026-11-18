@@ -8,7 +8,7 @@
 <script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
 <script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
 <script src="../../brand/kpz/kpz-theme.js"></script>
-<script src="assets-v39/vo-timing.js"></script>
+<script src="assets-v40/vo-timing.js"></script>
 <style>
   /* Scénář v5 (scenar-v5.md, hlas assets-v5/) ve stylu KPZ se skutečnými zvířaty jako papírové výstřižky
      (scripts/cutout.py). Fotky v assets/foto-provizorni/ jsou provizorní (Unsplash) – nahradit fotkami KPZ. */
@@ -55,6 +55,8 @@
       <div class="big-number kblocks print" style="font-size:200px; line-height:1.3"><span class="kb">Do 12 h</span></div>
       <div class="tag print" style="margin-top:14px; font-size:42px">na 87,5 % ze 136 farem (VÚŽV 2014)</div>
     </div>
+    <!-- v40: doporučení VÚŽV (metodika Malá a kol. 2023) – při „Výzkumný ústav … do dvou hodin“, pak ho vystřídá „V praxi většinou: hned“ -->
+    <div class="abs tag green big print" id="h-rec" style="left:90px; top:700px; font-size:56px; white-space:nowrap">VÚŽV doporučuje: do 2 h</div>
     <div class="abs tag red big print" id="h-now" style="left:90px; top:700px; font-size:64px; white-space:nowrap">V praxi většinou: hned</div>
     <!-- v11: dvojice fotek KPZ – do trhu kráva s teletem (par), při „hned“ výměna za celou krávu (mama) a tele odjede (tele); stejné plátno -->
     <div class="kpz-cut" id="h-pair" style="left:150px; top:800px; width:780px"><img src="assets/foto-kpz/vystrizky/trh2-par.png"></div>
@@ -379,7 +381,7 @@
   // české zdroje tam, kde říkají totéž co zahraniční (overeni-tvrzeni.md, část F)
   let SRCS = null;
   const srcParts = () => SRCS || (SRCS = [
-    [T('hook1'), T('hook3'), 'Zdroj: do 12 h – Staněk et al. 2014 (VÚŽV, 136 farem), Šárová, Náš chov 2021 · hned – EFSA 2023, metodika VÚŽV 2023 (doporučuje do 2 h)'],
+    [T('hook1'), T('hook3'), 'Zdroj: do 12 h – Staněk et al. 2014 (VÚŽV, 136 farem), Šárová, Náš chov 2021 · do 2 h – metodika VÚŽV (Malá a kol. 2023) · hned – EFSA 2023'],
     [T('hook3'), C.s1[1], 'Zdroj: boxy na 96,7 % ze 136 farem – Staněk et al. 2014 (VÚŽV) · do 8 týdnů – Šárová, Náš chov 2021'],
     [T('hyg2') - 0.1, W('hyg2', 'mámou') - 0.35, 'Zdroj: společné porodny na 67,6 % ze 136 farem – Staněk et al. 2014 (VÚŽV) · nákazy v porodním kotci – metodika VÚŽV 2023'],
     // (karta „Přehled studií · K. Bučková…“ má zdroj v sobě – řádek by ji duplikoval a překrýval)
@@ -538,6 +540,7 @@
       cutout('#h0-milk', t, 'h0m', 0, 0, -7, pop(t, 0.5, 0.45) || 0.001, (pop(t, 0.5, 0.45) > 0 ? 1 : 0) * (1 - out0));
       fadeUp('#h-eye', t, t0 + 0.1, 40, 0.35, 1 - prog(t, tBox - 0.3, 0.3));
       popIn('#h-num', t, tNum, { origin: '0% 50%', r: -1.5, o: 1 - prog(t, tBox - 0.3, 0.3) });
+      if (HAS('hook1b')) popIn('#h-rec', t, W('hook1b', 'doporučuje') - 0.1, { r: -3, o: 1 - prog(t, tNow - 0.2, 0.15) }); else set('#h-rec', { o: 0 });
       popIn('#h-now', t, tNow, { r: -5, o: 1 - prog(t, tBox - 0.3, 0.3) });
       const cowOut = prog(t, tBox - 0.3, 0.45, ease.inCubic);
       const tear = prog(t, tNow - 0.05, 0.6, ease.inCubic);

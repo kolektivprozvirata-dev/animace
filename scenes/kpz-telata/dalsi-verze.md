@@ -271,3 +271,11 @@ KPZ: „V 0:10 bych dal místo ‚Často‘ ‚Většinou‘.“ + „Je to kore
 - Opora: EFSA 2023 „the great majority of dairy farms separate dam and calf immediately after birth“ (EU) + metodika VÚŽV 2023 doporučuje do 2 h + zkušenost KPZ. Český podíl „hned“ nikdo neměřil (Staněk 2014 jen „do 12 h“ na 87,5 % farem).
 - Render `out/kpz-telata-reel-v39.mp4`.
 
+## v40 (2026-11-18) – věta o metodice VÚŽV
+
+KPZ: „Tak tam dej tu metodiku.“ → „Nevím, jak to namluvit.“ → „Buď ‚Většinou do dvou hodin, což potvrzuje i metodika…‘, nebo jen ‚Výzkumný ústav živočišné výroby dokonce doporučuje do dvou hodin.‘ – tak, aby to dávalo smysl.“
+- Zvolena 2. varianta: první by nebyla pravda (metodika 2 h **doporučuje**, praxi nepotvrzuje; „většinou do 2 h“ nikdo v ČR neměřil) a vypadlo by jediné změřené české číslo (12 h, 87,5 %).
+- Nový segment `hook1b` „Výzkumný ústav živočišné výroby dokonce doporučuje do dvou hodin.“ (nově namluven jen on); hook2 s připnutým původním `previous_text` → stejný take. Řada 12 h → 2 h → hned.
+- Štítek „VÚŽV doporučuje: do 2 h“ (vystřídá ho „V praxi většinou: hned“); zdroj „do 2 h – metodika VÚŽV (Malá a kol. 2023)“; popisek doplněn.
+- +3,8 s → **tempo 1,0133 → 1,0362** (hlas ~3,6 % rychleji než přirozený; v29 byl 2,2 %) → 2:58,8.
+

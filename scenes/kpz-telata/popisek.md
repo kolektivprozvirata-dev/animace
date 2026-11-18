@@ -1,6 +1,6 @@
 # Popisek k reelu (návrh, v29 – Instagram, 2:59)
 
-Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu – většinou je to ale hned. Pak tráví týdny v samostatném boxu, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
+Věděli jste, že krabice mléka z obchodu začíná porodem? 🐄 Na naprosté většině českých farem se tele odebírá matce do 12 hodin po porodu. Výzkumný ústav živočišné výroby dokonce doporučuje do dvou hodin – většinou je to ale hned. Pak tráví týdny v samostatném boxu, přestože je to společenské zvíře. Ať hned, nebo později, oddělit mládě od matky je kruté.
 
 Chovatelé mají několik argumentů. Nejčastěji slýcháme tyto čtyři – a co o nich víme:
 1️⃣ Hygiena – krávy často rodí ve společných porodnách, kde se nákazy snadno šíří. S mámou by tele muselo do velkokapacitní haly: spousta krav pod jednou střechou, výkaly a moč přibývají průběžně, a i když se většinou uklízejí, čistá podlaha nebude. Oproti tomu u tzv. masných krav na pastvě zůstávají telata s matkami měsíce. Ani v kravínech ale výzkumy jednoznačně nepotvrzují, že by tele bez mámy bylo zdravější. I kdyby měli chovatelé pravdu, problém je stejně v prostředí, které sami vytvořili.
@@ -16,7 +16,7 @@ Přitom jedna studie popsala přes sto mléčných farem, kde tele zůstává s 
 
 📚 Zdroje:
 • Česká praxe – oddělení do 12 h po porodu (87,5 % ze 136 farem), individuální boxy (96,7 % farem): Staněk et al. (2014, dotazníkový průzkum 136 farem = 11,9 % dojnic ČR), Journal of Dairy Science 97:3973 a Agritech Science 2014 (VÚŽV); R. Šárová (VÚŽV), Náš chov 2021 – Odchov telat a legislativa (do 12 h, individuálně do 8 týdnů)
-• „Hned“: EFSA (2023) Welfare of calves – „the great majority of dairy farms separate dam and calf immediately after birth“; metodika VÚŽV (Malá et al. 2023) doporučuje oddělit do 2 h
+• „Hned“: EFSA (2023) Welfare of calves – „the great majority of dairy farms separate dam and calf immediately after birth“; doporučení oddělit do 2 h: G. Malá a kol. (2023), Management odchovu skupinově ustájených telat – certifikovaná metodika VÚŽV
 • Společné porodny (67,6 % farem): Staněk et al. (2014); infekce v porodním kotci: metodika VÚŽV (2023)
 • Zdraví telat a kontakt s matkou (přínos časného oddělení ve studiích nejednoznačný): K. Bučková (VÚŽV), Náš chov 12/2020; Beaver et al. (2019), Journal of Dairy Science 102:5784
 • Odstav telat tzv. masných krav (6–10 měsíců): Náš chov 2018 – Plodnost a ekonomické ukazatele chovu masných krav
