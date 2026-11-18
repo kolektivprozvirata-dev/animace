@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.26.7**
+**Verze skillu: 0.26.8**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -158,3 +158,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-18 | 0.26.5 | kpz-telata v41 | „Dal bych tam ‚Často je to ale hned‘, protože my nevíme, jak často to je.“ | Zpět na původní take (cache). Poučení: kvantifikátor (často × většinou) volit podle toho, co je změřené pro ČR, ne podle zkušenosti nebo EU dat. |
 | 2026-11-18 | 0.26.6 | kpz-telata v42 | „Já ale chtěl oddělat to do těch 12 hodin. A začít tím výzkumným ústavem.“ | Pozor na nedorozumění – „dej tam tu metodiku“ znamenalo nahradit, ne přidat; u nejasného pokynu se krátce zeptat. Před namluvením ověřen plný text metodiky: „doporučuje do 2 h“ tam doslova není → věrná parafráze. |
 | 2026-11-18 | 0.26.7 | kpz-telata v42 → v41 | „Ne, to zní debilně.“ (věta „Podle VÚŽV by tele nemělo zůstat u matky déle než dvě hodiny“) → „Nechme verzi 41.“ | Zpět na v41. Poučení: přeformulování „kvůli přesnosti“ nejdřív poslat jako text ke schválení, ne rovnou namluvit a renderovat. |
+| 2026-11-18 | 0.26.8 | kpz-telata v43 | „U té fotky kravínu v 0:44 trošku stáhnout tu přeexponovanost.“ | Tónová křivka na jas (rameno ve světlech, max. ~0,9), jemná S-křivka a +10 % sytosti; přepálené nebe se nedokresluje. |

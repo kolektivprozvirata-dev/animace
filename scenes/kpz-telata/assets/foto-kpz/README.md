@@ -21,7 +21,7 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | masne-pastva-2.webp | stádo tzv. masných krav na pastvě, ležící telata, kopce (KPZ 2026-10-29, Midjourney) | blob `masne-pastva-2-tvar.png` – v32 hygiena 0:46–0:52 (místo `masne-pastva-kojeni`) |
 | pastva-skutecna-blize.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11; nafoceno pro toto video, souhlas s použitím, autorku neuvádět): stádo tzv. masných krav u stromů, telata u krav, podzim | blob `pastva-skutecna-blize-tvar.png` – v34 hygiena 0:46 |
 | telata-boudy-dve.jpg | dvě holštýnská telata, každé ve své boudě za ohrádkou (KPZ 2026-11-18) | `-upr.jpg` (čísla na 4 známkách rozostřená) → kus `telata-boudy-dve.png` – v38 hook 0:15 („přestože je to společenské zvíře“) |
-| kravin-pres-plot.jpg | starý kravín přes pletivo, krávy za zábranami, hromada hnoje (KPZ 2026-11-18; známky v dálce nečitelné) | kus `kravin-pres-plot.png` – v38 hygiena 0:40 („průběžně“) |
+| kravin-pres-plot.jpg | starý kravín přes pletivo, krávy za zábranami, hromada hnoje (KPZ 2026-11-18; známky v dálce nečitelné) | `-upr.jpg` (v43: stažené přepálené světlo – nebe a bílá zeď, jemný kontrast) → kus `kravin-pres-plot.png` – hygiena 0:44 („průběžně“) |
 | pastva-skutecna-dal.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11; nafoceno pro toto video, souhlas s použitím, autorku neuvádět): stádo daleko na pastvě, podzimní les, západ slunce | blob `pastva-skutecna-dal-tvar.png` (přiblíženo) – v34 zalehnutí 1:06 |
 | masne-pastva-rada.jpg | krávy s telaty jdou v řadě po svahu (KPZ 2026-10-25) | zatím nepoužito (zvířata malá) |
 | masne-pastva-celem.jpg | krávy čelem k fotografovi, ležící kráva s teletem (KPZ 2026-10-25) | zatím nepoužito (málo telat) |
@@ -89,5 +89,6 @@ v16 (2026-10-25) – nové pastviny (čísla na známkách nečitelně malá, be
     # v38 – T = tag_retouch.py, S = cutout.py
     python3 $T telata-boudy-dve.jpg telata-boudy-dve-upr.jpg --rect 323,471,385,520 --rect 561,461,621,506 --rect 1370,571,1446,622 --rect 1636,608,1706,662
     python3 $S telata-boudy-dve-upr.jpg vystrizky/telata-boudy-dve.png --piece --seed 27 --crop 110,0,2000,1074 --scale 0.5
-    python3 $S kravin-pres-plot.jpg vystrizky/kravin-pres-plot.png --piece --seed 33 --crop 0,90,2000,1000 --scale 0.5
+    # v43: světla stažena křivkou (gamma 1,08, rameno od 0,55 do max. 0,90, jemná S-křivka, sytost 1,1) → kravin-pres-plot-upr.jpg
+    python3 $S kravin-pres-plot-upr.jpg vystrizky/kravin-pres-plot.png --piece --seed 33 --crop 0,90,2000,1000 --scale 0.5
     python3 $S pastva-skutecna-dal.jpg vystrizky/pastva-skutecna-dal-tvar.png --shape blob --tight 0.75 --seed 91 --crop 360,650,1720,1170

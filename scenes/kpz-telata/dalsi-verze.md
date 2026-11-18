@@ -294,3 +294,7 @@ KPZ: „Já ale chtěl oddělat to do těch 12 hodin. A začít tím výzkumným
 - **KPZ:** „Ne, to zní debilně. Kde jsme vzali těch 12 hodin? To je doporučení?“ → (12 h = změřená praxe, Staněk 2014 / Šárová 2021) → „Nechme verzi 41.“ Scéna a popisek vráceny na v41 (`assets-v41`), render v42 zastaven. **Platná verze = v41** (`out/kpz-telata-reel-v41.mp4`).
 - Připravená odpověď, kdyby někdo napadl „doporučuje do dvou hodin“: metodika VÚŽV 2023 (Malá a kol., s. 6) – „Včasné oddělení telete od matky … má pozitivní vliv na snížení incidence onemocnění. U telat, která zůstala u krav po dobu delší než 2 hodiny, byla prokázána vyšší frekvence výskytu onemocnění.“
 
+## v43 (2026-11-18) – v41 + kravín přes plot bez přepálení
+
+KPZ: „U té fotky kravínu v 0:44 trošku stáhnout tu přeexponovanost.“ → `kravin-pres-plot-upr.jpg`: světla stažena (33 % plochy bylo přepálených – nebe, bílá zeď; teď nic nad 230), jemný kontrast ve středech a sytost, ať fotka nezšedne. Hlas v41 beze změny, 2:58,8. Render `out/kpz-telata-reel-v43.mp4`.
+
