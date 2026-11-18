@@ -255,3 +255,11 @@ KPZ: „Zkusme verzi, kde odděláme ‚Odnese to tele a jeho máma‘, je to ta
 - Scéna: „Odebrat tele“ naskočí při „které sami vytvořili“ / „nahromadí“ (`hasW`), s větou „Odnese“ funguje i dál (v36).
 - Návrat na v36: v `reel-kpz-foto.html` načíst `assets-v36/vo-timing.js`.
 - **KPZ:** „Podle mě to tam chybí. Sice cítím, jak je text pomalejší, ale chybí to tam. Zůstaneme u předchozí verze.“ → scéna zpět na `assets-v36` (platná verze = **v36**, `out/kpz-telata-reel-v36.mp4`). `vo-v37.json` / `assets-v37` ponechány jako záznam pokusu.
+
+## v38 (2026-11-18) – dvě nové fotky od KPZ (hlas v36)
+
+KPZ: „Ke krávám, jak tam je pár fotek z kravína, ještě přihoď tu fotku přes ten plot. U telat bych přidal taky jednu – ty telata, ale rozmaž známky, ať nejdou přečíst.“
+- Hook 0:15: kreslená bouda („v samostatném boxu“) → **skutečná fotka dvou telat v boudách** při „přestože je to společenské zvíře“ (štítek „Společenské zvíře“ nad fotkou). Čísla na 4 známkách rozostřená (`tag_retouch.py --rect`).
+- Hygiena 0:40: po fotce boxů (výkaly a moč) **kravín přes plot s hromadou hnoje** při „průběžně“, pak kreslená hala s úklidem.
+- Obě s nápisem „Ilustrační záběr“. Délka beze změny 2:58,7.
+
