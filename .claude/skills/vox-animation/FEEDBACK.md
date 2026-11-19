@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.28.1**
+**Verze skillu: 0.29.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -29,6 +29,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[data]** Odlišit doložený současný stav od hypotézy: kde zvířata dnes nejsou (např. telata v hale), mluvit podmiňovacím způsobem („v hale, kam by tele muselo“) a argument přiřadit chovatelům („údajně“); nepoužívat „hlavně/nejčastěji“ bez měření. _(2026-10-21, kpz-telata – dotaz KPZ k zalehnutí)_
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
 - **[data]** V jednom příspěvku/videu nemíchat čísla **o stejné věci z různých studií** s různým základem (např. FAO „chov = 12 % všech emisí“ vedle Xu „57 % emisí z jídla“) – čtenář je dá dohromady a vyjde mu rozpor. Držet jeden zdroj a jeden „koláč“, slajdy řetězit („z toho…“). _(2026-11-07, kpz-planeta – KPZ: „moc nechápu ten čtvrtej slide“)_
+- **[obsah]** U KPZ žádné výrazy průmyslu bez odstupu: „tzv. skot“, „tzv. hospodářská zvířata“ (nebo uvozovky / běžné slovo „krávy“) – v grafice i v popisku. Seznam v `brand/kpz/README.md` → Slovník. _(2026-11-19, kpz-planeta)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75, v8: ~0.73 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
@@ -162,3 +163,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.27.2 | kpz-planeta | „Já ten slide s 83 % půdy nechápu. Dalo by se to víc vymyslet pro míň chápavé?“ | Procentní pruhy → „10 polí → 10 talířů“: zvířatům 8 polí → necelé 2 talíře, rostlinné jídlo 2 pole → přes 8 talířů; přesná čísla ve zdroji. Poučení: procenta ze tří různých základů (půda, kalorie, bílkoviny) v jednom grafu jsou pro laiky moc; převést na jednu srovnatelnou jednotku „z 10“ a vstup → výstup šipkou (jako u prasete). |
 | 2026-11-07 | 0.28.0 | kpz-planeta | „Jo to je super, ale není to pak už podobný tomu předtím? Případně dát pak další slide, který byl předtím místo tohoto, s nadpisem ‚Odborněji:‘.“ | Za jednoduchý 6. slajd (pole → talíře) vrácen původní slajd s pruhy 83/18/37 % se štítkem „Odborněji:“ (7.); karusel 11 slajdů. Pravidlo [struktura] „jednoduše → odborněji“. ✅ jednoduchá verze „Jo to je super“. |
 | 2026-11-08 | 0.28.1 | kpz-planeta | „Počkej. 11? Na IG je max 10.“ → varianty → „A“. | Vyřazen slajd „Jídlo tvoří třetinu emisí“ (Crippa 2021 – jiná studie vedle FAO 12 %), „Samotný chov zvířat“ → „Chov zvířat“; karusel 10 slajdů; popisek bez Crippa. Pravidlo [formát] max. 10 slajdů. |
+| 2026-11-19 | 0.29.0 | kpz-planeta | „Jak je tam ‚Chov skotu‘, dej ‚Chov tzv. skotu‘, nepoužívejme výrazy, které používají zneuživatelé zvířat… OK, dej pryč A.“ | 3. slajd „Chov tzv. skotu“ (i ve zdroji), podle stejného pravidla obálka „Tzv. hospodářská zvířata“; popisek upraven; slovník KPZ doplněn. „Dej pryč A“ = varianta A (slajd o třetině emisí) – už hotovo 2026-11-08. |

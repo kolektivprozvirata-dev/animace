@@ -1,6 +1,6 @@
 # Popisek příspěvku (návrh v1)
 
-Hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. A planeta to cítí: chov zvířat tvoří podle FAO 12 % všech emisí skleníkových plynů lidstva – a z toho 62 % připadá na chov skotu pro maso a mléko. 🌍
+Tzv. hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. A planeta to cítí: chov zvířat tvoří podle FAO 12 % všech emisí skleníkových plynů lidstva – a z toho 62 % připadá na chov tzv. skotu pro maso a mléko. 🌍
 
 Maso, mléko, vejce a ryby z chovů přitom zabírají 83 % zemědělské půdy světa, ale dávají jen 18 % kalorií a 37 % bílkovin. A když rostlinné bílkoviny nejdřív sní prase, v jeho těle jich zůstane nanejvýš třetina. 🐖
 

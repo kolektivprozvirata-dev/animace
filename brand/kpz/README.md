@@ -109,6 +109,7 @@ používat jen s vysvětlením.
 | krutá praxe, krutý systém | útoky na osoby |
 | rostlinné alternativy | „náhražky“ |
 | **tzv. masné krávy**, **tzv. dojnice** (vždy s „tzv.“) | „masné krávy“, „dojnice“ bez odstupu **[KPZ]** |
+| **tzv. skot**, **tzv. hospodářská zvířata**, nebo běžné slovo (krávy, zvířata v chovech) | „skot“, „hospodářská zvířata“ bez „tzv.“/uvozovek – výrazy průmyslu, který zvířata využívá **[KPZ 2026-11-19]** |
 
 ## Podklady KPZ
 - `clanky/mlecne-kravy-materstvi-ve-sluzbach-vyroby.md` – článek KPZ s 30 zdroji
@@ -129,6 +130,7 @@ používat jen s vysvětlením.
   „Pokud konzumujete mateřské mléko nebo sýry, ani zde nehledejte útěchu.“ + fakta o zabíjení
   (býčci, tzv. dojnice po poklesu dojivosti). Je to také krvavý a krutý byznys, jen se v něm
   zvířata mají možná o trochu lépe.
+- **Výrazy průmyslu obecně [KPZ, 2026-11-19]:** „Nepoužívejme výrazy, které používají zneuživatelé zvířat. Buď je dávejme do uvozovek, nebo tam dávejme ‚tzv.‘. Případně tam prostě napišme ‚krávy‘.“ Platí pro text v grafice i popisky (skot, hospodářská zvířata, dojnice, masné krávy, …).
 - **„Tzv.“ u produkčních kategorií [KPZ]:** „tzv. masné krávy“, „tzv. dojnice“ – tyto
   názvy vymysleli lidé. Kráva je tvor s vlastním životem, nenarodila se jako „masná“.
   V hlasu vyslovovat „takzvané“.
