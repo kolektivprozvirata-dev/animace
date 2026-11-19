@@ -4,7 +4,7 @@ Zvířatům slouží 8 polí z 10, jídla ale dají necelé 2 talíře z 10. Mas
 
 Proč? Když rostlinné bílkoviny nejdřív sní prase, v jeho těle jich zůstane nanejvýš třetina. A i v Česku jde víc obilí zvířatům než lidem. 🐖
 
-Tzv. hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. Jejich chov tvoří podle FAO 12 % všech emisí skleníkových plynů lidstva – a z toho 62 % připadá na chov tzv. skotu pro maso a mléko.
+Tzv. hospodářská zvířata dnes váží 30× víc než všichni divocí savci na souši. Jejich chov tvoří podle novějšího odhadu FAO 12 % všech emisí skleníkových plynů lidstva (dřív se uvádělo 14,5 %; rozdíl je hlavně v novějších metodách výpočtu) – a z toho 62 % připadá na chov tzv. skotu pro maso a mléko.
 
 Dobrá zpráva? Rostlinná strava má podle velké britské studie zhruba čtvrtinovou uhlíkovou stopu i spotřebu půdy oproti stravě s hodně masem. Lehčí pro planetu i pro zvířata. 🌱
 

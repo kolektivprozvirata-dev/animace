@@ -52,3 +52,15 @@ z Poore & Nemecek 2018, podíl metanu z UNEP 2021). Číslo FAO 2023 (12 %) při
   vejce 31 %, průměr 8 %. → Slajd 6 („nanejvýš 3 lidé“ = do 33 kg) je **opatrný**; podle Shepon by ze 100 kg zbylo v snědeném
   vepřovém ~9 kg (≈ 1 člověk). Necháváme „nanejvýš 3“ – neprůstřelné (Shepon počítá i ztráty u spotřebitele).
 - Web science.org vrací automatickému stahování 403 – plný text čten v autorské verzi na ORA.
+
+## 12 % vs. dřívějších 14,5 % (ověřeno 2026-11-19 v plném textu FAO 2023, cc9029en, str. 39–40)
+
+- „The most recent estimate of livestock emissions using GLEAM 3, 6.2 Gt CO2eq, is based on the reference year 2015. […] it is
+  lower than the previous global assessment of 7.5 Gt CO2eq for 2010, produced using GLEAM 2 (FAO, 2019a), or 7.1 Gt CO2eq
+  estimated in Gerber et al. (2013) for 2005. The main difference is linked to the updated methodologies for estimating direct and
+  indirect GHG emissions, as well as emissions associated with the LUC, including deforestation and pasture expansion.“
+- Tab. 6: AR4/GLEAM 1/2005 → 7,1 Gt = **14,5 %**; AR5/GLEAM 2/2010 → 8,0 Gt = 14,8 % (s cc fb) nebo 7,1 Gt = 13,7 %;
+  AR6/GLEAM 3/2015 → 6,2 Gt = **12,0 %**. Metan ~stejný (124 → 123 Mt CH4), N2O odhad zhruba poloviční (6,71 → 3,35 Mt) díky
+  zpřesnění metodiky IPCC 2019.
+- Na slajdu: „Dřív se uvádělo 14,5 % (FAO 2013, data z roku 2005). Nový odhad je nižší hlavně kvůli novějším metodám výpočtu.“
+  Netvrdíme „protože chov ubyl“ ani opak – to zdroj neřeší.

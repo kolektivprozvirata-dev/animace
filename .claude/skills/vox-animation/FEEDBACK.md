@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.3**
+**Verze skillu: 0.29.4**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -28,6 +28,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[data]** Čísla ze studií vždy popsat jako to, čím jsou (velikost vzorku ≠ celkový počet). „104 farem ve studii“, ne „v Evropě je přes sto farem“. _(2026-10-19, kpz-telata – oprava po dotazu KPZ)_
 - **[data]** Odlišit doložený současný stav od hypotézy: kde zvířata dnes nejsou (např. telata v hale), mluvit podmiňovacím způsobem („v hale, kam by tele muselo“) a argument přiřadit chovatelům („údajně“); nepoužívat „hlavně/nejčastěji“ bez měření. _(2026-10-21, kpz-telata – dotaz KPZ k zalehnutí)_
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
+- **[data]** Když nahrazujeme známé starší číslo novějším (14,5 % → 12 %), napsat to přímo na slajd („Dřív se uvádělo …“) i s důvodem podle zdroje – předejde to komentářům „to je špatně“. _(2026-11-19, kpz-planeta)_
 - **[data]** V jednom příspěvku/videu nemíchat čísla **o stejné věci z různých studií** s různým základem (např. FAO „chov = 12 % všech emisí“ vedle Xu „57 % emisí z jídla“) – čtenář je dá dohromady a vyjde mu rozpor. Držet jeden zdroj a jeden „koláč“, slajdy řetězit („z toho…“). _(2026-11-07, kpz-planeta – KPZ: „moc nechápu ten čtvrtej slide“)_
 - **[obsah]** U KPZ žádné výrazy průmyslu bez odstupu: „tzv. skot“, „tzv. hospodářská zvířata“ (nebo uvozovky / běžné slovo „krávy“) – v grafice i v popisku. Seznam v `brand/kpz/README.md` → Slovník. _(2026-11-19, kpz-planeta)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
@@ -168,3 +169,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-19 | 0.29.1 | kpz-planeta | „Nevím, jestli ten první slide je dobrej jako začátek. Jako začátek by byl dobrej ‚Zvířatům slouží 8 polí z deseti‘, ale muselo by se to přeházet.“ | Nové pořadí: pole a talíře (obálka, štítek „Proč? Listuj →“, snítka) → odborněji → prase → obilí ČR → biomasa → chov 12 % → tzv. skot 62 % → nejšetrnější → vegani → závěr; biomasa bez štítku obálky; popisek přepsán ve stejném pořadí. Poučení: obálka = nejsrozumitelnější fakt o talíři (jídlo), ne abstraktní srovnání (biomasa). |
 | 2026-11-19 | 0.29.2 | kpz-planeta | „Líbí se mi, jak je ten první slide přehledně udělanej. Nenarvali bysme tam někam fotku zvířete z chovu? Aby to víc chytlo.“ | Obálka: výstřižek telete (tele-studio, KPZ) vpravo nahoře místo snítky, „Proč? Listuj →“ přes jeho nohy, legenda vedle talířů. ✅ přehlednost obálky. Pravidlo [vizuál] o fotce na obálce. |
 | 2026-11-19 | 0.29.3 | kpz-planeta | „Co to tele udělat trošku menší a dát ho lehce doleva.“ | Tele na obálce 282 → 240 px šířky, posun o ~35 px doleva a níž; štítek „Proč? Listuj →“ pod ním. |
+| 2026-11-19 | 0.29.4 | kpz-planeta | „Co u těch emisí dát ‚Podle novější studie… 12 %‘, protože dřív se uvádělo 14,5.“ | 6. slajd: nadtitulek „Podle novějšího odhadu FAO (2023)“, krémová karta „Dřív se uvádělo 14,5 % (FAO 2013, data 2005). Nový odhad je nižší hlavně kvůli novějším metodám výpočtu.“ – ověřeno v plném textu FAO 2023 (str. 39–40, tab. 6); menší mřížka; popisek doplněn. |
