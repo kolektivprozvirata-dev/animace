@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.1**
+**Verze skillu: 0.29.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -35,6 +35,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[workflow]** Úspornější iterace: exportovat text hlasu do `scenar-vN.md` (sekce = záběry), KPZ ho upraví a pošle zpět; text převzít, opravit jen pravopis a zjevné překlepy (a říct které), sladit kotvy ve scéně, jeden render. _(2026-10-15, kpz-telata v4)_
 - **[workflow]** Drobné připomínky „do další verze“ zapisovat do `scenes/<projekt>/dalsi-verze.md` a nevyrábět, dokud KPZ neřekne. _(2026-10-19, kpz-telata)_
 - **[komunikace]** S KPZ si **tykáme**. _(2026-10-19)_
+- **[vizuál]** Obálka karuselu / příspěvku: přehledné schéma doplnit **fotkou zvířete z chovu** (ideálně oční kontakt), „aby to víc chytlo“ – jen schéma nestačí. _(2026-11-19, kpz-planeta)_
 - **[vizuál]** Grafiku s daty dělat tak, aby ji pochopilo **desetileté dítě**: kostičky (jednotky) + šipky + postavičky, mezikrok (např. prase) jako samostatný článek řetězu, ztráta jako přerušované kostičky s krátkým popiskem. Kostičky mají jednotku (např. „1 kostička = 10 kg“), aby byla vidět konkrétní čísla; na slajdu napsat „Kostičky jsou zjednodušení“ a skutečné rozmezí dát do zdroje. Jednoduché neznamená dětské: žádná dětská slova („vykaká“) – věcně („výkaly a moč“). _(2026-11-07, kpz-planeta)_
 - **[struktura]** Složitější graf dát ve dvou krocích: nejdřív **jednoduchá verze** („8 polí z 10“, kostičky, šipky) a hned za ní stejná data **„Odborněji:“** (přesná procenta, pruhy) – laik pochopí, znalý najde čísla. _(2026-11-07, kpz-planeta)_
 - **[komunikace]** Vysvětlovat **krátce, v číslovaných bodech a jen na tématu videa** (krávy, ne analogie z jiné oblasti); jedna myšlenka na bod, na konci shrnutí jednou větou. _(2026-10-27, KPZ: „mám ADHD, blbě se soustředím a ztrácím se v tom“)_
@@ -165,3 +166,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-08 | 0.28.1 | kpz-planeta | „Počkej. 11? Na IG je max 10.“ → varianty → „A“. | Vyřazen slajd „Jídlo tvoří třetinu emisí“ (Crippa 2021 – jiná studie vedle FAO 12 %), „Samotný chov zvířat“ → „Chov zvířat“; karusel 10 slajdů; popisek bez Crippa. Pravidlo [formát] max. 10 slajdů. |
 | 2026-11-19 | 0.29.0 | kpz-planeta | „Jak je tam ‚Chov skotu‘, dej ‚Chov tzv. skotu‘, nepoužívejme výrazy, které používají zneuživatelé zvířat… OK, dej pryč A.“ | 3. slajd „Chov tzv. skotu“ (i ve zdroji), podle stejného pravidla obálka „Tzv. hospodářská zvířata“; popisek upraven; slovník KPZ doplněn. „Dej pryč A“ = varianta A (slajd o třetině emisí) – už hotovo 2026-11-08. |
 | 2026-11-19 | 0.29.1 | kpz-planeta | „Nevím, jestli ten první slide je dobrej jako začátek. Jako začátek by byl dobrej ‚Zvířatům slouží 8 polí z deseti‘, ale muselo by se to přeházet.“ | Nové pořadí: pole a talíře (obálka, štítek „Proč? Listuj →“, snítka) → odborněji → prase → obilí ČR → biomasa → chov 12 % → tzv. skot 62 % → nejšetrnější → vegani → závěr; biomasa bez štítku obálky; popisek přepsán ve stejném pořadí. Poučení: obálka = nejsrozumitelnější fakt o talíři (jídlo), ne abstraktní srovnání (biomasa). |
+| 2026-11-19 | 0.29.2 | kpz-planeta | „Líbí se mi, jak je ten první slide přehledně udělanej. Nenarvali bysme tam někam fotku zvířete z chovu? Aby to víc chytlo.“ | Obálka: výstřižek telete (tele-studio, KPZ) vpravo nahoře místo snítky, „Proč? Listuj →“ přes jeho nohy, legenda vedle talířů. ✅ přehlednost obálky. Pravidlo [vizuál] o fotce na obálce. |
