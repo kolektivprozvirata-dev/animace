@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.4**
+**Verze skillu: 0.29.5**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -170,3 +170,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-19 | 0.29.2 | kpz-planeta | „Líbí se mi, jak je ten první slide přehledně udělanej. Nenarvali bysme tam někam fotku zvířete z chovu? Aby to víc chytlo.“ | Obálka: výstřižek telete (tele-studio, KPZ) vpravo nahoře místo snítky, „Proč? Listuj →“ přes jeho nohy, legenda vedle talířů. ✅ přehlednost obálky. Pravidlo [vizuál] o fotce na obálce. |
 | 2026-11-19 | 0.29.3 | kpz-planeta | „Co to tele udělat trošku menší a dát ho lehce doleva.“ | Tele na obálce 282 → 240 px šířky, posun o ~35 px doleva a níž; štítek „Proč? Listuj →“ pod ním. |
 | 2026-11-19 | 0.29.4 | kpz-planeta | „Co u těch emisí dát ‚Podle novější studie… 12 %‘, protože dřív se uvádělo 14,5.“ | 6. slajd: nadtitulek „Podle novějšího odhadu FAO (2023)“, krémová karta „Dřív se uvádělo 14,5 % (FAO 2013, data 2005). Nový odhad je nižší hlavně kvůli novějším metodám výpočtu.“ – ověřeno v plném textu FAO 2023 (str. 39–40, tab. 6); menší mřížka; popisek doplněn. |
+| 2026-11-19 | 0.29.5 | kpz-planeta | „A přidej tam někam tyto obrázky“ (4 fotky: výkrm prasat, prasnice v klecích, prasnice se selaty, hala s kuřaty) → „Jen tam, kde se to hodí, a nemusí být všechny.“ | 5. slajd: prasnice v klecích místo haly s kravami; 6. slajd: hala s kuřaty místo opakovaného „12 %“; tmavé fotky zesvětlené (jen expozice). Zkoušeno: malá fotka prasat na slajdu se schématem (prase a bílkoviny) – moc drobná, vyřazeno. Prasnice se selaty a výkrm zatím nepoužity. Poučení: fotky na slajdech se schématem jen tam, kde je pro ně místo ve velikosti ≥ ~450 px; jinak schéma nechat čisté. |

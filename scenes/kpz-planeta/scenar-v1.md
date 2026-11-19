@@ -1,6 +1,6 @@
 # Karusel „Živočišná výroba a planeta“ – texty v1 (návrh ke schválení KPZ)
 
-**Pořadí od 2026-11-19 (na přání KPZ obálka = pole a talíře):** 1 pole a talíře (+ tele z chovu vpravo nahoře, „Proč? Listuj →“) · 2 Odborněji 83/18/37 % · 3 prase a bílkoviny · 4 obilí v Česku · 5 biomasa 30× · 6 chov 12 % · 7 tzv. skot 62 % · 8 nejšetrnější · 9 vegani · 10 závěr.
+**Pořadí od 2026-11-19 (na přání KPZ obálka = pole a talíře):** 1 pole a talíře (+ tele z chovu vpravo nahoře, „Proč? Listuj →“) · 2 Odborněji 83/18/37 % · 3 prase a bílkoviny · 4 obilí v Česku · 5 biomasa 30× (fotka prasnic v klecích, KPZ) · 6 chov 12 % (fotka haly s kuřaty, KPZ) · 7 tzv. skot 62 % · 8 nejšetrnější · 9 vegani · 10 závěr.
 
 Formát: 10 slajdů – limit plánovačů IG (2026-11-08: vyřazen slajd „Jídlo = třetina emisí“, Crippa 2021; „Samotný chov zvířat“ → „Chov zvířat“). Předtím: (2026-11-07: nový 3. slajd FAO 12 %; slajdy 57 % a hovězí 25 % nahrazeny 4. slajdem FAO „skot 62 %“; 6. slajd půda jednoduše „8 polí z 10“, 7. slajd „Odborněji:“ 83/18/37 %; 8. slajd prase a bílkoviny) 1080×1350 (4:5), styl KPZ (bloky Bebas Neue, růžový papír, výstřižky).
 Zvíře = fotka (výstřižek), kresba = jen schémata. Ověření: `overeni-tvrzeni.md`.
