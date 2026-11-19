@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.2**
+**Verze skillu: 0.29.3**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -167,3 +167,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-19 | 0.29.0 | kpz-planeta | „Jak je tam ‚Chov skotu‘, dej ‚Chov tzv. skotu‘, nepoužívejme výrazy, které používají zneuživatelé zvířat… OK, dej pryč A.“ | 3. slajd „Chov tzv. skotu“ (i ve zdroji), podle stejného pravidla obálka „Tzv. hospodářská zvířata“; popisek upraven; slovník KPZ doplněn. „Dej pryč A“ = varianta A (slajd o třetině emisí) – už hotovo 2026-11-08. |
 | 2026-11-19 | 0.29.1 | kpz-planeta | „Nevím, jestli ten první slide je dobrej jako začátek. Jako začátek by byl dobrej ‚Zvířatům slouží 8 polí z deseti‘, ale muselo by se to přeházet.“ | Nové pořadí: pole a talíře (obálka, štítek „Proč? Listuj →“, snítka) → odborněji → prase → obilí ČR → biomasa → chov 12 % → tzv. skot 62 % → nejšetrnější → vegani → závěr; biomasa bez štítku obálky; popisek přepsán ve stejném pořadí. Poučení: obálka = nejsrozumitelnější fakt o talíři (jídlo), ne abstraktní srovnání (biomasa). |
 | 2026-11-19 | 0.29.2 | kpz-planeta | „Líbí se mi, jak je ten první slide přehledně udělanej. Nenarvali bysme tam někam fotku zvířete z chovu? Aby to víc chytlo.“ | Obálka: výstřižek telete (tele-studio, KPZ) vpravo nahoře místo snítky, „Proč? Listuj →“ přes jeho nohy, legenda vedle talířů. ✅ přehlednost obálky. Pravidlo [vizuál] o fotce na obálce. |
+| 2026-11-19 | 0.29.3 | kpz-planeta | „Co to tele udělat trošku menší a dát ho lehce doleva.“ | Tele na obálce 282 → 240 px šířky, posun o ~35 px doleva a níž; štítek „Proč? Listuj →“ pod ním. |
