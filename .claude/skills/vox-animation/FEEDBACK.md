@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.0**
+**Verze skillu: 0.29.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -164,3 +164,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-07 | 0.28.0 | kpz-planeta | „Jo to je super, ale není to pak už podobný tomu předtím? Případně dát pak další slide, který byl předtím místo tohoto, s nadpisem ‚Odborněji:‘.“ | Za jednoduchý 6. slajd (pole → talíře) vrácen původní slajd s pruhy 83/18/37 % se štítkem „Odborněji:“ (7.); karusel 11 slajdů. Pravidlo [struktura] „jednoduše → odborněji“. ✅ jednoduchá verze „Jo to je super“. |
 | 2026-11-08 | 0.28.1 | kpz-planeta | „Počkej. 11? Na IG je max 10.“ → varianty → „A“. | Vyřazen slajd „Jídlo tvoří třetinu emisí“ (Crippa 2021 – jiná studie vedle FAO 12 %), „Samotný chov zvířat“ → „Chov zvířat“; karusel 10 slajdů; popisek bez Crippa. Pravidlo [formát] max. 10 slajdů. |
 | 2026-11-19 | 0.29.0 | kpz-planeta | „Jak je tam ‚Chov skotu‘, dej ‚Chov tzv. skotu‘, nepoužívejme výrazy, které používají zneuživatelé zvířat… OK, dej pryč A.“ | 3. slajd „Chov tzv. skotu“ (i ve zdroji), podle stejného pravidla obálka „Tzv. hospodářská zvířata“; popisek upraven; slovník KPZ doplněn. „Dej pryč A“ = varianta A (slajd o třetině emisí) – už hotovo 2026-11-08. |
+| 2026-11-19 | 0.29.1 | kpz-planeta | „Nevím, jestli ten první slide je dobrej jako začátek. Jako začátek by byl dobrej ‚Zvířatům slouží 8 polí z deseti‘, ale muselo by se to přeházet.“ | Nové pořadí: pole a talíře (obálka, štítek „Proč? Listuj →“, snítka) → odborněji → prase → obilí ČR → biomasa → chov 12 % → tzv. skot 62 % → nejšetrnější → vegani → závěr; biomasa bez štítku obálky; popisek přepsán ve stejném pořadí. Poučení: obálka = nejsrozumitelnější fakt o talíři (jídlo), ne abstraktní srovnání (biomasa). |
