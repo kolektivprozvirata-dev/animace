@@ -20,4 +20,4 @@ Tmavé fotky jen zesvětlené (jas/kontrast, `-upr.jpg`), obsah beze změny. Na 
 
 | soubor | popis | použití |
 |---|---|---|
-| pastva-stado-snimek.jpg | snímek z videa KPZ `scenes/kpz-telata/assets/video/pastva-stado.mp4` v čase 52,5 s (tzv. masné krávy na pastvě, stejný úsek jako v reelu v33); 432×768, čísla na známkách nečitelná | blob `vystrizky/pastva-stado-tvar.png` (`--shape blob --tight 0.8 --crop 0,300,432,768 --scale 1.8 --seed 21`) – 7. slajd „Chov tzv. skotu“, štítek „maso“ (místo `masny-skot-tvar.png` z reelu) |
+| pastva-stado-snimek.jpg | snímek z videa KPZ `scenes/kpz-telata/assets/video/pastva-stado.mp4` v čase 52,5 s (tzv. masné krávy na pastvě, stejný úsek jako v reelu v33); 432×768, čísla na známkách nečitelná | blob `vystrizky/pastva-stado-tvar.png` (`--shape blob --tight 0.8 --crop 0,300,432,768 --scale 1.8 --seed 21`) – **zamítnuto KPZ** („pěkně debilní fotka“); 7. slajd má od 2026-11-20 `../kpz-telata/…/masne-pastva-2-tvar.png` (fotka KPZ z reelu v32) |

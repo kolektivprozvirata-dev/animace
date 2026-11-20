@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.6**
+**Verze skillu: 0.29.7**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -171,4 +171,5 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-19 | 0.29.3 | kpz-planeta | „Co to tele udělat trošku menší a dát ho lehce doleva.“ | Tele na obálce 282 → 240 px šířky, posun o ~35 px doleva a níž; štítek „Proč? Listuj →“ pod ním. |
 | 2026-11-19 | 0.29.4 | kpz-planeta | „Co u těch emisí dát ‚Podle novější studie… 12 %‘, protože dřív se uvádělo 14,5.“ | 6. slajd: nadtitulek „Podle novějšího odhadu FAO (2023)“, krémová karta „Dřív se uvádělo 14,5 % (FAO 2013, data 2005). Nový odhad je nižší hlavně kvůli novějším metodám výpočtu.“ – ověřeno v plném textu FAO 2023 (str. 39–40, tab. 6); menší mřížka; popisek doplněn. |
 | 2026-11-19 | 0.29.5 | kpz-planeta | „A přidej tam někam tyto obrázky“ (4 fotky: výkrm prasat, prasnice v klecích, prasnice se selaty, hala s kuřaty) → „Jen tam, kde se to hodí, a nemusí být všechny.“ | 5. slajd: prasnice v klecích místo haly s kravami; 6. slajd: hala s kuřaty místo opakovaného „12 %“; tmavé fotky zesvětlené (jen expozice). Zkoušeno: malá fotka prasat na slajdu se schématem (prase a bílkoviny) – moc drobná, vyřazeno. Prasnice se selaty a výkrm zatím nepoužity. Poučení: fotky na slajdech se schématem jen tam, kde je pro ně místo ve velikosti ≥ ~450 px; jinak schéma nechat čisté. |
-| 2026-11-20 | 0.29.6 | kpz-planeta | „U těch masných krav oddělej ten obrázek a dej tam ty masný krávy na pastvě, co jsem ti poslal do poslední verze reelu.“ | 7. slajd: místo `masny-skot-tvar` snímek z videa KPZ pastva-stado (52,5 s, úsek z reelu v33) jako nepravidelný utržený kus; nadpis 100 → 88 px, aby se fotky vešly. Poučení: když klient chce „to z reelu“ a v reelu je video, pro statickou grafiku vzít snímek ze stejného úseku. |
+| 2026-11-20 | 0.29.6 | kpz-planeta | „U těch masných krav oddělej ten obrázek a dej tam ty masný krávy na pastvě, co jsem ti poslal do poslední verze reelu.“ | 7. slajd: místo `masny-skot-tvar` snímek z videa KPZ pastva-stado (52,5 s, úsek z reelu v33) jako nepravidelný utržený kus; nadpis 100 → 88 px, aby se fotky vešly. (Zamítnuto, viz 0.29.7.) |
+| 2026-11-20 | 0.29.7 | kpz-planeta | „To je pěkně debilní fotka. Byla tam i lepší z pastvy.“ | Snímek z videa vyměněn za fotku KPZ `masne-pastva-2-tvar` (reel v32, stádo tzv. masných krav s kopci); holštýnka odsunuta, aby nezakrývala zvířata na pastvině; nadpis zpět 100 px. Poučení: „poslední verze reelu“ = poslední **schválená** (v32 s fotkami), ne zkušební v33 s videi; u nejasné reference se zeptat nebo poslat obě možnosti. |
