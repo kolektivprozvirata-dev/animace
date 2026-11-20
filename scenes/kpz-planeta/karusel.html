@@ -31,14 +31,28 @@
 <body class="kpz">
 <div id="stage">
 
-  <!-- 1 · OBÁLKA: půda → jídlo pro méně zkušené (Poore & Nemecek 2018): 10 polí (83 % → 8, 17 % → 2) → 10 talířů (18 % → 2, 82 % → 8) -->
+  <!-- 1 · HOOK (návrh KPZ č. 3): čistě lákací první slajd + šipka na další slajdy; fotka KPZ prasnice v klecích -->
+  <div class="layer" id="s-hook">
+    <div class="stk" style="left:858px; top:56px; width:170px" data-stk="sprig"></div>
+    <div class="abs h1 kblocks print" style="left:66px; top:190px; font-size:118px">
+      <span class="kb">Krmíme zvířata</span><br><span class="kb">jídlem.</span><br><span class="kb cream">A pak máme</span><br><span class="kb orange">jídla míň.</span>
+    </div>
+    <svg class="abs" style="left:0; top:0" width="1080" height="1350">
+      <g filter="url(#kpz-brush)" stroke="var(--kpz-navy)" stroke-width="26" stroke-linecap="round" fill="none">
+        <path d="M642,756 C720,742 800,746 900,758"/>
+      </g>
+      <path d="M884,708 L986,762 L880,812 Z" fill="var(--kpz-navy)" filter="url(#kpz-brush)"/>
+    </svg>
+    <div class="kpz-cut" style="left:34px; top:886px; width:1012px"><img src="assets/foto-kpz/vystrizky/prasnice-klece-hook.png" alt=""><div class="abs ilu" style="right:60px; bottom:52px">Ilustrační záběr</div></div>
+  </div>
+
+  <!-- 2 · půda → jídlo pro méně zkušené (Poore & Nemecek 2018): 10 polí (83 % → 8, 17 % → 2) → 10 talířů (18 % → 2, 82 % → 8) -->
   <div class="layer" id="s-puda">
     <!-- tele z chovu (fotka KPZ, výstřižek z reelu) – dívá se do objektivu, ať obálka „chytne“ -->
     <div class="kpz-cut" style="left:708px; top:66px; width:240px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/tele-studio.png" alt=""></div>
     <div class="abs h1 kblocks print" style="left:66px; top:176px; font-size:80px">
       <span class="kb">Chov zvířat zabírá</span><br><span class="kb orange">8 polí z 10.</span><br><span class="kb cream">Na talíře z nich</span><br><span class="kb cream">ale přijdou necelé 2 z 10.</span>
     </div>
-    <div class="abs tag orange print" style="left:700px; top:650px; font-size:46px; white-space:nowrap; rotate:-3deg">Proč? Listuj →</div>
     <!-- řádek A: živočišné -->
     <div class="abs tag maroon print" style="left:66px; top:656px; font-size:44px">Maso, mléko, vejce a ryby z chovů</div>
     <div class="abs" data-fields="8" data-color="var(--kpz-maroon)" style="left:66px; top:736px"></div>
@@ -64,7 +78,7 @@
     <div class="src kpz-body" style="top:1262px">Zdroj: Poore &amp; Nemecek 2018, Science · celý svět · přesně: 83&nbsp;% zemědělské půdy, 18&nbsp;% kalorií (a 37&nbsp;% bílkovin)</div>
   </div>
 
-  <!-- 2 · „Odborněji:“ – půda × kalorie × bílkoviny v procentech (Poore & Nemecek 2018), doplňuje jednoduchý 6. slajd -->
+  <!-- 3 · „Odborněji:“ – půda × kalorie × bílkoviny v procentech (Poore & Nemecek 2018), doplňuje jednoduchý 6. slajd -->
   <div class="layer" id="s-puda-odb">
     <div class="abs" style="left:66px; top:180px; white-space:nowrap"><span class="tag mustard print" style="font-size:46px; rotate:-2deg">Odborněji:</span><span class="eyebrow" style="margin-left:22px">maso, mléko, vejce a ryby z chovů</span></div>
     <div class="abs h1 kblocks print" style="left:66px; top:256px; font-size:100px">
@@ -89,7 +103,7 @@
     <div class="src kpz-body">Zdroj: Poore &amp; Nemecek 2018, Science · svět, data kolem r. 2010 · ryby jen z chovů</div>
   </div>
 
-  <!-- 3 · bílkoviny přes prase (pro desetileté): 100 kg rostlinných bílkovin → 10 lidí × → prase → nanejvýš 3 lidé; 1 kostička = 10 kg -->
+  <!-- 4 · bílkoviny přes prase (pro desetileté): 100 kg rostlinných bílkovin → 10 lidí × → prase → nanejvýš 3 lidé; 1 kostička = 10 kg -->
   <div class="layer" id="s-prase">
     <div class="abs h1 kblocks print" style="left:66px; top:176px; font-size:84px">
       <span class="kb">Pro kolik lidí vystačí</span><br><span class="kb orange">100 kg</span> <span class="kb cream">rostlinných</span><br><span class="kb cream">bílkovin?</span>
@@ -141,7 +155,7 @@
     <div class="src kpz-body">Zdroj: Pomar et al. 2021, Frontiers in Veterinary Science – prase uloží do těla jen 15–33&nbsp;% bílkovin z&nbsp;krmiva (ze 100&nbsp;kg tedy 15–33&nbsp;kg). Kostičky jsou zjednodušení.</div>
   </div>
 
-  <!-- 4 · Česko: obilí na krmiva -->
+  <!-- 5 · Česko: obilí na krmiva -->
   <div class="layer" id="s5">
     <div class="stk" style="left:850px; top:48px; width:170px" data-stk="wheat"></div>
     <div class="abs eyebrow" style="left:70px; top:200px">Česko · obilí spotřebované doma · 2024/25</div>
@@ -159,15 +173,6 @@
     <div class="lbl" style="left:170px; top:1208px; width:300px; text-align:center; font-size:56px; color:var(--kpz-maroon)">krmiva</div>
     <div class="lbl" style="left:600px; top:1208px; width:300px; text-align:center; font-size:56px; color:var(--kpz-teal-d)">potraviny</div>
     <div class="src kpz-body">Zdroj: MZe – Situační a výhledová zpráva Obiloviny 2024/2025</div>
-  </div>
-
-  <!-- 5 · biomasa (dřív obálka) -->
-  <div class="layer" id="s1">
-    <div class="abs h1 kblocks print" style="left:66px; top:200px">
-      <span class="kb">Tzv. hospodářská</span><br><span class="kb">zvířata váží</span> <span class="kb orange">30× víc</span><br><span class="kb cream">než všichni divocí</span><br><span class="kb cream">savci na souši.</span>
-    </div>
-    <div class="kpz-cut" style="left:62px; top:826px; width:900px"><img src="assets/foto-kpz/vystrizky/prasnice-klece.png" alt=""><div class="abs ilu">Ilustrační záběr</div></div>
-    <div class="src kpz-body">Zdroj: Greenspoon et al. 2023, PNAS (hmotnost, ne počet zvířat)</div>
   </div>
 
   <!-- 6 · chov zvířat = 12 % všech emisí (FAO 2023) + vysvětlení rozdílu oproti dřívějším 14,5 % (FAO 2013) -->
