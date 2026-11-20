@@ -15,3 +15,9 @@ Tmavé fotky jen zesvětlené (jas/kontrast, `-upr.jpg`), obsah beze změny. Na 
     python3 $S kurata-hala-upr.jpg vystrizky/kurata-hala.png --piece --crop 250,180,1850,1070 --seed 13
     python3 $S prasata-vykrm.webp vystrizky/prasata-vykrm.png --piece --crop 980,380,2000,1074 --seed 12
     python3 $S prasnice-selata.webp vystrizky/prasnice-selata.png --piece --crop 200,180,1700,1072 --seed 14
+
+## Doplněno 2026-11-20
+
+| soubor | popis | použití |
+|---|---|---|
+| pastva-stado-snimek.jpg | snímek z videa KPZ `scenes/kpz-telata/assets/video/pastva-stado.mp4` v čase 52,5 s (tzv. masné krávy na pastvě, stejný úsek jako v reelu v33); 432×768, čísla na známkách nečitelná | blob `vystrizky/pastva-stado-tvar.png` (`--shape blob --tight 0.8 --crop 0,300,432,768 --scale 1.8 --seed 21`) – 7. slajd „Chov tzv. skotu“, štítek „maso“ (místo `masny-skot-tvar.png` z reelu) |
