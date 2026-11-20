@@ -1,5 +1,7 @@
 # Karusel „Živočišná výroba a planeta“ – texty v1 (návrh ke schválení KPZ)
 
+**Facebook (1:1):** `karusel-fb.html` → `out/kpz-planeta-fb/karusel-fb-01…10.png` – stejné texty a pořadí, rozložení pro čtverec. Při změně textu v `karusel.html` propsat i do `karusel-fb.html`.
+
 **Pořadí od 2026-11-20:** 1 HOOK „Krmíme zvířata jídlem. A pak máme jídla míň.“ (+ štítek „Fakta, která možná nevíš“, šipka →, prasnice v klecích – koláž v4) · 2 pole a talíře · 3 odborněji · 4 prase · 5 obilí ČR · 6 chov 12 % · 7 tzv. skot 62 % · 8 „nejšetrnější“ chov · 9 vegani · 10 závěr (biomasa 30× vyřazena).
 
 ~~Pořadí od 2026-11-19 (na přání KPZ obálka = pole a talíře):~~ 1 pole a talíře (+ tele z chovu vpravo nahoře, „Proč? Listuj →“) · 2 Odborněji 83/18/37 % · 3 prase a bílkoviny · 4 obilí v Česku · 5 biomasa 30× (fotka prasnic v klecích, KPZ) · 6 chov 12 % (fotka haly s kuřaty, KPZ) · 7 tzv. skot 62 % · 8 nejšetrnější · 9 vegani · 10 závěr.

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – karusel „Živočišná výroba a planeta“ pro Facebook (10 × 1080×1080)</title>
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  /* Facebook verze (čtverec 1:1) karuselu z karusel.html (IG 4:5). Stejné texty, data a zdroje – jen přeskládané rozložení.
+     Při změně textu v karusel.html propsat i sem. Render:
+     node .claude/skills/vox-animation/scripts/render.mjs scenes/kpz-planeta/karusel-fb.html --stills 0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5 --out out/kpz-planeta-fb */
+  .h1 { font-size: 88px; line-height: 1; white-space: nowrap; }
+  .big { font-size: 180px; line-height: 1; }
+  .layer { display: none; }
+  .wm { position: absolute; left: 64px; top: 52px; width: 118px; }
+  .wm img { width: 100%; display: block; }
+  .src { position: absolute; left: 66px; top: 1012px; width: 950px; font-size: 21px; line-height: 1.28; color: var(--kpz-teal-d); }
+  .note { font-size: 26px; line-height: 1.3; color: var(--kpz-teal-d); }
+  .stk { position: absolute; }
+  .tag { font-size: 42px; }
+  .eyebrow { font-size: 40px !important; }
+  .ilu { right: 60px; bottom: 54px; font: 600 20px/1 Inter, sans-serif; letter-spacing: .02em; color: #f7eef1;
+         background: rgba(30, 20, 26, .55); padding: 5px 9px 6px; border-radius: 3px; }
+  .lbl { position: absolute; font-family: 'Bebas Neue', sans-serif; text-transform: uppercase; line-height: 1; }
+  .seg { position: absolute; display: flex; align-items: center; justify-content: center;
+         font-family: 'Bebas Neue', sans-serif; font-size: 54px; padding-top: 6px; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+
+  <!-- 1 · HOOK -->
+  <div class="layer" id="s-hook">
+    <div class="kpz-cut" style="left:40px; top:120px; width:1000px; rotate:-2deg"><img src="assets/foto-kpz/vystrizky/prasnice-klece-hook-fb.png" alt=""><div class="abs ilu" style="right:46px; top:36px; bottom:auto">Ilustrační záběr</div></div>
+    <div class="stk" style="left:892px; top:24px; width:136px; rotate:8deg" data-stk="sprig"></div>
+    <div class="abs h1 kblocks print" style="left:66px; top:506px; font-size:88px">
+      <span class="kb">Krmíme zvířata</span><br><span class="kb">jídlem.</span><br><span class="kb cream">A pak máme</span><br><span class="kb orange">jídla míň.</span>
+    </div>
+    <div class="stk" style="left:708px; top:620px; width:146px; rotate:-6deg" data-stk="bulb"></div>
+    <div class="abs tag mustard print" style="left:596px; top:796px; font-size:42px; line-height:1.05; white-space:nowrap; rotate:-3deg">Fakta, která možná nevíš</div>
+    <svg class="abs" style="left:0; top:0" width="1080" height="1080">
+      <g filter="url(#kpz-brush)" stroke="var(--kpz-navy)" stroke-width="26" stroke-linecap="round" fill="none">
+        <path d="M600,938 C690,926 770,930 850,940"/>
+      </g>
+      <path d="M836,888 L940,942 L832,994 Z" fill="var(--kpz-navy)" filter="url(#kpz-brush)"/>
+    </svg>
+  </div>
+
+  <!-- 2 · pole a talíře (Poore & Nemecek 2018) -->
+  <div class="layer" id="s-puda">
+    <div class="kpz-cut" style="left:822px; top:46px; width:180px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/tele-studio.png" alt=""></div>
+    <div class="abs h1 kblocks print" style="left:66px; top:150px; font-size:64px">
+      <span class="kb">Chov zvířat zabírá</span><br><span class="kb orange">8 polí z 10.</span><br><span class="kb cream">Na talíře z nich</span><br><span class="kb cream">ale přijdou necelé 2 z 10.</span>
+    </div>
+    <div class="abs kpz-body" style="left:722px; top:420px; font-size:24px; line-height:1; color:var(--kpz-teal-d); white-space:nowrap">
+      <div style="display:flex; align-items:center; gap:12px"><span style="display:inline-block; width:34px; height:34px; background:repeating-linear-gradient(-28deg, rgba(255,240,235,.25) 0 4px, transparent 4px 10px), var(--kpz-navy)"></span>1 pole = 10&nbsp;% půdy</div>
+      <div style="display:flex; align-items:center; gap:12px; margin-top:16px"><span style="position:relative; display:inline-block; width:34px; height:34px; border-radius:50%; background:var(--kpz-cream); border:3px solid var(--kpz-teal-d); box-sizing:border-box"><span style="position:absolute; inset:7px; border-radius:50%; background:var(--kpz-navy)"></span></span>1 talíř = 10&nbsp;% jídla</div>
+    </div>
+    <!-- řádek A -->
+    <div class="abs tag maroon print" style="left:66px; top:540px; font-size:38px">Maso, mléko, vejce a ryby z chovů</div>
+    <div class="abs" data-fields="8" data-color="var(--kpz-maroon)" style="left:66px; top:606px"></div>
+    <div class="abs" data-plates="2" data-color="var(--kpz-maroon)" style="left:440px; top:633px"></div>
+    <div class="lbl" style="left:66px; width:256px; top:738px; text-align:center; font-size:34px; color:var(--kpz-maroon)">8 polí</div>
+    <div class="lbl" style="left:612px; top:652px; font-size:40px; color:var(--kpz-maroon)">necelé 2 talíře</div>
+    <!-- řádek B -->
+    <div class="abs tag green print" style="left:66px; top:790px; font-size:38px">Rostlinné jídlo</div>
+    <div class="abs" data-fields="2" data-color="var(--kpz-teal)" style="left:132px; top:893px"></div>
+    <div class="abs" data-plates="8" data-color="var(--kpz-teal)" style="left:440px; top:848px"></div>
+    <div class="lbl" style="left:66px; width:256px; top:960px; text-align:center; font-size:34px; color:var(--kpz-teal-d)">2 pole</div>
+    <div class="lbl" style="left:770px; top:904px; font-size:40px; color:var(--kpz-teal-d)">přes 8 talířů</div>
+    <svg class="abs" style="left:0; top:0" width="1080" height="1080">
+      <g filter="url(#kpz-brush)" stroke="var(--kpz-navy)" stroke-width="11" stroke-linecap="round" fill="none">
+        <path d="M340,668 L398,668"/><path d="M340,922 L398,922"/>
+      </g>
+      <g fill="var(--kpz-navy)"><path d="M394,653 L394,683 L422,668 Z"/><path d="M394,907 L394,937 L422,922 Z"/></g>
+    </svg>
+    <div class="src kpz-body" style="top:1010px">Zdroj: Poore &amp; Nemecek 2018, Science · celý svět · přesně: 83&nbsp;% zemědělské půdy, 18&nbsp;% kalorií (a 37&nbsp;% bílkovin)</div>
+  </div>
+
+  <!-- 3 · Odborněji -->
+  <div class="layer" id="s-puda-odb">
+    <div class="abs" style="left:66px; top:150px; white-space:nowrap"><span class="tag mustard print" style="font-size:42px; rotate:-2deg">Odborněji:</span><span class="eyebrow" style="margin-left:20px">maso, mléko, vejce a ryby z chovů</span></div>
+    <div class="abs h1 kblocks print" style="left:66px; top:220px; font-size:84px">
+      <span class="kb">Zabírají</span> <span class="kb orange">83 % půdy,</span><br><span class="kb cream">tvoří jen 18 % kalorií</span><br><span class="kb cream">a 37 % bílkovin.</span>
+    </div>
+    <div class="abs kpz-body note" style="left:570px; top:616px; font-size:24px; white-space:nowrap">
+      <span style="display:inline-block; width:20px; height:20px; background:var(--kpz-maroon); vertical-align:-3px"></span> živočišné potraviny
+      &nbsp;<span style="display:inline-block; width:20px; height:20px; background:var(--kpz-cream); vertical-align:-3px"></span> rostlinné
+    </div>
+    <div class="lbl" style="left:70px; top:612px; font-size:36px; color:var(--kpz-teal-d)">zemědělská půda světa</div>
+    <div class="abs print-soft" style="left:70px; top:652px; width:940px; height:74px; background:var(--kpz-cream)">
+      <div class="seg" style="left:0; top:0; width:780px; height:74px; background:var(--kpz-maroon); color:#f7eef1">83&nbsp;%</div>
+    </div>
+    <div class="lbl" style="left:70px; top:744px; font-size:36px; color:var(--kpz-teal-d)">kalorie v jídle</div>
+    <div class="abs print-soft" style="left:70px; top:784px; width:940px; height:74px; background:var(--kpz-cream)">
+      <div class="seg" style="left:0; top:0; width:169px; height:74px; background:var(--kpz-maroon); color:#f7eef1">18&nbsp;%</div>
+    </div>
+    <div class="lbl" style="left:70px; top:876px; font-size:36px; color:var(--kpz-teal-d)">bílkoviny v jídle</div>
+    <div class="abs print-soft" style="left:70px; top:916px; width:940px; height:74px; background:var(--kpz-cream)">
+      <div class="seg" style="left:0; top:0; width:348px; height:74px; background:var(--kpz-maroon); color:#f7eef1">37&nbsp;%</div>
+    </div>
+    <div class="src kpz-body">Zdroj: Poore &amp; Nemecek 2018, Science · svět, data kolem r. 2010 · ryby jen z chovů</div>
+  </div>
+
+  <!-- 4 · prase a bílkoviny (Pomar et al. 2021) – schéma jako v IG, přeškálované skupinou -->
+  <div class="layer" id="s-prase">
+    <div class="abs h1 kblocks print" style="left:66px; top:150px; font-size:68px">
+      <span class="kb">Pro kolik lidí vystačí</span><br><span class="kb orange">100 kg</span> <span class="kb cream">rostlinných bílkovin?</span>
+    </div>
+    <div class="abs kpz-body" style="left:66px; top:354px; font-size:25px; color:var(--kpz-teal-d); white-space:nowrap">
+      <span style="display:inline-block; width:22px; height:22px; background:var(--kpz-mustard); vertical-align:-4px"></span> 1 kostička = 10&nbsp;kg bílkovin
+    </div>
+    <div class="abs" style="left:0; top:0; width:1080px; height:1350px; transform-origin:0 0; transform:translate(35px,-123px) scale(.9)">
+      <div class="abs" style="left:66px; width:454px; top:592px; text-align:center"><span class="tag green print" style="font-size:46px">Sníme je sami</span></div>
+      <div class="abs" style="left:540px; width:360px; top:592px; text-align:center"><span class="tag maroon print" style="font-size:46px">Nejdřív je sní prase</span></div>
+      <div class="abs print-soft" data-blocks="10" data-size="46" style="left:157px; top:674px"></div>
+      <div class="abs print-soft" data-blocks="10" data-size="46" style="left:587px; top:674px"></div>
+      <svg class="abs" style="left:0; top:0" width="1080" height="1350">
+        <g filter="url(#kpz-brush)" stroke="var(--kpz-navy)" stroke-width="12" stroke-linecap="round" fill="none">
+          <path d="M290,790 L290,952"/><path d="M720,788 L720,806"/><path d="M720,942 L720,956"/><path d="M826,880 L862,880"/>
+        </g>
+        <g fill="var(--kpz-navy)">
+          <path d="M270,948 L310,948 L290,976 Z"/><path d="M700,802 L740,802 L720,828 Z"/><path d="M700,952 L740,952 L720,978 Z"/><path d="M858,864 L858,896 L884,880 Z"/>
+        </g>
+      </svg>
+      <svg class="abs" style="left:627px; top:830px" width="186" height="110" viewBox="0 0 220 130">
+        <g filter="url(#kpz-lino)">
+          <path d="M24,52 c-14,-4 -16,-22 -4,-22 c10,0 9,13 -1,12" fill="none" stroke="var(--kpz-navy)" stroke-width="5" stroke-linecap="round"/>
+          <rect x="48" y="86" width="18" height="40" rx="6" fill="var(--kpz-navy)"/><rect x="76" y="90" width="18" height="38" rx="6" fill="var(--kpz-navy)"/>
+          <rect x="128" y="90" width="18" height="38" rx="6" fill="var(--kpz-navy)"/><rect x="154" y="86" width="18" height="40" rx="6" fill="var(--kpz-navy)"/>
+          <ellipse cx="102" cy="64" rx="80" ry="44" fill="var(--kpz-navy)"/><circle cx="172" cy="56" r="34" fill="var(--kpz-navy)"/>
+          <path d="M156,32 L166,0 L190,26 Z" fill="var(--kpz-navy)"/><ellipse cx="204" cy="64" rx="14" ry="17" fill="var(--kpz-navy)"/>
+          <ellipse cx="200" cy="60" rx="2.6" ry="4" fill="var(--kpz-cream)"/><ellipse cx="208" cy="60" rx="2.6" ry="4" fill="var(--kpz-cream)"/>
+          <circle cx="181" cy="47" r="4" fill="var(--kpz-cream)"/>
+          <path d="M150,70 C156,82 166,88 178,86" fill="none" stroke="var(--kpz-cream)" stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <div class="abs" data-blocks="7" data-faded="1" data-size="27" data-cols="4" style="left:892px; top:850px"></div>
+      <div class="abs kpz-body" style="left:870px; top:918px; width:186px; font-size:22px; line-height:1.25; color:var(--kpz-teal-d)">zbytek skončí ve výkalech a&nbsp;moči</div>
+      <div class="abs" style="left:66px; width:454px; top:986px; text-align:center"><span class="tag green print" style="font-size:46px">10 lidí</span></div>
+      <div class="abs" style="left:540px; width:360px; top:986px; text-align:center"><span class="tag maroon print" style="font-size:46px">nanejvýš 3 lidé</span></div>
+      <div class="abs" data-people="10" data-w="41" style="left:162px; top:1062px"></div>
+      <div class="abs" data-people="3" data-w="41" style="left:646px; top:1062px"></div>
+    </div>
+    <div class="src kpz-body" style="top:1006px">Zdroj: Pomar et al. 2021, Frontiers in Veterinary Science – prase uloží do těla jen 15–33&nbsp;% bílkovin z&nbsp;krmiva (ze 100&nbsp;kg tedy 15–33&nbsp;kg). Kostičky jsou zjednodušení.</div>
+  </div>
+
+  <!-- 5 · obilí v Česku (MZe) -->
+  <div class="layer" id="s5">
+    <div class="stk" style="left:872px; top:40px; width:150px" data-stk="wheat"></div>
+    <div class="abs eyebrow" style="left:70px; top:150px">Česko · obilí spotřebované doma · 2024/25</div>
+    <div class="abs h1 kblocks print" style="left:66px; top:206px; font-size:84px">
+      <span class="kb">V Česku jde</span><br><span class="kb orange">víc obilí</span><br><span class="kb cream">zvířatům než lidem.</span>
+    </div>
+    <!-- sloupce od nuly: 2,27 → 320 px, 2,06 → 290 px; základna y 920 -->
+    <div class="abs print-soft" style="left:170px; top:600px; width:300px; height:320px; background:var(--kpz-maroon)"></div>
+    <div class="abs print-soft" style="left:600px; top:630px; width:300px; height:290px; background:var(--kpz-teal)"></div>
+    <div class="abs" style="left:66px; top:920px; width:948px; height:6px; background:var(--kpz-teal-d)"></div>
+    <div class="lbl" style="left:170px; top:616px; width:300px; text-align:center; font-size:66px; color:#f7eef1">2,27 mil. t</div>
+    <div class="lbl" style="left:600px; top:646px; width:300px; text-align:center; font-size:66px; color:var(--kpz-cream)">2,06 mil. t</div>
+    <div class="lbl" style="left:170px; top:700px; width:300px; text-align:center; font-size:50px; color:#f7eef1">48 %</div>
+    <div class="lbl" style="left:600px; top:730px; width:300px; text-align:center; font-size:50px; color:var(--kpz-cream)">43 %</div>
+    <div class="lbl" style="left:170px; top:940px; width:300px; text-align:center; font-size:50px; color:var(--kpz-maroon)">krmiva</div>
+    <div class="lbl" style="left:600px; top:940px; width:300px; text-align:center; font-size:50px; color:var(--kpz-teal-d)">potraviny</div>
+    <div class="src kpz-body" style="top:1018px">Zdroj: MZe – Situační a výhledová zpráva Obiloviny 2024/2025</div>
+  </div>
+
+  <!-- 6 · chov zvířat = 12 % (FAO 2023) -->
+  <div class="layer" id="s3">
+    <div class="abs eyebrow" style="left:70px; top:146px">Podle novějšího odhadu FAO (2023)</div>
+    <div class="abs h1 kblocks print" style="left:66px; top:200px; font-size:84px">
+      <span class="kb">Chov zvířat</span><br><span class="kb">=</span> <span class="kb orange">12 %</span> <span class="kb cream">všech emisí</span><br><span class="kb cream">lidstva.</span>
+    </div>
+    <div class="abs print-soft" id="waffle" style="left:66px; top:592px; width:360px; height:360px"></div>
+    <div class="abs kpz-body" style="left:66px; top:962px; font-size:22px; color:var(--kpz-teal-d)">1 čtvereček = 1&nbsp;% emisí</div>
+    <div class="kpz-cut" style="left:470px; top:586px; width:420px"><img src="assets/foto-kpz/vystrizky/kurata-hala.png" alt=""><div class="abs ilu" style="right:32px; bottom:28px; font-size:17px">Ilustrační záběr</div></div>
+    <div class="abs kpz-body" style="left:470px; top:946px; width:566px; font-size:20px; line-height:1.3; color:var(--kpz-teal-d)">včetně pěstování krmiv a zpracování, data z&nbsp;roku 2015</div>
+    <div class="abs kpz-body print-soft" style="left:470px; top:828px; width:566px; font-size:21px; line-height:1.32; background:var(--kpz-cream); color:var(--kpz-teal-d); padding:12px 16px 13px">
+      <b>Dřív se uvádělo 14,5&nbsp;%</b> (FAO 2013, data z&nbsp;roku 2005). Nový odhad je nižší hlavně kvůli novějším metodám výpočtu.
+    </div>
+    <div class="src kpz-body" style="top:1018px">Zdroj: FAO 2023, Pathways towards lower emissions (model GLEAM), str. 39–40</div>
+  </div>
+
+  <!-- 7 · tzv. skot 62 % (FAO 2023) -->
+  <div class="layer" id="s-skot">
+    <div class="abs h1 kblocks print" style="left:66px; top:150px; font-size:80px">
+      <span class="kb">Chov tzv. skotu</span><br><span class="kb">pro maso i mléko</span><br><span class="kb">=</span> <span class="kb orange">62 %</span> <span class="kb cream">emisí</span><br><span class="kb cream">z chovu zvířat.</span>
+    </div>
+    <div class="kpz-cut" style="left:30px; top:636px; width:560px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/masne-pastva-2-tvar.png" alt=""><div class="abs ilu" style="right:62px; bottom:52px">Ilustrační záběr</div></div>
+    <div class="kpz-cut" style="left:620px; top:704px; width:410px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/krava-cele-telo.png" alt=""></div>
+    <div class="abs tag mustard print" style="left:56px; top:620px; font-size:46px; rotate:-4deg">maso</div>
+    <div class="abs tag mustard print" style="left:880px; top:682px; font-size:46px; rotate:3deg">mléko</div>
+    <div class="src kpz-body" style="top:1010px">Zdroj: FAO 2023, Pathways towards lower emissions (model GLEAM) – tzv. skot 3,8&nbsp;Gt CO₂e ročně, data z roku 2015</div>
+  </div>
+
+  <!-- 8 · i ten „nejšetrnější“ chov -->
+  <div class="layer" id="s6">
+    <div class="abs h1 kblocks print" style="left:66px; top:150px; font-size:76px">
+      <span class="kb">I ten</span> <span class="kb orange">„nejšetrnější“</span><br><span class="kb">chov zvířat</span><br><span class="kb cream">má obvykle větší dopad</span><br><span class="kb cream">než rostlinné alternativy.</span>
+    </div>
+    <svg class="abs" style="left:180px; top:600px" width="720" height="288" viewBox="0 0 900 360">
+      <g filter="url(#kpz-brush)" stroke="var(--kpz-navy)" stroke-linecap="round" fill="none">
+        <path d="M450,300 L450,96" stroke-width="16"/>
+        <path d="M370,330 L530,330" stroke-width="18"/>
+        <path d="M140,150 L760,42" stroke-width="16"/>
+        <path d="M150,148 L80,262 M150,148 L240,262" stroke-width="6"/>
+        <path d="M750,44 L680,158 M750,44 L840,158" stroke-width="6"/>
+      </g>
+      <path d="M62,262 Q160,318 258,262 Z" fill="var(--kpz-navy)"/>
+      <path d="M662,158 Q760,214 858,158 Z" fill="var(--kpz-navy)"/>
+      <circle cx="450" cy="96" r="18" fill="var(--kpz-navy)"/>
+    </svg>
+    <div class="abs tag maroon print" style="left:196px; top:872px; font-size:38px; line-height:1.15; text-align:center">„Nejšetrnější“<br>chov</div>
+    <div class="abs tag green print" style="left:704px; top:786px; font-size:38px; line-height:1.15; text-align:center">Rostlinné<br>alternativy</div>
+    <div class="src kpz-body" style="top:1018px">Zdroj: Poore &amp; Nemecek 2018, Science · data z 38 700 farem</div>
+  </div>
+
+  <!-- 9 · strava veganů (Scarborough 2023) -->
+  <div class="layer" id="s7">
+    <div class="abs h1 kblocks print" style="left:66px; top:150px; font-size:88px">
+      <span class="kb">Strava veganů:</span><br><span class="kb orange">čtvrtina emisí</span><br><span class="kb orange">a čtvrtina půdy.</span>
+    </div>
+    <div class="abs kpz-body note" style="left:66px; top:540px; font-size:25px; line-height:1.5">
+      <span style="display:inline-block; width:20px; height:20px; background:var(--kpz-maroon); vertical-align:-3px"></span> 100 g masa a víc denně
+      &nbsp;&nbsp;<span style="display:inline-block; width:20px; height:20px; background:var(--kpz-teal); vertical-align:-3px"></span> vegani
+    </div>
+    <!-- sloupce od nuly: 100 % → 320 px, 25 % → 80 px; základna y 912 -->
+    <div class="abs print-soft" style="left:110px; top:592px; width:180px; height:320px; background:var(--kpz-maroon)"></div>
+    <div class="abs print-soft" style="left:300px; top:832px; width:180px; height:80px; background:var(--kpz-teal)"></div>
+    <div class="abs print-soft" style="left:600px; top:592px; width:180px; height:320px; background:var(--kpz-maroon)"></div>
+    <div class="abs print-soft" style="left:790px; top:832px; width:180px; height:80px; background:var(--kpz-teal)"></div>
+    <div class="lbl" style="left:110px; top:608px; width:180px; text-align:center; font-size:54px; color:#f7eef1">100 %</div>
+    <div class="lbl" style="left:300px; top:772px; width:180px; text-align:center; font-size:54px; color:var(--kpz-teal-d)">25 %</div>
+    <div class="lbl" style="left:600px; top:608px; width:180px; text-align:center; font-size:54px; color:#f7eef1">100 %</div>
+    <div class="lbl" style="left:790px; top:772px; width:180px; text-align:center; font-size:54px; color:var(--kpz-teal-d)">25 %</div>
+    <div class="abs" style="left:66px; top:912px; width:948px; height:6px; background:var(--kpz-teal-d)"></div>
+    <div class="lbl" style="left:110px; top:932px; width:370px; text-align:center; font-size:48px; color:var(--kpz-teal-d)">emise</div>
+    <div class="lbl" style="left:600px; top:932px; width:370px; text-align:center; font-size:48px; color:var(--kpz-teal-d)">půda</div>
+    <div class="src kpz-body" style="top:1018px">Zdroj: Scarborough et al. 2023, Nature Food · britská studie, 55 504 lidí</div>
+  </div>
+
+  <!-- 10 · outro -->
+  <div class="layer" id="s8">
+    <div class="stk" style="left:880px; top:44px; width:140px" data-stk="sprig"></div>
+    <div class="abs h1 kblocks print" style="left:0; width:1080px; top:150px; text-align:center; font-size:88px">
+      <span class="kb">Rostlinná strava:</span><br><span class="kb cream">lehčí pro planetu</span><br><span class="kb orange">i pro zvířata.</span>
+    </div>
+    <div class="kpz-cut" style="left:300px; top:548px; width:480px"><img src="../kpz-telata/assets/foto-kpz/vystrizky/krava-tele-vedle.png" alt=""></div>
+    <div class="stk" style="left:110px; top:740px; width:140px" data-stk="heart"></div>
+    <div class="abs h3 kblocks print" style="left:0; width:1080px; top:888px; text-align:center; font-size:54px"><span class="kb cream">www.kolektivprozvirata.cz</span></div>
+    <div class="abs kpz-body note" style="left:0; width:1080px; top:978px; text-align:center">Zdroje najdeš v popisku.</div>
+  </div>
+
+  <div class="wm"><img src="../../brand/kpz/logo-kpz-svetle.png" alt=""></div>
+</div>
+<script>
+  VOX.setup({ width: 1080, height: 1080, duration: 10, vignette: 0.1, grain: 0, background: 'none' });
+  KPZ.theme();
+  document.querySelectorAll('[data-stk]').forEach((el) => { el.innerHTML = KPZ.sticker(el.dataset.stk); });
+  // waffle 10×10: 12 % = 12 čtverečků
+  (() => {
+    let h = '';
+    for (let i = 0; i < 100; i++) {
+      const x = (i % 10) * 36, y = Math.floor(i / 10) * 36;
+      h += `<div style="position:absolute; left:${x}px; top:${y}px; width:32px; height:32px; background:${i < 12 ? 'var(--kpz-maroon)' : 'var(--kpz-cream)'}"></div>`;
+    }
+    document.getElementById('waffle').innerHTML = h;
+  })();
+  document.querySelectorAll('[data-blocks]').forEach((el) => {
+    const n = +el.dataset.blocks, sz = +(el.dataset.size || 54), cols = +(el.dataset.cols || 5), g = Math.round(sz * 0.19);
+    let h = '';
+    for (let i = 0; i < n; i++) {
+      const x = (i % cols) * (sz + g), y = Math.floor(i / cols) * (sz + g);
+      h += el.dataset.faded
+        ? `<div style="position:absolute; left:${x}px; top:${y}px; width:${sz}px; height:${sz}px; border:3px dashed var(--kpz-teal-d); opacity:.55"></div>`
+        : `<div style="position:absolute; left:${x}px; top:${y}px; width:${sz}px; height:${sz}px; background:var(--kpz-mustard)"></div>`;
+    }
+    el.innerHTML = h;
+  });
+  // pole a talíře – menší než v IG verzi (čtverec)
+  document.querySelectorAll('[data-fields]').forEach((el) => {
+    const n = +el.dataset.fields, c = el.dataset.color, sz = 58, g = 8;
+    let h = '';
+    for (let i = 0; i < n; i++) {
+      const x = (i % 4) * (sz + g), y = Math.floor(i / 4) * (sz + g);
+      h += `<div class="print-soft" style="position:absolute; left:${x}px; top:${y}px; width:${sz}px; height:${sz}px; background:repeating-linear-gradient(-28deg, rgba(255,240,235,.22) 0 5px, transparent 5px 14px), ${c}"></div>`;
+    }
+    el.innerHTML = h;
+  });
+  document.querySelectorAll('[data-plates]').forEach((el) => {
+    const n = +el.dataset.plates, c = el.dataset.color, sz = 70, g = 8;
+    let h = '';
+    for (let i = 0; i < n; i++) {
+      const x = (i % 4) * (sz + g), y = Math.floor(i / 4) * (sz + g);
+      h += `<div style="position:absolute; left:${x}px; top:${y}px; width:${sz}px; height:${sz}px; border-radius:50%; background:var(--kpz-cream); border:4px solid var(--kpz-teal-d); box-sizing:border-box">
+              <div style="position:absolute; inset:14px; border-radius:50%; background:${c}"></div></div>`;
+    }
+    el.innerHTML = h;
+  });
+  const PERSON = (w = 48) => `<svg width="${w}" height="${Math.round(w * 92 / 48)}" viewBox="0 0 48 92"><g fill="var(--kpz-navy)"><circle cx="24" cy="13" r="12"/><rect x="6" y="29" width="36" height="38" rx="13"/><rect x="10" y="58" width="12" height="34" rx="6"/><rect x="26" y="58" width="12" height="34" rx="6"/></g></svg>`;
+  document.querySelectorAll('[data-people]').forEach((el) => {
+    const n = +el.dataset.people;
+    let h = '';
+    const w = +(el.dataset.w || 48), dx = Math.round(w * 1.3), dy = Math.round(w * 2.25);
+    for (let i = 0; i < n; i++) h += `<div style="position:absolute; left:${(i % 5) * dx}px; top:${Math.floor(i / 5) * dy}px">${PERSON(w)}</div>`;
+    el.innerHTML = h;
+  });
+  const slides = [...document.querySelectorAll('.layer')];
+  VOX.scene((t) => {
+    const n = Math.min(slides.length - 1, Math.floor(t));
+    slides.forEach((el, i) => { el.style.display = i === n ? 'block' : 'none'; });
+  });
+</script>
+</body>
+</html>

@@ -110,6 +110,7 @@ Mřížka profilu ořezává do 3:4 (~35 px z každé strany) – text a zvíře
 Vzor: `scenes/kpz-telata/ig-novy-reel.html` (nadpis v blocích vlevo, výstřižek telete vpravo, logo, nálepky).
 **Karusel** = jedna scéna, slajd N v čase N−1…N s (`VOX.scene` přepíná `.layer`), render `--stills 0.5,1.5,…`;
 na každém slajdu logo vlevo nahoře a řádek „Zdroj: …“ dole, grafy od nuly. Vzor: `scenes/kpz-planeta/karusel.html`.
+**Facebook = čtverec 1080×1080** – samostatná scéna (`karusel-fb.html`) se stejnými texty, každý slajd přeskládaný (menší nadpisy 64–88 px, grafy nižší, složitá schémata zmenšit skupinou `transform: scale()`); ne jen zmenšená 4:5 – drobný text by byl nečitelný.
 
 ### 2d. Svislý formát (reels)
 `VOX.setup({ width: 1080, height: 1920 })`. Zóny viz FEEDBACK.md → [formát].

@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.31.6**
+**Verze skillu: 0.32.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -45,6 +45,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[vizuál]** Žádný záběr nenechat několik sekund „prázdný“ (jen nadpis) – doplnit ilustraci / výstřižek k tomu, co zrovna zní. _(2026-10-19, kpz-telata v5)_
 - **[tón]** Komentář nesmí znít jako strojové odříkávání argumentů: vkládat doložené, lidsky srozumitelné momenty (co zvířata prožívají), ironii z kontrastu, krátké pointy na tmavém pozadí. _(2026-10-14, kpz-telata v2)_
 - **[obsah]** Problémy pojmenovávat konkrétně („velkokapacitní kravín, spousta krav na malém prostoru“), ne abstraktně („systém“). _(2026-10-14, kpz-telata v2)_
+- **[formát]** KPZ: Instagram = 4:5 (1080×1350), **Facebook = 1:1 (1080×1080)** – ke každému karuselu obě verze, FB jako samostatná přeskládaná scéna. _(2026-11-20, kpz-planeta)_
 - **[formát]** Karusel na Instagram **max. 10 slajdů** (aplikace od 2024 bere 20, ale plánovače/API jen 10 – KPZ počítá s 10). _(2026-11-08, kpz-planeta)_
 - **[formát]** Pro Instagram držet reel **pod 3:00, max. 2:59** (KPZ 2026-10-26; dřív bezpečně 2:58) (zkrácená varianta); plnou verzi lze dát jinam. Při zkracování nechat čísla a detaily na obrazovce a vypustit je jen z hlasu. _(2026-10-14, kpz-telata v2)_
 - **[struktura]** Karusel KPZ začíná **čistě lákacím hookem** (krátký paradox, ≤ 8 slov, fakticky obhajitelný dalšími slajdy), který zaujme vegany a vyprovokuje obhájce chovů ke komentářům; na hooku **šipka doprava** a silná fotka z chovu. Nezahanbovat diváka, neobviňovat lidi, nic, co karusel nedokládá (např. hlad ve světě). _(2026-11-20, kpz-planeta)_
@@ -183,3 +184,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-20 | 0.31.4 | kpz-planeta | „A co tam dát ještě něco jako ‚poznatky, které možná nevíte‘ nebo tak něco.“ | Hook: hořčicový štítek „Fakta, která možná nevíš“ (2 řádky, 64 px, tykání dle pravidla KPZ) nad šipkou → čte se jako výzva k listování. (Velikost vrácena, viz 0.31.5.) |
 | 2026-11-20 | 0.31.5 | kpz-planeta | „Líbila se mi ta první varianta, kdy to bylo na jednom řádku.“ | Štítek „Fakta, která možná nevíš“ zpět na jeden řádek nad šipku (48 px). Poučení: neměnit podobu, kterou jsem klientovi poslal, jen kvůli vlastnímu dojmu z náhledu – nejdřív ukázat a zeptat se. |
 | 2026-11-20 | 0.31.6 | kpz-planeta | „Co nad tím nápisem ‚Fakta, která možná nevíš‘ dát nějakou ikonku?“ | Nová linorytová nálepka `KPZ.sticker('bulb')` (žárovka s paprsky, navy + krémové rytiny) v `brand/kpz/kpz-theme.js`; na hooku nad štítkem (176 px). |
+| 2026-11-20 | 0.32.0 | kpz-planeta | „Tohle bude pro IG, udělej mi všechno ve formátu 1×1 pro Facebook.“ | `scenes/kpz-planeta/karusel-fb.html` (10 × 1080×1080): hook s nižší fotkou (nový výřez), pole/talíře menší (58/70 px), odborněji nižší pruhy, prase 2řádkový nadpis + schéma scale .9, sloupce nižší, 12 % menší mřížka, popisky pod fotkou; render `out/kpz-planeta-fb/`. SKILL.md 2g + pravidlo [formát]. |
