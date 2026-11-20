@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.31.1**
+**Verze skillu: 0.31.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -178,3 +178,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-20 | 0.30.0 | kpz-planeta | „Nepoužívejme výraz ‚Jídla ale dají‘, oni ho nedávají, ten život jim vezmou. Nepoužívejme tento využívatelský slovník.“ | Obálka „Chov zvířat zabírá 8 polí z 10. Na talíře z nich ale přijdou necelé 2 z 10.“; 2. slajd „tvoří jen 18 % kalorií“; 8. slajd „I ten „nejšetrnější“ chov zvířat…“ (+ štítek); 5. slajd zdroj „ne počet zvířat“ (místo „kusů“); popisek; slovník KPZ doplněn. Pravidlo [obsah]. |
 | 2026-11-20 | 0.31.0 | kpz-planeta | „Odděláme jeden slide a místo toho vymyslíme jeden čistě lákací na začátek… aby to zajímalo vegany a nasralo zemědělce… zkus návrhy“ → 5 návrhů → „Trojka… šipka doprava… fotka prasat v individuálních klecích. Uvidíš sám.“ | Nový 1. slajd „Krmíme zvířata jídlem. A pak máme jídla míň.“ + štětcová šipka → + prasnice v klecích (širší výřez) + snítka; vyřazena biomasa 30× (fotka by se opakovala, nejmíň souvisí s jídlem); z bývalé obálky pryč „Proč? Listuj“; popisek v3 bez Greenspoon. Pravidlo [struktura] o hooku. |
 | 2026-11-20 | 0.31.1 | kpz-planeta | „Ten obrázek udělej větší. Není vůbec pochopitelný, o co jde. Tím nějak musíš naňahňat ten text.“ | Hook: nadpis na 2 řádky (96 px), šipka mezi textem a fotkou, fotka přes celou šířku a ~650 px na výšku, bližší výřez (prasnice v úzké kleci + řada klecí a krmítek). Poučení: na hooku fotka aspoň polovina výšky slajdu a výřez na zvíře, ne na halu – jinak „není pochopitelné, o co jde“. |
+| 2026-11-20 | 0.31.2 | kpz-planeta | „Teď už se mi to nelíbí. Zkus nějakej kompromis mezi tím.“ | Hook: zpět velký text na 4 řádky (104 px) se šipkou vedle „jídla míň.“; fotka přes celou šířku ~490 px vysoká (mezi 390 a 650), bližší výřez na prasnici v kleci. Poučení: u velkých změn rozložení obálky dělat menší kroky (nebo poslat 2 varianty vedle sebe). |
