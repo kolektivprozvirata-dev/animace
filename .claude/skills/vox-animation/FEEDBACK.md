@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.31.3**
+**Verze skillu: 0.31.4**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -180,3 +180,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-20 | 0.31.1 | kpz-planeta | „Ten obrázek udělej větší. Není vůbec pochopitelný, o co jde. Tím nějak musíš naňahňat ten text.“ | Hook: nadpis na 2 řádky (96 px), šipka mezi textem a fotkou, fotka přes celou šířku a ~650 px na výšku, bližší výřez (prasnice v úzké kleci + řada klecí a krmítek). Poučení: na hooku fotka aspoň polovina výšky slajdu a výřez na zvíře, ne na halu – jinak „není pochopitelné, o co jde“. |
 | 2026-11-20 | 0.31.2 | kpz-planeta | „Teď už se mi to nelíbí. Zkus nějakej kompromis mezi tím.“ | Hook: zpět velký text na 4 řádky (104 px) se šipkou vedle „jídla míň.“; fotka přes celou šířku ~490 px vysoká (mezi 390 a 650), bližší výřez na prasnici v kleci. Poučení: u velkých změn rozložení obálky dělat menší kroky (nebo poslat 2 varianty vedle sebe). |
 | 2026-11-20 | 0.31.3 | kpz-planeta | „Zkus nějakou další verzi toho prvního, kterou nechám na tobě.“ | Hook v4 = koláž: velká fotka prasnic v klecích nahoře (pootočená −2°, ~560 px), nadpis ve 4 blocích přes její spodní okraj, větší štětcová šipka vedle „jídla míň.“, snítka přes roh fotky. |
+| 2026-11-20 | 0.31.4 | kpz-planeta | „A co tam dát ještě něco jako ‚poznatky, které možná nevíte‘ nebo tak něco.“ | Hook: hořčicový štítek „Fakta, která možná nevíš“ (2 řádky, 64 px, tykání dle pravidla KPZ) nad šipkou → čte se jako výzva k listování. Poučení: drobné štítky na obálce min. ~60 px, jinak se v mřížce/telefonu ztratí. |
