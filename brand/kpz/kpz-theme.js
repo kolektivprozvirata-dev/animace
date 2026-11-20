@@ -6,7 +6,7 @@
  *   layer.innerHTML = KPZ.bg('#0b3f43'); // stejná textura v jiné barvě (tmavé záběry)
  *   KPZ.blocks('.h1, .h2');            // text → bloky po řádcích (teal)
  *   el.innerHTML = KPZ.badge(170);     // kulaté černé logo
- *   el.innerHTML = KPZ.sticker('sprig'|'wheat'|'heart');   // linoryt nálepky
+ *   el.innerHTML = KPZ.sticker('sprig'|'wheat'|'heart'|'bulb');   // linoryt nálepky
  *   <path filter="url(#kpz-brush)">    // tah štětcem (šipky, škrty)
  *
  * Vše je deterministické (pevné seedy), takže render je opakovatelný.
@@ -184,6 +184,16 @@
       let s = leaf(104, 176, 132, 44, -140) + leaf(104, 176, 132, 44, -40);
       s += `<path d="M104,182 C44,134 36,94 58,72 C78,54 98,62 104,84 C110,62 130,54 150,72 C172,94 164,134 104,182 Z" fill="${RASP}"/>
             <path d="M68,90 C74,78 84,76 92,80 M70,114 C68,106 68,100 70,96" fill="none" stroke="${CREAM}" stroke-width="5" stroke-linecap="round"/>`;
+      return `<svg viewBox="0 0 210 210" width="100%" overflow="visible"><g filter="url(#kpz-lino)">${s}</g></svg>`;
+    },
+    // žárovka („fakta, která možná nevíš“) – 2026-11-20
+    bulb: () => {
+      let s = `<path d="M36,44 L15,32" stroke="${NAVY}" stroke-width="9" stroke-linecap="round"/><path d="M67,13 L56,-8" stroke="${NAVY}" stroke-width="9" stroke-linecap="round"/><path d="M105,4 L105,-20" stroke="${NAVY}" stroke-width="9" stroke-linecap="round"/><path d="M143,13 L154,-8" stroke="${NAVY}" stroke-width="9" stroke-linecap="round"/><path d="M174,44 L195,32" stroke="${NAVY}" stroke-width="9" stroke-linecap="round"/>`;
+      s += `<path d="M70,132 C48,114 40,92 47,68 C56,38 82,24 105,24 C128,24 154,38 163,68 C170,92 162,114 140,132 C132,139 130,146 130,154 L80,154 C80,146 78,139 70,132 Z" fill="${NAVY}"/>
+            <rect x="78" y="158" width="54" height="11" rx="4" fill="${NAVY}"/><rect x="80" y="173" width="50" height="11" rx="4" fill="${NAVY}"/>
+            <path d="M88,188 L122,188 L114,200 L96,200 Z" fill="${NAVY}"/>
+            <path d="M88,152 L88,116 C88,102 97,100 99,112 C101,124 109,124 111,112 C113,100 122,102 122,116 L122,152" fill="none" stroke="${CREAM}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M64,80 C68,60 80,48 96,44" fill="none" stroke="${CREAM}" stroke-width="7" stroke-linecap="round"/>`;
       return `<svg viewBox="0 0 210 210" width="100%" overflow="visible"><g filter="url(#kpz-lino)">${s}</g></svg>`;
     },
   };

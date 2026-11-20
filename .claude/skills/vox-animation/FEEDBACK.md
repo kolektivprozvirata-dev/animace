@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.31.5**
+**Verze skillu: 0.31.6**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -182,3 +182,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-20 | 0.31.3 | kpz-planeta | „Zkus nějakou další verzi toho prvního, kterou nechám na tobě.“ | Hook v4 = koláž: velká fotka prasnic v klecích nahoře (pootočená −2°, ~560 px), nadpis ve 4 blocích přes její spodní okraj, větší štětcová šipka vedle „jídla míň.“, snítka přes roh fotky. |
 | 2026-11-20 | 0.31.4 | kpz-planeta | „A co tam dát ještě něco jako ‚poznatky, které možná nevíte‘ nebo tak něco.“ | Hook: hořčicový štítek „Fakta, která možná nevíš“ (2 řádky, 64 px, tykání dle pravidla KPZ) nad šipkou → čte se jako výzva k listování. (Velikost vrácena, viz 0.31.5.) |
 | 2026-11-20 | 0.31.5 | kpz-planeta | „Líbila se mi ta první varianta, kdy to bylo na jednom řádku.“ | Štítek „Fakta, která možná nevíš“ zpět na jeden řádek nad šipku (48 px). Poučení: neměnit podobu, kterou jsem klientovi poslal, jen kvůli vlastnímu dojmu z náhledu – nejdřív ukázat a zeptat se. |
+| 2026-11-20 | 0.31.6 | kpz-planeta | „Co nad tím nápisem ‚Fakta, která možná nevíš‘ dát nějakou ikonku?“ | Nová linorytová nálepka `KPZ.sticker('bulb')` (žárovka s paprsky, navy + krémové rytiny) v `brand/kpz/kpz-theme.js`; na hooku nad štítkem (176 px). |

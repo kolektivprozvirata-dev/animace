@@ -28,7 +28,7 @@ Používat pro videa KPZ, pokud nechtějí klasický Vox papír. Hotové téma:
 | zvýraznění | slovo v **bloku jiné barvy** (oranžová), ne žlutý zvýrazňovač | `<span class="kb hl">` |
 | pozadí | sytě růžový papír se skvrnami a zrnem | `KPZ.theme()`, tmavé záběry `KPZ.bg('#0d4a4f')` |
 | textura | tiskový „grunge“ na blocích a textu – **jen jemně** (KPZ: „o 50 % míň špinavé“) | `.print`, `.print-soft` |
-| dekor | linoryt nálepky (listy, klasy, srdce) tmavě modré s krémovými rytinami; šipky a škrty tahem štětce | `KPZ.sticker()`, `filter="url(#kpz-brush)"` |
+| dekor | linoryt nálepky (listy, klasy, srdce, žárovka – „fakta, která možná nevíš“) tmavě modré s krémovými rytinami; šipky a škrty tahem štětce | `KPZ.sticker()`, `filter="url(#kpz-brush)"` |
 | logo | ve videu **klasické logo** `logo-kpz-svetle.png` (vodoznak vlevo nahoře + outro), na tmavých záběrech skrýt **[KPZ]**; kulaté černé z grafiky ne | `<img>` |
 | titulky | krémové bloky s tmavým textem, klíčové slovo v oranžovém bloku | `#vox-captions` v tématu |
 | drobný text | tučný bezpatkový s prostrkáním (jako spodní karta na grafice) | `.kpz-body` |
