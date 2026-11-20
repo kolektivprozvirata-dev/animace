@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.29.7**
+**Verze skillu: 0.30.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -30,6 +30,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[data]** Před výrobou každé verze ověřit tvrzení v primárních zdrojích (abstrakt/plný text, PDF úřadů), ne jen přes vyhledávání; zdrojový řádek musí citovat text, který tvrzení opravdu obsahuje. _(2026-10-19, kpz-telata)_
 - **[data]** Když nahrazujeme známé starší číslo novějším (14,5 % → 12 %), napsat to přímo na slajd („Dřív se uvádělo …“) i s důvodem podle zdroje – předejde to komentářům „to je špatně“. _(2026-11-19, kpz-planeta)_
 - **[data]** V jednom příspěvku/videu nemíchat čísla **o stejné věci z různých studií** s různým základem (např. FAO „chov = 12 % všech emisí“ vedle Xu „57 % emisí z jídla“) – čtenář je dá dohromady a vyjde mu rozpor. Držet jeden zdroj a jeden „koláč“, slajdy řetězit („z toho…“). _(2026-11-07, kpz-planeta – KPZ: „moc nechápu ten čtvrtej slide“)_
+- **[obsah]** U KPZ zvířata nikdy „nedávají“ maso, mléko ani jídlo („život jim vezmou“) – u podílů neutrálně: tvoří, připadá, pochází; „chov zvířat“ místo „živočišná výroba“; „šetrný“ chov v uvozovkách; „kus“ nikdy (ani ve zdroji). Před odevzdáním projít všechny texty grafiky i popisek. _(2026-11-20, kpz-planeta)_
 - **[obsah]** U KPZ žádné výrazy průmyslu bez odstupu: „tzv. skot“, „tzv. hospodářská zvířata“ (nebo uvozovky / běžné slovo „krávy“) – v grafice i v popisku. Seznam v `brand/kpz/README.md` → Slovník. _(2026-11-19, kpz-planeta)_
 - **[obsah]** Víc informací má přednost před krátkou stopáží – délka může přesáhnout 90 s. Hlídat jen limity platforem. _(2026-10-14, kpz-telata v2)_
 - **[tempo]** Rychlost hlasu `length_scale` 0.83 je v pořádku – nezpomalovat. Když se text nevejde do limitu, smí se zrychlit (v4: 0.75, v8: ~0.73 na pokyn KPZ). _(2026-10-14/15, kpz-telata)_
@@ -173,3 +174,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-19 | 0.29.5 | kpz-planeta | „A přidej tam někam tyto obrázky“ (4 fotky: výkrm prasat, prasnice v klecích, prasnice se selaty, hala s kuřaty) → „Jen tam, kde se to hodí, a nemusí být všechny.“ | 5. slajd: prasnice v klecích místo haly s kravami; 6. slajd: hala s kuřaty místo opakovaného „12 %“; tmavé fotky zesvětlené (jen expozice). Zkoušeno: malá fotka prasat na slajdu se schématem (prase a bílkoviny) – moc drobná, vyřazeno. Prasnice se selaty a výkrm zatím nepoužity. Poučení: fotky na slajdech se schématem jen tam, kde je pro ně místo ve velikosti ≥ ~450 px; jinak schéma nechat čisté. |
 | 2026-11-20 | 0.29.6 | kpz-planeta | „U těch masných krav oddělej ten obrázek a dej tam ty masný krávy na pastvě, co jsem ti poslal do poslední verze reelu.“ | 7. slajd: místo `masny-skot-tvar` snímek z videa KPZ pastva-stado (52,5 s, úsek z reelu v33) jako nepravidelný utržený kus; nadpis 100 → 88 px, aby se fotky vešly. (Zamítnuto, viz 0.29.7.) |
 | 2026-11-20 | 0.29.7 | kpz-planeta | „To je pěkně debilní fotka. Byla tam i lepší z pastvy.“ | Snímek z videa vyměněn za fotku KPZ `masne-pastva-2-tvar` (reel v32, stádo tzv. masných krav s kopci); holštýnka odsunuta, aby nezakrývala zvířata na pastvině; nadpis zpět 100 px. Poučení: „poslední verze reelu“ = poslední **schválená** (v32 s fotkami), ne zkušební v33 s videi; u nejasné reference se zeptat nebo poslat obě možnosti. |
+| 2026-11-20 | 0.30.0 | kpz-planeta | „Nepoužívejme výraz ‚Jídla ale dají‘, oni ho nedávají, ten život jim vezmou. Nepoužívejme tento využívatelský slovník.“ | Obálka „Chov zvířat zabírá 8 polí z 10. Na talíře z nich ale přijdou necelé 2 z 10.“; 2. slajd „tvoří jen 18 % kalorií“; 8. slajd „I ten „nejšetrnější“ chov zvířat…“ (+ štítek); 5. slajd zdroj „ne počet zvířat“ (místo „kusů“); popisek; slovník KPZ doplněn. Pravidlo [obsah]. |

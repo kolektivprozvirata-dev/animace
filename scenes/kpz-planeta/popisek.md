@@ -1,6 +1,6 @@
 # Popisek příspěvku (návrh v2 – pořadí od 2026-11-19: pole a talíře na začátku)
 
-Zvířatům slouží 8 polí z 10, jídla ale dají necelé 2 talíře z 10. Maso, mléko, vejce a ryby z chovů zabírají 83 % zemědělské půdy světa, ale dávají jen 18 % kalorií a 37 % bílkovin. 🌍
+Chov zvířat zabírá 8 polí z 10, na talíře z nich ale přijdou necelé 2 z 10. Maso, mléko, vejce a ryby z chovů zabírají 83 % zemědělské půdy světa, ale tvoří jen 18 % kalorií a 37 % bílkovin. 🌍
 
 Proč? Když rostlinné bílkoviny nejdřív sní prase, v jeho těle jich zůstane nanejvýš třetina. A i v Česku jde víc obilí zvířatům než lidem. 🐖
 

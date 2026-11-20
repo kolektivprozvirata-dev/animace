@@ -110,6 +110,9 @@ používat jen s vysvětlením.
 | rostlinné alternativy | „náhražky“ |
 | **tzv. masné krávy**, **tzv. dojnice** (vždy s „tzv.“) | „masné krávy“, „dojnice“ bez odstupu **[KPZ]** |
 | **tzv. skot**, **tzv. hospodářská zvířata**, nebo běžné slovo (krávy, zvířata v chovech) | „skot“, „hospodářská zvířata“ bez „tzv.“/uvozovek – výrazy průmyslu, který zvířata využívá **[KPZ 2026-11-19]** |
+| o podílu potravin: **tvoří, připadá, pochází, přijde na talíř** | „zvířata / maso / mléko **dávají**“, „jídla **dají**“ – zvířata nic nedávají, život jim vezmou **[KPZ 2026-11-20]** |
+| **chov zvířat** | „živočišná výroba“ – slovník průmyslu **[KPZ 2026-11-20]** |
+| **„šetrný“ / „nejšetrnější“ chov** v uvozovkách | šetrný chov bez uvozovek (jako by byl v pořádku) |
 
 ## Podklady KPZ
 - `clanky/mlecne-kravy-materstvi-ve-sluzbach-vyroby.md` – článek KPZ s 30 zdroji
@@ -130,6 +133,7 @@ používat jen s vysvětlením.
   „Pokud konzumujete mateřské mléko nebo sýry, ani zde nehledejte útěchu.“ + fakta o zabíjení
   (býčci, tzv. dojnice po poklesu dojivosti). Je to také krvavý a krutý byznys, jen se v něm
   zvířata mají možná o trochu lépe.
+- **Zvířata nic „nedávají“ [KPZ, 2026-11-20]:** „Nepoužívejme výraz ‚Jídla ale dají‘, oni ho nedávají, ten život jim vezmou. Nepoužívejme tento využívatelský slovník.“ U podílů psát neutrálně (tvoří, připadá, pochází); místo „živočišná výroba“ „chov zvířat“; „šetrný“ chov v uvozovkách.
 - **Výrazy průmyslu obecně [KPZ, 2026-11-19]:** „Nepoužívejme výrazy, které používají zneuživatelé zvířat. Buď je dávejme do uvozovek, nebo tam dávejme ‚tzv.‘. Případně tam prostě napišme ‚krávy‘.“ Platí pro text v grafice i popisky (skot, hospodářská zvířata, dojnice, masné krávy, …).
 - **„Tzv.“ u produkčních kategorií [KPZ]:** „tzv. masné krávy“, „tzv. dojnice“ – tyto
   názvy vymysleli lidé. Kráva je tvor s vlastním životem, nenarodila se jako „masná“.
