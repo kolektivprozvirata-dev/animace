@@ -35,7 +35,7 @@ Na VeganFest 2027 nemusíš čekat 13 let – nový ročník je ohlášený a bu
 
 ## Meme „VeganFest 2027 > GTA VI“ (`meme-vic.html`)
 
-Bez nových faktických tvrzení („13 let“ viz výše). Obrázek: Jason a Lucia (Rockstar Games, GTA VI), ořez bez zbraně.
+Tvrzení: „13 let“ viz výše; „A je to zdarma.“ – VeganFest je pro návštěvníky zdarma, dobrovolnický (ČTK, https://www.ceskenoviny.cz/zpravy/2337449; potvrdit u ročníku 2027 v KPZ). Obrázek: Jason a Lucia (Rockstar Games, GTA VI), ořez bez zbraně.
 
 Popisek:
 
