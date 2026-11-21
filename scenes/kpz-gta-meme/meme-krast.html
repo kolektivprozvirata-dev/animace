@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – memy „nemusíš nic krást“ a GPS cíl (4:5)</title>
+<!-- ?v=a  SMS: Jason a Lucia plánují další akci → „Co budeme krást?“ „Nic. Vstup je zdarma.“
+     ?v=b  plakát: V GTA VI se krade. Na VeganFestu nemusíš nic krást. Vstup je zdarma.
+     ?v=c  minimapa: Nový cíl – VeganFest 2027
+     Render: node render.mjs krast:a krast:b krast:c -->
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  html, body { background: #000; }
+  #stage { width: 1080px; height: 1350px; }
+  #logo { left: 56px; top: 40px; width: 124px; z-index: 5; }
+  #logo img { width: 100%; display: block; }
+  .kpz-cut > img { filter: drop-shadow(0 3px 2px rgba(60, 0, 20, .25)) drop-shadow(0 14px 18px rgba(60, 0, 20, .22)); }
+  .v { display: none; }
+  body[data-v="a"] .va, body[data-v="b"] .vb, body[data-v="c"] .vc { display: block; }
+  .center { left: 0 !important; width: 1080px; text-align: center; transform: none; }
+  #credit { right: 56px; top: 1316px; font-size: 17px; color: #3a0f1d; opacity: .8; }
+  .emo { font-family: 'Noto Color Emoji', sans-serif; font-weight: 400; }
+
+  /* A: telefon */
+  #a-top { top: 136px; font-size: 64px; line-height: 1.3; }
+  #phone { left: 165px; top: 248px; width: 750px; height: 900px; background: #10181a; border: 16px solid #050809;
+           border-radius: 70px; box-shadow: 0 18px 36px rgba(60, 0, 20, .35); rotate: -1.5deg; overflow: hidden; }
+  #phone .bar { height: 150px; background: #1c2a2d; display: flex; align-items: center; gap: 24px; padding: 30px 40px 0; }
+  #phone .bar img { width: 92px; height: 92px; border-radius: 50%; object-fit: cover; border: 4px solid #efe4dd; }
+  #phone .bar .nm { font-family: var(--font-body); font-weight: 800; font-size: 44px; color: #fff; }
+  #phone .bar .st { font-family: var(--font-body); font-weight: 600; font-size: 24px; color: #8fa9a7; }
+  #phone .msgs { padding: 44px 34px; display: flex; flex-direction: column; gap: 34px; }
+  .b { max-width: 600px; padding: 22px 32px 24px; border-radius: 40px; font-family: var(--font-body); font-weight: 700;
+       font-size: 50px; line-height: 1.2; }
+  .b.in { align-self: flex-start; background: #efe4dd; color: #0b3f43; border-bottom-left-radius: 10px; }
+  .b.out { align-self: flex-end; background: #d26c11; color: #fff; border-bottom-right-radius: 10px; }
+  #a-bot { top: 1180px; font-size: 80px; line-height: 1.3; }
+
+  /* B: plakát */
+  #b-duo { left: 270px; top: 110px; width: 540px; rotate: -1.5deg; }
+  #b-1 { top: 626px; font-size: 78px; line-height: 1.3; }
+  #b-2 { top: 742px; font-size: 128px; line-height: 1.24; }
+  #b-3 { top: 1096px; font-size: 104px; line-height: 1.3; }
+
+  /* C: mapa */
+  #c-tag { top: 84px; font-size: 64px; line-height: 1.3; }
+  #c-map { left: 90px; top: 196px; }
+  #c-1 { top: 880px; font-size: 150px; line-height: 1.24; }
+  #c-2 { top: 1100px; font-size: 64px; line-height: 1.4; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="abs" id="logo"><img src="../../brand/kpz/logo-kpz-svetle.png" alt="KPZ"></div>
+
+  <!-- A -->
+  <div class="v va">
+    <div class="abs center kblocks print" id="a-top"><span class="kb">Jason a Lucia plánují další akci</span></div>
+    <div class="abs" id="phone">
+      <div class="bar"><img src="assets/gta/avatar-lucia.jpg" alt=""><div><div class="nm">Lucia</div><div class="st">online</div></div></div>
+      <div class="msgs">
+        <div class="b out">Kam vyrazíme příště?</div>
+        <div class="b in">Na VeganFest 2027&nbsp;<span class="emo">🌱</span></div>
+        <div class="b out">A co tam budeme krást?</div>
+        <div class="b in">Nic. Vstup je zdarma&nbsp;<span class="emo">😏</span></div>
+      </div>
+    </div>
+    <div class="abs center kblocks print" id="a-bot"><span class="kb">VeganFest 2027</span> <span class="kb orange">vstup zdarma</span></div>
+  </div>
+
+  <!-- B -->
+  <div class="v vb">
+    <div class="abs kpz-cut" id="b-duo"><img src="assets/gta/gta6-jason-lucia.png" alt="Jason a Lucia (GTA VI)"></div>
+    <div class="abs center kblocks print" id="b-1"><span class="kb cream">V GTA VI se krade.</span></div>
+    <div class="abs center kblocks print" id="b-2"><span class="kb">Na VeganFestu</span><br><span class="kb maroon">nemusíš nic krást.</span></div>
+    <div class="abs center kblocks print" id="b-3"><span class="kb orange">Vstup je zdarma.</span></div>
+  </div>
+
+  <!-- C -->
+  <div class="v vc">
+    <div class="abs center kblocks print" id="c-tag"><span class="kb cream">Nový cíl na mapě</span></div>
+    <svg class="abs" id="c-map" width="900" height="640" viewBox="0 0 900 640"></svg>
+    <div class="abs center kblocks print" id="c-1"><span class="kb">VeganFest</span> <span class="kb orange">2027</span></div>
+    <div class="abs center kblocks print" id="c-2"><span class="kb cream">Vstup zdarma. Trasa je na tobě.</span></div>
+  </div>
+
+  <div class="abs kpz-body" id="credit"></div>
+</div>
+<script>
+  KPZ.theme();
+  const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  document.body.dataset.v = v;
+  document.getElementById('credit').textContent = v === 'c' ? '' : 'Jason a Lucia: Rockstar Games (GTA VI)';
+
+  // minimapa (vlastní kresba): tmavá mapa, ulice, voda, fialová trasa, šipka hráče, cíl = srdce
+  (function map() {
+    const W = 900, H = 640;
+    let roads = '';
+    // pootočená síť ulic
+    for (let i = -6; i <= 14; i++) roads += `<line x1="${i * 80}" y1="-200" x2="${i * 80}" y2="900"/>`;
+    for (let j = -4; j <= 12; j++) roads += `<line x1="-300" y1="${j * 70}" x2="1200" y2="${j * 70}"/>`;
+    const route = 'M450,560 L450,420 L610,420 L610,280 L690,280 L690,150';
+    document.getElementById('c-map').innerHTML = `
+      <defs>
+        <clipPath id="mm"><rect x="10" y="10" width="${W - 20}" height="${H - 20}" rx="48"/></clipPath>
+      </defs>
+      <rect x="10" y="22" width="${W - 20}" height="${H - 20}" rx="48" fill="#000" opacity=".35"/>
+      <g clip-path="url(#mm)">
+        <rect width="${W}" height="${H}" fill="#2b3a3d"/>
+        <path d="M-20,470 C120,430 160,560 300,600 L300,700 L-20,700 Z" fill="#1f6e78"/>
+        <path d="M640,-20 C700,60 820,40 920,90 L920,-20 Z" fill="#1f6e78"/>
+        <g transform="rotate(0 450 320)" stroke="#5f7174" stroke-width="10">${roads}</g>
+        <path d="M-20,250 C220,210 380,330 560,300 S860,180 940,220" fill="none" stroke="#8a9a8f" stroke-width="22"/>
+        <rect x="120" y="80" width="150" height="110" rx="8" fill="#3c5a3f"/>
+        <rect x="740" y="380" width="120" height="140" rx="8" fill="#3c5a3f"/>
+        <path d="${route}" fill="none" stroke="#000" stroke-width="30" stroke-linejoin="round" stroke-linecap="round" opacity=".45"/>
+        <path d="${route}" fill="none" stroke="#b44dff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M450,532 L478,600 L450,584 L422,600 Z" fill="#fff" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
+      </g>
+      <rect x="10" y="10" width="${W - 20}" height="${H - 20}" rx="48" fill="none" stroke="#0b0f10" stroke-width="16"/>
+      <g transform="translate(628 52)"><circle cx="62" cy="62" r="70" fill="#efe4dd" stroke="#0b0f10" stroke-width="8"/>
+        <g transform="translate(6 4) scale(.54)">${KPZ.sticker('heart').replace('width="100%"', 'width="210" height="210"')}</g></g>`;
+  })();
+
+  document.fonts.ready.then(() => { window.__layout = { v }; });
+</script>
+</body>
+</html>

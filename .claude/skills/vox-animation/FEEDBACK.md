@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.5**
+**Verze skillu: 0.27.6**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -167,3 +167,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-21 | 0.27.3 | kpz-gta-meme-vic B | „Ta vpravo je stokrát lepší. Jen dole bych nedával ‚Na VeganFest 2027 nemusíš čekat…‘ ale ‚Na nás nemusíš čekat 13 let‘. Ať je to kratší a trošku větší.“ | Varianta B, spodní řádek zkrácen a zvětšen (30 → 46 px). Do Osvědčených. |
 | 2026-11-21 | 0.27.4 | kpz-gta-meme-vic B | „Ještě tam přidej ‚A je to zdarma‘.“ | Druhý řádek pointy „A je to zdarma.“ (teal, tučně), celá kompozice o 30 px výš. |
 | 2026-11-21 | 0.27.5 | kpz-gta-meme-trend | „Jo to je nejlepší varianta (je víc než + zdarma). Zkus ještě udělat další varianty… hrej si. Přemýšlej jako zkušený marketér, upoutat na VeganFest a držet se trendu.“ | `meme-trend.html`: A „Mise splněna!“ (13 let čekání) → další mise VeganFest 2027; B srovnání GTA VI × VeganFest 2027 (cena 79,99 € × zdarma, jídlo, čekání) → „Proč ne obojí?“ (bez shazování hráčů); C hvězdy hledanosti „Hledá tě VeganFest 2027. Přijď dobrovolně.“ Formáty, které hráči znají z HUD hry. |
+| 2026-11-21 | 0.27.6 | kpz-gta-meme-krast | „Není špatný. Klidně zkus ještě něco.“ (k trendovým variantám) | `meme-krast.html`: A SMS Jason → Lucia („A co tam budeme krást?“ „Nic. Vstup je zdarma 😏“), B plakát „V GTA VI se krade. Na VeganFestu nemusíš nic krást. Vstup je zdarma.“ (hříčka na Grand Theft), C minimapa „Nový cíl na mapě: VeganFest 2027“ (vlastní kresba, fialová trasa, cíl = srdce). |

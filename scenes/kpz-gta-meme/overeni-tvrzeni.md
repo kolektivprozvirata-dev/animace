@@ -57,3 +57,12 @@ Popisky:
 - A: 13 let čekání = mise splněna. ✅ Další mise: VeganFest 2027. Vstup zdarma, respekt garantovaný. 🌱
 - B: GTA VI za 79,99 €, nebo VeganFest 2027 zdarma? Proč ne obojí. 🎮🌱
 - C: ⭐⭐⭐⭐⭐ Hledá tě VeganFest 2027. Přijď dobrovolně – je to zdarma. Tagni parťáka, který jde s tebou 👇
+
+## „Nemusíš nic krást“ a minimapa (`meme-krast.html`)
+
+Tvrzení: vstup zdarma (viz výše). Avatar Lucie = výřez z oficiálního artworku (GTA VI). Minimapa je vlastní kresba.
+
+Popisky:
+- A: Jason a Lucia mají nový plán. 😏 VeganFest 2027 – vstup zdarma, takže krást nic nemusíš. Tagni svou Lucii / svého Jasona 👇
+- B: Grand Theft Auto VI? Na VeganFestu 2027 krást nemusíš – vstup je zdarma. 🌱
+- C: 📍 Nový cíl na mapě: VeganFest 2027. Vstup zdarma, trasa je na tobě.
