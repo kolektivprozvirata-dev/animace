@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – memy VeganFest 2027 × GTA VI (trendové formáty, 4:5)</title>
+<!-- ?v=a  MISE SPLNĚNA (13 let čekání) → další mise: VeganFest 2027
+     ?v=b  srovnání GTA VI × VeganFest 2027 (cena, jídlo, kdy) → „Proč ne obojí?“
+     ?v=c  hvězdy hledanosti ★★★★★ → „Hledá tě VeganFest 2027. Přijď dobrovolně.“
+     Render: node render.mjs trend:a trend:b trend:c -->
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  @font-face { font-family: 'GTA'; src: url(assets/fonts/pricedown.otf), url(assets/fonts/pricedown.ttf); }
+  @font-face { font-family: 'GTA-fallback'; src: url(assets/fonts/titan-one-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02AF; }
+  @font-face { font-family: 'GTA-fallback'; src: url(assets/fonts/titan-one-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+  html, body { background: #000; }
+  #stage { width: 1080px; height: 1350px; }
+  #logo { left: 56px; top: 40px; width: 124px; z-index: 5; }
+  #logo img { width: 100%; display: block; }
+  .kpz-cut > img { filter: drop-shadow(0 3px 2px rgba(60, 0, 20, .25)) drop-shadow(0 14px 18px rgba(60, 0, 20, .22)); }
+  .v { display: none; }
+  body[data-v="a"] .va, body[data-v="b"] .vb, body[data-v="c"] .vc { display: block; }
+  body.kpz svg text.gta-t { font-family: 'GTA', 'GTA-fallback', sans-serif; font-weight: 400 !important; text-transform: uppercase; letter-spacing: .01em; }
+  .center { left: 0 !important; width: 1080px; text-align: center; transform: none; top: auto; }
+  #credit { right: 56px; top: 1316px; font-size: 17px; color: #3a0f1d; opacity: .8; }
+  /* titulek mise jako ve hře: bílý tučný text s černým obrysem, místo žlutě */
+  .objective { font-family: var(--font-body); font-weight: 800; color: #fff; text-align: center;
+               text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 4px 0 0 #000, -4px 0 0 #000; }
+  .objective .y { color: #ffc400; }
+
+  /* A */
+  #a-top { top: 64px; font-size: 76px; line-height: 1.3; }
+  #a-duo { left: 250px; top: 196px; width: 580px; }
+  #a-obj { top: 1088px; font-size: 58px; line-height: 1.3; }
+
+  /* B */
+  #b-duo { left: 124px; top: 118px; width: 332px; rotate: -2deg; }
+  #b-g6 { left: 0; width: 580px; text-align: center; top: 424px; font-size: 76px; line-height: 1.3; }
+  #b-vf { left: 560px; width: 460px; top: 196px; font-size: 112px; line-height: 1.28; text-align: center; }
+  #b-heart { left: 715px; top: 66px; width: 150px; rotate: 8deg; }
+  .lab { left: 0; width: 1080px; text-align: center; font-size: 40px; line-height: 1.3; }
+  .val { width: 480px; text-align: center; font-size: 58px; line-height: 1.3; white-space: nowrap; }
+  .val.l { left: 50px; } .val.r { left: 550px; }
+  #b-why { top: 1166px; font-size: 92px; line-height: 1.3; }
+
+  /* C */
+  #c-head { top: 470px; font-size: 158px; line-height: 1.24; }
+  #c-sub { top: 1010px; font-size: 76px; line-height: 1.4; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="abs" id="logo"><img src="../../brand/kpz/logo-kpz-svetle.png" alt="KPZ"></div>
+
+  <!-- A: MISE SPLNĚNA -->
+  <div class="v va">
+    <div class="abs center kblocks print" id="a-top"><span class="kb">13 let čekání na GTA VI</span></div>
+    <div class="abs kpz-cut" id="a-duo"><img src="assets/gta/gta6-jason-lucia.png" alt="Jason a Lucia (GTA VI)"></div>
+    <svg class="abs gta-svg" data-text="Mise splněna!" data-fill="gold" data-maxw="960" data-fs="170" data-top="728"></svg>
+    <svg class="abs gta-svg" data-text="Respekt +" data-fill="#ffffff" data-maxw="600" data-fs="84" data-top="912"></svg>
+    <div class="abs center objective" id="a-obj">Další mise: jdi na <span class="y">VeganFest 2027</span>.<br>Je to zdarma.</div>
+  </div>
+
+  <!-- B: srovnání -->
+  <div class="v vb">
+    <div class="abs kpz-cut" id="b-duo"><img src="assets/gta/gta6-jason-lucia.png" alt="Jason a Lucia (GTA VI)"></div>
+    <div class="abs kblocks print" id="b-g6"><span class="kb teal">GTA VI</span></div>
+    <div class="abs" id="b-heart"></div>
+    <div class="abs kblocks print" id="b-vf"><span class="kb">VeganFest</span><br><span class="kb orange">2027</span></div>
+    <div class="abs lab kblocks" style="top:590px"><span class="kb cream">Cena</span></div>
+    <div class="abs val l kblocks print" style="top:652px"><span class="kb maroon">79,99 €</span></div>
+    <div class="abs val r kblocks print" style="top:652px"><span class="kb teal">Zdarma</span></div>
+    <div class="abs lab kblocks" style="top:780px"><span class="kb cream">Jídlo</span></div>
+    <div class="abs val l kblocks print" style="top:842px"><span class="kb maroon">Jen na obrazovce</span></div>
+    <div class="abs val r kblocks print" style="top:842px"><span class="kb teal">Veganské a skutečné</span></div>
+    <div class="abs lab kblocks" style="top:970px"><span class="kb cream">Čekání</span></div>
+    <div class="abs val l kblocks print" style="top:1032px"><span class="kb maroon">13 let</span></div>
+    <div class="abs val r kblocks print" style="top:1032px"><span class="kb teal">Už v roce 2027</span></div>
+    <div class="abs center kblocks print" id="b-why"><span class="kb orange">Proč ne obojí?</span></div>
+  </div>
+
+  <!-- C: hvězdy hledanosti -->
+  <div class="v vc">
+    <svg class="abs" id="c-stars" width="1080" height="260" style="left:0; top:150px" overflow="visible"></svg>
+    <div class="abs center kblocks print" id="c-head"><span class="kb maroon">Hledá tě</span><br><span class="kb">VeganFest</span> <span class="kb orange">2027</span></div>
+    <div class="abs center kblocks print" id="c-sub"><span class="kb cream">Přijď dobrovolně.</span><br><span class="kb">Je to zdarma.</span></div>
+  </div>
+
+  <div class="abs kpz-body" id="credit"></div>
+</div>
+<script>
+  KPZ.theme();
+  const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  document.body.dataset.v = v;
+  document.getElementById('credit').textContent = v === 'c' ? '' : 'Jason a Lucia: Rockstar Games (GTA VI)';
+  document.getElementById('b-heart').innerHTML = KPZ.sticker('heart');
+
+  // pět hvězd hledanosti (vlastní kresba): krémová výplň, černý obrys, tvrdý stín
+  const star = (cx, cy, R, r) => { let d = ''; for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r : R;
+    d += (i ? 'L' : 'M') + (cx + rr * Math.cos(a)).toFixed(1) + ',' + (cy + rr * Math.sin(a)).toFixed(1); } return d + 'Z'; };
+  let st = '';
+  for (let i = 0; i < 5; i++) { const cx = 540 + (i - 2) * 196, cy = 120, d = star(cx, cy, 96, 42);
+    st += `<path d="${d}" transform="translate(0 12)" fill="#000" stroke="#000" stroke-width="22" stroke-linejoin="round"/>
+           <path d="${d}" fill="#fff6e8" stroke="#000" stroke-width="22" stroke-linejoin="round" paint-order="stroke fill"/>`; }
+  document.getElementById('c-stars').innerHTML = st;
+
+  document.fonts.ready.then(() => {
+    // GTA texty (SVG): přechod/barva + černý obrys + tvrdý stín, přizpůsobení šířce
+    const GRAD = { gold: ['#fff4b8', '#ffd23f', '#f59e0b'], sunset: ['#ffe08a', '#ff9a3d', '#ff4f86', '#c23fd1'] };
+    document.querySelectorAll('.gta-svg').forEach((svg, k) => {
+      if (!svg.closest('.v') || getComputedStyle(svg.closest('.v')).display === 'none') return;
+      const { text, fill, maxw, fs: fs0, top } = svg.dataset;
+      const ns = 'http://www.w3.org/2000/svg';
+      let paint = fill;
+      if (GRAD[fill]) {
+        const id = 'g' + k; const st = GRAD[fill].map((c, i, a) => `<stop offset="${i / (a.length - 1)}" stop-color="${c}"/>`).join('');
+        svg.innerHTML = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1">${st}</linearGradient></defs>`; paint = `url(#${id})`;
+      }
+      const mk = (f, sh) => { const t = document.createElementNS(ns, 'text'); t.textContent = text; t.setAttribute('class', 'gta-t');
+        t.setAttribute('x', 540); t.setAttribute('text-anchor', 'middle'); t.setAttribute('fill', f); t.setAttribute('stroke', '#000');
+        t.setAttribute('stroke-linejoin', 'round'); if (!sh) t.setAttribute('paint-order', 'stroke fill'); svg.appendChild(t); return t; };
+      const sh = mk('#000', true), t = mk(paint, false);
+      svg.setAttribute('width', 1080); svg.style.left = '0px'; svg.style.top = top + 'px'; svg.setAttribute('overflow', 'visible');
+      let fs = +fs0; const set = () => [t, sh].forEach((e) => e.setAttribute('font-size', fs)); set();
+      while (t.getComputedTextLength() > +maxw && fs > 40) { fs -= 2; set(); }
+      const sw = Math.round(fs * 0.16), off = Math.round(fs * 0.07), bb = t.getBBox(), base = Math.round(-bb.y + sw / 2);
+      t.setAttribute('y', base); t.setAttribute('stroke-width', sw); sh.setAttribute('y', base + off); sh.setAttribute('stroke-width', sw);
+      svg.setAttribute('height', Math.round(bb.height + sw + off));
+    });
+    window.__layout = { v };
+  });
+</script>
+</body>
+</html>

@@ -44,3 +44,16 @@ Na nový ročník nemusíš čekat 13 let – VeganFest 2027 je ohlášený a bu
 Tagni kámoše, se kterým půjdeš 👇
 
 #VeganFest #GTA6 #GTAVI #vegan #Brno #KolektivProZvirata
+
+## Trendové varianty (`meme-trend.html`)
+
+| tvrzení | stav | zdroj |
+|---|---|---|
+| GTA VI stojí 79,99 € (standardní edice, Evropa) | ✔ | https://news.instant-gaming.com/en/articles/20394-upd-gta-vi-will-indeed-cost-eur79-99-and-the-online-will-not-be-available-at-launch , https://gameinformer.com/2026/06/24/grand-theft-auto-vi-price-and-ultimate-edition-revealed-physical-version-will-not |
+| VeganFest zdarma | ✔ (potvrdit pro 2027) | ČTK, viz výše |
+| „Už v roce 2027“ | ✔ | web KPZ: VeganFest 2027 ohlášený |
+
+Popisky:
+- A: 13 let čekání = mise splněna. ✅ Další mise: VeganFest 2027. Vstup zdarma, respekt garantovaný. 🌱
+- B: GTA VI za 79,99 €, nebo VeganFest 2027 zdarma? Proč ne obojí. 🎮🌱
+- C: ⭐⭐⭐⭐⭐ Hledá tě VeganFest 2027. Přijď dobrovolně – je to zdarma. Tagni parťáka, který jde s tebou 👇
