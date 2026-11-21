@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.26.8**
+**Verze skillu: 0.27.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -57,6 +57,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[pohyb]** Výstřižky z fotek se lehce třesou jako papír (≈2 px, 0,6°, 6× za s) – stejně jako kreslené prvky, ale klidněji. _(2026-10-19, kpz-telata v7)_
 - **[workflow]** Nápady KPZ sbírat do `dalsi-verze.md` (sekce „Do vN“), připravit podklady (výřezy), a vyrábět až na pokyn („pojď do toho“). _(2026-10-19)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
+- **[meme]** Meme / reakce na popkulturu (např. GTA VI): **naše grafika + rozpoznatelné prvky originálu** (písmo nebo jeho barvy, oficiální obrázky). Obrázky jen z oficiální mediální sekce (press/media kit), vybírat bez zbraní, násilí a alkoholu (u KPZ nejlépe zvířata na svobodě), malý řádek „Obrázky: <autor>“; zdroj zapsat do `assets/<…>/README.md`. Písmo originálu jen s volnou licencí (např. Pricedown), proprietární fonty z webu hry nepoužívat. _(2026-11-21, kpz-gta-meme)_
 
 ## ✅ Osvědčené (nechat tak)
 
@@ -159,3 +160,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-18 | 0.26.6 | kpz-telata v42 | „Já ale chtěl oddělat to do těch 12 hodin. A začít tím výzkumným ústavem.“ | Pozor na nedorozumění – „dej tam tu metodiku“ znamenalo nahradit, ne přidat; u nejasného pokynu se krátce zeptat. Před namluvením ověřen plný text metodiky: „doporučuje do 2 h“ tam doslova není → věrná parafráze. |
 | 2026-11-18 | 0.26.7 | kpz-telata v42 → v41 | „Ne, to zní debilně.“ (věta „Podle VÚŽV by tele nemělo zůstat u matky déle než dvě hodiny“) → „Nechme verzi 41.“ | Zpět na v41. Poučení: přeformulování „kvůli přesnosti“ nejdřív poslat jako text ke schválení, ne rovnou namluvit a renderovat. |
 | 2026-11-18 | 0.26.8 | kpz-telata v43 | „U té fotky kravínu v 0:44 trošku stáhnout tu přeexponovanost.“ | Tónová křivka na jas (rameno ve světlech, max. ~0,9), jemná S-křivka a +10 % sytosti; přepálené nebe se nedokresluje. |
+| 2026-11-21 | 0.27.0 | kpz-gta-meme | „Mělo by tam být i něco z GTA. Kombinace naší grafiky a třeba jejich fontu, obrázků ze hry.“ | `meme-gta.html`: mřížka 3 oficiálních screenshotů GTA VI jako obal hry (Vice City, leguán, jeleni s pumou), „10 VeganFestů“ GTA písmem v barvách západu slunce GTA VI s černým obrysem. Pricedown nešel stáhnout (web odmítá automatické stažení) → záloha Titan One (OFL); po dodání `assets/fonts/pricedown.otf` se použije sám. Pravidlo [meme]. |

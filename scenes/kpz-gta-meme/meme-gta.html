@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – meme GTA VI × VeganFest, verze s GTA prvky (4:5)</title>
+<!-- Naše grafika (růžový papír, Bebas Neue v blocích, linoryt srdce) + GTA prvky:
+     mřížka screenshotů jako obal hry a GTA písmo (Pricedown) u čísel.
+     Pricedown: když leží v assets/fonts/pricedown.otf|ttf, použije se; jinak záloha Titan One (OFL).
+     Render: node render.mjs gta  →  out/kpz-gta-meme-gta.png -->
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  @font-face { font-family: 'GTA'; src: url(assets/fonts/pricedown.otf), url(assets/fonts/pricedown.ttf); }
+  @font-face { font-family: 'GTA-fallback'; src: url(assets/fonts/titan-one-latin-ext-400-normal.woff2) format('woff2');
+               unicode-range: U+0100-02AF; }
+  @font-face { font-family: 'GTA-fallback'; src: url(assets/fonts/titan-one-latin-400-normal.woff2) format('woff2');
+               unicode-range: U+0000-00FF, U+2000-206F; }
+  html, body { background: #000; }
+  #stage { width: 1080px; height: 1350px; }
+  #logo { left: 60px; top: 34px; width: 128px; z-index: 5; }
+  #logo img { width: 100%; display: block; }
+
+  /* mřížka jako obal GTA: panely s plnými linkami mezi sebou */
+  #grid { left: 52px; top: 118px; width: 976px; height: 626px; background: var(--kpz-black);
+          padding: 12px; display: grid; gap: 12px;
+          grid-template-columns: 1fr 1fr; grid-template-rows: 348px 1fr;
+          rotate: -1.2deg; box-shadow: 0 14px 28px rgba(60, 0, 20, .28); }
+  #grid .p { position: relative; overflow: hidden; }
+  #grid .p img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #grid .p.wide { grid-column: 1 / 3; }
+
+  body.kpz svg text.gta-t { font-family: 'GTA', 'GTA-fallback', sans-serif; font-weight: 400 !important;
+         text-transform: uppercase; letter-spacing: .01em; }
+
+  #head { left: 64px; top: 772px; font-size: 66px; line-height: 1.42; }
+  #big { left: 0; top: 860px; }
+  #hearts { left: 0; top: 0; }
+  .heart { position: absolute; width: 74px; }
+  #q { left: 64px; width: 960px; font-size: 70px; line-height: 1.42; }
+  #note { left: 66px; width: 940px; font-size: 26px; line-height: 1.4; color: #3a0f1d; }
+  #note b { font-weight: 800; color: var(--kpz-teal-d); }
+  #credit { right: 56px; font-size: 17px; color: #3a0f1d; opacity: .8; text-align: right; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="abs" id="grid">
+    <div class="p wide"><img src="assets/gta/vice-city-cedule.jpg" alt=""></div>
+    <div class="p"><img src="assets/gta/leguan.jpg" alt=""></div>
+    <div class="p"><img src="assets/gta/jeleni-puma.jpg" alt=""></div>
+  </div>
+  <div class="abs" id="logo"><img src="../../brand/kpz/logo-kpz-svetle.png" alt="KPZ"></div>
+
+  <div class="abs kblocks print" id="head"><span class="kb">Mezi GTA V a GTA VI</span> <span class="kb cream">jsme udělali</span></div>
+  <!-- GTA písmo jako SVG: barevný přechod + černý obrys (paint-order) + tvrdý stín -->
+  <svg class="abs" id="big" width="1080" height="200" overflow="visible">
+    <defs>
+      <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffe08a"/><stop offset=".38" stop-color="#ff9a3d"/>
+        <stop offset=".72" stop-color="#ff4f86"/><stop offset="1" stop-color="#c23fd1"/>
+      </linearGradient>
+    </defs>
+    <text class="gta-t" id="big-sh" x="540" text-anchor="middle" fill="#000" stroke="#000" stroke-linejoin="round">10 VeganFestů</text>
+    <text class="gta-t" id="big-t" x="540" text-anchor="middle" fill="url(#sunset)" stroke="#000" stroke-linejoin="round" paint-order="stroke fill">10 VeganFestů</text>
+  </svg>
+  <div class="abs" id="hearts"></div>
+  <div class="abs kblocks print" id="q"><span class="kb maroon">Kolik jich stihneme do</span> <span class="kb orange">GTA VII?</span></div>
+  <div class="abs kpz-body" id="note">Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.</div>
+  <div class="abs kpz-body" id="credit">Obrázky: Rockstar Games (GTA VI)</div>
+</div>
+<script>
+  KPZ.theme();
+  const $ = (id) => document.getElementById(id);
+  document.fonts.ready.then(() => {
+    // GTA písmo: přizpůsobit šířce 940 px (+ obrys)
+    const big = $('big'), t = $('big-t'), sh = $('big-sh');
+    let fs = 200;
+    const set = () => { for (const el of [t, sh]) { el.setAttribute('font-size', fs); } };
+    set();
+    while (t.getComputedTextLength() > 930 && fs > 80) { fs -= 2; set(); }
+    const sw = Math.round(fs * 0.16), off = Math.round(fs * 0.07);
+    const bb = t.getBBox();
+    const base = Math.round(-bb.y + sw / 2);          // účaří tak, aby horní okraj obrysu byl na 0
+    t.setAttribute('y', base); t.setAttribute('stroke-width', sw);
+    sh.setAttribute('y', base + off); sh.setAttribute('stroke-width', sw);
+    const bh = Math.round(bb.height + sw + off);
+    big.setAttribute('height', bh);
+    const bigBottom = 860 + bh;
+
+    // 10 srdcí = 10 VeganFestů
+    const hy = bigBottom + 14;
+    for (let i = 0; i < 10; i++) {
+      const d = document.createElement('div');
+      d.className = 'heart';
+      d.style.left = (130 + i * 84) + 'px';
+      d.style.top = (hy + (i % 2 ? 5 : 0)) + 'px';
+      d.style.transform = `rotate(${[-8, 6, -4, 9, -7, 4, -9, 7, -5, 8][i]}deg)`;
+      d.innerHTML = KPZ.sticker('heart');
+      $('hearts').appendChild(d);
+    }
+    const q = $('q'); q.style.top = (hy + 90) + 'px';
+    const note = $('note'); note.style.top = (q.offsetTop + q.offsetHeight + 14) + 'px';
+    const credit = $('credit'); credit.style.top = (1350 - 34) + 'px';
+    window.__layout = { fs, bigBottom, qBottom: q.offsetTop + q.offsetHeight, noteBottom: note.offsetTop + note.offsetHeight,
+                        gtaFont: document.fonts.check('40px GTA') && [...document.fonts].some(f => f.family === 'GTA' && f.status === 'loaded') };
+  });
+</script>
+</body>
+</html>
