@@ -16,7 +16,8 @@ const variants = process.argv.slice(2).length ? process.argv.slice(2) : ['a', 'b
 const browser = await pw.chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 1 });
 for (const v of variants) {
-  await page.goto(pathToFileURL(path.join(here, v === 'gta' ? 'meme-gta.html' : 'meme.html')).href + '?v=' + v);
+  const own = path.join(here, 'meme-' + v + '.html');
+  await page.goto(pathToFileURL(fs.existsSync(own) ? own : path.join(here, 'meme.html')).href + '?v=' + v);
   await page.evaluate(() => document.fonts.ready);
   await page.waitForFunction(() => window.__layout);
   await page.waitForFunction(() => !document.querySelector('.kpz-bg img'), null, { timeout: 10000 }).catch(() => {});
