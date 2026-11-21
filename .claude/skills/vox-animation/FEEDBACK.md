@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.1**
+**Verze skillu: 0.27.2**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -57,7 +57,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[pohyb]** Výstřižky z fotek se lehce třesou jako papír (≈2 px, 0,6°, 6× za s) – stejně jako kreslené prvky, ale klidněji. _(2026-10-19, kpz-telata v7)_
 - **[workflow]** Nápady KPZ sbírat do `dalsi-verze.md` (sekce „Do vN“), připravit podklady (výřezy), a vyrábět až na pokyn („pojď do toho“). _(2026-10-19)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
-- **[meme]** Meme / reakce na popkulturu (např. GTA VI): **naše grafika + rozpoznatelné prvky originálu** (písmo nebo jeho barvy, oficiální obrázky). **Nejzapamatovatelnější jsou hlavní postavy** (oficiální artworky jako papírové výstřižky, ořez bez zbraní) – ne krajiny ani obecné screenshoty („vůbec se mi to nelíbí“). Obrázky jen z oficiální mediální sekce (press/media kit), vybírat bez zbraní, násilí a alkoholu (u KPZ nejlépe zvířata na svobodě), malý řádek „Obrázky: <autor>“; zdroj zapsat do `assets/<…>/README.md`. Písmo originálu jen s volnou licencí (např. Pricedown), proprietární fonty z webu hry nepoužívat. _(2026-11-21, kpz-gta-meme)_
+- **[meme]** Meme / reakce na popkulturu (např. GTA VI): **naše grafika + rozpoznatelné prvky originálu** (písmo nebo jeho barvy, oficiální obrázky). **Nejzapamatovatelnější jsou hlavní postavy** (oficiální artworky jako papírové výstřižky, ořez bez zbraní) – ne krajiny ani obecné screenshoty („vůbec se mi to nelíbí“). **Jednoduše a velké** – max. 3–4 prvky, text čitelný i v náhledu feedu („udělej to jednoduše a ať to jde vidět“). Obrázky jen z oficiální mediální sekce (press/media kit), vybírat bez zbraní, násilí a alkoholu (u KPZ nejlépe zvířata na svobodě), malý řádek „Obrázky: <autor>“; zdroj zapsat do `assets/<…>/README.md`. Písmo originálu jen s volnou licencí (např. Pricedown), proprietární fonty z webu hry nepoužívat. _(2026-11-21, kpz-gta-meme)_
 
 ## ✅ Osvědčené (nechat tak)
 
@@ -162,3 +162,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-18 | 0.26.8 | kpz-telata v43 | „U té fotky kravínu v 0:44 trošku stáhnout tu přeexponovanost.“ | Tónová křivka na jas (rameno ve světlech, max. ~0,9), jemná S-křivka a +10 % sytosti; přepálené nebe se nedokresluje. |
 | 2026-11-21 | 0.27.0 | kpz-gta-meme | „Mělo by tam být i něco z GTA. Kombinace naší grafiky a třeba jejich fontu, obrázků ze hry.“ | `meme-gta.html`: mřížka 3 oficiálních screenshotů GTA VI jako obal hry (Vice City, leguán, jeleni s pumou), „10 VeganFestů“ GTA písmem v barvách západu slunce GTA VI s černým obrysem. Pricedown nešel stáhnout (web odmítá automatické stažení) → záloha Titan One (OFL); po dodání `assets/fonts/pricedown.otf` se použije sám. Pravidlo [meme]. |
 | 2026-11-21 | 0.27.1 | kpz-gta-meme | „Vůbec se mi to nelíbí. Měly by tam být obrázky hlavních postav z her, něco zapamatovatelného.“ | `meme-postavy.html`: Franklin, Michael a Trevor (GTA V · 2013) nahoře a Jason s Lucií (GTA VI · 2026) dole jako výstřižky z oficiálních artworků (`cutout.py`), ořez nad zbraněmi; mezi nimi „10 VeganFestů“ a 10 srdcí. Pravidlo [meme] doplněno o postavy. |
+| 2026-11-21 | 0.27.2 | kpz-gta-meme-vic | „Udělej meme ‚VeganFest 2027 je víc než GTA 6‘, případně tou hranatou závorkou (>).“ „Klidně tam dej obrázek z GTA, ale udělej to jednoduše a ať to jde vidět.“ | `meme-vic.html`: A = VEGANFEST 2027 > GTA VI (znaménko tahem štětce, vínová), B = „je víc než“ textem; Jason a Lucia jako výstřižek, bez nálepek a drobností. Pravidlo [meme] doplněno o jednoduchost. |

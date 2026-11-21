@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – meme VeganFest 2027 &gt; GTA VI (4:5)</title>
+<!-- Jednoduché srovnání. ?v=a: VEGANFEST 2027 > GTA VI (znaménko tahem štětce)
+                         ?v=b: VEGANFEST 2027 JE VÍC NEŽ GTA VI (text)
+     Render: node render.mjs vic:a vic:b  →  out/kpz-gta-meme-vic-{a,b}.png -->
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  html, body { background: #000; }
+  #stage { width: 1080px; height: 1350px; }
+  #logo { left: 56px; top: 40px; width: 124px; z-index: 5; }
+  #logo img { width: 100%; display: block; }
+  .kpz-cut > img { filter: drop-shadow(0 3px 2px rgba(60, 0, 20, .25)) drop-shadow(0 14px 18px rgba(60, 0, 20, .22)); }
+  .v { display: none; }
+  body[data-v="a"] .va, body[data-v="b"] .vb { display: block; }
+  .stk { position: absolute; }
+  #credit { right: 56px; top: 1316px; font-size: 17px; color: #3a0f1d; opacity: .8; }
+
+  /* A: znaménko */
+  #a-vf { left: 56px; top: 250px; font-size: 180px; line-height: 1.22; }
+  #a-duo { left: 668px; top: 372px; width: 384px; rotate: 2deg; }
+  #a-tag { left: 716px; top: 742px; font-size: 96px; rotate: 2deg; }
+  #a-sub { left: 0; width: 1080px; top: 1010px; text-align: center; font-size: 72px; line-height: 1.42; }
+
+  /* B: text */
+  #b-vf { left: 0; width: 1080px; text-align: center; top: 96px; font-size: 172px; line-height: 1.2; }
+  #b-vic { left: 0; width: 1080px; text-align: center; top: 520px; font-size: 104px; line-height: 1.2; }
+  #b-duo { left: 310px; top: 662px; width: 460px; rotate: -1.5deg; }
+  #b-tag { left: 0; width: 1080px; text-align: center; top: 1036px; font-size: 112px; line-height: 1.2; }
+  #b-sub { left: 0; width: 1080px; top: 1206px; text-align: center; font-size: 30px; color: #3a0f1d; }
+  #b-sub b { color: var(--kpz-teal-d); }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="abs" id="logo"><img src="../../brand/kpz/logo-kpz-svetle.png" alt="KPZ"></div>
+
+  <!-- A: VEGANFEST 2027 > GTA VI -->
+  <div class="v va">
+    <div class="abs kblocks print" id="a-vf"><span class="kb">Vegan</span><br><span class="kb cream">Fest</span><br><span class="kb orange">2027</span></div>
+    <svg class="abs" width="1080" height="1350" style="left:0; top:0" overflow="visible">
+      <defs>
+        <filter id="gt-brush" filterUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1350" color-interpolation-filters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="2" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="8" xChannelSelector="R" yChannelSelector="G" result="d"/>
+          <feTurbulence type="fractalNoise" baseFrequency="0.004 0.12" numOctaves="2" seed="7" result="s"/>
+          <feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 8.2" result="m"/>
+          <feComposite in="d" in2="m" operator="in"/>
+        </filter>
+      </defs>
+      <path d="M516,448 L626,580 L516,712" fill="none" stroke="#920637" stroke-width="74" stroke-linecap="round" stroke-linejoin="round" filter="url(#gt-brush)"/>
+    </svg>
+    <div class="abs kpz-cut" id="a-duo"><img src="assets/gta/gta6-jason-lucia.png" alt="Jason a Lucia (GTA VI)"></div>
+    <div class="abs tag teal print" id="a-tag">GTA VI</div>
+    <div class="abs kblocks print" id="a-sub"><span class="kb cream">Na nás nemusíš</span> <span class="kb">čekat 13 let.</span></div>
+  </div>
+
+  <!-- B: VEGANFEST 2027 JE VÍC NEŽ GTA VI -->
+  <div class="v vb">
+    <div class="abs kblocks print" id="b-vf"><span class="kb">VeganFest</span><br><span class="kb orange">2027</span></div>
+    <div class="abs kblocks print" id="b-vic"><span class="kb maroon">je víc než</span></div>
+    <div class="abs kpz-cut" id="b-duo"><img src="assets/gta/gta6-jason-lucia.png" alt="Jason a Lucia (GTA VI)"></div>
+    <div class="abs kblocks print" id="b-tag"><span class="kb teal">GTA VI</span></div>
+    <div class="abs kpz-body" id="b-sub">Na <b>VeganFest 2027</b> nemusíš čekat 13 let.</div>
+  </div>
+
+  <div class="abs kpz-body" id="credit">Jason a Lucia: Rockstar Games (GTA VI)</div>
+</div>
+<script>
+  KPZ.theme();
+  const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  document.body.dataset.v = v;
+  document.fonts.ready.then(() => {
+    const r = (id) => { const e = document.getElementById(id); return e ? [e.offsetLeft, e.offsetTop, e.offsetWidth, e.offsetHeight] : null; };
+    window.__layout = { v, aVf: r('a-vf'), aDuo: r('a-duo'), bDuo: r('b-duo'), bTag: r('b-tag') };
+  });
+</script>
+</body>
+</html>

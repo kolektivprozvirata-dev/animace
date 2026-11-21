@@ -18,3 +18,29 @@ Kolik jich stihneme do GTA VII? Tipni si v komentářích 👇
 Na VeganFest 2027 nemusíš čekat 13 let – nový ročník je ohlášený a bude velký.
 
 #VeganFest #GTA6 #GTAVI #vegan #Brno #KolektivProZvirata
+
+## Verze s postavami (`meme-postavy.html`)
+
+Obrázky: oficiální artworky Rockstar Games – GTA V (Franklin, Michael, Trevor) a GTA VI (Jason a Lucia),
+ořez bez zbraní; podrobně `assets/gta/README.md`. V grafice řádek „Postavy: Rockstar Games (GTA V, GTA VI)“.
+
+Popisek:
+
+Franklin, Michael a Trevor čekali na nástupce 13 let. My jsme mezitím udělali 10 VeganFestů. 🌱
+Kolik jich stihneme do GTA VII? Tipni si v komentářích 👇
+
+Na VeganFest 2027 nemusíš čekat 13 let – nový ročník je ohlášený a bude velký.
+
+#VeganFest #GTA6 #GTAVI #GTA5 #vegan #Brno #KolektivProZvirata
+
+## Meme „VeganFest 2027 > GTA VI“ (`meme-vic.html`)
+
+Bez nových faktických tvrzení („13 let“ viz výše). Obrázek: Jason a Lucia (Rockstar Games, GTA VI), ořez bez zbraně.
+
+Popisek:
+
+VeganFest 2027 > GTA VI. Nebo nesouhlasíš? 👀
+Na nový ročník nemusíš čekat 13 let – VeganFest 2027 je ohlášený a bude velký. 🌱
+Tagni kámoše, se kterým půjdeš 👇
+
+#VeganFest #GTA6 #GTAVI #vegan #Brno #KolektivProZvirata
