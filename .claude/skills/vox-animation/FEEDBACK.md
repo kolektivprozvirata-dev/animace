@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.2**
+**Verze skillu: 0.27.3**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -61,6 +61,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 
 ## ✅ Osvědčené (nechat tak)
 
+- Meme textem pod sebou „VEGANFEST 2027 / JE VÍC NEŽ / [postavy] / GTA VI“ – „ta vpravo je stokrát lepší“ než varianta se znaménkem „>“. Pointa dole krátce a větší („Na nás nemusíš čekat 13 let.“). _(kpz-gta-meme-vic B)_
 - Počítadlo čísla nabíhá z nuly se slovem (104 farem) – „líbí se mi, jak to z nuly nabíhá“. _(kpz-telata v15)_
 
 - Hlas Jirka (Piper) při `length_scale` 0.83 – tempo „v pohodě“. _(kpz-telata v1)_
@@ -163,3 +164,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-21 | 0.27.0 | kpz-gta-meme | „Mělo by tam být i něco z GTA. Kombinace naší grafiky a třeba jejich fontu, obrázků ze hry.“ | `meme-gta.html`: mřížka 3 oficiálních screenshotů GTA VI jako obal hry (Vice City, leguán, jeleni s pumou), „10 VeganFestů“ GTA písmem v barvách západu slunce GTA VI s černým obrysem. Pricedown nešel stáhnout (web odmítá automatické stažení) → záloha Titan One (OFL); po dodání `assets/fonts/pricedown.otf` se použije sám. Pravidlo [meme]. |
 | 2026-11-21 | 0.27.1 | kpz-gta-meme | „Vůbec se mi to nelíbí. Měly by tam být obrázky hlavních postav z her, něco zapamatovatelného.“ | `meme-postavy.html`: Franklin, Michael a Trevor (GTA V · 2013) nahoře a Jason s Lucií (GTA VI · 2026) dole jako výstřižky z oficiálních artworků (`cutout.py`), ořez nad zbraněmi; mezi nimi „10 VeganFestů“ a 10 srdcí. Pravidlo [meme] doplněno o postavy. |
 | 2026-11-21 | 0.27.2 | kpz-gta-meme-vic | „Udělej meme ‚VeganFest 2027 je víc než GTA 6‘, případně tou hranatou závorkou (>).“ „Klidně tam dej obrázek z GTA, ale udělej to jednoduše a ať to jde vidět.“ | `meme-vic.html`: A = VEGANFEST 2027 > GTA VI (znaménko tahem štětce, vínová), B = „je víc než“ textem; Jason a Lucia jako výstřižek, bez nálepek a drobností. Pravidlo [meme] doplněno o jednoduchost. |
+| 2026-11-21 | 0.27.3 | kpz-gta-meme-vic B | „Ta vpravo je stokrát lepší. Jen dole bych nedával ‚Na VeganFest 2027 nemusíš čekat…‘ ale ‚Na nás nemusíš čekat 13 let‘. Ať je to kratší a trošku větší.“ | Varianta B, spodní řádek zkrácen a zvětšen (30 → 46 px). Do Osvědčených. |
