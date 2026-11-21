@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – meme GTA VI × VeganFest (4:5)</title>
+<!-- Statický příspěvek 1080×1350 (karusel / feed). Varianta textu: meme.html?v=a|b|c
+     Render: node scenes/kpz-gta-meme/render.mjs  →  out/kpz-gta-meme-{a,b,c}.png -->
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  html, body { background: #000; }
+  #stage { width: 1080px; height: 1350px; }
+  #logo { left: 60px; top: 50px; width: 150px; }
+  #logo img { width: 100%; display: block; }
+  .head { left: 64px; width: 960px; }
+  .head .l1 { font-size: 104px; line-height: 1.42; }
+  .head .l2 { font-size: 176px; line-height: 1.2; margin-top: 6px; }
+  .q { left: 64px; width: 960px; font-size: 88px; line-height: 1.42; }
+  .tl-tag { font-size: 40px; white-space: nowrap; }
+  .note { left: 66px; width: 940px; font-size: 27px; line-height: 1.4; color: #3a0f1d; }
+  .note b { font-weight: 800; color: var(--kpz-teal-d); }
+  .hearts { position: absolute; }
+  .heart { position: absolute; width: 78px; }
+  #pad { width: 230px; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="abs" id="logo"><img src="../../brand/kpz/logo-kpz-svetle.png" alt="KPZ"></div>
+  <div class="abs" id="pad"></div>
+
+  <div class="abs head kblocks print" id="head"></div>
+
+  <!-- časová osa: GTA V → GTA VI, 10 VeganFestů mezi nimi -->
+  <svg class="abs" id="tl" width="1080" height="1350" style="left:0; top:0" overflow="visible">
+    <defs>
+      <!-- tah štětcem jako #kpz-brush, ale oblast filtru v pixelech (tenká vodorovná čára by se jinak ořízla) -->
+      <filter id="tl-brush" filterUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1350" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="2" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+        <feTurbulence type="fractalNoise" baseFrequency="0.004 0.16" numOctaves="2" seed="7" result="s"/>
+        <feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -9 0 0 0 6.6" result="m"/>
+        <feComposite in="d" in2="m" operator="in"/>
+      </filter>
+    </defs>
+    <path id="tl-line" fill="none" stroke="#17323d" stroke-width="11" stroke-linecap="round" filter="url(#tl-brush)"/>
+  </svg>
+  <div class="hearts" id="hearts"></div>
+  <div class="abs tag teal print tl-tag" id="tl-a">GTA V · 2013</div>
+  <div class="abs tag teal print tl-tag" id="tl-b">GTA VI · 2026</div>
+
+  <div class="abs q kblocks print" id="q"></div>
+  <div class="abs note kpz-body" id="note"></div>
+</div>
+
+<script>
+  KPZ.theme();
+  const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+
+  // ---- texty variant (fakta: GTA V 17. 9. 2013, GTA VI 19. 11. 2026 = 13 let;
+  //      VeganFest Brno 3.–12. ročník = 2014–2025 → 10 ročníků mezi hrami) ----
+  const V = {
+    a: {
+      head: `<span class="l1"><span class="kb">Mezi GTA V a GTA VI</span><br><span class="kb cream">jsme udělali</span></span><br>
+             <span class="l2"><span class="kb orange">10 VeganFestů</span></span>`,
+      q: `<span class="kb maroon">Kolik jich stihneme</span><br><span class="kb maroon">do GTA VII?</span>`,
+      note: `Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.`,
+    },
+    b: {
+      head: `<span class="l1"><span class="kb">Čekání na GTA VI:</span> <span class="kb cream">13 let</span><br><span class="kb">Mezitím my:</span></span><br>
+             <span class="l2"><span class="kb orange">10 VeganFestů</span></span>`,
+      q: `<span class="kb maroon">A kolik jich bude</span><br><span class="kb maroon">do GTA VII?</span>`,
+      note: `Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.`,
+    },
+    c: {
+      head: `<span class="l1"><span class="kb">Mezi GTA V a GTA VI</span><br><span class="kb cream">jsme udělali</span></span><br>
+             <span class="l2"><span class="kb orange">10 VeganFestů</span></span>`,
+      q: `<span class="kb maroon">Do GTA VII? Při tempu</span><br><span class="kb maroon">Rockstaru tak 13.</span>`,
+      note: `Máš jiný tip? Napiš ho do komentářů.<br><b>VeganFest 2027</b> už je ohlášený.`,
+    },
+  }[v] || null;
+
+  document.getElementById('head').innerHTML = V.head;
+  document.getElementById('q').innerHTML = V.q;
+  document.getElementById('note').innerHTML = V.note;
+
+  // ---- ovladač jako linoryt nálepka (kresba = věc) ----
+  const N = KPZ.colors.NAVY, C = KPZ.colors.CREAM, R = KPZ.colors.RASP;
+  document.getElementById('pad').innerHTML = `
+    <svg viewBox="0 0 240 170" width="100%" overflow="visible"><g filter="url(#kpz-lino)">
+      <path d="M58,22 C84,14 156,14 182,22 C212,30 230,70 236,118 C240,150 222,166 204,160 C188,155 176,132 160,122 C140,112 100,112 80,122 C64,132 52,155 36,160 C18,166 0,150 4,118 C10,70 28,30 58,22 Z" fill="${N}"/>
+      <path d="M52,62 h18 v-18 h16 v18 h18 v16 h-18 v18 h-16 v-18 h-18 Z" fill="${C}"/>
+      <circle cx="170" cy="54" r="10" fill="${C}"/><circle cx="192" cy="74" r="10" fill="${R}"/>
+      <circle cx="148" cy="74" r="10" fill="${C}"/><circle cx="170" cy="94" r="10" fill="${C}"/>
+      <path d="M108,58 h24" stroke="${C}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M40,40 C52,32 64,30 74,30" fill="none" stroke="${C}" stroke-width="4" stroke-linecap="round"/>
+    </g></svg>`;
+
+  // ---- rozložení podle výšky textů (až po načtení písma) ----
+  const $ = (id) => document.getElementById(id);
+  document.fonts.ready.then(layout);
+  function layout() {
+  const head = $('head');
+  head.style.top = '170px';
+  const headBottom = 170 + head.offsetHeight;
+  // ovladač vpravo vedle krátkého krémového řádku (2. blok v nadpisu)
+  const pad = $('pad');
+  const ref = head.querySelectorAll('.l1 .kb'); const r2 = ref[ref.length - 1].getBoundingClientRect();
+  pad.style.left = '800px'; pad.style.top = (r2.top + r2.height / 2 - 118) + 'px'; pad.style.transform = 'rotate(-10deg)';
+
+  const tlY = headBottom + 140;                 // osa
+  $('tl-line').setAttribute('d', `M96,${tlY} L984,${tlY} M96,${tlY - 24} L96,${tlY + 24} M984,${tlY - 24} L984,${tlY + 24}`);
+  const hearts = $('hearts');
+  for (let i = 0; i < 10; i++) {
+    const x = 176 + i * (728 / 9), rot = [-8, 6, -4, 9, -7, 4, -9, 7, -5, 8][i];
+    const d = document.createElement('div');
+    d.className = 'heart';
+    d.style.left = (x - 39) + 'px';
+    d.style.top = (tlY - 96 + (i % 2 ? 6 : 0)) + 'px';
+    d.style.transform = `rotate(${rot}deg)`;
+    d.innerHTML = KPZ.sticker('heart');
+    hearts.appendChild(d);
+  }
+  const a = $('tl-a'), b = $('tl-b');
+  a.style.left = '64px'; a.style.top = (tlY + 40) + 'px';
+  b.style.left = (1016 - b.offsetWidth) + 'px'; b.style.top = (tlY + 40) + 'px';
+
+  const q = $('q');
+  q.style.top = (tlY + 128) + 'px';
+  const note = $('note');
+  note.style.top = (tlY + 128 + q.offsetHeight + 22) + 'px';
+  window.__layout = { headBottom, tlY, qBottom: tlY + 128 + q.offsetHeight, noteBottom: tlY + 150 + q.offsetHeight + note.offsetHeight };
+  }
+</script>
+</body>
+</html>
