@@ -62,8 +62,8 @@
       <div class="msgs">
         <div class="b out">Kam vyrazíme příště?</div>
         <div class="b in">Na VeganFest 2027&nbsp;<span class="emo">🌱</span></div>
-        <div class="b out">A co tam budeme krást?</div>
-        <div class="b in">Nic. Vstup je zdarma&nbsp;<span class="emo">😏</span></div>
+        <div class="b out" id="m3"></div>
+        <div class="b in" id="m4"></div>
       </div>
     </div>
     <div class="abs center kblocks print" id="a-bot"><span class="kb">VeganFest 2027</span> <span class="kb orange">vstup zdarma</span></div>
@@ -89,9 +89,18 @@
 </div>
 <script>
   KPZ.theme();
-  const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  const vq = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  const v = vq[0];
   document.body.dataset.v = v;
-  document.getElementById('credit').textContent = v === 'c' ? '' : 'Jason a Lucia: Rockstar Games (GTA VI)';
+  // znění pointy chatu: a1 (výchozí) / a2 / a3
+  const CHAT = {
+    '1': ['Jak se tam vloupáme?', 'Hlavním vchodem. Vstup je zdarma&nbsp;<span class="emo">😏</span>'],
+    '2': ['Beru kukly a páčidlo.', 'Nech to doma. Vstup je zdarma&nbsp;<span class="emo">😏</span>'],
+    '3': ['Kolik musíme ukrást na vstupenky?', 'Nic. Vstup je zdarma&nbsp;<span class="emo">😏</span>'],
+  }[vq[1] || '1'];
+  document.getElementById('m3').innerHTML = CHAT[0];
+  document.getElementById('m4').innerHTML = CHAT[1];
+  // řádek se zdrojem v grafice memu nedáváme (KPZ 2026-11-23) – zdroj je v assets/gta/README.md
 
   // minimapa (vlastní kresba): tmavá mapa, ulice, voda, fialová trasa, šipka hráče, cíl = srdce
   (function map() {
