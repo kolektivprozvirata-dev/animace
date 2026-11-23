@@ -63,6 +63,6 @@ Popisky:
 Tvrzení: vstup zdarma (viz výše). Avatar Lucie = výřez z oficiálního artworku (GTA VI). Minimapa je vlastní kresba.
 
 Popisky:
-- A: Jason a Lucia mají nový plán. 😏 VeganFest 2027 – vstup zdarma, takže krást nic nemusíš. Tagni svou Lucii / svého Jasona 👇
+- A (vybraná pointa: kukly a páčidlo): Jason a Lucia mají nový plán. 😏 Kukly a páčidlo nech doma – VeganFest 2027 je zdarma. 🌱 Tagni svou Lucii / svého Jasona 👇
 - B: Grand Theft Auto VI? Na VeganFestu 2027 krást nemusíš – vstup je zdarma. 🌱
 - C: 📍 Nový cíl na mapě: VeganFest 2027. Vstup zdarma, trasa je na tobě.

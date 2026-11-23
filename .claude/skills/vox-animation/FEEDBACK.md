@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.8**
+**Verze skillu: 0.27.9**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -61,7 +61,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 
 ## ✅ Osvědčené (nechat tak)
 
-- Meme jako SMS chat Jasona a Lucie (GTA VI) – „mega se mi líbí ten chat“. Pointa musí logicky navazovat na otázku (lupiči → vloupání → „vstup je zdarma“). _(kpz-gta-meme-krast A)_
+- Meme jako SMS chat Jasona a Lucie (GTA VI) – „mega se mi líbí ten chat“. Pointa musí logicky navazovat na otázku; vyhrála „Beru kukly a páčidlo.“ → „Nech to doma. Vstup je zdarma 😏“ – „nejlepší verze, chválím“ (konkrétní obraz z hry > abstraktní otázka). _(kpz-gta-meme-krast A2)_
 - Meme textem pod sebou „VEGANFEST 2027 / JE VÍC NEŽ / [postavy] / GTA VI“ – „ta vpravo je stokrát lepší“ než varianta se znaménkem „>“. Pointa dole krátce a větší („Na nás nemusíš čekat 13 let.“). _(kpz-gta-meme-vic B)_
 - Počítadlo čísla nabíhá z nuly se slovem (104 farem) – „líbí se mi, jak to z nuly nabíhá“. _(kpz-telata v15)_
 
@@ -171,3 +171,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-21 | 0.27.6 | kpz-gta-meme-krast | „Není špatný. Klidně zkus ještě něco.“ (k trendovým variantám) | `meme-krast.html`: A SMS Jason → Lucia („A co tam budeme krást?“ „Nic. Vstup je zdarma 😏“), B plakát „V GTA VI se krade. Na VeganFestu nemusíš nic krást. Vstup je zdarma.“ (hříčka na Grand Theft), C minimapa „Nový cíl na mapě: VeganFest 2027“ (vlastní kresba, fialová trasa, cíl = srdce). |
 | 2026-11-23 | 0.27.7 | kpz-gta-meme-vic B | „U VeganFest 2027 je víc než GTA dole oddělej ten zdroj fotky. Běžně to používají lidi a nikdo neřeší zdroj.“ | Řádek „Jason a Lucia: Rockstar Games (GTA VI)“ z obrázku odstraněn; zdroj zůstává jen v `assets/gta/README.md`. Pravidlo [meme] upraveno. |
 | 2026-11-23 | 0.27.8 | kpz-gta-meme-krast A | „Mega se mi líbí ten chat. Ale nedává moc smysl ‚A co tam budeme krást?‘ – ‚Nic. Vstup je zdarma.‘ … ani moje varianta není dobrá.“ | Tři znění pointy (a1 „Jak se tam vloupáme?“ – „Hlavním vchodem. Vstup je zdarma 😏“, a2 kukly a páčidlo – „Nech to doma“, a3 „Kolik musíme ukrást na vstupenky?“ – „Nic“). Bez řádku se zdrojem. Poučení: u vtipu ověřit, že odpověď je logická reakce na otázku. |
+| 2026-11-23 | 0.27.9 | kpz-gta-meme-krast A | „To s tím páčidlem je nejlepší verze, chválím :)“ | A2 nastavena jako výchozí (`krast:a` = kukly a páčidlo), popisek upraven. Do Osvědčených. |

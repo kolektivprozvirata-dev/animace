@@ -92,12 +92,12 @@
   const vq = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
   const v = vq[0];
   document.body.dataset.v = v;
-  // znění pointy chatu: a1 (výchozí) / a2 / a3
+  // znění pointy chatu: a1 / a2 (výchozí, vybrané) / a3
   const CHAT = {
     '1': ['Jak se tam vloupáme?', 'Hlavním vchodem. Vstup je zdarma&nbsp;<span class="emo">😏</span>'],
     '2': ['Beru kukly a páčidlo.', 'Nech to doma. Vstup je zdarma&nbsp;<span class="emo">😏</span>'],
     '3': ['Kolik musíme ukrást na vstupenky?', 'Nic. Vstup je zdarma&nbsp;<span class="emo">😏</span>'],
-  }[vq[1] || '1'];
+  }[vq[1] || '2'];   // vybráno KPZ 2026-11-23: a2 (kukly a páčidlo)
   document.getElementById('m3').innerHTML = CHAT[0];
   document.getElementById('m4').innerHTML = CHAT[1];
   // řádek se zdrojem v grafice memu nedáváme (KPZ 2026-11-23) – zdroj je v assets/gta/README.md
