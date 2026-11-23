@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.6**
+**Verze skillu: 0.27.7**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -57,7 +57,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[pohyb]** Výstřižky z fotek se lehce třesou jako papír (≈2 px, 0,6°, 6× za s) – stejně jako kreslené prvky, ale klidněji. _(2026-10-19, kpz-telata v7)_
 - **[workflow]** Nápady KPZ sbírat do `dalsi-verze.md` (sekce „Do vN“), připravit podklady (výřezy), a vyrábět až na pokyn („pojď do toho“). _(2026-10-19)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
-- **[meme]** Meme / reakce na popkulturu (např. GTA VI): **naše grafika + rozpoznatelné prvky originálu** (písmo nebo jeho barvy, oficiální obrázky). **Nejzapamatovatelnější jsou hlavní postavy** (oficiální artworky jako papírové výstřižky, ořez bez zbraní) – ne krajiny ani obecné screenshoty („vůbec se mi to nelíbí“). **Jednoduše a velké** – max. 3–4 prvky, text čitelný i v náhledu feedu („udělej to jednoduše a ať to jde vidět“). Obrázky jen z oficiální mediální sekce (press/media kit), vybírat bez zbraní, násilí a alkoholu (u KPZ nejlépe zvířata na svobodě), malý řádek „Obrázky: <autor>“; zdroj zapsat do `assets/<…>/README.md`. Písmo originálu jen s volnou licencí (např. Pricedown), proprietární fonty z webu hry nepoužívat. _(2026-11-21, kpz-gta-meme)_
+- **[meme]** Meme / reakce na popkulturu (např. GTA VI): **naše grafika + rozpoznatelné prvky originálu** (písmo nebo jeho barvy, oficiální obrázky). **Nejzapamatovatelnější jsou hlavní postavy** (oficiální artworky jako papírové výstřižky, ořez bez zbraní) – ne krajiny ani obecné screenshoty („vůbec se mi to nelíbí“). **Jednoduše a velké** – max. 3–4 prvky, text čitelný i v náhledu feedu („udělej to jednoduše a ať to jde vidět“). Obrázky jen z oficiální mediální sekce (press/media kit), vybírat bez zbraní, násilí a alkoholu (u KPZ nejlépe zvířata na svobodě); zdroj zapsat do `assets/<…>/README.md`, **v grafice memu řádek se zdrojem nedávat** (KPZ: „běžně to lidi používají a nikdo neřeší zdroj“). Písmo originálu jen s volnou licencí (např. Pricedown), proprietární fonty z webu hry nepoužívat. _(2026-11-21, kpz-gta-meme)_
 
 ## ✅ Osvědčené (nechat tak)
 
@@ -168,3 +168,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-21 | 0.27.4 | kpz-gta-meme-vic B | „Ještě tam přidej ‚A je to zdarma‘.“ | Druhý řádek pointy „A je to zdarma.“ (teal, tučně), celá kompozice o 30 px výš. |
 | 2026-11-21 | 0.27.5 | kpz-gta-meme-trend | „Jo to je nejlepší varianta (je víc než + zdarma). Zkus ještě udělat další varianty… hrej si. Přemýšlej jako zkušený marketér, upoutat na VeganFest a držet se trendu.“ | `meme-trend.html`: A „Mise splněna!“ (13 let čekání) → další mise VeganFest 2027; B srovnání GTA VI × VeganFest 2027 (cena 79,99 € × zdarma, jídlo, čekání) → „Proč ne obojí?“ (bez shazování hráčů); C hvězdy hledanosti „Hledá tě VeganFest 2027. Přijď dobrovolně.“ Formáty, které hráči znají z HUD hry. |
 | 2026-11-21 | 0.27.6 | kpz-gta-meme-krast | „Není špatný. Klidně zkus ještě něco.“ (k trendovým variantám) | `meme-krast.html`: A SMS Jason → Lucia („A co tam budeme krást?“ „Nic. Vstup je zdarma 😏“), B plakát „V GTA VI se krade. Na VeganFestu nemusíš nic krást. Vstup je zdarma.“ (hříčka na Grand Theft), C minimapa „Nový cíl na mapě: VeganFest 2027“ (vlastní kresba, fialová trasa, cíl = srdce). |
+| 2026-11-23 | 0.27.7 | kpz-gta-meme-vic B | „U VeganFest 2027 je víc než GTA dole oddělej ten zdroj fotky. Běžně to používají lidi a nikdo neřeší zdroj.“ | Řádek „Jason a Lucia: Rockstar Games (GTA VI)“ z obrázku odstraněn; zdroj zůstává jen v `assets/gta/README.md`. Pravidlo [meme] upraveno. |
