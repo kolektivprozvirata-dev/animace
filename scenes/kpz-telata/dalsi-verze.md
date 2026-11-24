@@ -298,3 +298,9 @@ KPZ: „Já ale chtěl oddělat to do těch 12 hodin. A začít tím výzkumným
 
 KPZ: „U té fotky kravínu v 0:44 trošku stáhnout tu přeexponovanost.“ → `kravin-pres-plot-upr.jpg`: světla stažena (33 % plochy bylo přepálených – nebe, bílá zeď; teď nic nad 230), jemný kontrast ve středech a sytost, ať fotka nezšedne. Hlas v41 beze změny, 2:58,8. Render `out/kpz-telata-reel-v43.mp4`.
 
+## v44 (2026-11-24) – další dvě fotky kravínů, rychlé střídání
+
+KPZ: „Jak tam ukazujeme ty kravíny, přidej ještě tyto dva obrázky. V jednom jde vidět známka, rozbluruj. A nenatahuj to video, klidně ať se kravíny střídají rychle.“ + „Ten první ukazuje detail těch hoven. Mezi slámou.“
+- Hygiena 0:37–0:45, 6 fotek po ~1 s (přejezd 0,3 s místo 0,45 s): hala zhora („velkokapacitní haly“) → krávy ve slámě („spousta krav“) → **boxy z boku** („pod jednou střechou“) → **výkaly mezi slámou u žlabu** („výkaly a moč“) → boxy na roštech („přibývají průběžně“) → kravín přes plot („A i když se“).
+- Čísla na známkách rozostřená, „Ilustrační záběr“. Hlas v41 beze změny, 2:58,8. Render `out/kpz-telata-reel-v44.mp4`.
+

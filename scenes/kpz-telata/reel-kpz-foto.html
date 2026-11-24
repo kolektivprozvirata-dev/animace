@@ -141,6 +141,9 @@
     <div class="kpz-cut" id="g-photo3" style="left:90px; top:380px; width:900px"><img src="assets/foto-kpz/vystrizky/hala-boxy-lezi.png"><div class="abs ilu">Ilustrační záběr</div></div>
     <!-- v38: starý kravín přes plot, hromada hnoje (KPZ 2026-11-18) – při „průběžně“ -->
     <div class="kpz-cut" id="g-photo4" style="left:27px; top:430px; width:1026px"><img src="assets/foto-kpz/vystrizky/kravin-pres-plot.png"><div class="abs ilu">Ilustrační záběr</div></div>
+    <!-- v44 (KPZ 2026-11-24): holštýnky ležící v boxech z boku – „pod jednou střechou“; detail výkalů mezi slámou u žlabu – „výkaly a moč“ (čísla známek rozostřená) -->
+    <div class="kpz-cut" id="g-photo5" style="left:65px; top:400px; width:950px"><img src="assets/foto-kpz/vystrizky/kravin-boxy-bok.png"><div class="abs ilu">Ilustrační záběr</div></div>
+    <div class="kpz-cut" id="g-photo6" style="left:30px; top:390px; width:1020px"><img src="assets/foto-kpz/vystrizky/kravin-cumaky.png"><div class="abs ilu">Ilustrační záběr</div></div>
     <div class="panel" id="g-barn" style="background:#d2b8a3">
       <svg width="900" height="640" style="position:absolute;left:0;top:0" id="g-dirt"></svg>
       <div id="g-herd"></div>
@@ -409,13 +412,13 @@
     const b = boil(t, seed, 1.2, 0.25); set(sel, { x: x + b.x, y: y + b.y, r: r + b.r, s, o });
   };
   /** panel, který vjede zprava a odjede doleva */
-  const panelIO = (sel, t, tin, tout, oMul = 1) => {
-    const pin = prog(t, tin, 0.45, ease.inOutCubic), pout = prog(t, tout, 0.45, ease.inOutCubic);
+  const panelIO = (sel, t, tin, tout, oMul = 1, dur = 0.45) => {
+    const pin = prog(t, tin, dur, ease.inOutCubic), pout = prog(t, tout, dur, ease.inOutCubic);
     set(sel, { x: (1 - pin) * 1100 - pout * 1100, o: (pin > 0 && pout < 1 ? 1 : 0) * oMul });
     return pin * (1 - pout);
   };
   /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
-  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#h-duo', '#g-calf', '#g-photo', '#g-photo2', '#g-photo3', '#g-photo4', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
+  const PHOTOS = ['#h0-photo', '#h-pair', '#h-cow', '#h-calf', '#h-bcalf', '#h-aerial', '#h-duo', '#g-calf', '#g-photo', '#g-photo2', '#g-photo3', '#g-photo4', '#g-photo5', '#g-photo6', '#g-past', '#z-past', '#p-photo', '#m-cow', '#j-bull', '#j-cowd'];
   const jiggle = (t) => PHOTOS.forEach((sel) => {
     const b = boil(Math.floor(t * 6) / 6, sel, 2, 0.6);
     $(sel + ' > img').style.transform = `translate(${b.x.toFixed(2)}px, ${b.y.toFixed(2)}px) rotate(${b.r.toFixed(3)}deg)`;
@@ -597,18 +600,24 @@
         set('#germ' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 - outA : 0 }); });
       // b) kravín
       const tDirt = W('hyg2', 'uklízejí') - 0.35, tHall = W('hyg2', 'mámou') - 0.35;
-      const tBoxy = W('hyg2', 'výkaly') - 0.3;   // v30: krávy v boxech na roštech (KPZ)
-      const tSwap = W('hyg2', 'spousta') - 0.25;
+      // v44: šest fotek kravínů v rychlém sledu (KPZ: „klidně ať se střídají rychle“, délka videa stejná)
+      const tSwap = W('hyg2', 'haly') - 0.15;          // hala zhora → krávy ve slámě („spousta krav“)
+      const tCub = W('hyg2', 'jednou') - 0.43;         // → boxy z boku („pod jednou střechou“)
+      const tMuz = W('hyg2', 'výkaly') - 0.14;         // → výkaly mezi slámou u žlabu („výkaly a moč“)
+      const tBoxy = W('hyg2', 'přibývají') - 0.07;     // → krávy v boxech na roštech (v30)
+      const tPlot = W('hyg2', 'průběžně') + 0.35;      // → kravín přes plot (v38)
+      const F = 0.3;                                    // rychlejší přejezd fotek
       panelIO('#g-pen', t, t2 - 0.2, tHall);
       ['#gp-c1', '#gp-c2', '#gp-c3', '#gp-k'].forEach((sel, i) => cutout(sel, t, 'gpc' + i, 0, 0, GPR[i]));
       PG.forEach((g, i) => { const p = pop(t, W('hyg2', 'nákazy') - 0.2 + i * 0.1, 0.3); const b = boil(t, 'pg' + i, 3, 8);
         set('#pgerm' + i, { x: b.x, y: b.y, r: b.r * 4, s: p, o: p > 0 ? 1 : 0 }); });
       popIn('#g-ptag', t, W('hyg2', 'společných') - 0.1, { r: -2, o: 1 - prog(t, tHall, 0.2) });
-      panelIO('#g-photo', t, tHall, tSwap);
-      panelIO('#g-photo2', t, tSwap, tBoxy);
-      const tPlot = W('hyg2', 'průběžně') - 0.25;   // v38: kravín přes plot (KPZ)
-      panelIO('#g-photo3', t, tBoxy, tPlot);
-      panelIO('#g-photo4', t, tPlot, tDirt);
+      panelIO('#g-photo', t, tHall, tSwap, 1, F);
+      panelIO('#g-photo2', t, tSwap, tCub, 1, F);
+      panelIO('#g-photo5', t, tCub, tMuz, 1, F);
+      panelIO('#g-photo6', t, tMuz, tBoxy, 1, F);
+      panelIO('#g-photo3', t, tBoxy, tPlot, 1, F);
+      panelIO('#g-photo4', t, tPlot, tDirt, 1, F);
       const tR = T('hyg2b') - 0.2;   // „Ani v kravínech ale výzkumy…“ – hala se vrátí s kartou studií
       if (t < tR - 0.1) panelIO('#g-barn', t, tDirt, t3 - 0.2); else panelIO('#g-barn', t, tR, t4 - 0.15);
       animHerd('gh', NG, t, tDirt + 0.25);

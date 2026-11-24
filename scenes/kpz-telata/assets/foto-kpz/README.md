@@ -22,6 +22,8 @@ Výstřižky v `vystrizky/` vyrobené `.claude/skills/vox-animation/scripts/cuto
 | pastva-skutecna-blize.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11; nafoceno pro toto video, souhlas s použitím, autorku neuvádět): stádo tzv. masných krav u stromů, telata u krav, podzim | blob `pastva-skutecna-blize-tvar.png` – v34 hygiena 0:46 |
 | telata-boudy-dve.jpg | dvě holštýnská telata, každé ve své boudě za ohrádkou (KPZ 2026-11-18) | `-upr.jpg` (čísla na 4 známkách rozostřená) → kus `telata-boudy-dve.png` – v38 hook 0:15 („přestože je to společenské zvíře“) |
 | kravin-pres-plot.jpg | starý kravín přes pletivo, krávy za zábranami, hromada hnoje (KPZ 2026-11-18; známky v dálce nečitelné) | `-upr.jpg` (v43: stažené přepálené světlo – nebe a bílá zeď, jemný kontrast) → kus `kravin-pres-plot.png` – hygiena 0:44 („průběžně“) |
+| kravin-boxy-bok.jpg | holštýnky ležící v boxech, pohled z boku (KPZ 2026-11-24, snímek z videa) | kus `kravin-boxy-bok.png` – v44 hygiena 0:41 („pod jednou střechou“) |
+| kravin-cumaky.jpg | čumáky českých strakatých krav u žlabu, výkaly mezi slámou (KPZ 2026-11-24) | `-upr.jpg` (čísla na 2 známkách rozostřená) → kus `kravin-cumaky.png` (spodek fotky = podlaha) – v44 hygiena 0:42 („výkaly a moč“) |
 | pastva-skutecna-dal.jpg | **skutečná fotka** (kamarádka KPZ, 2026-11; nafoceno pro toto video, souhlas s použitím, autorku neuvádět): stádo daleko na pastvě, podzimní les, západ slunce | blob `pastva-skutecna-dal-tvar.png` (přiblíženo) – v34 zalehnutí 1:06 |
 | masne-pastva-rada.jpg | krávy s telaty jdou v řadě po svahu (KPZ 2026-10-25) | zatím nepoužito (zvířata malá) |
 | masne-pastva-celem.jpg | krávy čelem k fotografovi, ležící kráva s teletem (KPZ 2026-10-25) | zatím nepoužito (málo telat) |
@@ -91,4 +93,8 @@ v16 (2026-10-25) – nové pastviny (čísla na známkách nečitelně malá, be
     python3 $S telata-boudy-dve-upr.jpg vystrizky/telata-boudy-dve.png --piece --seed 27 --crop 110,0,2000,1074 --scale 0.5
     # v43: světla stažena křivkou (gamma 1,08, rameno od 0,55 do max. 0,90, jemná S-křivka, sytost 1,1) → kravin-pres-plot-upr.jpg
     python3 $S kravin-pres-plot-upr.jpg vystrizky/kravin-pres-plot.png --piece --seed 33 --crop 0,90,2000,1000 --scale 0.5
+    # v44
+    python3 $T kravin-cumaky.jpg kravin-cumaky-upr.jpg --rect 905,225,1015,315 --rect 1658,255,1795,295 --radius 14
+    python3 $S kravin-cumaky-upr.jpg vystrizky/kravin-cumaky.png --piece --seed 41 --crop 0,170,2000,1349 --scale 0.5
+    python3 $S kravin-boxy-bok.jpg vystrizky/kravin-boxy-bok.png --piece --seed 43 --crop 140,0,2000,1069 --scale 0.5
     python3 $S pastva-skutecna-dal.jpg vystrizky/pastva-skutecna-dal-tvar.png --shape blob --tight 0.75 --seed 91 --crop 360,650,1720,1170
