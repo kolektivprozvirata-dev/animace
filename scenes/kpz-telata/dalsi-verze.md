@@ -304,3 +304,7 @@ KPZ: „Jak tam ukazujeme ty kravíny, přidej ještě tyto dva obrázky. V jedn
 - Hygiena 0:37–0:45, 6 fotek po ~1 s (přejezd 0,3 s místo 0,45 s): hala zhora („velkokapacitní haly“) → krávy ve slámě („spousta krav“) → **boxy z boku** („pod jednou střechou“) → **výkaly mezi slámou u žlabu** („výkaly a moč“) → boxy na roštech („přibývají průběžně“) → kravín přes plot („A i když se“).
 - Čísla na známkách rozostřená, „Ilustrační záběr“. Hlas v41 beze změny, 2:58,8. Render `out/kpz-telata-reel-v44.mp4`.
 
+## Thumbnail (2026-11-24)
+
+KPZ: „Můžeš k tomu udělat thumbnail?“ → `thumbnail.html` (1080×1920, styl KPZ): nadpis z hooku „Krabice mléka z obchodu začíná porodem.“, kráva a od ní odtržené tele (stejné výstřižky jako v hooku), štítek „Tele pryč od mámy“. Vše podstatné ve středu 3:4 (y 240–1680) kvůli mřížce profilu. Render: `node …/render.mjs thumbnail.html --still 1 --out out/thumbnail-v1.png` → `out/kpz-telata-thumbnail.jpg` + náhled mřížky `out/kpz-telata-thumbnail-mrizka-3x4.jpg`.
+

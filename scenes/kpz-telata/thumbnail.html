@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>KPZ – telata: thumbnail reelu</title>
+<link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
+<link rel="stylesheet" href="../../brand/kpz/kpz-theme.css">
+<script src="../../.claude/skills/vox-animation/runtime/vox.js"></script>
+<script src="../../.claude/skills/vox-animation/runtime/vox-icons.js"></script>
+<script src="../../brand/kpz/kpz-theme.js"></script>
+<style>
+  /* Titulní obrázek (cover) reelu o telatech – 1080×1920. Důležité věci drží uvnitř středového výřezu 3:4
+     (y 240–1680), který Instagram ukazuje v mřížce profilu. Render: render.mjs thumbnail.html --still 1 --out … */
+  .h1 { font-size: 132px; line-height: 1; }
+  #wm { left: 56px; top: 96px; width: 132px; }
+  #wm img { width: 100%; display: block; }
+  .stk { position: absolute; }
+</style>
+</head>
+<body class="kpz">
+<div id="stage">
+  <div class="layer" style="opacity:1"><div class="world">
+    <div class="abs eyebrow" style="left:80px; top:300px">Mléčné chovy · Česko</div>
+    <div class="abs h1 kblocks print" id="head" style="left:70px; top:356px; width:940px"><span class="kb">Krabice mléka</span><br><span class="kb cream">z obchodu</span><br><span class="kb">začíná</span> <span class="kb hl" id="hl">porodem.</span></div>
+    <div class="stk" id="st" style="left:860px; top:250px; width:170px"></div>
+    <!-- stejná dvojice fotek jako v hooku videa: kráva zůstane, tele je „vytržené“ pryč -->
+    <div class="kpz-cut" id="cow" style="left:0px; top:965px; width:620px"><img src="assets/foto-kpz/vystrizky/trh2-mama.png"></div>
+    <div class="kpz-cut" id="calf" style="left:584px; top:950px; width:620px; rotate: 8deg"><img src="assets/foto-kpz/vystrizky/trh2-tele.png"></div>
+    <div class="abs tag red big print" id="tag" style="left:90px; top:1470px; font-size:66px; white-space:nowrap; transform: rotate(-3deg)">Tele pryč od mámy</div>
+  </div></div>
+  <div class="abs" id="wm"></div>
+</div>
+<script>
+  VOX.setup({ width: 1080, height: 1920, duration: 2, vignette: 0.1, grain: 0, background: 'none' });
+  KPZ.theme();
+  document.getElementById('wm').innerHTML = '<img src="../../brand/kpz/logo-kpz-svetle.png" alt="">';
+  document.getElementById('st').innerHTML = KPZ.sticker('sprig');
+  VOX.scene(() => { VOX.highlight('#hl', 1); });
+</script>
+</body>
+</html>
