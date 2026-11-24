@@ -27,16 +27,34 @@ VeganFest 2027 se blíží a je víc než GTA VI:
 Dej „Mám zájem“ u události, pozvi parťáka, se kterým půjdeš, a o nic nepřijdeš 👉 [odkaz na událost]
 Víc na veganfest.cz 🌱
 
-## 3. Instagram – společný příspěvek (Collab) KPZ + VeganFest
+## 3. Společný příspěvek (Collab) KPZ + VeganFest – vybráno, jde jako collab
+
+**Hlavní verze (doporučená):**
 
 VeganFest 2027 > GTA VI. Nebo nesouhlasíš? 👀
 
-Na GTA se čekalo 13 let. Na nás nemusíš – a vstup je zdarma. 🌱
-📅 [datum] · 📍 Brno
+🎮 Na GTA VI se čekalo 13 let. Na VeganFest nemusíš.
+💸 GTA VI stojí 79,99 €. VeganFest je zdarma.
+🍔 V GTA je jídlo jen na obrazovce. U nás si ho dáš doopravdy – a veganské.
 
+📅 [datum] · 📍 Brno
 Odkaz na událost a web najdeš v biu. Tagni parťáka, se kterým dorazíš 👇
 
+Správná odpověď je stejně obojí. 😉
+
 #VeganFest #VeganFest2027 #GTA6 #GTAVI #vegan #Brno #KolektivProZvirata
+
+**Krátká verze (záloha):**
+
+VeganFest 2027 > GTA VI. 👀
+Na GTA se čekalo 13 let. Na nás nemusíš – a vstup je zdarma. 🌱
+📅 [datum] · 📍 Brno · odkaz v biu
+Tagni parťáka, se kterým dorazíš 👇
+
+#VeganFest #VeganFest2027 #GTA6 #GTAVI #vegan #Brno #KolektivProZvirata
+
+**Ke collabu:** odkaz na událost/web mít v biu obou účtů; na komentáře odpovídat z obou účtů;
+první komentář dát hned po zveřejnění (viz bod 5).
 
 ## 4. Stories (oba účty)
 
