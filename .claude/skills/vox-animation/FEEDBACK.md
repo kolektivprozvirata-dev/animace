@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.28.0**
+**Verze skillu: 0.28.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -62,6 +62,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 
 ## ✅ Osvědčené (nechat tak)
 
+- Popisek ke collabu: háček „X > GTA VI. Nebo nesouhlasíš?“, 3–4 argumenty se smajlíky (čekání, cena, program, jídlo jako bonus), datum + místo, „odkaz v biu“, výzva k tagování, smířlivé „obojí“ – „jo, líbí se mi to“. _(kpz-gta-meme popisky)_
 - Meme jako SMS chat Jasona a Lucie (GTA VI) – „mega se mi líbí ten chat“. Pointa musí logicky navazovat na otázku; vyhrála „Beru kukly a páčidlo.“ → „Nech to doma. Vstup je zdarma 😏“ – „nejlepší verze, chválím“ (konkrétní obraz z hry > abstraktní otázka). _(kpz-gta-meme-krast A2)_
 - Meme textem pod sebou „VEGANFEST 2027 / JE VÍC NEŽ / [postavy] / GTA VI“ – „ta vpravo je stokrát lepší“ než varianta se znaménkem „>“. Pointa dole krátce a větší („Na nás nemusíš čekat 13 let.“). _(kpz-gta-meme-vic B)_
 - Počítadlo čísla nabíhá z nuly se slovem (104 farem) – „líbí se mi, jak to z nuly nabíhá“. _(kpz-telata v15)_
@@ -174,3 +175,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-23 | 0.27.8 | kpz-gta-meme-krast A | „Mega se mi líbí ten chat. Ale nedává moc smysl ‚A co tam budeme krást?‘ – ‚Nic. Vstup je zdarma.‘ … ani moje varianta není dobrá.“ | Tři znění pointy (a1 „Jak se tam vloupáme?“ – „Hlavním vchodem. Vstup je zdarma 😏“, a2 kukly a páčidlo – „Nech to doma“, a3 „Kolik musíme ukrást na vstupenky?“ – „Nic“). Bez řádku se zdrojem. Poučení: u vtipu ověřit, že odpověď je logická reakce na otázku. |
 | 2026-11-23 | 0.27.9 | kpz-gta-meme-krast A | „To s tím páčidlem je nejlepší verze, chválím :)“ | A2 nastavena jako výchozí (`krast:a` = kukly a páčidlo), popisek upraven. Do Osvědčených. |
 | 2026-11-24 | 0.28.0 | kpz-gta-meme (popisky) | „VeganFest je hlavně přednáškový festival… přednášky, debaty, workshopy, ale jídlo je tam taky.“ „Reálně budou čekat ještě tři měsíce.“ „Nebyl ročník 20 a 21 díky covidu, byl 19 a pak 22.“ | Fakta z veganfest.cz do `brand/kpz/README.md`; popisky přepsány (9 dní přednášek, debat a workshopů, 27. 2. – 7. 3. 2027, „jen 3 měsíce“). **Oprava: mezi GTA V a VI bylo 11 VeganFestů, ne 10** (2026 = 13. ročník) – memy s počtem opraveny a znovu vyrenderovány. Řádek se zdrojem odstraněn i z ostatních memů. |
+| 2026-11-24 | 0.28.1 | kpz-gta-meme (popisky) | „Jo, líbí se mi to.“ | Popisek do Osvědčených. K obrázku přidána alternativa `vic:b2` („Na nás čekáš jen 3 měsíce.“) vedle schválené `vic:b` („13 let“) – nejasné, zda „jo“ patřilo i k nabídce změny obrázku. |

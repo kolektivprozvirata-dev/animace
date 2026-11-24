@@ -71,8 +71,11 @@
 </div>
 <script>
   KPZ.theme();
-  const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  const vq = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
+  const v = vq[0];
   document.body.dataset.v = v;
+  // b2: alternativní pointa dole (3 měsíce do VeganFestu 2027, 27. 2.); b = schválená „13 let“
+  if (vq === 'b2') document.getElementById('b-sub').innerHTML = 'Na nás čekáš jen 3 měsíce.<br><b>A je to zdarma.</b>';
   document.fonts.ready.then(() => {
     const r = (id) => { const e = document.getElementById(id); return e ? [e.offsetLeft, e.offsetTop, e.offsetWidth, e.offsetHeight] : null; };
     window.__layout = { v, aVf: r('a-vf'), aDuo: r('a-duo'), bDuo: r('b-duo'), bTag: r('b-tag') };
