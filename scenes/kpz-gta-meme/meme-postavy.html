@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>KPZ – meme GTA VI × VeganFest, verze s postavami (4:5)</title>
 <!-- Hlavní postavy: GTA V (Franklin, Michael, Trevor – 2013) a GTA VI (Jason a Lucia – 2026)
-     jako papírové výstřižky z oficiálních artworků Rockstaru (ořez bez zbraní), mezi nimi 10 VeganFestů.
+     jako papírové výstřižky z oficiálních artworků Rockstaru (ořez bez zbraní), mezi nimi 11 VeganFestů.
      GTA písmo: Pricedown (assets/fonts/pricedown.otf|ttf), jinak záloha Titan One (OFL).
      Render: node render.mjs postavy  →  out/kpz-gta-meme-postavy.png -->
 <link rel="stylesheet" href="../../.claude/skills/vox-animation/runtime/vox.css">
@@ -47,8 +47,8 @@
         <stop offset=".72" stop-color="#ff4f86"/><stop offset="1" stop-color="#c23fd1"/>
       </linearGradient>
     </defs>
-    <text class="gta-t" id="big-sh" x="540" text-anchor="middle" fill="#000" stroke="#000" stroke-linejoin="round">10 VeganFestů</text>
-    <text class="gta-t" id="big-t" x="540" text-anchor="middle" fill="url(#sunset)" stroke="#000" stroke-linejoin="round" paint-order="stroke fill">10 VeganFestů</text>
+    <text class="gta-t" id="big-sh" x="540" text-anchor="middle" fill="#000" stroke="#000" stroke-linejoin="round">11 VeganFestů</text>
+    <text class="gta-t" id="big-t" x="540" text-anchor="middle" fill="url(#sunset)" stroke="#000" stroke-linejoin="round" paint-order="stroke fill">11 VeganFestů</text>
   </svg>
 
   <div class="abs" id="hearts"></div>
@@ -58,7 +58,6 @@
   <div class="abs tag teal print year" id="y6">GTA VI · 2026</div>
 
   <div class="abs kpz-body" id="note">Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.</div>
-  <div class="abs kpz-body" id="credit">Postavy: Rockstar Games (GTA V, GTA VI)</div>
 </div>
 <script>
   KPZ.theme();
@@ -76,20 +75,22 @@
     const bh = Math.round(bb.height + sw + off);
     big.setAttribute('height', bh); big.style.top = top + 'px';
     const bigBottom = top + bh;
-    // 10 srdcí ve dvou řadách po pěti (vlevo vedle Jasona a Lucie)
+    // 11 srdcí ve dvou řadách (6 + 5) (vlevo vedle Jasona a Lucie)
     const hy = bigBottom + 18;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 11; i++) {
       const d = document.createElement('div');
       d.className = 'heart';
-      d.style.left = (58 + (i % 5) * 88) + 'px';
-      d.style.top = (hy + Math.floor(i / 5) * 62 + (i % 2 ? 5 : 0)) + 'px';
-      d.style.transform = `rotate(${[-8, 6, -4, 9, -7, 4, -9, 7, -5, 8][i]}deg)`;
+      const row = i < 6 ? 0 : 1, col = i < 6 ? i : i - 6;
+      d.style.width = '72px';
+      d.style.left = (52 + col * 76 + row * 38) + 'px';
+      d.style.top = (hy + row * 62 + (i % 2 ? 5 : 0)) + 'px';
+      d.style.transform = `rotate(${[-8, 6, -4, 9, -7, 4, -9, 7, -5, 8, -6][i]}deg)`;
       d.innerHTML = KPZ.sticker('heart');
       $('hearts').appendChild(d);
     }
     const q = $('q'); q.style.top = (hy + 150) + 'px';
     const note = $('note'); note.style.top = (1350 - 40 - 74) + 'px';
-    $('credit').style.top = (1350 - 34) + 'px';
+    
     window.__layout = { fs, bigBottom, qBottom: q.offsetTop + q.offsetHeight, noteTop: note.offsetTop,
       duoBottom: $('duo').offsetTop + $('duo').offsetHeight };
   });

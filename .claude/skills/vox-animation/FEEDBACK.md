@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.9**
+**Verze skillu: 0.28.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -57,6 +57,7 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 - **[pohyb]** Výstřižky z fotek se lehce třesou jako papír (≈2 px, 0,6°, 6× za s) – stejně jako kreslené prvky, ale klidněji. _(2026-10-19, kpz-telata v7)_
 - **[workflow]** Nápady KPZ sbírat do `dalsi-verze.md` (sekce „Do vN“), připravit podklady (výřezy), a vyrábět až na pokyn („pojď do toho“). _(2026-10-19)_
 - **[technika]** Render snímků přes JPEG q95 (PNG zrnitých textur ~1 s/snímek); celoplošné SVG filtry kreslit jednou do canvasu, ne v každém snímku. _(2026-10-19)_
+- **[obsah]** U VeganFestu stavět texty hlavně na **přednáškách, debatách a workshopech**, jídlo jen jako doplněk; fakta (data, místa, ročníky) brát z www.veganfest.cz, ne z webu KPZ (ten může být pozadu). _(2026-11-24, kpz-gta-meme)_
 - **[meme]** Meme / reakce na popkulturu (např. GTA VI): **naše grafika + rozpoznatelné prvky originálu** (písmo nebo jeho barvy, oficiální obrázky). **Nejzapamatovatelnější jsou hlavní postavy** (oficiální artworky jako papírové výstřižky, ořez bez zbraní) – ne krajiny ani obecné screenshoty („vůbec se mi to nelíbí“). **Jednoduše a velké** – max. 3–4 prvky, text čitelný i v náhledu feedu („udělej to jednoduše a ať to jde vidět“). Obrázky jen z oficiální mediální sekce (press/media kit), vybírat bez zbraní, násilí a alkoholu (u KPZ nejlépe zvířata na svobodě); zdroj zapsat do `assets/<…>/README.md`, **v grafice memu řádek se zdrojem nedávat** (KPZ: „běžně to lidi používají a nikdo neřeší zdroj“). Písmo originálu jen s volnou licencí (např. Pricedown), proprietární fonty z webu hry nepoužívat. _(2026-11-21, kpz-gta-meme)_
 
 ## ✅ Osvědčené (nechat tak)
@@ -172,3 +173,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-23 | 0.27.7 | kpz-gta-meme-vic B | „U VeganFest 2027 je víc než GTA dole oddělej ten zdroj fotky. Běžně to používají lidi a nikdo neřeší zdroj.“ | Řádek „Jason a Lucia: Rockstar Games (GTA VI)“ z obrázku odstraněn; zdroj zůstává jen v `assets/gta/README.md`. Pravidlo [meme] upraveno. |
 | 2026-11-23 | 0.27.8 | kpz-gta-meme-krast A | „Mega se mi líbí ten chat. Ale nedává moc smysl ‚A co tam budeme krást?‘ – ‚Nic. Vstup je zdarma.‘ … ani moje varianta není dobrá.“ | Tři znění pointy (a1 „Jak se tam vloupáme?“ – „Hlavním vchodem. Vstup je zdarma 😏“, a2 kukly a páčidlo – „Nech to doma“, a3 „Kolik musíme ukrást na vstupenky?“ – „Nic“). Bez řádku se zdrojem. Poučení: u vtipu ověřit, že odpověď je logická reakce na otázku. |
 | 2026-11-23 | 0.27.9 | kpz-gta-meme-krast A | „To s tím páčidlem je nejlepší verze, chválím :)“ | A2 nastavena jako výchozí (`krast:a` = kukly a páčidlo), popisek upraven. Do Osvědčených. |
+| 2026-11-24 | 0.28.0 | kpz-gta-meme (popisky) | „VeganFest je hlavně přednáškový festival… přednášky, debaty, workshopy, ale jídlo je tam taky.“ „Reálně budou čekat ještě tři měsíce.“ „Nebyl ročník 20 a 21 díky covidu, byl 19 a pak 22.“ | Fakta z veganfest.cz do `brand/kpz/README.md`; popisky přepsány (9 dní přednášek, debat a workshopů, 27. 2. – 7. 3. 2027, „jen 3 měsíce“). **Oprava: mezi GTA V a VI bylo 11 VeganFestů, ne 10** (2026 = 13. ročník) – memy s počtem opraveny a znovu vyrenderovány. Řádek se zdrojem odstraněn i z ostatních memů. |

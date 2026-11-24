@@ -1,44 +1,19 @@
 # Popisky – „VeganFest 2027 je víc než GTA VI“ (2026-11-24)
 
 Obrázek: `out/kpz-gta-meme-vic-b.png` (render `node scenes/kpz-gta-meme/render.mjs vic:b`).
-Doplnit: **[datum]**, **[odkaz na událost]**. Ověřeno: 13 let mezi GTA V a VI, GTA VI 79,99 €, vstup zdarma (potvrdit pro 2027).
+Doplnit jen **[odkaz na událost]** (FB). Ověřeno: 13 let mezi GTA V a VI, GTA VI 79,99 €; VeganFest 2027 = 14. ročník, 27. 2. – 7. 3. 2027, Brno, vše zdarma, 9 dní (www.veganfest.cz).
 
-## 1. Facebook – Kolektiv pro zvířata
-
-VeganFest 2027 > GTA VI. A máme argumenty. 👇
-
-🎮 Na GTA VI se čekalo 13 let. Na nás nemusíš.
-💸 GTA VI stojí 79,99 €. VeganFest je zdarma.
-🍔 V GTA je jídlo jen na obrazovce. U nás si ho dáš doopravdy – a veganské.
-
-VeganFest 2027 je ohlášený a bude velký. Klikni u události na „Mám zájem“ a budeš vědět všechno jako první 👉 [odkaz na událost]
-
-Tak co, GTA VI, nebo VeganFest? Správná odpověď: obojí. 😉
-
-## 2. Facebook – VeganFest
-
-13 let čekání na GTA VI? To my neumíme. 😎
-
-VeganFest 2027 se blíží a je víc než GTA VI:
-✅ vstup zdarma
-✅ skutečné veganské jídlo, ne pixely
-✅ program a lidi, které na obrazovce nepotkáš
-
-Dej „Mám zájem“ u události, pozvi parťáka, se kterým půjdeš, a o nic nepřijdeš 👉 [odkaz na událost]
-Víc na veganfest.cz 🌱
-
-## 3. Společný příspěvek (Collab) KPZ + VeganFest – vybráno, jde jako collab
-
-**Hlavní verze (doporučená):**
+## 1. Společný příspěvek (Collab) KPZ + VeganFest – HLAVNÍ (aktualizováno 2026-11-24 podle veganfest.cz)
 
 VeganFest 2027 > GTA VI. Nebo nesouhlasíš? 👀
 
-🎮 Na GTA VI se čekalo 13 let. Na VeganFest nemusíš.
-💸 GTA VI stojí 79,99 €. VeganFest je zdarma.
-🍔 V GTA je jídlo jen na obrazovce. U nás si ho dáš doopravdy – a veganské.
+🎮 Na GTA VI se čekalo 13 let. Na VeganFest jen 3 měsíce.
+💸 GTA VI stojí 79,99 €. VeganFest je celý zdarma.
+🎤 Místo misí 9 dní přednášek, debat a workshopů o veganství a zvířatech.
+🍔 A jídlo u nás není jen na obrazovce.
 
-📅 [datum] · 📍 Brno
-Odkaz na událost a web najdeš v biu. Tagni parťáka, se kterým dorazíš 👇
+📅 27. 2. – 7. 3. 2027 · 📍 Brno
+Událost a web najdeš v biu. Tagni parťáka, se kterým dorazíš 👇
 
 Správná odpověď je stejně obojí. 😉
 
@@ -47,24 +22,38 @@ Správná odpověď je stejně obojí. 😉
 **Krátká verze (záloha):**
 
 VeganFest 2027 > GTA VI. 👀
-Na GTA se čekalo 13 let. Na nás nemusíš – a vstup je zdarma. 🌱
-📅 [datum] · 📍 Brno · odkaz v biu
+Na GTA se čekalo 13 let. Na nás jen 3 měsíce – 9 dní přednášek, debat a workshopů, a celé zdarma. 🌱
+📅 27. 2. – 7. 3. 2027 · 📍 Brno · odkaz v biu
 Tagni parťáka, se kterým dorazíš 👇
 
 #VeganFest #VeganFest2027 #GTA6 #GTAVI #vegan #Brno #KolektivProZvirata
 
-**Ke collabu:** odkaz na událost/web mít v biu obou účtů; na komentáře odpovídat z obou účtů;
-první komentář dát hned po zveřejnění (viz bod 5).
+**Ke collabu:** odkaz na událost/web v biu obou účtů; na komentáře odpovídat z obou účtů; první komentář hned po zveřejnění.
+
+## 2. Facebook (pokud zvlášť, ne jako collab)
+
+VeganFest 2027 > GTA VI. A máme argumenty. 👇
+
+🎮 Na GTA VI se čekalo 13 let. Na VeganFest jen 3 měsíce.
+💸 GTA VI stojí 79,99 €. VeganFest je celý zdarma.
+🎤 9 dní přednášek, debat a workshopů o veganství a zvířatech – pro zvědavce i zkušené vegany.
+🍔 A jídlo? U nás si ho dáš doopravdy.
+
+📅 27. 2. – 7. 3. 2027 · 📍 Brno – Co.Labs, Café Práh a další podniky
+Klikni u události na „Mám zájem“, ať ti nic neuteče 👉 [odkaz na událost]
+Víc na www.veganfest.cz
+
+Tak co, GTA VI, nebo VeganFest? Správná odpověď: obojí. 😉
 
 ## 4. Stories (oba účty)
 
 1. Sdílet příspěvek + anketa: „GTA VI 🎮 / VeganFest 2027 🌱“.
 2. Druhá story: nálepka s odkazem „VeganFest 2027“ → web nebo událost.
-3. Až bude datum: nálepka odpočtu „VeganFest 2027“ (lidi si zapnou připomenutí).
+3. Nálepka odpočtu „VeganFest 2027“ na 27. 2. 2027 (lidi si zapnou připomenutí).
 
 ## 5. První komentář (pod příspěvek hned po zveřejnění)
 
-- FB: „Hraješ už GTA VI, nebo čekáš na VeganFest? 🎮🌱 Víc na veganfest.cz“
+- FB: „Hraješ už GTA VI, nebo čekáš na VeganFest? 🎮🌱 Program a info: www.veganfest.cz“
 - IG: „Kdo dorazí na VeganFest 2027? Napište 🌱“
 
 ## 6. Popis obrázku (alt text)

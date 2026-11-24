@@ -32,7 +32,7 @@
 
   <div class="abs head kblocks print" id="head"></div>
 
-  <!-- časová osa: GTA V → GTA VI, 10 VeganFestů mezi nimi -->
+  <!-- časová osa: GTA V → GTA VI, 11 VeganFestů mezi nimi -->
   <svg class="abs" id="tl" width="1080" height="1350" style="left:0; top:0" overflow="visible">
     <defs>
       <!-- tah štětcem jako #kpz-brush, ale oblast filtru v pixelech (tenká vodorovná čára by se jinak ořízla) -->
@@ -59,23 +59,23 @@
   const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
 
   // ---- texty variant (fakta: GTA V 17. 9. 2013, GTA VI 19. 11. 2026 = 13 let;
-  //      VeganFest Brno 3.–12. ročník = 2014–2025 → 10 ročníků mezi hrami) ----
+  //      VeganFest Brno 2014–2019 a 2022–2026 (3.–13. ročník) → 11 ročníků mezi hrami) ----
   const V = {
     a: {
       head: `<span class="l1"><span class="kb">Mezi GTA V a GTA VI</span><br><span class="kb cream">jsme udělali</span></span><br>
-             <span class="l2"><span class="kb orange">10 VeganFestů</span></span>`,
+             <span class="l2"><span class="kb orange">11 VeganFestů</span></span>`,
       q: `<span class="kb maroon">Kolik jich stihneme</span><br><span class="kb maroon">do GTA VII?</span>`,
       note: `Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.`,
     },
     b: {
       head: `<span class="l1"><span class="kb">Čekání na GTA VI:</span> <span class="kb cream">13 let</span><br><span class="kb">Mezitím my:</span></span><br>
-             <span class="l2"><span class="kb orange">10 VeganFestů</span></span>`,
+             <span class="l2"><span class="kb orange">11 VeganFestů</span></span>`,
       q: `<span class="kb maroon">A kolik jich bude</span><br><span class="kb maroon">do GTA VII?</span>`,
       note: `Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.`,
     },
     c: {
       head: `<span class="l1"><span class="kb">Mezi GTA V a GTA VI</span><br><span class="kb cream">jsme udělali</span></span><br>
-             <span class="l2"><span class="kb orange">10 VeganFestů</span></span>`,
+             <span class="l2"><span class="kb orange">11 VeganFestů</span></span>`,
       q: `<span class="kb maroon">Do GTA VII? Při tempu</span><br><span class="kb maroon">Rockstaru tak 13.</span>`,
       note: `Máš jiný tip? Napiš ho do komentářů.<br><b>VeganFest 2027</b> už je ohlášený.`,
     },
@@ -112,11 +112,12 @@
   const tlY = headBottom + 140;                 // osa
   $('tl-line').setAttribute('d', `M96,${tlY} L984,${tlY} M96,${tlY - 24} L96,${tlY + 24} M984,${tlY - 24} L984,${tlY + 24}`);
   const hearts = $('hearts');
-  for (let i = 0; i < 10; i++) {
-    const x = 176 + i * (728 / 9), rot = [-8, 6, -4, 9, -7, 4, -9, 7, -5, 8][i];
+  for (let i = 0; i < 11; i++) {
+    const x = 172 + i * (736 / 10), rot = [-8, 6, -4, 9, -7, 4, -9, 7, -5, 8, -6][i];
     const d = document.createElement('div');
     d.className = 'heart';
-    d.style.left = (x - 39) + 'px';
+    d.style.width = '72px';
+    d.style.left = (x - 36) + 'px';
     d.style.top = (tlY - 96 + (i % 2 ? 6 : 0)) + 'px';
     d.style.transform = `rotate(${rot}deg)`;
     d.innerHTML = KPZ.sticker('heart');

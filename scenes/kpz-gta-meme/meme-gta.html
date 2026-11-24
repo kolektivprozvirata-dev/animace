@@ -61,13 +61,12 @@
         <stop offset=".72" stop-color="#ff4f86"/><stop offset="1" stop-color="#c23fd1"/>
       </linearGradient>
     </defs>
-    <text class="gta-t" id="big-sh" x="540" text-anchor="middle" fill="#000" stroke="#000" stroke-linejoin="round">10 VeganFestů</text>
-    <text class="gta-t" id="big-t" x="540" text-anchor="middle" fill="url(#sunset)" stroke="#000" stroke-linejoin="round" paint-order="stroke fill">10 VeganFestů</text>
+    <text class="gta-t" id="big-sh" x="540" text-anchor="middle" fill="#000" stroke="#000" stroke-linejoin="round">11 VeganFestů</text>
+    <text class="gta-t" id="big-t" x="540" text-anchor="middle" fill="url(#sunset)" stroke="#000" stroke-linejoin="round" paint-order="stroke fill">11 VeganFestů</text>
   </svg>
   <div class="abs" id="hearts"></div>
   <div class="abs kblocks print" id="q"><span class="kb maroon">Kolik jich stihneme do</span> <span class="kb orange">GTA VII?</span></div>
   <div class="abs kpz-body" id="note">Tipni si do komentářů.<br><b>VeganFest 2027</b> už je ohlášený – na ten nemusíš čekat 13 let.</div>
-  <div class="abs kpz-body" id="credit">Obrázky: Rockstar Games (GTA VI)</div>
 </div>
 <script>
   KPZ.theme();
@@ -88,20 +87,20 @@
     big.setAttribute('height', bh);
     const bigBottom = 860 + bh;
 
-    // 10 srdcí = 10 VeganFestů
+    // 10 srdcí = 11 VeganFestů
     const hy = bigBottom + 14;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 11; i++) {
       const d = document.createElement('div');
       d.className = 'heart';
-      d.style.left = (130 + i * 84) + 'px';
+      d.style.left = (88 + i * 84) + 'px';
       d.style.top = (hy + (i % 2 ? 5 : 0)) + 'px';
-      d.style.transform = `rotate(${[-8, 6, -4, 9, -7, 4, -9, 7, -5, 8][i]}deg)`;
+      d.style.transform = `rotate(${[-8, 6, -4, 9, -7, 4, -9, 7, -5, 8, -6][i]}deg)`;
       d.innerHTML = KPZ.sticker('heart');
       $('hearts').appendChild(d);
     }
     const q = $('q'); q.style.top = (hy + 90) + 'px';
     const note = $('note'); note.style.top = (q.offsetTop + q.offsetHeight + 14) + 'px';
-    const credit = $('credit'); credit.style.top = (1350 - 34) + 'px';
+    
     window.__layout = { fs, bigBottom, qBottom: q.offsetTop + q.offsetHeight, noteBottom: note.offsetTop + note.offsetHeight,
                         gtaFont: document.fonts.check('40px GTA') && [...document.fonts].some(f => f.family === 'GTA' && f.status === 'loaded') };
   });

@@ -52,6 +52,14 @@ k produkci. Cíl: omezovat a ukončovat jejich využívání – **ne** zlepšov
 efektivitu živočišné výroby. Komunikace věcná, přesná, přesvědčivá i pro
 nevegany; data a logika před citovým vydíráním.
 
+## VeganFest (z veganfest.cz, 2026-11-24)
+- **Hlavně přednáškový festival [KPZ]:** přednášky, debaty, workshopy; k tomu veganské občerstvení a stánky (neziskovky, trička, knihy). Jídlo je doplněk, ne hlavní lákadlo.
+- **Vše zdarma** („aby informace byly zdarma a dostupné pro každého“), v menu webu „Nevstupenky“; nevýdělečný, čistě dobrovolnický.
+- **2027 = 14. ročník, 27. 2. – 7. 3. 2027, Brno:** 1. víkend Co.Labs (Kounicova 686/22), 2. víkend Café Práh (Ve Vaňkovce 1), všední dny v různých podnicích; bezbariérové, psi vítáni; záštita primátorky Brna. Program se teprve zveřejní.
+- **Historie:** ročníky 2012–2019 a od 2022 každý rok; **2020 a 2021 se kvůli covidu nekonaly [KPZ]**. 2026 = 13. ročník.
+- Záznamy přednášek (124) na YouTube VeganFestTV – zveřejňují se až měsíce po festivalu („doporučujeme jít fyzicky“).
+- Weby: www.veganfest.cz, FB stránka VeganFestCZ.
+
 ## Etický rámec, ze kterého videa vycházejí
 
 **Veganství** – podle The Vegan Society „filozofie a způsob života, který se

@@ -93,7 +93,7 @@
   KPZ.theme();
   const v = (new URLSearchParams(location.search).get('v') || 'a').toLowerCase();
   document.body.dataset.v = v;
-  document.getElementById('credit').textContent = v === 'c' ? '' : 'Jason a Lucia: Rockstar Games (GTA VI)';
+  // řádek se zdrojem v grafice memu nedáváme (KPZ 2026-11-23)
   document.getElementById('b-heart').innerHTML = KPZ.sticker('heart');
 
   // pět hvězd hledanosti (vlastní kresba): krémová výplň, černý obrys, tvrdý stín
