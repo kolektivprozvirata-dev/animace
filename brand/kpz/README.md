@@ -17,6 +17,8 @@ objevuje jen v logu; pozitivní prvky jsou teal.
 
 ## Vizuální styl KPZ (z grafiky na sítích, 2026-10)
 
+**Shrnutí pro jiný chat / grafika:** `graficky-manual.md` + obrázkový vzorník `vzornik.png` (zdroj `vzornik.html`).
+
 Používat pro videa KPZ, pokud nechtějí klasický Vox papír. Hotové téma:
 `kpz-theme.css` + `kpz-theme.js` (vzor `scenes/kpz-telata/reel-kpz.html`).
 **Z grafiky KPZ bereme jen vizuál – ne obsah, hesla ani fotky [KPZ].**

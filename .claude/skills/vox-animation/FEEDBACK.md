@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.0**
+**Verze skillu: 0.27.1**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -161,3 +161,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-18 | 0.26.8 | kpz-telata v43 | „U té fotky kravínu v 0:44 trošku stáhnout tu přeexponovanost.“ | Tónová křivka na jas (rameno ve světlech, max. ~0,9), jemná S-křivka a +10 % sytosti; přepálené nebe se nedokresluje. |
 | 2026-11-24 | 0.26.9 | kpz-telata v44 | „Přidej ještě tyto dva obrázky kravínů, známku rozbluruj, nenatahuj video, klidně ať se střídají rychle.“ „Ten první ukazuje detail těch hoven mezi slámou.“ | 6 fotek za ~8 s, `panelIO(…, dur)` – rychlejší přejezd 0,3 s; každá fotka na slovo, které ilustruje (výkaly → detail podlahy). |
 | 2026-11-24 | 0.27.0 | kpz-telata | „Můžeš k tomu udělat thumbnail?“ | Cover reelu jako statická HTML scéna ve stejném stylu (`thumbnail.html`, render `--still`), hlavní obsah v 3:4 výřezu (mřížka Instagramu), poslat i náhled výřezu. |
+| 2026-11-25 | 0.27.1 | kpz | „Dej mi grafický manuál tohoto našeho stylu pro jiný chat.“ + „Neměl bys hodit i link na repozitář?“ | `brand/kpz/graficky-manual.md` (samostatný text, odkaz na repo a mapa souborů) + `vzornik.html/png`. Manuál pro jiný chat vždy s odkazem na repo. |
