@@ -1,0 +1,124 @@
+/* wide.css – rozvržení reelu o telatech pro plátno 16:9 (1920×1080), VeganFest.
+ * Načítá ho jen reel-kpz-foto-16x9.html (vzniká `python3 make-wide.py` z reel-kpz-foto.html).
+ * Zásada: text, nadpisy a štítky vlevo (x 80–900), fotky, kresby a panely vpravo (x 940–1860),
+ * obsah v y 120–900, titulky ~975, řádek se zdrojem ~1032. Pozice přebíjejí inline styly svislé verze (!important). */
+
+body.wide #wm { left: 48px !important; top: 36px !important; width: 104px !important; }
+body.wide #src { left: 80px !important; top: 1028px !important; width: 1760px !important; font-size: 21px !important; }
+body.wide #vox-captions { width: 1700px !important; }
+body.wide #vox-captions .cap { font-size: 68px !important; }
+body.wide .panel { left: 960px !important; top: 160px !important; }
+
+/* 1 · hook */
+body.wide #st1 { left: 1700px !important; top: 90px !important; width: 160px !important; }
+body.wide #h0-head { left: 80px !important; top: 190px !important; width: 900px !important; font-size: 118px !important; }
+body.wide #h0-milk { left: 96px !important; top: 760px !important; width: 140px !important; }
+body.wide #h0-photo { left: 1110px !important; top: 330px !important; width: 680px !important; }
+body.wide #h-eye { left: 80px !important; top: 150px !important; }
+body.wide #h-num { left: 80px !important; top: 205px !important; }
+body.wide #h-rec, body.wide #h-now { left: 90px !important; top: 640px !important; }
+body.wide #h-pair, body.wide #h-cow, body.wide #h-calf { left: 1000px !important; top: 250px !important; width: 860px !important; }
+body.wide #h-box { left: 1040px !important; top: 230px !important; }
+body.wide #h-aerial { left: 950px !important; top: 150px !important; width: 900px !important; }
+body.wide #h-duo { left: 940px !important; top: 190px !important; width: 920px !important; }
+body.wide #h-atag { left: 90px !important; top: 330px !important; font-size: 56px !important; }
+body.wide #h-btag { left: 90px !important; top: 520px !important; font-size: 48px !important; }
+body.wide #h-stag { left: 90px !important; top: 660px !important; font-size: 54px !important; }
+
+/* 2 · veganský pohled */
+body.wide #v-eye { left: 80px !important; top: 170px !important; }
+body.wide #v-head { left: 80px !important; top: 235px !important; width: 1760px !important; }
+body.wide #v-tl { left: 800px !important; top: 500px !important; }
+body.wide #v-sc { position: absolute; left: 800px; top: -400px; }
+
+/* 3 · argumenty */
+body.wide #st3 { left: 1700px !important; top: 90px !important; }
+body.wide #a-eye { left: 80px !important; top: 150px !important; }
+body.wide #a-head, body.wide #a-head2 { left: 80px !important; top: 205px !important; width: 1760px !important; }
+body.wide #a-ghosts { position: absolute; left: 0; top: -170px; }
+body.wide #a-c1 { left: 90px !important; top: 430px !important; width: 820px !important; }
+body.wide #a-c2 { left: 1000px !important; top: 430px !important; width: 820px !important; }
+body.wide #a-c3 { left: 90px !important; top: 640px !important; width: 820px !important; }
+body.wide #a-c4 { left: 1000px !important; top: 640px !important; width: 820px !important; }
+
+/* 4 · hygiena */
+body.wide #g-head { left: 80px !important; top: 150px !important; }
+body.wide #g-calf { left: 1260px !important; top: 300px !important; }
+body.wide #g-germs { position: absolute; left: 860px; top: -170px; }
+body.wide #g-ptag, body.wide #g-tag, body.wide #g-tag3 { left: 90px !important; top: 430px !important; }
+body.wide #g-photo, body.wide #g-photo2, body.wide #g-photo4, body.wide #g-photo5, body.wide #g-photo6 { left: 930px !important; top: 150px !important; width: 920px !important; }
+body.wide #g-photo3 { left: 960px !important; top: 150px !important; width: 860px !important; }
+body.wide #g-study { left: 70px !important; top: 330px !important; width: 840px !important; }
+body.wide #g-past { left: 900px !important; top: 120px !important; width: 960px !important; }
+body.wide #g-tag2 { left: 90px !important; top: 430px !important; }
+body.wide #g-sch { left: 700px !important; top: 160px !important; width: 900px !important; }
+
+/* 5 · zalehnutí */
+body.wide #z-head { left: 80px !important; top: 150px !important; }
+body.wide #z-pen { top: 140px !important; }
+body.wide #z-tag, body.wide #z-tag2 { left: 90px !important; top: 430px !important; }
+body.wide #z-past { left: 900px !important; top: 150px !important; width: 960px !important; }
+body.wide #z-sch { left: 700px !important; top: 160px !important; width: 900px !important; }
+
+/* 6 · pouto */
+body.wide #p-head { left: 80px !important; top: 150px !important; }
+body.wide #p-photo { left: 1020px !important; top: 200px !important; width: 820px !important; }
+body.wide #p-voice { left: 90px !important; top: 430px !important; }
+body.wide #p-chart { left: 60px !important; top: 330px !important; width: 900px !important; }
+body.wide #p-true { left: 600px !important; top: 300px !important; }
+body.wide #p-more { left: 90px !important; top: 430px !important; }
+
+/* 7 · tmavá pointa */
+body.wide #k-l1 { left: 80px !important; top: 200px !important; width: 1760px !important; font-size: 104px !important; }
+body.wide #k-l2 { left: 80px !important; top: 410px !important; width: 1760px !important; font-size: 150px !important; }
+body.wide #k-l3 { left: 80px !important; top: 680px !important; width: 1760px !important; font-size: 92px !important; }
+
+/* 8 · přebytek mléka */
+body.wide #m-head { left: 80px !important; top: 150px !important; }
+body.wide #m-ill { left: 860px !important; top: -170px !important; }
+body.wide #m-tag1, body.wide #m-tag2 { left: 90px !important; top: 430px !important; }
+body.wide #m-chart { left: 80px !important; top: 285px !important; width: 900px !important; }
+body.wide #m-day { left: 1040px !important; top: 380px !important; width: 800px !important; }
+body.wide #m-not { left: 80px !important; top: 290px !important; width: 1760px !important; }
+body.wide #m-mach { left: 90px !important; top: 510px !important; }
+body.wide #m-milk { left: 1100px !important; top: 330px !important; }
+body.wide #m-milk2 { left: 1280px !important; top: 350px !important; }
+body.wide #m-tag { left: 1450px !important; top: 370px !important; }
+
+/* 9 · bizarní kruh (kruh uprostřed) */
+body.wide #l-eye { left: 80px !important; top: 150px !important; }
+body.wide #l-ring { left: 420px !important; top: -310px !important; }
+body.wide #l-center { left: 960px !important; top: 600px !important; }
+
+/* 10 · jde to jinak / není to ideál */
+body.wide #j-eye { left: 80px !important; top: 150px !important; }
+body.wide #j-c2 { left: 60px !important; top: 200px !important; width: 880px !important; }
+body.wide #j-not { left: 990px !important; top: 200px !important; width: 870px !important; }
+body.wide #j-exc { left: 1000px !important; top: 640px !important; }
+body.wide #j-p1 { left: 560px !important; top: 360px !important; }
+body.wide #j-p2 { left: 800px !important; top: 430px !important; }
+body.wide #j-p3 { left: 1180px !important; top: 360px !important; }
+body.wide #j-st { left: 1400px !important; top: 600px !important; }
+body.wide #j-idyl { left: 80px !important; top: 150px !important; }
+body.wide #j-r1 { left: 60px !important; top: 300px !important; width: 900px !important; }
+body.wide #j-r2 { left: 980px !important; top: 300px !important; width: 880px !important; }
+body.wide #j-blood { left: 80px !important; top: 640px !important; }
+body.wide #j-bit { left: 90px !important; top: 750px !important; }
+
+/* 11 · (slogan – ve v36+ vypuštěn) */
+body.wide #x-l1 { left: 80px !important; top: 300px !important; width: 1760px !important; }
+
+/* 12 · nabídka a poptávka */
+body.wide #st12 { left: 1700px !important; top: 90px !important; }
+body.wide #d-eye { left: 80px !important; top: 150px !important; }
+body.wide #d-ring { left: 160px !important; top: -230px !important; }
+body.wide #d-alt { left: 1040px !important; top: 420px !important; width: 800px !important; }
+
+/* 13 · outro */
+body.wide #o-st1 { left: 360px !important; top: 220px !important; }
+body.wide #o-st2 { left: 1420px !important; top: 180px !important; }
+body.wide #o-st3 { left: 1450px !important; top: 560px !important; }
+body.wide #o-logo { left: 720px !important; top: 150px !important; width: 480px !important; }
+body.wide #o-name { left: 0 !important; width: 1920px !important; top: 640px !important; }
+body.wide #o-web { left: 0 !important; width: 1920px !important; top: 770px !important; }
+body.wide #o-src { display: none !important; }

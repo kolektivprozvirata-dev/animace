@@ -314,3 +314,11 @@ KPZ: „Můžeš k tomu udělat thumbnail?“ → `thumbnail.html` (1080×1920, 
 |---|---|---|---|
 | 1 | 2026-11-26 | 0:20 – delší pauza před „Ať hned, nebo později“ (KPZ: „trošku prodloužit, jestli můžeš“). `vo-v45.json`: pauza po hook3 0,23 → **0,55 s**, tempo 1,0347 → 1,0366 (dorovnání délky), vše z cache → `assets-v45`, 2:58,8. Scéna přepnuta na `assets-v45`. Render `out/kpz-telata-reel-v45.mp4`. | ✅ |
 
+## Plátno 16:9 – VeganFest (2026-11-26)
+
+KPZ: „Udělej širokoúhlou verzi videa. Budeme to pouštět na VeganFestu mezi přednáškami na plátně. Takže žádný socky.“ → volby: nové rozvržení 16:9, přirozená rychlost hlasu, „Zdroje v popisku“ vystřihnout, titulky nechat. + „Zdroje v popisku oddělej. A klidně to audio může být ještě pomalejší. Normální vyprávění prostě.“
+- **Hlas** `vo-platno.json` (z v45): tempo **0,95** (o 5 % pomaleji než přirozený hlas), pauzy mezi větami ×1,7 (min. 0,35 s), uvnitř souvětí až 0,28 s, outro `cut_after` „zvířata.“ (bez „Zdroje v popisku“), konec drží logo 3 s. Vše z cache → `assets-platno`, **3:25**.
+- **Obraz** `reel-kpz-foto-16x9.html` (1920×1080) vzniká `python3 make-wide.py` ze svislé scény + `wide.css` (text vlevo, fotky/kresby vpravo, kruhy uprostřed, titulky ~y 975, zdroj dole přes šířku, logo vlevo nahoře; „Zdroje v popisku“ skryté). Svislá scéna nově počítá posun úvodní fotky z pozic a odjezdy prvků mimo obraz podle šířky (`OFF`) – svislý výstup beze změny.
+- Render: `node …/render.mjs reel-kpz-foto-16x9.html --audio assets-platno/vo.wav --out out/kpz-telata-platno-16x9.mp4`.
+- Změny ve svislé verzi se do plátna dostanou novým `python3 make-wide.py` (nové prvky potřebují pozici ve `wide.css`).
+

@@ -365,6 +365,8 @@
   const T = (id) => VOX.vo(id).t0, E = (id) => VOX.vo(id).t1;
   const W = (id, word) => VOX.wordT(id, word);
   const LEAD = 0.15;
+  // 16:9 verze (make-wide.py nastaví window.WIDE): širší plátno → prvky musí odjet dál, aby nezmizely v obraze
+  const WIDE = !!window.WIDE, OFF = WIDE ? 2000 : 1100;
   /** „samo v boxu“: a = tele KPZ v kreslené boudě, b = skutečná bouda, c = řada boud, d = farma z výšky */
   const BOX = 'a';
   ['a', 'b', 'c', 'd'].forEach((v) => { $('#hb-' + v).style.display = v === BOX ? '' : 'none'; });
@@ -414,7 +416,7 @@
   /** panel, který vjede zprava a odjede doleva */
   const panelIO = (sel, t, tin, tout, oMul = 1, dur = 0.45) => {
     const pin = prog(t, tin, dur, ease.inOutCubic), pout = prog(t, tout, dur, ease.inOutCubic);
-    set(sel, { x: (1 - pin) * 1100 - pout * 1100, o: (pin > 0 && pout < 1 ? 1 : 0) * oMul });
+    set(sel, { x: (1 - pin) * OFF - pout * OFF, o: (pin > 0 && pout < 1 ? 1 : 0) * oMul });
     return pin * (1 - pout);
   };
   /** výstřižky z fotek se lehce třesou jako papír (6× za s, ať to neruší) */
@@ -430,6 +432,10 @@
   const put = (id, html) => { $('#' + id).innerHTML = html; };
   put('m-milk', VOXI.icon('milk')); put('m-milk2', VOXI.icon('milk')); put('m-tag', VOXI.icon('tag', 'Kč'));
   put('h0-milk', VOXI.icon('milk'));
+  // úvodní fotka (h0-photo) a pár v hooku (h-pair) jsou stejný obrázek → posun a zvětšení z jejich pozic
+  const H0 = (() => { const cs = (sel) => { const c = getComputedStyle($(sel)); return [parseFloat(c.left), parseFloat(c.top), parseFloat(c.width)]; };
+    const [al, at, aw] = cs('#h0-photo'), [bl, bt, bw] = cs('#h-pair'), k = 656 / 994 / 2;   // poměr stran trh2-par.png
+    return { dx: (bl + bw / 2) - (al + aw / 2), dy: (bt + bw * k) - (at + aw * k), ds: bw / aw - 1 }; })();
   const PILE = [[720, 560], [820, 560], [920, 560], [770, 440], [870, 440], [820, 320]];
   $('#m-pile').innerHTML = PILE.map(([x, y], i) => `<div class="abs" id="mp${i}" style="left:${x - 50}px; top:${y - 40}px; width:96px">${VOXI.icon('milk')}</div>`).join('');
 
@@ -537,7 +543,7 @@
       const ph = pop(t, 0.35, 0.5);
       // stejná kráva: úvodní fotka se posune a zvětší na místo páru v hooku (středy 745,1106 → 540,1058; 610 → 780 px)
       const mv = prog(t, t0 - 0.3, 0.45, ease.inOutCubic), tPair = t0 + 0.15;
-      cutout('#h0-photo', t, 'h0p', -205 * mv, -49 * mv, 2 * (1 - mv), (ph || 0.001) * (1 + 0.279 * mv), (ph > 0 ? 1 : 0) * (t < tPair ? 1 : 0));
+      cutout('#h0-photo', t, 'h0p', H0.dx * mv, H0.dy * mv, 2 * (1 - mv), (ph || 0.001) * (1 + H0.ds * mv), (ph > 0 ? 1 : 0) * (t < tPair ? 1 : 0));
       fadeUp('#h0-head', t, 0.2, 40, 0.35, 1 - out0);
       highlight('#h0-hl', prog(t, W('hook0', 'porodem') - 0.1, 0.5));
       cutout('#h0-milk', t, 'h0m', 0, 0, -7, pop(t, 0.5, 0.45) || 0.001, (pop(t, 0.5, 0.45) > 0 ? 1 : 0) * (1 - out0));
@@ -550,17 +556,17 @@
       const jolt = (t >= tNow - 0.05 && t < tNow + 0.2) ? 7 : 0;
       const tTear = tNow - 0.05;
       cutout('#h-pair', t, 'hc', -jolt, 0, 0, 1, (t >= tPair && t < tTear) ? 1 : 0);
-      cutout('#h-cow', t, 'hc', -cowOut * 950 - jolt, 0, -cowOut * 4, 1, t >= tTear ? 1 : 0);
+      cutout('#h-cow', t, 'hc', -cowOut * (OFF - 150) - jolt, 0, -cowOut * 4, 1, t >= tTear ? 1 : 0);
       // boxy z výšky („v drtivé většině chovů“) → detail telete v boudě („samo v boxu“)
       const tSolo = W('hook3', 'samo') - 0.35;
       const aOut = prog(t, tSolo - 0.1, 0.35, ease.inCubic);
       const ap = slideIn('#h-aerial', t, tBox, 0, 120, -1.5, 0.4, 1 - aOut);
-      set('#h-aerial', { x: -aOut * 1100, y: (1 - ap) * 120, r: -1.5, o: (t >= tBox ? 1 : 0) * (aOut < 1 ? 1 : 0) });
+      set('#h-aerial', { x: -aOut * OFF, y: (1 - ap) * 120, r: -1.5, o: (t >= tBox ? 1 : 0) * (aOut < 1 ? 1 : 0) });
       popIn('#h-atag', t, W('hook3', 'většině') - 0.1, { r: -2, o: 1 - aOut });
       // v38: kreslená bouda („v samostatném boxu“) → skutečná telata v boudách („přestože je to společenské zvíře“)
       const tSoc = W('hook3', 'přestože') - 0.2, hOut = prog(t, tSoc, 0.45, ease.inOutCubic);
       const bx = prog(t, tSolo, 0.4, ease.outBack);
-      set('#h-box', { x: (1 - bx) * 900 - hOut * 1100, o: prog(t, tSolo, 0.12) * (hOut < 1 ? 1 : 0) });
+      set('#h-box', { x: (1 - bx) * 900 - hOut * OFF, o: prog(t, tSolo, 0.12) * (hOut < 1 ? 1 : 0) });
       panelIO('#h-duo', t, tSoc, 1e9);
       cutout('#h-bcalf', t, 'hb');
       popIn('#h-btag', t, W('hook3', 'samo') + 0.25, { r: -2 });
@@ -641,7 +647,7 @@
       const t0 = T('cru1'), tP = W('cru2', 'U tzv'), t3 = T('cru3');
       fadeUp('#z-head', t, t0);
       const pin = prog(t, t0 + 0.2, 0.4, ease.outBack), pout = prog(t, tP - 0.25, 0.45, ease.inOutCubic);
-      set('#z-pen', { y: (1 - pin) * 80, x: -pout * 1100, o: prog(t, t0 + 0.2, 0.15) * (pout < 1 ? 1 : 0) });
+      set('#z-pen', { y: (1 - pin) * 80, x: -pout * OFF, o: prog(t, t0 + 0.2, 0.15) * (pout < 1 ? 1 : 0) });
       animHerd('zh', NZ, t, t0 + 0.35);
       popIn('#zh-calf', t, W('cru1', 'zalehnout') - 0.2);
       popIn('#zh-calf2', t, W('cru1', 'zalehnout') + 0.1);

@@ -1,6 +1,6 @@
 # Feedback & vývoj skillu
 
-**Verze skillu: 0.27.2**
+**Verze skillu: 0.28.0**
 
 Tento soubor je paměť skillu. Pravidla níže mají **přednost** před
 `references/style-guide.md`. Postup zápisu je v `SKILL.md` → „Smyčka zpětné vazby“.
@@ -163,3 +163,4 @@ Pravidla specifická pro organizaci KPZ (obsah, tón, slovník) jsou v
 | 2026-11-24 | 0.27.0 | kpz-telata | „Můžeš k tomu udělat thumbnail?“ | Cover reelu jako statická HTML scéna ve stejném stylu (`thumbnail.html`, render `--still`), hlavní obsah v 3:4 výřezu (mřížka Instagramu), poslat i náhled výřezu. |
 | 2026-11-25 | 0.27.1 | kpz | „Dej mi grafický manuál tohoto našeho stylu pro jiný chat.“ + „Neměl bys hodit i link na repozitář?“ | `brand/kpz/graficky-manual.md` (samostatný text, odkaz na repo a mapa souborů) + `vzornik.html/png`. Manuál pro jiný chat vždy s odkazem na repo. |
 | 2026-11-26 | 0.27.2 | kpz-telata v45 | „V 0:20 před ‚Ať hned nebo později‘ trošku prodloužit pauzu, jestli můžeš.“ → „Zatím nerenderuj“ → „Chci jen toto, renderuj.“ | Pauza 0,23 → 0,55 s, délka dorovnána tempem (+0,2 %), vše z cache. Nový odstavec po hooku potřebuje znatelnou pauzu. |
+| 2026-11-26 | 0.28.0 | kpz-telata plátno 16:9 | „Širokoúhlá verze pro VeganFest na plátno, žádný socky.“ „Zdroje v popisku oddělej, audio klidně pomalejší – normální vyprávění.“ | Verze pro plátno = jiná pravidla než sítě: bez limitu délky, hlas tempo ~0,95 a delší pauzy, žádné „v popisku“, logo na konci déle. 16:9 ze svislé scény generátorem (`make-wide.py` + `wide.css` s pozicemi, `window.WIDE`), ne ruční kopií. |
