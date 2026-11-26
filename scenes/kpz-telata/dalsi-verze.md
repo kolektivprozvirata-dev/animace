@@ -308,9 +308,9 @@ KPZ: „Jak tam ukazujeme ty kravíny, přidej ještě tyto dva obrázky. V jedn
 
 KPZ: „Můžeš k tomu udělat thumbnail?“ → `thumbnail.html` (1080×1920, styl KPZ): nadpis z hooku „Krabice mléka z obchodu začíná porodem.“, kráva a od ní odtržené tele (stejné výstřižky jako v hooku), štítek „Tele pryč od mámy“. Vše podstatné ve středu 3:4 (y 240–1680) kvůli mřížce profilu. Render: `node …/render.mjs thumbnail.html --still 1 --out out/thumbnail-v1.png` → `out/kpz-telata-thumbnail.jpg` + náhled mřížky `out/kpz-telata-thumbnail-mrizka-3x4.jpg`.
 
-## Do v45 (sbírá se – nerenderovat, dokud KPZ neřekne)
+## v45 (2026-11-26) – delší pauza před „Ať hned, nebo později“ (KPZ: „chci jen toto, renderuj“)
 
 | # | datum | úprava | stav |
 |---|---|---|---|
-| 1 | 2026-11-26 | 0:20 – delší pauza před „Ať hned, nebo později“ (KPZ: „trošku prodloužit, jestli můžeš“). `vo-v45.json`: pauza po hook3 0,23 → **0,55 s**, tempo 1,0347 → 1,0366 (dorovnání délky), vše z cache → `assets-v45`, 2:58,8. Scéna zatím na `assets-v41` – při renderu v45 přepnout. | hlas připraven |
+| 1 | 2026-11-26 | 0:20 – delší pauza před „Ať hned, nebo později“ (KPZ: „trošku prodloužit, jestli můžeš“). `vo-v45.json`: pauza po hook3 0,23 → **0,55 s**, tempo 1,0347 → 1,0366 (dorovnání délky), vše z cache → `assets-v45`, 2:58,8. Scéna přepnuta na `assets-v45`. Render `out/kpz-telata-reel-v45.mp4`. | ✅ |
 
